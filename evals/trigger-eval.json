@@ -1,0 +1,23 @@
+[
+  {"query": "ok i used chatgpt to draft my company's about page and it reads SO robotic, full of 'in today's landscape' and 'seamless solutions'. can you rewrite it so it sounds like an actual human wrote it", "should_trigger": true},
+  {"query": "my TOEFL essay got flagged as AI by my university's detector and i wrote every single word myself. how do i make it read more human without changing my argument", "should_trigger": true},
+  {"query": "this linkedin post i drafted sounds like every other thought-leader humble-brag. make it less generic and give it an actual voice", "should_trigger": true},
+  {"query": "here's a 600 word blog intro. it's fine but it's got that AI sheen, even sentences, no opinions, rule of three everywhere. de-slop it", "should_trigger": true},
+  {"query": "rewrite this cold email so it doesn't sound like it came out of a template. keep the offer the same, just make it sound like me talking to a person", "should_trigger": true},
+  {"query": "can you go through my newsletter draft and strip out the em dashes, the 'it's important to note', and all the corporate filler? it reads like a press release", "should_trigger": true},
+  {"query": "my cover letter sounds stiff and over-polished, like an AI wrote it. loosen it up so it sounds like a real person without being unprofessional", "should_trigger": true},
+  {"query": "i pasted my rough notes into claude and it handed back this very tidy paragraph but it's completely lifeless. add some personality and vary the rhythm", "should_trigger": true},
+  {"query": "make this product description sound human, it's got 'leverage', 'robust', and 'game-changer' all over it", "should_trigger": true},
+  {"query": "the conclusion of my essay is that generic upbeat 'the future looks bright' thing. rewrite the whole essay so it actually sounds like me, i have real opinions about this", "should_trigger": true},
+
+  {"query": "write me a 600-word blog post about the benefits of cold plunges for recovery", "should_trigger": false},
+  {"query": "is this paragraph written by AI or a human? give me a percentage likelihood", "should_trigger": false},
+  {"query": "proofread this email for grammar mistakes and typos before i send it", "should_trigger": false},
+  {"query": "refactor this Python function so it's cleaner and more readable, it's got too much nesting", "should_trigger": false},
+  {"query": "make this email to a client more formal and professional, it's a bit too casual right now", "should_trigger": false},
+  {"query": "summarize this 10-page quarterly report into 5 bullet points for my boss", "should_trigger": false},
+  {"query": "translate my landing page copy into Hindi for the India launch", "should_trigger": false},
+  {"query": "give me feedback on whether my essay's central argument is actually convincing", "should_trigger": false},
+  {"query": "design a logo that feels human and approachable for my wellness brand", "should_trigger": false},
+  {"query": "fix the markdown formatting in this README, the heading levels are all broken and the code blocks aren't rendering", "should_trigger": false}
+]

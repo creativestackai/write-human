@@ -1,0 +1,24 @@
+{
+  "name": "write-human",
+  "version": "1.0.0",
+  "description": "A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. Strips the tells AI detectors flag, restores voice and rhythm, and makes the writing better in the process.",
+  "license": "MIT",
+  "author": "Sarthhak Kaluucha",
+  "keywords": [
+    "agentskills",
+    "claude-skill",
+    "writing",
+    "humanize",
+    "ai-detection",
+    "editing",
+    "voice"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/write-human.git"
+  },
+  "homepage": "https://github.com/OWNER/write-human#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/write-human/issues"
+  }
+}

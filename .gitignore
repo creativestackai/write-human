@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Node (only if you add tooling)
+node_modules/
+
+# Agent-council / local job scratch
+.jobs/
+
+# Local eval runs and logs
+*.log
+evals/runs/
+evals/*.local.json
+
+# Packaged skill artifact
+*.skill
