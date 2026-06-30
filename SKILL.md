@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 1.0.0
+version: 1.0.1
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing

@@ -114,7 +114,7 @@ The argument did not change. Congestion, pollution, cost, and the call to invest
 
 ## What to take from these
 
-In all three, the lexical and formatting cleanup was the easy 20%. The work that made them read human was:
+In all four, the lexical and formatting cleanup was the easy 20%. The work that made them read human was:
 
 1. **A person showing up.** First-person experience, an actual opinion, a willingness to say the popular claim is oversold.
 2. **Specifics replacing abstractions.** 200ms versus 2ms. Six years. Forty minutes of Monday admin. Numbers and scenes, not adjectives.

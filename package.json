@@ -1,6 +1,6 @@
 {
   "name": "write-human",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. Strips the tells AI detectors flag, restores voice and rhythm, and makes the writing better in the process.",
   "license": "MIT",
   "author": "Sarthhak Kaluucha",

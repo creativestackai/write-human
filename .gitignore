@@ -4,7 +4,7 @@
 # Node (only if you add tooling)
 node_modules/
 
-# Agent-council / local job scratch
+# Local job scratch
 .jobs/
 
 # Local eval runs and logs

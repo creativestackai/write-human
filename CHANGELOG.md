@@ -4,6 +4,15 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [1.0.1] - 2026-07-01
+
+### Fixed
+- `examples/before-after.md`: closing summary said "In all three," referring
+  to the example count, despite the file containing four worked rewrites.
+  Corrected to "In all four."
+- `.gitignore`: removed an internal tool reference ("Agent-council") from a
+  comment that had no place in a public repo.
+
 ## [1.0.0] - 2026-06-29
 
 First public release.
