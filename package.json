@@ -15,10 +15,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/OWNER/write-human.git"
+    "url": "https://github.com/creativestackai/write-human.git"
   },
-  "homepage": "https://github.com/OWNER/write-human#readme",
+  "homepage": "https://github.com/creativestackai/write-human#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/write-human/issues"
+    "url": "https://github.com/creativestackai/write-human/issues"
   }
 }
