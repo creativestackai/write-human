@@ -1,8 +1,8 @@
 # write-human
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![SKILL.md](https://img.shields.io/badge/format-SKILL.md-blue)](https://agentskills.io)
-[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](CHANGELOG.md)
 
 A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. It strips the statistical and stylistic tells that AI detectors flag, puts the rhythm and voice back, and makes the writing better in the process.
 
@@ -91,4 +91,4 @@ Built from three sources: a deep research survey of the AI-detection and humaniz
 
 ## License
 
-MIT. See [LICENSE](LICENSE). Use it, fork it, change the copyright line to your own name.
+Apache License 2.0. See [LICENSE](LICENSE). Use it, fork it — attribution and the license notice carry over per the terms.

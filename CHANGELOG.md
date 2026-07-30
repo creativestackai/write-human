@@ -4,6 +4,13 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [1.0.2] - 2026-07-29
+
+### Changed
+- Relicensed from MIT to Apache License 2.0. Updated `LICENSE`, `package.json`,
+  `SKILL.md` frontmatter, and the license references in `README.md` and
+  `CONTRIBUTING.md` accordingly.
+
 ## [1.0.1] - 2026-07-01
 
 ### Fixed

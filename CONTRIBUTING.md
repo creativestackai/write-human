@@ -51,4 +51,4 @@ sounds like a chatbot being helpful, rewrite it.
 ## License
 
 By contributing you agree your work is licensed under the repo's
-[MIT License](LICENSE).
+[Apache License 2.0](LICENSE).

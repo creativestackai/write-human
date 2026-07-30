@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 1.0.1
+version: 1.0.2
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
@@ -13,7 +13,7 @@ description: >-
   corporate", "de-slop this", "fix the AI tells". Edits text you already have; does not
   generate from a blank prompt, score or detect whether text is AI, fix only grammar/typos,
   translate, or just make writing more formal.
-license: MIT
+license: Apache-2.0
 metadata:
   author: Sarthhak Kaluucha
   tags: writing editing voice humanize ai-detection
