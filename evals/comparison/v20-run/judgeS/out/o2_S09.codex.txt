@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["D", "C", "B", "A"],
+  "fidelity_rank": ["C", "D", "B", "A"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Says the duplicate charge occurred with no warning.",
+        "Adds a personal commitment to chase the refund if it has not arrived within the stated timeframe."
+      ],
+      "dropped_facts": [
+        "Leila reviewed the customer's account.",
+        "The free month is explicitly described as a goodwill gesture.",
+        "The general invitation to ask further questions is replaced with a refund-specific invitation."
+      ],
+      "register_ok": false,
+      "note": "The conversational voice feels pushed, particularly 'a lousy surprise' in an otherwise courteous support exchange."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Adds a personal commitment to investigate anything that looks wrong when the refund arrives."
+      ],
+      "dropped_facts": [
+        "Leila reviewed the customer's account.",
+        "The general invitation to ask further questions is replaced with an invitation limited to problems with the refund."
+      ],
+      "register_ok": true,
+      "note": "Clear and reasonably natural, though the closing introduces an unnecessary new scenario."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Leila reviewed the customer's account."
+      ],
+      "register_ok": true,
+      "note": "Plain, credible support writing that preserves the substance with minimal embellishment."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Leila reviewed the customer's account.",
+        "The free month is explicitly described as a goodwill gesture.",
+        "The general invitation to ask further questions is narrowed to reporting anything else that looks wrong."
+      ],
+      "register_ok": true,
+      "note": "Direct accountability and restrained phrasing make this the strongest natural support voice."
+    }
+  }
+}

@@ -1,0 +1,71 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Subject: Re: Double charge on my subscription
+
+Dear Mr. Fernandes,
+
+Thank you so much for reaching out, and please accept our sincerest apologies for any inconvenience this may have caused. I completely understand how frustrating an unexpected charge can be. After carefully reviewing your account, I can confirm that you were indeed charged twice for your annual plan on November 2, in the amount of $119 each. This was caused by a payment retry error on our end. I have gone ahead and issued a refund of $119 for the duplicate charge, which should appear on your statement within 3 to 5 business days. Additionally, I have added one free month to your subscription as a gesture of goodwill. Please do not hesitate to reach out if you have any further questions!
+
+Best regards,
+Leila
+Support Team
+
+=== REWRITE A ===
+Subject: Re: Double charge on my subscription
+
+Hi Mr. Fernandes,
+
+You're right, you were charged twice. Your annual plan went through two times on November 2, $119 each, because our payment system retried a charge it shouldn't have. That was our mistake, and I'm sorry. Being charged twice with no warning is a lousy surprise.
+
+I've refunded the extra $119. It should show up on your statement in 3 to 5 business days. I've also added a free month to your subscription.
+
+If the refund hasn't arrived by then, reply here and I'll chase it.
+
+Leila
+Support Team
+
+=== REWRITE B ===
+Subject: Re: Double charge on my subscription
+
+Dear Mr. Fernandes,
+
+Sorry about this. You were charged twice for your annual plan on November 2, $119 each time. A payment retry error on our side caused it. I've refunded the duplicate $119, and it should show up on your statement within 3 to 5 business days. I've also added a free month to your subscription, since the mix-up was ours.
+
+If anything looks off when the refund lands, reply here and I'll look into it.
+
+Best regards,
+Leila
+Support Team
+
+=== REWRITE C ===
+Subject: Re: Double charge on my subscription
+
+Hello Mr. Fernandes,
+
+Sorry about that. You were charged twice for your annual plan on November 2, $119 each time. A payment retry error on our end caused it. I've refunded the duplicate $119, and it should show on your statement within 3 to 5 business days. I've also added one free month to your subscription for the trouble. If you have any other questions, let me know.
+
+Best,
+Leila
+Support Team
+
+=== REWRITE D ===
+Subject: Re: Double charge on my subscription
+
+Dear Mr. Fernandes,
+
+You were right: your annual plan was charged twice on November 2, $119 each time. A payment retry error on our end caused it, and I'm sorry. I've refunded the duplicate $119, and it should show on your statement within 3 to 5 business days. I've also added one free month to your subscription. If anything else looks off, reply here.
+
+Best regards,
+Leila
+Support Team

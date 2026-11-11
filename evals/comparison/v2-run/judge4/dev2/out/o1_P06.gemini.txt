@@ -1,0 +1,47 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["A", "D", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "Offering to write the ticket today if Priya agrees"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Sounds completely natural and preserves all source facts, adding only a courteous offer to file the ticket today."
+    },
+    "B": {
+      "p_ai": 14,
+      "unsupported_specifics": [
+        "Claim that nobody from the other teams would review the schema change in an invoice export PR",
+        "Commitment to open the backfill ticket today",
+        "Ultimatum/scenario regarding blocking the PR until the migration lands because other services need a say"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Captures an authentic, opinionated developer voice, but invents several claims about cross-team review dynamics and PR blocking."
+    },
+    "C": {
+      "p_ai": 38,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The invoice export job reads the currency field from the customer record",
+        "The currency field can be null for accounts created before 2021",
+        "The export silently defaults to USD when the field is null"
+      ],
+      "register_ok": true,
+      "note": "Concise and appropriately professional, but drops the entire technical explanation of how and why the bug occurs."
+    },
+    "D": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The invoice export job reads the currency field specifically from the customer record"
+      ],
+      "register_ok": true,
+      "note": "Reads mechanically due to an unnatural BLUF reorganization that mislabels the root-cause bug mechanism under a 'For scale:' header."
+    }
+  }
+}

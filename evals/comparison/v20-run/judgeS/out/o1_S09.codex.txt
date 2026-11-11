@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["B", "A", "C", "D"],
+  "fidelity_rank": ["B", "A", "C", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Leila explicitly says she reviewed the account.",
+        "The free month is explicitly described as a gesture of goodwill.",
+        "The invitation to ask any further questions is narrowed to reporting anything else that looks wrong."
+      ],
+      "register_ok": true,
+      "note": "Direct and professional, though the closing slightly narrows the offer of help."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Leila explicitly says she reviewed the account."
+      ],
+      "register_ok": true,
+      "note": "Natural, concise support writing that preserves the substance with little distraction."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Leila personally promises to investigate if anything looks wrong when the refund arrives."
+      ],
+      "dropped_facts": [
+        "Leila explicitly says she reviewed the account.",
+        "The general invitation to ask further questions is replaced by an invitation limited to problems noticed when the refund arrives."
+      ],
+      "register_ok": true,
+      "note": "Clear and personable, but the closing introduces a new commitment and narrows the support invitation."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The duplicate charge occurred with no warning.",
+        "Leila promises to chase the refund if it has not arrived within the stated timeframe."
+      ],
+      "dropped_facts": [
+        "Leila explicitly says she reviewed the account.",
+        "The free month is explicitly described as a gesture of goodwill.",
+        "The general invitation to ask further questions is replaced by an invitation limited to a delayed refund."
+      ],
+      "register_ok": true,
+      "note": "The repetition and conspicuously casual empathy feel more worked over than the other versions."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["C", "A", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit attribution that the author's personal journey taught them the final lesson"
+      ],
+      "strength_changes": [
+        "'offers a multitude of benefits' is softened to 'is about more than tradition'",
+        "'not merely a virtue, but an essential tool' is weakened to 'a working tool... as much as it is a virtue'"
+      ],
+      "register_ok": true,
+      "note": "Fluent and clear, but the passive construction 'frames get handled' feels detached from the surrounding personal memoir."
+    },
+    "B": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The qualifier 'only' from 'only twice'",
+        "The explicit attribution that the author's personal journey taught them the final lesson"
+      ],
+      "strength_changes": [
+        "'a multitude of benefits' is weakened to 'real benefits'",
+        "'only twice' is weakened to 'twice' by omitting the qualifier",
+        "'essential tool' is weakened to simply 'a tool'"
+      ],
+      "register_ok": true,
+      "note": "Reads stiffly and mechanically due to generic phrasing, passive framing, and an ambiguous pronoun reference."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The qualifier 'only' from 'only twice'"
+      ],
+      "strength_changes": [
+        "'offers a multitude of benefits' is softened to 'is about more than tradition'",
+        "'only twice' is weakened to 'twice' by removing the qualifier 'only'",
+        "'not merely a virtue, but an essential tool' is softened to 'a working tool... as much as a virtue'"
+      ],
+      "register_ok": true,
+      "note": "Matches the surrounding memoir voice exceptionally well with natural active phrasing, punchy syntax, and strong narrative continuity."
+    }
+  }
+}

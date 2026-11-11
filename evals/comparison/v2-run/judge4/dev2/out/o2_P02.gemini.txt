@@ -1,0 +1,55 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": ["'all-in-one' platform claim"],
+      "register_ok": true,
+      "note": "Crisp and natural professional copy that preserves all core facts without inventing details."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "invoice workflow steps: create, send, and watch for payment",
+        "retyping numbers into a spreadsheet afterward",
+        "reporting updates as money comes in without waiting for month-end"
+      ],
+      "dropped_facts": [
+        "'all-in-one' platform claim",
+        "distinction between solo freelancers and teams"
+      ],
+      "register_ok": true,
+      "note": "Conversational and engaging, but invents specific scenarios and workflows not present in the source."
+    },
+    "C": {
+      "p_ai": 60,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "worldwide / global reach",
+        "'all-in-one' platform claim"
+      ],
+      "register_ok": true,
+      "note": "Accurate and concise, but the mechanical phrasing reads like a generic AI condensation."
+    },
+    "D": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "users would rather not spend their evenings on invoicing",
+        "agencies that have outgrown spreadsheets",
+        "fewer typos and wrong totals going out under your name",
+        "seeing what is paid without asking anyone",
+        "clients' billing details sitting behind security",
+        "commentary: 'If you read only one number, that's the one'"
+      ],
+      "dropped_facts": [
+        "worldwide / global reach",
+        "'all-in-one' platform claim"
+      ],
+      "register_ok": true,
+      "note": "Possesses a distinct, punchy human voice, but heavily hallucinates details and narrative specifics."
+    }
+  }
+}

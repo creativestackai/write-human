@@ -1,0 +1,126 @@
+[dev] valid 36 / 40; failed [('o1', 'P04', 'gemini'), ('o1', 'P05', 'gemini'), ('o2', 'P04', 'gemini'), ('o2', 'P05', 'gemini')]
+
+## ALL judges, both orders (n=32)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.34          0.59     2   23.2    4.09     3.06
+write-human v1           1.69          0.50     1   22.7    4.16     3.16
+humanizer                1.75          2.28    16   26.1    0.34     2.47
+write-human v2           1.22          2.62    13   31.3    0.16     1.75
+
+## judge=codex (n=18)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.06          0.44     0   28.1    4.83     4.17
+write-human v1           1.50          0.61     0   27.8    4.56     4.33
+humanizer                1.83          2.28     8   24.5    0.44     3.33
+write-human v2           1.61          2.67    10   25.3    0.22     2.44
+
+## judge=gemini (n=14)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.71          0.79     2   16.9    3.14     1.64
+write-human v1           1.93          0.36     1   16.1    3.64     1.64
+humanizer                1.64          2.29     8   28.1    0.21     1.36
+write-human v2           0.71          2.57     3   38.9    0.07     0.86
+
+## head to head (judgments preferring first arm)
+write-human v2 vs write-human v1 human_quality_rank  v2:14  wh:18
+write-human v2 vs write-human v1 fidelity_rank       v2:32  wh:0
+write-human v2 vs humanizer      human_quality_rank  v2:10  hz:22
+write-human v2 vs humanizer      fidelity_rank       v2:20  hz:12
+write-human v2 vs baseline       human_quality_rank  v2:15  baseline:17
+write-human v2 vs baseline       fidelity_rank       v2:32  baseline:0
+
+## per passage (mean over judgments)  order: baseline / v1 / humanizer / v2
+P01  hq 1.2/1.8/1.8/1.2  fid 0.8/0.2/2.0/3.0  wins 0/0/1/3  p_ai 29/28/21/28  unsupp 6.8/8.8/0.8/0.0  (n=4)
+P02  hq 1.2/2.2/2.0/0.5  fid 0.8/0.2/2.2/2.8  wins 0/0/3/1  p_ai 28/22/22/39  unsupp 4.8/6.0/0.8/0.0  (n=4)
+P03  hq 1.2/0.2/2.5/2.0  fid 1.0/0.0/2.8/2.2  wins 0/0/3/1  p_ai 20/26/19/23  unsupp 0.0/2.0/0.0/0.0  (n=4)
+P04  hq 1.0/0.0/2.5/2.5  fid 0.5/0.5/2.5/2.5  wins 0/0/1/1  p_ai 28/35/22/22  unsupp 0.0/0.0/0.0/0.0  (n=2)
+P05  hq 2.5/2.5/0.0/1.0  fid 0.0/1.0/2.0/3.0  wins 0/0/0/2  p_ai 22/20/32/22  unsupp 6.0/4.0/1.0/0.0  (n=2)
+P06  hq 2.0/1.0/1.2/1.8  fid 1.8/0.0/1.2/3.0  wins 2/0/0/2  p_ai 16/22/26/31  unsupp 2.2/4.2/0.2/0.0  (n=4)
+P07  hq 0.0/2.5/2.0/1.5  fid 0.0/1.0/2.0/3.0  wins 0/0/2/2  p_ai 26/17/27/34  unsupp 5.5/2.2/0.0/0.0  (n=4)
+P08  hq 0.8/2.2/1.2/1.8  fid 0.0/2.5/1.5/2.0  wins 1/1/0/2  p_ai 10/4/4/4  unsupp 0.2/0.0/0.0/0.0  (n=4)
+P09  hq 0.8/2.0/2.8/0.5  fid 0.0/1.0/3.0/2.0  wins 0/0/4/0  p_ai 18/16/16/26  unsupp 3.5/1.2/0.2/0.0  (n=4)
+P10  hq 2.5/2.5/0.5/0.5  fid 0.2/0.8/2.8/2.2  wins 0/1/2/1  p_ai 25/23/50/48  unsupp 7.0/6.8/0.2/1.2  (n=4)
+
+-----
+[dev2] valid 38 / 40; failed [('o1', 'P07', 'gemini'), ('o2', 'P10', 'gemini')]
+
+## ALL judges, both orders (n=34)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.44          0.65     2   23.9    4.06     2.91
+write-human v1           1.53          0.44     1   21.9    4.06     3.12
+humanizer                1.88          2.53    20   27.4    0.29     2.38
+write-human v2           1.15          2.38    11   35.4    0.21     2.21
+
+## judge=codex (n=18)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.11          0.44     0   28.1    5.11     4.11
+write-human v1           1.22          0.56     0   29.0    4.67     4.22
+humanizer                2.11          2.61    11   25.2    0.39     3.39
+write-human v2           1.56          2.39     7   28.6    0.33     3.11
+
+## judge=gemini (n=16)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.81          0.88     2   19.2    2.88     1.56
+write-human v1           1.88          0.31     1   13.9    3.38     1.88
+humanizer                1.62          2.44     9   30.0    0.19     1.25
+write-human v2           0.69          2.38     4   42.9    0.06     1.19
+
+## head to head (judgments preferring first arm)
+write-human v2 vs write-human v1 human_quality_rank  v2:14  wh:20
+write-human v2 vs write-human v1 fidelity_rank       v2:34  wh:0
+write-human v2 vs humanizer      human_quality_rank  v2:11  hz:23
+write-human v2 vs humanizer      fidelity_rank       v2:14  hz:20
+write-human v2 vs baseline       human_quality_rank  v2:14  baseline:20
+write-human v2 vs baseline       fidelity_rank       v2:33  baseline:1
+
+## per passage (mean over judgments)  order: baseline / v1 / humanizer / v2
+P01  hq 1.8/1.8/1.0/1.5  fid 1.0/0.0/2.8/2.2  wins 1/0/2/1  p_ai 26/24/38/30  unsupp 8.2/9.0/0.5/0.8  (n=4)
+P02  hq 1.0/2.0/2.5/0.5  fid 0.8/0.2/3.0/2.0  wins 0/0/4/0  p_ai 34/26/20/46  unsupp 4.8/6.5/0.5/0.5  (n=4)
+P03  hq 1.2/1.0/3.0/0.8  fid 1.0/0.0/2.0/3.0  wins 0/0/3/1  p_ai 22/21/14/40  unsupp 0.0/2.8/0.0/0.0  (n=4)
+P04  hq 1.2/0.2/2.2/2.2  fid 0.5/0.5/2.8/2.2  wins 0/0/2/2  p_ai 26/28/27/30  unsupp 0.0/0.0/0.0/0.0  (n=4)
+P05  hq 1.8/2.8/0.5/1.0  fid 0.2/0.8/2.0/3.0  wins 0/0/1/3  p_ai 24/13/28/30  unsupp 5.5/3.5/1.0/0.0  (n=4)
+P06  hq 2.2/0.8/1.8/1.2  fid 1.8/0.0/1.5/2.8  wins 1/0/0/3  p_ai 13/16/20/28  unsupp 2.2/4.0/0.5/0.0  (n=4)
+P07  hq 1.0/1.7/2.3/1.0  fid 0.0/1.0/3.0/2.0  wins 0/1/2/0  p_ai 25/32/47/62  unsupp 5.7/2.3/0.0/0.0  (n=3)
+P08  hq 1.5/2.0/1.0/1.5  fid 0.0/2.5/1.5/2.0  wins 2/1/0/1  p_ai 7/5/5/5  unsupp 0.0/0.0/0.0/0.0  (n=4)
+P09  hq 0.8/1.5/2.8/1.0  fid 0.0/1.0/3.0/2.0  wins 0/0/4/0  p_ai 18/18/16/26  unsupp 3.5/1.2/0.0/0.0  (n=4)
+P10  hq 2.0/2.3/0.7/1.0  fid 0.3/0.7/3.0/2.0  wins 0/0/2/1  p_ai 28/24/48/32  unsupp 8.0/7.7/0.0/0.7  (n=3)
+
+-----
+[h] valid 22 / 24; failed [('o1', 'H01', 'gemini'), ('o1', 'H02', 'gemini')]
+
+## ALL judges, both orders (n=18)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.33          0.72     0   24.1    3.50     2.22
+write-human v1           1.61          0.28     0   24.0    3.78     2.06
+humanizer                2.00          2.44    11   20.6    0.39     1.28
+write-human v2           1.06          2.56     7   31.7    0.06     0.67
+
+## judge=codex (n=10)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.50          0.80     0   23.1    4.10     2.60
+write-human v1           1.60          0.20     0   22.4    4.50     2.50
+humanizer                1.70          2.30     4   22.2    0.60     2.00
+write-human v2           1.20          2.70     6   25.0    0.10     1.20
+
+## judge=gemini (n=8)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+baseline                 1.12          0.62     0   25.4    2.75     1.75
+write-human v1           1.62          0.38     0   26.0    2.88     1.50
+humanizer                2.38          2.62     7   18.5    0.12     0.38
+write-human v2           0.88          2.38     1   40.1    0.00     0.00
+
+## head to head (judgments preferring first arm)
+write-human v2 vs write-human v1 human_quality_rank  v2:7  wh:11
+write-human v2 vs write-human v1 fidelity_rank       v2:18  wh:0
+write-human v2 vs humanizer      human_quality_rank  v2:3  hz:15
+write-human v2 vs humanizer      fidelity_rank       v2:10  hz:8
+write-human v2 vs baseline       human_quality_rank  v2:9  baseline:9
+write-human v2 vs baseline       fidelity_rank       v2:18  baseline:0
+
+## per passage (mean over judgments)  order: baseline / v1 / humanizer / v2
+H01  hq 2.3/2.7/1.0/0.0  fid 1.0/0.0/3.0/2.0  wins 0/0/3/0  p_ai 28/21/34/46  unsupp 9.0/11.7/0.0/0.0  (n=3)
+H02  hq 0.3/2.7/0.7/2.3  fid 1.0/0.0/2.0/3.0  wins 0/0/0/3  p_ai 28/13/25/18  unsupp 2.0/1.7/1.0/0.0  (n=3)
+H03  hq 1.0/0.5/3.0/1.5  fid 0.5/0.5/2.8/2.2  wins 0/0/4/0  p_ai 15/20/14/21  unsupp 0.0/0.0/0.0/0.0  (n=4)
+H04  hq 1.2/2.2/2.2/0.2  fid 0.2/0.8/2.0/3.0  wins 0/0/2/2  p_ai 32/22/19/54  unsupp 7.2/5.5/0.5/0.2  (n=4)
+H05  hq 1.8/0.5/2.5/1.2  fid 1.0/0.0/2.5/2.5  wins 0/0/2/2  p_ai 19/41/15/20  unsupp 0.2/1.5/0.5/0.0  (n=4)
+H06  hq 1.8/0.8/2.2/1.2  fid 2.0/0.0/2.5/1.5  wins 1/1/2/0  p_ai 6/8/6/6  unsupp 0.0/0.0/0.0/0.0  (n=4)

@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["C", "A", "D", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "teams are worldwide"
+      ],
+      "register_ok": true,
+      "note": "Accurate and concise, but reads like a flat, generic AI summary."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "spending evenings on invoicing",
+        "agencies outgrowing spreadsheets",
+        "typos and wrong totals going out under your name",
+        "checking payment status without asking anyone",
+        "protecting clients' billing details specifically"
+      ],
+      "dropped_facts": [
+        "teams are worldwide"
+      ],
+      "register_ok": true,
+      "note": "Has a punchy, distinct human copywriter voice but invents numerous pain points and concrete details."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural, clear human writing that cuts corporate jargon while keeping all source claims intact."
+    },
+    "D": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "step-by-step workflow of creating, sending, and watching for payment in one place",
+        "retyping numbers into a spreadsheet afterward",
+        "reports updating as money comes in to avoid waiting for month-end"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Conversational and approachable, but invents several speculative workflow steps and scenarios."
+    }
+  }
+}

@@ -1,0 +1,34 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+From a foundational standpoint, moving the warehouse from two 10-hour shifts to three 8-hour shifts increases the number of handovers per day. Upon closer examination, however, the September trial at the Nashik site complicates this concern: picking errors fell from 2.4% to 1.7% over the four weeks. On the one hand, this suggests that shorter shifts reduce fatigue-related mistakes. On the other hand, overtime costs rose by 11% during the same period, which suggests that the third shift was not fully staffed. Taken together, these findings indicate that the three-shift pattern should be adopted at Nashik, provided that six additional pickers are hired before the December peak.
+
+=== REWRITE A ===
+Moving the warehouse from two 10-hour shifts to three 8-hour shifts means more handovers each day, which is a fair concern. The September trial at Nashik complicates it. Over four weeks, picking errors fell from 2.4% to 1.7%, which suggests shorter shifts cut fatigue-related mistakes. Overtime costs rose 11% over the same period, though, and that points to a third shift that was not fully staffed.
+
+Taken together, the results support adopting the three-shift pattern at Nashik, provided six additional pickers are hired before the December peak.
+
+=== REWRITE B ===
+Moving the warehouse from two 10-hour shifts to three 8-hour shifts means more handovers each day, and handovers are where things get dropped. That was the worry going in.
+
+The September trial at Nashik suggests it's smaller than feared. Over four weeks, picking errors fell from 2.4% to 1.7%, which fits the idea that shorter shifts cut fatigue-related mistakes. Overtime cost rose 11% over the same period, though, and the likely reason is that the third shift was not fully staffed.
+
+My recommendation is to adopt the three-shift pattern at Nashik, on one condition: hire six more pickers before the December peak.
+
+=== REWRITE C ===
+Moving the warehouse from two 10-hour shifts to three 8-hour shifts means more handovers each day, and that was my first worry. The September trial at Nashik cuts against it, though. Over four weeks, picking errors fell from 2.4% to 1.7%, which suggests shorter shifts reduce fatigue-related mistakes. Overtime costs rose 11% over the same period, which suggests the third shift wasn't fully staffed. So I'd adopt the three-shift pattern at Nashik, as long as we hire six more pickers before the December peak.
+
+=== REWRITE D ===
+Nashik should move to three 8-hour shifts, provided six additional pickers are hired before the December peak.
+
+The obvious objection is that three shifts instead of two 10-hour ones means more handovers per day. The September trial at Nashik suggests that cost is outweighed: over four weeks, picking errors fell from 2.4% to 1.7%, which points to shorter shifts reducing fatigue-related mistakes. The trial also showed a problem. Overtime costs rose 11% over the same period, which suggests the third shift was not fully staffed. The six extra hires are meant to fix that.

@@ -1,0 +1,26 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+At first glance, banning phones in classrooms appears to be a straightforward way to improve concentration. Upon closer examination, however, the question is more complicated than it seems. On the one hand, phones are a constant source of distraction, and removing them eliminates a temptation that few teenagers can resist on their own. On the other hand, phones are also a tool for looking things up, and a blanket ban treats every student as though they cannot be trusted with one. It follows that the strongest policy is neither a total ban nor total freedom. Taken together, these considerations suggest that phones should be put away during lessons by default, with teachers free to allow them for specific tasks.
+
+=== REWRITE A ===
+Banning phones in classrooms sounds like an easy way to help students concentrate, but I don't think it's that simple. Phones are a constant distraction, and few teenagers can resist one sitting in their pocket. They're also useful for looking things up, and a blanket ban assumes no student can be trusted with one. So I'd go with neither extreme. Phones stay put away during lessons by default, and teachers can allow them when a task needs one.
+
+=== REWRITE B ===
+Banning phones in classrooms looks like an easy way to get students concentrating. It's less simple than that. Phones are a constant distraction, and taking them away removes a temptation few teenagers can resist on their own. But a phone is also a way to look things up, and a blanket ban treats every student as someone who can't be trusted with one. So the best policy is neither a total ban nor total freedom. Phones should be put away during lessons by default, and teachers should be free to allow them for specific tasks.
+
+=== REWRITE C ===
+Phones should be put away during lessons by default, with teachers free to allow them for specific tasks. A total ban is the wrong call, and so is total freedom. Phones are a constant source of distraction, and taking them away removes a temptation few teenagers can resist on their own, so a ban does help concentration. But phones are also a tool for looking things up, and a blanket ban treats every student as though they can't be trusted with one.
+
+=== REWRITE D ===
+Banning phones in classrooms sounds like an easy way to help students concentrate. It's less simple than that. Phones are a constant distraction, and a ban removes a temptation most teenagers can't resist alone. But they're also how a student looks up a word or checks a date, and a blanket ban treats everyone as if they can't be trusted with one. Neither a total ban nor total freedom seems right to me. I'd have phones put away during lessons by default and let teachers allow them for specific tasks.

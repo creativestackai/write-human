@@ -1,0 +1,6 @@
+TEXT TO REWRITE:
+Rate Limiting
+
+It's worth noting that our API implements rate limiting to ensure fair usage and maintain optimal performance for all users. Each API key is limited to 100 requests per minute. When this limit is exceeded, the API will return a `429 Too Many Requests` response, which includes a `Retry-After` header indicating the number of seconds to wait before retrying.
+
+To handle rate limits gracefully, we strongly recommend implementing exponential backoff in your client. Start with a delay of 1 second and double it after each failed attempt, up to a maximum of 32 seconds. Additionally, it's crucial to cache responses wherever possible — doing so not only reduces the number of requests but also improves the overall responsiveness of your application.

@@ -1,0 +1,72 @@
+{
+  "human_quality_rank": ["B", "E", "A", "C", "D"],
+  "fidelity_rank": ["B", "E", "C", "D", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "Specifies that the original payment method was a card.",
+        "Says Daniel personally issued the refund.",
+        "Says the package arrived late, although the source does not confirm delivery.",
+        "Says the issue has been passed to the warehouse team for investigation.",
+        "Promises Daniel will resolve any problems reported after the refund arrives."
+      ],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to preventing a recurrence.",
+        "The unrestricted invitation to raise further questions or concerns.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Natural and direct, but several concrete additions undermine fidelity."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "Thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "Clear, personable customer service writing that preserves nearly all substantive content."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to preventing a recurrence is weakened to a desire.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Plain and credible, though the closing feels abrupt and the prevention assurance is weaker."
+    },
+    "D": {
+      "p_ai": 32,
+      "unsupported_specifics": [
+        "Says Daniel personally issued the refund.",
+        "Promises Daniel will resolve a missing refund or any other reported problem."
+      ],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to preventing a recurrence.",
+        "The explicit invitation to ask further questions.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Mostly conversational, but 'it lost time from there' is awkward and imprecise."
+    },
+    "E": {
+      "p_ai": 23,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The invitation to raise further questions or concerns.",
+        "Thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "Restrained and professional, with a natural apology but no invitation to follow up."
+    }
+  }
+}

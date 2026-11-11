@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["B", "C", "D", "E", "A"],
+  "fidelity_rank": ["C", "D", "E", "B", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Vivid and readable, but shows slight signs of artificial polishing in its staccato cadence and mixed tense shifts."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the source's natural conversational voice while sharpening the final punchline with a period."
+    },
+    "C": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, perfectly preserving its authentic colloquial voice."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, perfectly preserving its authentic colloquial voice."
+    },
+    "E": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, perfectly preserving its authentic colloquial voice."
+    }
+  }
+}

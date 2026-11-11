@@ -1,0 +1,87 @@
+{
+  "human_quality_rank": [
+    "A",
+    "B",
+    "D",
+    "C",
+    "E"
+  ],
+  "fidelity_rank": [
+    "E",
+    "A",
+    "D",
+    "B",
+    "C"
+  ],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that the marathon was completed recently"
+      ],
+      "register_ok": true,
+      "note": "Captures the writer's authentic voice and cadence with clean prose while preserving virtually all source facts."
+    },
+    "B": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "editorial judgment that 4:38 is 'not fast' and that author is fine with it",
+        "spending eight days googling whether people ever make the start line",
+        "running group keeping the author showing up just to watch",
+        "physiotherapist assigning dull knee exercises until the author wanted to scream",
+        "doing boring work until the knee came round",
+        "personal reflection of not being ready and stopping waiting"
+      ],
+      "dropped_facts": [
+        "that the marathon was completed recently",
+        "returning stronger than ever",
+        "foundational lessons of consistency, patience, and community",
+        "closing question asking what goal the reader is chasing"
+      ],
+      "register_ok": true,
+      "note": "Vivid and voice-rich writing, but fabricates extensive personal anecdotes and omits key source facts."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "editorial comment that the time was 'not fast, but I'll take it'",
+        "spending eight days googling whether they'd still make the start line",
+        "running group dragging author to Sunday meetups just to watch",
+        "physio figuring out what was actually wrong",
+        "keeping running slow and boring to reach race day",
+        "lesson that showing up most weeks beats a perfect plan",
+        "personal admission of being bad at asking for help"
+      ],
+      "dropped_facts": [
+        "that the marathon was completed recently",
+        "returning stronger than ever",
+        "foundational lessons of consistency, patience, and community",
+        "encouragement to take the first step today",
+        "closing question asking what goal the reader is chasing"
+      ],
+      "register_ok": true,
+      "note": "Reads conversationally like a real person, but invents scenes and entirely replaces the source's takeaways."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "statement that nothing done that month was clever",
+        "advising to start this week even if it's small (source specified taking the first step today)"
+      ],
+      "dropped_facts": [
+        "closing question asking what goal the reader is chasing"
+      ],
+      "register_ok": true,
+      "note": "Good, natural phrasing that mostly preserves the core facts, though it drops the ending question and adds minor flourish."
+    },
+    "E": {
+      "p_ai": 55,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains perfect fidelity to every claim, but the phrasing is stiff and reads like a formulaic AI paraphrase."
+    }
+  }
+}

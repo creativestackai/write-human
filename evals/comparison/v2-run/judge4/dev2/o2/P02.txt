@@ -1,0 +1,42 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Meet Tallyo, the all-in-one invoicing platform that seamlessly empowers modern teams to take control of their finances. Whether you're a solo freelancer or a growing agency, Tallyo offers a robust suite of intuitive tools designed to streamline your workflow, eliminate manual errors, and unlock new levels of productivity.
+
+Trusted by over 2,300 teams worldwide, Tallyo has been proven to reduce invoice processing time by 40%. With powerful automation, real-time reporting, and best-in-class security, Tallyo isn't just another invoicing tool — it's a game-changer for your business. Ready to transform the way you get paid? Start your free 14-day trial today.
+
+=== REWRITE A ===
+Tallyo is invoicing software for teams of any size, from a solo freelancer to a growing agency. It automates the repetitive parts of billing, so there are fewer manual errors to chase down, and its reports update in real time. Security is built in.
+
+More than 2,300 teams around the world use Tallyo, and it has been shown to cut invoice processing time by 40%. If you want to get paid with less hassle, you can try it free for 14 days.
+
+=== REWRITE B ===
+Tallyo is invoicing software for freelancers and growing agencies. You create an invoice, send it, and watch for the payment, all in one place, so nobody has to retype the same numbers into a spreadsheet afterward.
+
+More than 2,300 teams around the world use it, and they cut the time they spend processing invoices by 40%. Some of that comes from automation doing the repetitive bits. Some of it is reporting that updates as money comes in, so you can see where you stand without waiting for month-end. Your data is kept secure, too.
+
+If you'd like to see how it fits the way you work, the trial is free for 14 days.
+
+=== REWRITE C ===
+Tallyo is invoicing software for teams of any size, from a solo freelancer to a growing agency. It automates the manual parts of invoicing, so there are fewer mistakes to catch, and it comes with real-time reporting and security features.
+
+Over 2,300 teams use it, and it has been shown to cut invoice processing time by 40%. You can try it free for 14 days.
+
+=== REWRITE D ===
+Tallyo is invoicing software for people who get paid by invoice and would rather not spend their evenings on it. Solo freelancers use it. So do agencies that have outgrown the spreadsheet.
+
+It automates the repetitive parts, which means fewer typos and wrong totals going out under your name. Reports update as things happen, so you can see what's paid and what isn't without asking anyone. And your clients' billing details sit behind security you shouldn't have to think about.
+
+More than 2,300 teams use Tallyo, and they've cut invoice processing time by 40%. If you read only one number, that's the one.
+
+Try it free for 14 days.

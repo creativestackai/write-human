@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["B", "C", "A", "E", "D"],
+  "fidelity_rank": ["C", "A", "B", "E", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 16,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and natural, though slightly more emphatic than the source."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "Makes Monday morning a definite fallback decision rather than an option."
+      ],
+      "dropped_facts": [
+        "QA completed its testing pass yesterday."
+      ],
+      "register_ok": true,
+      "note": "The most direct team-channel reply, with a small loss of precision."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural, clear, and faithful to the source's timing and conditional recommendation."
+    },
+    "D": {
+      "p_ai": 24,
+      "unsupported_specifics": [
+        "Promises a Thursday evening update to Dana.",
+        "Makes Monday morning a definite fallback decision rather than an option."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Readable but unnecessarily staged and emphatic, with an invented follow-up commitment."
+    },
+    "E": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Turns the expected Thursday afternoon review and merge into a required deadline."
+      ],
+      "dropped_facts": [
+        "QA must re-verify the fix on Thursday for the Friday release to proceed."
+      ],
+      "register_ok": true,
+      "note": "Conversational and readable, but its compressed schedule loses an important condition."
+    }
+  }
+}

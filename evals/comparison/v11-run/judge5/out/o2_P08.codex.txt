@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["B", "C", "D", "E", "A"],
+  "fidelity_rank": ["C", "D", "E", "B", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and conversational, though the extra sentence breaks make the storytelling feel slightly more edited."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves the distinctive spoken voice while improving the final sentence boundary."
+    },
+    "C": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source, with specific details and a convincing conversational rhythm."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source, with specific details and a convincing conversational rhythm."
+    },
+    "E": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source, with specific details and a convincing conversational rhythm."
+    }
+  }
+}

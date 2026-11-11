@@ -1,0 +1,88 @@
+{
+  "human_quality_rank": ["D", "E", "B", "C", "A"],
+  "fidelity_rank": ["D", "C", "A", "E", "B"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Describes the remote-work setting as one where nobody shares a room, which the source does not establish."
+      ],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate amid rapid digital change.",
+        "Organizations can realize their distributed teams' full potential and thrive in the future of work; 'do good work' weakens this claim."
+      ],
+      "register_ok": true,
+      "note": "Mostly natural and clear, though the opening blurs employee benefits with employers' hiring opportunities."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Most arguments about remote work go wrong by discussing only its benefits or only its drawbacks.",
+        "Remote work lets people work when they are sharpest.",
+        "Remote work eliminates commuting.",
+        "Companies can hire the best person for a job, rather than merely access a global talent pool.",
+        "The hypothetical employee lives eleven time zones away.",
+        "A message is misinterpreted and left unresolved for a day.",
+        "Someone spends a whole week without talking to anyone except through a screen.",
+        "Unplanned hallway conversations are the hardest aspect of company culture to retain.",
+        "Hallway conversations reveal how a team really feels about a project.",
+        "Tools help only after trust, transparency, and accountability are established.",
+        "A trusting team using a shared document will outperform a distrustful team using a dozen apps."
+      ],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate amid rapid digital change.",
+        "Improved work-life balance is not explicitly retained.",
+        "Strong communication practices, alongside appropriate tools, help distributed teams realize their full potential and organizations thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "The opinionated voice feels personal, but the extended examples and polished contrasts make it somewhat performative."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Describes the remote-work setting as one where nobody shares a room.",
+        "Tools and communication habits help only once trust, transparency, and accountability are established."
+      ],
+      "dropped_facts": [
+        "The framing of rapid change in the digital landscape.",
+        "Organizations can thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Clear and cohesive, although the closing prerequisite adds a certainty the source does not contain."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Contrasts global hiring with hiring from only one city, a restriction the source does not establish."
+      ],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate amid rapid digital change.",
+        "Organizations can realize their distributed teams' full potential and thrive in the future of work; 'work well' weakens this claim."
+      ],
+      "register_ok": true,
+      "note": "The most consistently clear and natural version, with restrained language and little unnecessary embellishment."
+    },
+    "E": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Companies can hire the best person for a role rather than merely access a global talent pool.",
+        "Office hiring is limited to people within forty minutes of the workplace.",
+        "Messages specifically get misread.",
+        "People go days without talking to anyone.",
+        "The company's culture took years to build.",
+        "Company culture deteriorates when nobody shares a room, rather than simply becoming harder to maintain.",
+        "Plenty of offices operate on distrust, while plenty of remote teams operate beautifully.",
+        "Tools help only a little, and good habits help more.",
+        "Writing things down, answering promptly, and making phone calls during tense exchanges are specifically effective practices.",
+        "No software can resolve the problem without trust."
+      ],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate amid rapid digital change.",
+        "Organizations can realize their distributed teams' full potential and thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "A conversational, recognizable voice, but its confident examples and prescriptions substantially exceed the source."
+    }
+  }
+}

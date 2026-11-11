@@ -1,0 +1,40 @@
+{
+  "human_quality_rank": ["A", "C", "B"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "offering to write the ticket today"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains complete factual fidelity in a natural, collaborative engineering voice with only a minor timeline addition."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "invoice export job reads currency field from customer record",
+        "currency field can be null for accounts created before 2021",
+        "export silently defaults to USD when currency is null",
+        "silent default produces incorrect totals"
+      ],
+      "register_ok": true,
+      "note": "Avoids any unsupported claims but drops the entire root-cause explanation, leaving the remaining metrics disjointed."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "claim that nobody from other teams will look at the schema change in this PR",
+        "committing to open the ticket today",
+        "suggesting Priya might block the PR until the migration lands",
+        "asserting that other services need a say first"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves all source data and technical facts but invents speculative team politics and an unprompted blocking scenario."
+    }
+  }
+}

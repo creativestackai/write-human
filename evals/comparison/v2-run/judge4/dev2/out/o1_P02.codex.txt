@@ -1,0 +1,85 @@
+{
+  "human_quality_rank": ["C", "D", "A", "B"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Suitability for teams of any size extends beyond the source's stated audience of solo freelancers and growing agencies."
+      ],
+      "dropped_facts": [
+        "The platform is all-in-one.",
+        "The teams using Tallyo are worldwide.",
+        "The tools are described as robust and intuitive.",
+        "The platform helps teams control their finances, streamline workflows, and increase productivity.",
+        "The source claims elimination of manual errors; the rewrite promises only fewer mistakes.",
+        "Security is described as best-in-class.",
+        "The source claims business-changing impact and a transformation in how users get paid."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, though somewhat generic and compressed."
+    },
+    "B": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "The audience spends, or risks spending, evenings on invoicing.",
+        "Solo freelancers and agencies are asserted to be actual users, whereas the source identifies them as intended customers.",
+        "The agencies using Tallyo have outgrown spreadsheets.",
+        "Automation specifically prevents typos and incorrect totals on outgoing invoices.",
+        "Reports show which invoices are paid and unpaid without needing to ask anyone.",
+        "Security specifically protects clients' billing details and requires no attention from users.",
+        "The 40% reduction is attributed collectively to the more than 2,300 teams, whereas the source states adoption and proven reduction separately."
+      ],
+      "dropped_facts": [
+        "The platform is all-in-one.",
+        "The teams using Tallyo are worldwide.",
+        "Agencies are described as growing.",
+        "The tools are described as robust and intuitive.",
+        "The platform explicitly helps teams control their finances and unlock productivity gains.",
+        "The source claims elimination of manual errors; the rewrite promises only fewer particular errors.",
+        "Security is described as best-in-class.",
+        "The source claims business-changing impact and a transformation in how users get paid."
+      ],
+      "register_ok": true,
+      "note": "Lively but overworked, with conspicuous fragments and a forced aside about the statistic."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Suitability for teams of any size extends beyond the source's stated audience of solo freelancers and growing agencies."
+      ],
+      "dropped_facts": [
+        "The platform is all-in-one.",
+        "The tools are described as robust and intuitive.",
+        "The platform explicitly helps teams control their finances and unlock productivity gains.",
+        "The source claims elimination of manual errors; the rewrite promises only fewer errors.",
+        "Security is described as best-in-class.",
+        "The source claims business-changing impact and a transformation in how users get paid."
+      ],
+      "register_ok": true,
+      "note": "Natural, economical product copy with a steady voice and little visible effort to sound conversational."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Users can create invoices, send them, and monitor payments within the platform.",
+        "The platform removes the need for anyone to retype invoice numbers into a spreadsheet.",
+        "The 40% reduction is attributed collectively to the more than 2,300 teams, whereas the source states adoption and proven reduction separately.",
+        "Automation and reporting are each identified as causes of the measured 40% reduction.",
+        "Reporting specifically updates as payments arrive.",
+        "Users can assess their financial position without waiting for month-end.",
+        "Security specifically covers users' data, whereas the source does not identify what its security protects."
+      ],
+      "dropped_facts": [
+        "The source specifically includes solo freelancers.",
+        "The tools are described as robust and intuitive.",
+        "The source explicitly claims elimination of manual errors and increased productivity.",
+        "Security is described as best-in-class.",
+        "The source claims business-changing impact and a transformation in how users get paid."
+      ],
+      "register_ok": true,
+      "note": "Readable and plausibly human, but its concrete explanation invents capabilities and causal details."
+    }
+  }
+}

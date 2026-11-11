@@ -1,0 +1,75 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["D", "C", "B", "A"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Being a UX designer still feels strange to write.",
+        "Drinking a lot of coffee during the bootcamp.",
+        "Not recommending the schedule but being willing to repeat it.",
+        "Starting the first design job in January; the source dates accepting it.",
+        "Explicitly calculating the pay cut and signing.",
+        "Nobody warning the writer how much teaching overlapped with design.",
+        "The specific account of diagnosing confusion, explaining differently, and watching faces as prior experience relevant to design.",
+        "Running the equivalent of a usability test every day; the sample supports teaching Year 6 but not this specific account.",
+        "The advice to calculate a pay cut first and be honest about it."
+      ],
+      "dropped_facts": [
+        "Explicit excitement about announcing the transition.",
+        "Personal growth during the transition.",
+        "The explicit lesson that it is never too late to reinvent yourself.",
+        "The encouragement to trust the process.",
+        "The closing question about what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The closest match to the sample's wry personal voice, but its vividness depends heavily on invented experience."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The explicit personal report that the bootcamp schedule was tiring.",
+        "Starting the first design job in January; the source dates accepting it.",
+        "The pay cut emotionally stinging.",
+        "Encouraging readers to trust themselves rather than the process."
+      ],
+      "dropped_facts": [
+        "Explicit excitement about announcing the transition.",
+        "Personal growth during the transition.",
+        "The encouragement to trust the process.",
+        "The closing question about barriers to changing careers is replaced with a question about postponement."
+      ],
+      "register_ok": true,
+      "note": "Natural and conversational, though its emotional additions and closing question move beyond the source."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Starting the first design job in January; the source dates accepting it."
+      ],
+      "dropped_facts": [
+        "Explicit excitement about announcing the transition.",
+        "Personal growth during the transition.",
+        "The encouragement to trust the process."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, with a credible conversational rhythm and strong preservation of the source."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Transferable skills carrying further than the reader would expect; the source makes no claim about expectations."
+      ],
+      "dropped_facts": [
+        "Explicit excitement about announcing the transition.",
+        "The broader characterization of the journey as involving challenges and personal growth.",
+        "The direct encouragement to readers considering a career change.",
+        "The encouragement to trust the process and take the leap.",
+        "The closing question about what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Clean and factually restrained, but less distinctive in voice and incomplete as an encouraging personal post."
+    }
+  }
+}

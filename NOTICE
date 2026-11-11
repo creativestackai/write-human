@@ -1,0 +1,15 @@
+write-human
+Copyright 2026 Sarthhak Kaluucha
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Acknowledgements
+
+The fidelity rules added in 1.1.0 (keep every supported claim, invent nothing,
+audit for what was added or dropped) follow the approach of blader/humanizer
+(https://github.com/blader/humanizer, MIT License). The wording and examples
+in this repository are original to write-human; no text was copied from that
+repository.
+
+The pattern catalog is informed by Wikipedia's "Signs of AI writing"
+(https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by
+WikiProject AI Cleanup (CC BY-SA 4.0).

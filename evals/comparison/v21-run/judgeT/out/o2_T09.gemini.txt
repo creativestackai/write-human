@@ -1,0 +1,43 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "That the recommended actions allow you to unlock your full potential."
+      ],
+      "strength_changes": [
+        "'pour their time into grammar' is slightly weaker than 'focusing exclusively on grammar'."
+      ],
+      "register_ok": true,
+      "note": "Features natural phrasing, but feels structurally disjointed by placing the conclusion in the opening before rebooting with the introductory premise."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "That language learning requires 'the right mindset' (retains only dedication and patience).",
+        "That the recommended actions allow you to unlock your full potential."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Has the most convincing human voice, rhythm, and rhetorical flow, reading like authentic advice."
+    },
+    "C": {
+      "p_ai": 55,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "That adult language learning requires dedication, patience, and the right mindset.",
+        "That the recommended actions allow you to unlock your full potential."
+      ],
+      "strength_changes": [
+        "'Talent matters less than persistence' weakens the source's absolute claim that success lies not in talent, but in persistence."
+      ],
+      "register_ok": true,
+      "note": "Mirrors the source almost sentence-by-sentence with superficial synonym swaps and drops the core requirement triad."
+    }
+  }
+}

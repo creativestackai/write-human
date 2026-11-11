@@ -1,0 +1,1 @@
+The worker rate-limits its calls to the upstream API with a token bucket. It refills at 20 tokens per second and holds at most 100. When the bucket is empty the worker pauses; it doesn't drop jobs. If the API returns a `429`, the worker reads the `Retry-After` header and backs off for that long. Both behaviours keep the system stable.

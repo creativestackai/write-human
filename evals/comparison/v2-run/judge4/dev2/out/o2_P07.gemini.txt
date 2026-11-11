@@ -1,0 +1,57 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["B", "C", "D", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Claim that the control group 'got nothing' rather than an unspecified control protocol",
+        "Restriction of screen-time reduction to 'putting screens away at night'",
+        "Methodological commentary that self-reported data is held 'more loosely'",
+        "Specific call for 'replication with longer follow-up'"
+      ],
+      "dropped_facts": [
+        "Explicit characterization of the GPA difference as statistically significant (p-value retained, but 'significantly' omitted)",
+        "The degree of sleep quality improvement was 'marked' ('improved markedly' reduced to 'sleeping better')",
+        "The finding underscored the pivotal role of sleep in academic success"
+      ],
+      "register_ok": false,
+      "note": "Reads distinctly human and conversational, but lapses into an inappropriately casual register for empirical science and invents multiple methodological specifics."
+    },
+    "B": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Underscoring the pivotal role of sleep in academic success",
+        "Paving the way for future research in this critical area"
+      ],
+      "register_ok": true,
+      "note": "Maintains high fidelity and appropriate formal tone, but the sentence-by-sentence active voice conversion feels formulaic and machine-generated."
+    },
+    "C": {
+      "p_ai": 85,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The degree of sleep quality improvement ('markedly' softened to 'as well')",
+        "Paving the way for future research in this critical area"
+      ],
+      "register_ok": true,
+      "note": "Reads like a mechanical synonym-swapped paraphrase designed to disguise the source rather than genuine human writing."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Specifying 'objective sleep data' as the necessary next research step",
+        "Claiming the grade result alone is sufficient to argue for curriculum integration"
+      ],
+      "dropped_facts": [
+        "The degree of sleep quality improvement ('markedly' softened to 'as well')",
+        "Underscoring the pivotal role of sleep in academic success",
+        "General call for future research (replaced by a specific call for objective sleep measures)"
+      ],
+      "register_ok": true,
+      "note": "Reads like an articulate researcher writing with authentic critical voice and natural rhythm while keeping an appropriate academic register."
+    }
+  }
+}

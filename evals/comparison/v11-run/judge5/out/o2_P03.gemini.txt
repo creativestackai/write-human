@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C", "E"],
+  "fidelity_rank": ["E", "D", "A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clean, natural technical prose that preserves all source information while eliminating robotic boilerplate."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Warning against retrying in a tight loop ('Don't retry in a tight loop')",
+        "Claim that caching causes the client to 'hit the limit less often'"
+      ],
+      "dropped_facts": [
+        "Maintaining optimal performance for all users as a rationale for rate limiting"
+      ],
+      "register_ok": true,
+      "note": "Displays a distinct, highly authentic engineer voice but introduces unsupported advice and omits the performance rationale."
+    },
+    "C": {
+      "p_ai": 32,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rate limiting is implemented to ensure fair usage and maintain optimal performance for all users"
+      ],
+      "register_ok": true,
+      "note": "Crisp and concise, but completely drops the source's explanation of why rate limiting exists."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Accurate and clear with helpful derived intervals, though slightly segmented in flow."
+    },
+    "E": {
+      "p_ai": 72,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains complete fidelity but reads like a stiff, formulaic line-by-line machine rewrite."
+    }
+  }
+}

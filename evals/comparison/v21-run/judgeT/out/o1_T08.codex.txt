@@ -1,0 +1,47 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["B", "C", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Omits the stated purpose of the new features: improving users’ workflow.",
+        "Omits the description of dark mode as sleek."
+      ],
+      "strength_changes": [
+        "Changes the migration request from 'as soon as possible' to 'before then,' weakening its urgency.",
+        "Removes the promotional assessment that the release is a 'true game-changer.'"
+      ],
+      "register_ok": true,
+      "note": "Clear, natural release copy, but the migration wording relaxes the original request."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Omits the stated purpose of the new features: improving users’ workflow.",
+        "Omits the description of dark mode as sleek."
+      ],
+      "strength_changes": [
+        "Removes the promotional assessment that the release is a 'true game-changer.'"
+      ],
+      "register_ok": true,
+      "note": "Direct, readable release copy that preserves the operational details and migration urgency."
+    },
+    "C": {
+      "p_ai": 23,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Omits the stated purpose of the new features: improving users’ workflow.",
+        "Omits the description of dark mode as sleek."
+      ],
+      "strength_changes": [
+        "Removes the promotional assessment that the release is a 'true game-changer.'"
+      ],
+      "register_ok": true,
+      "note": "Mostly natural, but 'a dark mode' and the isolated deadline fragment make the rhythm less smooth."
+    }
+  }
+}

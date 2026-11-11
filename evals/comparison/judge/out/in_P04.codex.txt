@@ -1,0 +1,54 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Harborline is a leading freight forwarding company.",
+        "The company has played a pivotal role in shaping European supply chains.",
+        "The company has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion marked a significant milestone in its growth.",
+        "The company's results demonstrate enduring resilience in a dynamic market.",
+        "Experts agree that Harborline's strategic vision continues to set the industry standard.",
+        "The source presents the company's future as bright and describes the company as remarkable."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, though 'opened' is less precise than 'expanded' and 'booked' changes the reporting language."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Harborline is a leading freight forwarding company.",
+        "The company has played a pivotal role in shaping European supply chains.",
+        "The company has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion marked a significant milestone in its growth.",
+        "The company's results demonstrate enduring resilience in a dynamic market.",
+        "Experts agree that Harborline's strategic vision continues to set the industry standard.",
+        "The source presents the company's future as bright and describes the company as remarkable."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained company-profile prose preserves the concrete details most precisely but drops the source's promotional claims."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Harborline is a leading freight forwarding company.",
+        "The company has played a pivotal role in shaping European supply chains.",
+        "The company has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion marked a significant milestone in its growth.",
+        "The company's results demonstrate enduring resilience in a dynamic market.",
+        "Experts agree that Harborline's strategic vision continues to set the industry standard.",
+        "The source presents the company's future as bright and describes the company as remarkable."
+      ],
+      "register_ok": false,
+      "note": "Forced conversational phrasing makes the profile awkward, and 'Germany and Poland came in 2016' obscures the expansion."
+    }
+  }
+}

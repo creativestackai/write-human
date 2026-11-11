@@ -1,0 +1,40 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Crisp, natural, and completely faithful to the source with zero invented details."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Retyping numbers into a spreadsheet after invoicing",
+        "Reports updating specifically as money comes in to avoid waiting for month-end"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Engaging and conversational, but introduces unsupported workflow details about spreadsheets and month-end reporting."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Spending evenings on invoicing",
+        "Agencies that have outgrown spreadsheets",
+        "Typos and wrong totals going out under your name",
+        "Seeing what is paid without asking anyone",
+        "Clients' billing details specifically sitting behind security",
+        "Editorializing: 'If you read only one number, that's the one'"
+      ],
+      "dropped_facts": [
+        "Worldwide reach of the 2,300 teams"
+      ],
+      "register_ok": true,
+      "note": "Voice-driven and punchy, but invents multiple concrete details and leans on a slightly gimmicky tone."
+    }
+  }
+}

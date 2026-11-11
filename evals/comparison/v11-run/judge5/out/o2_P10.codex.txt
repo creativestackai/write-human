@@ -1,0 +1,98 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C", "E"],
+  "fidelity_rank": ["E", "B", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Syntax is easy and can be looked up in ten seconds.",
+        "Breaking messy problems into computer-followable pieces takes longer and underpins every other programming skill.",
+        "The narrator personally understands the attraction of memorizing commands.",
+        "Flashcards and cheat sheets feel like progress.",
+        "Memorizing commands results in recognizing a for loop without knowing when to use one and getting stuck when a problem differs from a tutorial.",
+        "Bugs account for most learning.",
+        "The automated chore is something the reader is tired of doing manually.",
+        "Unexpected program behavior is annoying and forces the programmer to examine actual behavior against assumptions.",
+        "The gap between actual and assumed program behavior accounts for most of what there is to learn.",
+        "Developers who become good struggle constantly and do not interpret struggle as a verdict on themselves."
+      ],
+      "dropped_facts": [
+        "Analyzing data as an example of programming work.",
+        "The journey is rewarding.",
+        "Learning requires patience, persistence, and practice.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "Concrete, conversational writing has a convincing voice but substantially expands the source."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Learning to think constitutes most of learning to code, with syntax the smaller part.",
+        "Each bug specifically teaches how the program really behaves."
+      ],
+      "dropped_facts": [
+        "Mastery as the eventual destination is weakened to being good at coding.",
+        "Successful developers embrace struggle, rather than simply continuing through it."
+      ],
+      "register_ok": true,
+      "note": "Plain, fluent prose removes much of the motivational gloss while preserving nearly all the substance."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Syntax is the smaller part of learning to code and learning to think is the bigger part.",
+        "The reader will fail along the way."
+      ],
+      "dropped_facts": [
+        "The explicit characterization of programming as problem-solving.",
+        "Persistence as an explicit requirement.",
+        "The direct encouragement not to fear failure.",
+        "Mastery as the eventual destination is weakened to being good at coding."
+      ],
+      "register_ok": true,
+      "note": "Natural phrasing helps, though several ideas are softened or left implicit."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The narrator has personal experience starting to code and initially expected remembering syntax to be the hard part.",
+        "The narrator found breaking messy problems into smaller pieces to be the hard part.",
+        "Syntax can be looked up in ten seconds, whereas thinking cannot be looked up.",
+        "The narrator wasted substantial early time memorizing commands and retained almost none of them.",
+        "The narrator retained concepts about loop behavior and function inputs.",
+        "Once the narrator understood concepts, commands came naturally.",
+        "The data being analyzed amounts to a spreadsheet's worth.",
+        "The automated chore is boring.",
+        "The reader will get stuck and find it annoying.",
+        "The narrator admires particular developers who get stuck constantly, do not take it personally, and keep going.",
+        "A bug mostly indicates that the programmer's mental model is incorrect.",
+        "The late-night scenario at 11pm.",
+        "A third failed attempt teaches more than a first successful run."
+      ],
+      "dropped_facts": [
+        "Programming is the language of problem-solving.",
+        "Every bug is a lesson.",
+        "Many beginners make the mistake of memorizing commands.",
+        "The learning journey is rewarding.",
+        "Learning requires patience, persistence, and practice as a general principle.",
+        "The most successful developers are distinguished by embracing struggle.",
+        "The direct encouragement not to fear failure.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "A vivid personal voice is undermined as a rewrite by extensive invented autobiography and advice."
+    },
+    "E": {
+      "p_ai": 65,
+      "unsupported_specifics": [
+        "Learning to think constitutes most of learning to code.",
+        "Syntax is easy."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "The closest preservation of the source also retains its generic motivational cadence and familiar slogans."
+    }
+  }
+}

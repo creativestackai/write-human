@@ -1,0 +1,47 @@
+{
+  "human_quality_rank": ["B", "D", "A", "C"],
+  "fidelity_rank": ["D", "C", "B", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Passing the issue to the warehouse team to investigate",
+        "Refunding to a card specifically rather than original payment method",
+        "Asserting that the package has already arrived late"
+      ],
+      "dropped_facts": [
+        "Commitment to prevent the error from happening again",
+        "Thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Has a lively, natural customer support voice but hallucinates internal follow-up actions and drops key closing sentiments."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Commitment to ensure the issue does not happen again",
+        "Thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Reads unmistakably like a real human agent with natural phrasing, though it omits recurrence prevention and gratitude."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Offer to contact support with further questions or concerns"
+      ],
+      "register_ok": true,
+      "note": "Clear and mostly faithful, but the abrupt, staccato sentences feel slightly mechanical and drop the invitation to reply."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains an authentic, polished human tone while preserving every source fact without inventing any details."
+    }
+  }
+}

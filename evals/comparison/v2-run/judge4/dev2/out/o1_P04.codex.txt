@@ -1,0 +1,76 @@
+{
+  "human_quality_rank": ["A", "C", "D", "B"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The company is a leading freight forwarder.",
+        "It played a pivotal role in shaping European supply chains.",
+        "Its location is in the heart of the port.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion marked a significant milestone in its growth.",
+        "Its results demonstrated enduring resilience in a dynamic market.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "The company's future looks bright, and it is described as remarkable."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural corporate prose that preserves the concrete details but removes the source's promotional claims."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Rotterdam is specifically identified as the company's headquarters.",
+        "The company is a leading freight forwarder.",
+        "It played a pivotal role in shaping European supply chains.",
+        "Its location is in the heart of the port.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion marked a significant milestone in its growth.",
+        "Its results demonstrated enduring resilience in a dynamic market.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "The company's future looks bright, and it is described as remarkable."
+      ],
+      "register_ok": false,
+      "note": "The conversational filler and elliptical expansion sentence feel strained for a company profile."
+    },
+    "C": {
+      "p_ai": 22,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The company is a leading freight forwarder.",
+        "It played a pivotal role in shaping European supply chains.",
+        "Its location is in the heart of the port.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion marked a significant milestone in its growth.",
+        "Its results demonstrated enduring resilience in a dynamic market.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "The company's future looks bright, and it is described as remarkable."
+      ],
+      "register_ok": true,
+      "note": "Plain and precise, with slightly heavier wording than A and the closest preservation of the source's factual terminology."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Rotterdam is specifically identified as the company's headquarters.",
+        "The company is a leading freight forwarder.",
+        "It played a pivotal role in shaping European supply chains.",
+        "Its location is in the heart of the port.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion marked a significant milestone in its growth.",
+        "The €310 million revenue figure was reported by the company.",
+        "Its results demonstrated enduring resilience in a dynamic market.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "The company's future looks bright, and it is described as remarkable."
+      ],
+      "register_ok": true,
+      "note": "Readable and conversational, though 'working in' is vague and 'had booked' loses the source's reporting qualification."
+    }
+  }
+}

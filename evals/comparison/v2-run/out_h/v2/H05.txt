@@ -1,0 +1,5 @@
+Friday still works, as long as the INR fix is merged and QA re-verifies it on Thursday. The fix is ready and should be reviewed and merged by Thursday afternoon.
+
+QA finished their pass yesterday and found two bugs. One is a cosmetic alignment issue on mobile Safari, which can ship as is. The other is that INR prices on the annual plan are rounding wrong, so a customer in India would see 41,988 instead of 41,990. I don't think we should ship a pricing page with that, so it gets fixed first.
+
+If anything slips, we can go Monday morning, still before the webinar.

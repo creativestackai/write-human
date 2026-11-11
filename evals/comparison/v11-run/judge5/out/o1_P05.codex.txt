@@ -1,0 +1,81 @@
+{
+  "human_quality_rank": ["A", "B", "D", "E", "C"],
+  "fidelity_rank": ["E", "B", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "The narrator stood in the shop while questioning the decision.",
+        "The weekly numbers stopped deteriorating; stabilized revenue does not establish that losses or other financial measures improved.",
+        "Customers liked knowing their bread was sorted.",
+        "The narrator would have slept better during the first three months if the subscription had started sooner."
+      ],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The journey is described as incredible and involving growth and invaluable lessons.",
+        "Resilience, adaptability, and listening to customers are identified as keys to success.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Natural rhythm and a distinctive voice make this convincing, but several personal details are invented."
+    },
+    "B": {
+      "p_ai": 24,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The journey is described as incredible and involving growth and invaluable lessons.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Plain, credible writing preserves the central story and lessons without manufacturing personality."
+    },
+    "C": {
+      "p_ai": 39,
+      "unsupported_specifics": [
+        "Customers had communicated what they wanted before the narrator recognized it."
+      ],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The journey is described as incredible and involving growth and invaluable lessons.",
+        "Resilience and adaptability are identified as keys to success.",
+        "The explicit advice that the best time to start is now is softened to not waiting too long.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Readable but less distinctive, with an unsupported explanation inserted into the customer lesson."
+    },
+    "D": {
+      "p_ai": 29,
+      "unsupported_specifics": [
+        "The narrator sat in the shop after closing while questioning the decision.",
+        "The narrator almost did not offer the subscription.",
+        "The numbers stopped bleeding for the first time; stabilized revenue does not establish that financial losses ended.",
+        "Customers wanted the same loaf every week without having to think about it.",
+        "The narrator had been too busy selling customers everything else to notice their preferences.",
+        "The narrator personally wishes they had started earlier."
+      ],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The journey is described as incredible and involving growth and invaluable lessons.",
+        "Resilience and adaptability are explicitly identified as keys to success.",
+        "The explicit general advice that the best time to start is now."
+      ],
+      "register_ok": true,
+      "note": "The conversational voice fits the sample, but the narrative relies heavily on invented scenes and motives."
+    },
+    "E": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The journey is described as incredible and involving growth and invaluable lessons."
+      ],
+      "register_ok": true,
+      "note": "Clear and faithful, though the motivational ending retains the source's generic promotional feel."
+    }
+  }
+}

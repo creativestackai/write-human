@@ -1,6 +1,8 @@
 # Worked examples
 
-Four full rewrites in different registers, each showing the whole loop: diagnosis, rewrite, the adversarial self-audit, and the final. The last one is the falsely-flagged non-native-English case the skill is really for. Study the self-audit step. It is what separates a real humanize pass from a word swap.
+Five rewrites in different registers. Every one obeys the rule that matters most: **the rewrite contains nothing the draft did not already say.** Notice what each "Flags" line does. Where a real detail from the author would improve the piece, the skill asks for it. It never makes one up.
+
+Each example shows the tells, the rewrite, and the audit (what still reads as AI, and what was added or dropped).
 
 ---
 
@@ -9,25 +11,19 @@ Four full rewrites in different registers, each showing the whole loop: diagnosi
 **Before:**
 > In today's fast-paced digital landscape, businesses are constantly seeking innovative solutions to streamline their operations. Our cutting-edge platform leverages the power of AI to foster collaboration, enhance productivity, and unlock new opportunities for growth. It's not just a tool, it's a partner in your journey. Whether you're a startup or an enterprise, our comprehensive suite of features empowers your team to achieve more. Experience the seamless integration that transforms how you work. The future of productivity is here.
 
-**Diagnosis:**
-- Sweeping opener ("In today's fast-paced digital landscape")
-- Dense AI lexicon: streamline, cutting-edge, leverages, foster, enhance, unlock, comprehensive, seamless, empowers, transforms
-- Negative parallelism ("not just a tool, it's a partner")
-- Rule of three ("foster collaboration, enhance productivity, and unlock opportunities")
-- Zero specifics, zero voice, no actual claim about what the product does
-- Generic upbeat closer ("The future of productivity is here")
-- Even rhythm throughout
+**Tells:** sweeping opener; AI lexicon (streamline, cutting-edge, leverages, foster, enhance, unlock, comprehensive, empowers, seamless); staged contrast ("not just a tool, it's a partner"); forced triad; generic send-off ("The future of productivity is here"); even rhythm; no concrete claim.
 
 **Rewrite:**
-> Most teams don't need another tool. They need to stop losing two hours a day to the same handful of repetitive tasks. That is the thing we actually fix. Connect your stack, and the busywork that used to eat your mornings (chasing approvals, copy-pasting between apps, re-typing the same updates) mostly just stops. Startups use it to skip hiring an ops person too early. Bigger teams use it to claw back the hours nobody admits they're losing. You will know it's working when your Monday doesn't start with forty minutes of admin.
+> Our platform uses AI to help teams work together and get more done. It suits startups and enterprises alike, and it fits in with the tools you already use. It won't change what your team does. It should make doing it quicker.
 
-**What still reads as AI?**
-- "claw back the hours nobody admits they're losing" is a touch slogan-y
-- The rhythm is good but the middle sentence runs long and could use a break for contrast
-- "Connect your stack" is slightly jargon-flat
+**Audit.**
+- *Still AI?* The last two sentences are a clean pair; "It should make doing it quicker" is a hedge I added. Dropping the pair.
+- *Added or dropped?* "It won't change what your team does" is **new** (the draft never said it). Removed. "Tools you already use" is supported by "seamless integration." "Quicker" restates "enhance productivity."
 
 **Final:**
-> Most teams don't need another tool. They need to stop losing two hours a day to the same repetitive junk. That's what we fix. You plug in the apps you already use, and the busywork that used to eat your mornings mostly stops: chasing approvals, copy-pasting between tabs, re-typing the same status update for the third time. Smaller teams use it to put off hiring an ops person. Bigger ones use it to recover hours they'd stopped noticing. You'll know it's working the first Monday you don't open your laptop to forty minutes of admin.
+> Our platform uses AI to help teams work together and get more done. It suits startups and enterprises alike, and it fits in with the tools you already use.
+
+**Flags:** The draft states no feature, result, or customer. A single real example (what the platform does, and what changed for someone) would do more than any rewording. I have not invented one.
 
 ---
 
@@ -36,87 +32,92 @@ Four full rewrites in different registers, each showing the whole loop: diagnosi
 **Before:**
 > Caching is a crucial component of modern application architecture. By leveraging a robust caching layer, developers can significantly enhance performance and reduce latency. It is important to note that caching serves as a vital mechanism for improving scalability. Furthermore, an effective caching strategy not only reduces database load but also improves the overall user experience, ensuring that applications remain responsive under heavy traffic.
 
-**Diagnosis:**
-- AI lexicon: crucial, leveraging, robust, enhance, vital, effective
-- Copula avoidance ("caching serves as a vital mechanism") instead of plain "is"
-- Transition padding ("It is important to note that," "Furthermore")
-- Negative parallelism ("not only reduces load but also improves experience")
-- Superficial "-ing" tail ("ensuring that applications remain responsive")
-- No concrete detail: what kind of cache, how much latency, when it bites you
-- Note: technical writing is also where humans get *falsely* flagged, so the goal here is to keep it precise but add the variance and concreteness that real engineers write with
+**Tells:** AI lexicon (crucial, leveraging, robust, enhance, vital); "serves as" for "is"; transition padding; staged contrast ("not only… but also"); "-ing" rider ("ensuring that…"); no numbers or concrete case.
 
 **Rewrite:**
-> A cache is just a copy of an answer you already computed, kept somewhere fast so you don't have to compute it again. The win is obvious when a query is expensive and the answer rarely changes: a product page that hits the database on every load might take 200ms, but serve it from Redis and you're looking at 2 to 5ms. The catch is that caches go stale. The hard part of caching was never adding the cache. It's deciding when to throw the old answer away.
+> A caching layer makes an application faster and cuts latency. It also takes load off the database, which helps the application scale and stay responsive under heavy traffic.
 
-**What still reads as AI?**
-- Mostly clean. "The win is obvious" is a small tic.
-- Could use one more concrete failure mode to feel lived-in rather than explained
+**Audit.**
+- *Still AI?* Plain and neutral, which is right for documentation. The register is a developer explaining a thing, not a person performing.
+- *Added or dropped?* Every claim is in the draft: faster, lower latency, less database load, scalability, responsiveness under traffic. No latency figures were added. "User experience" was folded into "responsive."
 
-**Final:**
-> A cache is a copy of an answer you already computed, parked somewhere fast so you don't pay to compute it twice. It pays off when a query is expensive and the result rarely changes. A product page that hits the database on every load might take 200ms; served from Redis it's more like 2 to 5ms. Then the answer changes and your cache doesn't know, and now you're shipping a stale price to a customer. Adding the cache was never the hard part. Knowing when to throw the old copy away is the whole job, and it's where most of the bugs live.
+**Flags:** The draft gives no numbers or example workload. If you have real figures (before and after a cache), adding them would make this much more convincing. I left them out rather than guess.
 
 ---
 
-## Example 3: essay / reflective
+## Example 3: essay / opinion
 
 **Before:**
 > The rise of remote work has fundamentally transformed the modern workplace. This paradigm shift offers a multitude of benefits, including increased flexibility, improved work-life balance, and enhanced productivity. However, it is not without its challenges. Despite these challenges, remote work continues to thrive as organizations adapt to this evolving landscape. Ultimately, the future of work is hybrid, blending the best of both worlds to create a more dynamic and inclusive environment for all.
 
-**Diagnosis:**
-- AI lexicon: fundamentally transformed, paradigm shift, multitude, enhanced, evolving landscape, dynamic
-- Rule of three ("flexibility, balance, and productivity")
-- Formulaic "challenges" section ("not without its challenges. Despite these challenges...")
-- Negative-parallelism-flavored closer ("best of both worlds")
-- Generic upbeat conclusion that asserts a tidy resolution
-- No first person, no real opinion, no specific experience
-- Marching, even rhythm
+**Tells:** AI lexicon and inflation ("fundamentally transformed," "paradigm shift," "multitude," "evolving landscape"); forced triad of benefits; the stock "not without its challenges… Despite these challenges" section; "best of both worlds" closer; a tidy resolved conclusion; no point of view the reader can disagree with.
 
 **Rewrite:**
-> I've worked from home for six years and I still don't fully trust the productivity claims. Some of it is real: I get my best two hours of focus before anyone in a different timezone is awake, and no open-plan office ever gave me that. But "work-life balance" is doing a lot of lifting in those articles. When the office is the next room, the workday doesn't end so much as fade out around 9pm. The honest version is that remote work didn't fix anything. It traded one set of problems (commutes, interruptions, presenteeism) for another (isolation, blurred hours, the slow realization that you haven't spoken out loud all day). Which set you'd rather have is a real question, and I notice the people who answer it confidently usually only have experience with one.
+> Remote work has changed how many workplaces run. People get more flexibility, a better balance between work and the rest of life, and, according to this draft, more productivity. It has real costs too, and organizations are still working out how to handle them. My bet is that the answer is hybrid.
 
-**What still reads as AI?**
-- Genuinely strong now. The parenthetical lists are slightly tidy, bordering on a rule-of-three rhythm.
-- The last sentence is a little aphoristic; fine here because it reads as the author's actual opinion rather than a manufactured insight
+**Audit.**
+- *Still AI?* "My bet is" gives a personal voice the draft doesn't have. The draft states that the future is hybrid as a flat claim; it has no narrator.
+- *Added or dropped?* "My bet" is a **new narrator**. Rule zero. "According to this draft" is an awkward leak. "Real costs" fine. "Best of both worlds" and "dynamic and inclusive" were cut as filler; the claim "hybrid" kept.
 
-**Final:** (only a small trim to the parentheticals)
-> I've worked from home for six years and I still don't fully trust the productivity claims. Some of it is real. I get my best two hours of focus before anyone east of me is awake, and no open-plan office ever gave me that. But "work-life balance" is doing a lot of lifting in those articles. When the office is the next room, the workday doesn't end. It just fades out somewhere around 9pm. The honest version is that remote work didn't fix anything; it swapped commutes and interruptions for isolation and hours that never quite close. Which trade you prefer is a real question. I notice the people who answer it fast usually only have experience with one side of it.
+**Final:**
+> Remote work has changed how many workplaces run. People get more flexibility, a better balance between work and the rest of life, and more productivity. It has costs too, and organizations are still adjusting. Where this ends up is hybrid work.
+
+**Flags:** There is no personal experience in the draft. If you have one (how remote work actually went for you, for how long), tell me and I will build the piece around it. The most convincing version of this essay has a person in it, and only you can supply that person.
 
 ---
 
-## Example 4: falsely-flagged non-native English (keep the argument, restore the writer)
+## Example 4: falsely flagged non-native English (keep the argument, restore the writer)
 
-This is the case the skill exists for. The author wrote every word. The text gets flagged anyway, not because a machine wrote it, but because careful non-native English shares the same statistical profile as model output: short, even sentences, correct standard grammar, a narrow and safe vocabulary, visible scaffolding. The job here is different from the others. There are almost no buzzwords to strip. You restore variance, a real point of view, and one or two concretes the author actually has, while changing the argument by zero. You are not turning this person into a casual native blogger. You are letting their own voice through.
+This is the case the skill exists for. The author wrote every word. The text gets flagged anyway, not because a machine wrote it, but because careful non-native English shares the statistical profile of model output: short, even sentences, correct standard grammar, a narrow safe vocabulary, visible scaffolding. There are almost no buzzwords to strip. You restore variance and a clear voice and change the argument by zero. You are not turning the writer into a casual native blogger, and you are certainly not giving them a childhood in a city with a crowded bus.
 
 **Before:**
 > In this essay I will discuss the importance of public transportation in big cities. Public transportation has many advantages. It reduces traffic congestion. It also reduces air pollution. Moreover, it is cheaper than using private cars. Many people depend on buses and trains every day. The government should invest more money in this sector. In conclusion, public transportation is very important for the development of modern cities.
 
-**Diagnosis:**
-- Uniform short declarative sentences end to end: the lowest-burstiness possible, which is the single strongest flag
-- Meta opener ("In this essay I will discuss") and scaffolded closer ("In conclusion")
-- "Moreover" as connective padding
-- Correct but narrow vocabulary; nothing a model would not also pick
-- Generic claims with no specific the writer actually owns
-- The cause is register, not authorship. The fix must keep every part of the argument (congestion, pollution, cost, invest more) and must not impose a chatty native-speaker voice the author never had
+**Tells:** uniform short declaratives (the lowest burstiness possible, and the strongest flag); a meta opener ("In this essay I will discuss") and a scaffolded closer ("In conclusion"); "Moreover"; no sentence longer than twelve words.
 
 **Rewrite:**
-> Public transport is the difference between a city that moves and one that seizes up. In the city where I grew up, the morning bus to the centre was full by the second stop, and even then it was faster than driving and far cheaper. That is the case I want to make. Buses and trains carry people for a fraction of the cost, they take cars off the road, and by midday you can see the difference in the air. More roads will not fix that. Only moving people in bulk will. If a government is serious about a modern city, this is where the money should go.
+> Big cities need public transportation. It reduces traffic congestion and air pollution, and it costs less than driving a private car. Every day, many people depend on buses and trains to get around. That is why the government should invest more in this sector: public transportation is very important to how modern cities develop.
 
-**What still reads as AI?**
-- "for a fraction of the cost, they take cars off the road, and by midday..." is edging back toward a tidy rule-of-three; break it
-- Otherwise the argument is intact and the rhythm now varies, which is the whole point
+**Audit.**
+- *Still AI?* The rhythm now moves: a short claim, a longer sentence of benefits, a plain observation, a long closing sentence with a colon. Register stays considered and slightly formal, as the author wrote it.
+- *Added or dropped?* Congestion, pollution, cost versus private cars, daily dependence, government investment, development of modern cities: all present, in the original order. Nothing new. The meta opener and "In conclusion" are gone because they say nothing.
 
-**Final:** (triad broken, register kept serious rather than casual)
-> Public transport is the difference between a city that moves and one that seizes up. In the city where I grew up, the morning bus to the centre was full by the second stop. It was still faster than driving, and far cheaper. That is the case I want to make. Buses and trains carry people in bulk, for a fraction of what cars cost, and by midday the difference shows in the air over the city. More roads have never solved this anywhere. If a government is serious about a modern city, this is where the money goes.
+**Flags:** The essay has no example from the writer's own life. If they have one (a commute, a city), adding it would make the essay theirs. I have not invented a scene.
 
-The argument did not change. Congestion, pollution, cost, and the call to invest are all still there, in the same order of priority. What changed is that the sentences now breathe, there is a concrete the writer plausibly lived (the bus full by the second stop), and a clear position carries it. The register stayed where the author put it: considered, a little formal, not pretending to be anyone else.
+---
+
+## Example 5: reasoning-model prose (the words are clean; the shape is the tell)
+
+No buzzwords to strip here. The draft reads as machine-made because it is staged like a proof: markers that narrate the thinking, and two readings of the evidence set out in matched sentences.
+
+**Before:**
+> From a foundational standpoint, moving our support team to asynchronous tickets reduces the pressure of live chat. Upon closer examination, however, the first-quarter numbers complicate this assumption: median first-response time rose from 4 minutes to 3 hours. On the one hand, customer satisfaction held at 91%, which suggests that customers value a complete answer over a fast one. On the other hand, the 14% of tickets marked urgent saw satisfaction fall to 72%, which suggests that speed remains important for a subset of cases. Taken together, these findings indicate that asynchronous support is appropriate for routine tickets, while urgent tickets should retain a live channel.
+
+**Route:** reasoning-model prose. Open `reference/ai-tells.md` section 11.
+
+**Tells:** deliberation markers ("From a foundational standpoint," "Upon closer examination," "Taken together"); proof-shaped paragraph (premise, complication, both hands, synthesis); matched "On the one hand / On the other hand" sentences of the same length and build; five mid-length sentences and nothing else.
+
+**Rewrite:**
+> Moving support to asynchronous tickets takes the pressure of live chat off the team. It also slowed us down: in the first quarter, median first-response time rose from 4 minutes to 3 hours. Satisfaction held at 91% anyway, so customers would rather have a complete answer than a fast one. On the 14% of tickets marked urgent, satisfaction fell to 72%. So routine tickets go asynchronous and urgent ones keep a live channel.
+
+**Audit.**
+- *Still AI?* Less than before. The markers and the matched pair are gone, and the sentences no longer come in one length.
+- *Added or dropped?* Nothing added: 4 minutes, 3 hours, 91%, 14%, 72%, and the first quarter are all the draft's, and "us" follows the draft's "our support team".
+- *Stronger or weaker?* Three claims got stronger. The draft said the 91% "suggests" customers value a complete answer; the rewrite states it as fact. The draft said the 72% "suggests" speed still matters for some cases; the rewrite dropped that reading altogether. And the draft's findings "indicate" a split; the rewrite issues it as a decision. All three go back.
+
+**Final:**
+> Moving support to asynchronous tickets takes the pressure of live chat off the team. It also slowed us down: in the first quarter, median first-response time rose from 4 minutes to 3 hours. Satisfaction held at 91% anyway, which suggests customers value a complete answer over a fast one. On the 14% of tickets marked urgent, satisfaction fell to 72%, which suggests speed still matters for those. So the numbers point to asynchronous support for routine tickets, with a live channel kept for urgent ones.
+
+**Flags:** none. The draft had its facts and its argument; it only needed the staging taken off.
+
+Notice what did not happen. The conclusion was not hauled to the front and turned into an order, because the draft only says the findings "indicate" it. The order of the argument is the draft's. And nobody added "I".
 
 ---
 
 ## What to take from these
 
-In all four, the lexical and formatting cleanup was the easy 20%. The work that made them read human was:
-
-1. **A person showing up.** First-person experience, an actual opinion, a willingness to say the popular claim is oversold.
-2. **Specifics replacing abstractions.** 200ms versus 2ms. Six years. Forty minutes of Monday admin. Numbers and scenes, not adjectives.
-3. **Rhythm that varies.** Short sentence. Then a long one that wanders. Then a fragment. Look at the shape, not just the words.
-4. **The self-audit.** Every final draft is better than its first rewrite because the "what still reads as AI?" pass caught the leftover tidiness. Never skip it.
+1. **Fidelity first.** Each rewrite is a subset of its draft's claims in better words. If you can point to a claim that is not in the draft, delete it.
+2. **Ask instead of inventing.** The Flags line turns "this needs a real example" into a question for the author, which is where the human voice actually comes from.
+3. **Structure and rhythm are the work.** The lexical cleanup is the easy 20%. Breaking the staged contrasts, the closers, and the even rhythm is what makes it read human.
+4. **Shape can be the tell.** Example 5 has no word worth swapping. Taking off the staging while keeping the draft's order and its hedges is the whole fix.
+5. **The audit asks what you added or dropped.** "What still reads as AI?" is not enough. Skipping "What did I add or drop?" is how a good-sounding rewrite becomes a different document.

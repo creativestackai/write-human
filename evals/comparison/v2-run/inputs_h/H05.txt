@@ -1,0 +1,7 @@
+CONTEXT (background only, not part of the text to rewrite):
+Thread context. Dana (head of product) asked in the team channel: 'Can we ship the new pricing page on Friday? Marketing wants it live before the Monday webinar.' Sam (the engineer) is replying. Dana already knows what the pricing page is and why it matters.
+
+---
+
+TEXT TO REWRITE:
+Thanks for checking in, Dana! I wanted to provide a thorough update on the current status of the pricing page. QA completed their testing pass yesterday and identified two bugs. The first is a minor alignment issue on mobile Safari, which is cosmetic and can ship as is. The second, however, is a more serious problem: the INR prices are being rounded incorrectly on the annual plan, so a customer in India would see 41,988 instead of 41,990. Because pricing accuracy is critical, I do not believe we should ship with this issue. I have a fix ready, and it should be reviewed and merged by Thursday afternoon. Given this, my recommendation would be to ship on Friday as planned, provided the fix is merged and QA re-verifies it on Thursday. If anything slips, we could move to Monday morning before the webinar. I hope this clarifies things, and please let me know if you have any further questions!

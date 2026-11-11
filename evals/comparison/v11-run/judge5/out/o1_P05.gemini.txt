@@ -1,0 +1,70 @@
+{
+  "human_quality_rank": ["A", "D", "C", "B", "E"],
+  "fidelity_rank": ["E", "B", "C", "A", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Standing in the shop wondering what on earth I'd done (invented setting detail)",
+        "People like knowing their bread is sorted (invented customer motivation)",
+        "Sleeping better in the first three months (invented personal experience/outcome)"
+      ],
+      "dropped_facts": [
+        "Explicit takeaways that resilience and adaptability are keys to success",
+        "The assertion that the best time to start is now and the closing question 'What's holding you back?'",
+        "The journey was filled with challenges, growth, and invaluable lessons"
+      ],
+      "register_ok": true,
+      "note": "Masterfully captures the writing sample's dry, self-deprecating baker-spreadsheet persona with authentic, idiomatic human phrasing."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The concluding call to action encouraging readers to make the leap now and asking 'What's holding you back?'",
+        "The journey was filled with challenges, growth, and invaluable lessons"
+      ],
+      "register_ok": true,
+      "note": "Clean, unpretentious, and strictly faithful to the source facts, but slightly dry and drops the entire closing call to action."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Customers were telling me what they wanted before I caught on (invented customer dynamic/cause)"
+      ],
+      "dropped_facts": [
+        "Explicit lessons regarding resilience and adaptability",
+        "The closing question 'What's holding you back?'",
+        "The journey was filled with challenges, growth, and invaluable lessons"
+      ],
+      "register_ok": true,
+      "note": "Reads in a relaxed, natural speaking cadence, but invents an unsupported customer interaction and omits two of the three stated lessons."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Sitting in the shop after closing (invented scene/setting)",
+        "Almost not bothering with the subscription (invented personal hesitation)",
+        "Customers wanting the same loaf every week without having to think about it (invented customer motivation)",
+        "Being too busy trying to sell customers everything else to notice (invented business backstory)"
+      ],
+      "dropped_facts": [
+        "Explicit lessons that resilience, adaptability, and listening to customers are keys to success",
+        "The assertion that 'the best time to start is now'",
+        "The journey was filled with challenges, growth, and invaluable lessons"
+      ],
+      "register_ok": true,
+      "note": "Delivers an engaging narrative with high personal presence, but heavily hallucinates scenes, customer mindsets, and backstory unsupported by the source."
+    },
+    "E": {
+      "p_ai": 80,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The journey was filled with challenges, growth, and invaluable lessons"
+      ],
+      "register_ok": true,
+      "note": "Preserves the source facts with near-total accuracy but retains obvious AI hallmarks, including a colon-delimited lesson list and formulaic LinkedIn motivational platitudes."
+    }
+  }
+}

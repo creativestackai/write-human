@@ -1,0 +1,7 @@
+CONTEXT (background only, not part of the text to rewrite):
+Thread context. Priya (reviewer) wrote on a pull request: 'This fallback in the invoice export works, but it feels like we're papering over the real bug. Can you say whether we should fix it properly in this PR?' The PR author (Marcus) is replying below. Priya already knows the export code and has seen the bug report.
+
+---
+
+TEXT TO REWRITE:
+Thanks for the great question, Priya! To provide some background, the issue originates from the fact that the invoice export job reads the `currency` field from the customer record, which can be null for accounts created before 2021. When the field is null, the export silently defaults to USD, which produces incorrect totals for roughly 4% of European accounts. I ran a query against staging and confirmed that 212 accounts are affected. The proper fix would be to backfill the `currency` field from each customer's billing country in a migration, and then add a NOT NULL constraint. However, I believe the backfill is out of scope for this PR, since it touches the customers table, which is shared across several services. So my recommendation would be to keep the fallback in this PR and open a separate ticket for the backfill. I hope this helps, and please let me know if you'd like me to elaborate further!

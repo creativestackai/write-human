@@ -1,0 +1,37 @@
+{
+  "human_quality_rank": ["A", "C", "B"],
+  "fidelity_rank": ["C", "B", "A"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "specifies the payment method as a card rather than original payment method",
+        "claims the issue was passed to the warehouse team to investigate",
+        "states that the package arrived late rather than being currently delayed"
+      ],
+      "dropped_facts": [
+        "expression of gratitude for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Reads in a very natural, personable human voice, but invents multiple operational specifics not present in the source."
+    },
+    "B": {
+      "p_ai": 22,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "commitment to ensuring this issue does not happen again",
+        "expression of gratitude for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Sounds human and avoids hallucinations, but contains slightly clunky phrasing and drops key assurances."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Achieves clean, natural human phrasing while preserving all facts and an appropriately polite professional register."
+    }
+  }
+}

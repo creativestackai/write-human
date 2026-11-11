@@ -1,0 +1,1 @@
+write-human@fd1a707 (SKILL.md v1.0.2) | humanizer@8c307f3 (SKILL.md v3.1.0)

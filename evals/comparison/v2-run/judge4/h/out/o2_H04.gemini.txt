@@ -1,0 +1,59 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["C", "A", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The closing question asking the reader what goal they are chasing"
+      ],
+      "register_ok": true,
+      "note": "Reads with understated, authentic human clarity and voice while maintaining near-perfect fidelity without inventing anecdotes."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Describing the 4:38 finish time as 'not fast'",
+        "Spending the eight days off googling whether they would make the start line",
+        "Running group dragging the author to Sunday meetups just to watch",
+        "Physiotherapist figuring out what was actually wrong",
+        "Keeping training slow and boring upon return as the sole reason for reaching race day",
+        "Personal admission of being bad at asking for help"
+      ],
+      "dropped_facts": [
+        "Returning stronger than ever after the injury",
+        "Consistency and patience identified as foundations for achieving big goals",
+        "Encouraging the reader to take the first step today",
+        "The closing question asking what goal the reader is chasing"
+      ],
+      "register_ok": true,
+      "note": "Adopts an engaging conversational tone, but invents several narrative anecdotes and omits the ending call to action."
+    },
+    "C": {
+      "p_ai": 80,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves every single source fact with perfect fidelity, but reads like a mechanical sentence-by-sentence AI polish of a LinkedIn post."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Characterizing the finish time as 'not fast'",
+        "Spending eight days googling whether people make the start line after an injury",
+        "Running group keeping the author showing up just to watch",
+        "Physiotherapist assigning dull knee exercises until the author wanted to scream",
+        "Reflection that they were not ready and had just stopped waiting"
+      ],
+      "dropped_facts": [
+        "Returning stronger than ever after recovery",
+        "Explicitly naming consistency, patience, and community as foundations of big goals",
+        "The closing question asking what goal the reader is chasing"
+      ],
+      "register_ok": true,
+      "note": "Vivid and punchy prose that captures the sample voice well, but heavily embellishes the story with invented personal experiences."
+    }
+  }
+}

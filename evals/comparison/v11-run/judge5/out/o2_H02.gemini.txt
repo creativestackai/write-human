@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["B", "D", "C", "E", "A"],
+  "fidelity_rank": ["B", "A", "D", "C", "E"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of patient engagement strategy"
+      ],
+      "register_ok": true,
+      "note": "Accurate to the source, but the second paragraph has an unnatural, choppy staccato cadence."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Translates corporate jargon into fluent, natural prose while preserving every fact, number, and the full quote."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Elena Torres's direct quotation (converted to indirect speech)",
+        "Remindly serves as a cornerstone of patient engagement strategy"
+      ],
+      "register_ok": true,
+      "note": "Reads with an engaging human rhythm, but needlessly demotes the direct testimonial quote to indirect speech."
+    },
+    "D": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of patient engagement strategy"
+      ],
+      "register_ok": true,
+      "note": "Brisk and conversational with a strong voice, though the closing sentence trails off somewhat abruptly."
+    },
+    "E": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Characterizes patient no-shows as a 'steady problem'"
+      ],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of patient engagement strategy"
+      ],
+      "register_ok": true,
+      "note": "Mostly clear, but relies on an awkward transition in the opening and invents an unverified descriptor."
+    }
+  }
+}

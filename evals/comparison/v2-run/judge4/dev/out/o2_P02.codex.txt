@@ -1,0 +1,74 @@
+{
+  "human_quality_rank": ["A", "C", "B", "D"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The explicit claim that Tallyo serves teams of any size extends beyond the source's stated range of solo freelancers to growing agencies."
+      ],
+      "dropped_facts": [
+        "The platform is all-in-one.",
+        "The tools are intuitive.",
+        "The explicit promises of greater financial control, streamlined workflow, and increased productivity are omitted.",
+        "Eliminating manual errors is weakened to reducing them.",
+        "Security is best-in-class."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained product copy with a natural rhythm and little conspicuous salesmanship."
+    },
+    "B": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Users can create and send invoices and monitor payments within the platform.",
+        "Using Tallyo removes the need to retype numbers into a spreadsheet.",
+        "The more than 2,300 teams specifically achieved the 40% reduction, rather than the product having a demonstrated reduction generally.",
+        "Automation and reporting each account for part of the 40% reduction.",
+        "Reports specifically update as money comes in.",
+        "Users can assess their financial position without waiting for month-end."
+      ],
+      "dropped_facts": [
+        "The tools are intuitive.",
+        "The explicit claims of eliminating manual errors and unlocking increased productivity are omitted.",
+        "Security is best-in-class."
+      ],
+      "register_ok": true,
+      "note": "Conversational and readable, but the extended workflow explanation feels more constructed than necessary."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The platform is all-in-one.",
+        "The tools are intuitive.",
+        "The explicit promises of greater financial control, streamlined workflow, and increased productivity are omitted.",
+        "Security is best-in-class."
+      ],
+      "register_ok": true,
+      "note": "Plain, efficient product copy, though its compact feature list has a slightly generic cadence."
+    },
+    "D": {
+      "p_ai": 50,
+      "unsupported_specifics": [
+        "The audience spends, or risks spending, its evenings on invoicing.",
+        "Agencies using Tallyo have outgrown spreadsheets.",
+        "Automation specifically reduces typos and incorrect totals in outgoing invoices.",
+        "Reports show which invoices are paid and unpaid.",
+        "Users can obtain payment-status information without asking anyone.",
+        "Security specifically protects clients' billing details and requires no attention from users.",
+        "The more than 2,300 teams specifically achieved the 40% reduction, rather than the product having a demonstrated reduction generally."
+      ],
+      "dropped_facts": [
+        "The platform is all-in-one.",
+        "The tools are intuitive.",
+        "The explicit promises of greater financial control, streamlined workflow, and increased productivity are omitted.",
+        "Eliminating manual errors is narrowed and weakened to reducing typos and incorrect totals.",
+        "The teams using Tallyo are worldwide.",
+        "Security is best-in-class."
+      ],
+      "register_ok": true,
+      "note": "The punchy sales voice is plausible, but its fragments and conspicuous asides feel deliberately manufactured."
+    }
+  }
+}

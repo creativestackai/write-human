@@ -1,0 +1,44 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["C", "B", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Learning requires dedication, patience, and the right mindset.",
+        "Accepting errors, setting realistic goals, and immersing yourself can help you reach your full potential."
+      ],
+      "strength_changes": [
+        "Talent matters less than persistence softens the source's claim that success rests on persistence rather than talent."
+      ],
+      "register_ok": true,
+      "note": "Compact and conversational, though some useful substance disappears in the compression."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Learning requires the right mindset.",
+        "Accepting errors, setting realistic goals, and immersing yourself can help you reach your full potential."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "The paragraphing and straightforward progression make this the most natural and readable version."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Accepting errors, setting realistic goals, and immersing yourself can help you reach your full potential."
+      ],
+      "strength_changes": [
+        "Pouring time into grammar weakens the source's explicit claim that many learners focus exclusively on grammar.",
+        "Avoiding practice with native speakers states a more definite behavior than being held back from practicing."
+      ],
+      "register_ok": true,
+      "note": "It preserves the most substance, but putting the conclusion before the introduction makes the progression awkward."
+    }
+  }
+}

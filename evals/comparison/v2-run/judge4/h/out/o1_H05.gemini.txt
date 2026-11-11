@@ -1,0 +1,39 @@
+{
+  "human_quality_rank": ["B", "C", "A", "D"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains all facts accurately, but suffers from slightly stiff phrasing and repetitive wording in the opening."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "QA re-verification specifically must happen on Thursday"
+      ],
+      "register_ok": true,
+      "note": "Reads effortlessly like an experienced engineer on Slack, though it omits the Thursday timing constraint for QA."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Crisp, natural Slack response that preserves every schedule constraint and bug detail with zero fluff."
+    },
+    "D": {
+      "p_ai": 75,
+      "unsupported_specifics": [
+        "Promise that Sam will update Dana on Thursday evening about which way it's going"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Relies on telltale AI framing ('Short answer: yes') and invents an unprompted Thursday evening update."
+    }
+  }
+}

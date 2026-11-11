@@ -1,0 +1,28 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Matches the source text verbatim, preserving an authentic conversational voice with minor punctuation flaws."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Improves comedic timing and sentence rhythm while keeping all facts and an authentic colloquial register."
+    },
+    "C": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Matches the source text verbatim, preserving an authentic conversational voice with minor punctuation flaws."
+    }
+  }
+}

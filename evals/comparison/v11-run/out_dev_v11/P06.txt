@@ -1,0 +1,5 @@
+I'd keep the fallback in this PR and fix the root cause separately.
+
+The export job reads `currency` from the customer record, and that field can be null for accounts created before 2021. When it's null, the export quietly defaults to USD, so totals come out wrong for roughly 4% of European accounts. I ran a query against staging and 212 accounts are affected.
+
+The proper fix is a migration that backfills `currency` from each customer's billing country, followed by a NOT NULL constraint. But that touches the customers table, which several services share, so I don't think it belongs in this PR. Fallback stays here, and the backfill gets its own ticket.

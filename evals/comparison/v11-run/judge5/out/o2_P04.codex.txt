@@ -1,0 +1,85 @@
+{
+  "human_quality_rank": ["B", "D", "A", "C", "E"],
+  "fidelity_rank": ["D", "B", "C", "A", "E"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant milestone in its growth.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree that its strategic vision continues to set the industry standard.",
+        "The company has a bright outlook."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, though 'opened' and 'booked' are less precise than the source wording."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant milestone in its growth.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree that its strategic vision continues to set the industry standard.",
+        "The company has a bright outlook."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural company-profile prose that preserves the concrete facts but removes the promotional claims."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant milestone in its growth.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree that its strategic vision continues to set the industry standard.",
+        "The company has a bright outlook."
+      ],
+      "register_ok": true,
+      "note": "Generally clear, but 'inside' and 'had reported' make the prose slightly less natural and precise."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant milestone in its growth.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree that its strategic vision continues to set the industry standard.",
+        "The company has a bright outlook."
+      ],
+      "register_ok": true,
+      "note": "Restrained and accurate, though the opening apposition makes the location description slightly awkward."
+    },
+    "E": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+        "The expansion into Germany and Poland is only vaguely conveyed by 'came in 2016.'",
+        "The 2016 expansion was a significant milestone in its growth.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree that its strategic vision continues to set the industry standard.",
+        "The company has a bright outlook."
+      ],
+      "register_ok": false,
+      "note": "Forced conversational phrasing weakens clarity, especially 'Germany and Poland came' and 'was running in 14 countries.'"
+    }
+  }
+}

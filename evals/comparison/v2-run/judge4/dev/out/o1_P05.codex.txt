@@ -1,0 +1,71 @@
+{
+  "human_quality_rank": ["B", "D", "A", "C"],
+  "fidelity_rank": ["A", "C", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The narrator's expressed excitement about sharing the news.",
+        "The explicit description of the journey as involving growth.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Clear, conversational writing preserves the substantive story and lessons with minimal embellishment."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The narrator sat in the shop after closing while questioning the decision.",
+        "The narrator almost did not offer the subscription.",
+        "The numbers stopped bleeding, implying losses ended rather than merely revenue stabilizing.",
+        "Customers wanted the same loaf every week without having to think about it.",
+        "The narrator had been too busy selling customers everything else to notice their preferences.",
+        "The narrator would have started earlier."
+      ],
+      "dropped_facts": [
+        "The narrator's expressed excitement about sharing the news.",
+        "The explicit description of the journey as involving growth.",
+        "The explicit lessons about resilience and adaptability.",
+        "The advice that the best time to start is now, replaced with reluctance to advise on timing.",
+        "The closing question about what is holding the reader back, replaced with a question about procrastination."
+      ],
+      "register_ok": true,
+      "note": "The strongest personal voice closely matches the sample, but much of its vividness comes from invented details."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Customers had been communicating what they wanted before the narrator recognized it."
+      ],
+      "dropped_facts": [
+        "The narrator's expressed excitement about sharing the news.",
+        "The explicit description of the journey as involving growth.",
+        "The lessons about resilience and adaptability.",
+        "The specific advice to start now, softened to not waiting too long.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Readable but somewhat generic, with an unsupported explanation of how customer listening worked."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The narrator stood in the shop while questioning the decision.",
+        "The weekly numbers stopped going the wrong way, implying financial improvement beyond stable revenue.",
+        "Customers liked knowing their bread was sorted.",
+        "Trying the subscription sooner would have helped the narrator sleep better during the first three months."
+      ],
+      "dropped_facts": [
+        "The narrator's expressed excitement about sharing the news.",
+        "The explicit description of the journey as involving growth.",
+        "The explicit lessons about resilience, adaptability, and listening to customers.",
+        "The advice that the best time to start is now, replaced with reluctance to advise on timing.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The casual rhythm suits the sample, but invented reflections and customer motives weaken fidelity."
+    }
+  }
+}

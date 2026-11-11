@@ -1,0 +1,7 @@
+Rate limiting
+
+Each API key is limited to 100 requests per minute, so that usage stays fair and performance holds up for everyone. Go over that and the API returns a `429 Too Many Requests` response. It includes a `Retry-After` header with the number of seconds to wait before you try again.
+
+We strongly recommend exponential backoff in your client. Wait 1 second after the first failed attempt and double the delay each time after that (2, 4, 8, 16), stopping at 32 seconds.
+
+Cache responses wherever you can. You'll send fewer requests, and your application will respond faster too.

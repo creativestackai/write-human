@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["C", "A", "D", "B"],
+  "fidelity_rank": ["C", "D", "A", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that Meera is from the accounts team",
+        "that the error was spotted specifically during the review"
+      ],
+      "register_ok": true,
+      "note": "Direct and natural for a Slack reply, though it trims Meera's department and the review context."
+    },
+    "B": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that Meera approved the invoice (states only that it was approved and she reviewed it)"
+      ],
+      "register_ok": true,
+      "note": "Stiff and choppy with an unnecessary email greeting, and detaches Meera from the approval."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Sounds effortlessly human for an internal Slack reply while retaining every key detail."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that the discrepancy was spotted during the review"
+      ],
+      "register_ok": true,
+      "note": "A solid conversational reply, though slightly bogged down by awkward phrasing around the line item and repeated numbers."
+    }
+  }
+}

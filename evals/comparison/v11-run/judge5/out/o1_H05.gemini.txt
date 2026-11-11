@@ -1,0 +1,48 @@
+{
+  "human_quality_rank": ["A", "E", "B", "D", "C"],
+  "fidelity_rank": ["E", "C", "A", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "QA re-verification specifically on Thursday (implied by 'then', but day is not explicitly stated)"
+      ],
+      "register_ok": true,
+      "note": "Reads like an authentic, spontaneous Slack message from an engineer with natural pacing and idioms."
+    },
+    "B": {
+      "p_ai": 55,
+      "unsupported_specifics": [
+        "Promise to provide a follow-up status update on Thursday evening ('I'll tell you Thursday evening which way it's going')"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Relies on a telltale AI opening formula and invents an unprompted follow-up commitment."
+    },
+    "C": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Awkwardly inverts the narrative by referencing the fix before introducing the bugs, resulting in a robotic and repetitive flow."
+    },
+    "D": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "QA completed their testing pass (states only that QA found two bugs yesterday)"
+      ],
+      "register_ok": true,
+      "note": "Suffers from an inverted fix-first structure and repetitive phrasing, while omitting that QA actually completed their testing pass."
+    },
+    "E": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Exceptionally clear and preserves every source detail perfectly, though slightly more templated in structure than A."
+    }
+  }
+}

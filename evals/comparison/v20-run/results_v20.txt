@@ -1,0 +1,52 @@
+valid 39/40; failed [('o2', 'S01', 'gemini')]
+
+## ALL scored passages, both judges (n=35)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+write-human v1           1.26          0.57     3   24.5    2.31     1.37
+humanizer                1.34          0.57     2   24.3    1.54     1.09
+v1.1                     1.86          2.31    15   27.3    0.14     0.51
+v2.0                     1.54          2.54    15   28.5    0.17     0.46
+
+## judge=codex (n=18)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+write-human v1           0.94          0.56     0   26.8    2.78     1.94
+humanizer                1.28          0.61     0   24.4    1.72     1.67
+v1.1                     2.11          2.33     9   23.3    0.28     0.94
+v2.0                     1.67          2.50     9   24.7    0.22     0.72
+
+## judge=gemini (n=17)
+arm              human_q(0-3) fidelity(0-3)  wins   p_ai  unsupp  dropped
+write-human v1           1.59          0.59     3   22.2    1.82     0.76
+humanizer                1.41          0.53     2   24.2    1.35     0.47
+v1.1                     1.59          2.29     6   31.5    0.00     0.06
+v2.0                     1.41          2.59     6   32.5    0.12     0.18
+
+## paired passage-level differences (mean over passages, 90% bootstrap interval)
+v2.0   - v1.1            human_quality_rank  -0.32  [-0.94, +0.30]
+v2.0   - v1.1            fidelity_rank       +0.21  [-0.39, +0.74]
+v2.0   - write-human v1  human_quality_rank  +0.24  [-0.72, +1.19]
+v2.0   - write-human v1  fidelity_rank       +1.95  [+1.37, +2.47]
+v2.0   - humanizer       human_quality_rank  +0.16  [-0.71, +0.99]
+v2.0   - humanizer       fidelity_rank       +1.98  [+1.62, +2.34]
+v1.1   - write-human v1  human_quality_rank  +0.56  [-0.05, +1.19]
+v1.1   - write-human v1  fidelity_rank       +1.74  [+1.50, +1.99]
+v1.1   - humanizer       human_quality_rank  +0.48  [-0.03, +1.00]
+v1.1   - humanizer       fidelity_rank       +1.77  [+1.36, +2.18]
+
+## per passage (mean over judgments): v1 / humanizer / v1.1 / v2.0
+S01 hq 2.0/2.0/1.3/0.7  fid 1.0/0.0/2.7/2.3  unsupp 4.3/5.0/1.0/0.0  (n=3)
+S02 hq 1.8/0.5/2.0/1.8  fid 0.0/1.0/2.2/2.8  unsupp 7.8/3.5/0.0/0.0  (n=4)
+S03 hq 0.8/1.8/1.2/2.2  fid 0.5/0.8/3.0/1.8  unsupp 2.0/1.0/0.0/1.0  (n=4)
+S04 hq 0.8/0.8/1.5/3.0  fid 1.0/0.0/2.2/2.8  unsupp 0.0/0.5/0.0/0.0  (n=4)
+S05 hq 2.2/1.5/2.2/0.0  fid 1.0/0.0/2.0/3.0  unsupp 0.0/0.0/0.0/0.0  (n=4)
+S06 hq 1.2/0.2/2.0/2.5  fid 0.2/0.8/2.0/3.0  unsupp 2.8/1.8/0.0/0.0  (n=4)
+S07 hq 0.2/1.5/2.8/1.5  fid 0.0/1.0/2.0/3.0  unsupp 2.5/1.0/0.5/0.0  (n=4)
+S08 hq 1.5/1.5/1.5/1.5  fid 2.0/2.0/0.0/2.0  unsupp 0.0/0.0/0.0/0.0  (n=4)
+S09 hq 0.0/1.8/2.2/2.0  fid 0.0/1.2/1.8/3.0  unsupp 1.0/0.5/0.0/0.0  (n=4)
+S10 hq 2.5/2.2/1.2/0.0  fid 1.5/0.2/3.0/1.2  unsupp 1.0/1.5/0.0/0.5  (n=4)
+
+## PRE-REGISTERED VERDICT
+v2.0 - v1.1 human-sounding -0.32 [-0.92,+0.28]; fidelity diff +0.21; v2.0 invented specifics/text 0.17
+guardrails: PASS
+verdict: FAIL
+excluding S03 and S10: v2.0 - v1.1 human-sounding -0.38 [-1.06,+0.32] over 7 passages

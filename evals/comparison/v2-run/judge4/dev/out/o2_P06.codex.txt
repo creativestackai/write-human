@@ -1,0 +1,51 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["B", "A", "C", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The export job reads currency from the customer record.",
+        "Currency can be null for accounts created before 2021.",
+        "A null currency silently defaults to USD, producing incorrect totals."
+      ],
+      "register_ok": true,
+      "note": "Direct and appropriate for an informed reviewer, but omits the bug's mechanism."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The export job explicitly reads currency from the customer record."
+      ],
+      "register_ok": true,
+      "note": "Clear, measured, and nearly complete, with the recommendation placed first."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021, strengthening the source's claim that it can be null.",
+        "Says the migration needs its own review.",
+        "Offers to write the ticket today, a new personal commitment."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Conversational and readable, though the closing offer and review requirement introduce new content."
+    },
+    "D": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021, strengthening the source's claim that it can be null.",
+        "Says Marcus already left the migration out for the stated reason, whereas the source presents a recommendation.",
+        "Claims nobody from the other service teams will review this PR.",
+        "Commits to opening the backfill ticket today.",
+        "Adds a requirement that the other services have a say first."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Sounds like a particular engineer, but repeats the recommendation and invents review circumstances and commitments."
+    }
+  }
+}

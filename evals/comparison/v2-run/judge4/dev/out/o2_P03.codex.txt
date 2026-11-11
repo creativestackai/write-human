@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["C", "A", "B", "D"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, natural technical writing that preserves the source, with slightly less precise phrasing than C."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rate limiting is intended to ensure fair usage and maintain optimal performance for all users."
+      ],
+      "register_ok": true,
+      "note": "Readable and conversational, though it omits the rationale and makes the maximum delay slightly ambiguous."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural, concise documentation with precise instructions and full factual coverage."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The limit guarantees that one busy client cannot crowd out everyone else.",
+        "Caching will make the client hit the rate limit less often."
+      ],
+      "dropped_facts": [
+        "Rate limiting is intended to maintain optimal performance for all users."
+      ],
+      "register_ok": true,
+      "note": "Lively but more editorialized, with stronger causal claims than the source supports."
+    }
+  }
+}

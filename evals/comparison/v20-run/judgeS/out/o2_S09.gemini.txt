@@ -1,0 +1,35 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["C", "B", "D", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 32,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads somewhat performatively casual with 'lousy surprise', though it handles the resolution clearly."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Strikes an authentic balance of professional empathy, concise clarity, and natural accountability."
+    },
+    "C": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clean, polite, and sounds like an ordinary helpful support agent replying without boilerplate."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Direct and accurate, though the cadence feels slightly staccato and terse toward the closing."
+    }
+  }
+}

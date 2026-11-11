@@ -1,0 +1,59 @@
+{
+  "human_quality_rank": ["A", "C", "B", "D"],
+  "fidelity_rank": ["D", "B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "First-person backstory and personal anecdotes ('When I started coding', 'I wasted a lot of early time')",
+        "Invented timeframe ('ten seconds')",
+        "Unprompted technical examples (loops running, functions handling inputs)",
+        "Invented specifics ('spreadsheet's worth of data', '11pm')",
+        "Invented outcome/rule ('learn more from the third failed attempt than from the first clean run')"
+      ],
+      "dropped_facts": [
+        "Explicit requirement of persistence (from 'patience, persistence, and practice')",
+        "Explicit claim that every line of code brings you closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Engaging and distinctly human in voice, but invents extensive personal anecdotes, technical examples, and specific details absent from the source."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Persistence (from 'patience, persistence, and practice')",
+        "Direct admonition 'don't be afraid to fail' (rephrased into the factual statement 'You will fail along the way')"
+      ],
+      "register_ok": true,
+      "note": "Flows with natural, idiomatic human phrasing while preserving all core claims and domains without hallucinating details."
+    },
+    "C": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "Invented timeframe ('ten seconds')",
+        "First-person commentary ('I understand the pull')",
+        "Invented specific concepts ('Flashcards and cheat sheets', 'for loop', 'tutorial', 'chore you're tired of doing by hand')",
+        "Invented imperative sequence ('write the broken thing. Run it. See what happens')"
+      ],
+      "dropped_facts": [
+        "Analyzing data as an application domain",
+        "The journey being both challenging and rewarding",
+        "The explicit requirement of patience, persistence, and practice",
+        "Every line of code bringing you closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic human voice, but omits multiple core claims—including an entire use case—and invents numerous specifics."
+    },
+    "D": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Persistence (from 'patience, persistence, and practice')"
+      ],
+      "register_ok": true,
+      "note": "Preserves source facts almost perfectly, but follows the original text in a rigid, sentence-by-sentence substitution pattern that reads like an AI paraphrase."
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["C", "A", "D", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The prompt to start the free trial today (replaced with 'whenever you're ready')"
+      ],
+      "register_ok": true,
+      "note": "Readable and plain, but the sentence rhythm feels somewhat stilted and repetitive."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Illustrative scenario for time zone detection ('nobody has to work out what 3pm means for the person in another country')",
+        "Specific details about beta feedback ('what was broken, what was confusing and what they actually used')"
+      ],
+      "dropped_facts": [
+        "Call to action to start the free trial today"
+      ],
+      "register_ok": true,
+      "note": "Possesses a very distinct, conversational human voice, but invents several specifics and drops the call to action."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clean, natural, and well-paced copy that retains all source facts without hallucinating details."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Claim that the free trial starts on launch day"
+      ],
+      "dropped_facts": [
+        "The prompt to start the free trial today"
+      ],
+      "register_ok": true,
+      "note": "Competently written, but it contradicts the source by shifting the trial start date to launch day."
+    }
+  }
+}

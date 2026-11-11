@@ -6,6 +6,8 @@ node_modules/
 
 # Local job scratch
 .jobs/
+tasks/
+__pycache__/
 
 # Local eval runs and logs
 *.log
@@ -14,3 +16,6 @@ evals/*.local.json
 
 # Packaged skill artifact
 *.skill
+
+# Third-party skill copy used as a comparison arm (MIT, github.com/blader/humanizer); not redistributed
+evals/comparison/**/skills/hz/

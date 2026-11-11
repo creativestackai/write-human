@@ -1,0 +1,39 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["A", "C", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Crisp, natural engineer voice with a strong bottom-line-up-front structure and complete fidelity to the source."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "A commitment to follow up Thursday evening to say which way it is going"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Very conversational and human in tone, but invents an unprompted promise to give a Thursday evening update."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, professional, and strictly faithful, though slightly less punchy than A."
+    },
+    "D": {
+      "p_ai": 28,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "That QA re-verification must specifically happen on Thursday"
+      ],
+      "register_ok": true,
+      "note": "Natural phrasing, but delays explaining what the catch is and drops the Thursday timing for QA re-checking."
+    }
+  }
+}

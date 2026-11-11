@@ -1,0 +1,3 @@
+Syntax is the smaller part of learning to code. The bigger part is learning to think a problem through, and every bug you hit is a lesson in that, even if it doesn't feel like one at the time. Plenty of beginners try to memorize commands, which puts the effort in the wrong place. Understanding the concepts is what you're after.
+
+Whether you're building a website, analyzing data or automating tasks, it's hard and it's rewarding, and it takes patience and a lot of practice. Even the most successful developers struggle. They just lean into it. You will fail along the way, and each line you write still gets you a little closer to being good at this.

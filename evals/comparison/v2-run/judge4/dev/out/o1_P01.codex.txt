@@ -1,0 +1,73 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["A", "D", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The framing of remote work within a rapidly evolving digital landscape.",
+        "The explicit prospect of organizations realizing their distributed teams' full potential and thriving in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural prose preserves the central argument with little editorial intrusion."
+    },
+    "B": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Most arguments about remote work go wrong by considering only benefits or only drawbacks.",
+        "Remote work lets people work when they are sharpest.",
+        "Remote work eliminates commuting.",
+        "Companies can hire the best person for a job, rather than merely access a global talent pool.",
+        "The example of a hire living eleven time zones away.",
+        "A message being misinterpreted and remaining unresolved for a day.",
+        "Someone spending an entire week without an interaction outside a screen.",
+        "Unplanned hallway conversations being the hardest aspect of company culture to preserve.",
+        "Hallway conversations revealing how a team really felt about a project.",
+        "Tools help only after trust, transparency, and accountability are established.",
+        "A trusting team with a shared document will outperform a distrustful team using a dozen apps."
+      ],
+      "dropped_facts": [
+        "The rapidly evolving digital context and remote work's transformation of organizational operations.",
+        "The explicit benefit of improved work-life balance.",
+        "The explicit prospect of organizations realizing their distributed teams' full potential and thriving in the future of work."
+      ],
+      "register_ok": true,
+      "note": "The conversational voice is lively, but its staged examples and closing maxim feel overworked."
+    },
+    "C": {
+      "p_ai": 50,
+      "unsupported_specifics": [
+        "Companies can hire the best person for a role, rather than merely access a global talent pool.",
+        "The comparison with recruiting only within forty minutes of an office.",
+        "People going days without talking to anyone.",
+        "Company culture having taken years to build.",
+        "Company culture deteriorating because nobody shares a room.",
+        "Plenty of offices operating on distrust and plenty of remote teams operating beautifully.",
+        "Tools helping only a little and communication habits helping more.",
+        "The specific recommendations to write things down, answer promptly, and telephone when a message thread becomes tense.",
+        "The categorical claim that no software can fix the situation without trust."
+      ],
+      "dropped_facts": [
+        "The rapidly evolving digital context and remote work's transformation of organizational operations.",
+        "The explicit benefit of improved work-life balance; fitting life around a job does not clearly preserve that claim.",
+        "The explicit prospect of organizations realizing their distributed teams' full potential and thriving in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Readable but crowded with unsupported assertions and familiar conversational advice formulas."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The comparison assumes companies would otherwise recruit from only one city."
+      ],
+      "dropped_facts": [
+        "The rapidly evolving digital context and the explicit statement that remote work is transforming organizational operations.",
+        "The explicit prospect of organizations realizing their distributed teams' full potential and thriving in the future of work."
+      ],
+      "register_ok": true,
+      "note": "The most polished and naturally restrained version, with one unnecessary recruiting assumption."
+    }
+  }
+}

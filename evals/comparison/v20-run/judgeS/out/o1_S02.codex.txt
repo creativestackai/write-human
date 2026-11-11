@@ -1,0 +1,59 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["A", "D", "B", "C"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and faithful, though the compressed advice gives the ending a slightly formulaic rhythm."
+    },
+    "B": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Prescribes putting the phone in another room and closing tabs.",
+        "Prescribes deciding in advance what matters today and ignoring everything else.",
+        "Specifies that the starting choice is picking one thing and staying with it.",
+        "Suggests arranging the environment makes concentration easy, rather than merely supporting sustained concentration."
+      ],
+      "dropped_facts": [
+        "Focus is increasingly valuable.",
+        "Explicitly identifies setting boundaries as a way to reclaim attention."
+      ],
+      "register_ok": true,
+      "note": "Conversational but occasionally strained, with added practical advice that exceeds the source."
+    },
+    "C": {
+      "p_ai": 55,
+      "unsupported_specifics": [
+        "The narrator's phone buzzes about once a minute.",
+        "The narrator can no longer read three pages without reaching for the phone.",
+        "Focus used to be ordinary.",
+        "Divided attention produces ten shallow starts and no finished idea.",
+        "Good ideas tend to arrive late, after staying with a problem longer than is comfortable.",
+        "The narrator has tried relying on willpower.",
+        "The narrator's willpower lasts about an hour.",
+        "Categorically states that willpower will not fix the problem, rather than that willpower alone is insufficient.",
+        "Prescribes keeping the phone in another room, turning notifications off, and displaying one task on screen, and asserts that these measures work."
+      ],
+      "dropped_facts": [
+        "Endless scrolling contributes to the contemporary context.",
+        "Attention is not merely a resource but the foundation of meaningful work.",
+        "Explicitly recommends setting boundaries and prioritizing what truly matters.",
+        "Anyone can reclaim their attention.",
+        "The path to a more focused life begins with one intentional choice."
+      ],
+      "register_ok": false,
+      "note": "Vivid but conspicuously staged, replacing the general reflection with unsupported personal testimony."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural pacing and plain language preserve the argument with little editorial friction."
+    }
+  }
+}

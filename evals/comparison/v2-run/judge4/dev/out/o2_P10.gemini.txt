@@ -1,0 +1,62 @@
+{
+  "human_quality_rank": ["A", "C", "D", "B"],
+  "fidelity_rank": ["B", "D", "A", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Looking up syntax in 'ten seconds'",
+        "Specific mention of flashcards and cheat sheets",
+        "Example of knowing what a for loop looks like without knowing when to use one",
+        "Getting stuck when a problem does not match the tutorial",
+        "Automating chores you are tired of doing by hand"
+      ],
+      "dropped_facts": [
+        "Analyzing data as an application domain",
+        "The triad of patience, persistence, and practice",
+        "Every line of code bringing you one step closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Sounds genuinely human with insightful phrasing and natural flow, though it introduces illustrative specifics and omits a few source details."
+    },
+    "B": {
+      "p_ai": 80,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "'Persistence' from the original trio of patience, persistence, and practice"
+      ],
+      "register_ok": true,
+      "note": "Faithful to the original content, but reads like a stiff, sentence-by-sentence paraphrase."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Invented first-person personal backstory ('When I started coding', 'I wasted a lot of early time')",
+        "Looking up syntax in 'ten seconds'",
+        "Specific examples of why loops run and what functions do with inputs",
+        "Poking around in a spreadsheet's worth of data or scripting boring chores",
+        "Specific references to 11pm, the third failed attempt, and the first clean run",
+        "The developers I admire still getting stuck"
+      ],
+      "dropped_facts": [
+        "The journey being rewarding",
+        "The triad of patience, persistence, and practice",
+        "Every line of code bringing you one step closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Creates an engaging personal voice, but relies on fabricated autobiographical anecdotes and specifics not found in the source."
+    },
+    "D": {
+      "p_ai": 65,
+      "unsupported_specifics": [
+        "Beginners 'stall out' when trying to memorize commands"
+      ],
+      "dropped_facts": [
+        "'Persistence' from the original trio of patience, persistence, and practice"
+      ],
+      "register_ok": true,
+      "note": "Maintains high fidelity and clean wording, but adheres to a rigid sentence-by-sentence structure characteristic of AI paraphrasing."
+    }
+  }
+}

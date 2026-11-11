@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["A", "E", "D", "B", "C"],
+  "fidelity_rank": ["A", "C", "B", "E", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Crisp, natural engineer cadence that answers the question immediately while retaining every detail and dependency."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": ["That QA completed/finished their testing pass"],
+      "register_ok": true,
+      "note": "Direct and punchy, but presents conditions in the opening before establishing what the bugs are."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Fully faithful to the facts, but clunky and repetitive in its phrasing around the fix and merge."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "A commitment to update Dana on Thursday evening on which way the release is going"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Lively and conversational, but invents an unprompted follow-up commitment and uses a slightly formulaic opener."
+    },
+    "E": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "QA re-verification must happen specifically on Thursday"
+      ],
+      "register_ok": true,
+      "note": "Reads convincingly like an authentic Slack reply, but omits the explicit Thursday deadline for QA re-checking."
+    }
+  }
+}

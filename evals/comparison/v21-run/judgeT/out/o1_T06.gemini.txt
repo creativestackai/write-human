@@ -1,0 +1,39 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "States that reviews 'get slower' as a certainty rather than a possibility ('may become slower')",
+        "Turns a hedged suggestion ('suggest that two reviewers should probably be required') into a direct imperative command ('Require two reviewers only...')"
+      ],
+      "register_ok": true,
+      "note": "Clear and direct, but choppy phrasing and an abrupt shift to an imperative ending weaken its nuance."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Smooth and natural phrasing that preserves the logical progression, tone, and qualifiers of the source."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Dropped the opening premise that requiring two reviewers on all PRs initially appears to be an obvious bug-catching measure but is less clear on closer examination"
+      ],
+      "strength_changes": [
+        "Strengthened 'may notice' to 'can catch'",
+        "Strengthened 'may become slower' to 'get slower'"
+      ],
+      "register_ok": true,
+      "note": "Leading with the conclusion drops the opening context and leaves the final sentence logically disconnected."
+    }
+  }
+}

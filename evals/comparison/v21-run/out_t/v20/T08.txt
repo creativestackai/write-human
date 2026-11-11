@@ -1,0 +1,3 @@
+Northwind Dashboard 3.2 is out. You can now export any report to CSV and switch to dark mode, and dashboards load faster: the average load time has dropped from 4.1 seconds to 1.8. The update will roll out to all accounts by June 14.
+
+Version 1 of our API will be retired on September 30, so please migrate as soon as you can. Have thoughts? Write to us at feedback@northwind.example.

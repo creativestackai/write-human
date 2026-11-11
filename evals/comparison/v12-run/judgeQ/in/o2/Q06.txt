@@ -1,0 +1,35 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+CONTEXT (background, not part of the text):
+Thread context. Anita (operations lead) asked in the finance channel: 'Did the Kestrel invoice get approved? We need to pay them by Friday or they pause our account.' Rohan (finance) is replying. Anita already knows who Kestrel is and why the Friday date matters.
+
+SOURCE TEXT:
+Hi Anita, thank you for reaching out! I wanted to provide a comprehensive update on the status of the Kestrel invoice. The invoice was reviewed and approved yesterday by Meera from the accounts team. However, during the review, we noticed that one line item, an onboarding fee of 18,400, appears to have been charged in error, as it was already covered under the original contract. Because of this, I do not believe we should pay the full amount. The remaining balance of 2,31,600 is undisputed. My recommendation would be to pay the undisputed 2,31,600 on Friday so that the account is not paused, and to raise the onboarding fee with Kestrel separately. I expect that we will hear back from them next week. I hope this helps, and please let me know if you have any further questions!
+
+=== REWRITE A ===
+Yes, Meera from accounts approved it yesterday. One catch: the onboarding fee line, 18,400, looks like it was charged by mistake, since the original contract already covers it. I don't think we should pay that part. The remaining 2,31,600 is undisputed.
+
+I'd pay the 2,31,600 on Friday so the account doesn't get paused, and take the onboarding fee up with Kestrel separately. I expect to hear back from them next week.
+
+=== REWRITE B ===
+Yes, Meera in accounts approved it yesterday. One catch though: during the review we spotted an onboarding fee of 18,400 that looks like it was charged by mistake, since the original contract already covers it. I don't think we should pay that bit.
+
+The other 2,31,600 is undisputed. So I'd pay that on Friday, which keeps the account from being paused, and take the onboarding fee up with Kestrel separately. I expect to hear back from them next week.
+
+=== REWRITE C ===
+Hi Anita, the Kestrel invoice was approved yesterday. Meera from accounts reviewed it. During the review we noticed one line that looks like a mistake: an onboarding fee of 18,400, which the original contract already covers. So I don't think we should pay the full amount.
+
+The remaining 2,31,600 isn't in dispute. I'd pay that on Friday so the account doesn't get paused, and raise the onboarding fee with Kestrel separately. I expect to hear back from them next week.
+
+=== REWRITE D ===
+Yes, Meera approved it yesterday. One catch: the 18,400 onboarding fee looks like it was charged in error, since the original contract already covered it, so I don't think we should pay the full amount. The other 2,31,600 is undisputed. I'd pay that on Friday so the account doesn't get paused, and raise the fee with Kestrel separately. I expect to hear back from them next week.

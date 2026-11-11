@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["C", "A", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Does not explicitly preserve that the complication was unforeseen."
+      ],
+      "strength_changes": [
+        "Saying preparation 'matters' weakens the claim that thorough preparation is the cornerstone of any successful renovation.",
+        "'Rotted' describes the deterioration more strongly and specifically than the source."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, but smoother and less distinctive than the surrounding author's voice."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Does not identify water as the cause of the wall damage.",
+        "Omits the lesson that thorough preparation is the cornerstone of a successful renovation."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "The clipped complaint fits the surrounding voice best, although 'had gone' is vague."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "'Wrecked by water' is stronger than 'significant water damage.'",
+        "'Rotted' describes the deterioration more strongly and specifically than the source."
+      ],
+      "register_ok": true,
+      "note": "The terse setbacks and rueful aside fit the context while retaining the source's substantive content."
+    }
+  }
+}

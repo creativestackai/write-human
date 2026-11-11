@@ -1,0 +1,26 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+This study investigates the impact of structured sleep hygiene education on academic performance among undergraduate students. A total of 214 participants were randomly assigned to either an intervention group or a control group for a period of 12 weeks. The intervention comprised weekly workshops focused on sleep scheduling, caffeine management, and screen-time reduction. Results indicate that participants in the intervention group demonstrated significantly higher grade point averages than the control group (d = 0.31, p = 0.02). Furthermore, self-reported sleep quality improved markedly, underscoring the pivotal role of sleep in academic success. These findings highlight the importance of integrating sleep education into university curricula and pave the way for future research in this critical area.
+
+=== REWRITE A ===
+We wanted to know whether teaching undergraduates good sleep habits would show up in their grades. We randomly split 214 students into two groups for 12 weeks. One group got weekly workshops on keeping a regular sleep schedule, cutting back on caffeine, and putting screens away at night. The other group got nothing. By the end, the workshop group had higher grade point averages than the control group (d = 0.31, p = 0.02), a small-to-moderate effect. They also said they were sleeping better, though that is self-reported, so we hold it more loosely. The results suggest sleep education could be worth adding to university programs, but one study at one point in time can't settle that. It needs replication with longer follow-up.
+
+=== REWRITE B ===
+We tested whether structured sleep hygiene education affects the academic performance of undergraduate students. We randomly assigned 214 participants to an intervention group or a control group for 12 weeks. The intervention was a weekly workshop on sleep scheduling, caffeine management, and screen-time reduction. By the end, the intervention group had significantly higher grade point averages than the control group (d = 0.31, p = 0.02), and self-reported sleep quality had improved markedly. These findings support adding sleep education to university curricula.
+
+=== REWRITE C ===
+This study examines the effect of structured sleep hygiene education on the academic performance of undergraduate students. A total of 214 participants were randomly assigned to an intervention group or a control group for 12 weeks. The intervention was a weekly workshop covering sleep scheduling, caffeine management, and screen-time reduction. At the end of the period, the intervention group had significantly higher grade point averages than the control group (d = 0.31, p = 0.02), and their self-reported sleep quality improved as well. Sleep appears to matter for academic success, and the findings support adding sleep education to university curricula.
+
+=== REWRITE D ===
+We tested whether teaching undergraduates about sleep hygiene changes their grades. Over 12 weeks, 214 students were randomly assigned to an intervention group or a control group. The intervention group attended a weekly workshop on keeping a regular sleep schedule, managing caffeine, and cutting back on screen time. By the end, their grade point averages were significantly higher than the control group's (d = 0.31, p = 0.02), which is a small effect by conventional standards. Self-reported sleep quality improved as well. Since that measure rests on what students told us, objective sleep data is the obvious next step. The grade result alone is enough, though, to argue for putting sleep education into university curricula.

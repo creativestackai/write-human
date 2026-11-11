@@ -1,0 +1,35 @@
+{
+  "human_quality_rank": ["B", "A", "C", "D"],
+  "fidelity_rank": ["A", "C", "D", "B"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, maintaining an authentic and natural conversational tone."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Skillfully rephrases the passage with punchier comedic timing and natural sentence rhythm while preserving all facts."
+    },
+    "C": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, maintaining an authentic and natural conversational tone."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, maintaining an authentic and natural conversational tone."
+    }
+  }
+}

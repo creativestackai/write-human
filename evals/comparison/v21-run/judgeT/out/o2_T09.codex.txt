@@ -1,0 +1,45 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit claim that the recommended practices can help you unlock your full potential."
+      ],
+      "strength_changes": [
+        "Focusing exclusively on grammar becomes pouring time into grammar, weakening the exclusivity claim.",
+        "Fear holding people back from practice becomes people avoiding practice, making the behavioral claim more categorical."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, but opening with the conclusion makes the return to a general introduction feel awkward."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Learning requires the right mindset.",
+        "The explicit claim that the recommended practices can help you unlock your full potential."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "The natural progression and restrained conversational language make this the clearest and most convincing rewrite."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Learning requires dedication, patience, and the right mindset.",
+        "The explicit claim that the recommended practices can help you unlock your full potential."
+      ],
+      "strength_changes": [
+        "Persistence rather than talent being the key to success becomes persistence mattering more than talent, allowing talent a role the source's contrast excludes.",
+        "Fear often holding people back becomes fear keeping people from practicing, removing the frequency qualifier and making the effect more categorical."
+      ],
+      "register_ok": true,
+      "note": "Plain and compact, though its compressed advice loses some of the source's substance and nuance."
+    }
+  }
+}

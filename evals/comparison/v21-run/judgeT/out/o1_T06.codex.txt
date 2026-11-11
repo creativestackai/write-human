@@ -1,0 +1,40 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Changes the possibility that reviews may become slower without improving into the categorical statement that they do.",
+        "Turns a tentative recommendation to probably require two reviewers only for payment and authentication changes into an unqualified directive.",
+        "States that one reviewer is enough elsewhere without the source's tentative framing."
+      ],
+      "register_ok": true,
+      "note": "Direct and natural, but its decisive ending sacrifices the source's caution."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Clear and faithful, although the placement of 'probably only' makes the final sentence slightly awkward."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Omits the initial apparent appeal of requiring two reviewers on every pull request as an obvious way to catch more bugs.",
+        "Omits the explicit reassessment that this apparent benefit becomes less clear on closer examination."
+      ],
+      "strength_changes": [
+        "Changes the possibility that reviews may become slower without improving into the categorical statement that they do."
+      ],
+      "register_ok": true,
+      "note": "Concise and readable, but the compressed argument loses the source's opening perspective and some caution."
+    }
+  }
+}

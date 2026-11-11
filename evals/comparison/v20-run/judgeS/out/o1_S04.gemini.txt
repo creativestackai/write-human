@@ -1,0 +1,37 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["D", "A", "C", "B"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clean, direct technical documentation that strips corporate fluff while keeping the original facts intact."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Comparing event_id against already-processed events"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads naturally with good developer empathy, but introduces an implementation detail not present in the source."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and readable, though 'spot duplicates' and omitting 'code' from '2xx status' sound slightly less polished for API docs."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Exemplary developer documentation that replaces AI throat-clearing with concise, idiomatic, and precise technical phrasing."
+    }
+  }
+}

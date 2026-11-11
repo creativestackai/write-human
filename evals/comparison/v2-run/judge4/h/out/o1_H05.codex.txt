@@ -1,0 +1,45 @@
+{
+  "human_quality_rank": ["B", "C", "A", "D"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A clear, natural team reply that preserves the source's details and conditions."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "QA must re-verify the fix specifically on Thursday."
+      ],
+      "register_ok": true,
+      "note": "The conversational rhythm feels natural, but the Thursday deadline for QA is no longer explicit."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Monday morning becomes a definite fallback rather than a possible alternative."
+      ],
+      "dropped_facts": [
+        "QA completed its testing pass yesterday.",
+        "The explicit rationale that pricing accuracy is critical."
+      ],
+      "register_ok": true,
+      "note": "Concise and credible, though it omits some context and makes the fallback more definite."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Sam promises to provide an update on Thursday evening.",
+        "Monday morning becomes a definite fallback rather than a possible alternative."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "The reply is clear but more staged and emphatic, and it invents a follow-up commitment."
+    }
+  }
+}

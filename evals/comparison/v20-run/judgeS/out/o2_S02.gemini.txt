@@ -1,0 +1,51 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["A", "D", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads like a thoughtful human essayist with natural cadence while preserving all source points without additions."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "Personal anecdote of phone buzzing once a minute and inability to read three pages without reaching for it",
+        "Claim that focus used to be ordinary",
+        "Outcome claim that good ideas show up late after staying with a problem longer than is comfortable",
+        "Personal anecdote of trying willpower and having it last about an hour",
+        "Specific environmental changes: phone in another room, notifications off, one task on screen",
+        "Subjective editorializing that it is dull advice"
+      ],
+      "dropped_facts": [
+        "Endless scrolling",
+        "Anyone can reclaim their attention",
+        "The path to a more focused life begins with a single intentional choice"
+      ],
+      "register_ok": true,
+      "note": "Features an authentic, unmistakable personal voice, but invents numerous personal anecdotes and drops several key claims."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Specific tactics: putting phone in another room, closing tabs, and deciding in advance what matters today while ignoring the rest",
+        "Specific ending action of picking one thing and staying with it"
+      ],
+      "dropped_facts": [
+        "Focus is a valuable skill (only mentions it is getting rare)"
+      ],
+      "register_ok": true,
+      "note": "Adopts a casual register but invents specific productivity tips, drops the value of focus, and uses an awkward metaphor with ideas growing up."
+    },
+    "D": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Fully faithful and well-structured, but its balanced rhythm and phrasing retain the telltale polish of an LLM rewrite."
+    }
+  }
+}

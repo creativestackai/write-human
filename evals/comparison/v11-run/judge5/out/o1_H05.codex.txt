@@ -1,0 +1,51 @@
+{
+  "human_quality_rank": ["D", "C", "A", "E", "B"],
+  "fidelity_rank": ["C", "E", "A", "D", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "QA must re-verify the fix on Thursday specifically."
+      ],
+      "register_ok": true,
+      "note": "Natural team-channel writing, though it loses the explicit Thursday deadline for QA."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Sam promises an update on Thursday evening.",
+        "Monday morning becomes a definite fallback rather than a possible alternative."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Conversational but somewhat staged, with an invented follow-up commitment."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, appropriately direct, and faithful to the source's conditions and uncertainty."
+    },
+    "D": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "Monday morning becomes a definite fallback rather than a possible alternative."
+      ],
+      "dropped_facts": [
+        "QA completed its testing pass yesterday."
+      ],
+      "register_ok": true,
+      "note": "The most economical and natural reply, but it omits testing completion and firms up the fallback."
+    },
+    "E": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Complete and readable, with slightly more formulaic setup than the strongest replies."
+    }
+  }
+}

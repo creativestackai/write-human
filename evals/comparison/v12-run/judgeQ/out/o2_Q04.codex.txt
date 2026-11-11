@@ -1,0 +1,60 @@
+{
+  "human_quality_rank": ["B", "A", "C", "D"],
+  "fidelity_rank": ["A", "D", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The migration was recent.",
+        "Engineering is described as fast-paced, and build times as potentially decisive for developer productivity.",
+        "The cost reduction made the infrastructure more sustainable."
+      ],
+      "register_ok": true,
+      "note": "Direct, natural engineering prose that preserves the main facts and outcomes."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "A 24-minute build allows developers to wander off and lose their place.",
+        "A nine-minute build does not allow that loss of focus.",
+        "The difference in build duration visibly affects how people work every day."
+      ],
+      "dropped_facts": [
+        "The migration was recent.",
+        "Two engineers led the migration; the rewrite instead describes it as taking two engineers.",
+        "Engineering is described as fast-paced.",
+        "The cost reduction made the infrastructure more sustainable.",
+        "The migration improved development velocity.",
+        "The migration increased developers' confidence in shipping."
+      ],
+      "register_ok": true,
+      "note": "The conversational aside gives it personality but introduces unsupported claims about attention and daily work."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Engineering is described as fast-paced, and build times as potentially decisive for developer productivity.",
+        "The cost reduction made the infrastructure more sustainable.",
+        "The migration improved development velocity.",
+        "The migration increased developers' confidence in shipping."
+      ],
+      "register_ok": true,
+      "note": "Clear and credible as a brief engineering update, but it omits the stated developer outcomes."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The migration was recent.",
+        "Two engineers led the migration; the rewrite instead describes it as taking two engineers.",
+        "Engineering is described as fast-paced.",
+        "The cost reduction made the infrastructure more sustainable."
+      ],
+      "register_ok": true,
+      "note": "Readable and faithful to the main outcomes, though the generic opening feels more formulaic."
+    }
+  }
+}

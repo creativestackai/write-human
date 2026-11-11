@@ -1,0 +1,69 @@
+{
+  "human_quality_rank": ["B", "D", "C", "A"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The writer is still sorting out some of what they learned.",
+        "Passion, perseverance and other people matter more than anything else the writer can name, a broader claim than their being ingredients of success."
+      ],
+      "dropped_facts": [
+        "The writer is thrilled to share the announcement.",
+        "The experience involved a rollercoaster of emotions and personal growth."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, but its generic reflective language captures little of the supplied voice."
+    },
+    "B": {
+      "p_ai": 24,
+      "unsupported_specifics": [
+        "Serving 300 people a day still sounds made up to the writer.",
+        "The writer wishes they could report a clever way out, and asserts there was none.",
+        "The writer rejects presenting a lesson about passion and community, contradicting the source's stated lesson.",
+        "The writer is still sad, oddly relieved and unable to reconcile those feelings.",
+        "The advice to read the lease first."
+      ],
+      "dropped_facts": [
+        "The writer is thrilled to share the announcement.",
+        "Selling was a difficult decision.",
+        "The experience brought learning and personal growth.",
+        "The stated lesson that passion, perseverance and community are the true ingredients of success.",
+        "The closing question asking what dream the reader is putting off."
+      ],
+      "register_ok": true,
+      "note": "The conversational rhythm fits the sample well, but the emotional candour is largely invented."
+    },
+    "C": {
+      "p_ai": 28,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer is thrilled to share the announcement.",
+        "The explicit claim of personal growth.",
+        "The direct encouragement to take the leap and start something.",
+        "The closing question asking what dream the reader is putting off."
+      ],
+      "register_ok": true,
+      "note": "Direct and credible, with a light touch of the supplied voice and the fewest unsupported changes."
+    },
+    "D": {
+      "p_ai": 31,
+      "unsupported_specifics": [
+        "The espresso machine groaned every time it was used.",
+        "Serving 300 customers a day still feels like an invented number to the writer.",
+        "The writer denies having drawn a neat lesson, contradicting the source's stated lesson.",
+        "The writer is mostly tired, a bit sad and weirdly fine simultaneously.",
+        "The advice to read the lease properly first."
+      ],
+      "dropped_facts": [
+        "The writer is thrilled to share the announcement.",
+        "Selling was a difficult decision.",
+        "The experience brought learning and personal growth.",
+        "The stated lesson that passion, perseverance and community are the true ingredients of success."
+      ],
+      "register_ok": true,
+      "note": "Vivid and recognisably voiced, though the stacked punchlines and invented details feel somewhat performed."
+    }
+  }
+}

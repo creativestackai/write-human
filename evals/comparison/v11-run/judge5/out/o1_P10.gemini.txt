@@ -1,0 +1,89 @@
+{
+  "human_quality_rank": [
+    "B",
+    "E",
+    "A",
+    "C",
+    "D"
+  ],
+  "fidelity_rank": [
+    "A",
+    "D",
+    "C",
+    "E",
+    "B"
+  ],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Claim that syntax is the 'easy part'",
+        "Addition that programming is in 'a language a computer can read'"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Achieves natural human cadence while faithfully preserving every core claim and requirement from the source."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Invented personal background and anecdotes ('When I started coding...', 'I wasted a lot of early time...')",
+        "Invented timeframe of looking up syntax in 'ten seconds'",
+        "Invented concrete concepts of loops, functions, and inputs",
+        "Invented detail of 'a spreadsheet's worth of data'",
+        "Invented scenario and time detail ('at 11pm')",
+        "Invented outcome comparison between the 'third failed attempt' and 'first clean run'"
+      ],
+      "dropped_facts": [
+        "Explicit requirement of 'patience, persistence, and practice'",
+        "Direct encouragement not to be afraid to fail",
+        "Claim that every line of code written brings one closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic conversational memoir voice, but severely compromises fidelity through extensive invented personal anecdotes and dropped claims."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Subjective addition that a bug does not feel like a lesson 'at the time'",
+        "Predictive assertion that 'You will fail along the way' rather than urging the reader not to fear failure"
+      ],
+      "dropped_facts": [
+        "Explicit mention of 'persistence' (mentions only 'patience and a lot of practice')",
+        "Definition of programming as the 'language of problem-solving'"
+      ],
+      "register_ok": true,
+      "note": "Clear and understated, but drops persistence and softens key assertions into passive phrasing."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Added explanation that bugs teach 'how your program really behaves'"
+      ],
+      "dropped_facts": [
+        "Explicit mention of 'persistence' (mentions only 'patience and a lot of practice')",
+        "Concept of programming as the 'language of problem-solving' (reduced to 'Programming is problem-solving')",
+        "Concept of 'mastery' (diluted to 'being good at it')"
+      ],
+      "register_ok": true,
+      "note": "Maintains solid fidelity to the original structure, but drops persistence and reads somewhat generic."
+    },
+    "E": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Claim that syntax is the 'easy part' and can be looked up in 'ten seconds'",
+        "Invented personal reflection ('I understand the pull')",
+        "Invented specifics regarding 'flashcards and cheat sheets', 'for loop', and tutorials",
+        "Invented imperative advice ('write the broken thing. Run it. See what happens.')"
+      ],
+      "dropped_facts": [
+        "The application domain of 'analyzing data'",
+        "Explicit requirement of 'patience, persistence, and practice'",
+        "Claim that every line of code written brings one closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Features sharp, engaging prose with strong voice, but invents numerous concrete scenarios and omits key source facts."
+    }
+  }
+}

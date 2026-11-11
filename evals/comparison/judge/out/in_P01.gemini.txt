@@ -1,0 +1,57 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remote work emerged as a transformative force reshaping organizations in a rapidly evolving digital landscape",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Clean, natural, and exceptionally faithful rewrite that strips corporate jargon while preserving the original meaning."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "hiring within forty minutes of the office",
+        "messages getting misread",
+        "people going days without talking to anyone",
+        "company culture taking years to build",
+        "nobody sharing a room",
+        "offices running on distrust while remote teams run beautifully",
+        "specific communication habits like writing things down, answering promptly, and calling when threads get tense",
+        "software being unable to fix a lack of trust"
+      ],
+      "dropped_facts": [
+        "Remote work emerged as a transformative force reshaping organizations in a rapidly evolving digital landscape",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Possesses a strong, authentic authorial voice but invents substantial commentary, specific figures, and tactical advice not present in the source."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "arguments going wrong by only discussing one half",
+        "working when sharpest",
+        "getting a commute back",
+        "living eleven time zones away",
+        "messages read in the wrong tone sitting for a day",
+        "going a whole week talking only to people on screens",
+        "hallway chats revealing true team sentiment about a project",
+        "framing the debate as the wrong fight",
+        "owning mistakes when something slips",
+        "a shared doc outworking a dozen apps"
+      ],
+      "dropped_facts": [
+        "Remote work emerged as a transformative force reshaping organizations in a rapidly evolving digital landscape",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Lively and conversational, but heavily padded with fabricated narrative scenes, arbitrary quantities, and unsupported claims."
+    }
+  }
+}

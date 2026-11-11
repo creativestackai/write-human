@@ -1,0 +1,78 @@
+{
+  "human_quality_rank": ["C", "A", "D", "B"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 22,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It is located in the heart of the port.",
+        "It has a rich legacy of innovation.",
+        "It has a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant growth milestone.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "Its future looks bright."
+      ],
+      "register_ok": true,
+      "note": "Clear and appropriately restrained, though the repeated pronoun makes it slightly less polished than C."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It is located in the heart of the port.",
+        "It has a rich legacy of innovation.",
+        "It has a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant growth milestone.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "Its future looks bright."
+      ],
+      "register_ok": false,
+      "note": "The conversational asides and phrases such as 'Germany and Poland came' feel strained and reduce precision."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It is located in the heart of the port.",
+        "It has a rich legacy of innovation.",
+        "It has a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant growth milestone.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "Its future looks bright."
+      ],
+      "register_ok": true,
+      "note": "The strongest prose is plain, precise company-profile writing, although it omits all the source's evaluative claims."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rotterdam is in the Netherlands.",
+        "Harborline is a leading freight forwarding company.",
+        "It played a pivotal role in shaping European supply chains.",
+        "It is located specifically in the heart of the port.",
+        "It has a rich legacy of innovation.",
+        "It has a steadfast commitment to excellence.",
+        "The 2016 expansion was a significant growth milestone.",
+        "Its performance demonstrated enduring resilience in a dynamic market.",
+        "The €310 million revenue figure was reported by the company.",
+        "Experts agree its strategic vision continues to set the industry standard.",
+        "Its future looks bright."
+      ],
+      "register_ok": true,
+      "note": "Readable and natural overall, but 'opened,' 'working,' and 'booked' make the business description less precise."
+    }
+  }
+}

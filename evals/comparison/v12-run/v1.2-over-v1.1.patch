@@ -1,0 +1,247 @@
+diff -ru --exclude=.git wt-v11/CHANGELOG.md wt-v12/CHANGELOG.md
+--- wt-v11/CHANGELOG.md	2026-10-24 12:18:43
++++ wt-v12/CHANGELOG.md	2026-10-24 12:42:04
+@@ -4,6 +4,22 @@
+ [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
+ [semantic versioning](https://semver.org/).
+ 
++## [1.2.0] - 2026-10-24
++
++Voice recovery on top of the 1.1.0 fidelity patch. The fidelity rules are
++unchanged; nothing here allows adding facts.
++
++### Added
++- Pep-talk closers and engagement-bait questions as tells (`SKILL.md`
++  diagnosis and audit; new section 11 in `reference/ai-tells.md`).
++- "Work at paragraph level, not sentence by sentence" in the Structure layer.
++- Register rule for contractions and direct address, and a stronger
++  writing-sample standard (the rewrite must echo the sample's sentence
++  length, contractions, openings, and attitude).
++- Audit prompt now also asks whether the draft's skeleton was merely polished,
++  whether a pep-talk or engagement question survived, and whether the rewrite
++  sounds like the sample.
++
+ ## [1.1.0] - 2026-10-24
+ 
+ A minimal fidelity patch. A controlled same-model comparison against
+diff -ru --exclude=.git wt-v11/README.md wt-v12/README.md
+--- wt-v11/README.md	2026-10-24 12:18:43
++++ wt-v12/README.md	2026-10-24 12:42:04
+@@ -1,94 +0,0 @@
+-# write-human
+-
+-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+-[![SKILL.md](https://img.shields.io/badge/format-SKILL.md-blue)](https://agentskills.io)
+-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](CHANGELOG.md)
+-
+-A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. It strips the statistical and stylistic tells that AI detectors flag, puts the rhythm and voice back, and makes the writing better in the process.
+-
+-Most "humanizers" hand you a list of banned words and call it done. That barely works. Swap "delve" for "explore" and you still have flat, evenly paced, opinion-free text, which still flags as AI and now reads worse too. This skill is built on a different premise.
+-
+-## The idea
+-
+-AI detectors do not really measure "a machine wrote this." Research on base versus instruction-tuned models found detectors flag the *polish*: the politeness, the balance, the even rhythm, the hedging, the tidy parallel structure that models pick up from being trained to be helpful assistants. They score two things above all:
+-
+-- **Perplexity**, how predictable each word is. Models take the safe path every time.
+-- **Burstiness**, how much sentence length varies. Models cluster around an average; humans swing wildly.
+-
+-So the fix is not deleting forbidden words. It is rewriting so the text reads like a specific person continuing a thought: uneven rhythm, real opinions, concrete detail. That move raises both numbers the detectors care about, and it happens to be the same thing that makes writing engaging. Undetectable and good are the same target.
+-
+-## What's inside
+-
+-```
+-write-human/
+-├── SKILL.md                          the workflow and the core idea
+-├── reference/
+-│   ├── why-detectors-flag-text.md    how detection works, and why the fixes work
+-│   ├── ai-tells.md                   the full pattern catalog with before/after fixes
+-│   └── craft-levers.md               how to make the rewrite genuinely engaging
+-└── examples/
+-    └── before-after.md               full worked rewrites in three registers
+-```
+-
+-The skill runs a five-step loop: diagnose the tells, rewrite in three layers (lexicon, structure, rhythm), re-voice it with a real point of view, run an adversarial self-audit ("what still reads as AI? now fix that"), and read it aloud.
+-
+-## Install
+-
+-**Claude Code:** drop the `write-human/` folder into your skills directory (`~/.claude/skills/write-human/`), or package it and install:
+-
+-```bash
+-zip -r write-human.skill write-human
+-```
+-
+-Then double-click the `.skill` file, or point Claude Code at the folder.
+-
+-**Claude Desktop / Cowork:** install the packaged `write-human.skill` file from the app.
+-
+-The skill triggers on its own when you ask to humanize, de-slop, or fix the AI voice in a draft. You can also invoke it by name.
+-
+-**Other agents:** the skill is a plain `SKILL.md` plus reference files, so it works with any tool that reads the [agentskills.io](https://agentskills.io) format (Cursor, Copilot CLI, OpenHands, and others). Drop the folder into that tool's skills directory.
+-
+-## How to use it
+-
+-Give it a draft and ask:
+-
+-> Humanize this. It sounds like ChatGPT wrote it.
+-
+-> Rewrite this landing page copy so it doesn't read as AI.
+-
+-> My essay keeps getting falsely flagged by a detector. Fix the voice without changing my argument.
+-
+-You will get back a short diagnosis, a rewrite, an honest self-audit of what still reads synthetic, and a final version. Ask for "just the clean text" if you do not want the working.
+-
+-## What it does not do
+-
+-Read this part. It matters.
+-
+-This skill changes surface style, the things a statistical detector measures. It does **not** remove a hard cryptographic watermark like Google's SynthID, which is baked into generation itself and cannot be reliably edited out without wrecking the text. No tool can honestly promise a "0% AI" score, because detectors are probabilistic and every one scores the same text differently.
+-
+-The reason to use this is that AI detection is badly biased and gets real people in trouble. One Stanford study had seven detectors falsely flag 61% of TOEFL essays that humans actually wrote, because non-native English and tightly structured technical writing both look "too clean" to a scanner. Helping a real writer sound like themselves, so they are not falsely accused and so their work actually lands, is the point. Dressing up unread model output to pass it off where that is forbidden is not, and the skill will steer you away from that framing.
+-
+-## How this differs from a banned-word linter
+-
+-There are good tools that hand you an exhaustive tiered list of AI words, a
+-severity score, and a flag-only mode. The `avoid-ai-writing` skill is one. This
+-is not that, on purpose. A blacklist tells you which words to delete; it cannot
+-tell you that the real problem is even rhythm, no point of view, and three
+-sentences in a row at the same length. `write-human` is the method: voice,
+-burstiness, concrete detail, and an adversarial self-audit, with a short word
+-list as a convenience rather than the main event. The two pair well. Rewrite
+-here for voice, then run a linter as a final pass if you want one.
+-
+-## Feedback
+-
+-Found a case where the skill fires when it shouldn't, or a rewrite that still
+-reads synthetic? Open an issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for how
+-trigger tuning and new patterns get proposed.
+-
+-## Credits
+-
+-Built from four sources: a deep research survey of the AI-detection and humanization literature (perplexity, burstiness, the base-model finding, watermarking, the false-positive studies), the pattern catalog in [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) maintained by WikiProject AI Cleanup, a set of classic copywriting craft principles for the engagement layer, and the fidelity-first editing approach of [blader/humanizer](https://github.com/blader/humanizer) (MIT): keep every supported claim and invent nothing. See [NOTICE](NOTICE) and the comparison in [evals/comparison/REPORT.md](evals/comparison/REPORT.md).
+-
+-## License
+-
+-Apache License 2.0. See [LICENSE](LICENSE). Use it, fork it — attribution and the license notice carry over per the terms.
+diff -ru --exclude=.git wt-v11/SKILL.md wt-v12/SKILL.md
+--- wt-v11/SKILL.md	2026-10-24 12:18:23
++++ wt-v12/SKILL.md	2026-10-24 12:42:04
+@@ -1,6 +1,6 @@
+ ---
+ name: write-human
+-version: 1.1.0
++version: 1.2.0
+ description: >-
+   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
+   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
+@@ -61,7 +61,7 @@
+ 
+ Read the draft once, ideally aloud in your head. Name the tells you hear in three to six quick bullets before you touch anything. This keeps the rewrite targeted instead of a vague "make it better." If you are unsure what to look for, open `reference/ai-tells.md`, which catalogs every pattern with a fix.
+ 
+-The fastest tells to listen for: every sentence the same length, no opinion anywhere, lists of exactly three, "It's important to note," em dashes doing a comma's job, a sweeping "In today's world" opener, and a tidy summary conclusion that adds nothing.
++The fastest tells to listen for: every sentence the same length, no opinion anywhere, lists of exactly three, "It's important to note," em dashes doing a comma's job, a sweeping "In today's world" opener, and a tidy summary conclusion that adds nothing. On posts and motivational pieces also listen for the pep-talk closer ("don't be afraid to fail," "the best time to start is now," "every step brings you closer to mastery") and the engagement-bait question ("What's holding you back?", "What are you chasing?"). They make no claim, so cut them and end on the last concrete thing the draft says. Keep a real call to action the draft makes (a link, a sign-up, a deadline).
+ 
+ ### 2. Rewrite in three layers
+ 
+@@ -69,7 +69,7 @@
+ 
+ **Lexicon.** Replace the high-frequency AI vocabulary with plainer, context-specific words. Not mechanically, in context. "Delve into" becomes "dig into" or just "look at." "Underscores the importance of" becomes "shows" or "matters because." Kill transition padding outright: "It's worth noting that," "Furthermore," "Moreover," "Additionally." If a point is worth making, make it. The full tables with replacements live in `reference/ai-tells.md`.
+ 
+-**Structure.** Break the formulas. Reduce a rule-of-three list to two items or stretch it to an uneven four. Rewrite negative parallelisms ("it's not just X, it's Y") into direct statements. Put back the plain verbs the model avoided: "serves as a testament to" becomes "is." Delete synonym cycling (the protagonist, the main character, the central figure, the hero, all for one person) and use a pronoun. Fix the formatting tells: em dashes, mechanical boldface, emoji bullets, curly quotes, Title Case In Headings.
++**Structure.** Work at paragraph level, not sentence by sentence: decide the one point each paragraph makes, say it first, and rewrite around it, merging, splitting, or reordering as a writer would. A rewrite that keeps the draft's skeleton and polishes each sentence on top still reads as machine-made. Break the formulas. Reduce a rule-of-three list to two items or stretch it to an uneven four. Rewrite negative parallelisms ("it's not just X, it's Y") into direct statements. Put back the plain verbs the model avoided: "serves as a testament to" becomes "is." Delete synonym cycling (the protagonist, the main character, the central figure, the hero, all for one person) and use a pronoun. Fix the formatting tells: em dashes, mechanical boldface, emoji bullets, curly quotes, Title Case In Headings.
+ 
+ **Rhythm.** This is the burstiness lever and it is underused. Make sure no three consecutive sentences share the same length or cadence. Cut one sentence to a fragment. Fuse two into a long one with a subordinate clause. Vary paragraph length too: same-length paragraphs scream AI. Read it back. If the meter is even and marching, break it.
+ 
+@@ -77,7 +77,7 @@
+ 
+ A draft can be technically clean and still obviously synthetic because there is no person in it. This step adds the person.
+ 
+-React, don't just report. "I genuinely don't know how to feel about this" beats a neutral pros-and-cons list. Admit mixed feelings and uncertainty, which models are trained out of. Use "I" where the draft is already in first person, because first person is honest, not unprofessional; never add an "I" with experiences the author did not give you. Trade vague claims for plainer wording, and for specific detail (a named example, a real number, an anecdote) only when the draft or the user supplies it. If a real detail would clearly help and you do not have it, ask for it or note it at the end. Delete the cliché opener and write a real one (a direct challenge, a concrete result, a confession, a small scene). Delete the summary conclusion; end on the sharpest concrete thing the draft contains.
++In conversational registers, use contractions and speak to the reader directly; in formal registers, do neither. If the user supplied a writing sample, it is the standard: the rewrite should visibly echo its sentence length, contractions, openings, and attitude (a blunt, self-deprecating sample means a blunt, self-deprecating rewrite, with the draft's facts unchanged). React, don't just report. "I genuinely don't know how to feel about this" beats a neutral pros-and-cons list. Admit mixed feelings and uncertainty, which models are trained out of. Use "I" where the draft is already in first person, because first person is honest, not unprofessional; never add an "I" with experiences the author did not give you. Trade vague claims for plainer wording, and for specific detail (a named example, a real number, an anecdote) only when the draft or the user supplies it. If a real detail would clearly help and you do not have it, ask for it or note it at the end. Delete the cliché opener and write a real one (a direct challenge, a concrete result, a confession, a small scene). Delete the summary conclusion; end on the sharpest concrete thing the draft contains.
+ 
+ For the craft of making the rewrite genuinely engaging (headlines, openings, quantifying the pain, the "so what" chain, open loops, testimonials), pull `reference/craft-levers.md`. These turn a de-AI'd draft into one that actually pulls the reader forward.
+ 
+@@ -87,7 +87,7 @@
+ 
+ This catches the tells you missed, and the facts you changed. After your rewrite, run three prompts on yourself:
+ 
+-1. "What still makes this read as AI-generated?" Answer honestly in a few bullets. There is almost always something: rhythm a touch too tidy, a contrast that is too clean, a closer that went slogan-y, placeholder-sounding specifics.
++1. "What still makes this read as AI-generated?" Answer honestly in a few bullets. There is almost always something: rhythm a touch too tidy, a contrast that is too clean, a closer that went slogan-y, placeholder-sounding specifics. Also ask: did I keep the draft's skeleton and only polish its sentences? Does it still end on a pep-talk or an engagement question? Does it sound like the writer's sample, if one was given?
+ 2. "What did I add or drop?" Go claim by claim against the draft: every number, name, date, quote, example, experience, cause, and commitment. Anything you added that has no source in the draft, the sample, or the user: delete it or replace it with the plain version. Anything you dropped: restore it, unless it was padding or empty significance.
+ 3. "Now fix exactly those." Revise and present the result.
+ 
+diff -ru --exclude=.git wt-v11/package.json wt-v12/package.json
+--- wt-v11/package.json	2026-10-24 12:18:43
++++ wt-v12/package.json	2026-10-24 12:42:04
+@@ -1,24 +0,0 @@
+-{
+-  "name": "write-human",
+-  "version": "1.1.0",
+-  "description": "A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. Strips the tells AI detectors flag, restores voice and rhythm, and makes the writing better in the process.",
+-  "license": "Apache-2.0",
+-  "author": "Sarthhak Kaluucha",
+-  "keywords": [
+-    "agentskills",
+-    "claude-skill",
+-    "writing",
+-    "humanize",
+-    "ai-detection",
+-    "editing",
+-    "voice"
+-  ],
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/creativestackai/write-human.git"
+-  },
+-  "homepage": "https://github.com/creativestackai/write-human#readme",
+-  "bugs": {
+-    "url": "https://github.com/creativestackai/write-human/issues"
+-  }
+-}
+diff -ru --exclude=.git wt-v11/reference/ai-tells.md wt-v12/reference/ai-tells.md
+--- wt-v11/reference/ai-tells.md	2026-10-24 12:18:43
++++ wt-v12/reference/ai-tells.md	2026-10-24 12:42:04
+@@ -16,7 +16,8 @@
+ 8. Formatting tells (em dash, boldface, lists, title case, emoji, curly quotes)
+ 9. Chatbot artifacts, disclaimers, sycophancy
+ 10. Filler and hedging phrases
+-11. A scannable trigger word list
++11. Pep-talk closers, engagement bait, and call-to-action clichés
++12. A scannable trigger word list
+ 
+ ---
+ 
+@@ -241,8 +242,23 @@
+ 
+ ---
+ 
+-## 11. Optional: a quick-scan list (a prompt to revise, not a find-and-replace)
++## 11. Pep-talk closers, engagement bait, and call-to-action clichés
+ 
++Posts, essays, and newsletters generated by a model end on a push: a motivational line, a question aimed at comments, an urge to act today. They say nothing the piece has not already said, and they appear on schedule, which is why they read as machine-made.
++
++**Pep-talk closers:** "Don't be afraid to fail." "Every step brings you closer to mastery." "The best time to start is now." "Believe in yourself and anything is possible." "Your journey starts today."
++**Engagement bait:** "What's holding you back?" "What goal are you chasing?" "Agree?" "Thoughts?" "Drop a comment below." "Tag someone who needs this."
++**Take-the-first-step clichés:** "Take the first step today." "If you're thinking about making a leap, start now."
++
++**Before:** The first three months were rough, and we lost money every week. Then the Saturday subscription took off. If you're thinking about making a leap of your own, the best time to start is now. What's holding you back?
++**After:** The first three months were rough, and we lost money every week. Then the Saturday subscription took off.
++
++Fix: cut the push and end on the last concrete thing the draft says. If the draft's closer carries something real (a link, a sign-up date, a specific ask), keep that and say it plainly. If the draft is a personal post and the author wants to leave the reader with a lesson, state the lesson they actually drew, in their words, instead of a slogan about the reader's future. Never replace a cut closer with a new claim.
++
++---
++
++## 12. Optional: a quick-scan list (a prompt to revise, not a find-and-replace)
++
+ This is a convenience, not the method. The whole skill exists because swapping words off a list produces flat, evenly paced, voiceless prose that still flags as AI. Use this list only to *locate* suspect passages fast; then do the real structural and voice work from sections 5 through 10. A hit is not automatically wrong. It is a place to look, and context decides.
+ 
+ If you specifically want an exhaustive, tiered banned-word workflow (severity levels, context profiles, a flag-only mode), that is a different tool: the `avoid-ai-writing` skill owns it. This list stays deliberately short.
+@@ -258,7 +274,8 @@
+ furthermore, moreover, additionally, "it's worth noting", "it is important to note",
+ "in today's", "in the realm of", "when it comes to", "not just", "not only",
+ "serves as", "stands as", "a testament to", "plays a key role",
+-"i hope this helps", "great question", "let me know", "certainly!", "of course!"
++"i hope this helps", "great question", "let me know", "certainly!", "of course!",
++"what's holding you back", "take the first step", "the best time to start", "closer to mastery"
+ ```
+ 
+ When you find clusters of these in one passage, that passage almost certainly needs the structural and voice work in sections 5 through 10, not just a word swap.

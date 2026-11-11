@@ -1,0 +1,45 @@
+{
+  "human_quality_rank": ["C", "A", "B", "D"],
+  "fidelity_rank": ["B", "C", "A", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The currency field is read from the customer record",
+        "The currency field can be null for accounts created before 2021",
+        "The export silently defaults null currency to USD"
+      ],
+      "register_ok": true,
+      "note": "Direct and natural PR response, but omits the historical pre-2021 condition and the silent USD fallback mechanism."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Accurately retains every source fact, though mislabeling the root cause under an 'On scale:' heading feels somewhat mechanical."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Offer to write the backfill ticket today if Priya agrees"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Strikes an exceptionally authentic, collaborative engineering tone with smooth logical flow, adding only a minor timeframe to the closing offer."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Claim that nobody from the other teams would look at the schema change in an invoice PR",
+        "Commitment to open the backfill ticket today",
+        "Proposal asking if Priya wants to block the PR until the migration lands because other services need a say"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Adopts an informal developer voice but overreaches into speculative justifications and a slightly confrontational stance."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+You are an expert editor evaluating five anonymous rewrites (A, B, C, D, E) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","2nd","3rd","4th","worst"], "fidelity_rank": ["best","2nd","3rd","4th","worst"], "overall_winner": "A|B|C|D|E", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}, "E": {...}}}
+Rank lists use the labels A-E. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Installation
+
+Getting started with `fastlint` is quick and easy! It's worth noting that the tool requires Node.js 18 or higher. To install it globally, simply run `npm install -g fastlint`. Once installed, you can leverage the powerful `--fix` flag to automatically resolve most issues, or use the `--dry-run` flag to preview changes without modifying any files.
+
+Additionally, it's crucial to note that `fastlint` reads its configuration from a `.fastlintrc` file in your project root. If no configuration file is found, sensible defaults will be applied, ensuring a seamless experience out of the box.
+
+=== REWRITE A ===
+Installation
+
+`fastlint` needs Node.js 18 or higher. Install it globally with `npm install -g fastlint`.
+
+Run it with the `--fix` flag and it resolves most issues automatically. If you'd rather see what it would do first, use `--dry-run` instead, which previews the changes and leaves your files untouched.
+
+It reads its configuration from a `.fastlintrc` file in your project root. If it doesn't find one, it falls back to the defaults.
+
+=== REWRITE B ===
+Installation
+
+`fastlint` requires Node.js 18 or higher. To install it globally, run `npm install -g fastlint`.
+
+Use the `--fix` flag to automatically resolve most issues, or `--dry-run` to preview changes without modifying any files.
+
+`fastlint` reads its configuration from a `.fastlintrc` file in your project root. If it doesn't find one, it falls back to its default settings.
+
+=== REWRITE C ===
+Installation
+
+You need Node.js 18 or higher. Then install fastlint globally:
+
+`npm install -g fastlint`
+
+Run it with `--fix` and it will resolve most issues for you. If you'd rather see what it would change first, add `--dry-run` and no files get touched.
+
+fastlint reads its config from a `.fastlintrc` file in your project root. No file there? It falls back to its defaults, so it works out of the box.
+
+=== REWRITE D ===
+Installation
+
+`fastlint` requires Node.js 18 or higher. To install it globally, run `npm install -g fastlint`.
+
+Once it's installed, the `--fix` flag automatically resolves most issues, and `--dry-run` previews changes without modifying any files.
+
+`fastlint` reads its configuration from a `.fastlintrc` file in your project root. If there isn't one, it falls back to default settings.
+
+=== REWRITE E ===
+Installation
+
+`fastlint` needs Node.js 18 or higher. Install it globally with `npm install -g fastlint`.
+
+Run it with `--fix` and it resolves most issues for you. If you'd rather look before it touches anything, use `--dry-run` instead, which previews the changes and leaves your files alone.
+
+Configuration lives in a `.fastlintrc` file in your project root. If there isn't one, `fastlint` falls back to its defaults, so you can run it straight away with nothing to set up.

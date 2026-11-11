@@ -1,0 +1,41 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["C", "B", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "requires dedication, patience, and the right mindset",
+        "you can unlock your full potential"
+      ],
+      "strength_changes": [
+        "'Talent matters less than persistence' softens the source's categorical claim that the key to success lies 'not in talent, but in persistence'"
+      ],
+      "register_ok": true,
+      "note": "Crisp and concise, but cuts several key requirements and weakens the concluding claim."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "the right mindset",
+        "you can unlock your full potential"
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Flows with natural conversational cadence and effective pacing while preserving the core message."
+    },
+    "C": {
+      "p_ai": 50,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "you can unlock your full potential"
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Preserves the most detail, but rearranging the conclusion into the opening sentence produces an unnatural, disjointed structure."
+    }
+  }
+}

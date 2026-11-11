@@ -1,0 +1,93 @@
+{
+  "human_quality_rank": ["D", "B", "E", "C", "A"],
+  "fidelity_rank": ["C", "B", "A", "E", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Suitability for teams of any size extends beyond the source's stated range of solo freelancers to growing agencies."
+      ],
+      "dropped_facts": [
+        "The teams using Tallyo are worldwide.",
+        "Tallyo is an all-in-one platform.",
+        "The tools are intuitive and constitute a robust suite.",
+        "The platform helps teams control their finances, streamline workflows, and increase productivity.",
+        "The source claims elimination of manual errors; this version promises only fewer mistakes.",
+        "Security is described as best-in-class in the source."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, but the feature summary feels somewhat flat."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Suitability for teams of any size extends beyond the source's stated range of solo freelancers to growing agencies."
+      ],
+      "dropped_facts": [
+        "Tallyo is an all-in-one platform.",
+        "The tools are intuitive and constitute a robust suite.",
+        "The explicit promises of greater financial control and increased productivity are omitted.",
+        "The source claims elimination of manual errors; this version promises only fewer errors.",
+        "Security is described as best-in-class in the source."
+      ],
+      "register_ok": true,
+      "note": "Natural, clear product copy with an easy rhythm and little unnecessary embellishment."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Tallyo is an all-in-one platform.",
+        "The tools are intuitive and constitute a robust suite.",
+        "The explicit promises of greater financial control, streamlined workflows, and increased productivity are omitted.",
+        "The source describes security as best-in-class; this version describes it only as strong."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, though the succession of short feature statements feels slightly assembled."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The intended customers spend, or risk spending, their evenings on invoicing.",
+        "Solo freelancers and agencies are asserted to be actual users, whereas the source identifies them as intended customers.",
+        "The agencies using Tallyo have outgrown spreadsheets.",
+        "Automation specifically reduces outgoing typos and incorrect totals.",
+        "Reports show which invoices are paid and unpaid.",
+        "Users can obtain payment status without asking anyone.",
+        "Clients' billing details are specifically stored behind the platform's security.",
+        "The wording attributes a 40% reduction to the more than 2,300 user teams collectively; the source does not establish that those teams all achieved that result."
+      ],
+      "dropped_facts": [
+        "The teams using Tallyo are worldwide.",
+        "Tallyo is an all-in-one platform.",
+        "The tools are intuitive and constitute a robust suite.",
+        "Growing agencies are an explicitly named target audience.",
+        "The explicit promises of greater financial control and increased productivity are omitted.",
+        "The source claims elimination of manual errors; this version promises only fewer specific errors.",
+        "Security is described as best-in-class in the source."
+      ],
+      "register_ok": true,
+      "note": "The most distinctive voice, although its conversational flourishes introduce substantial unsupported detail."
+    },
+    "E": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Users can create invoices, send them, and monitor payments within the platform.",
+        "The platform removes the need to retype numbers into a spreadsheet afterward.",
+        "The wording attributes a 40% reduction to the more than 2,300 user teams collectively; the source does not establish that those teams all achieved that result.",
+        "Automation and reporting are identified as separate causes of the measured 40% reduction.",
+        "Reporting specifically updates as money comes in.",
+        "Users can assess their financial position without waiting for month-end."
+      ],
+      "dropped_facts": [
+        "The tools are intuitive and constitute a robust suite.",
+        "The source's explicit claim that the tools eliminate manual errors is omitted.",
+        "The explicit promise of increased productivity is omitted.",
+        "Security is described as best-in-class in the source."
+      ],
+      "register_ok": true,
+      "note": "Concrete and approachable, but much of its helpful explanation depends on invented workflow details."
+    }
+  }
+}

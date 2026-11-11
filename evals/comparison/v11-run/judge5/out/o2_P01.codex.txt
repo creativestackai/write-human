@@ -1,0 +1,88 @@
+{
+  "human_quality_rank": ["A", "B", "E", "C", "D"],
+  "fidelity_rank": ["B", "E", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "Office hiring is limited to people within forty minutes of the office.",
+        "Access to global talent means hiring the best person for a role.",
+        "People go days without talking to anyone.",
+        "The company culture took years to build.",
+        "Nobody shares a room.",
+        "Plenty of offices operate on distrust, while plenty of remote teams operate beautifully.",
+        "Tools help only a little, while good habits help more.",
+        "Specific recommended habits include writing things down, answering promptly, and calling when a discussion becomes tense.",
+        "Without trust, no software can fix the situation."
+      ],
+      "dropped_facts": [
+        "Remote work is reshaping organizational operations within a rapidly evolving digital landscape.",
+        "The right tools and strong communication can help distributed teams reach their full potential and organizations thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "A distinctive conversational voice makes this readable, but substantial invented detail weakens fidelity."
+    },
+    "B": {
+      "p_ai": 23,
+      "unsupported_specifics": [
+        "The alternative to global hiring is hiring from only one city."
+      ],
+      "dropped_facts": [
+        "Remote work is reshaping organizational operations within a rapidly evolving digital landscape.",
+        "The conclusion promises realizing distributed teams' full potential and thriving in the future of work, beyond simply working well."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural business prose preserves almost all the argument with minimal embellishment."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Nobody shares a room.",
+        "The benefits are easy to list and the challenges are familiar.",
+        "Tools and communication habits help only once trust, transparency, and accountability are already in place."
+      ],
+      "dropped_facts": [
+        "The setting is a rapidly evolving digital landscape.",
+        "Organizations can thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Mostly clear and faithful, but patterned phrasing and an added prerequisite make the conclusion feel manufactured."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Most arguments about remote work go wrong by considering only benefits or only drawbacks.",
+        "Remote work lets people work when they are sharpest.",
+        "Remote work eliminates commuting.",
+        "A company can hire the best person for a job.",
+        "The hiring example specifies someone eleven time zones away.",
+        "A message is misinterpreted and left unresolved for a day.",
+        "Someone goes an entire week without talking to anyone except through a screen.",
+        "Unplanned hallway conversations are the hardest aspect of company culture to preserve.",
+        "Hallway conversations reveal how the team really feels about a project.",
+        "Tools help only after trust, transparency, and accountability are established.",
+        "A trusting team with a shared document will outperform a distrustful team using a dozen apps."
+      ],
+      "dropped_facts": [
+        "Remote work is reshaping organizational operations within a rapidly evolving digital landscape.",
+        "Improved work-life balance is an explicit benefit.",
+        "The right tools and strong communication practices can unlock distributed teams' full potential and help organizations thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Vivid examples create a voice, but the accumulating anecdotes and punch lines feel overworked and introduce extensive unsupported content."
+    },
+    "E": {
+      "p_ai": 29,
+      "unsupported_specifics": [
+        "Nobody shares a room."
+      ],
+      "dropped_facts": [
+        "Remote work is reshaping organizational operations within a rapidly evolving digital landscape.",
+        "The conclusion promises realizing distributed teams' full potential and thriving in the future of work, beyond simply doing good work."
+      ],
+      "register_ok": true,
+      "note": "Natural and concise overall, though the opening awkwardly assigns hiring opportunities to people rather than employers."
+    }
+  }
+}

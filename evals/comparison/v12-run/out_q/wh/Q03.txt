@@ -1,0 +1,9 @@
+Subject: Orbit Calendar 2.0 is out March 12
+
+Orbit Calendar 2.0 launches on March 12. The update adds smart scheduling and shared team views, and it now detects time zones on its own, so nobody has to work out what 3pm means for the person in another country.
+
+It's $8 a month, with a 14-day free trial if you'd like to try it first.
+
+Our 1,200 beta users told us what was broken, what was confusing and what they actually used, and plenty of that ended up in this release. Thank you. It's a better product because of you.
+
+The Orbit Team

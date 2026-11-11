@@ -1,0 +1,79 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Learning to think constitutes most of learning to code, with syntax the smaller part; the source does not assign relative proportions."
+      ],
+      "dropped_facts": [
+        "The endpoint of mastery is weakened to being good at coding.",
+        "Embracing struggle is reduced to continuing through it."
+      ],
+      "register_ok": true,
+      "note": "Clear, conversational advice that preserves nearly all the source with little embellishment."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The narrator personally started coding expecting syntax memorization to be the hard part.",
+        "The narrator found breaking messy problems into small, solvable pieces the hard part.",
+        "Syntax can be looked up in ten seconds, whereas thinking cannot.",
+        "The narrator wasted substantial early time memorizing commands, and almost none of it stuck.",
+        "The narrator retained knowledge about loops and function inputs.",
+        "Understanding those concepts caused commands to come naturally.",
+        "The data-analysis example involves a spreadsheet-sized quantity of data.",
+        "The automated task is boring.",
+        "Getting stuck will be annoying.",
+        "The narrator personally admires developers who get stuck all the time.",
+        "Those admired developers do not take difficulties personally.",
+        "A bug mostly indicates an incorrect mental model.",
+        "The imagined debugging experience occurs at 11pm.",
+        "A third failed attempt teaches more than a first clean run.",
+        "Readers should deliberately break things."
+      ],
+      "dropped_facts": [
+        "Learning to code involves learning to think beyond syntax, and programming is fundamentally problem-solving, are narrowed to a personal account.",
+        "Many beginners try to memorize commands.",
+        "Every bug offers a lesson.",
+        "The coding journey is rewarding.",
+        "Coding requires patience and practice.",
+        "The most successful developers embrace struggle; admired developers are substituted for successful ones.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "The strongest personal voice and concrete phrasing come with extensive invented autobiography and claims."
+    },
+    "C": {
+      "p_ai": 55,
+      "unsupported_specifics": [
+        "Syntax is easy and can be looked up in ten seconds.",
+        "Learning to decompose problems takes longer than learning syntax.",
+        "Breaking problems into pieces a computer can follow is the foundational skill everything else depends on.",
+        "The narrator personally understands the attraction of memorizing commands.",
+        "Flashcards and cheat sheets feel like progress.",
+        "Memorizing commands leads to recognizing a for loop without knowing when to use one.",
+        "The first problem that differs from a tutorial leaves the learner stuck.",
+        "Bugs account for most learning.",
+        "The automated chore is something the reader is tired of doing manually.",
+        "Unexpected program behavior is annoying and forces the learner to investigate actual behavior.",
+        "The gap between assumed and actual program behavior constitutes most of what there is to learn.",
+        "Developers who become good struggle constantly.",
+        "Those developers do not interpret struggle as a verdict on themselves.",
+        "Readers should deliberately write and run something broken."
+      ],
+      "dropped_facts": [
+        "Analyzing data is one of the coding applications.",
+        "The coding journey is rewarding.",
+        "Coding requires patience, persistence, and practice.",
+        "Every bug offers a lesson; this becomes a claim about where most learning happens.",
+        "The most successful developers embrace struggle; becoming good and avoiding self-judgment replace that claim.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "Readable and concrete, but its repeated punchy assertions feel constructed and substantially expand the source."
+    }
+  }
+}

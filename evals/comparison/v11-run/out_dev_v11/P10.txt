@@ -1,0 +1,5 @@
+Learning to code is mostly learning to think. Syntax is the easy part. Programming is problem-solving in a language a computer can read, and every bug you hit is a lesson in disguise.
+
+Plenty of beginners try to memorize commands, and that's the mistake. What works is understanding the concepts.
+
+Build a website, analyze data, automate some chore: it's hard either way, and it's worth it either way. It takes patience and persistence, then a lot of practice. The most successful developers aren't the ones who never struggle. They're the ones who lean into it when they do. So don't be afraid to fail. Every line you write gets you a little closer to mastery.

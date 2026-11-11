@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["B", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "Claim that 'nobody noticed until traffic picked up that afternoon'",
+        "Claim that 'nobody had reviewed that migration properly'",
+        "Author's personal emotional reaction of being 'still annoyed'"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Captures the author's informal voice effectively, but invents personal emotional reactions and unsubstantiated claims."
+    },
+    "B": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Flows seamlessly from the preceding paragraph in an authentic conversational register while maintaining complete factual fidelity."
+    },
+    "C": {
+      "p_ai": 28,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains high fidelity and has a good conversational finish, but opens somewhat flatly and stiffly."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Invented claim that a missing index is 'fine at quiet times'",
+        "Unsubstantiated claim that 'nobody reviewed that migration closely enough to catch it'"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Suffers from a choppy rhythm, stiff opening, and unsupported technical assertions."
+    }
+  }
+}

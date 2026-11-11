@@ -1,0 +1,11 @@
+CONTEXT (background only, not part of the text to rewrite):
+The text to rewrite is the middle paragraph of a longer incident write-up. The same author wrote the paragraphs on either side of it, shown here.
+
+PARAGRAPH BEFORE: So Tuesday. At 2:40 in the afternoon the checkout page started timing out and I, being a genius, assumed it was the payment provider. It wasn't. I spent a good twenty minutes refreshing their status page like it owed me money.
+
+PARAGRAPH AFTER: Anyway, it's fixed. We added the index back, Priyanka wrote a test so we can't drop it again without something yelling at us, and I've stopped blaming other people's status pages. For now.
+
+---
+
+TEXT TO REWRITE:
+Upon further investigation, it became evident that the root cause of the issue was a missing database index. During the previous week's migration, the index on the orders table had been inadvertently removed, which resulted in every checkout query performing a full table scan. As traffic increased throughout the afternoon, query times escalated from approximately 40 milliseconds to over 9 seconds. This highlights the critical importance of robust migration review processes. It took our team 55 minutes to identify the problem.

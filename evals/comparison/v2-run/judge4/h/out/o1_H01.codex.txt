@@ -1,0 +1,78 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["D", "A", "C", "B"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The characterization of the transformation as revolutionary, with profound implications.",
+        "The claim that AI tools help educators and students unlock their full potential.",
+        "The claim that the resulting learning environment can surpass all previous levels of engagement, inclusion, and effectiveness."
+      ],
+      "register_ok": true,
+      "note": "Mostly clear and faithful, but vague phrasing and an awkward final sentence weaken the writing."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The narrator talks to people about classroom AI, and most are undecided between excitement and worry.",
+        "The narrator personally feels both excited and worried.",
+        "AI adjusts reading lists to individual children.",
+        "AI marks forty quizzes overnight.",
+        "Teachers would otherwise stay up past midnight marking with a red pen.",
+        "Schools do not always ask where student data is stored.",
+        "Children with fast home internet and their own laptops tend to benefit first.",
+        "AI consequently widens an existing educational gap.",
+        "Classes can hand their thinking to software without noticing.",
+        "AI will not replace teachers, stated as a prediction.",
+        "AI gives teachers a few extra hours each week.",
+        "Teachers use that extra time to sit beside struggling students.",
+        "The narrator knows of no tool that provides that kind of attention."
+      ],
+      "dropped_facts": [
+        "The characterization of AI's implications as profound.",
+        "The claim that AI tools help both educators and students unlock their full potential.",
+        "The recommendation that schools embrace innovation while remaining mindful of its limitations.",
+        "The claim that this approach can make learning more engaging, inclusive, and effective than ever before."
+      ],
+      "register_ok": false,
+      "note": "A convincing conversational voice comes at the cost of invented testimony and a substantial shift into personal opinion."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Classroom AI adoption is happening fast.",
+        "Classroom AI consists mostly of personalized lesson software and grading tools.",
+        "Both categories save teachers time.",
+        "Some students achieve better results with personalized material.",
+        "Some schools do not know who can access student data.",
+        "Children with good devices and fast home internet will benefit more than children without them.",
+        "Many students who delegate thinking to chatbots will stop learning to think for themselves.",
+        "Teachers notice when children become quiet or give correct answers by guessing.",
+        "Software cannot make those observations.",
+        "Automated marking frees teachers to provide that kind of attention.",
+        "Schools skeptical of sales pitches will probably benefit most."
+      ],
+      "dropped_facts": [
+        "The characterization of AI's implications as profound.",
+        "The claim that AI tools help educators and students unlock their full potential.",
+        "The explicit goal of a learning environment more engaging, inclusive, and effective than ever before."
+      ],
+      "register_ok": false,
+      "note": "Readable and concrete, but personal commentary and categorical additions replace much of the source's restrained argument."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The characterization of the transformation as revolutionary, with profound implications.",
+        "The claim that AI tools help educators and students unlock their full potential.",
+        "The claim that the resulting learning environment can surpass all previous levels of engagement, inclusion, and effectiveness."
+      ],
+      "register_ok": true,
+      "note": "The strongest balance of natural, concise writing and preservation of the source's argument."
+    }
+  }
+}

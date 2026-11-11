@@ -1,0 +1,11 @@
+CONTEXT (background only, not part of the text to rewrite):
+The text to rewrite is the middle paragraph of a longer personal essay about beekeeping. The same author wrote the paragraphs on either side of it, shown here.
+
+PARAGRAPH BEFORE: My father kept bees for thirty years and never once wore gloves. He said you couldn't feel what the hive was doing through leather. I thought this was showing off until I tried it myself.
+
+PARAGRAPH AFTER: I still wear the veil. He didn't always, and I have the photographs of his swollen eyelid to prove it was a bad idea.
+
+---
+
+TEXT TO REWRITE:
+Beekeeping without gloves offers a multitude of benefits that extend far beyond mere tradition. Firstly, bare hands allow for greater dexterity, enabling the beekeeper to handle frames with enhanced precision and care. Secondly, it fosters a calmer approach, as one is naturally inclined to move more slowly and deliberately. In my first season, I was stung eleven times; in my second, only twice. Ultimately, this journey has taught me that patience is not merely a virtue, but an essential tool of the craft.

@@ -1,0 +1,2028 @@
+[
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q01",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v11": 1,
+   "v12": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Being a UX designer still feels strange to write.",
+     "Drinking a lot of coffee during the bootcamp.",
+     "Not recommending the schedule but being willing to repeat it.",
+     "Starting the first design job in January; the source dates accepting it.",
+     "Explicitly calculating the pay cut and signing.",
+     "Nobody warning the writer how much teaching overlapped with design.",
+     "The specific account of diagnosing confusion, explaining differently, and watching faces as prior experience relevant to design.",
+     "Running the equivalent of a usability test every day; the sample supports teaching Year 6 but not this specific account.",
+     "The advice to calculate a pay cut first and be honest about it."
+    ],
+    "dropped_facts": [
+     "Explicit excitement about announcing the transition.",
+     "Personal growth during the transition.",
+     "The explicit lesson that it is never too late to reinvent yourself.",
+     "The encouragement to trust the process.",
+     "The closing question about what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "The closest match to the sample's wry personal voice, but its vividness depends heavily on invented experience."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The explicit personal report that the bootcamp schedule was tiring.",
+     "Starting the first design job in January; the source dates accepting it.",
+     "The pay cut emotionally stinging.",
+     "Encouraging readers to trust themselves rather than the process."
+    ],
+    "dropped_facts": [
+     "Explicit excitement about announcing the transition.",
+     "Personal growth during the transition.",
+     "The encouragement to trust the process.",
+     "The closing question about barriers to changing careers is replaced with a question about postponement."
+    ],
+    "register_ok": true,
+    "note": "Natural and conversational, though its emotional additions and closing question move beyond the source."
+   },
+   "v11": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Starting the first design job in January; the source dates accepting it."
+    ],
+    "dropped_facts": [
+     "Explicit excitement about announcing the transition.",
+     "Personal growth during the transition.",
+     "The encouragement to trust the process."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, with a credible conversational rhythm and strong preservation of the source."
+   },
+   "v12": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "Transferable skills carrying further than the reader would expect; the source makes no claim about expectations."
+    ],
+    "dropped_facts": [
+     "Explicit excitement about announcing the transition.",
+     "The broader characterization of the journey as involving challenges and personal growth.",
+     "The direct encouragement to readers considering a career change.",
+     "The encouragement to trust the process and take the leap.",
+     "The closing question about what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "Clean and factually restrained, but less distinctive in voice and incomplete as an encouraging personal post."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q02",
+  "winner": "v11",
+  "human_quality_rank": {
+   "hz": 3,
+   "v11": 2,
+   "v12": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Daily repetition produces far more than any single push; the source makes no comparison with a single effort."
+    ],
+    "dropped_facts": [
+     "The surrounding world is full of distractions.",
+     "The explicit claim that these practices can transform your life."
+    ],
+    "register_ok": true,
+    "note": "Direct and readable, with a natural cadence, though the succession of short declarations feels slightly rehearsed."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Willpower runs out; the source advises against relying on it without specifying depletion.",
+     "The starting action should be small enough that you cannot really skip it."
+    ],
+    "dropped_facts": [
+     "The surrounding world is full of distractions.",
+     "Consistency is the true key to success.",
+     "The explicit weeks-and-months timeframe is reduced to a few months.",
+     "The explicit claim that these practices can transform your life.",
+     "Every step brings you closer to your goals."
+    ],
+    "register_ok": true,
+    "note": "The most conversational and unforced version, but it loses several source claims and introduces stronger advice."
+   },
+   "v12": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "You will run out of willpower; the source does not specify why willpower should not be relied on."
+    ],
+    "dropped_facts": [
+     "The surrounding world is full of distractions.",
+     "The explicit claim that these practices can transform your life.",
+     "Every step brings you closer to your goals.",
+     "The best time to start is now."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, although the causal transition about willpower is weak and the ending omits the source's call to start."
+   },
+   "wh": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "The reader has plenty of motivation on Monday and none by Thursday.",
+     "Any plan depending on motivation was inevitably going to fail.",
+     "What works is boring, and the activity will stop feeling interesting.",
+     "Ten pushups and reading one page are introduced as examples.",
+     "The reader has a book they keep meaning to finish.",
+     "Repeated small actions outperform any single big push.",
+     "The claimed advantage occurs mostly because the reader keeps showing up.",
+     "Placing running shoes by the door and charging a phone in another room are introduced as system examples.",
+     "The reader should start smaller than feels worthwhile.",
+     "After missing a day, the reader should resume the next day.",
+     "Missing a day barely matters, whereas quitting does.",
+     "The reader should pick exactly one thing."
+    ],
+    "dropped_facts": [
+     "The surrounding world is full of distractions.",
+     "The explicit weeks-and-months timeframe is reduced to a few months.",
+     "The explicit instruction to be patient with yourself.",
+     "The explicit claim that these practices can transform your life.",
+     "Every step brings you closer to your goals.",
+     "The best time to start is now; the rewrite instead says tomorrow."
+    ],
+    "register_ok": true,
+    "note": "A distinct, punchy coaching voice is weakened by invented examples, sweeping claims, and a contradictory closing instruction."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "Q02",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "hz": 1,
+   "v12": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "In a world full of distractions",
+     "You can transform your life one day at a time"
+    ],
+    "register_ok": true,
+    "note": "Reads with a clean, natural human cadence while remaining exceptionally faithful to the source material."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Starting with something small enough that you can't really skip it",
+     "Giving yourself slack when you miss a day"
+    ],
+    "dropped_facts": [
+     "In a world full of distractions",
+     "Every step you take brings you closer to your goals",
+     "You can transform your life one day at a time"
+    ],
+    "register_ok": true,
+    "note": "Conversational and relatable, but invents tactical details and drops the goal-progress claim."
+   },
+   "v12": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "In a world full of distractions",
+     "Every step you take brings you closer to your goals",
+     "The best time to start is now",
+     "You can transform your life one day at a time"
+    ],
+    "register_ok": true,
+    "note": "Accurately rephrases retained claims without hallucinations, but feels slightly generic and omits the closing call to action."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Having plenty of motivation on Monday and none by Thursday",
+     "Concrete habit examples: ten pushups, one page of a book",
+     "Concrete environment cues: running shoes by the door, phone charging in another room",
+     "Starting smaller than feels worthwhile",
+     "Missing a day barely matters compared to quitting",
+     "Telling the reader to do it tomorrow rather than starting now"
+    ],
+    "dropped_facts": [
+     "In a world full of distractions",
+     "Every step you take brings you closer to your goals",
+     "You can transform your life one day at a time",
+     "The best time to start is now"
+    ],
+    "register_ok": true,
+    "note": "Possesses a vivid, unmistakable authorial voice but severely compromises fidelity through fabricated scenarios and contradictory advice."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v11": 1,
+   "v12": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "hz": 2,
+   "v12": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "The beta users used this release before anyone else did; beta participation does not establish priority over everyone else."
+    ],
+    "dropped_facts": [
+     "The claims of seamless integration and transformative time-management and productivity benefits.",
+     "The invitation to start the free trial today."
+    ],
+    "register_ok": true,
+    "note": "Clear and approachable, but the beta explanation and repeated thanks feel awkward."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Automatic time zone detection eliminates the need to calculate what 3pm means for someone in another country.",
+     "Beta users reported what was broken, what was confusing, and what they actually used.",
+     "Plenty of those particular findings ended up in the release.",
+     "The product is better because of the beta users."
+    ],
+    "dropped_facts": [
+     "The claims of seamless integration and transformative time-management and productivity benefits.",
+     "The invitation to start the free trial today."
+    ],
+    "register_ok": true,
+    "note": "The strongest conversational voice, though its vivid details exceed the source."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The claims of seamless integration and transformative time-management and productivity benefits."
+    ],
+    "register_ok": true,
+    "note": "Natural and faithful, with only the self-conscious 'genuinely' weakening the tone."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "The free trial can be started on launch day; the source explicitly invites readers to start today and does not establish that today is launch day."
+    ],
+    "dropped_facts": [
+     "The claims of seamless integration and transformative time-management and productivity benefits.",
+     "The invitation to start the free trial today."
+    ],
+    "register_ok": true,
+    "note": "Clean, restrained announcement copy, but it changes the trial-start timing."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "Q03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "hz": 1,
+   "v12": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The prompt to start the free trial today (replaced with 'whenever you're ready')"
+    ],
+    "register_ok": true,
+    "note": "Readable and plain, but the sentence rhythm feels somewhat stilted and repetitive."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Illustrative scenario for time zone detection ('nobody has to work out what 3pm means for the person in another country')",
+     "Specific details about beta feedback ('what was broken, what was confusing and what they actually used')"
+    ],
+    "dropped_facts": [
+     "Call to action to start the free trial today"
+    ],
+    "register_ok": true,
+    "note": "Possesses a very distinct, conversational human voice, but invents several specifics and drops the call to action."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean, natural, and well-paced copy that retains all source facts without hallucinating details."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Claim that the free trial starts on launch day"
+    ],
+    "dropped_facts": [
+     "The prompt to start the free trial today"
+    ],
+    "register_ok": true,
+    "note": "Competently written, but it contradicts the source by shifting the trial start date to launch day."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q04",
+  "winner": "v12",
+  "human_quality_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The migration was recent.",
+     "The two engineers led the migration; their leadership role is no longer explicit.",
+     "The cost reduction made the infrastructure more sustainable."
+    ],
+    "register_ok": true,
+    "note": "Direct, natural writing preserves the main results and developer benefits."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Build times can make or break developer productivity.",
+     "The results were transformative.",
+     "The cost reduction made the infrastructure more sustainable.",
+     "The migration improved velocity.",
+     "The migration enabled developers to ship with confidence."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, but it removes the source's broader claims about the benefits."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "A 24-minute build is long enough to wander off and lose your place.",
+     "A nine-minute build is not long enough to wander off and lose your place.",
+     "The shorter builds produce observable differences in how people work every day."
+    ],
+    "dropped_facts": [
+     "The migration was recent.",
+     "The two engineers led the migration; their leadership role is no longer explicit.",
+     "The general claim that build times can make or break developer productivity.",
+     "The cost reduction made the infrastructure more sustainable.",
+     "The explicit claim that the migration improved velocity.",
+     "The migration enabled developers to ship with confidence."
+    ],
+    "register_ok": true,
+    "note": "The conversational voice is plausible, but the attention-span assertions feel forced and lack support."
+   },
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The migration was recent.",
+     "Build times can make or break developer productivity.",
+     "The cost reduction made the infrastructure more sustainable."
+    ],
+    "register_ok": true,
+    "note": "Plain, credible writing retains the leadership detail, numerical results, and developer benefits."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "Q04",
+  "winner": "v12",
+  "human_quality_rank": {
+   "wh": 3,
+   "v12": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 65,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The migration was recently undertaken",
+     "Two engineers led the migration (rephrased as taking two engineers)",
+     "The cost savings ensured a more sustainable infrastructure",
+     "The fast-paced engineering landscape context"
+    ],
+    "register_ok": true,
+    "note": "Preserves almost all claims but follows a sentence-by-sentence paraphrase template with a generic opening that sounds AI-generated."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Build times can make or break developer productivity",
+     "Improved velocity",
+     "Empowered developers to ship with confidence",
+     "Ensuring a more sustainable infrastructure",
+     "The fast-paced engineering landscape context"
+    ],
+    "register_ok": true,
+    "note": "Reads like clean, plain technical reporting but abruptly truncates the entire second half of the outcomes."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Anecdote that a 24-minute build causes developers to wander off and lose their place while a 9-minute build does not",
+     "Claim that the build time reduction was 'mostly' thanks to caching and parallelization",
+     "Claim that the difference shows up in how people work every day"
+    ],
+    "dropped_facts": [
+     "Build times can make or break developer productivity",
+     "The migration was recently undertaken",
+     "Two engineers led the migration (rephrased as taking two engineers)",
+     "Improved velocity",
+     "Empowered developers to ship with confidence",
+     "Ensuring a more sustainable infrastructure",
+     "The fast-paced engineering landscape context"
+    ],
+    "register_ok": true,
+    "note": "Has the most authentic, natural human voice but invents an unsupported relatable anecdote and drops several source claims."
+   },
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Build times can make or break developer productivity",
+     "The migration was recently undertaken",
+     "Ensuring a more sustainable infrastructure",
+     "The fast-paced engineering landscape context"
+    ],
+    "register_ok": true,
+    "note": "Strikes the best overall balance by using direct, natural human phrasing while faithfully preserving all core metrics, roles, and outcomes."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q05",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v12": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "SQL and Python are the tools the applicant knows best.",
+     "The applicant specifically likes work that turns complex data into something people can act on."
+    ],
+    "dropped_facts": [
+     "An explicit proven track record of using data to drive impactful business decisions.",
+     "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+     "The applicant is confident their background makes them an ideal fit."
+    ],
+    "register_ok": true,
+    "note": "Natural and personable, although the opening repeats itself and two personal claims exceed the source."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Strong interest in the position.",
+     "The stated strength of the applicant's SQL and Python skills.",
+     "An explicit proven track record of using data to drive impactful business decisions.",
+     "The dashboard demonstrates an ability to translate complex data into actionable insights.",
+     "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+     "The applicant is confident their background makes them an ideal fit."
+    ],
+    "register_ok": true,
+    "note": "Plain and credible, with the strongest factual restraint, though it compresses away several source claims."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "SQL and Python account for most of the applicant's work.",
+     "The inventory dashboard is the project the applicant is proudest of."
+    ],
+    "dropped_facts": [
+     "Strong interest in the position.",
+     "The stated strength of the applicant's SQL and Python skills.",
+     "An explicit proven track record of using data to drive impactful business decisions.",
+     "The dashboard was built in the applicant's current role.",
+     "The dashboard demonstrates an ability to translate complex data into actionable insights.",
+     "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+     "The applicant is confident their background makes them an ideal fit."
+    ],
+    "register_ok": true,
+    "note": "Readable and appropriately conversational, but its personal emphasis depends on an invented superlative."
+   },
+   "wh": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "SQL and Python account for most of the applicant's work.",
+     "The inventory dashboard is the project the applicant would highlight first.",
+     "People outside the analytics team notice results like this.",
+     "The applicant specifically wants more work of this kind."
+    ],
+    "dropped_facts": [
+     "Strong interest in the position.",
+     "The stated strength of the applicant's SQL and Python skills.",
+     "An explicit proven track record of using data to drive impactful business decisions.",
+     "The dashboard was built in the applicant's current role.",
+     "The explicit claim that the dashboard caused the reduction in stockouts is weakened to a temporal association.",
+     "The dashboard demonstrates an ability to translate complex data into actionable insights.",
+     "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+     "The applicant is confident their background makes them an ideal fit."
+    ],
+    "register_ok": true,
+    "note": "The long dashboard paragraph feels manufactured, and the tentative ending changes the applicant's stated confidence."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "Q05",
+  "winner": "v12",
+  "human_quality_rank": {
+   "wh": 3,
+   "v12": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "passionate, detail-oriented team player who thrives in fast-paced environments",
+     "confident that background makes them an ideal fit"
+    ],
+    "register_ok": true,
+    "note": "Strikes a natural, unpretentious tone while faithfully preserving the core achievements and message without inventing details."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "ability to translate complex data into actionable insights",
+     "track record of driving impactful business decisions",
+     "passionate, detail-oriented team player who thrives in fast-paced environments",
+     "confident that background makes them an ideal fit"
+    ],
+    "register_ok": true,
+    "note": "Clear and fluff-free, but its curt phrasing drops the candidate's substantive message about translating data into action."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "the inventory dashboard is the project the writer is proudest of"
+    ],
+    "dropped_facts": [
+     "ability to translate complex data into actionable insights",
+     "track record of driving impactful business decisions",
+     "passionate, detail-oriented team player who thrives in fast-paced environments",
+     "confident that background makes them an ideal fit"
+    ],
+    "register_ok": true,
+    "note": "Sounds conversational and relaxed, but fabricates an unsupported claim that the dashboard was their proudest project."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "stockouts dropped after the dashboard went live",
+     "the result was noticed by people outside the analytics team",
+     "it is the kind of work the writer wants more of"
+    ],
+    "dropped_facts": [
+     "ability to translate complex data into actionable insights",
+     "confident that background makes them an ideal fit (weakened to checking whether background fits)",
+     "passionate, detail-oriented team player who thrives in fast-paced environments"
+    ],
+    "register_ok": true,
+    "note": "Achieves the most distinctive human voice, but invents several unsupported narrative details about stakeholder reactions and personal preferences."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q06",
+  "winner": "v12",
+  "human_quality_rank": {
+   "v12": 3,
+   "hz": 2,
+   "wh": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "wh": 2,
+   "v12": 1,
+   "hz": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Meera is from the accounts team.",
+     "Meera reviewed the invoice.",
+     "The fee issue was noticed during the review."
+    ],
+    "register_ok": true,
+    "note": "Direct and natural for the finance thread, with a few details omitted."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Meera is explicitly identified as the person who approved the invoice."
+    ],
+    "register_ok": true,
+    "note": "Clear and thorough, though slightly more like a prepared update than a thread reply."
+   },
+   "wh": {
+    "p_ai": 14,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Meera reviewed the invoice."
+    ],
+    "register_ok": true,
+    "note": "Conversational and clear, although 'that bit' is slightly imprecise for a payment discussion."
+   },
+   "v12": {
+    "p_ai": 9,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Meera reviewed the invoice.",
+     "The fee issue was noticed during the review."
+    ],
+    "register_ok": true,
+    "note": "A natural, precise reply that makes the approval and proposed payment easy to follow."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "Q06",
+  "winner": "wh",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v12": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "wh": 3,
+   "v12": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that Meera is from the accounts team",
+     "that the error was spotted specifically during the review"
+    ],
+    "register_ok": true,
+    "note": "Direct and natural for a Slack reply, though it trims Meera's department and the review context."
+   },
+   "v11": {
+    "p_ai": 65,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that Meera approved the invoice (states only that it was approved and she reviewed it)"
+    ],
+    "register_ok": true,
+    "note": "Stiff and choppy with an unnecessary email greeting, and detaches Meera from the approval."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Sounds effortlessly human for an internal Slack reply while retaining every key detail."
+   },
+   "v12": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that the discrepancy was spotted during the review"
+    ],
+    "register_ok": true,
+    "note": "A solid conversational reply, though slightly bogged down by awkward phrasing around the line item and repeated numbers."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q07",
+  "winner": "hz",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v12": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "hz": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship in FY2025.",
+     "The intention to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "Clear, concise corporate reporting with a natural rhythm, though it omits the forward-looking commitment."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "The company is a long way short of net zero; the source gives no measure of its remaining distance from that goal.",
+     "The company has a lot left to do to reach net zero."
+    ],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship in FY2025.",
+     "The explicit description of multiple energy efficiency initiatives.",
+     "The intention to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "The candid corporate voice feels human, but its assessment of remaining progress goes beyond the source."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship in FY2025.",
+     "The intention to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "Plain and readable, though the attribution and separate investment sentence make the account slightly choppy."
+   },
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship in FY2025.",
+     "The intention to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "Careful, clear formal reporting that closely preserves the source's substantive results and attribution."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "Q07",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "v12": 2,
+   "wh": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "hz": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp, natural business prose that eliminates corporate boilerplate while retaining all factual information."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "editorial claim that the progress is 'a long way short of net zero'",
+     "claim that 'we have a lot left to do to get there'"
+    ],
+    "dropped_facts": [],
+    "register_ok": false,
+    "note": "Shifts to an informal first-person voice and injects subjective commentary not found in the source."
+   },
+   "v11": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Accurate to the source facts, but the sentence structure is choppy and rhythmically disjointed."
+   },
+   "v12": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains an appropriate formal register and perfect fidelity, but reads like a standard formulaic summary."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "Q08",
+  "winner": "v12",
+  "human_quality_rank": {
+   "v12": 3,
+   "wh": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "wh": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Specific sensory details and conversational rhythms feel natural; this is identical to the source."
+   },
+   "v11": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Specific sensory details and conversational rhythms feel natural; this is identical to the source."
+   },
+   "v12": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Two added commas slightly improve readability while preserving the voice and every fact; fidelity ranking breaks an effective tie."
+   },
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Specific sensory details and conversational rhythms feel natural; this is identical to the source."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "Q08",
+  "winner": "v12",
+  "human_quality_rank": {
+   "v12": 3,
+   "wh": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "wh": 3,
+   "v11": 2,
+   "hz": 1,
+   "v12": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Verbatim reproduction of the source with an authentic, natural voice."
+   },
+   "v11": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Verbatim reproduction of the source with an authentic, natural voice."
+   },
+   "v12": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Preserves the authentic voice nearly verbatim while adding light punctuation for clarity."
+   },
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Verbatim reproduction of the source with an authentic, natural voice."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q01",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v11": 1,
+   "v12": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The writer is excited to announce the transition.",
+     "The journey involved challenges and growth.",
+     "The explicit encouragement to consider a career change, trust the process, and take the leap.",
+     "The closing question asking what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, but it loses the sample's personality and the source's invitation to the reader."
+   },
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "The writer started the design job in January; the source only says they accepted the role in January."
+    ],
+    "dropped_facts": [
+     "The writer is excited to announce the transition.",
+     "The journey involved growth.",
+     "The encouragement to trust the process."
+    ],
+    "register_ok": true,
+    "note": "Natural and readable, with the strongest balance of completeness and restraint despite a conventional motivational ending."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The writer explicitly experienced the bootcamp schedule as tiring.",
+     "The writer started the design job in January; the source only says they accepted the role in January.",
+     "The pay cut emotionally stung.",
+     "The advice to trust yourself replaces the source's advice to trust the process."
+    ],
+    "dropped_facts": [
+     "The writer is excited to announce the transition.",
+     "The journey involved growth.",
+     "The encouragement to trust the process.",
+     "The closing question about what is holding the reader back is replaced with a question about procrastination."
+    ],
+    "register_ok": true,
+    "note": "The conversational rhythm feels personal, but added emotional reactions and changed advice weaken fidelity."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Typing that the writer is now a UX designer still feels weird.",
+     "The writer consumed a lot of coffee during the bootcamp.",
+     "The writer would not recommend the schedule.",
+     "The writer would repeat the experience.",
+     "The writer started the design job in January; the source only says they accepted the role in January.",
+     "The writer explicitly calculated the pay cut.",
+     "The writer signed an agreement.",
+     "Nobody warned the writer how much of the design job they had already been doing.",
+     "The writer had spent years identifying confusion, explaining things differently, and watching faces to assess understanding.",
+     "The writer ran the described classroom usability test every day.",
+     "A room of Year 6 pupils is the toughest usability test someone will encounter.",
+     "The advice to calculate the pay cut and be honest about it."
+    ],
+    "dropped_facts": [
+     "The writer is excited to announce the transition.",
+     "The journey involved growth.",
+     "The explicit lesson that it is never too late to reinvent yourself.",
+     "The encouragement to trust the process.",
+     "The closing question asking what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "Closest to the sample's candid, wry voice, but its vividness depends heavily on invented details."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q02",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "hz": 1,
+   "v12": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Motivation is plentiful on Monday and absent by Thursday.",
+     "Any plan depending on motivation will fail.",
+     "What works is boring, and actions should continue after they stop feeling interesting.",
+     "The examples of ten pushups and one page of an unfinished book.",
+     "A few months of small actions accomplish more than any single big push, chiefly because participation continues.",
+     "The examples of running shoes by the door and a phone charging in another room.",
+     "Starting smaller than feels worthwhile.",
+     "Recording completion each day specifically, rather than tracking progress generally.",
+     "Resuming the next day after missing a day.",
+     "Missing a day barely matters, whereas quitting does.",
+     "Choosing exactly one thing.",
+     "Starting tomorrow, which contradicts the source's instruction to start now."
+    ],
+    "dropped_facts": [
+     "The context of a world full of distractions.",
+     "The explicit claim that consistency is the true key to success.",
+     "Systems should make good behavior automatic; making choices easier does not fully preserve this.",
+     "Being patient with yourself.",
+     "The explicit possibility of transforming your life one day at a time.",
+     "Every step brings you closer to your goals.",
+     "Now is the best time to start."
+    ],
+    "register_ok": true,
+    "note": "A distinctive conversational voice comes with substantial invention and several sweeping claims."
+   },
+   "v12": {
+    "p_ai": 50,
+    "unsupported_specifics": [
+     "You will run out of willpower."
+    ],
+    "dropped_facts": [
+     "The context of a world full of distractions.",
+     "The explicit claim that consistency is the true key to success.",
+     "The explicit possibility of transforming your life one day at a time.",
+     "Every step brings you closer to your goals.",
+     "Now is the best time to start."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, but its generalized advice has little individual voice."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Willpower runs out.",
+     "An action can be made small enough that you cannot really skip it.",
+     "The specific instruction to give yourself slack after missing a day."
+    ],
+    "dropped_facts": [
+     "The context of a world full of distractions.",
+     "The explicit claim that consistency is the true key to success.",
+     "The explicit timeframe of weeks as well as months.",
+     "The explicit possibility of transforming your life one day at a time.",
+     "Every step brings you closer to your goals."
+    ],
+    "register_ok": true,
+    "note": "Natural and compact, though the claim about making an action unskippable overreaches."
+   },
+   "v11": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Repeated small actions produce far more than any single push.",
+     "Change through this approach is necessarily slow, and that slowness is acceptable."
+    ],
+    "dropped_facts": [
+     "The context of a world full of distractions.",
+     "The explicit claim that consistency is the true key to success.",
+     "The explicit possibility of transforming your life one day at a time."
+    ],
+    "register_ok": true,
+    "note": "Clear, conversational advice preserves the most source content despite two added assertions."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "Q02",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "hz": 1,
+   "v12": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Motivation level on Monday vs. Thursday",
+     "Ten pushups or one page of an unfinished book",
+     "Running shoes by the door and phone charging in another room",
+     "Advice on what to do when missing a day vs. quitting",
+     "Instruction to do it tomorrow instead of starting now"
+    ],
+    "dropped_facts": [
+     "The world is full of distractions",
+     "Consistency is the true key to success",
+     "Small daily actions transform your life",
+     "Every step brings you closer to your goals",
+     "The best time to start is now"
+    ],
+    "register_ok": true,
+    "note": "Reads with an authentic, highly distinct human voice, but invents numerous concrete examples and changes key claims."
+   },
+   "v12": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The world is full of distractions",
+     "Small habits transform your life",
+     "Every step brings you closer to your goals",
+     "The best time to start is now"
+    ],
+    "register_ok": true,
+    "note": "Accurately conveys the core concepts without inventing specifics, but omits the entire concluding encouragement and reads somewhat generic."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Giving yourself slack specifically when you miss a day"
+    ],
+    "dropped_facts": [
+     "The world is full of distractions",
+     "Consistency is the true key to success",
+     "Transforming your life",
+     "Every step brings you closer to your goals"
+    ],
+    "register_ok": true,
+    "note": "Has natural colloquial phrasing, but introduces a specific scenario not found in the source while dropping several points."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The world is full of distractions"
+    ],
+    "register_ok": true,
+    "note": "Combines a natural, well-cadenced human rhythm with nearly complete fidelity to the original text's substance and conclusion."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "hz": 3,
+   "v11": 2,
+   "v12": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "hz": 2,
+   "v12": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 18,
+    "unsupported_specifics": [
+     "Changes the stated trial start time from today to launch day; the source does not establish that these are the same day."
+    ],
+    "dropped_facts": [
+     "The invitation to start the free trial today.",
+     "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained product copy with a natural rhythm, but it changes the trial timing."
+   },
+   "v11": {
+    "p_ai": 24,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+    ],
+    "register_ok": true,
+    "note": "Readable and faithful to the concrete details, although 'Thank you, genuinely' sounds self-conscious."
+   },
+   "wh": {
+    "p_ai": 33,
+    "unsupported_specifics": [
+     "Claims automatic time zone detection eliminates the need to work out what a meeting time means for someone in another country.",
+     "Says beta users identified broken functionality.",
+     "Says beta users identified confusing aspects of the product.",
+     "Says beta users reported which features they actually used.",
+     "Claims plenty of those specific findings were incorporated into the release.",
+     "Explicitly claims beta feedback made the product better, whereas the source says it helped shape the release."
+    ],
+    "dropped_facts": [
+     "The invitation to start the free trial today.",
+     "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+    ],
+    "register_ok": true,
+    "note": "Conversational and distinctive, but the added explanations feel labored and introduce unsupported claims."
+   },
+   "v12": {
+    "p_ai": 29,
+    "unsupported_specifics": [
+     "Claims the beta users used the release before anyone else did, which excludes earlier use by developers or other testers without source support."
+    ],
+    "dropped_facts": [
+     "The explicit invitation to start the free trial today is replaced with an invitation to start whenever ready.",
+     "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+    ],
+    "register_ok": true,
+    "note": "Mostly plain and approachable, but the redundant gratitude and absolute beta-access claim weaken it."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "Q03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "v12": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "hz": 2,
+   "v12": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 65,
+    "unsupported_specifics": [
+     "Free trial starts on launch day rather than today"
+    ],
+    "dropped_facts": [
+     "Call to action to start the free trial today"
+    ],
+    "register_ok": true,
+    "note": "Accurate to most details, but the clipped, staccato phrasing reads like an automated de-fluffing."
+   },
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "A natural, warm, and professional announcement that retains every source fact without corporate AI fluff."
+   },
+   "wh": {
+    "p_ai": 8,
+    "unsupported_specifics": [
+     "Specific scenario about working out what 3pm means for someone in another country",
+     "Specific breakdown of beta feedback identifying what was broken, confusing, and actually used",
+     "Claim that the product is better because of the beta users"
+    ],
+    "dropped_facts": [
+     "Call to action to start the free trial today"
+    ],
+    "register_ok": true,
+    "note": "Features the most vibrant and authentic human voice, but hallucinates several details and omits the call to action."
+   },
+   "v12": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Starting the free trial whenever you're ready rather than today"
+    ],
+    "dropped_facts": [
+     "Call to action to start the free trial today"
+    ],
+    "register_ok": true,
+    "note": "Conversational in tone, but alters the call-to-action timeline and includes slightly redundant phrasing."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q04",
+  "winner": "v12",
+  "human_quality_rank": {
+   "wh": 3,
+   "v12": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The migration was recent.",
+     "Engineering is described as fast-paced, and build times as potentially decisive for developer productivity.",
+     "The cost reduction made the infrastructure more sustainable."
+    ],
+    "register_ok": true,
+    "note": "Direct, natural engineering prose that preserves the main facts and outcomes."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "A 24-minute build allows developers to wander off and lose their place.",
+     "A nine-minute build does not allow that loss of focus.",
+     "The difference in build duration visibly affects how people work every day."
+    ],
+    "dropped_facts": [
+     "The migration was recent.",
+     "Two engineers led the migration; the rewrite instead describes it as taking two engineers.",
+     "Engineering is described as fast-paced.",
+     "The cost reduction made the infrastructure more sustainable.",
+     "The migration improved development velocity.",
+     "The migration increased developers' confidence in shipping."
+    ],
+    "register_ok": true,
+    "note": "The conversational aside gives it personality but introduces unsupported claims about attention and daily work."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Engineering is described as fast-paced, and build times as potentially decisive for developer productivity.",
+     "The cost reduction made the infrastructure more sustainable.",
+     "The migration improved development velocity.",
+     "The migration increased developers' confidence in shipping."
+    ],
+    "register_ok": true,
+    "note": "Clear and credible as a brief engineering update, but it omits the stated developer outcomes."
+   },
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The migration was recent.",
+     "Two engineers led the migration; the rewrite instead describes it as taking two engineers.",
+     "Engineering is described as fast-paced.",
+     "The cost reduction made the infrastructure more sustainable."
+    ],
+    "register_ok": true,
+    "note": "Readable and faithful to the main outcomes, though the generic opening feels more formulaic."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "Q04",
+  "winner": "v12",
+  "human_quality_rank": {
+   "wh": 3,
+   "v12": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Ensuring a more sustainable infrastructure",
+     "Opening general claim that build times make or break developer productivity"
+    ],
+    "register_ok": true,
+    "note": "Natural, direct, and stripped of AI clich\u00e9s while faithfully preserving nearly all source facts."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Claim that a 24-minute build causes engineers to wander off and lose their place while a 9-minute build does not",
+     "Claim that this difference visibly affects daily work habits"
+    ],
+    "dropped_facts": [
+     "Improved velocity",
+     "Empowered developers to ship with confidence",
+     "Ensuring a more sustainable infrastructure",
+     "Opening general claim that build times make or break developer productivity"
+    ],
+    "register_ok": true,
+    "note": "Possesses the most distinct human voice, but fabricates personal reflections and drops key outcome claims."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Improved velocity",
+     "Empowered developers to ship with confidence",
+     "Ensuring a more sustainable infrastructure",
+     "Opening general claim that build times make or break developer productivity"
+    ],
+    "register_ok": true,
+    "note": "Clean and factual, but feels clipped and leaves out the source's concluding impacts."
+   },
+   "v11": {
+    "p_ai": 55,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Ensuring a more sustainable infrastructure"
+    ],
+    "register_ok": true,
+    "note": "Maintains high fidelity, but the formulaic opening hook sounds distinctly like generic AI writing."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q05",
+  "winner": "v12",
+  "human_quality_rank": {
+   "v12": 3,
+   "hz": 2,
+   "wh": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v12": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 18,
+    "unsupported_specifics": [
+     "SQL and Python constitute most of the applicant's work.",
+     "The dashboard's result is something people outside the analytics team notice.",
+     "The applicant wants more work of this kind."
+    ],
+    "dropped_facts": [
+     "Strong interest in the position.",
+     "Strong proficiency in SQL and Python.",
+     "A proven broader record of using data to drive consequential business decisions.",
+     "Explicit ability to translate complex data into actionable insights.",
+     "Being passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+     "Confidence that the applicant's background makes them an ideal fit; this becomes uncertainty about fit.",
+     "The expressed desire to contribute to Meridian Retail's continued success."
+    ],
+    "register_ok": true,
+    "note": "Conversational and distinctive, but the added commentary feels presumptuous for a cover letter."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "SQL and Python constitute most of the applicant's work.",
+     "The inventory dashboard is the project the applicant is proudest of."
+    ],
+    "dropped_facts": [
+     "Strong interest in the position.",
+     "Strong proficiency in SQL and Python.",
+     "A proven broader record of using data to drive consequential business decisions.",
+     "Explicit ability to translate complex data into actionable insights.",
+     "Being passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+     "Confidence that the applicant's background makes them an ideal fit."
+    ],
+    "register_ok": true,
+    "note": "Direct and natural, though compressed enough to lose much of the applicant's stated case."
+   },
+   "v11": {
+    "p_ai": 23,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Strong interest in the position.",
+     "Strong proficiency in SQL and Python.",
+     "A proven broader record of using data to drive consequential business decisions.",
+     "Explicit ability to translate complex data into actionable insights.",
+     "Being passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+     "Confidence that the applicant's background makes them an ideal fit."
+    ],
+    "register_ok": true,
+    "note": "Clear and faithful in what it retains, but too skeletal to convey a particular applicant's voice."
+   },
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "SQL and Python are the tools the applicant knows best.",
+     "The applicant specifically enjoys turning complex data into something people can act on."
+    ],
+    "dropped_facts": [
+     "A proven broader record of using data to drive consequential business decisions.",
+     "The explicit self-description as passionate.",
+     "Being detail-oriented and a team player who thrives in fast-paced environments.",
+     "Confidence that the applicant's background makes them an ideal fit."
+    ],
+    "register_ok": true,
+    "note": "The strongest cover letter: personable, clear, and appropriately professional, with two unsupported personal characterizations."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "Q05",
+  "winner": "v12",
+  "human_quality_rank": {
+   "wh": 3,
+   "v12": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v12": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Claim that people outside the analytics team noticed the stockout reduction",
+     "Statement that this is the kind of work the applicant wants more of"
+    ],
+    "dropped_facts": [
+     "Translating complex data into actionable insights",
+     "Proven track record of leveraging data to drive impactful business decisions",
+     "Self-description as a passionate, detail-oriented team player who thrives in fast-paced environments",
+     "Confidence in being an ideal fit for the role",
+     "Meridian Retail's continued success"
+    ],
+    "register_ok": true,
+    "note": "Has the most engaging and authentic voice, but invents external reactions and personal preferences not found in the source."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Claim that the inventory dashboard is the project the applicant is proudest of"
+    ],
+    "dropped_facts": [
+     "Strong interest in the position",
+     "Translating complex data into actionable insights",
+     "Proven track record of leveraging data to drive impactful business decisions",
+     "Self-description as a passionate, detail-oriented team player who thrives in fast-paced environments",
+     "Confidence in being an ideal fit for the role",
+     "Meridian Retail's continued success"
+    ],
+    "register_ok": true,
+    "note": "Includes a natural conversational touch but invents a claim of personal pride and is clipped to a bare minimum."
+   },
+   "v11": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Strong interest in the position",
+     "Translating complex data into actionable insights",
+     "Proven track record of leveraging data to drive impactful business decisions",
+     "Self-description as a passionate, detail-oriented team player who thrives in fast-paced environments",
+     "Confidence in being an ideal fit for the role",
+     "Meridian Retail's continued success"
+    ],
+    "register_ok": true,
+    "note": "Strictly avoids adding unsupported specifics, but reads flat and mechanical while dropping key value propositions."
+   },
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Proven track record of leveraging data to drive impactful business decisions",
+     "Self-description as a detail-oriented team player who thrives in fast-paced environments",
+     "Confidence in being an ideal fit for the role",
+     "Meridian Retail's continued success"
+    ],
+    "register_ok": true,
+    "note": "Translates corporate jargon into clear, natural human speech while faithfully preserving nearly all substantive source claims."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q06",
+  "winner": "wh",
+  "human_quality_rank": {
+   "v12": 3,
+   "wh": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "wh": 3,
+   "v12": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Does not explicitly retain that Meera reviewed the invoice or that the fee issue was noticed during the review."
+    ],
+    "register_ok": true,
+    "note": "Direct, natural, and well paced for a finance-channel reply."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Does not explicitly identify Meera as the person who reviewed the invoice."
+    ],
+    "register_ok": true,
+    "note": "Conversational and clear, with the most complete preservation of the source."
+   },
+   "v11": {
+    "p_ai": 23,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Does not identify Meera as the person who approved the invoice."
+    ],
+    "register_ok": true,
+    "note": "Clear and appropriate, though the opening feels slightly segmented and less responsive to the thread."
+   },
+   "hz": {
+    "p_ai": 17,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Meera is from the accounts team.",
+     "Meera reviewed the invoice.",
+     "The fee issue was noticed during the review."
+    ],
+    "register_ok": true,
+    "note": "A believable concise reply, though the dense paragraph makes it slightly harder to scan."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "Q06",
+  "winner": "wh",
+  "human_quality_rank": {
+   "wh": 3,
+   "v12": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "wh": 3,
+   "v12": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that the error was caught during the review"
+    ],
+    "register_ok": true,
+    "note": "Concise and natural for Slack, though repeating the exact figure in back-to-back sentences sounds slightly robotic."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Captures a completely authentic Slack tone with fluid phrasing and transitions while retaining every factual detail."
+   },
+   "v11": {
+    "p_ai": 60,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that Meera approved the invoice (states only that she reviewed it)"
+    ],
+    "register_ok": true,
+    "note": "Stiff and formulaic, opening with an unnecessary greeting for a thread and awkwardly separating the review from the approval."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that Meera is from the accounts team",
+     "that the error was caught during the review"
+    ],
+    "register_ok": true,
+    "note": "Direct and punchy, but omits Meera's department and features a somewhat breathless run-on sentence."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q07",
+  "winner": "hz",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v12": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v12": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship.",
+     "The commitment to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, though the closing sentence feels slightly abrupt."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship.",
+     "The commitment to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "Readable and natural, but slightly choppier and more conversational than A or D."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "The company remains a long way short of net zero.",
+     "The company has a lot of work left to reach its target."
+    ],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship.",
+     "The explicit description of a range of energy efficiency initiatives.",
+     "The commitment to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "The candid corporate voice sounds human, but adds an unsupported assessment of remaining progress."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The company's continued commitment to environmental stewardship.",
+     "The commitment to continue using innovative solutions to advance sustainability."
+    ],
+    "register_ok": true,
+    "note": "Plain, cohesive corporate writing that preserves the source's causal claim most directly."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "Q07",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "v11": 2,
+   "v12": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v12": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v12": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Accurate and clear, but the relative clause and phrasing feel slightly stiff."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Flows naturally and reads like human reporting, though phrasing like 'put into' is slightly informal."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Editorial assertion that progress is 'a long way short of net zero'",
+     "Unsubstantiated claim that 'we have a lot left to do to get there'",
+     "Shift to first-person perspective ('our', 'we')"
+    ],
+    "dropped_facts": [],
+    "register_ok": false,
+    "note": "Has a distinct human voice, but inappropriately editorializes and breaks register."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp, natural, and genre-appropriate rewrite that preserves all facts without PR fluff."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "Q08",
+  "winner": "v12",
+  "human_quality_rank": {
+   "v12": 3,
+   "hz": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v11": 2,
+   "wh": 1,
+   "v12": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and concrete personal details."
+   },
+   "v12": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Two added commas slightly improve readability while preserving the voice and every source fact."
+   },
+   "v11": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and concrete personal details."
+   },
+   "wh": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and concrete personal details."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "Q08",
+  "winner": "v12",
+  "human_quality_rank": {
+   "v12": 3,
+   "hz": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v11": 2,
+   "wh": 1,
+   "v12": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Retains the authentic, highly conversational human voice and sensory details with flawless source fidelity."
+   },
+   "v12": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Adds light punctuation that clarifies sentence flow while fully preserving the natural, informal voice."
+   },
+   "v11": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Retains the authentic, highly conversational human voice and sensory details with flawless source fidelity."
+   },
+   "wh": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Retains the authentic, highly conversational human voice and sensory details with flawless source fidelity."
+   }
+  }
+ }
+]

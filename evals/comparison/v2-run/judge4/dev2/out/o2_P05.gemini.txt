@@ -1,0 +1,63 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "that customers were telling him what they wanted before he caught on"
+      ],
+      "dropped_facts": [
+        "lessons on resilience and adaptability",
+        "the closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Strikes an excellent balance of natural, conversational voice while preserving the core facts and message."
+    },
+    "B": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "standing in the shop wondering what on earth he had done",
+        "explanation that customers like knowing their bread is sorted",
+        "that he would have slept better in the first three months if he had started the subscription sooner",
+        "assertion that he cannot tell the reader when to take a leap (contradicts source advice)"
+      ],
+      "dropped_facts": [
+        "lessons that resilience, adaptability, and listening to customers are keys to success",
+        "the direct assertion that the best time to start is now",
+        "the closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Brilliantly nails the authentic persona and voice of the sample, but invents several personal details and omits the core lessons."
+    },
+    "C": {
+      "p_ai": 55,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "the concluding advice that the best time to make a leap is now",
+        "the closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Maintains flawless factual fidelity and clean paraphrasing, but reads like a flat summary lacking personal voice."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "sitting in the shop after closing",
+        "almost not bothering with the subscription",
+        "customers wanting the same loaf every week without thinking about it",
+        "being too busy trying to sell everything else to notice",
+        "assertion that he cannot tell the reader when to take a leap",
+        "statement that he would have started earlier"
+      ],
+      "dropped_facts": [
+        "explicit lessons on resilience and adaptability",
+        "the claim that the best time to start is now",
+        "the original closing question 'What's holding you back?'"
+      ],
+      "register_ok": true,
+      "note": "Heavily embellishes the narrative with ungrounded dramatic scenes and leans into writerly tropes."
+    }
+  }
+}

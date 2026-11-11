@@ -1,0 +1,53 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+WRITER'S OWN SAMPLE (voice reference supplied with the task):
+Fine, story time. I taught Year 6 for eleven years and I was good at it, which is the annoying part. Nobody tells you that being good at something is not the same as wanting to do it until you're forty and your Sunday nights feel like a hostage situation.
+
+SOURCE TEXT:
+I am excited to announce that I have transitioned from teaching to UX design after 11 years in the classroom. This journey has been filled with challenges, growth, and invaluable lessons. I completed an 8-month part-time bootcamp while still teaching full time, which meant many late nights and early mornings. In January, I accepted my first design role at a fintech startup in Bengaluru, taking a 40% pay cut in the process.
+
+However, I have never looked back. This experience taught me that it is never too late to reinvent yourself, and that transferable skills are your superpower. If you are considering a career change, I encourage you to trust the process and take the leap. What is holding you back?
+
+=== REWRITE A ===
+I taught for 11 years, and now I'm a UX designer.
+
+Getting here meant an 8-month part-time bootcamp on top of a full-time teaching job, so a lot of late nights and early mornings. In January I accepted my first design role, at a fintech startup in Bengaluru. It came with a 40% pay cut.
+
+I haven't looked back. What I learned is that it isn't too late to start over, and that the skills you already have carry across further than you'd expect.
+
+=== REWRITE B ===
+After 11 years in the classroom, I've left teaching and become a UX designer.
+
+It wasn't easy. I did an 8-month part-time bootcamp while still teaching full time, which meant late nights and early mornings. Then in January I started my first design job, at a fintech startup in Bengaluru. It came with a 40% pay cut.
+
+I haven't looked back once.
+
+If you ask me what I learned, it's that it isn't too late to start over, and the skills you already have come with you. So if you're thinking about changing careers, take the leap. What's holding you back?
+
+=== REWRITE C ===
+After 11 years in the classroom, I've left teaching for UX design.
+
+I did an 8-month part-time bootcamp while still teaching full time, which meant a lot of late nights and early mornings. It was tiring, and I won't pretend otherwise. In January I started my first design job at a fintech startup in Bengaluru, and it came with a 40% pay cut. That stung. I took it anyway.
+
+I haven't looked back. It's not too late to start over, and the skills I built as a teacher came with me. If you're thinking about a change like this, trust yourself and make the jump. What's the thing you keep putting off?
+
+=== REWRITE D ===
+After eleven years in the classroom, I'm a UX designer now. Still weird to type.
+
+The bootcamp ran eight months, part-time, and I did it while teaching full time. So: late nights, early mornings, and a lot of coffee I'd rather not think about. I wouldn't recommend the schedule. I'd do it again anyway.
+
+In January I started my first design job, at a fintech startup in Bengaluru. It pays 40% less than teaching did. Yes, I did the maths. Yes, I signed.
+
+It's been hard, and I haven't once wanted to go back. The bit nobody warned me about is how much of the job I'd already been doing for years. Working out why someone is confused, then explaining it another way, then watching their face to see if it worked. A room of Year 6s is the toughest usability test you'll ever sit through, and I ran one every day.
+
+So if you're thinking about a move like this, work out the pay cut first and be honest about it. Then go.

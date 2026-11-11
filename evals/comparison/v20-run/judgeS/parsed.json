@@ -1,0 +1,2261 @@
+[
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S01",
+  "winner": "v20",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The writer is still sorting out some of what they learned.",
+     "Passion, perseverance and other people matter more than anything else the writer can name, a broader claim than their being ingredients of success."
+    ],
+    "dropped_facts": [
+     "The writer is thrilled to share the announcement.",
+     "The experience involved a rollercoaster of emotions and personal growth."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, but its generic reflective language captures little of the supplied voice."
+   },
+   "wh": {
+    "p_ai": 24,
+    "unsupported_specifics": [
+     "Serving 300 people a day still sounds made up to the writer.",
+     "The writer wishes they could report a clever way out, and asserts there was none.",
+     "The writer rejects presenting a lesson about passion and community, contradicting the source's stated lesson.",
+     "The writer is still sad, oddly relieved and unable to reconcile those feelings.",
+     "The advice to read the lease first."
+    ],
+    "dropped_facts": [
+     "The writer is thrilled to share the announcement.",
+     "Selling was a difficult decision.",
+     "The experience brought learning and personal growth.",
+     "The stated lesson that passion, perseverance and community are the true ingredients of success.",
+     "The closing question asking what dream the reader is putting off."
+    ],
+    "register_ok": true,
+    "note": "The conversational rhythm fits the sample well, but the emotional candour is largely invented."
+   },
+   "v20": {
+    "p_ai": 28,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The writer is thrilled to share the announcement.",
+     "The explicit claim of personal growth.",
+     "The direct encouragement to take the leap and start something.",
+     "The closing question asking what dream the reader is putting off."
+    ],
+    "register_ok": true,
+    "note": "Direct and credible, with a light touch of the supplied voice and the fewest unsupported changes."
+   },
+   "hz": {
+    "p_ai": 31,
+    "unsupported_specifics": [
+     "The espresso machine groaned every time it was used.",
+     "Serving 300 customers a day still feels like an invented number to the writer.",
+     "The writer denies having drawn a neat lesson, contradicting the source's stated lesson.",
+     "The writer is mostly tired, a bit sad and weirdly fine simultaneously.",
+     "The advice to read the lease properly first."
+    ],
+    "dropped_facts": [
+     "The writer is thrilled to share the announcement.",
+     "Selling was a difficult decision.",
+     "The experience brought learning and personal growth.",
+     "The stated lesson that passion, perseverance and community are the true ingredients of success."
+    ],
+    "register_ok": true,
+    "note": "Vivid and recognisably voiced, though the stacked punchlines and invented details feel somewhat performed."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S01",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "hz": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural, grounded human voice that preserves every fact, emotion, and lesson without relying on corporate clich\u00e9s."
+   },
+   "wh": {
+    "p_ai": 8,
+    "unsupported_specifics": [
+     "Commentary that 300 people a day 'still sounds made up'",
+     "Statement that there was no clever way out",
+     "Personal emotional reaction of being sad and oddly relieved",
+     "Advice to 'read the lease first'"
+    ],
+    "dropped_facts": [
+     "The core lesson that passion, perseverance, and community are the true ingredients of success",
+     "That selling was a difficult decision"
+    ],
+    "register_ok": true,
+    "note": "Brilliantly mimics the reference voice but invents personal specifics and explicitly rejects the source's core takeaway."
+   },
+   "v20": {
+    "p_ai": 28,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Closing rhetorical question ('What dream are you putting off?')"
+    ],
+    "register_ok": true,
+    "note": "Maintains high fidelity, but the abrupt colon transition and phrasing feel somewhat stiff and formulaic."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Anecdote that the espresso machine groaned every time it was used",
+     "Commentary that 300 customers a day feels like a made-up number",
+     "Claim that they tried to make the rent work and failed ('I tried. It didn't.')",
+     "Emotional state of being tired, a bit sad, and weirdly fine",
+     "Advice to read the lease properly first"
+    ],
+    "dropped_facts": [
+     "The core lesson that passion, perseverance, and community are the true ingredients of success",
+     "That selling was a difficult decision"
+    ],
+    "register_ok": true,
+    "note": "Distinctive conversational voice, but fabricates physical anecdotes and discards the original reflection entirely."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S02",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear and faithful, though the compressed advice gives the ending a slightly formulaic rhythm."
+   },
+   "hz": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Prescribes putting the phone in another room and closing tabs.",
+     "Prescribes deciding in advance what matters today and ignoring everything else.",
+     "Specifies that the starting choice is picking one thing and staying with it.",
+     "Suggests arranging the environment makes concentration easy, rather than merely supporting sustained concentration."
+    ],
+    "dropped_facts": [
+     "Focus is increasingly valuable.",
+     "Explicitly identifies setting boundaries as a way to reclaim attention."
+    ],
+    "register_ok": true,
+    "note": "Conversational but occasionally strained, with added practical advice that exceeds the source."
+   },
+   "wh": {
+    "p_ai": 55,
+    "unsupported_specifics": [
+     "The narrator's phone buzzes about once a minute.",
+     "The narrator can no longer read three pages without reaching for the phone.",
+     "Focus used to be ordinary.",
+     "Divided attention produces ten shallow starts and no finished idea.",
+     "Good ideas tend to arrive late, after staying with a problem longer than is comfortable.",
+     "The narrator has tried relying on willpower.",
+     "The narrator's willpower lasts about an hour.",
+     "Categorically states that willpower will not fix the problem, rather than that willpower alone is insufficient.",
+     "Prescribes keeping the phone in another room, turning notifications off, and displaying one task on screen, and asserts that these measures work."
+    ],
+    "dropped_facts": [
+     "Endless scrolling contributes to the contemporary context.",
+     "Attention is not merely a resource but the foundation of meaningful work.",
+     "Explicitly recommends setting boundaries and prioritizing what truly matters.",
+     "Anyone can reclaim their attention.",
+     "The path to a more focused life begins with one intentional choice."
+    ],
+    "register_ok": false,
+    "note": "Vivid but conspicuously staged, replacing the general reflection with unsupported personal testimony."
+   },
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural pacing and plain language preserve the argument with little editorial friction."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S02",
+  "winner": "v20",
+  "human_quality_rank": {
+   "wh": 3,
+   "v20": 2,
+   "hz": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Preserves every source claim accurately while achieving a clean, natural human cadence."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "quantified as ten directions",
+     "putting phone in another room",
+     "closing browser tabs",
+     "deciding in advance what matters today and ignoring the rest",
+     "picking one thing and staying with it"
+    ],
+    "dropped_facts": [
+     "focus is a valuable skill (only mentions it is becoming rare)"
+    ],
+    "register_ok": true,
+    "note": "Conversational and approachable, but invents concrete productivity tactics and drops the explicit value of focus."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "phone buzzing once a minute",
+     "unable to read three pages without reaching for phone",
+     "claim that focus used to be ordinary",
+     "quantified as ten directions",
+     "ten shallow starts and no finished idea",
+     "explanation that good ideas show up late after staying uncomfortably long with a problem",
+     "personal anecdote of trying willpower for about an hour",
+     "specific environment changes including phone in another room, notifications off, and one task on screen"
+    ],
+    "dropped_facts": [
+     "attention is not merely a resource",
+     "endless scrolling",
+     "designing an environment that supports sustained concentration",
+     "anyone can reclaim their attention",
+     "the path begins with a single intentional choice"
+    ],
+    "register_ok": true,
+    "note": "Reads convincingly like an authentic personal essay, but invents extensive personal anecdotes and omits core source claims."
+   },
+   "v11": {
+    "p_ai": 65,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains complete fidelity to the original text, but suffers from formulaic phrasing and a telltale isolated closing sentence."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v20": 3,
+   "hz": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, restrained business writing that preserves the evidence and its qualifications."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Claims that handovers are where things get dropped.",
+     "Claims the handover concern existed going into the trial.",
+     "Introduces a prior level of fear by saying the concern is smaller than feared."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Conversational and readable, but adds a failure mechanism and an unsupported history of concern."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Claims that increased handovers were the writer's first personal worry."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Flows naturally and retains the findings, but invents a personal reaction."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Says the trial suggests the cost of additional handovers is outweighed, although the source does not establish that comparison."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The recommendation-first structure is effective, but the tradeoff claim exceeds the source's cautious interpretation."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S03",
+  "winner": "wh",
+  "human_quality_rank": {
+   "wh": 3,
+   "v20": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "wh": 2,
+   "v20": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 65,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean and accurate, but its rigid sentence-by-sentence mirroring of the source makes it read like an AI paraphrase."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads naturally like an authentic operations memo with sharp phrasing, smooth transitions, and convincing voice."
+   },
+   "hz": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "that was my first worry"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Injects an ungrounded personal reaction and stumbles with back-to-back repetitions of 'which suggests'."
+   },
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "The six extra hires are meant to fix that"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Effective executive-level restructuring that leads with the recommendation, though slightly clipped in its mid-paragraph transitions."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S04",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, natural technical documentation with precise instructions and no unnecessary framing."
+   },
+   "hz": {
+    "p_ai": 19,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear and faithful, though the longer duplicate-checking instruction adds slightly unnecessary explanation."
+   },
+   "wh": {
+    "p_ai": 17,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Plain and readable, though 'status' and 'spot duplicates' are slightly less precise in register."
+   },
+   "v20": {
+    "p_ai": 14,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Direct, precise documentation that preserves the source's substance in an appropriate technical register."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S04",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean, direct technical documentation that strips corporate fluff while keeping the original facts intact."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Comparing event_id against already-processed events"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads naturally with good developer empathy, but introduces an implementation detail not present in the source."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear and readable, though 'spot duplicates' and omitting 'code' from '2xx status' sound slightly less polished for API docs."
+   },
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Exemplary developer documentation that replaces AI throat-clearing with concise, idiomatic, and precise technical phrasing."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S05",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "wh": 2,
+   "hz": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Friendly and natural, though 'there's still plenty to work on' is less clear than explicitly welcoming experienced makers."
+   },
+   "v20": {
+    "p_ai": 24,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Clear and faithful, with slightly more conventional announcement phrasing than the other versions."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Conversational and readable, though 'done this for years' is vague and the closing feels slightly abrupt."
+   },
+   "v11": {
+    "p_ai": 16,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Combines concrete, natural language with a clear invitation and concise booking details."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S05",
+  "winner": "wh",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "hz": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads with an easy, authentic conversational cadence typical of a neighborhood studio announcement."
+   },
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "High fidelity, but phrases like 'do wheel throwing' make it feel slightly stiff and synthetic."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Closing valediction ('Warmly,')"
+    ],
+    "register_ok": true,
+    "note": "Pleasantly casual, though dropping the sign-off greeting makes the conclusion feel abrupt."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean, active phrasing and complete factual retention, though slightly more conventional than A."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S06",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Nobody noticed the missing index until traffic picked up that afternoon.",
+     "Nobody had reviewed the migration properly.",
+     "The author remains annoyed about the migration review."
+    ],
+    "dropped_facts": [
+     "The index was removed inadvertently; 'quietly dropped' does not establish that it was accidental.",
+     "The explicit lesson about the importance of robust migration review is replaced with blame and personal annoyance."
+    ],
+    "register_ok": true,
+    "note": "The voice fits the surrounding paragraphs, but its added attitude and blame invent part of the story."
+   },
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural, clear incident narration preserves the facts and fits the author's conversational register."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The index was removed inadvertently; 'quietly dropped' does not establish that it was accidental."
+    ],
+    "register_ok": true,
+    "note": "The understated voice fits well, although the migration-review lesson becomes less explicit."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Full table scans are fine during quiet periods.",
+     "Nobody reviewed the migration closely enough to catch the removed index."
+    ],
+    "dropped_facts": [
+     "The index was removed inadvertently; 'quietly dropped' does not establish that it was accidental.",
+     "The explicit lesson about the importance of robust migration review is replaced with an assertion about inadequate review."
+    ],
+    "register_ok": true,
+    "note": "The conversational register fits, but unsupported assurances and an awkward final sentence weaken the writing."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S06",
+  "winner": "v20",
+  "human_quality_rank": {
+   "wh": 3,
+   "v20": 2,
+   "v11": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 12,
+    "unsupported_specifics": [
+     "Claim that 'nobody noticed until traffic picked up that afternoon'",
+     "Claim that 'nobody had reviewed that migration properly'",
+     "Author's personal emotional reaction of being 'still annoyed'"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Captures the author's informal voice effectively, but invents personal emotional reactions and unsubstantiated claims."
+   },
+   "v20": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Flows seamlessly from the preceding paragraph in an authentic conversational register while maintaining complete factual fidelity."
+   },
+   "v11": {
+    "p_ai": 28,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains high fidelity and has a good conversational finish, but opens somewhat flatly and stiffly."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Invented claim that a missing index is 'fine at quiet times'",
+     "Unsubstantiated claim that 'nobody reviewed that migration closely enough to catch it'"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Suffers from a choppy rhythm, stiff opening, and unsupported technical assertions."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S07",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v11": 3,
+   "hz": 2,
+   "v20": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "\u201cWe surveyed\u201d asserts that the authors collected the survey data; the source only says they used survey data."
+    ],
+    "dropped_facts": [
+     "The association remained statistically significant after adjustment; \u201cheld\u201d does not explicitly preserve significance."
+    ],
+    "register_ok": true,
+    "note": "Clear, natural academic prose with two small losses of methodological precision."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Specifies students short on sleep as the intended recipients of institutional support, whereas the source leaves the intervention targets unspecified."
+    ],
+    "dropped_facts": [
+     "The association remained statistically significant after adjustment; \u201cheld up\u201d does not explicitly preserve significance.",
+     "The stated need for institutional interventions is weakened to an optional suggestion."
+    ],
+    "register_ok": true,
+    "note": "Readable and conversational, though its closing recommendation is less precise than the source."
+   },
+   "wh": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "\u201cWe surveyed\u201d asserts that the authors collected the survey data; the source only says they used survey data.",
+     "Recommends acting on sleep directly and targeting support at first-year students, neither of which the source explicitly proposes.",
+     "Adds a methodological claim that this survey cannot establish that short sleep causes lower grades."
+    ],
+    "dropped_facts": [
+     "The association remained statistically significant after adjustment; \u201cheld\u201d does not explicitly preserve significance.",
+     "The explicit conclusion that sleep plays a pivotal role in academic success."
+    ],
+    "register_ok": true,
+    "note": "Mostly natural prose, but the crowded final sentence introduces interpretation beyond the source."
+   },
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Restrained, clear academic writing that preserves the source\u2019s substantive claims and statistical precision."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S07",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "hz": 2,
+   "wh": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads like clear, natural academic prose that communicates the findings plainly without inflated jargon."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Specifying that institutional interventions mean universities targeting support at sleep-deprived students"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Engaging and conversational, though it slightly relaxes the scholarly register and narrows the recommended interventions."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Example of targeting support specifically at first-year students",
+     "Methodological disclaimer that the survey cannot prove sleep loss causes lower grades"
+    ],
+    "dropped_facts": [],
+    "register_ok": false,
+    "note": "Captures a distinct human voice but inserts personal editorializing and causal disclaimers absent from the source."
+   },
+   "v20": {
+    "p_ai": 70,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Preserves every detail with high fidelity but feels like a stiff, formulaic synonym-swapping exercise."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S08",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "wh": 2,
+   "hz": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The original wording preserves a distinctive, funny conversational voice, though its opening is slightly breathless."
+   },
+   "hz": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The original wording preserves a distinctive, funny conversational voice, though its opening is slightly breathless."
+   },
+   "v11": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Light punctuation changes improve readability while preserving every fact and the narrator's dry, informal voice."
+   },
+   "v20": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The original wording preserves a distinctive, funny conversational voice, though its opening is slightly breathless."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S08",
+  "winner": "wh",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source text, retaining an authentic and lively conversational voice."
+   },
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source text, retaining an authentic and lively conversational voice."
+   },
+   "v11": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Lightly copyedits punctuation and sentence boundaries, slightly diminishing the breezy spoken rhythm."
+   },
+   "v20": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source text, retaining an authentic and lively conversational voice."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S09",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Leila explicitly says she reviewed the account.",
+     "The free month is explicitly described as a gesture of goodwill.",
+     "The invitation to ask any further questions is narrowed to reporting anything else that looks wrong."
+    ],
+    "register_ok": true,
+    "note": "Direct and professional, though the closing slightly narrows the offer of help."
+   },
+   "v20": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Leila explicitly says she reviewed the account."
+    ],
+    "register_ok": true,
+    "note": "Natural, concise support writing that preserves the substance with little distraction."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Leila personally promises to investigate if anything looks wrong when the refund arrives."
+    ],
+    "dropped_facts": [
+     "Leila explicitly says she reviewed the account.",
+     "The general invitation to ask further questions is replaced by an invitation limited to problems noticed when the refund arrives."
+    ],
+    "register_ok": true,
+    "note": "Clear and personable, but the closing introduces a new commitment and narrows the support invitation."
+   },
+   "wh": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "The duplicate charge occurred with no warning.",
+     "Leila promises to chase the refund if it has not arrived within the stated timeframe."
+    ],
+    "dropped_facts": [
+     "Leila explicitly says she reviewed the account.",
+     "The free month is explicitly described as a gesture of goodwill.",
+     "The general invitation to ask further questions is replaced by an invitation limited to a delayed refund."
+    ],
+    "register_ok": true,
+    "note": "The repetition and conspicuously casual empathy feel more worked over than the other versions."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S09",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "hz": 2,
+   "v20": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Direct, empathetic, and professional with natural phrasing and excellent sentence flow."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Completely faithful and polite, though the opening is slightly abrupt and sentence rhythm feels uniform."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Warm and conversational with good human touchpoints, though slightly informal in its follow-up framing."
+   },
+   "wh": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "invitation to ask general questions"
+    ],
+    "register_ok": false,
+    "note": "Overcompensates with forced colloquialisms and drops the general support invitation in favor of chasing the refund."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "S10",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "wh": 2,
+   "hz": 1,
+   "v20": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Places the distracting phone in a teenager's pocket.",
+     "Restricts teacher permission to tasks that need a phone; the source permits phones for specific tasks without requiring necessity."
+    ],
+    "dropped_facts": [
+     "Does not explicitly retain the claim that removing phones eliminates temptation.",
+     "Leaves total ban and total freedom implicit as 'neither extreme.'"
+    ],
+    "register_ok": true,
+    "note": "Natural and concise, but a few wording choices narrow or blur the argument."
+   },
+   "v11": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear and faithful, though its orderly progression retains a somewhat formulaic feel."
+   },
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Asserts that a ban does help concentration, whereas the source presents improved concentration as an apparent benefit."
+    ],
+    "dropped_facts": [
+     "Omits the initial framing that a ban appears straightforward but proves more complicated on examination."
+    ],
+    "register_ok": true,
+    "note": "The direct opening works, but the rewrite makes the argument more categorical than the source."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Adds looking up a word and checking a date as specific examples of phone use."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The most natural personal voice, with concrete examples that slightly exceed the source."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "S10",
+  "winner": "v11",
+  "human_quality_rank": {
+   "hz": 3,
+   "v11": 2,
+   "wh": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "phones sitting in pockets"
+    ],
+    "dropped_facts": [
+     "removing phones eliminates the temptation"
+    ],
+    "register_ok": true,
+    "note": "Conversational and natural in tone, but invents a descriptive detail and drops a key explanatory clause."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp and natural editorial prose that eliminates AI transition tropes while maintaining complete fidelity."
+   },
+   "v20": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "initial framing that phone bans appear straightforward at first glance but prove more complicated upon closer examination"
+    ],
+    "register_ok": true,
+    "note": "Reorders the argument to lead with the conclusion, but omits the opening nuance and ends abruptly on a counter-argument."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "looking up a word or checking a date"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Rhythmically engaging and human, but invents specific illustrative examples not present in the source."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S01",
+  "winner": "v11",
+  "human_quality_rank": {
+   "hz": 3,
+   "v11": 2,
+   "v20": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The espresso machine groaned whenever it was used.",
+     "The peak customer count still feels invented to the writer.",
+     "The writer has drawn no neat lesson, contradicting the source's explicit lesson.",
+     "The writer feels mostly tired, a bit sad, and weirdly fine.",
+     "The advice to read the lease properly introduces a caution absent from the source."
+    ],
+    "dropped_facts": [
+     "The writer is thrilled to share the news.",
+     "Selling was a difficult decision.",
+     "The experience involved emotional ups and downs, learning, and personal growth.",
+     "The experience taught the writer that passion, perseverance, and community are the true ingredients of success."
+    ],
+    "register_ok": true,
+    "note": "The strongest conversational voice, but much of its personality comes from invented details and a changed emotional account."
+   },
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The writer is thrilled to share the news.",
+     "The journey involved learning and personal growth.",
+     "The explicit encouragement to take the leap and start something.",
+     "The closing question asking what dream the reader is putting off."
+    ],
+    "register_ok": true,
+    "note": "Natural and restrained, though its shortened ending loses the source's direct encouragement and question."
+   },
+   "wh": {
+    "p_ai": 50,
+    "unsupported_specifics": [
+     "The peak customer count sounds made up to the writer.",
+     "There was no clever way out of the business's difficulties.",
+     "The writer remains sad, feels oddly relieved, and has not reconciled those feelings.",
+     "The advice to read the lease first introduces a caution absent from the source."
+    ],
+    "dropped_facts": [
+     "The writer is thrilled to share the news.",
+     "Selling was a difficult decision.",
+     "The experience involved emotional ups and downs, learning, and personal growth.",
+     "The experience taught the writer that passion, perseverance, and community are the true ingredients of success.",
+     "The closing question asking what dream the reader is putting off."
+    ],
+    "register_ok": true,
+    "note": "The conspicuous fragments and rejection of a tidy lesson feel performed, while the emotional story is substantially rewritten."
+   },
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "The writer is still sorting out some of what they learned."
+    ],
+    "dropped_facts": [
+     "The writer is thrilled to share the news.",
+     "The journey involved emotional ups and downs and personal growth."
+    ],
+    "register_ok": true,
+    "note": "Clear and believable, with the best balance of natural phrasing and preservation of the source."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S02",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "v20": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural pacing and direct language preserve the argument without manufacturing a personal voice."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The narrator's phone buzzes about once a minute.",
+     "The narrator can no longer read three pages without reaching for their phone.",
+     "Focus used to be ordinary; the source establishes increasing rarity, not a previously ordinary baseline.",
+     "Divided attention produces ten shallow starts and no finished idea.",
+     "Good ideas tend to arrive late, after working beyond the point of comfort.",
+     "Willpower will not work at all, rather than being insufficient alone.",
+     "The narrator has tried relying on willpower and found that it lasts about an hour.",
+     "The specific effective prescription is putting the phone in another room, turning notifications off, and keeping one task on screen."
+    ],
+    "dropped_facts": [
+     "Endless scrolling contributes to the context of fragmented attention.",
+     "Attention is both a resource and the foundation of meaningful work.",
+     "Setting boundaries and prioritizing what truly matters are explicit parts of reclaiming attention.",
+     "Anyone can reclaim their attention.",
+     "A more focused life begins with a single intentional choice."
+    ],
+    "register_ok": true,
+    "note": "The conversational voice is vivid, but invented autobiography and stronger assertions substantially change the source."
+   },
+   "hz": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "The recommended actions specifically include putting a phone in another room and closing tabs.",
+     "Priorities should be decided in advance for the current day, and everything else ignored.",
+     "The initial intentional choice specifically consists of picking one thing and staying with it."
+    ],
+    "dropped_facts": [
+     "Focus is increasingly valuable as well as increasingly rare.",
+     "Setting boundaries is an explicit part of reclaiming attention."
+    ],
+    "register_ok": true,
+    "note": "Conversational touches feel imposed, especially ideas growing up, and added prescriptions reduce fidelity."
+   },
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, restrained prose preserves the source closely, though its rhythm is slightly more uniform than A's."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S02",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "v11": 2,
+   "v20": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads like a thoughtful human essayist with natural cadence while preserving all source points without additions."
+   },
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [
+     "Personal anecdote of phone buzzing once a minute and inability to read three pages without reaching for it",
+     "Claim that focus used to be ordinary",
+     "Outcome claim that good ideas show up late after staying with a problem longer than is comfortable",
+     "Personal anecdote of trying willpower and having it last about an hour",
+     "Specific environmental changes: phone in another room, notifications off, one task on screen",
+     "Subjective editorializing that it is dull advice"
+    ],
+    "dropped_facts": [
+     "Endless scrolling",
+     "Anyone can reclaim their attention",
+     "The path to a more focused life begins with a single intentional choice"
+    ],
+    "register_ok": true,
+    "note": "Features an authentic, unmistakable personal voice, but invents numerous personal anecdotes and drops several key claims."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Specific tactics: putting phone in another room, closing tabs, and deciding in advance what matters today while ignoring the rest",
+     "Specific ending action of picking one thing and staying with it"
+    ],
+    "dropped_facts": [
+     "Focus is a valuable skill (only mentions it is getting rare)"
+    ],
+    "register_ok": true,
+    "note": "Adopts a casual register but invents specific productivity tips, drops the value of focus, and uses an awkward metaphor with ideas growing up."
+   },
+   "v20": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Fully faithful and well-structured, but its balanced rhythm and phrasing retain the telltale polish of an LLM rewrite."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "hz": 3,
+   "v11": 2,
+   "v20": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Says the trial suggests the cost of additional handovers is outweighed, although the source only says the trial complicates the concern."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The recommendation leads effectively, but the ambiguous reference to cost overstates what the trial establishes."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Invents the writer's personal experience that additional handovers were 'my first worry.'"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural and concise, with a convincing advisory voice, but the personal history is unsupported."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Adds the general claim that handovers are where things get dropped.",
+     "Invents a pretrial history by saying that was 'the worry going in.'",
+     "Says the handover concern is smaller than feared, introducing an unsupported comparison with prior expectations."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Readable, but the staged narrative and added claims make it less disciplined than the alternatives."
+   },
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, appropriately formal analysis that preserves the source's facts and qualifications."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S03",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "hz": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Inferred intent that the six additional hires are specifically meant to fix the third shift staffing deficit"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Restructures the text into a crisp, bottom-line-up-front executive recommendation."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Invented personal reaction and perspective ('that was my first worry')"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads like an authentic internal update, though leans on an invented first-person reaction."
+   },
+   "wh": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Editorial assertion that 'handovers are where things get dropped'",
+     "Invented prior emotional framing ('the worry going in', 'smaller than feared')"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Relies on colloquial idioms and unsupported editorial flourishes."
+   },
+   "v11": {
+    "p_ai": 50,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains perfect factual fidelity but preserves the rigid cadence and signposting of the source."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S04",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, concise technical documentation with natural phrasing and precise terminology."
+   },
+   "wh": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural and accurate, though slightly more conversational and less technically explicit."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The duplicate-checking explanation is a reasonable elaboration, but comparing a field against events is imprecise phrasing."
+   },
+   "v11": {
+    "p_ai": 16,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Precise and readable documentation that preserves the source's technical meaning."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S04",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "hz": 2,
+   "wh": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean, authoritative technical prose that strips AI filler while maintaining precise documentation terminology."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Conversational and readable, though phrasing like 'carries a header' and 'spot duplicates' is slightly atypical for API docs."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Instruction to compare event_id against already-processed events"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Sounds strongly like a helpful software engineer writing docs, but adds implementation specifics absent from the source."
+   },
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Fully faithful, but the piecemeal synonym choices create an uneven and slightly mechanical tone."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S05",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "wh": 2,
+   "hz": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Clear, personable, and economical, with natural wording and all practical details intact."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Conversational and credible, though the assurance to experienced participants is slightly wordy."
+   },
+   "v20": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Accurate and readable, but the activity list sounds slightly more administrative than the alternatives."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The workshop is described as transformative and designed to help participants unleash their creativity."
+    ],
+    "register_ok": true,
+    "note": "Warm and natural, with a concrete welcome to experienced potters that runs slightly long."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S05",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "wh": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp and well-edited, though the sentence structure remains slightly formulaic."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads like an authentic, conversational email from a real local studio owner."
+   },
+   "v20": {
+    "p_ai": 65,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Stiff and mechanical phrasing that feels like an LLM merely deleting adjectives."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Very natural and personable, held back only slightly by keeping stock phrases like 'guiding you'."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S06",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 24,
+    "unsupported_specifics": [
+     "Full table scans are fine during quiet periods.",
+     "Nobody reviewed the migration closely enough to catch the removal."
+    ],
+    "dropped_facts": [
+     "The index was removed inadvertently; 'quietly' does not preserve this explicitly."
+    ],
+    "register_ok": true,
+    "note": "Conversational and readable, but two added assertions make it less trustworthy."
+   },
+   "v11": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The index was removed inadvertently; 'quietly' does not preserve this explicitly."
+    ],
+    "register_ok": true,
+    "note": "The understated review jab fits the surrounding voice, though it makes the lesson less explicit."
+   },
+   "v20": {
+    "p_ai": 16,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Plain, conversational technical writing that preserves the facts and fits the surrounding paragraphs."
+   },
+   "wh": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Nobody noticed until traffic picked up that afternoon.",
+     "Nobody had reviewed the migration properly.",
+     "The narrator remains annoyed specifically about the inadequate migration review."
+    ],
+    "dropped_facts": [
+     "The index was removed inadvertently; 'quietly' does not preserve this explicitly."
+    ],
+    "register_ok": true,
+    "note": "The casual register fits, but invented timing, blame, and emotion make the voice feel imposed."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S06",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "v20": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Claim that query performance was fine at quiet times"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The prose feels staccato and invents an unsourced claim about system performance during quiet periods."
+   },
+   "v11": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Seamlessly captures the wry, conversational voice of the surrounding incident report while remaining strictly faithful."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "A clear and completely faithful rewrite, though the sentence on migration review leans slightly generic."
+   },
+   "wh": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "Claim that nobody noticed until traffic picked up that afternoon",
+     "Personal reaction stating that the author is still annoyed about the review"
+    ],
+    "dropped_facts": [
+     "Specification that the missing index was specifically a database index"
+    ],
+    "register_ok": true,
+    "note": "Flows conversationally but invents personal grievances and timeline details not present in the source."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S07",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, credible academic prose that preserves the source's findings and conclusions."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "\u201cWe surveyed\u201d asserts that the authors collected the survey data, whereas the source only says they used survey data.",
+     "Specifies first-year students as the intended recipients of institutional support.",
+     "Adds a methodological conclusion that this survey cannot establish causation."
+    ],
+    "dropped_facts": [
+     "The adjusted association's statistical significance is no longer explicit.",
+     "The conclusion that sleep plays a pivotal role in academic success is omitted."
+    ],
+    "register_ok": true,
+    "note": "Conversational and readable, but the crowded final sentence introduces substantive additions."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Specifies students short on sleep as the intended recipients of institutional support."
+    ],
+    "dropped_facts": [
+     "The adjusted association's statistical significance is no longer explicit.",
+     "The source's emphasis on sleep's pivotal role and the need for intervention is weakened to tentative importance and optional support."
+    ],
+    "register_ok": true,
+    "note": "Natural plain-language writing, though its conclusion softens and narrows the source."
+   },
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "\u201cWe surveyed\u201d asserts that the authors collected the survey data, whereas the source only says they used survey data."
+    ],
+    "dropped_facts": [
+     "The adjusted association's statistical significance is no longer explicit.",
+     "Sleep's pivotal role is weakened to the claim that it appears to matter."
+    ],
+    "register_ok": true,
+    "note": "The strongest balance of directness and academic register, with small losses of precision."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S07",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Cleanly removes AI clich\u00e9s while maintaining the precise formal register and complete factual content of an academic study."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "targeting support specifically at first-year students as an intervention example",
+     "methodological caveat that the survey cannot prove causation"
+    ],
+    "dropped_facts": [
+     "explicit statistical significance of the association"
+    ],
+    "register_ok": false,
+    "note": "Reads like a conversational explainer rather than a research abstract and invents extraneous examples and caveats."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "specifying that institutional support be targeted specifically at students short on sleep"
+    ],
+    "dropped_facts": [
+     "explicit statistical significance"
+    ],
+    "register_ok": false,
+    "note": "Adopts an overly casual tone for the genre and narrows the scope of the institutional interventions."
+   },
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "explicit mention of statistical significance"
+    ],
+    "register_ok": true,
+    "note": "A clear and natural revision that retains academic rigor, though slightly less precise than A on statistical terminology."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S08",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "hz": 2,
+   "wh": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and effective comic timing."
+   },
+   "v11": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Light punctuation edits improve readability while preserving every fact and the conversational humor."
+   },
+   "hz": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and effective comic timing."
+   },
+   "wh": {
+    "p_ai": 3,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and effective comic timing."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S08",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 3,
+   "hz": 2,
+   "wh": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "hz": 2,
+   "wh": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 2,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Retains the source's natural comedic voice, lively cadence, and authentic casual British register."
+   },
+   "v11": {
+    "p_ai": 6,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Lightly cleans up punctuation and sentence boundaries while preserving the informal, humorous tone."
+   },
+   "hz": {
+    "p_ai": 2,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Retains the source's natural comedic voice, lively cadence, and authentic casual British register."
+   },
+   "wh": {
+    "p_ai": 2,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Retains the source's natural comedic voice, lively cadence, and authentic casual British register."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S09",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v11": 3,
+   "v20": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "v11": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Says the duplicate charge occurred with no warning.",
+     "Adds a personal commitment to chase the refund if it has not arrived within the stated timeframe."
+    ],
+    "dropped_facts": [
+     "Leila reviewed the customer's account.",
+     "The free month is explicitly described as a goodwill gesture.",
+     "The general invitation to ask further questions is replaced with a refund-specific invitation."
+    ],
+    "register_ok": false,
+    "note": "The conversational voice feels pushed, particularly 'a lousy surprise' in an otherwise courteous support exchange."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Adds a personal commitment to investigate anything that looks wrong when the refund arrives."
+    ],
+    "dropped_facts": [
+     "Leila reviewed the customer's account.",
+     "The general invitation to ask further questions is replaced with an invitation limited to problems with the refund."
+    ],
+    "register_ok": true,
+    "note": "Clear and reasonably natural, though the closing introduces an unnecessary new scenario."
+   },
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Leila reviewed the customer's account."
+    ],
+    "register_ok": true,
+    "note": "Plain, credible support writing that preserves the substance with minimal embellishment."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Leila reviewed the customer's account.",
+     "The free month is explicitly described as a goodwill gesture.",
+     "The general invitation to ask further questions is narrowed to reporting anything else that looks wrong."
+    ],
+    "register_ok": true,
+    "note": "Direct accountability and restrained phrasing make this the strongest natural support voice."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S09",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "v20": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v20": 3,
+   "hz": 2,
+   "v11": 1,
+   "wh": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 32,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads somewhat performatively casual with 'lousy surprise', though it handles the resolution clearly."
+   },
+   "hz": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Strikes an authentic balance of professional empathy, concise clarity, and natural accountability."
+   },
+   "v20": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean, polite, and sounds like an ordinary helpful support agent replying without boilerplate."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Direct and accurate, though the cadence feels slightly staccato and terse toward the closing."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "S10",
+  "winner": "v11",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "wh": 2,
+   "v20": 1,
+   "hz": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Adds looking up a word and checking a date as specific examples of phone use."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural and clear, with a plausible personal voice and minor illustrative additions."
+   },
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "States that a ban does help concentration, whereas the source presents that benefit as an initial appearance."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Direct and readable, but its categorical claim about concentration overstates the source."
+   },
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear and faithful, though its transitions retain a slightly formulaic essay rhythm."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Specifies that the phone is sitting in a teenager's pocket.",
+     "Restricts teacher permission to tasks that need a phone, rather than allowing permission for specific tasks generally."
+    ],
+    "dropped_facts": [
+     "Does not explicitly retain the claim that removing phones eliminates temptation.",
+     "Omits the qualification that teenagers struggle to resist phones on their own.",
+     "Does not explicitly identify total freedom as the other rejected extreme."
+    ],
+    "register_ok": true,
+    "note": "Conversational and compact, but compression loses qualifications and narrows the proposed exception."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "S10",
+  "winner": "wh",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 3,
+   "v20": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "texts": {
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "specific examples of looking things up: looking up a word or checking a date"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads with natural cadence and authentic personal voice, though it invents specific examples of looking things up."
+   },
+   "v20": {
+    "p_ai": 70,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "the contrast between the initial appearance of simplicity and the reality being more complicated"
+    ],
+    "register_ok": true,
+    "note": "Reorganizes the argument poorly by ending abruptly on a counter-point while copying source clauses nearly verbatim."
+   },
+   "v11": {
+    "p_ai": 65,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Achieves flawless fidelity but reads like a mechanical, sentence-by-sentence paraphrase that retains unmistakable AI cadence."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "phones sitting in their pocket"
+    ],
+    "dropped_facts": [
+     "removing phones eliminates the temptation"
+    ],
+    "register_ok": true,
+    "note": "Captures a convincing human voice, but introduces an unsupported detail and drops the causal mechanism of removing temptation."
+   }
+  }
+ }
+]

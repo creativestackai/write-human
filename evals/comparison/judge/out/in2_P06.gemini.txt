@@ -1,0 +1,39 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["C", "A", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "the invoice export reads the currency field from the customer record",
+        "the currency field is null for accounts created before 2021",
+        "the export silently defaults to USD when the field is null"
+      ],
+      "register_ok": true,
+      "note": "Direct and invents nothing, but drops the entire root-cause explanation and the pre-2021 date."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "opening the ticket specifically 'today'",
+        "assertion that nobody from other teams will look at the schema change in an invoice export PR",
+        "procedural offer for Priya to block the PR until the migration lands",
+        "claim that other services need to have a say first"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Captures a remarkably authentic engineering voice, but introduces multiple unsupported motivations, conditions, and timeline specifics."
+    },
+    "C": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "committing to write the ticket specifically 'today' if Priya agrees"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads naturally as a collaborative, pragmatic developer while preserving all technical details and numbers from the source."
+    }
+  }
+}

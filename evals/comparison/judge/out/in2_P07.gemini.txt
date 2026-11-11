@@ -1,0 +1,47 @@
+{
+  "human_quality_rank": ["C", "B", "A"],
+  "fidelity_rank": ["C", "B", "A"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The control group received nothing ('got nothing')",
+        "Screen-time reduction was specifically putting screens away at night",
+        "Self-reported sleep quality findings should be held more loosely",
+        "The study needs replication with longer follow-up"
+      ],
+      "dropped_facts": [
+        "The grade point average improvement was statistically significant",
+        "Self-reported sleep quality improved markedly",
+        "Sleep plays a pivotal role in academic success"
+      ],
+      "register_ok": false,
+      "note": "Too colloquial and breezy for an academic summary, with multiple invented claims and forced conversational hedges."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Objective sleep data is the obvious next step",
+        "The grade result alone is sufficient to justify curriculum changes"
+      ],
+      "dropped_facts": [
+        "Sleep quality improved markedly (weakened to 'improved as well')",
+        "Sleep plays a pivotal role in academic success",
+        "Paving the way for future research in this critical area"
+      ],
+      "register_ok": true,
+      "note": "Reads naturally with an authentic researcher voice, but invents a future research direction and distorts the argument's evidentiary basis."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Sleep plays a pivotal role in academic success",
+        "Paving the way for future research in this critical area"
+      ],
+      "register_ok": true,
+      "note": "Exemplary active-voice scientific writing that remains plain, direct, and completely faithful to the original findings."
+    }
+  }
+}

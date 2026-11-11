@@ -1,0 +1,40 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Artificial intelligence is revolutionizing the way we approach education, and the implications are profound. From personalized learning pathways to automated grading, AI-powered tools are empowering educators and students alike to unlock their full potential. It's important to note that this transformation is not without its challenges, including concerns around privacy, equity, and the risk of over-reliance on technology.
+
+Ultimately, the key to success lies not in replacing teachers, but in augmenting their abilities. By embracing innovation while remaining mindful of its limitations, schools can foster a learning environment that is more engaging, inclusive, and effective than ever before.
+
+=== REWRITE A ===
+AI is showing up in classrooms fast, mostly as two things: software that adjusts lessons to each student's pace, and tools that grade for you. Both can save teachers real time, and some students do better when the material meets them where they are.
+
+The problems are real, though. Student data has to live somewhere, and not every school knows who can see it. Kids with good devices and fast home internet will get more out of these tools than kids without. And if students start letting a chatbot do the thinking, a lot of them will quietly stop learning how to do it themselves.
+
+I don't think the answer is to replace teachers. A teacher notices when a kid has gone quiet, or when a right answer was a lucky guess. Software can't do that. What it can do is take the marking pile off their desk so they have more time for that kind of attention. Schools that treat it as a helper, and stay skeptical of the sales pitch, will probably get the most out of it.
+
+=== REWRITE B ===
+AI is changing how schools teach. Tools can now build personalized learning paths and grade work automatically, which gives teachers and students more room to do what they're good at. The problems are real too: privacy, equity, and the risk that people lean on the technology too much.
+
+The tools work best when they extend what teachers can do, with teachers staying at the center. Schools that adopt them while keeping their limits in view can make learning more engaging, more inclusive, and more effective.
+
+=== REWRITE C ===
+AI is changing how schools approach education. Personalized learning pathways and automated grading are two examples, and both are meant to give teachers and students more room to do what they're there to do. But the tools bring problems of their own: privacy, equity, and the risk that schools come to lean on them too much.
+
+Teachers shouldn't be replaced. AI should extend what they can do. Schools that adopt it while keeping its limits in view stand a better chance of classrooms that are more engaging and inclusive, and more effective than before.
+
+=== REWRITE D ===
+AI is already in classrooms, and most people I talk to can't decide whether to be excited or worried. I'm both. A tool that adjusts a reading list to each kid, or marks forty quizzes overnight, is a real gift to a teacher who would otherwise be up past midnight with a red pen. That part I buy.
+
+The trouble is what comes along with it. Student data has to live somewhere, and schools don't always ask where. The kids with fast home internet and their own laptop tend to benefit first, which widens a gap that was already wide. And there's a quieter risk: a class that hands its thinking to the software and stops noticing it did.
+
+So the useful question isn't whether AI replaces teachers. It won't. The question is whether it gives them time back. A teacher with a few extra hours a week can sit down next to the student who's stuck, and I don't know of any tool that does that part.

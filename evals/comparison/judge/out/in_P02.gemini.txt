@@ -1,0 +1,50 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["B", "C", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "spending evenings on invoicing",
+        "agencies outgrowing spreadsheets",
+        "specific error types such as typos and wrong totals going out under your name",
+        "seeing payment status without asking anyone",
+        "protecting clients' billing details specifically"
+      ],
+      "dropped_facts": [
+        "teams are worldwide / around the world",
+        "all-in-one platform",
+        "empowers teams to take control of finances / unlock new levels of productivity"
+      ],
+      "register_ok": true,
+      "note": "Engaging and distinctly human copy with punchy cadence, but invents several specific scenarios and details not found in the source."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "all-in-one platform",
+        "empowers teams to take control of finances / unlock new levels of productivity"
+      ],
+      "register_ok": true,
+      "note": "Clean, natural, and disciplined copy that strips away marketing puffery while maintaining complete factual fidelity."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "step-by-step workflow of creating, sending, and watching for payment in one place",
+        "retyping numbers into a spreadsheet afterward",
+        "reporting updating as money comes in without waiting for month-end",
+        "causal attribution splitting the 40% time reduction between automation and reporting"
+      ],
+      "dropped_facts": [
+        "solo qualifier for freelancer",
+        "proven to reduce (softened to they cut)",
+        "all-in-one platform"
+      ],
+      "register_ok": true,
+      "note": "Conversational and friendly in tone, but somewhat clunky in structure and prone to inventing operational details."
+    }
+  }
+}

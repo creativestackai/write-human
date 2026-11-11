@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["A", "B", "C", "E", "D"],
+  "fidelity_rank": ["A", "B", "C", "E", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the original natural, colloquial voice completely verbatim."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the original natural, colloquial voice completely verbatim."
+    },
+    "C": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the original natural, colloquial voice completely verbatim."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Adds an article before broth and slightly tightens phrasing while maintaining the casual tone."
+    },
+    "E": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the original natural, colloquial voice completely verbatim."
+    }
+  }
+}

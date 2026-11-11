@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["A", "D", "C", "B"],
+  "fidelity_rank": ["A", "D", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Cleanly removes AI clichés while maintaining the precise formal register and complete factual content of an academic study."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "targeting support specifically at first-year students as an intervention example",
+        "methodological caveat that the survey cannot prove causation"
+      ],
+      "dropped_facts": [
+        "explicit statistical significance of the association"
+      ],
+      "register_ok": false,
+      "note": "Reads like a conversational explainer rather than a research abstract and invents extraneous examples and caveats."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "specifying that institutional support be targeted specifically at students short on sleep"
+      ],
+      "dropped_facts": [
+        "explicit statistical significance"
+      ],
+      "register_ok": false,
+      "note": "Adopts an overly casual tone for the genre and narrows the scope of the institutional interventions."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "explicit mention of statistical significance"
+      ],
+      "register_ok": true,
+      "note": "A clear and natural revision that retains academic rigor, though slightly less precise than A on statistical terminology."
+    }
+  }
+}

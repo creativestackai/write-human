@@ -1,0 +1,3 @@
+Northwind Dental Group has four clinics and a steady problem with patients who don't show up. To deal with it, the group started using Remindly, a messaging platform that connects to its existing scheduling systems. Over 90 days, the no-show rate fell from 18% to 11%, an estimated 340 more appointments kept.
+
+"Remindly has been a game-changer for our front-desk team," said practice manager Elena Torres. The automated SMS reminders got more patients in the chair and freed up staff time. Northwind still uses Remindly today.

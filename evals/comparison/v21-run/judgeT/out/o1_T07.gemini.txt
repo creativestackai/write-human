@@ -1,0 +1,40 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["B", "C", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Dropped the explicit claim that a Sunday market would be viable (subsumed into 'partly backs it')"
+      ],
+      "strength_changes": [
+        "'The council should be asked' is more prescriptive than the source's hedged 'it would seem sensible to ask'",
+        "Framing the survey as 'partly backs it' alters the source's balanced presentation of the conflict"
+      ],
+      "register_ok": true,
+      "note": "Leading with the recommendation leaves the closing sentence feeling stranded, and reframing the survey alters the source's nuance."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Smoothly replaces the formulaic filler with natural, well-paced briefing prose while retaining perfect fidelity."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Omitted the explicit subject from 'That looks viable' (dropping mention that the Sunday market specifically would be viable)"
+      ],
+      "strength_changes": [
+        "'The sensible move is' is slightly more assertive than the hedged 'it would seem sensible to'"
+      ],
+      "register_ok": true,
+      "note": "Clear and direct, though somewhat staccato and slightly clipped in its phrasing."
+    }
+  }
+}

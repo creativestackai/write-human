@@ -1,0 +1,40 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+I am writing to express my strong interest in the Senior Data Analyst position at Meridian Retail. With five years of experience as a data analyst at Brightmart, I have developed a robust skill set in SQL and Python, as well as a proven track record of leveraging data to drive impactful business decisions. In my current role, I built an inventory dashboard that reduced stockouts by 12%, demonstrating my ability to translate complex data into actionable insights.
+
+I am a passionate, detail-oriented team player who thrives in fast-paced environments, and I am confident that my background makes me an ideal fit for this role. I would welcome the opportunity to discuss how I can contribute to Meridian Retail's continued success.
+
+=== REWRITE A ===
+I'm applying for the Senior Data Analyst role at Meridian Retail.
+
+For the past five years I've been a data analyst at Brightmart, working mostly in SQL and Python. The project I'd point to first is an inventory dashboard I built there. Stockouts dropped 12% after it went live, which is the kind of result people outside the analytics team notice, and it's the kind of work I want more of.
+
+I'd like to talk about what Meridian needs from this role and whether my background fits.
+
+=== REWRITE B ===
+I'm applying for the Senior Data Analyst position at Meridian Retail. I've been a data analyst at Brightmart for five years, working mostly in SQL and Python.
+
+The project I'm proudest of there is an inventory dashboard I built, which cut stockouts by 12%. I'd like to talk about what I could do for Meridian Retail.
+
+=== REWRITE C ===
+I'm applying for the Senior Data Analyst role at Meridian Retail. I've been a data analyst at Brightmart for five years, working in SQL and Python. In my current job I built an inventory dashboard that cut stockouts by 12%.
+
+I'd like to talk about how that experience could help Meridian Retail.
+
+=== REWRITE D ===
+I'm applying for the Senior Data Analyst position at Meridian Retail, and I'm very interested in it. I've spent five years as a data analyst at Brightmart, and SQL and Python are the tools I know best.
+
+In my current role I built an inventory dashboard that cut stockouts by 12%. I like that kind of work: taking complex data and turning it into something people can act on.
+
+I'd welcome the chance to talk about how I could contribute at Meridian Retail.

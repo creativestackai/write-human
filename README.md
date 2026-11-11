@@ -2,7 +2,7 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![SKILL.md](https://img.shields.io/badge/format-SKILL.md-blue)](https://agentskills.io)
-[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
 
 A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. It strips the statistical and stylistic tells that AI detectors flag, puts the rhythm and voice back, and makes the writing better in the process.
 
@@ -15,7 +15,9 @@ AI detectors do not really measure "a machine wrote this." Research on base vers
 - **Perplexity**, how predictable each word is. Models take the safe path every time.
 - **Burstiness**, how much sentence length varies. Models cluster around an average; humans swing wildly.
 
-So the fix is not deleting forbidden words. It is rewriting so the text reads like a specific person continuing a thought: uneven rhythm, real opinions, concrete detail. That move raises both numbers the detectors care about, and it happens to be the same thing that makes writing engaging. Undetectable and good are the same target.
+So the fix is not deleting forbidden words. It is rewriting so the text reads like a specific person continuing a thought: uneven rhythm, the author's own opinions, the concrete detail the draft already holds. That is also what makes writing engaging. Human-sounding and good are the same target.
+
+One rule sits above all of it: **the rewrite says only what the draft said.** No invented numbers, names, anecdotes, or narrator. Where a real detail would help, the skill asks you for it.
 
 ## What's inside
 
@@ -23,14 +25,35 @@ So the fix is not deleting forbidden words. It is rewriting so the text reads li
 write-human/
 ├── SKILL.md                          the workflow and the core idea
 ├── reference/
-│   ├── why-detectors-flag-text.md    how detection works, and why the fixes work
+│   ├── why-detectors-flag-text.md    how detection works, including the 2025-26 detectors
 │   ├── ai-tells.md                   the full pattern catalog with before/after fixes
 │   └── craft-levers.md               how to make the rewrite genuinely engaging
-└── examples/
-    └── before-after.md               full worked rewrites in three registers
+├── examples/
+│   └── before-after.md               five worked rewrites, each with its audit
+├── scripts/
+│   └── check.py                      counts what can be counted: added facts, rhythm, voice match
+└── tests/
+    └── test_check.py                 unit tests for the checker
 ```
 
-The skill runs a five-step loop: diagnose the tells, rewrite in three layers (lexicon, structure, rhythm), re-voice it with a real point of view, run an adversarial self-audit ("what still reads as AI? now fix that"), and read it aloud.
+The skill first routes the draft, because a falsely flagged human essay, a buzzword-heavy assistant draft, and a proof-shaped reasoning-model draft need different handling. Then it diagnoses the tells, rewrites in three layers (lexicon, structure, rhythm), re-voices it to match the author, runs an adversarial self-audit ("what still reads as AI?", "what did I add or drop?", "did any claim get stronger or weaker?"), and reads it aloud.
+
+## What's new in 2.0
+
+- **Fidelity is rule zero.** A controlled comparison ([evals/comparison/REPORT.md](evals/comparison/REPORT.md)) found 1.0 added about four unsupported details per rewrite. The fix cut that to about 0.3.
+- **Routing.** Five draft types, each with its own treatment and its own reference to load.
+- **Reasoning-model tells.** Proof-shaped paragraphs, deliberation markers, forced symmetry: tells that live in the argument's staging, not its words. The fix takes off the staging and keeps the draft's order, hedges, and conditions.
+- **Voice matching.** Echo the author's writing sample, or the page the passage sits on.
+- **"Do not sand it flat."** The author's fragments and habits stay. Errors are never planted.
+- **A checker you can run yourself.** `scripts/check.py` compares a rewrite against the draft, a writing sample, and the page around it:
+
+```bash
+python3 scripts/check.py rewrite.txt --source draft.txt --sample sample.txt --context surrounding.txt
+```
+
+Every flag is optional. It lists numbers, names, quotes, or a narrator that appear only in the rewrite, hedge words ("may", "suggests", "provided") that went missing or appeared, sentence-length variation, surface tells, and where the rewrite sits apart from the sample or the surrounding paragraphs. Each line is a place to look, not a verdict. Standard-library Python. It is not an AI detector.
+
+Tested, with a mixed result: in a blind comparison on a fresh holdout (Part 5 of the report), 2.0 matched 1.1 on fidelity and was not shown to sound more human. Leading with the conclusion on reasoning-model drafts made two rewrites claim more than their drafts did, so that rule was rewritten to keep the draft's order and hedges. A second comparison (Part 6) shows the strengthened claims gone and fidelity ahead of 1.1; sounding more human than 1.1 is still not shown. See the changelog.
 
 ## Install
 
@@ -64,7 +87,9 @@ You will get back a short diagnosis, a rewrite, an honest self-audit of what sti
 
 Read this part. It matters.
 
-This skill changes surface style, the things a statistical detector measures. It does **not** remove a hard cryptographic watermark like Google's SynthID, which is baked into generation itself and cannot be reliably edited out without wrecking the text. No tool can honestly promise a "0% AI" score, because detectors are probabilistic and every one scores the same text differently.
+This skill changes style: words, structure, rhythm, voice. It does **not** remove a cryptographic watermark like Google's SynthID, which is baked into generation itself and cannot be reliably edited out without wrecking the text. No tool can honestly promise a "0% AI" score, because detectors are probabilistic and every one scores the same text differently. The newest detectors read a model's internal representation of the text or search the web for its sources, and are built to survive paraphrasing, so the promise is emptier now than it was.
+
+It also will not plant grammar mistakes to look human, try to scramble a watermark, disguise where generated text was pasted into someone else's writing, or blur facts so they are harder to check.
 
 The reason to use this is that AI detection is badly biased and gets real people in trouble. One Stanford study had seven detectors falsely flag 61% of TOEFL essays that humans actually wrote, because non-native English and tightly structured technical writing both look "too clean" to a scanner. Helping a real writer sound like themselves, so they are not falsely accused and so their work actually lands, is the point. Dressing up unread model output to pass it off where that is forbidden is not, and the skill will steer you away from that framing.
 
@@ -87,8 +112,8 @@ trigger tuning and new patterns get proposed.
 
 ## Credits
 
-Built from three sources: a deep research survey of the AI-detection and humanization literature (perplexity, burstiness, the base-model finding, watermarking, the false-positive studies), the pattern catalog in [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) maintained by WikiProject AI Cleanup, and a set of classic copywriting craft principles for the engagement layer.
+Built from five sources: a 2026 survey of third-generation detectors (RepreGuard, Exons-Detect, GigaCheck, GECScore, Pangram 4, agentic detection) read for what a style edit can and cannot honestly do, a deep research survey of the AI-detection and humanization literature (perplexity, burstiness, the base-model finding, watermarking, the false-positive studies), the pattern catalog in [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) maintained by WikiProject AI Cleanup, a set of classic copywriting craft principles for the engagement layer, and the fidelity-first editing approach of [blader/humanizer](https://github.com/blader/humanizer) (MIT): keep every supported claim and invent nothing. See [NOTICE](NOTICE) and the comparison in [evals/comparison/REPORT.md](evals/comparison/REPORT.md).
 
 ## License
 
-Apache License 2.0. See [LICENSE](LICENSE). Use it, fork it — attribution and the license notice carry over per the terms.
+Apache License 2.0. See [LICENSE](LICENSE). Use it, fork it. Attribution and the license notice carry over per the terms.

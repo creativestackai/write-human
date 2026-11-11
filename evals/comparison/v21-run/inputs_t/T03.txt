@@ -1,0 +1,11 @@
+CONTEXT (background only, not part of the text to rewrite):
+The text to rewrite is the middle paragraph of a longer design note for a job worker. The same author wrote the paragraphs on either side of it, shown here.
+
+PARAGRAPH BEFORE: The worker pulls jobs from Redis in batches of 50. Each job has a 30 s visibility timeout; if the worker dies mid-job, the job reappears and another worker takes it.
+
+PARAGRAPH AFTER: Dead-letter handling is covered in the next section. Short version: after 5 failed attempts a job moves to `jobs:dead` and nothing retries it automatically.
+
+---
+
+TEXT TO REWRITE:
+It's worth highlighting that our system leverages a sophisticated rate-limiting mechanism to ensure seamless interaction with the upstream API. Specifically, the worker utilizes a token bucket that is replenished at a rate of 20 tokens per second, with a maximum capacity of 100. When the bucket is empty, the worker gracefully pauses rather than dropping jobs. Furthermore, should the upstream API return a `429` response, the worker will honor the `Retry-After` header and robustly back off accordingly, which plays a crucial role in maintaining overall system stability.

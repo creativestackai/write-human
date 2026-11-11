@@ -1,0 +1,47 @@
+{
+  "human_quality_rank": ["D", "B", "A", "C"],
+  "fidelity_rank": ["D", "C", "B", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Specifying the payment method as a card ('card you paid with')",
+        "Asserting that the package has already arrived late ('that's why it arrived late')",
+        "Claiming the issue was escalated to the warehouse team to investigate ('passed it to the warehouse team so they can look at how it happened')"
+      ],
+      "dropped_facts": [
+        "Explicit commitment to ensure the issue does not happen again",
+        "Thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Sounds convincingly human and empathetic, but hallucinates internal investigative actions and specifies an unsupported payment method."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Commitment to ensuring the error does not happen again",
+        "Thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Reads naturally with an authentic support-agent voice, but drops the commitment to prevent future issues and the closing thanks."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Accurately conveys nearly all details, but the clipped, staccato sentence structure feels somewhat stiff and impersonal."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Excellently balances natural human warmth and appropriate professional register while preserving every detail from the source."
+    }
+  }
+}

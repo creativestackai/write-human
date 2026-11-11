@@ -1,0 +1,7 @@
+Webhook Retries
+
+If your endpoint doesn't return a `2xx` status within 10 seconds, we treat the delivery as failed and retry it, up to 5 times over 24 hours.
+
+Every request carries an `X-Signature` header. Use it to check that the payload came from us.
+
+Make your handler idempotent. The same event can arrive more than once, so check the `event_id` field to spot duplicates.

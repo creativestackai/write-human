@@ -1,0 +1,3 @@
+Syntax is the easy part. The harder part is learning to think through a problem, which is most of what programming is. Plenty of beginners try to memorize commands and stall out. Understanding the concepts is what gets you moving, and every bug you hit teaches you something about them.
+
+Maybe you're building a website, analyzing data, or automating tasks. Either way it's hard and it's worth it, and it takes patience and a lot of practice. The most successful developers struggle too, and they lean into it. So don't be afraid to fail. Every line of code you write gets you a little closer to mastery.

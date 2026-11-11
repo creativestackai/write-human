@@ -1,0 +1,39 @@
+{
+  "human_quality_rank": ["C", "B", "A"],
+  "fidelity_rank": ["B", "C", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The opening premise that requiring two reviewers across all pull requests initially seems like an obvious bug-catching measure, but becomes less clear upon closer examination"
+      ],
+      "strength_changes": [
+        "Strengthened 'reviews may become slower' to 'reviews get slower'",
+        "Changed 'may notice' to 'can catch'"
+      ],
+      "register_ok": true,
+      "note": "Inverting the structure cuts formulaic framing but drops the opening premise and leaves the final deduction stranded without its conclusion."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Faithfully preserves all claims, logic, and hedges while replacing stiff transition markers, though the closing sentence is slightly awkward."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Turned a hedged recommendation ('suggest that two reviewers should probably be required') into an imperative mandate ('Require two reviewers only')",
+        "Strengthened 'reviews may become slower' to 'reviews get slower'"
+      ],
+      "register_ok": true,
+      "note": "Presents the most natural and confident human voice, but overreaches by converting a tentative analytical suggestion into a strict policy command."
+    }
+  }
+}

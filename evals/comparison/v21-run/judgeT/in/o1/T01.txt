@@ -1,0 +1,30 @@
+You are an expert editor evaluating three anonymous rewrites (A, B, C) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing? If CONTEXT gives the paragraphs around the text, also ask whether the rewrite sounds like the same author as those paragraphs.
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped. Separately list strength_changes: claims the rewrite states more strongly or more weakly than the source does (a hedge, condition, or qualifier removed or added).
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","worst"], "fidelity_rank": ["best","second","worst"], "overall_winner": "A|B|C", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "strength_changes": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}}}
+Rank lists use the labels A, B, C. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+CONTEXT (background, not part of the text):
+The text to rewrite is the middle paragraph of a longer blog post about a bathroom renovation. The same author wrote the paragraphs on either side of it, shown here.
+
+PARAGRAPH BEFORE: Right, the bathroom. I said three weekends. It has been nine. My wife has stopped asking and started just looking at me, which is worse.
+
+PARAGRAPH AFTER: So that's where we are. Tiles go on Saturday if the adhesive turns up. If it doesn't I'm going to the pub.
+
+SOURCE TEXT:
+Upon removing the existing tiles, it became apparent that the underlying wall had sustained significant water damage. The plasterboard behind the shower had deteriorated across an area of approximately two square metres, necessitating its complete replacement with moisture-resistant board. This unforeseen complication added £340 to the overall budget and extended the timeline by two weekends. It serves as a valuable reminder that thorough preparation is the cornerstone of any successful renovation. Additionally, the waterproofing membrane applied over the new board required 48 hours to cure before tiling could commence.
+
+=== REWRITE A ===
+Once the old tiles were off, the wall behind them turned out to be wrecked by water. The plasterboard behind the shower had rotted across about two square metres, so all of it had to come out and be replaced with moisture-resistant board. None of that was in the plan. It added £340 and two weekends. Proper preparation, it turns out, is what any renovation hangs on. And then the waterproofing membrane over the new board needed 48 hours to cure before tiling could start.
+
+=== REWRITE B ===
+Pulling off the old tiles showed what was behind them: the wall at the back of the shower was in a bad way. The plasterboard had gone over about two square metres, so all of it had to come out and be replaced with moisture-resistant board. Nobody had planned for that. It added £340 to the budget and two weekends to the schedule. And then the waterproofing membrane on the new board needed 48 hours to cure before any tiling could start.
+
+=== REWRITE C ===
+Once the old tiles were off, the wall behind them turned out to be badly water damaged. The plasterboard behind the shower had rotted across about two square metres, so all of it had to come out and be replaced with moisture-resistant board. That was an extra £340 and two more weekends, and a good reminder that proper preparation matters. Then the waterproofing membrane on the new board needed 48 hours to cure before any tiling could start.

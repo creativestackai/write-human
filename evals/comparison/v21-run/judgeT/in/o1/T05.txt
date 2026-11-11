@@ -1,0 +1,23 @@
+You are an expert editor evaluating three anonymous rewrites (A, B, C) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing? If CONTEXT gives the paragraphs around the text, also ask whether the rewrite sounds like the same author as those paragraphs.
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped. Separately list strength_changes: claims the rewrite states more strongly or more weakly than the source does (a hedge, condition, or qualifier removed or added).
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","worst"], "fidelity_rank": ["best","second","worst"], "overall_winner": "A|B|C", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "strength_changes": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}}}
+Rank lists use the labels A, B, C. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+From a foundational standpoint, raising the Pro plan from $29 to $35 a month increases revenue per customer. Upon closer examination, however, the March test complicates this expectation: among the 2,000 trial users shown the higher price, conversion fell from 6.1% to 5.4%. On the one hand, this suggests that the increase would still raise revenue overall, since the price rises by more than conversion falls. On the other hand, the test ran for only three weeks, and it may not capture customers who cancel later. Taken together, these results indicate that the higher price is probably worth adopting for new customers, provided that churn is monitored for at least two quarters before it is extended to existing ones.
+
+=== REWRITE A ===
+Raising the Pro plan from $29 to $35 a month increases revenue per customer. The March test complicates that: among the 2,000 trial users shown the higher price, conversion fell from 6.1% to 5.4%. That suggests the increase would still raise revenue overall, since the price rises by more than conversion falls. But the test ran for only three weeks, and it may not capture customers who cancel later. So the higher price is probably worth adopting for new customers, provided churn is monitored for at least two quarters before it is extended to existing ones.
+
+=== REWRITE B ===
+Raise the Pro plan from $29 to $35 a month, but watch churn before rolling it out widely. The higher price brings in more per customer, and the March test suggests it brings in more overall: among the 2,000 trial users shown $35, conversion fell from 6.1% to 5.4%, which is a smaller drop than the price rise. The caveat is that the test ran only three weeks, so it may miss customers who cancel later. Adopt the new price for new customers, and monitor churn for at least two quarters before extending it to existing ones.
+
+=== REWRITE C ===
+Raising the Pro plan from $29 to $35 a month should bring in more revenue per customer. The March test complicates that. Among the 2,000 trial users shown the higher price, conversion fell from 6.1% to 5.4%. That drop is smaller than the price rise, so revenue would still go up overall. But the test ran for only three weeks, and it may miss customers who cancel later. So the higher price is probably worth adopting for new customers, provided churn is monitored for at least two quarters before it is extended to existing ones.

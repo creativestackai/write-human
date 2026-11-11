@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["D", "A", "E", "B", "C"],
+  "fidelity_rank": ["D", "B", "E", "A", "C"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Features an authentic developer voice with natural idioms, though it leans slightly conversational for reference documentation."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Delivers concise and direct instructions, but retains a slightly stiff and mechanical phrasing structure."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": false,
+      "note": "Adopts an approachable cadence, but introduces an awkward rhetorical question and drops markdown code backticks around the tool name."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Exemplifies ideal technical documentation with plain, authoritative imperative phrasing and zero artificial filler."
+    },
+    "E": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Provides a clean, readable rewrite that balances approachable human phrasing with documentation clarity."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["C", "B", "A"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 80,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Persistence as an explicit, distinct requirement alongside patience and practice"
+      ],
+      "register_ok": true,
+      "note": "Accurate and faithful to the source, but it reads like a mechanical, sentence-by-sentence AI paraphrase."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "First-person autobiographical anecdote about learning to code and wasting time memorizing commands",
+        "Ten-second syntax lookup estimate",
+        "Specific examples about how loops run and what functions do with inputs",
+        "Spreadsheet's worth of data",
+        "Working late at 11pm",
+        "Quantitative comparison between the third failed attempt and the first clean run"
+      ],
+      "dropped_facts": [
+        "Explicit requirement of patience, persistence, and practice",
+        "Every line of code bringing the learner closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Reads with authentic human warmth, but fabricates personal anecdotes and extensive unsupported specifics."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Ten-second syntax lookup estimate",
+        "Flashcards and cheat sheets as memorization tools",
+        "For loop and tutorial mismatch scenario",
+        "Automating chores tired of doing by hand"
+      ],
+      "dropped_facts": [
+        "Analyzing data as an explicit application domain",
+        "Explicit requirement of patience, persistence, and practice",
+        "Every line of code bringing the learner closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Delivers sharp, natural prose appropriate to the genre while keeping unsupported additions to minor illustrative details."
+    }
+  }
+}

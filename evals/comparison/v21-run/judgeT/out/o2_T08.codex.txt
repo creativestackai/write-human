@@ -1,0 +1,50 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The features are described as designed to improve users' workflow."
+      ],
+      "strength_changes": [
+        "Removes the enthusiastic 'thrilled' and 'game-changer' assessments.",
+        "Omits the descriptions of the features as 'powerful' and dark mode as 'sleek'.",
+        "Replaces 'dramatically faster' with 'faster', while retaining the supporting numbers."
+      ],
+      "register_ok": true,
+      "note": "Clear and approachable, but 'One deadline to note.' feels artificially clipped."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The features are described as designed to improve users' workflow."
+      ],
+      "strength_changes": [
+        "Removes the enthusiastic 'thrilled' and 'game-changer' assessments.",
+        "Omits the descriptions of the features as 'powerful' and dark mode as 'sleek'.",
+        "Replaces 'dramatically faster' with 'faster', while retaining the supporting numbers."
+      ],
+      "register_ok": true,
+      "note": "A natural, concise release announcement that preserves the concrete details and migration urgency."
+    },
+    "C": {
+      "p_ai": 14,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The features are described as designed to improve users' workflow."
+      ],
+      "strength_changes": [
+        "Removes the enthusiastic 'thrilled' and 'game-changer' assessments.",
+        "Omits the descriptions of the features as 'powerful' and dark mode as 'sleek'.",
+        "Replaces 'dramatically faster' with 'faster', while retaining the supporting numbers.",
+        "Changes the migration request from 'as soon as possible' to before September 30, weakening its urgency."
+      ],
+      "register_ok": true,
+      "note": "Reads smoothly and naturally, but changes the timing emphasis of the migration request."
+    }
+  }
+}

@@ -1,0 +1,4 @@
+TEXT TO REWRITE:
+Webhook Retries
+
+It's worth noting that our platform employs a robust retry mechanism to ensure reliable delivery of webhook events. If your endpoint does not respond with a `2xx` status code within 10 seconds, the delivery is considered failed. In such cases, we will seamlessly retry the delivery up to 5 times over a period of 24 hours. Each request includes an `X-Signature` header, which you should leverage to verify that the payload originated from us. Additionally, it is crucial to make your handler idempotent — the same event may be delivered more than once, and the `event_id` field can be utilized to detect duplicates.

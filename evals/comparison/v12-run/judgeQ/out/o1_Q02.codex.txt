@@ -1,0 +1,76 @@
+{
+  "human_quality_rank": ["B", "A", "C", "D"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Daily repetition produces far more than any single push; the source makes no comparison with a single effort."
+      ],
+      "dropped_facts": [
+        "The surrounding world is full of distractions.",
+        "The explicit claim that these practices can transform your life."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, with a natural cadence, though the succession of short declarations feels slightly rehearsed."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Willpower runs out; the source advises against relying on it without specifying depletion.",
+        "The starting action should be small enough that you cannot really skip it."
+      ],
+      "dropped_facts": [
+        "The surrounding world is full of distractions.",
+        "Consistency is the true key to success.",
+        "The explicit weeks-and-months timeframe is reduced to a few months.",
+        "The explicit claim that these practices can transform your life.",
+        "Every step brings you closer to your goals."
+      ],
+      "register_ok": true,
+      "note": "The most conversational and unforced version, but it loses several source claims and introduces stronger advice."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "You will run out of willpower; the source does not specify why willpower should not be relied on."
+      ],
+      "dropped_facts": [
+        "The surrounding world is full of distractions.",
+        "The explicit claim that these practices can transform your life.",
+        "Every step brings you closer to your goals.",
+        "The best time to start is now."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, although the causal transition about willpower is weak and the ending omits the source's call to start."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "The reader has plenty of motivation on Monday and none by Thursday.",
+        "Any plan depending on motivation was inevitably going to fail.",
+        "What works is boring, and the activity will stop feeling interesting.",
+        "Ten pushups and reading one page are introduced as examples.",
+        "The reader has a book they keep meaning to finish.",
+        "Repeated small actions outperform any single big push.",
+        "The claimed advantage occurs mostly because the reader keeps showing up.",
+        "Placing running shoes by the door and charging a phone in another room are introduced as system examples.",
+        "The reader should start smaller than feels worthwhile.",
+        "After missing a day, the reader should resume the next day.",
+        "Missing a day barely matters, whereas quitting does.",
+        "The reader should pick exactly one thing."
+      ],
+      "dropped_facts": [
+        "The surrounding world is full of distractions.",
+        "The explicit weeks-and-months timeframe is reduced to a few months.",
+        "The explicit instruction to be patient with yourself.",
+        "The explicit claim that these practices can transform your life.",
+        "Every step brings you closer to your goals.",
+        "The best time to start is now; the rewrite instead says tomorrow."
+      ],
+      "register_ok": true,
+      "note": "A distinct, punchy coaching voice is weakened by invented examples, sweeping claims, and a contradictory closing instruction."
+    }
+  }
+}

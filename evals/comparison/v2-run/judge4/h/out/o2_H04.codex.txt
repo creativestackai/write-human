@@ -1,0 +1,74 @@
+{
+  "human_quality_rank": ["B", "D", "A", "C"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The claim that nothing the writer did 'that month' was clever introduces a timeframe and self-assessment absent from the source."
+      ],
+      "dropped_facts": [
+        "The writer's explicit excitement about sharing the achievement.",
+        "The invitation to start today is changed to this week.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, with one forced aside and a small departure from the source."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "The assessment that the finishing time was not fast and the attitude 'I'll take it.'",
+        "Spending most of the eight days googling whether the writer could still reach the start line.",
+        "The running group dragging the writer to Sunday meetups where the writer could only watch.",
+        "The physiotherapist determining what was actually wrong.",
+        "Keeping running slow and boring after returning.",
+        "The claim that this approach was the only reason the writer reached race day.",
+        "The lesson that showing up most weeks beats a perfect plan.",
+        "The writer being bad at asking for help and needing to change that."
+      ],
+      "dropped_facts": [
+        "The marathon was completed recently.",
+        "The writer's explicit excitement about sharing the achievement.",
+        "Returning stronger than ever.",
+        "The lesson that consistency, patience, and community underpin achieving any big goal.",
+        "The encouragement to take the first step today.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "The most convincing personal voice, but much of its character comes from invented experiences."
+    },
+    "C": {
+      "p_ai": 32,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer's explicit excitement about sharing the achievement."
+      ],
+      "register_ok": true,
+      "note": "Natural and clear enough, preserving the substantive account with the fewest liberties."
+    },
+    "D": {
+      "p_ai": 16,
+      "unsupported_specifics": [
+        "The assessment that the finishing time was not fast and the writer being fine with it.",
+        "Spending most of the eight days googling whether people reach the start line after a similar injury.",
+        "The running group keeping the writer attending when the writer could only watch.",
+        "The physiotherapist prescribing repetitive knee exercises that made the writer want to scream.",
+        "The particular recovery sequence in which doing that work brought the knee around.",
+        "The writer being unready and reaching the start through having stopped waiting.",
+        "The advice to start before feeling ready."
+      ],
+      "dropped_facts": [
+        "The marathon was completed recently.",
+        "The writer's explicit excitement about sharing the achievement.",
+        "Returning stronger than ever.",
+        "The explicit lesson that consistency, patience, and community underpin achieving any big goal.",
+        "The encouragement to take the first step today.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "Vivid and close to the sample's voice, although the polished ending and invented recovery details weaken it."
+    }
+  }
+}

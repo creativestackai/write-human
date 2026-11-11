@@ -1,0 +1,51 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+WRITER'S OWN SAMPLE (voice reference supplied with the task):
+Honestly I almost didn't post this. Quick background: I'm not a writer, I'm a guy who bakes and who keeps a spreadsheet of everything. Last week the oven died mid-batch and I stood there with forty unbaked loaves like an idiot. Anyway. Lessons I took from that, mostly boring ones, but one of them is useful.
+
+SOURCE TEXT:
+I'm excited to share that after 9 years in banking, I left my role in March to open a bakery called Crumb & Co. in Leeds. It has been an incredible journey filled with challenges, growth, and invaluable lessons. The first three months were incredibly difficult. We lost money every single week, and I questioned my decision more than once.
+
+But everything changed when I started offering a Saturday sourdough subscription. Within six weeks, we had 85 subscribers, and revenue stabilized. This experience taught me that resilience, adaptability, and listening to your customers are the keys to success. If you're thinking about making a leap, remember: the best time to start is now. What's holding you back?
+
+=== REWRITE A ===
+I left banking in March after 9 years and opened a bakery in Leeds called Crumb & Co. The first three months were rough. We lost money every single week, and more than once I wondered if I'd made a mistake.
+
+What turned it around was a Saturday sourdough subscription. Six weeks after I started offering it we had 85 subscribers, and the revenue finally evened out. The main thing I took from it is to listen to your customers, because they were telling me what they wanted before I caught on. If you're thinking about making a leap yourself, don't wait too long.
+
+=== REWRITE B ===
+Nine years in banking, and in March I quit to open a bakery. It's called Crumb & Co. and it's in Leeds.
+
+The first three months were rough. We lost money every single week, and more than once I stood in the shop wondering what on earth I'd done.
+
+Then I started a Saturday sourdough subscription. Six weeks in we had 85 subscribers and the weekly numbers stopped going the wrong way. Nothing clever about it. Turns out people like knowing their bread is sorted.
+
+If you're sitting on a leap of your own, I can't tell you when to take it. But I can tell you I'd have slept better in those first three months if I'd tried the subscription sooner.
+
+=== REWRITE C ===
+After 9 years in banking, I left in March to open a bakery in Leeds. It's called Crumb & Co.
+
+The first three months were rough. We lost money every single week, and more than once I wondered if I'd made a mistake.
+
+Then I started a Saturday sourdough subscription. Six weeks later we had 85 subscribers and revenue finally settled down.
+
+What I took from it: keep going, change the plan when it isn't working, and pay attention to what your customers want. And if you're thinking about making a leap yourself, I'd start now.
+
+=== REWRITE D ===
+I left banking in March after nine years and opened a bakery in Leeds. It's called Crumb & Co.
+
+The first three months were bad. We lost money every single week, and more than once I sat in the shop after closing wondering if I'd made a huge mistake.
+
+What turned it around was a Saturday sourdough subscription. I almost didn't bother with it. But six weeks in we had 85 subscribers, and for the first time the numbers stopped bleeding. People wanted the same loaf every week without having to think about it, and I'd been too busy trying to sell them everything else to notice.
+
+If you're sitting on a leap of your own, I can't tell you when to take it. I can tell you that I'd have started earlier. What's the thing you keep putting off?

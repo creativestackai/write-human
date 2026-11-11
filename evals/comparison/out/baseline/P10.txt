@@ -1,0 +1,7 @@
+When I started coding, I thought the hard part would be remembering syntax. It wasn't. The hard part was learning to break a messy problem into pieces small enough to actually solve. Syntax you can look up in ten seconds. Thinking you can't.
+
+I wasted a lot of early time trying to memorize commands, and almost none of it stuck. What stuck was the stuff I understood: why a loop runs the way it does, what a function is really doing with its inputs. Once that clicked, the commands came along on their own.
+
+It doesn't matter much whether you're building a site, poking around in a spreadsheet's worth of data, or scripting some boring chore. You'll get stuck, and it'll be annoying. The developers I admire still get stuck all the time. They just don't take it personally, and they keep going. A bug is mostly the computer telling you your mental model is off, which is useful, even if it doesn't feel that way at 11pm.
+
+So break things. You'll learn more from the third failed attempt than from the first clean run.

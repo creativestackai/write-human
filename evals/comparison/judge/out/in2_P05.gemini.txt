@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["C", "B", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Sitting in the shop after closing",
+        "Almost not bothering with the subscription",
+        "Customers wanting the same loaf every week without having to think about it",
+        "Being too busy trying to sell them everything else to notice"
+      ],
+      "dropped_facts": [
+        "Resilience and adaptability as keys to success",
+        "Explicit assertion that 'the best time to start is now'"
+      ],
+      "register_ok": true,
+      "note": "Captures the casual, self-effacing voice effectively, but invents considerable backstory and business reasoning not present in the source."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Standing in the shop wondering what on earth had been done",
+        "Customers liking knowing their bread is sorted",
+        "Sleeping better in the first three months if the subscription had been tried sooner"
+      ],
+      "dropped_facts": [
+        "Resilience, adaptability, and listening to customers as keys to success",
+        "The assertion that 'the best time to start is now'",
+        "The closing question 'What\\'s holding you back?'"
+      ],
+      "register_ok": true,
+      "note": "Exceptional match to the voice sample with dry, understated phrasing that reads entirely authentically like a real person."
+    },
+    "C": {
+      "p_ai": 70,
+      "unsupported_specifics": [
+        "Customers were telling the writer what they wanted before the writer caught on"
+      ],
+      "dropped_facts": [
+        "Resilience and adaptability as keys to success",
+        "The closing question 'What\\'s holding you back?'"
+      ],
+      "register_ok": true,
+      "note": "Preserves source facts well, but the sentence structure and bland phrasing retain an unmistakable AI-generated cadence."
+    }
+  }
+}

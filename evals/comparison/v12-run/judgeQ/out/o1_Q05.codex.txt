@@ -1,0 +1,74 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["B", "A", "C", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "SQL and Python are the tools the applicant knows best.",
+        "The applicant specifically likes work that turns complex data into something people can act on."
+      ],
+      "dropped_facts": [
+        "An explicit proven track record of using data to drive impactful business decisions.",
+        "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+        "The applicant is confident their background makes them an ideal fit."
+      ],
+      "register_ok": true,
+      "note": "Natural and personable, although the opening repeats itself and two personal claims exceed the source."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Strong interest in the position.",
+        "The stated strength of the applicant's SQL and Python skills.",
+        "An explicit proven track record of using data to drive impactful business decisions.",
+        "The dashboard demonstrates an ability to translate complex data into actionable insights.",
+        "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+        "The applicant is confident their background makes them an ideal fit."
+      ],
+      "register_ok": true,
+      "note": "Plain and credible, with the strongest factual restraint, though it compresses away several source claims."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "SQL and Python account for most of the applicant's work.",
+        "The inventory dashboard is the project the applicant is proudest of."
+      ],
+      "dropped_facts": [
+        "Strong interest in the position.",
+        "The stated strength of the applicant's SQL and Python skills.",
+        "An explicit proven track record of using data to drive impactful business decisions.",
+        "The dashboard was built in the applicant's current role.",
+        "The dashboard demonstrates an ability to translate complex data into actionable insights.",
+        "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+        "The applicant is confident their background makes them an ideal fit."
+      ],
+      "register_ok": true,
+      "note": "Readable and appropriately conversational, but its personal emphasis depends on an invented superlative."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "SQL and Python account for most of the applicant's work.",
+        "The inventory dashboard is the project the applicant would highlight first.",
+        "People outside the analytics team notice results like this.",
+        "The applicant specifically wants more work of this kind."
+      ],
+      "dropped_facts": [
+        "Strong interest in the position.",
+        "The stated strength of the applicant's SQL and Python skills.",
+        "An explicit proven track record of using data to drive impactful business decisions.",
+        "The dashboard was built in the applicant's current role.",
+        "The explicit claim that the dashboard caused the reduction in stockouts is weakened to a temporal association.",
+        "The dashboard demonstrates an ability to translate complex data into actionable insights.",
+        "The applicant describes themselves as passionate, detail-oriented, and a team player who thrives in fast-paced environments.",
+        "The applicant is confident their background makes them an ideal fit."
+      ],
+      "register_ok": true,
+      "note": "The long dashboard paragraph feels manufactured, and the tentative ending changes the applicant's stated confidence."
+    }
+  }
+}

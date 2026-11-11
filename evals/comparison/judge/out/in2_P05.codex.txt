@@ -1,0 +1,59 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["C", "B", "A"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The narrator sat in the shop after closing while questioning the decision.",
+        "The narrator almost did not offer the subscription.",
+        "The numbers 'stopped bleeding' implies losses ceased; the source only says revenue stabilized.",
+        "Customers wanted the same loaf every week without having to think about it.",
+        "The narrator had been too busy selling other things to notice customers' preferences.",
+        "The narrator would have started earlier."
+      ],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The broader description of the journey as incredible and involving challenges, growth, and invaluable lessons.",
+        "The explicit lessons about resilience, adaptability, and listening to customers being keys to success.",
+        "The advice that the best time to start is now, replaced with uncertainty about when to take the leap."
+      ],
+      "register_ok": true,
+      "note": "Vivid and conversational, but its strongest personal details and closing conviction are invented."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The narrator stood in the shop while questioning the decision.",
+        "The weekly numbers 'stopped going the wrong way' suggests an improvement beyond the stated stabilization of revenue.",
+        "Customers liked knowing their bread was sorted.",
+        "The narrator would have slept better during the first three months if the subscription had started sooner."
+      ],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The broader description of the journey as incredible and involving challenges, growth, and invaluable lessons.",
+        "The explicit lessons about resilience, adaptability, and listening to customers being keys to success.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The most natural match for the supplied voice, though it invents customer motives and a personal counterfactual."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Customers had been telling the narrator what they wanted before the narrator recognized it."
+      ],
+      "dropped_facts": [
+        "The narrator's excitement about sharing the news.",
+        "The broader description of the journey as incredible and involving challenges, growth, and invaluable lessons.",
+        "Resilience and adaptability as lessons and keys to success.",
+        "The immediacy of the advice that the best time to start is now, softened to 'don't wait too long.'",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, with the strongest factual fidelity but less individual voice than the other versions."
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "human_quality_rank": ["A", "C", "D", "E", "B"],
+  "fidelity_rank": ["C", "E", "B", "A", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "the best person within forty minutes of the office",
+        "culture a company took years to build starts to thin out",
+        "assertion that plenty of offices run on distrust while plenty of remote teams run beautifully",
+        "specific communication habits: writing things down, answering people promptly, and picking up the phone when a thread gets tense",
+        "assertion that without trust, no software will fix it"
+      ],
+      "dropped_facts": [
+        "the evolving digital landscape context and remote work emerging as a transformative force reshaping organizational operations",
+        "unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Exceptional authorial voice and rhythmic cadence that sounds unmistakably human, but introduces substantial personal commentary and tactical advice not present in the source."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "opening context regarding the rapidly evolving digital landscape and remote work reshaping organizational operations",
+        "thriving in the future of work (condensed to 'work well')"
+      ],
+      "register_ok": true,
+      "note": "A clean, functional summary in plain English that avoids AI clichés, though its voice is somewhat flat and dry."
+    },
+    "C": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "explicit mention of the rapidly evolving digital landscape",
+        "explicit mention of thriving in the future of work (condensed to 'do its best work')"
+      ],
+      "register_ok": true,
+      "note": "Strikes an ideal balance between natural, idiomatic human phrasing and disciplined fidelity to the source claims without inventing outside material."
+    },
+    "D": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "working when you are sharpest",
+        "getting your commute back",
+        "hiring someone living eleven time zones away",
+        "a message read in the wrong tone sitting for a day",
+        "going a whole week without talking to anyone not on a screen",
+        "hallway chat where you find out how the team really feels about a project",
+        "a shared doc outworking a dozen apps"
+      ],
+      "dropped_facts": [
+        "remote work emerging as a transformative force reshaping organizational operations in an evolving digital landscape",
+        "unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Bursting with distinctive human personality and vivid anecdotes, but heavily compromises fidelity by fabricating numerous scenarios, metrics, and narrative details."
+    },
+    "E": {
+      "p_ai": 28,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "opening context that remote work is a transformative force reshaping how organizations operate in a digital landscape",
+        "thriving in the future of work (condensed to 'do good work')"
+      ],
+      "register_ok": true,
+      "note": "Reads smoothly and idiomatically with solid adherence to the source, though slightly less polished and memorable than the top versions."
+    }
+  }
+}

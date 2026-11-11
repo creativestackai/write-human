@@ -1,0 +1,38 @@
+{
+  "human_quality_rank": ["A", "C", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Captures the dry, punchy voice of the surrounding blog post while preserving all source details."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that the damage was specifically caused by water ('significant water damage')",
+        "the takeaway that thorough preparation is the cornerstone of any successful renovation"
+      ],
+      "strength_changes": [
+        "'the wall at the back of the shower was in a bad way' is weaker than 'sustained significant water damage'"
+      ],
+      "register_ok": true,
+      "note": "Fits the casual blog register well, but drops the cause of damage and the preparation takeaway."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "'proper preparation matters' weakens the source claim that thorough preparation is the 'cornerstone of any successful renovation'"
+      ],
+      "register_ok": true,
+      "note": "Reads naturally and retains all key facts, though the phrasing is slightly more conventional than A."
+    }
+  }
+}

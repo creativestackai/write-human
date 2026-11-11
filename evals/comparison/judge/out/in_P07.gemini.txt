@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["C", "A", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Underscoring the pivotal role of sleep in academic success",
+        "Paving the way for future research in this critical area"
+      ],
+      "register_ok": true,
+      "note": "A clear, concise, and faithful academic summary in an appropriate formal register, though lacking a distinctive individual voice."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "The control group received nothing",
+        "Screen-time reduction was specifically at night",
+        "The effect size was small-to-moderate",
+        "Self-reported sleep quality should be held more loosely",
+        "The study needs replication with longer follow-up"
+      ],
+      "dropped_facts": [
+        "The grade point average difference was statistically significant",
+        "Sleep quality improved markedly",
+        "Underscoring the pivotal role of sleep in academic success"
+      ],
+      "register_ok": false,
+      "note": "Too breezy and colloquial for scientific reporting, with multiple invented claims and dropped statistical significance."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The effect size is small by conventional standards",
+        "Objective sleep data is the obvious next step",
+        "The grade result alone is sufficient to argue for curriculum inclusion"
+      ],
+      "dropped_facts": [
+        "Sleep quality improved markedly",
+        "Underscoring the pivotal role of sleep in academic success",
+        "Paving the way for future research generally"
+      ],
+      "register_ok": true,
+      "note": "Possesses a strong, authentic voice of an engaged researcher, but invents outside methodological critiques and next steps."
+    }
+  }
+}

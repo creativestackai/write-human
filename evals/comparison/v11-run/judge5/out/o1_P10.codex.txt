@@ -1,0 +1,87 @@
+{
+  "human_quality_rank": ["B", "C", "D", "E", "A"],
+  "fidelity_rank": ["D", "C", "A", "E", "B"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Syntax is described as the easy part; the source does not establish its difficulty."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and conversational, but several slogans and repeated constructions feel manufactured."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The narrator personally started coding and expected remembering syntax to be the hard part.",
+        "The narrator found decomposing messy problems to be the hard part.",
+        "Syntax can be looked up in ten seconds.",
+        "The narrator wasted substantial early time memorizing commands, and almost none stuck.",
+        "The narrator learned through understanding loops and function inputs, after which commands came naturally.",
+        "The data being analyzed amounts to a spreadsheet's worth.",
+        "The narrator admires developers who still get stuck all the time.",
+        "Those developers do not take getting stuck personally.",
+        "A bug is mostly evidence that the programmer's mental model is wrong.",
+        "The late-night reference introduces an unsupported 11pm scenario.",
+        "A third failed attempt teaches more than a first clean run."
+      ],
+      "dropped_facts": [
+        "The explicit claim that coding is rewarding.",
+        "The explicit requirement for patience and practice.",
+        "The claim that the most successful developers embrace struggle.",
+        "The claim that every line of code brings progress toward mastery.",
+        "The general claim that many beginners mistakenly memorize commands is replaced by a personal anecdote."
+      ],
+      "register_ok": true,
+      "note": "The personal voice is convincing and readable, but it depends heavily on invented experience and advice."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Failure is presented as inevitable for the reader."
+      ],
+      "dropped_facts": [
+        "Persistence is no longer explicitly identified as a requirement.",
+        "The endpoint of mastery is softened to being good at coding."
+      ],
+      "register_ok": true,
+      "note": "Natural phrasing and varied rhythm make this an effective rewrite with small fidelity losses."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The endpoint of mastery is softened to being good at coding."
+      ],
+      "register_ok": true,
+      "note": "Plain, coherent writing preserves nearly all the source's meaning without inventing supporting detail."
+    },
+    "E": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Syntax is easy and can be looked up in ten seconds.",
+        "Problem decomposition is identified as the foundational skill supporting everything else.",
+        "The narrator personally understands the attraction of memorization.",
+        "Flashcards and cheat sheets feel like progress.",
+        "Memorization leads to recognizing a for loop without understanding when to use it.",
+        "The first problem that differs from a tutorial leaves the learner stuck.",
+        "Bugs account for most learning.",
+        "The automated chore is something the reader is tired of doing by hand.",
+        "Unexpected program behavior necessarily forces learners to examine their assumptions.",
+        "The gap between assumed and actual program behavior constitutes most of what there is to learn.",
+        "Developers who become good struggle constantly and do not interpret struggle as a verdict on themselves."
+      ],
+      "dropped_facts": [
+        "Analyzing data as an example of programming work.",
+        "The explicit claim that coding is rewarding.",
+        "The explicit requirements for patience, persistence, and practice.",
+        "The comparison specifically concerns the most successful developers.",
+        "The claim that every line of code brings progress toward mastery."
+      ],
+      "register_ok": true,
+      "note": "Readable and assertive, but its extended examples and sweeping claims substantially change the source."
+    }
+  }
+}

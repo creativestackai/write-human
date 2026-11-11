@@ -1,0 +1,33 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["B", "C", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": ["Questions (in 'Questions or thoughts?')"],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Weakens the migration recommendation from 'as soon as possible' to 'before then'"
+      ],
+      "register_ok": true,
+      "note": "Direct and clean product update tone, with minor alterations to the call to action and migration urgency."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Reads like a concise, natural release note written by a human engineer, preserving all facts perfectly."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Choppy sentence structure and unidiomatic phrasing like 'a dark mode' make it read less smoothly."
+    }
+  }
+}

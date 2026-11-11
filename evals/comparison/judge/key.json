@@ -1,0 +1,52 @@
+{
+ "P01": {
+  "A": "hz",
+  "B": "baseline",
+  "C": "wh"
+ },
+ "P02": {
+  "A": "wh",
+  "B": "hz",
+  "C": "baseline"
+ },
+ "P03": {
+  "A": "baseline",
+  "B": "wh",
+  "C": "hz"
+ },
+ "P04": {
+  "A": "baseline",
+  "B": "hz",
+  "C": "wh"
+ },
+ "P05": {
+  "A": "hz",
+  "B": "baseline",
+  "C": "wh"
+ },
+ "P06": {
+  "A": "baseline",
+  "B": "hz",
+  "C": "wh"
+ },
+ "P07": {
+  "A": "hz",
+  "B": "baseline",
+  "C": "wh"
+ },
+ "P08": {
+  "A": "wh",
+  "B": "hz",
+  "C": "baseline"
+ },
+ "P09": {
+  "A": "baseline",
+  "B": "wh",
+  "C": "hz"
+ },
+ "P10": {
+  "A": "wh",
+  "B": "hz",
+  "C": "baseline"
+ }
+}

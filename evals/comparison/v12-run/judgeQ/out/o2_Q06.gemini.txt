@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["B", "A", "C", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that the error was caught during the review"
+      ],
+      "register_ok": true,
+      "note": "Concise and natural for Slack, though repeating the exact figure in back-to-back sentences sounds slightly robotic."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Captures a completely authentic Slack tone with fluid phrasing and transitions while retaining every factual detail."
+    },
+    "C": {
+      "p_ai": 60,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that Meera approved the invoice (states only that she reviewed it)"
+      ],
+      "register_ok": true,
+      "note": "Stiff and formulaic, opening with an unnecessary greeting for a thread and awkwardly separating the review from the approval."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that Meera is from the accounts team",
+        "that the error was caught during the review"
+      ],
+      "register_ok": true,
+      "note": "Direct and punchy, but omits Meera's department and features a somewhat breathless run-on sentence."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Crisp, direct technical documentation that strips all corporate filler while maintaining natural developer phrasing."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Distinctly human and conversational in tone, though slightly chatty for standard CLI reference docs."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and faithful to the source, but the phrasing feels somewhat formulaic."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Engaging and informal, but the rhetorical question and dropped backtick formatting make it slightly unpolished."
+    }
+  }
+}

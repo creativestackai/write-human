@@ -1,0 +1,72 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["B", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Remote hiring yields the best person for a role rather than merely access to a global talent pool.",
+        "The local hiring radius is forty minutes from the office.",
+        "People go days without talking to anyone.",
+        "The company culture took years to build.",
+        "Nobody shares a room.",
+        "Plenty of offices run on distrust, while plenty of remote teams run beautifully.",
+        "Tools help only a little, and good habits help more.",
+        "Specific recommended practices include writing things down, answering promptly, and calling when a thread becomes tense.",
+        "No software can fix the situation without trust."
+      ],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate within a rapidly evolving digital landscape.",
+        "The explicit claim that distributed teams can reach their full potential and organizations can thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "A convincing conversational voice and concrete language come at the cost of substantial invented detail."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate within a rapidly evolving digital landscape.",
+        "The explicit future-facing claim that organizations can thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained prose preserves the central argument with the fewest distortions."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Nobody shares a room."
+      ],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate within a rapidly evolving digital landscape.",
+        "The explicit future-facing claim that organizations can thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Mostly faithful and readable, but awkward phrasing makes employees appear to be the ones hiring."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Most arguments about remote work go wrong by discussing only benefits or only drawbacks.",
+        "Remote work lets people work when they are sharpest.",
+        "Remote work eliminates commuting.",
+        "Remote hiring yields the best person for the job.",
+        "A potential hire lives eleven time zones away.",
+        "A message is misread and sits for a day.",
+        "Someone goes a whole week without talking to anyone who is not on a screen.",
+        "The hardest thing to preserve is an unplanned hallway conversation that reveals how the team really feels about a project.",
+        "Tools help only after trust, transparency, and accountability are established.",
+        "A trusting team with a shared document will outperform a distrustful team using a dozen apps."
+      ],
+      "dropped_facts": [
+        "Remote work is transforming how organizations operate within a rapidly evolving digital landscape.",
+        "The explicit benefit of improved work-life balance.",
+        "The explicit recommendation to cultivate strong communication practices.",
+        "The explicit claim that distributed teams can reach their full potential and organizations can thrive in the future of work."
+      ],
+      "register_ok": true,
+      "note": "Lively opinion writing uses conspicuously crafted examples and replaces several source claims with inventions."
+    }
+  }
+}

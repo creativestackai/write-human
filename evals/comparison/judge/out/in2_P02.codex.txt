@@ -1,0 +1,63 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "“Teams of any size” extends the source’s stated audience beyond solo freelancers and growing agencies."
+      ],
+      "dropped_facts": [
+        "The explicit all-in-one positioning.",
+        "The claim that the tools are intuitive.",
+        "The claim of increased productivity.",
+        "The promise to eliminate manual errors is weakened to fewer errors.",
+        "The claim of best-in-class security is weakened to security being built in."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained product copy with a natural rhythm and little unnecessary sales language."
+    },
+    "B": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "A specific integrated workflow for creating invoices, sending them, and monitoring payment.",
+        "The claim that nobody needs to retype numbers into a spreadsheet afterward.",
+        "The implication that the more than 2,300 teams achieved the stated 40% reduction, rather than the product having demonstrated that reduction.",
+        "The attribution of part of the processing-time reduction specifically to automation.",
+        "The attribution of part of the processing-time reduction specifically to reporting.",
+        "The suggestion that users otherwise must wait until month-end to see their financial position."
+      ],
+      "dropped_facts": [
+        "The claim that the tools are intuitive.",
+        "The explicit promise to eliminate manual errors.",
+        "The explicit claim of increased productivity.",
+        "The claim of best-in-class security is weakened to secure data."
+      ],
+      "register_ok": true,
+      "note": "Conversational and readable, but its helpful-sounding explanations invent workflow details and causal evidence."
+    },
+    "C": {
+      "p_ai": 55,
+      "unsupported_specifics": [
+        "The characterization of intended users as spending evenings on invoicing.",
+        "The claim that agencies using Tallyo have outgrown spreadsheets.",
+        "The specific claim that automation reduces typos and incorrect totals on outgoing invoices.",
+        "The specific ability to see paid and unpaid invoices without asking anyone.",
+        "The claim that clients’ billing details are stored behind the platform’s security.",
+        "The suggestion that users need not think about security.",
+        "The implication that the more than 2,300 teams achieved the stated 40% reduction, rather than the product having demonstrated that reduction."
+      ],
+      "dropped_facts": [
+        "The explicit all-in-one positioning.",
+        "The claim that the tools are intuitive.",
+        "The explicit claim of increased productivity.",
+        "The worldwide reach of the more than 2,300 teams.",
+        "The claim of best-in-class security.",
+        "The broad promise to eliminate manual errors is narrowed and weakened to fewer typos and incorrect totals."
+      ],
+      "register_ok": true,
+      "note": "Lively marketing copy, but the clipped sentences and staged emphasis feel conspicuously engineered."
+    }
+  }
+}

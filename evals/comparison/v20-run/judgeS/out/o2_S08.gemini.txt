@@ -1,0 +1,35 @@
+{
+  "human_quality_rank": ["A", "C", "D", "B"],
+  "fidelity_rank": ["A", "C", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 2,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the source's natural comedic voice, lively cadence, and authentic casual British register."
+    },
+    "B": {
+      "p_ai": 6,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Lightly cleans up punctuation and sentence boundaries while preserving the informal, humorous tone."
+    },
+    "C": {
+      "p_ai": 2,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the source's natural comedic voice, lively cadence, and authentic casual British register."
+    },
+    "D": {
+      "p_ai": 2,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains the source's natural comedic voice, lively cadence, and authentic casual British register."
+    }
+  }
+}

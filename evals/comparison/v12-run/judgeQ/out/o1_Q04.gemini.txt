@@ -1,0 +1,63 @@
+{
+  "human_quality_rank": ["C", "D", "B", "A"],
+  "fidelity_rank": ["A", "D", "B", "C"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The migration was recently undertaken",
+        "Two engineers led the migration (rephrased as taking two engineers)",
+        "The cost savings ensured a more sustainable infrastructure",
+        "The fast-paced engineering landscape context"
+      ],
+      "register_ok": true,
+      "note": "Preserves almost all claims but follows a sentence-by-sentence paraphrase template with a generic opening that sounds AI-generated."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Build times can make or break developer productivity",
+        "Improved velocity",
+        "Empowered developers to ship with confidence",
+        "Ensuring a more sustainable infrastructure",
+        "The fast-paced engineering landscape context"
+      ],
+      "register_ok": true,
+      "note": "Reads like clean, plain technical reporting but abruptly truncates the entire second half of the outcomes."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Anecdote that a 24-minute build causes developers to wander off and lose their place while a 9-minute build does not",
+        "Claim that the build time reduction was 'mostly' thanks to caching and parallelization",
+        "Claim that the difference shows up in how people work every day"
+      ],
+      "dropped_facts": [
+        "Build times can make or break developer productivity",
+        "The migration was recently undertaken",
+        "Two engineers led the migration (rephrased as taking two engineers)",
+        "Improved velocity",
+        "Empowered developers to ship with confidence",
+        "Ensuring a more sustainable infrastructure",
+        "The fast-paced engineering landscape context"
+      ],
+      "register_ok": true,
+      "note": "Has the most authentic, natural human voice but invents an unsupported relatable anecdote and drops several source claims."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Build times can make or break developer productivity",
+        "The migration was recently undertaken",
+        "Ensuring a more sustainable infrastructure",
+        "The fast-paced engineering landscape context"
+      ],
+      "register_ok": true,
+      "note": "Strikes the best overall balance by using direct, natural human phrasing while faithfully preserving all core metrics, roles, and outcomes."
+    }
+  }
+}

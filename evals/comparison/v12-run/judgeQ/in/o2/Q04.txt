@@ -1,0 +1,38 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+In today's fast-paced engineering landscape, build times can make or break developer productivity. At our company, we recently embarked on a journey to migrate our CI pipeline from Jenkins to GitHub Actions, and the results were truly transformative. The migration took six weeks and was led by two engineers.
+
+By leveraging GitHub Actions' native caching and parallelization capabilities, we reduced average build time from 24 minutes to 9 minutes. Furthermore, we cut our monthly CI costs by 35%, ensuring a more sustainable infrastructure. Ultimately, this migration not only improved our velocity but also empowered our developers to ship with confidence.
+
+=== REWRITE A ===
+We moved our CI pipeline from Jenkins to GitHub Actions. Two engineers led it, and it took six weeks.
+
+Using GitHub Actions' native caching and parallelization, we cut average build time from 24 minutes to 9. Monthly CI costs dropped 35% as well. Our velocity is up, and developers ship with more confidence.
+
+=== REWRITE B ===
+We moved our CI pipeline from Jenkins to GitHub Actions. It took two engineers six weeks.
+
+Average build time went from 24 minutes to 9, mostly thanks to Actions' native caching and parallelization. A 24-minute build is long enough to wander off and lose your place. Nine isn't, and that difference shows up in how people work every day.
+
+The bill dropped too. Monthly CI costs are down 35%.
+
+=== REWRITE C ===
+We recently moved our CI pipeline from Jenkins to GitHub Actions. Two engineers led the migration, and it took six weeks.
+
+GitHub Actions' native caching and parallelization brought our average build time down from 24 minutes to 9. Our monthly CI costs also fell by 35%.
+
+=== REWRITE D ===
+Build times can make or break developer productivity. We moved our CI pipeline from Jenkins to GitHub Actions, which took two engineers six weeks.
+
+With GitHub Actions' native caching and parallelization, average build time fell from 24 minutes to 9. Monthly CI costs dropped 35%. Developers move faster now, and they ship with more confidence.

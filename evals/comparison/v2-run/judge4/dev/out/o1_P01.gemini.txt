@@ -1,0 +1,69 @@
+{
+  "human_quality_rank": [
+    "B",
+    "C",
+    "D",
+    "A"
+  ],
+  "fidelity_rank": [
+    "A",
+    "D",
+    "C",
+    "B"
+  ],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A disciplined, plain-English rewrite that preserves all source facts without inventing details."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "claim that most arguments about remote work go wrong by only talking about one half",
+        "working when you're sharpest",
+        "getting your commute back",
+        "hiring someone eleven time zones away",
+        "message read in the wrong tone sitting for a day",
+        "someone going a whole week without talking to anyone not on a screen",
+        "hallway chat where you found out how the team really felt about a project",
+        "shared doc and a trusting team outworking a dozen apps"
+      ],
+      "dropped_facts": [
+        "remote work has emerged as a transformative force reshaping how organizations operate"
+      ],
+      "register_ok": false,
+      "note": "Distinctly human and memorable, but slips into an overly casual register and invents extensive specifics and anecdotes."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "hiring someone within forty minutes of the office",
+        "people going days without talking to anyone",
+        "culture a company took years to build",
+        "culture thinning out when nobody shares a room",
+        "claim that plenty of offices run on distrust while remote teams run beautifully",
+        "specific habits: writing things down, answering promptly, and picking up the phone when a thread gets tense"
+      ],
+      "dropped_facts": [
+        "remote work has emerged as a transformative force reshaping how organizations operate"
+      ],
+      "register_ok": true,
+      "note": "Reads like an engaging human op-ed, but invents multiple concrete examples and scenarios absent from the source."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "hiring 'instead of one city' (source specifies a global talent pool without contrasting with a single city)"
+      ],
+      "dropped_facts": [
+        "remote work has emerged as a transformative force reshaping how organizations operate"
+      ],
+      "register_ok": true,
+      "note": "Natural and well-balanced professional prose, but omits the opening claim about organizational transformation and adds a minor contrast."
+    }
+  }
+}

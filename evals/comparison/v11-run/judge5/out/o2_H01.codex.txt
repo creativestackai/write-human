@@ -1,0 +1,93 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C", "E"],
+  "fidelity_rank": ["D", "C", "A", "B", "E"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 24,
+      "unsupported_specifics": [
+        "Both applications help teachers and students get more out of their time; the source does not specify time efficiency."
+      ],
+      "dropped_facts": [
+        "The characterization of the educational transformation as revolutionary and its implications as profound.",
+        "The claim that the tools help educators and students unlock their full potential.",
+        "The claim that the resulting learning environment can surpass all previous levels of engagement, inclusion, and effectiveness."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, with a distinctive cadence and only a small substantive addition."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "AI is entering classrooms rapidly and appears mostly in two forms.",
+        "Personalization specifically adjusts lessons to each student's pace.",
+        "Both applications save teachers time.",
+        "Some students perform better with adapted material.",
+        "Some schools do not know who can access student data.",
+        "Students with good devices and fast home internet benefit more than those without.",
+        "Many students who let chatbots think for them will stop learning to think independently.",
+        "Teachers notice withdrawn students and distinguish lucky guesses from understanding.",
+        "Software cannot make those observations.",
+        "Automated marking frees teachers to give students more attention.",
+        "Schools skeptical of sales pitches will probably benefit most."
+      ],
+      "dropped_facts": [
+        "The characterization of the educational transformation as revolutionary and its implications as profound.",
+        "The claim that AI tools empower both educators and students to unlock their full potential.",
+        "The explicit prospect of a more engaging, inclusive, and effective learning environment than ever before."
+      ],
+      "register_ok": true,
+      "note": "The most convincing individual voice, but its concrete explanations substantially exceed the source."
+    },
+    "C": {
+      "p_ai": 39,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The characterization of the educational transformation as revolutionary and its implications as profound.",
+        "Actual empowerment toward full potential is weakened to the tools' intended purpose.",
+        "The claim of improvement beyond all previous learning environments is reduced to improvement over before."
+      ],
+      "register_ok": true,
+      "note": "Restrained and faithful, though vague wording and the awkward final sentence weaken its fluency."
+    },
+    "D": {
+      "p_ai": 34,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The characterization of the educational transformation as revolutionary and its implications as profound.",
+        "The full-potential claim is softened to giving teachers and students more room to use their abilities.",
+        "The claim that engagement, inclusion, and effectiveness can reach unprecedented levels."
+      ],
+      "register_ok": true,
+      "note": "Clear, appropriately plain writing that preserves the central argument with minimal distortion."
+    },
+    "E": {
+      "p_ai": 43,
+      "unsupported_specifics": [
+        "The writer has discussed classroom AI with people who are mostly undecided between excitement and worry.",
+        "The writer personally feels both excitement and worry.",
+        "Personalization specifically adjusts individual children's reading lists.",
+        "A tool marks forty quizzes overnight.",
+        "A teacher would otherwise work past midnight marking with a red pen.",
+        "Schools do not always ask where student data is stored.",
+        "Children with fast home internet and their own laptops benefit first.",
+        "These benefits widen an already substantial gap.",
+        "A class may surrender its thinking to software without noticing.",
+        "AI will not replace teachers.",
+        "AI's usefulness turns on whether it gives teachers time back.",
+        "Teachers can gain a few extra hours each week.",
+        "That extra time enables individual attention to struggling students.",
+        "The writer knows of no tool that can provide that attention."
+      ],
+      "dropped_facts": [
+        "The characterization of the educational transformation as revolutionary and its implications as profound.",
+        "The claim that AI empowers educators and students to unlock their full potential.",
+        "The recommendation to augment teachers rather than replace them is changed into a prediction that replacement will not happen.",
+        "The explicit recommendation to embrace innovation while remaining mindful of its limitations.",
+        "The prospect of a more engaging, inclusive, and effective learning environment than ever before."
+      ],
+      "register_ok": false,
+      "note": "The conversational voice relies heavily on an invented persona and anecdotes, changing the source's genre and argument."
+    }
+  }
+}

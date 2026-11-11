@@ -1,0 +1,54 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural, grounded human voice that preserves every fact, emotion, and lesson without relying on corporate clichés."
+    },
+    "B": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "Commentary that 300 people a day 'still sounds made up'",
+        "Statement that there was no clever way out",
+        "Personal emotional reaction of being sad and oddly relieved",
+        "Advice to 'read the lease first'"
+      ],
+      "dropped_facts": [
+        "The core lesson that passion, perseverance, and community are the true ingredients of success",
+        "That selling was a difficult decision"
+      ],
+      "register_ok": true,
+      "note": "Brilliantly mimics the reference voice but invents personal specifics and explicitly rejects the source's core takeaway."
+    },
+    "C": {
+      "p_ai": 28,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Closing rhetorical question ('What dream are you putting off?')"
+      ],
+      "register_ok": true,
+      "note": "Maintains high fidelity, but the abrupt colon transition and phrasing feel somewhat stiff and formulaic."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Anecdote that the espresso machine groaned every time it was used",
+        "Commentary that 300 customers a day feels like a made-up number",
+        "Claim that they tried to make the rent work and failed ('I tried. It didn't.')",
+        "Emotional state of being tired, a bit sad, and weirdly fine",
+        "Advice to read the lease properly first"
+      ],
+      "dropped_facts": [
+        "The core lesson that passion, perseverance, and community are the true ingredients of success",
+        "That selling was a difficult decision"
+      ],
+      "register_ok": true,
+      "note": "Distinctive conversational voice, but fabricates physical anecdotes and discards the original reflection entirely."
+    }
+  }
+}

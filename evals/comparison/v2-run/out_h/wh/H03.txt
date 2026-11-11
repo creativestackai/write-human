@@ -1,0 +1,7 @@
+Installation
+
+`fastlint` needs Node.js 18 or higher. Install it globally with `npm install -g fastlint`.
+
+Run it with `--fix` and it resolves most issues for you. If you'd rather look before it touches anything, use `--dry-run` instead, which previews the changes and leaves your files alone.
+
+Configuration lives in a `.fastlintrc` file in your project root. If there isn't one, `fastlint` falls back to its defaults, so you can run it straight away with nothing to set up.

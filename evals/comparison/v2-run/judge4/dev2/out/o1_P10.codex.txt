@@ -1,0 +1,75 @@
+{
+  "human_quality_rank": ["A", "C", "B", "D"],
+  "fidelity_rank": ["D", "B", "C", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The narrator's personal history: expecting syntax to be hardest, struggling with problem decomposition, wasting time memorizing commands, and retaining almost none of them.",
+        "Syntax can be looked up in ten seconds, whereas thinking cannot.",
+        "The narrator learned through understanding loops and function inputs, after which commands came naturally.",
+        "The developers the narrator admires still get stuck all the time and do not take it personally.",
+        "Bugs mostly indicate an incorrect mental model.",
+        "The imagined 11pm debugging situation.",
+        "A third failed attempt teaches more than a first clean run."
+      ],
+      "dropped_facts": [
+        "Many beginners make the mistake of memorizing commands; the rewrite substitutes one narrator's experience.",
+        "Coding is rewarding as well as challenging.",
+        "Patience and practice are required.",
+        "The most successful developers embrace struggle; admired developers replace successful developers.",
+        "Every bug provides a lesson; the rewrite instead describes what bugs mostly indicate.",
+        "Every line of code brings progress toward mastery."
+      ],
+      "register_ok": true,
+      "note": "A distinctive conversational voice and concrete details make this engaging, but extensive invented autobiography undermines fidelity."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The categorical prediction that the reader will fail along the way."
+      ],
+      "dropped_facts": [
+        "Persistence is not explicitly retained, although leaning into struggle partly conveys it.",
+        "The explicit encouragement not to fear failure.",
+        "Mastery as the destination is softened to being good at coding."
+      ],
+      "register_ok": true,
+      "note": "Natural phrasing and varied rhythm preserve most of the message, with a few small shifts in emphasis."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Syntax is easy and can be looked up in ten seconds.",
+        "Problem decomposition takes longer and is the foundation of every other programming skill.",
+        "Flashcards and cheat sheets feel like progress.",
+        "Memorizing commands leaves beginners recognizing a for loop without knowing when to use one.",
+        "Beginners get stuck the first time a problem differs from a tutorial.",
+        "Bugs account for most learning.",
+        "Debugging forces programmers to examine actual behavior, and the gap between actual and assumed behavior constitutes most of what there is to learn.",
+        "Developers who become good struggle constantly and do not interpret struggle as a verdict on themselves.",
+        "The automation example assumes a chore the reader is tired of doing manually."
+      ],
+      "dropped_facts": [
+        "Analyzing data as an application of coding.",
+        "Coding is rewarding as well as challenging.",
+        "The explicit requirements for patience, persistence, and practice.",
+        "Every bug is a lesson; most learning occurring through bugs is a different claim.",
+        "Every line of code brings progress toward mastery."
+      ],
+      "register_ok": true,
+      "note": "The voice is conversational and assured, but its expanded explanations introduce numerous unsupported generalizations."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Embracing struggle is softened to continuing through it.",
+        "Mastery as the destination is softened to being good at coding."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, this version preserves the source most closely, though its voice remains fairly generic."
+    }
+  }
+}

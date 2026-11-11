@@ -1,0 +1,65 @@
+{
+  "human_quality_rank": ["B", "E", "D", "C", "A"],
+  "fidelity_rank": ["A", "D", "C", "E", "B"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains perfect fidelity to the source, but preserves the formulaic colon list and engagement-bait sign-off characteristic of AI rewrites."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "sitting in the shop after closing",
+        "almost not bothering with the subscription",
+        "customers wanting the same loaf every week without having to think about it",
+        "being too busy trying to sell them everything else to notice",
+        "wishing to have started earlier"
+      ],
+      "dropped_facts": [
+        "explicit lessons of resilience and adaptability",
+        "the claim that the best time to start is now"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic and compelling personal voice, but invents substantial narrative backstory and drops two core lessons."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "customers telling the author what they wanted before he caught on"
+      ],
+      "dropped_facts": [
+        "lessons of resilience and adaptability",
+        "the closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Achieves a reasonably conversational register, but invents an unsupported customer interaction and omits two stated lessons."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "the closing call-to-action advising that the best time to start is now and asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Strikes the ideal balance by adopting a grounded, natural voice with zero invented facts, dropping only the generic motivational ending."
+    },
+    "E": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "standing in the shop wondering what on earth he had done",
+        "customers liking knowing their bread is sorted",
+        "sleeping better in the first three months if tried sooner"
+      ],
+      "dropped_facts": [
+        "lessons of resilience, adaptability, and listening to customers",
+        "the closing claim that the best time to start is now and the question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Effectively channels the voice reference's dry humor, but hallucinates several personal details while dropping all stated business takeaways."
+    }
+  }
+}

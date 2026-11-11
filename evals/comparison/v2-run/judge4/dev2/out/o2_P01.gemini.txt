@@ -1,0 +1,72 @@
+{
+  "human_quality_rank": ["A", "D", "C", "B"],
+  "fidelity_rank": ["B", "C", "A", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Hiring within forty minutes of the office",
+        "Messages getting misread",
+        "People going days without talking to anyone",
+        "Culture taking years to build",
+        "Offices running on distrust while remote teams run beautifully",
+        "Specific communication habits: writing things down, answering promptly, and picking up the phone when a thread gets tense",
+        "Claim that no software will fix an absence of trust"
+      ],
+      "dropped_facts": [
+        "Rapidly evolving digital landscape context",
+        "Remote work as a transformative force reshaping how organizations operate",
+        "Thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic, persuasive human voice that grounds corporate abstractions into concrete realities while preserving the core arguments."
+    },
+    "B": {
+      "p_ai": 55,
+      "unsupported_specifics": [
+        "Contrasting global hiring with hiring 'instead of one city'"
+      ],
+      "dropped_facts": [
+        "Rapidly evolving digital landscape context",
+        "Remote work as a transformative force reshaping how organizations operate",
+        "Thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Maintains strict fidelity and concise phrasing, but its rigid clause-by-clause symmetry still sounds like a standard AI paraphrase."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Physical detail of 'nobody shares a room'"
+      ],
+      "dropped_facts": [
+        "Rapidly evolving digital landscape context",
+        "Remote work as a transformative force reshaping how organizations operate",
+        "Thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Smooth, disciplined, and highly faithful, though its parallel sentence structures still reflect the template of the source text."
+    },
+    "D": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Claim that most arguments go wrong by only talking about one half",
+        "Working when you're sharpest",
+        "Getting your commute back",
+        "Hiring someone eleven time zones away",
+        "A message read in the wrong tone sitting there for a day",
+        "Going a whole week without talking to anyone who isn't on a screen",
+        "Hallway chat revealing how the team really felt about a project",
+        "Claim that a shared doc and trust will outwork a dozen apps"
+      ],
+      "dropped_facts": [
+        "Rapidly evolving digital landscape context",
+        "Remote work as a transformative force reshaping how organizations operate",
+        "Thriving in the future of work"
+      ],
+      "register_ok": false,
+      "note": "Has an unmistakably human authorial voice, but lapses into an overly casual register and invents extensive unsupported narratives and metrics."
+    }
+  }
+}

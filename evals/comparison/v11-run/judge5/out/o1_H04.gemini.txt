@@ -1,0 +1,73 @@
+{
+  "human_quality_rank": ["D", "E", "C", "B", "A"],
+  "fidelity_rank": ["A", "E", "B", "C", "D"],
+  "overall_winner": "E",
+  "texts": {
+    "A": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Faithfully preserves all facts but retains a stiff, unmistakably AI-generated social-media cadence."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Claim that 'Nothing I did that month was clever'"
+      ],
+      "dropped_facts": [
+        "Closing question asking what goal the reader is chasing",
+        "Encouragement to take the first step 'today' (shifted to 'this week')"
+      ],
+      "register_ok": true,
+      "note": "Reads naturally with good rhythm, but adds an unsupported editorial reflection and drops the closing prompt."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Subjective assessment that 4:38 is 'Not fast, but I'll take it'",
+        "Spending days off googling whether they would make the start line",
+        "Running group dragging the author to Sunday meetups just to watch",
+        "Physiotherapist figuring out what was actually wrong",
+        "Running slow and boring as the only reason for reaching race day",
+        "Self-reflection on being bad at asking for help"
+      ],
+      "dropped_facts": [
+        "Fact that the marathon was completed recently",
+        "Returning stronger than ever",
+        "Encouragement to take the first step today",
+        "Closing question asking what goal the reader is chasing"
+      ],
+      "register_ok": true,
+      "note": "Has a strong conversational voice, but invents multiple narrative scenes and omits the call to action."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "Subjective assessment that 4:38 is 'Not fast, and I'm fine with that'",
+        "Spending eight days googling whether people make the start line after injuries",
+        "Running group keeping the author showing up just to watch",
+        "Physiotherapist prescribing dull knee exercises until wanting to scream",
+        "Doing boring work until the knee came round",
+        "Reflection about not being ready and having stopped waiting"
+      ],
+      "dropped_facts": [
+        "Fact that the marathon was completed recently",
+        "Returning stronger than ever",
+        "Explicit lesson that consistency, patience, and community are the foundations of achieving any big goal",
+        "Closing question asking what goal the reader is chasing"
+      ],
+      "register_ok": true,
+      "note": "Extremely vivid and authentic narrative voice, but heavily hallucinates dramatic personal anecdotes and drops key takeaways."
+    },
+    "E": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Fact that the marathon was completed recently"
+      ],
+      "register_ok": true,
+      "note": "Successfully channels the writer's blunt, grounded voice while maintaining near-flawless fidelity to the source facts."
+    }
+  }
+}

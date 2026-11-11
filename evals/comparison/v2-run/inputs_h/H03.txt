@@ -1,0 +1,6 @@
+TEXT TO REWRITE:
+Installation
+
+Getting started with `fastlint` is quick and easy! It's worth noting that the tool requires Node.js 18 or higher. To install it globally, simply run `npm install -g fastlint`. Once installed, you can leverage the powerful `--fix` flag to automatically resolve most issues, or use the `--dry-run` flag to preview changes without modifying any files.
+
+Additionally, it's crucial to note that `fastlint` reads its configuration from a `.fastlintrc` file in your project root. If no configuration file is found, sensible defaults will be applied, ensuring a seamless experience out of the box.

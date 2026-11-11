@@ -1,0 +1,37 @@
+{
+  "human_quality_rank": ["B", "D", "A", "C"],
+  "fidelity_rank": ["A", "B", "D", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clean and accurate, but its rigid sentence-by-sentence mirroring of the source makes it read like an AI paraphrase."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads naturally like an authentic operations memo with sharp phrasing, smooth transitions, and convincing voice."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": ["that was my first worry"],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Injects an ungrounded personal reaction and stumbles with back-to-back repetitions of 'which suggests'."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The six extra hires are meant to fix that"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Effective executive-level restructuring that leads with the recommendation, though slightly clipped in its mid-paragraph transitions."
+    }
+  }
+}

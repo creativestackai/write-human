@@ -1,0 +1,73 @@
+{
+  "human_quality_rank": ["D", "B", "A", "E", "C"],
+  "fidelity_rank": ["D", "A", "C", "B", "E"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The invitation to contact Customer Care with further questions or concerns.",
+        "Thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "Direct, credible customer service writing, though it omits the invitation to follow up."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Daniel personally processed the refund, rather than the company collectively.",
+        "Daniel promises to resolve any subsequent problem."
+      ],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to ensuring the problem does not happen again.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Conversational and plausible, although 'it lost time from there' is awkward and the resolution promise exceeds the source."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to ensuring the problem does not happen again is weakened to merely not wanting a recurrence.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Clear but slightly abrupt, with an unconvincingly weak statement about preventing another error."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Preventive work is already underway; the source states a commitment without describing work in progress."
+      ],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "Thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "The strongest balance of natural phrasing, professional warmth, and preservation of the original message."
+    },
+    "E": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Daniel personally processed the refund, rather than the company collectively.",
+        "The original payment method was a card.",
+        "The package has arrived, whereas the source establishes only a delay.",
+        "The issue has been passed to the warehouse team for investigation.",
+        "Daniel promises to resolve any subsequent problem."
+      ],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to ensuring the problem does not happen again.",
+        "The unrestricted invitation to raise questions or concerns is narrowed to problems noticed after the refund arrives.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Readable and conversational, but it invents several operational details and assumes delivery has occurred."
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "human_quality_rank": ["A", "C", "E", "B", "D"],
+  "fidelity_rank": ["A", "B", "C", "D", "E"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, professional, and natural developer response with complete fidelity to the source."
+    },
+    "B": {
+      "p_ai": 50,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "invoice export job specifically reads currency from the customer record"
+      ],
+      "register_ok": true,
+      "note": "Clunky structure that awkwardly uses 'For scale:' to introduce the mechanism of the bug."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "offering to write the ticket today if agreed",
+        "stating that the migration needs its own review"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Conversational and collegial tone that directly addresses the reviewer, though it adds a specific timeline offer."
+    },
+    "D": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "invoice export job reads currency from the customer record",
+        "currency can be null for accounts created before 2021",
+        "export silently defaults to USD when null"
+      ],
+      "register_ok": true,
+      "note": "Concise and grammatically sound, but cuts out the technical explanation of why the bug occurs."
+    },
+    "E": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "concern that nobody from other teams will look at the schema change in an export PR",
+        "promising to open the ticket today",
+        "proposing that Priya can block the PR and asserting other services need a say first"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Highly authentic and opinionated human voice, but hallucinates several motives, next steps, and interpersonal stances."
+    }
+  }
+}

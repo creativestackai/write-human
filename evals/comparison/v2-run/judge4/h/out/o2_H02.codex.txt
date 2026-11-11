@@ -1,0 +1,58 @@
+{
+  "human_quality_rank": ["D", "C", "A", "B"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Describes the no-show problem as 'steady,' adding a characterization of its persistence."
+      ],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Its integration with scheduling systems is described as seamless.",
+        "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, though the opening is slightly awkward and the ending loses strategic context."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Attributes the estimate of 340 additional appointments to Northwind, although the source does not identify who calculated it.",
+        "Specifies reduced manual work at the front desk, whereas the source states only that staff time was freed."
+      ],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Its integration with scheduling systems is described as seamless.",
+        "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Readable and informal, but some explanatory wording introduces details beyond the source."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Its integration with scheduling systems is described as seamless."
+      ],
+      "register_ok": true,
+      "note": "Natural, economical case-study prose that preserves the substantive claims and strategic context."
+    },
+    "D": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "States that 18% of booked patients failed to attend, converting an appointment no-show rate into a percentage of patients.",
+        "Attributes the estimate of 340 additional appointments to Northwind, although the source does not identify who calculated it."
+      ],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Its integration with scheduling systems is described as seamless.",
+        "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "The most distinctive and fluid voice, but its opening changes the statistical claim."
+    }
+  }
+}

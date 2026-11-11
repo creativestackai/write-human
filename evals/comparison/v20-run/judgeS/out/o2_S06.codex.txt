@@ -1,0 +1,48 @@
+{
+  "human_quality_rank": ["C", "B", "A", "D"],
+  "fidelity_rank": ["C", "B", "A", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 24,
+      "unsupported_specifics": [
+        "Full table scans are fine during quiet periods.",
+        "Nobody reviewed the migration closely enough to catch the removal."
+      ],
+      "dropped_facts": [
+        "The index was removed inadvertently; 'quietly' does not preserve this explicitly."
+      ],
+      "register_ok": true,
+      "note": "Conversational and readable, but two added assertions make it less trustworthy."
+    },
+    "B": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The index was removed inadvertently; 'quietly' does not preserve this explicitly."
+      ],
+      "register_ok": true,
+      "note": "The understated review jab fits the surrounding voice, though it makes the lesson less explicit."
+    },
+    "C": {
+      "p_ai": 16,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Plain, conversational technical writing that preserves the facts and fits the surrounding paragraphs."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Nobody noticed until traffic picked up that afternoon.",
+        "Nobody had reviewed the migration properly.",
+        "The narrator remains annoyed specifically about the inadequate migration review."
+      ],
+      "dropped_facts": [
+        "The index was removed inadvertently; 'quietly' does not preserve this explicitly."
+      ],
+      "register_ok": true,
+      "note": "The casual register fits, but invented timing, blame, and emotion make the voice feel imposed."
+    }
+  }
+}

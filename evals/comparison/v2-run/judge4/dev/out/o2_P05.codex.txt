@@ -1,0 +1,72 @@
+{
+  "human_quality_rank": ["B", "D", "C", "A"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Customers had been telling the writer what they wanted before the writer recognized it."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The journey involved growth and invaluable lessons.",
+        "Resilience and adaptability are keys to success.",
+        "The best time to start is now, weakened to advice not to wait too long.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, but less distinctive than the supplied voice and reliant on an invented explanation."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "The writer stood in the shop while questioning the decision.",
+        "The weekly numbers stopped going the wrong way, implying losses stopped rather than merely revenue stabilizing.",
+        "Customers liked knowing their bread was sorted.",
+        "The writer would have slept better during the first three months if the subscription had started sooner."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The journey involved growth and invaluable lessons.",
+        "Revenue stabilized, replaced by a different financial characterization.",
+        "Resilience, adaptability, and listening to customers are keys to success.",
+        "The best time to start is now, replaced by reluctance to advise when to act.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The most convincing match for the sample's informal, self-deprecating voice, but it invents experiences and changes the lesson."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The explicit description of the journey as involving growth and invaluable lessons.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Plain, credible writing that preserves the substantive facts and translates the original lessons naturally."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The writer sat in the shop after closing while questioning the decision.",
+        "The writer almost did not offer the subscription.",
+        "The numbers stopped bleeding for the first time, implying losses stopped and asserting this had never happened previously.",
+        "Customers wanted the same loaf every week without thinking about it.",
+        "The writer had been too busy trying to sell customers everything else to notice their preferences.",
+        "The writer would have started earlier."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The journey involved growth and invaluable lessons.",
+        "Revenue stabilized, replaced by a claim suggesting losses stopped.",
+        "The explicit lesson that resilience, adaptability, and listening to customers are keys to success.",
+        "The best time to start is now, replaced by reluctance to advise when to act."
+      ],
+      "register_ok": true,
+      "note": "Vivid and conversational, though the accumulated scene-setting and tidy hindsight feel more constructed than B."
+    }
+  }
+}

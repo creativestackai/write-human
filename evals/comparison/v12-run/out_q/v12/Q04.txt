@@ -1,0 +1,3 @@
+We moved our CI pipeline from Jenkins to GitHub Actions. Two engineers led it, and it took six weeks.
+
+Using GitHub Actions' native caching and parallelization, we cut average build time from 24 minutes to 9. Monthly CI costs dropped 35% as well. Our velocity is up, and developers ship with more confidence.

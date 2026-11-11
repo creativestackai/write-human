@@ -1,0 +1,36 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+In FY2025, the company continued to demonstrate its unwavering commitment to environmental stewardship. Scope 1 and 2 greenhouse gas emissions decreased by 14% relative to the 2022 baseline, reflecting the successful implementation of a range of energy efficiency initiatives. A total of £4.2 million was invested in the upgrade of heating, ventilation, and lighting systems across 18 sites.
+
+Looking ahead, the company remains steadfast in its dedication to achieving net-zero emissions by 2040, and will continue to leverage innovative solutions to drive meaningful progress on its sustainability journey.
+
+=== REWRITE A ===
+In FY2025, Scope 1 and 2 greenhouse gas emissions were 14% below the 2022 baseline, which the company attributes to a range of energy efficiency initiatives. It invested £4.2 million in upgrading heating, ventilation and lighting systems across 18 sites.
+
+The target remains net zero emissions by 2040.
+
+=== REWRITE B ===
+Scope 1 and 2 greenhouse gas emissions fell 14% in FY2025, measured against the 2022 baseline. The company credits a range of energy efficiency initiatives for the drop. It also put £4.2 million into upgrading heating, ventilation and lighting systems across 18 sites.
+
+The goal is still net-zero emissions by 2040.
+
+=== REWRITE C ===
+Scope 1 and 2 greenhouse gas emissions were 14% lower in FY2025 than in our 2022 baseline year. The reduction came from energy efficiency work, including £4.2 million spent upgrading heating, ventilation and lighting at 18 sites.
+
+That is a long way short of net zero. Our target is still 2040, and we have a lot left to do to get there.
+
+=== REWRITE D ===
+In FY2025, Scope 1 and 2 greenhouse gas emissions fell 14% against the 2022 baseline, as a range of energy efficiency projects took effect. The company spent £4.2 million upgrading heating, ventilation and lighting systems across 18 sites.
+
+Its target remains net-zero emissions by 2040.

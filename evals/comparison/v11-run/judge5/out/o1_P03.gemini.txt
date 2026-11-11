@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["B", "D", "C", "E", "A"],
+  "fidelity_rank": ["A", "B", "E", "C", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A highly faithful rewrite that preserves all information, but relies on predictable sentence-by-sentence paraphrase patterns characteristic of AI."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Exemplary technical documentation that stays plain and readable while adding a helpful, derived concrete backoff sequence."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rate limiting exists to ensure fair usage and maintain optimal performance for all users"
+      ],
+      "register_ok": true,
+      "note": "Direct and natural developer tone, but completely drops the source's opening rationale for why rate limiting is implemented."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Admonition not to retry in a tight loop",
+        "Specific rationale that rate limits prevent one busy client from crowding out everyone else",
+        "Claim that caching causes clients to hit the limit less often and improves speed as a side effect"
+      ],
+      "dropped_facts": [
+        "Rate limiting ensures fair usage and maintains optimal performance for all users",
+        "The explicit provider recommendation statement 'we strongly recommend'"
+      ],
+      "register_ok": true,
+      "note": "Sounds convincingly like an opinionated human engineer, but introduces several unsupported specifics and editorial interpretations."
+    },
+    "E": {
+      "p_ai": 50,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Weakens 'strongly recommend' to a simple 'recommend'"
+      ],
+      "register_ok": true,
+      "note": "Clean, competent technical writing that preserves nearly all facts, though it reads somewhat generic."
+    }
+  }
+}

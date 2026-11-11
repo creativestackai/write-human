@@ -1,0 +1,5 @@
+Yeah, it is a patch. The export reads `currency` off the customer record, and that's null for accounts created before 2021. When it's null we silently default to USD, so about 4% of European accounts get wrong totals. I ran a query on staging and 212 accounts are affected.
+
+The real fix is a migration that backfills `currency` from each customer's billing country, then adds NOT NULL. I'd rather not do that here though. It touches the customers table, and other services share that table, so it needs its own review.
+
+So I'd keep the fallback in this PR and open a separate ticket for the backfill. Happy to write that ticket today if you agree.

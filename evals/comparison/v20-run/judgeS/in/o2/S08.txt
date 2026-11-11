@@ -1,0 +1,26 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+ok so update on the allotment. the courgettes have gone feral, I counted eleven this morning and two of them are the size of my forearm, no idea what we're meant to do with those. Margaret from plot 14 says pick them small ("you've left it too late, love") which thanks Margaret very helpful. The beans did nothing. Nothing! Four months of watering for about nine beans. I'm not doing beans again. Might do garlic over winter since apparently you just stick it in and ignore it, which is my whole gardening philosophy anyway.
+
+=== REWRITE A ===
+ok so update on the allotment. the courgettes have gone feral, I counted eleven this morning and two of them are the size of my forearm, no idea what we're meant to do with those. Margaret from plot 14 says pick them small ("you've left it too late, love") which thanks Margaret very helpful. The beans did nothing. Nothing! Four months of watering for about nine beans. I'm not doing beans again. Might do garlic over winter since apparently you just stick it in and ignore it, which is my whole gardening philosophy anyway.
+
+=== REWRITE B ===
+ok so, update on the allotment. The courgettes have gone feral. I counted eleven this morning, and two of them are the size of my forearm. No idea what we're meant to do with those. Margaret from plot 14 says pick them small ("you've left it too late, love"), which, thanks Margaret, very helpful. The beans did nothing. Nothing! Four months of watering for about nine beans. I'm not doing beans again. Might do garlic over winter, since apparently you just stick it in and ignore it, which is my whole gardening philosophy anyway.
+
+=== REWRITE C ===
+ok so update on the allotment. the courgettes have gone feral, I counted eleven this morning and two of them are the size of my forearm, no idea what we're meant to do with those. Margaret from plot 14 says pick them small ("you've left it too late, love") which thanks Margaret very helpful. The beans did nothing. Nothing! Four months of watering for about nine beans. I'm not doing beans again. Might do garlic over winter since apparently you just stick it in and ignore it, which is my whole gardening philosophy anyway.
+
+=== REWRITE D ===
+ok so update on the allotment. the courgettes have gone feral, I counted eleven this morning and two of them are the size of my forearm, no idea what we're meant to do with those. Margaret from plot 14 says pick them small ("you've left it too late, love") which thanks Margaret very helpful. The beans did nothing. Nothing! Four months of watering for about nine beans. I'm not doing beans again. Might do garlic over winter since apparently you just stick it in and ignore it, which is my whole gardening philosophy anyway.

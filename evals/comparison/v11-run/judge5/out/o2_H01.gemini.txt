@@ -1,0 +1,77 @@
+{
+  "human_quality_rank": ["A", "E", "B", "C", "D"],
+  "fidelity_rank": ["C", "A", "D", "B", "E"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Frames the benefit specifically as getting more out of their time rather than unlocking full potential"
+      ],
+      "dropped_facts": [
+        "The profound implications / revolutionary scale of the shift",
+        "The historical benchmark 'than ever before'"
+      ],
+      "register_ok": true,
+      "note": "Crisp and natural rewrite that captures the source's arguments with authentic human cadence and high fidelity."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Specific claim that student data has to live somewhere and schools do not know who can see it",
+        "Specific equity divide defined by devices and fast home internet",
+        "Scenario of students using chatbots to think for them and failing to learn",
+        "Anecdote of a teacher noticing a quiet kid or a lucky guess",
+        "Freeing teachers from the 'marking pile' on their desk",
+        "Warning to stay skeptical of the sales pitch"
+      ],
+      "dropped_facts": [
+        "The profound implications and revolutionary transformation of education",
+        "Empowering educators and students alike to unlock their full potential",
+        "Fostering a learning environment that is more engaging, inclusive, and effective than ever before"
+      ],
+      "register_ok": false,
+      "note": "Reads convincingly like an opinionated human educator, but invents concrete anecdotes and shifts into an informal first-person register."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The claim that the implications of the transformation are profound"
+      ],
+      "register_ok": true,
+      "note": "Exceptionally faithful to the source and well-written, maintaining an appropriate expository register throughout."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Specific framing that teachers must stay 'at the center'"
+      ],
+      "dropped_facts": [
+        "The profound implications of the transformation",
+        "The historical benchmark 'than ever before'"
+      ],
+      "register_ok": true,
+      "note": "A competent, faithful summary, but the phrasing feels somewhat formulaic and typical of an AI paraphrase."
+    },
+    "E": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "Personal discussions and stance ('most people I talk to', 'I'm both', 'That part I buy')",
+        "Specific tasks of adjusting a reading list and grading forty quizzes overnight",
+        "Anecdote of a teacher grading past midnight with a red pen",
+        "Claim that schools fail to ask where student data lives",
+        "Specific equity details about laptops, fast home internet, and an existing gap",
+        "Outcome of a class handing its thinking to software without noticing",
+        "Scenario of a teacher with spare hours sitting beside a stuck student"
+      ],
+      "dropped_facts": [
+        "The profound implications and revolutionary nature of AI in education",
+        "Empowering educators and students alike to unlock their full potential",
+        "Fostering a learning environment that is more engaging, inclusive, and effective than ever before"
+      ],
+      "register_ok": false,
+      "note": "Highly voicey and engaging, but heavily hallucinates specifics and completely abandons the source's expository register and conclusion."
+    }
+  }
+}

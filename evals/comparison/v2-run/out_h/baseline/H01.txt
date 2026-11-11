@@ -1,0 +1,5 @@
+AI is showing up in classrooms fast, mostly as two things: software that adjusts lessons to each student's pace, and tools that grade for you. Both can save teachers real time, and some students do better when the material meets them where they are.
+
+The problems are real, though. Student data has to live somewhere, and not every school knows who can see it. Kids with good devices and fast home internet will get more out of these tools than kids without. And if students start letting a chatbot do the thinking, a lot of them will quietly stop learning how to do it themselves.
+
+I don't think the answer is to replace teachers. A teacher notices when a kid has gone quiet, or when a right answer was a lucky guess. Software can't do that. What it can do is take the marking pile off their desk so they have more time for that kind of attention. Schools that treat it as a helper, and stay skeptical of the sales pitch, will probably get the most out of it.

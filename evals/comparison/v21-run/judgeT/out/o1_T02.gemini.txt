@@ -1,0 +1,31 @@
+{
+  "human_quality_rank": ["A", "C", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": ["General assertion of a 'challenging funding landscape'"],
+      "strength_changes": ["'rose' tones down the source's hyperbolic 'surged'"],
+      "register_ok": true,
+      "note": "Seamlessly fits the sober, formal tone of the surrounding trustee report with balanced and natural phrasing."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": ["General assertion of a 'challenging funding landscape'"],
+      "strength_changes": ["'rose' tones down the source's hyperbolic 'surged'"],
+      "register_ok": true,
+      "note": "The phrasing is slightly clumsy and relies on ambiguous pronoun references that weaken the formal register."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": ["General assertion of a 'challenging funding landscape'"],
+      "strength_changes": ["'rose' tones down the source's hyperbolic 'surged'"],
+      "register_ok": true,
+      "note": "Accurate and clear, though the short sentences create a slightly disjointed cadence."
+    }
+  }
+}

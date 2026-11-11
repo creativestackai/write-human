@@ -1,0 +1,91 @@
+{
+  "human_quality_rank": ["A", "D", "C", "E", "B"],
+  "fidelity_rank": ["E", "B", "C", "A", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "looking up syntax in ten seconds",
+        "breaking a messy problem into pieces small enough for a computer to follow",
+        "first-person reflection ('I understand the pull')",
+        "flashcards and cheat sheets feeling like progress",
+        "recognizing a for loop without knowing when to use it",
+        "code failing when a problem does not match the tutorial",
+        "automating a chore you are tired of doing by hand",
+        "bugs forcing you to see the gap between what the program does and what you assumed",
+        "developers not treating struggle as a verdict on themselves",
+        "imperative command to write the broken thing, run it, and see what happens"
+      ],
+      "dropped_facts": [
+        "analyzing data",
+        "the explicit triad of patience, persistence, and practice",
+        "the journey is rewarding",
+        "every line brings you closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Possesses a vivid, authentic developer voice with natural pacing, though it invents concrete illustrations and omits multiple source points."
+    },
+    "B": {
+      "p_ai": 75,
+      "unsupported_specifics": [
+        "each bug teaching you about how your program really behaves"
+      ],
+      "dropped_facts": [
+        "persistence (from 'patience, persistence, and practice')",
+        "mastery (attenuated to 'being good at it')"
+      ],
+      "register_ok": true,
+      "note": "Maintains solid fidelity but reads like a mechanical, clause-by-clause AI paraphrase of the original text."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "bugs not feeling like lessons at the time",
+        "memorizing commands putting effort in the wrong place"
+      ],
+      "dropped_facts": [
+        "programming is the language of problem-solving (reduced to learning to think a problem through)",
+        "persistence (from 'patience, persistence, and practice')",
+        "mastery (softened to 'being good at this')",
+        "the exhortation 'don't be afraid to fail' (converted into the predictive statement 'You will fail along the way')"
+      ],
+      "register_ok": true,
+      "note": "Reads smoothly and preserves most core ideas, but remains close to the source's template without developing a strong individual voice."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "invented first-person retrospective on starting to code",
+        "looking up syntax in ten seconds",
+        "wasting early time trying to memorize commands and none of it sticking",
+        "understanding how loops run and what functions do with inputs",
+        "poking around in a spreadsheet's worth of data",
+        "scripting boring chores",
+        "developers the narrator admires",
+        "bugs signaling that a mental model is off",
+        "bugs not feeling useful at 11pm",
+        "learning more from a third failed attempt than a first clean run"
+      ],
+      "dropped_facts": [
+        "programming is the language of problem-solving",
+        "analyzing data (narrowed specifically to spreadsheets)",
+        "the journey is rewarding",
+        "the explicit triad of patience, persistence, and practice",
+        "every line bringing you closer to mastery",
+        "don't be afraid to fail (replaced by 'break things')"
+      ],
+      "register_ok": true,
+      "note": "Adopts an engaging, personal essay style that sounds thoroughly human, but fabricates an entire backstory and drops core source claims."
+    },
+    "E": {
+      "p_ai": 50,
+      "unsupported_specifics": [
+        "programming in a language a computer can read"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Retains every source claim with exceptional fidelity, though its staccato, parallel phrasing still carries an unmistakable AI cadence."
+    }
+  }
+}

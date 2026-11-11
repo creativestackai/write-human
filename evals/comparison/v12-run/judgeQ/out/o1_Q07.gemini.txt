@@ -1,0 +1,38 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["D", "A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Crisp, natural business prose that eliminates corporate boilerplate while retaining all factual information."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "editorial claim that the progress is 'a long way short of net zero'",
+        "claim that 'we have a lot left to do to get there'"
+      ],
+      "dropped_facts": [],
+      "register_ok": false,
+      "note": "Shifts to an informal first-person voice and injects subjective commentary not found in the source."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Accurate to the source facts, but the sentence structure is choppy and rhythmically disjointed."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains an appropriate formal register and perfect fidelity, but reads like a standard formulaic summary."
+    }
+  }
+}

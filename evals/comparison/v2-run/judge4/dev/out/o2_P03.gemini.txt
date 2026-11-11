@@ -1,0 +1,40 @@
+{
+  "human_quality_rank": ["B", "C", "A", "D"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains full factual fidelity in an appropriately plain register, though the backoff sentence is awkwardly phrased."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The rationale for rate limiting (ensuring fair usage and maintaining optimal performance for all users)"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic, punchy developer voice, but omits the source's explanation of why rate limiting exists."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Delivers full fidelity with clean, well-paced, and natural plain technical prose."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Warning not to retry in a tight loop",
+        "Framing improved application responsiveness as an incidental side effect rather than a primary benefit"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Possesses a lively human voice but introduces unsolicited advice and editorial commentary not found in the source."
+    }
+  }
+}

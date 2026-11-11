@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit interpretation that improved sleep quality underscores sleep's pivotal role in academic success.",
+        "The claim that the findings pave the way for future research."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained academic prose preserves the study's substance with minimal editorial intrusion."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The control group received nothing; the source does not describe its treatment.",
+        "Caffeine management specifically meant cutting back on caffeine.",
+        "Screen-time reduction specifically meant putting screens away at night.",
+        "The effect is classified as small-to-moderate, an interpretation not supplied by the source.",
+        "The researchers give the sleep-quality finding less weight because it is self-reported.",
+        "The added conclusion that this study cannot settle whether sleep education belongs in university programs.",
+        "The specific recommendation for replication with longer follow-up."
+      ],
+      "dropped_facts": [
+        "The education is explicitly described as structured.",
+        "The GPA difference is explicitly described as statistically significant, although the reported statistics remain.",
+        "Sleep quality improved markedly, rather than simply improved.",
+        "The explicit interpretation that sleep plays a pivotal role in academic success.",
+        "The specific recommendation to integrate sleep education into university curricula is broadened to university programs."
+      ],
+      "register_ok": true,
+      "note": "The conversational research voice feels natural, but it introduces substantial methodological detail and commentary."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The effect is classified as small by conventional standards, an interpretation not supplied by the source.",
+        "Objective sleep data is identified as the obvious next research step.",
+        "The GPA result alone is asserted to justify integrating sleep education into university curricula."
+      ],
+      "dropped_facts": [
+        "The education is explicitly described as structured.",
+        "Sleep quality improved markedly, rather than simply improved.",
+        "The explicit interpretation that improved sleep quality underscores sleep's pivotal role in academic success."
+      ],
+      "register_ok": true,
+      "note": "Mostly readable academic prose becomes more editorial and categorical in its closing sentences."
+    }
+  }
+}

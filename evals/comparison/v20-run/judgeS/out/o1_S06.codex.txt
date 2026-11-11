@@ -1,0 +1,50 @@
+{
+  "human_quality_rank": ["B", "C", "A", "D"],
+  "fidelity_rank": ["B", "C", "D", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Nobody noticed the missing index until traffic picked up that afternoon.",
+        "Nobody had reviewed the migration properly.",
+        "The author remains annoyed about the migration review."
+      ],
+      "dropped_facts": [
+        "The index was removed inadvertently; 'quietly dropped' does not establish that it was accidental.",
+        "The explicit lesson about the importance of robust migration review is replaced with blame and personal annoyance."
+      ],
+      "register_ok": true,
+      "note": "The voice fits the surrounding paragraphs, but its added attitude and blame invent part of the story."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural, clear incident narration preserves the facts and fits the author's conversational register."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The index was removed inadvertently; 'quietly dropped' does not establish that it was accidental."
+      ],
+      "register_ok": true,
+      "note": "The understated voice fits well, although the migration-review lesson becomes less explicit."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Full table scans are fine during quiet periods.",
+        "Nobody reviewed the migration closely enough to catch the removed index."
+      ],
+      "dropped_facts": [
+        "The index was removed inadvertently; 'quietly dropped' does not establish that it was accidental.",
+        "The explicit lesson about the importance of robust migration review is replaced with an assertion about inadequate review."
+      ],
+      "register_ok": true,
+      "note": "The conversational register fits, but unsupported assurances and an awkward final sentence weaken the writing."
+    }
+  }
+}

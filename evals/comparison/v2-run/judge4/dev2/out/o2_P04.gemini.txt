@@ -1,0 +1,45 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Subjective promotional claims from the source (e.g., 'leading' status, pivotal role in European supply chains, legacy of innovation, steadfast commitment to excellence, and expert praise)"
+      ],
+      "register_ok": true,
+      "note": "A clean, well-structured, and professional summary that strips corporate fluff while maintaining smooth syntax and an appropriate formal register."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Country location (Netherlands)",
+        "Subjective promotional claims from the source (e.g., 'leading' status, pivotal role in European supply chains, legacy of innovation, steadfast commitment to excellence, and expert praise)"
+      ],
+      "register_ok": true,
+      "note": "Features natural business idioms like 'booked revenue' and 'started it', but omits the country and includes slightly clumsy phrasing like 'opened in Germany'."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Subjective promotional claims from the source (e.g., 'leading' status, pivotal role in European supply chains, legacy of innovation, steadfast commitment to excellence, and expert praise)"
+      ],
+      "register_ok": true,
+      "note": "Accurate and factual, though the phrasing feels somewhat formulaic and contains awkward prepositional stacking with 'in Rotterdam, Netherlands, in one of'."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Country location (Netherlands)",
+        "Subjective promotional claims from the source (e.g., 'leading' status, pivotal role in European supply chains, legacy of innovation, steadfast commitment to excellence, and expert praise)"
+      ],
+      "register_ok": false,
+      "note": "Strains for a conversational tone with chatty filler ('which happens to be') and unnatural phrasing ('running in 14 countries') that unfavorably alter the genre."
+    }
+  }
+}

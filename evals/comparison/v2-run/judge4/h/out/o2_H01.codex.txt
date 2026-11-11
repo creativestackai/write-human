@@ -1,0 +1,74 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["B", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "AI is entering classrooms quickly and appears mostly in two forms.",
+        "Personalization specifically adjusts lessons to each student's pace.",
+        "Both tools save teachers time, and some students achieve better results with personalized material.",
+        "Some schools do not know who can access student data.",
+        "Students with good devices and fast home internet benefit more than students without them.",
+        "Many students who let chatbots think for them will stop learning to think independently.",
+        "Teachers notice withdrawn students and lucky guesses, whereas software cannot.",
+        "Automated marking frees teachers to give students more attention.",
+        "Schools skeptical of sales pitches will probably benefit most."
+      ],
+      "dropped_facts": [
+        "AI's educational implications are profound.",
+        "AI tools empower both educators and students to reach their full potential.",
+        "Schools can create learning environments that are more engaging, inclusive, and effective than ever before."
+      ],
+      "register_ok": true,
+      "note": "Concrete and conversational, but its persuasive detail repeatedly exceeds the source."
+    },
+    "B": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The source explicitly characterizes the implications as profound.",
+        "The source's claims about unlocking full potential and improving learning beyond any previous level are softened."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural explanatory prose with the strongest preservation of the source's substantive claims."
+    },
+    "C": {
+      "p_ai": 55,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The source explicitly characterizes the implications as profound.",
+        "The claim that tools empower educators and students to unlock their full potential becomes a statement of intended purpose.",
+        "The general risk of over-reliance is narrowed to schools' reliance.",
+        "The claim of improvement beyond any previous level is softened to improvement over before."
+      ],
+      "register_ok": true,
+      "note": "Mostly faithful and appropriately plain, but several phrases are vague or awkward."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The writer has discussed classroom AI with people, most of whom are undecided between excitement and worry.",
+        "The writer personally feels both excitement and worry.",
+        "AI adjusts reading lists for individual children.",
+        "AI marks forty quizzes overnight.",
+        "Teachers would otherwise stay up past midnight marking with a red pen.",
+        "Schools do not always ask where student data is stored.",
+        "Children with fast home internet and their own laptops benefit first, widening an already substantial gap.",
+        "A class can surrender its thinking to software without noticing.",
+        "AI will not replace teachers.",
+        "AI gives teachers a few extra hours each week to sit with struggling students.",
+        "The writer knows of no tool that provides that kind of individual support."
+      ],
+      "dropped_facts": [
+        "AI's educational implications are profound.",
+        "AI tools empower students as well as educators to unlock their full potential.",
+        "Schools should embrace innovation while remaining mindful of its limitations.",
+        "Schools can create learning environments that are more engaging, inclusive, and effective than ever before."
+      ],
+      "register_ok": true,
+      "note": "A readable personal opinion piece, but invented experience and concrete claims substantially alter the source."
+    }
+  }
+}

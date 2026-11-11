@@ -1,0 +1,35 @@
+{
+  "human_quality_rank": ["A", "B", "D", "C"],
+  "fidelity_rank": ["A", "B", "D", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, retaining an authentic and lively conversational voice."
+    },
+    "B": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, retaining an authentic and lively conversational voice."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Lightly copyedits punctuation and sentence boundaries, slightly diminishing the breezy spoken rhythm."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Identical to the source text, retaining an authentic and lively conversational voice."
+    }
+  }
+}

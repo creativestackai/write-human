@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C", "E"],
+  "fidelity_rank": ["A", "B", "C", "D", "E"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 3,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Specific details, conversational rhythms, and self-deprecating humor give this a convincing personal voice."
+    },
+    "B": {
+      "p_ai": 3,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Specific details, conversational rhythms, and self-deprecating humor give this a convincing personal voice."
+    },
+    "C": {
+      "p_ai": 3,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Specific details, conversational rhythms, and self-deprecating humor give this a convincing personal voice."
+    },
+    "D": {
+      "p_ai": 3,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "The final sentence break sharpens the ending while preserving the natural voice and every source detail."
+    },
+    "E": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "Describes the desk agent as being about fifteen rather than merely looking about fifteen, slightly strengthening the age claim."
+      ],
+      "dropped_facts": [
+        "The explicit qualification that the desk agent only looked about fifteen."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, though the tidier phrasing and staged fragments feel slightly more edited."
+    }
+  }
+}

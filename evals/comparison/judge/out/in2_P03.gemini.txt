@@ -1,0 +1,32 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "admonition not to retry in a tight loop"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads convincingly like an experienced engineer explaining concepts to a peer, using natural phrasing and concrete arithmetic."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clean and faithful technical documentation, though its sentence-by-sentence mirroring of the source retains a slightly formulaic AI quality."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "explanation that rate limiting ensures fair usage and maintains optimal performance for all users"
+      ],
+      "register_ok": true,
+      "note": "Punchy and direct, but drops the initial rationale explaining why rate limits exist."
+    }
+  }
+}

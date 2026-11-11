@@ -1,0 +1,126 @@
+{
+ "o1": {
+  "P01": {
+   "A": "v2",
+   "B": "wh",
+   "C": "baseline",
+   "D": "hz"
+  },
+  "P02": {
+   "A": "v2",
+   "B": "wh",
+   "C": "hz",
+   "D": "baseline"
+  },
+  "P03": {
+   "A": "hz",
+   "B": "wh",
+   "C": "v2",
+   "D": "baseline"
+  },
+  "P04": {
+   "A": "v2",
+   "B": "wh",
+   "C": "hz",
+   "D": "baseline"
+  },
+  "P05": {
+   "A": "v2",
+   "B": "baseline",
+   "C": "hz",
+   "D": "wh"
+  },
+  "P06": {
+   "A": "baseline",
+   "B": "wh",
+   "C": "hz",
+   "D": "v2"
+  },
+  "P07": {
+   "A": "v2",
+   "B": "wh",
+   "C": "baseline",
+   "D": "hz"
+  },
+  "P08": {
+   "A": "v2",
+   "B": "baseline",
+   "C": "wh",
+   "D": "hz"
+  },
+  "P09": {
+   "A": "baseline",
+   "B": "wh",
+   "C": "v2",
+   "D": "hz"
+  },
+  "P10": {
+   "A": "baseline",
+   "B": "v2",
+   "C": "wh",
+   "D": "hz"
+  }
+ },
+ "o2": {
+  "P01": {
+   "A": "baseline",
+   "B": "hz",
+   "C": "v2",
+   "D": "wh"
+  },
+  "P02": {
+   "A": "hz",
+   "B": "baseline",
+   "C": "v2",
+   "D": "wh"
+  },
+  "P03": {
+   "A": "v2",
+   "B": "baseline",
+   "C": "hz",
+   "D": "wh"
+  },
+  "P04": {
+   "A": "hz",
+   "B": "baseline",
+   "C": "v2",
+   "D": "wh"
+  },
+  "P05": {
+   "A": "hz",
+   "B": "wh",
+   "C": "v2",
+   "D": "baseline"
+  },
+  "P06": {
+   "A": "hz",
+   "B": "v2",
+   "C": "baseline",
+   "D": "wh"
+  },
+  "P07": {
+   "A": "baseline",
+   "B": "hz",
+   "C": "v2",
+   "D": "wh"
+  },
+  "P08": {
+   "A": "wh",
+   "B": "hz",
+   "C": "v2",
+   "D": "baseline"
+  },
+  "P09": {
+   "A": "v2",
+   "B": "hz",
+   "C": "baseline",
+   "D": "wh"
+  },
+  "P10": {
+   "A": "wh",
+   "B": "hz",
+   "C": "baseline",
+   "D": "v2"
+  }
+ }
+}

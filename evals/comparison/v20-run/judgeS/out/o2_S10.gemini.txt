@@ -1,0 +1,35 @@
+{
+  "human_quality_rank": ["A", "D", "C", "B"],
+  "fidelity_rank": ["C", "B", "A", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": ["specific examples of looking things up: looking up a word or checking a date"],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads with natural cadence and authentic personal voice, though it invents specific examples of looking things up."
+    },
+    "B": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": ["the contrast between the initial appearance of simplicity and the reality being more complicated"],
+      "register_ok": true,
+      "note": "Reorganizes the argument poorly by ending abruptly on a counter-point while copying source clauses nearly verbatim."
+    },
+    "C": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Achieves flawless fidelity but reads like a mechanical, sentence-by-sentence paraphrase that retains unmistakable AI cadence."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": ["phones sitting in their pocket"],
+      "dropped_facts": ["removing phones eliminates the temptation"],
+      "register_ok": true,
+      "note": "Captures a convincing human voice, but introduces an unsupported detail and drops the causal mechanism of removing temptation."
+    }
+  }
+}

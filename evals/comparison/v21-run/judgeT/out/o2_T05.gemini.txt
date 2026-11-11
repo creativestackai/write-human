@@ -1,0 +1,38 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["C", "A", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Weakened the definitional claim that raising the price 'increases revenue per customer' to 'should bring in more revenue per customer'",
+        "Strengthened 'this suggests that the increase would still raise revenue overall' to the definitive statement that 'revenue would still go up overall'"
+      ],
+      "register_ok": true,
+      "note": "Cuts the corporate filler, but introduces an awkward hedge on per-customer revenue and turns a tentative finding into a certainty."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Dropped the explicit hedge that the price increase is 'probably' worth adopting"
+      ],
+      "strength_changes": [
+        "Converted a hedged analytical finding into firm imperative recommendations ('Raise the Pro plan...', 'Adopt the new price...')"
+      ],
+      "register_ok": true,
+      "note": "Adopts an authentic, conversational executive briefing style, but creates repetitive bookend sentences and drops the source's hedge."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Expertly prunes robotic transitions while maintaining pristine fidelity to all numbers, hedges, and logical links."
+    }
+  }
+}

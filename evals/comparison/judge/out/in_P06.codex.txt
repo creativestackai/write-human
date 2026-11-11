@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021; the source says it can be null for those accounts.",
+        "Adds that the migration needs its own review.",
+        "Adds an offer to write the ticket today if Priya agrees."
+      ],
+      "dropped_facts": [
+        "Replaces the specific statement that several services share the customers table with the less specific 'other services'."
+      ],
+      "register_ok": true,
+      "note": "A natural, clear PR reply that preserves the technical explanation but adds a review requirement and a dated offer."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Explicitly equates the 212 affected staging accounts with roughly 4% of European accounts; the source does not establish that they share the same population."
+      ],
+      "dropped_facts": [
+        "The export job reads currency from the customer record.",
+        "Currency can be null for accounts created before 2021.",
+        "A null currency silently defaults to USD.",
+        "The resulting problem is incorrect export totals."
+      ],
+      "register_ok": true,
+      "note": "The strongest contextual reply in voice and structure, but it omits the bug mechanism and conflates the two scope figures."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021; the source says it can be null for those accounts.",
+        "Claims nobody from the other service teams will review this PR.",
+        "Commits to opening the backfill ticket today.",
+        "Adds that the other services need a say before proceeding."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A plausible but repetitive PR reply whose added certainty, review assumptions, and commitments exceed the source."
+    }
+  }
+}

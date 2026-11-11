@@ -1,0 +1,62 @@
+{
+  "human_quality_rank": ["A", "C", "B", "D"],
+  "fidelity_rank": ["B", "D", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "First-person backstory and anecdotes ('When I started coding', 'I wasted a lot of early time trying to memorize commands', 'What stuck was', 'The developers I admire')",
+        "Invented quantities and time references ('ten seconds', '11pm', 'third failed attempt', 'first clean run')",
+        "Specific language features not mentioned in the source ('why a loop runs the way it does', 'what a function is really doing with its inputs')",
+        "Concrete framing details ('spreadsheet's worth of data', 'scripting some boring chore', 'computer telling you your mental model is off')"
+      ],
+      "dropped_facts": [
+        "The journey is rewarding ('rewarding' is dropped in favor of 'annoying' and 'useful')",
+        "Explicit requirement of patience, persistence, and practice",
+        "Every line of code written brings you closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Reads with an engaging, authentic human voice, but heavily invents personal history, concrete technical details, and specific numbers."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Explicit mention of 'persistence' from the triad of patience, persistence, and practice"
+      ],
+      "register_ok": true,
+      "note": "Strikes the best balance by humanizing the prose and replacing AI clichés with natural phrasing while preserving all core claims."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Invented timeframe ('ten seconds')",
+        "First-person commentary and invented props ('I understand the pull. Flashcards and cheat sheets feel like progress')",
+        "Invented specifics and examples ('for loop', 'first time a problem doesn't match the tutorial', 'chore you're tired of doing by hand')",
+        "Invented mechanistic explanation ('break a messy problem into pieces small enough that a computer can follow them', 'gap is most of what there is to learn')",
+        "Invented closing instructions ('write the broken thing. Run it. See what happens')"
+      ],
+      "dropped_facts": [
+        "Analyzing data as an application area",
+        "The journey is rewarding",
+        "It requires patience, persistence, and practice",
+        "Every line of code you write brings you closer to mastery"
+      ],
+      "register_ok": true,
+      "note": "Features sharp, natural phrasing and good cadence, but invents numerous concrete specifics and omits several key source points."
+    },
+    "D": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Specific explanation that bugs teach 'how your program really behaves'"
+      ],
+      "dropped_facts": [
+        "Explicit mention of 'persistence' from the triad of patience, persistence, and practice",
+        "The explicit concept of 'mastery' (diluted to 'being good at it')"
+      ],
+      "register_ok": true,
+      "note": "Faithfully tracks the original text, but the phrasing feels somewhat plain and structurally rigid."
+    }
+  }
+}

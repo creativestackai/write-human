@@ -1,0 +1,43 @@
+{
+  "human_quality_rank": ["A", "B", "D", "C"],
+  "fidelity_rank": ["C", "A", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, plain technical writing that eliminates AI boilerplate while preserving every fact from the source."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "admonition not to retry in a tight loop",
+        "explanation that one busy client cannot crowd out everyone else",
+        "claim that caching helps you hit the rate limit less often"
+      ],
+      "dropped_facts": [
+        "maintaining optimal performance for all users"
+      ],
+      "register_ok": true,
+      "note": "Reads with a distinct, informal developer voice but introduces unsolicited advice and unsupported claims."
+    },
+    "C": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Faithfully preserves all source information but retains the formulaic structure and stiff phrasing typical of AI text."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "rationale for rate limiting (ensuring fair usage and maintaining optimal performance for all users)"
+      ],
+      "register_ok": true,
+      "note": "Punchy and conversational, but omits the opening rationale explaining why rate limiting is implemented."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["C", "B", "A"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The claim that backing off maintains overall system stability."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Reads naturally like an engineer's design doc and matches the surrounding context perfectly."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Attributes system stability to both behaviors rather than specifically to backing off on 429."
+      ],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Softens 'plays a crucial role in maintaining overall system stability' to 'keep the system stable'."
+      ],
+      "register_ok": true,
+      "note": "Has a slightly awkward closing sentence and a loose pronoun, but reads generally human."
+    },
+    "C": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Softens 'plays a crucial role in maintaining overall system stability' to 'helps keep the whole system stable'."
+      ],
+      "register_ok": true,
+      "note": "Retains the telltale boilerplate phrasing of an AI rewrite in its concluding sentence."
+    }
+  }
+}

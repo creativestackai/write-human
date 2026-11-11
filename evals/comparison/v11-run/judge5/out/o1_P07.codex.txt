@@ -1,0 +1,67 @@
+{
+  "human_quality_rank": ["A", "E", "B", "D", "C"],
+  "fidelity_rank": ["E", "B", "A", "D", "C"],
+  "overall_winner": "E",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit interpretation that sleep plays a pivotal role in academic success.",
+        "The findings provide a basis for future research."
+      ],
+      "register_ok": true,
+      "note": "Direct, economical academic prose with a natural authorial voice."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Self-reported sleep quality improved markedly, rather than merely improving.",
+        "The findings provide a basis for future research."
+      ],
+      "register_ok": true,
+      "note": "Clear and appropriately formal, although its opening feels somewhat formulaic."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Caffeine management specifically meant cutting back on caffeine.",
+        "Screen-time reduction specifically involved putting screens away at night.",
+        "The control group received nothing.",
+        "The effect was small-to-moderate.",
+        "The researchers give the sleep-quality result less weight because it was self-reported.",
+        "Replication with longer follow-up is specifically needed."
+      ],
+      "dropped_facts": [
+        "The GPA difference was explicitly described as statistically significant.",
+        "Self-reported sleep quality improved markedly.",
+        "The findings underscore sleep's pivotal role in academic success.",
+        "The recommendation specifically concerns integration into university curricula."
+      ],
+      "register_ok": false,
+      "note": "Conversational phrasing becomes awkward and introduces methodological commentary absent from the source."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The GPA difference is a small effect by conventional standards.",
+        "Collecting objective sleep data is the obvious next research step.",
+        "The grade result alone is sufficient to justify integrating sleep education into university curricula."
+      ],
+      "dropped_facts": [
+        "Self-reported sleep quality improved markedly.",
+        "The explicit interpretation that sleep plays a pivotal role in academic success."
+      ],
+      "register_ok": true,
+      "note": "Mostly natural academic prose, but its confident editorial judgments weaken scientific precision."
+    },
+    "E": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, restrained academic prose that preserves the source's substance while moderating its rhetoric."
+    }
+  }
+}

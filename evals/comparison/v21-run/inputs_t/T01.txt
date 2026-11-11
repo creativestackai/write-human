@@ -1,0 +1,11 @@
+CONTEXT (background only, not part of the text to rewrite):
+The text to rewrite is the middle paragraph of a longer blog post about a bathroom renovation. The same author wrote the paragraphs on either side of it, shown here.
+
+PARAGRAPH BEFORE: Right, the bathroom. I said three weekends. It has been nine. My wife has stopped asking and started just looking at me, which is worse.
+
+PARAGRAPH AFTER: So that's where we are. Tiles go on Saturday if the adhesive turns up. If it doesn't I'm going to the pub.
+
+---
+
+TEXT TO REWRITE:
+Upon removing the existing tiles, it became apparent that the underlying wall had sustained significant water damage. The plasterboard behind the shower had deteriorated across an area of approximately two square metres, necessitating its complete replacement with moisture-resistant board. This unforeseen complication added £340 to the overall budget and extended the timeline by two weekends. It serves as a valuable reminder that thorough preparation is the cornerstone of any successful renovation. Additionally, the waterproofing membrane applied over the new board required 48 hours to cure before tiling could commence.

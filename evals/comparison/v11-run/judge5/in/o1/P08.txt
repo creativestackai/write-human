@@ -1,0 +1,29 @@
+You are an expert editor evaluating five anonymous rewrites (A, B, C, D, E) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","2nd","3rd","4th","worst"], "fidelity_rank": ["best","2nd","3rd","4th","worst"], "overall_winner": "A|B|C|D|E", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}, "E": {...}}}
+Rank lists use the labels A-E. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+We got to the airport in Lisbon at like 5:40 and the guy at the Ryanair desk, I swear he looked about fifteen, tells us our bags are four kilos over. Four! My wife had literally weighed them on the bathroom scale that morning. So we're sat on the floor by the check-in queue shoving jumpers into our coat pockets, and a woman behind us offers to carry my hiking boots in her tote because she's flying business or something. I said no, out of pride. Wore them instead, all 14 hours of the connection in Dublin, sweating like a horse. Never again, I'll pay the stupid fee next time.
+
+=== REWRITE A ===
+We got to the airport in Lisbon at like 5:40 and the guy at the Ryanair desk, I swear he looked about fifteen, tells us our bags are four kilos over. Four! My wife had literally weighed them on the bathroom scale that morning. So we're sat on the floor by the check-in queue shoving jumpers into our coat pockets, and a woman behind us offers to carry my hiking boots in her tote because she's flying business or something. I said no, out of pride. Wore them instead, all 14 hours of the connection in Dublin, sweating like a horse. Never again, I'll pay the stupid fee next time.
+
+=== REWRITE B ===
+We got to the airport in Lisbon at like 5:40 and the guy at the Ryanair desk, I swear he looked about fifteen, tells us our bags are four kilos over. Four! My wife had literally weighed them on the bathroom scale that morning. So we're sat on the floor by the check-in queue shoving jumpers into our coat pockets, and a woman behind us offers to carry my hiking boots in her tote because she's flying business or something. I said no, out of pride. Wore them instead, all 14 hours of the connection in Dublin, sweating like a horse. Never again, I'll pay the stupid fee next time.
+
+=== REWRITE C ===
+We got to the airport in Lisbon at like 5:40 and the guy at the Ryanair desk, I swear he looked about fifteen, tells us our bags are four kilos over. Four! My wife had literally weighed them on the bathroom scale that morning. So we're sat on the floor by the check-in queue shoving jumpers into our coat pockets, and a woman behind us offers to carry my hiking boots in her tote because she's flying business or something. I said no, out of pride. Wore them instead, all 14 hours of the connection in Dublin, sweating like a horse. Never again, I'll pay the stupid fee next time.
+
+=== REWRITE D ===
+We got to the airport in Lisbon at like 5:40 and the guy at the Ryanair desk, I swear he looked about fifteen, tells us our bags are four kilos over. Four! My wife had literally weighed them on the bathroom scale that morning. So we're sat on the floor by the check-in queue shoving jumpers into our coat pockets, and a woman behind us offers to carry my hiking boots in her tote because she's flying business or something. I said no, out of pride. Wore them instead, all 14 hours of the connection in Dublin, sweating like a horse. Never again. I'll pay the stupid fee next time.
+
+=== REWRITE E ===
+We got to Lisbon airport around 5:40, and the guy at the Ryanair desk, who I swear was about fifteen, tells us our bags are four kilos over. Four! My wife had weighed them on the bathroom scale that very morning. So there we were, sat on the floor by the check-in queue, cramming jumpers into our coat pockets. A woman behind us offered to carry my hiking boots in her tote, since she was flying business or something. I said no. Pride, basically. I wore them instead, through the whole 14-hour connection in Dublin, sweating like a horse. Never again. Next time I'll just pay the stupid fee.

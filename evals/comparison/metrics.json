@@ -1,0 +1,555 @@
+{
+ "P01": {
+  "source": {
+   "words": 112,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 9,
+   "not_x_but_y": 0,
+   "triads": 1,
+   "sent_cv": 0.14,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 151,
+   "len_ratio": 1.35,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.64,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.02
+  },
+  "wh": {
+   "words": 191,
+   "len_ratio": 1.71,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.57,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.02
+  },
+  "hz": {
+   "words": 95,
+   "len_ratio": 0.85,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.38,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.03
+  }
+ },
+ "P02": {
+  "source": {
+   "words": 100,
+   "len_ratio": 1.0,
+   "dashes": 1,
+   "lex_hits": 7,
+   "not_x_but_y": 1,
+   "triads": 1,
+   "sent_cv": 0.5,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 113,
+   "len_ratio": 1.13,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 1,
+   "sent_cv": 0.45,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.09
+  },
+  "wh": {
+   "words": 109,
+   "len_ratio": 1.09,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.43,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.12
+  },
+  "hz": {
+   "words": 82,
+   "len_ratio": 0.82,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.4,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.16
+  }
+ },
+ "P03": {
+  "source": {
+   "words": 123,
+   "len_ratio": 1.0,
+   "dashes": 1,
+   "lex_hits": 3,
+   "not_x_but_y": 1,
+   "triads": 0,
+   "sent_cv": 0.5,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 81,
+   "len_ratio": 0.66,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.62,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": -2,
+   "similarity": 0.24
+  },
+  "wh": {
+   "words": 104,
+   "len_ratio": 0.85,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 1,
+   "sent_cv": 0.57,
+   "num_lost": [],
+   "num_new": [
+    "16",
+    "2",
+    "4",
+    "8"
+   ],
+   "first_person_added": -2,
+   "similarity": 0.24
+  },
+  "hz": {
+   "words": 95,
+   "len_ratio": 0.77,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.64,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": -2,
+   "similarity": 0.3
+  }
+ },
+ "P04": {
+  "source": {
+   "words": 121,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 10,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.22,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 50,
+   "len_ratio": 0.41,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.33,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.29
+  },
+  "wh": {
+   "words": 56,
+   "len_ratio": 0.46,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.47,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.23
+  },
+  "hz": {
+   "words": 48,
+   "len_ratio": 0.4,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.28,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.31
+  }
+ },
+ "P05": {
+  "source": {
+   "words": 117,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 3,
+   "not_x_but_y": 0,
+   "triads": 2,
+   "sent_cv": 0.52,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 140,
+   "len_ratio": 1.2,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.56,
+   "num_lost": [
+    "9"
+   ],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.11
+  },
+  "wh": {
+   "words": 122,
+   "len_ratio": 1.04,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.56,
+   "num_lost": [
+    "9"
+   ],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.14
+  },
+  "hz": {
+   "words": 104,
+   "len_ratio": 0.89,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.4,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.15
+  }
+ },
+ "P06": {
+  "source": {
+   "words": 157,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 2,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.38,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 116,
+   "len_ratio": 0.74,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.36,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": -2,
+   "similarity": 0.28
+  },
+  "wh": {
+   "words": 165,
+   "len_ratio": 1.05,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.32,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.32
+  },
+  "hz": {
+   "words": 76,
+   "len_ratio": 0.48,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.41,
+   "num_lost": [
+    "2021"
+   ],
+   "num_new": [],
+   "first_person_added": -3,
+   "similarity": 0.14
+  }
+ },
+ "P07": {
+  "source": {
+   "words": 115,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 3,
+   "not_x_but_y": 0,
+   "triads": 1,
+   "sent_cv": 0.22,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 123,
+   "len_ratio": 1.07,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.45,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.19
+  },
+  "wh": {
+   "words": 115,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 1,
+   "sent_cv": 0.39,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.17
+  },
+  "hz": {
+   "words": 82,
+   "len_ratio": 0.71,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 1,
+   "sent_cv": 0.41,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.49
+  }
+ },
+ "P08": {
+  "source": {
+   "words": 110,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.77,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 109,
+   "len_ratio": 0.99,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.81,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.59
+  },
+  "wh": {
+   "words": 110,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.77,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "hz": {
+   "words": 110,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.77,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  }
+ },
+ "P09": {
+  "source": {
+   "words": 126,
+   "len_ratio": 1.0,
+   "dashes": 0,
+   "lex_hits": 3,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.8,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 98,
+   "len_ratio": 0.78,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.8,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": -2,
+   "similarity": 0.1
+  },
+  "wh": {
+   "words": 89,
+   "len_ratio": 0.71,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.95,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.24
+  },
+  "hz": {
+   "words": 88,
+   "len_ratio": 0.7,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.83,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": -2,
+   "similarity": 0.25
+  }
+ },
+ "P10": {
+  "source": {
+   "words": 106,
+   "len_ratio": 1.0,
+   "dashes": 1,
+   "lex_hits": 2,
+   "not_x_but_y": 0,
+   "triads": 2,
+   "sent_cv": 0.34,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 1.0
+  },
+  "baseline": {
+   "words": 185,
+   "len_ratio": 1.75,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.59,
+   "num_lost": [],
+   "num_new": [
+    "11"
+   ],
+   "first_person_added": 5,
+   "similarity": 0.06
+  },
+  "wh": {
+   "words": 198,
+   "len_ratio": 1.87,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 0,
+   "sent_cv": 0.83,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 1,
+   "similarity": 0.07
+  },
+  "hz": {
+   "words": 103,
+   "len_ratio": 0.97,
+   "dashes": 0,
+   "lex_hits": 0,
+   "not_x_but_y": 0,
+   "triads": 1,
+   "sent_cv": 0.38,
+   "num_lost": [],
+   "num_new": [],
+   "first_person_added": 0,
+   "similarity": 0.29
+  }
+ }
+}

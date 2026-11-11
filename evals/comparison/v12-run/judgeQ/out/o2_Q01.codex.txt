@@ -1,0 +1,75 @@
+{
+  "human_quality_rank": ["D", "C", "B", "A"],
+  "fidelity_rank": ["B", "A", "C", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer is excited to announce the transition.",
+        "The journey involved challenges and growth.",
+        "The explicit encouragement to consider a career change, trust the process, and take the leap.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, but it loses the sample's personality and the source's invitation to the reader."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The writer started the design job in January; the source only says they accepted the role in January."
+      ],
+      "dropped_facts": [
+        "The writer is excited to announce the transition.",
+        "The journey involved growth.",
+        "The encouragement to trust the process."
+      ],
+      "register_ok": true,
+      "note": "Natural and readable, with the strongest balance of completeness and restraint despite a conventional motivational ending."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The writer explicitly experienced the bootcamp schedule as tiring.",
+        "The writer started the design job in January; the source only says they accepted the role in January.",
+        "The pay cut emotionally stung.",
+        "The advice to trust yourself replaces the source's advice to trust the process."
+      ],
+      "dropped_facts": [
+        "The writer is excited to announce the transition.",
+        "The journey involved growth.",
+        "The encouragement to trust the process.",
+        "The closing question about what is holding the reader back is replaced with a question about procrastination."
+      ],
+      "register_ok": true,
+      "note": "The conversational rhythm feels personal, but added emotional reactions and changed advice weaken fidelity."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Typing that the writer is now a UX designer still feels weird.",
+        "The writer consumed a lot of coffee during the bootcamp.",
+        "The writer would not recommend the schedule.",
+        "The writer would repeat the experience.",
+        "The writer started the design job in January; the source only says they accepted the role in January.",
+        "The writer explicitly calculated the pay cut.",
+        "The writer signed an agreement.",
+        "Nobody warned the writer how much of the design job they had already been doing.",
+        "The writer had spent years identifying confusion, explaining things differently, and watching faces to assess understanding.",
+        "The writer ran the described classroom usability test every day.",
+        "A room of Year 6 pupils is the toughest usability test someone will encounter.",
+        "The advice to calculate the pay cut and be honest about it."
+      ],
+      "dropped_facts": [
+        "The writer is excited to announce the transition.",
+        "The journey involved growth.",
+        "The explicit lesson that it is never too late to reinvent yourself.",
+        "The encouragement to trust the process.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Closest to the sample's candid, wry voice, but its vividness depends heavily on invented details."
+    }
+  }
+}

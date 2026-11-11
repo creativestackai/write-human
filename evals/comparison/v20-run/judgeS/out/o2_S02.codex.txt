@@ -1,0 +1,57 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["D", "A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural pacing and direct language preserve the argument without manufacturing a personal voice."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The narrator's phone buzzes about once a minute.",
+        "The narrator can no longer read three pages without reaching for their phone.",
+        "Focus used to be ordinary; the source establishes increasing rarity, not a previously ordinary baseline.",
+        "Divided attention produces ten shallow starts and no finished idea.",
+        "Good ideas tend to arrive late, after working beyond the point of comfort.",
+        "Willpower will not work at all, rather than being insufficient alone.",
+        "The narrator has tried relying on willpower and found that it lasts about an hour.",
+        "The specific effective prescription is putting the phone in another room, turning notifications off, and keeping one task on screen."
+      ],
+      "dropped_facts": [
+        "Endless scrolling contributes to the context of fragmented attention.",
+        "Attention is both a resource and the foundation of meaningful work.",
+        "Setting boundaries and prioritizing what truly matters are explicit parts of reclaiming attention.",
+        "Anyone can reclaim their attention.",
+        "A more focused life begins with a single intentional choice."
+      ],
+      "register_ok": true,
+      "note": "The conversational voice is vivid, but invented autobiography and stronger assertions substantially change the source."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "The recommended actions specifically include putting a phone in another room and closing tabs.",
+        "Priorities should be decided in advance for the current day, and everything else ignored.",
+        "The initial intentional choice specifically consists of picking one thing and staying with it."
+      ],
+      "dropped_facts": [
+        "Focus is increasingly valuable as well as increasingly rare.",
+        "Setting boundaries is an explicit part of reclaiming attention."
+      ],
+      "register_ok": true,
+      "note": "Conversational touches feel imposed, especially ideas growing up, and added prescriptions reduce fidelity."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, restrained prose preserves the source closely, though its rhythm is slightly more uniform than A's."
+    }
+  }
+}

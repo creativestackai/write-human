@@ -1,0 +1,61 @@
+{
+  "human_quality_rank": ["D", "B", "C", "A"],
+  "fidelity_rank": ["C", "B", "D", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The control group received nothing; its treatment is unspecified in the source.",
+        "Caffeine management specifically meant cutting back on caffeine.",
+        "Screen-time reduction specifically meant putting screens away at night.",
+        "The effect is characterized as small-to-moderate, a classification not supplied by the source.",
+        "The authors give the sleep-quality finding less weight because it was self-reported.",
+        "The study cannot settle whether universities should add sleep education.",
+        "Replication with longer follow-up is specifically needed."
+      ],
+      "dropped_facts": [
+        "Self-reported sleep quality improved markedly; the magnitude is omitted.",
+        "Sleep plays a pivotal role in academic success.",
+        "The recommendation specifically concerns integration into university curricula, rather than university programs generally."
+      ],
+      "register_ok": false,
+      "note": "The conversational voice is distinctive, but several phrases are too casual for the source's academic register."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The sleep-quality finding underscores sleep's pivotal role in academic success.",
+        "The findings provide a basis for future research."
+      ],
+      "register_ok": true,
+      "note": "Direct, economical prose makes this a convincing academic summary, although it omits two concluding points."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The source describes sleep's role in academic success as pivotal; this becomes the weaker statement that sleep appears to matter."
+      ],
+      "register_ok": true,
+      "note": "Clear and appropriately formal, this preserves nearly everything but retains a somewhat impersonal abstract cadence."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The effect is classified as small by conventional standards, an interpretation not supplied by the source.",
+        "Objective sleep data is identified as the obvious next research step.",
+        "The grade result alone is sufficient to justify integrating sleep education into university curricula."
+      ],
+      "dropped_facts": [
+        "The education is explicitly described as structured.",
+        "Participants were assigned to groups for a 12-week study period; the rewrite instead places random assignment over 12 weeks.",
+        "Self-reported sleep quality improved markedly; the magnitude is omitted.",
+        "The sleep-quality finding underscores sleep's pivotal role in academic success."
+      ],
+      "register_ok": true,
+      "note": "The prose has a confident, individual voice and good flow, but its added judgments exceed the source."
+    }
+  }
+}

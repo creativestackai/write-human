@@ -1,0 +1,72 @@
+{
+  "human_quality_rank": ["A", "C", "B", "D"],
+  "fidelity_rank": ["B", "D", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Syntax is easy and can be looked up in ten seconds.",
+        "The narrator personally understands the appeal of memorizing commands.",
+        "Flashcards and cheat sheets feel like progress.",
+        "Memorizing commands leaves beginners recognizing a for loop without understanding when to use it, and stuck when a problem differs from a tutorial.",
+        "Bugs account for most learning.",
+        "The automation example assumes a chore the reader is tired of doing by hand.",
+        "Unexpected behavior forces developers to examine actual versus assumed program behavior, and that gap accounts for most learning.",
+        "Developers who become good struggle constantly and do not treat that struggle as a verdict on themselves."
+      ],
+      "dropped_facts": [
+        "Analyzing data as an application of programming.",
+        "The explicit description of learning as rewarding.",
+        "The explicit requirement for patience, persistence, and practice.",
+        "Every line of code brings the writer closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "Concrete explanations and a convincing conversational voice make this readable, but it substantially expands the source."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Successful developers embrace struggle; continuing through it preserves persistence but omits that attitude."
+      ],
+      "register_ok": true,
+      "note": "Plain, natural prose preserves nearly all the source while slightly softening its motivational language."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The narrator started coding expecting syntax memorization to be the hardest part.",
+        "The narrator personally struggled with breaking problems into smaller pieces.",
+        "Syntax can be looked up in ten seconds.",
+        "The narrator wasted substantial early time memorizing commands, and almost none of it stuck.",
+        "Understanding loops and function inputs made the narrator retain concepts, after which commands came naturally.",
+        "The data example introduces a spreadsheet-sized quantity.",
+        "Developers the narrator admires get stuck constantly and do not take it personally.",
+        "A bug usually indicates an incorrect mental model.",
+        "The reference to finding bugs unhelpful at 11pm introduces an unsupported time-specific scenario.",
+        "A third failed attempt teaches more than a first successful run."
+      ],
+      "dropped_facts": [
+        "Many beginners make the mistake of memorizing commands.",
+        "Learning to code is rewarding.",
+        "Patience and practice are explicitly required.",
+        "The most successful developers are distinguished by embracing struggle.",
+        "Every bug offers a lesson.",
+        "Every line of code brings the writer closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "The personal voice is vivid, but invented autobiography and an unsupported closing comparison undermine fidelity."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Syntax is the easy part.",
+        "Beginners who try to memorize commands stall out."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and faithful overall, though its familiar motivational cadence feels less individual."
+    }
+  }
+}

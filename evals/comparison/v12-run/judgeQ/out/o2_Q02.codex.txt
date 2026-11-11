@@ -1,0 +1,81 @@
+{
+  "human_quality_rank": ["A", "D", "C", "B"],
+  "fidelity_rank": ["D", "B", "C", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Motivation is plentiful on Monday and absent by Thursday.",
+        "Any plan depending on motivation will fail.",
+        "What works is boring, and actions should continue after they stop feeling interesting.",
+        "The examples of ten pushups and one page of an unfinished book.",
+        "A few months of small actions accomplish more than any single big push, chiefly because participation continues.",
+        "The examples of running shoes by the door and a phone charging in another room.",
+        "Starting smaller than feels worthwhile.",
+        "Recording completion each day specifically, rather than tracking progress generally.",
+        "Resuming the next day after missing a day.",
+        "Missing a day barely matters, whereas quitting does.",
+        "Choosing exactly one thing.",
+        "Starting tomorrow, which contradicts the source's instruction to start now."
+      ],
+      "dropped_facts": [
+        "The context of a world full of distractions.",
+        "The explicit claim that consistency is the true key to success.",
+        "Systems should make good behavior automatic; making choices easier does not fully preserve this.",
+        "Being patient with yourself.",
+        "The explicit possibility of transforming your life one day at a time.",
+        "Every step brings you closer to your goals.",
+        "Now is the best time to start."
+      ],
+      "register_ok": true,
+      "note": "A distinctive conversational voice comes with substantial invention and several sweeping claims."
+    },
+    "B": {
+      "p_ai": 50,
+      "unsupported_specifics": [
+        "You will run out of willpower."
+      ],
+      "dropped_facts": [
+        "The context of a world full of distractions.",
+        "The explicit claim that consistency is the true key to success.",
+        "The explicit possibility of transforming your life one day at a time.",
+        "Every step brings you closer to your goals.",
+        "Now is the best time to start."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, but its generalized advice has little individual voice."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Willpower runs out.",
+        "An action can be made small enough that you cannot really skip it.",
+        "The specific instruction to give yourself slack after missing a day."
+      ],
+      "dropped_facts": [
+        "The context of a world full of distractions.",
+        "The explicit claim that consistency is the true key to success.",
+        "The explicit timeframe of weeks as well as months.",
+        "The explicit possibility of transforming your life one day at a time.",
+        "Every step brings you closer to your goals."
+      ],
+      "register_ok": true,
+      "note": "Natural and compact, though the claim about making an action unskippable overreaches."
+    },
+    "D": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Repeated small actions produce far more than any single push.",
+        "Change through this approach is necessarily slow, and that slowness is acceptable."
+      ],
+      "dropped_facts": [
+        "The context of a world full of distractions.",
+        "The explicit claim that consistency is the true key to success.",
+        "The explicit possibility of transforming your life one day at a time."
+      ],
+      "register_ok": true,
+      "note": "Clear, conversational advice preserves the most source content despite two added assertions."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The platform is described as all-in-one.",
+        "The tools are described as robust and intuitive.",
+        "The platform claims to streamline workflows and increase productivity.",
+        "Security is described as best-in-class.",
+        "The 40% reduction is explicitly described as proven."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained product copy, though its compressed feature list has little individual voice."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Users would otherwise spend their evenings on invoicing.",
+        "Agencies using Tallyo have outgrown spreadsheets.",
+        "Automation specifically prevents typos and incorrect totals from being sent to clients.",
+        "Reports show which invoices are paid and unpaid without requiring users to ask anyone.",
+        "Security specifically protects stored client billing details.",
+        "The more than 2,300 teams collectively achieved the stated 40% reduction."
+      ],
+      "dropped_facts": [
+        "The platform is described as all-in-one.",
+        "The agency audience is specifically growing agencies.",
+        "The tools are described as robust and intuitive.",
+        "The source claims elimination of manual errors, rather than merely fewer errors.",
+        "The platform explicitly claims increased productivity.",
+        "The teams are worldwide.",
+        "Security is described as best-in-class.",
+        "The 40% reduction is explicitly described as proven."
+      ],
+      "register_ok": true,
+      "note": "The strongest individual voice, but its persuasive detail repeatedly exceeds the source."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Tallyo serves teams of any size, extending beyond the stated freelancer and growing-agency audiences."
+      ],
+      "dropped_facts": [
+        "The platform is described as all-in-one.",
+        "The tools are described as robust and intuitive.",
+        "The source claims elimination of manual errors, rather than merely fewer errors.",
+        "The platform explicitly claims increased productivity.",
+        "Security is described as best-in-class."
+      ],
+      "register_ok": true,
+      "note": "Natural, clear product copy that preserves the evidence framing but slightly broadens the audience."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Users can create invoices, send them, and monitor payment within the platform.",
+        "The platform removes the need to retype invoice numbers into a spreadsheet afterward.",
+        "The more than 2,300 teams collectively achieved the stated 40% reduction.",
+        "Automation and reporting each account for part of the stated 40% reduction.",
+        "Reports specifically update as money comes in.",
+        "Reporting removes the need to wait until month-end to assess financial standing."
+      ],
+      "dropped_facts": [
+        "The tools are described as robust and intuitive.",
+        "The source explicitly claims elimination of manual errors.",
+        "The platform explicitly claims increased productivity.",
+        "Security is described as best-in-class.",
+        "The 40% reduction is explicitly described as proven."
+      ],
+      "register_ok": true,
+      "note": "Readable and conversational, but its concrete workflow and causal explanation are unsupported."
+    }
+  }
+}

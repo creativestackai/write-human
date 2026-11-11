@@ -1,0 +1,64 @@
+{
+  "human_quality_rank": ["A", "D", "E", "B", "C"],
+  "fidelity_rank": ["E", "B", "A", "D", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit claim underscoring the pivotal role of sleep in academic success",
+        "The concluding statement that the findings pave the way for future research"
+      ],
+      "register_ok": true,
+      "note": "A crisp, natural active-voice scientific rewrite that preserves all core empirical findings while eliminating boilerplate filler."
+    },
+    "B": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The concluding statement that the findings pave the way for future research",
+        "That sleep quality improvement was 'marked' (softened to 'improved as well')"
+      ],
+      "register_ok": true,
+      "note": "A competent but rigid paraphrase that preserves the main claims while retaining a distinctly mechanical cadence."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "That the control group 'got nothing'",
+        "Workshops specifically focused on 'putting screens away at night' rather than general screen-time reduction",
+        "The methodological caveat that self-reported sleep quality should be 'held more loosely'",
+        "The claim that one study cannot settle the question and requires replication with longer follow-up"
+      ],
+      "dropped_facts": [
+        "The explicit claim that the GPA increase was statistically significant",
+        "That sleep quality improved 'markedly'",
+        "The claim underscoring the pivotal role of sleep in academic success"
+      ],
+      "register_ok": false,
+      "note": "Adopts an excessively colloquial tone unsuited to scientific research and injects multiple unsupported caveats and extrapolations."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Characterizing the effect size (d = 0.31) as 'a small effect by conventional standards'",
+        "The argument that objective sleep data is the obvious next step"
+      ],
+      "dropped_facts": [
+        "That sleep quality improved 'markedly' (softened to 'improved as well')",
+        "The explicit claim underscoring the pivotal role of sleep in academic success",
+        "The broad statement paving the way for future research (replaced by a specific unsolicited recommendation)"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic and articulate researcher voice, but introduces unprompted methodological critique and speculative next steps."
+    },
+    "E": {
+      "p_ai": 60,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Achieves flawless fidelity across all claims and numbers, though its sentence-by-sentence adherence to the original text feels automated."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["D", "C", "B", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Claim that people outside the analytics team noticed the stockout reduction",
+        "Statement that this is the kind of work the applicant wants more of"
+      ],
+      "dropped_facts": [
+        "Translating complex data into actionable insights",
+        "Proven track record of leveraging data to drive impactful business decisions",
+        "Self-description as a passionate, detail-oriented team player who thrives in fast-paced environments",
+        "Confidence in being an ideal fit for the role",
+        "Meridian Retail's continued success"
+      ],
+      "register_ok": true,
+      "note": "Has the most engaging and authentic voice, but invents external reactions and personal preferences not found in the source."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Claim that the inventory dashboard is the project the applicant is proudest of"
+      ],
+      "dropped_facts": [
+        "Strong interest in the position",
+        "Translating complex data into actionable insights",
+        "Proven track record of leveraging data to drive impactful business decisions",
+        "Self-description as a passionate, detail-oriented team player who thrives in fast-paced environments",
+        "Confidence in being an ideal fit for the role",
+        "Meridian Retail's continued success"
+      ],
+      "register_ok": true,
+      "note": "Includes a natural conversational touch but invents a claim of personal pride and is clipped to a bare minimum."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Strong interest in the position",
+        "Translating complex data into actionable insights",
+        "Proven track record of leveraging data to drive impactful business decisions",
+        "Self-description as a passionate, detail-oriented team player who thrives in fast-paced environments",
+        "Confidence in being an ideal fit for the role",
+        "Meridian Retail's continued success"
+      ],
+      "register_ok": true,
+      "note": "Strictly avoids adding unsupported specifics, but reads flat and mechanical while dropping key value propositions."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Proven track record of leveraging data to drive impactful business decisions",
+        "Self-description as a detail-oriented team player who thrives in fast-paced environments",
+        "Confidence in being an ideal fit for the role",
+        "Meridian Retail's continued success"
+      ],
+      "register_ok": true,
+      "note": "Translates corporate jargon into clear, natural human speech while faithfully preserving nearly all substantive source claims."
+    }
+  }
+}

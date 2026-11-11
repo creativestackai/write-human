@@ -1,0 +1,36 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["C", "A", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Weakens the direct claim that the increase raises revenue per customer to 'should bring in more.'",
+        "Strengthens the tentative inference about overall revenue ('this suggests') to a definite prediction ('revenue would still go up overall')."
+      ],
+      "register_ok": true,
+      "note": "Clear and natural, though the short transitions make the argument slightly choppy."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Replaces 'probably worth adopting' with unqualified instructions to raise the price and adopt it for new customers."
+      ],
+      "register_ok": true,
+      "note": "Reads like a direct business recommendation, but its confidence exceeds the source."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Smooth, plain business prose that preserves the evidence, qualifications, and recommendation."
+    }
+  }
+}

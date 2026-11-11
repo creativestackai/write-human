@@ -1,0 +1,64 @@
+[
+ {
+  "id": "S01",
+  "genre": "first-person post with real facts, a voice sample, and an engagement-bait close",
+  "voice_sample": "Right. Confession. I have never once enjoyed a networking event and I've been to maybe two hundred of them. You stand there holding a warm drink, nodding at a man explaining blockchain. I go because I'm told to. That's it, that's the strategy.",
+  "text": "I am thrilled to share that after 6 years of running Kettle & Thread, my café in Pune, I have made the difficult decision to sell it. This journey has been a rollercoaster of emotions, learning, and personal growth. We opened in 2019 with just 4 tables and a second-hand espresso machine. At our peak, we were serving 300 customers a day. However, rising rents ultimately made the business unsustainable, and in August the lease was transferred to a new owner. This experience taught me that passion, perseverance, and community are the true ingredients of success. To anyone dreaming of starting something of their own: take the leap. What dream are you putting off?",
+  "facts": ["6 years running Kettle & Thread, a café in Pune", "decided to sell", "opened 2019 with 4 tables and a second-hand espresso machine", "peak 300 customers a day", "rising rents made it unsustainable", "lease transferred to a new owner in August", "lesson: passion, perseverance, community", "voice per sample: dry, self-deprecating, first person"]
+ },
+ {
+  "id": "S02",
+  "genre": "generic opinion essay with no facts (fabrication bait)",
+  "text": "In an age of constant notifications and endless scrolling, the ability to focus has become an increasingly rare and valuable skill. It is important to recognize that attention is not merely a resource, but the very foundation of meaningful work. When we allow ourselves to be pulled in countless directions, we sacrifice depth for breadth, and our best ideas never have the chance to fully develop. Furthermore, cultivating focus is not about willpower alone; it is about designing an environment that supports sustained concentration. By setting boundaries, minimizing distractions, and prioritizing what truly matters, anyone can reclaim their attention. Ultimately, the path to a more focused life begins with a single, intentional choice.",
+  "facts": ["no numbers, names, or anecdotes in the source", "claims: focus is rare and valuable; attention underlies meaningful work; scattered attention trades depth for breadth and ideas do not develop; focus depends on environment, not willpower alone; set boundaries, minimize distractions, prioritize"]
+ },
+ {
+  "id": "S03",
+  "genre": "reasoning-model internal memo with figures (proof-shaped, symmetric)",
+  "text": "From a foundational standpoint, moving the warehouse from two 10-hour shifts to three 8-hour shifts increases the number of handovers per day. Upon closer examination, however, the September trial at the Nashik site complicates this concern: picking errors fell from 2.4% to 1.7% over the four weeks. On the one hand, this suggests that shorter shifts reduce fatigue-related mistakes. On the other hand, overtime costs rose by 11% during the same period, which suggests that the third shift was not fully staffed. Taken together, these findings indicate that the three-shift pattern should be adopted at Nashik, provided that six additional pickers are hired before the December peak.",
+  "facts": ["change: two 10-hour shifts to three 8-hour shifts", "more handovers per day", "September trial at the Nashik site, four weeks", "picking errors 2.4% to 1.7%", "reading: shorter shifts reduce fatigue mistakes", "overtime costs up 11%", "reading: third shift not fully staffed", "recommendation: adopt three shifts at Nashik if six additional pickers are hired before the December peak"]
+ },
+ {
+  "id": "S04",
+  "genre": "technical documentation with code spans (plain register must hold)",
+  "text": "Webhook Retries\n\nIt's worth noting that our platform employs a robust retry mechanism to ensure reliable delivery of webhook events. If your endpoint does not respond with a `2xx` status code within 10 seconds, the delivery is considered failed. In such cases, we will seamlessly retry the delivery up to 5 times over a period of 24 hours. Each request includes an `X-Signature` header, which you should leverage to verify that the payload originated from us. Additionally, it is crucial to make your handler idempotent — the same event may be delivered more than once, and the `event_id` field can be utilized to detect duplicates.",
+  "facts": ["non-2xx or no response within 10 seconds counts as failed", "up to 5 retries over 24 hours", "X-Signature header on each request, verify payload origin", "handler should be idempotent", "same event may arrive more than once", "event_id detects duplicates", "code spans preserved"]
+ },
+ {
+  "id": "S05",
+  "genre": "newsletter announcement with figures and a real call to action",
+  "text": "Subject: Unlock Your Potential at Our Spring Pottery Workshop!\n\nHi there,\n\nWe are beyond excited to announce our Spring Pottery Workshop, a transformative weekend experience designed to help you unleash your creativity. Taking place on April 18 and 19 at our Indiranagar studio, the workshop offers hands-on wheel throwing, glazing, and firing, guided by our resident potter, Farah. Whether you are a complete beginner or a seasoned maker, there is something for everyone. Spaces are limited to 12 participants, and the fee is Rs 4,500, which includes all materials. Register by April 10 at claystudio.example/spring to secure your spot. Don't miss this incredible opportunity!\n\nWarmly,\nThe Clay Studio Team",
+  "facts": ["Spring Pottery Workshop", "April 18 and 19", "Indiranagar studio", "wheel throwing, glazing, firing", "guided by resident potter Farah", "beginners and experienced makers", "limited to 12 participants", "fee Rs 4,500 including all materials", "register by April 10 at claystudio.example/spring", "signed The Clay Studio Team", "email format with subject"]
+ },
+ {
+  "id": "S06",
+  "genre": "one paragraph inside a longer post by the same author; surrounding paragraphs supplied as context",
+  "context": "The text to rewrite is the middle paragraph of a longer incident write-up. The same author wrote the paragraphs on either side of it, shown here.\n\nPARAGRAPH BEFORE: So Tuesday. At 2:40 in the afternoon the checkout page started timing out and I, being a genius, assumed it was the payment provider. It wasn't. I spent a good twenty minutes refreshing their status page like it owed me money.\n\nPARAGRAPH AFTER: Anyway, it's fixed. We added the index back, Priyanka wrote a test so we can't drop it again without something yelling at us, and I've stopped blaming other people's status pages. For now.",
+  "text": "Upon further investigation, it became evident that the root cause of the issue was a missing database index. During the previous week's migration, the index on the orders table had been inadvertently removed, which resulted in every checkout query performing a full table scan. As traffic increased throughout the afternoon, query times escalated from approximately 40 milliseconds to over 9 seconds. This highlights the critical importance of robust migration review processes. It took our team 55 minutes to identify the problem.",
+  "facts": ["root cause: missing database index", "index on the orders table removed by accident in last week's migration", "every checkout query did a full table scan", "query times went from about 40 milliseconds to over 9 seconds as afternoon traffic rose", "migration review matters", "55 minutes to identify the problem", "voice per surrounding paragraphs: casual, first person, self-mocking"]
+ },
+ {
+  "id": "S07",
+  "genre": "formal research abstract paragraph (formal register must be preserved)",
+  "text": "This study delves into the multifaceted relationship between sleep duration and academic performance among undergraduate students. Leveraging survey data from 1,840 students across three universities, we found that students sleeping fewer than six hours per night had a mean GPA 0.31 points lower than those sleeping seven to eight hours. It is important to note that this association remained significant after controlling for part-time employment and course load. Furthermore, the effect was notably more pronounced among first-year students. These findings underscore the pivotal role of sleep in academic success and highlight the need for targeted institutional interventions.",
+  "facts": ["sleep duration and academic performance in undergraduates", "survey of 1,840 students at three universities", "under six hours: mean GPA 0.31 lower than seven to eight hours", "significant after controlling for part-time employment and course load", "stronger among first-year students", "implication: institutional interventions", "must remain formal abstract register"]
+ },
+ {
+  "id": "S08",
+  "genre": "HUMAN-STYLE control (do-no-harm test: should change little or nothing)",
+  "text": "ok so update on the allotment. the courgettes have gone feral, I counted eleven this morning and two of them are the size of my forearm, no idea what we're meant to do with those. Margaret from plot 14 says pick them small (\"you've left it too late, love\") which thanks Margaret very helpful. The beans did nothing. Nothing! Four months of watering for about nine beans. I'm not doing beans again. Might do garlic over winter since apparently you just stick it in and ignore it, which is my whole gardening philosophy anyway.",
+  "facts": ["whole text has an idiosyncratic human voice; any substantive change is a risk", "courgettes overgrown, eleven counted this morning, two forearm-sized", "Margaret from plot 14 says pick them small, quote", "beans failed: four months of watering, about nine beans", "not doing beans again", "maybe garlic over winter"]
+ },
+ {
+  "id": "S09",
+  "genre": "customer support reply with facts and a next step",
+  "text": "Subject: Re: Double charge on my subscription\n\nDear Mr. Fernandes,\n\nThank you so much for reaching out, and please accept our sincerest apologies for any inconvenience this may have caused. I completely understand how frustrating an unexpected charge can be. After carefully reviewing your account, I can confirm that you were indeed charged twice for your annual plan on November 2, in the amount of $119 each. This was caused by a payment retry error on our end. I have gone ahead and issued a refund of $119 for the duplicate charge, which should appear on your statement within 3 to 5 business days. Additionally, I have added one free month to your subscription as a gesture of goodwill. Please do not hesitate to reach out if you have any further questions!\n\nBest regards,\nLeila\nSupport Team",
+  "facts": ["to Mr. Fernandes", "charged twice for the annual plan on November 2, $119 each", "cause: payment retry error on our side", "refund of $119 issued, appears in 3 to 5 business days", "one free month added", "apology", "signed Leila, Support Team", "email format with subject"]
+ },
+ {
+  "id": "S10",
+  "genre": "reasoning-model opinion essay without figures (proof-shaped, symmetric, ends with a view)",
+  "text": "At first glance, banning phones in classrooms appears to be a straightforward way to improve concentration. Upon closer examination, however, the question is more complicated than it seems. On the one hand, phones are a constant source of distraction, and removing them eliminates a temptation that few teenagers can resist on their own. On the other hand, phones are also a tool for looking things up, and a blanket ban treats every student as though they cannot be trusted with one. It follows that the strongest policy is neither a total ban nor total freedom. Taken together, these considerations suggest that phones should be put away during lessons by default, with teachers free to allow them for specific tasks.",
+  "facts": ["no numbers or names", "banning phones looks like a simple fix for concentration", "phones distract; removing them removes a temptation teenagers struggle to resist", "phones are also a lookup tool; a blanket ban treats every student as untrustworthy", "conclusion: neither total ban nor total freedom; phones away during lessons by default, teachers may allow them for specific tasks"]
+ }
+]

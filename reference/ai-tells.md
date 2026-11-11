@@ -16,7 +16,10 @@ Do not apply these as a find-and-replace. Swapping words off a list mechanically
 8. Formatting tells (em dash, boldface, lists, title case, emoji, curly quotes)
 9. Chatbot artifacts, disclaimers, sycophancy
 10. Filler and hedging phrases
-11. A scannable trigger word list
+11. Reasoning-model tells (the argument's shape)
+12. Slogan closers and comment bait
+13. Over-polish (what not to fix)
+14. A scannable trigger word list
 
 ---
 
@@ -86,9 +89,9 @@ Models puff up importance and slip into brochure voice, especially on culture, p
 > Nestled in the breathtaking region of Gonder, Alamata Raya Kobo stands as a vibrant town with a rich cultural heritage and stunning natural beauty, marking a pivotal chapter in the region's evolving story.
 
 **After:**
-> Alamata Raya Kobo is a town in the Gonder region, known for its weekly market and an 18th-century church.
+> Alamata Raya Kobo is a town in the Gonder region.
 
-The fix is almost always to state the plain fact and cut the adjectives. Specifics beat praise.
+The fix is almost always to state the plain fact and cut the adjectives. If the draft itself names a specific (a market, a church, a date), keep it; if it does not, the plain sentence is the whole answer. Do not supply a specific to replace the praise.
 
 ---
 
@@ -102,9 +105,9 @@ Models attribute opinions to nobody in particular, and pile up proof of importan
 > Experts believe the river plays a crucial role in the ecosystem. Her work has been cited in The New York Times, BBC, and Financial Times, and she has a strong social media following.
 
 **After:**
-> The river supports several endemic fish species, according to a 2019 survey by the Chinese Academy of Sciences. In a 2024 New York Times interview, she argued that regulation should target outcomes, not methods.
+> The river matters to the ecosystem. Her work has been cited in The New York Times, the BBC, and the Financial Times, and she has a large following on social media.
 
-Name the source or cut the claim. One real citation beats a list of logos.
+Name the source if the draft names it; otherwise cut the unsupported claim ("experts believe") or reduce it to what the draft actually says. Never supply a source, a survey, or a quote the draft did not contain. One real citation beats a list of logos, and a missing one is better than an invented one.
 
 ---
 
@@ -117,7 +120,7 @@ These are the deep ones. They survive word-swapping, and they are what makes "cl
 Models force ideas into triads to feel comprehensive, even when two or four is the honest count.
 
 **Before:** The event offers keynotes, panels, and networking, delivering innovation, inspiration, and insight.
-**After:** The event is mostly talks and panels, with time between sessions to actually meet people.
+**After:** The event has talks and panels, plus networking.
 
 Fix: cut to two, or stretch to an uneven four, or just say the real number of things.
 
@@ -133,7 +136,7 @@ Fix: cut to two, or stretch to an uneven four, or just say the real number of th
 Models dodge plain "is/are/was/were" in favor of inflated verbs: serves as, stands as, represents, embodies, functions as, acts as.
 
 **Before:** The museum serves as a vital testament to the region's cultural landscape.
-**After:** The museum is the main regional history collection.
+**After:** The museum documents the region's culture.
 
 Put "is" back. It strips the pretension instantly.
 
@@ -164,7 +167,9 @@ Two failure modes at the start of a piece.
 **Fake-edge hooks** (when a model is told to write "engaging" or "viral"): "But here's the truth," "The result?", "Then I realized," "Hot take:", "Let that sink in," "Plot twist:". They simulate insight on a predictable schedule, which is exactly why they read as fake. Cut them and let the actual point carry the weight.
 
 **Before:** In today's fast-paced world, productivity is everything. But here's the truth: most advice is wrong. Let that sink in.
-**After:** Most productivity advice assumes you control your calendar. If you have a boss and a Slack account, you don't. So most of it is useless to you.
+**After:** Most productivity advice is wrong.
+
+Stop there. Do not grow the cut sentence into a new argument that the draft never made.
 
 ---
 
@@ -173,9 +178,9 @@ Two failure modes at the start of a piece.
 Models tack a present-participle clause onto a sentence to fake depth: highlighting, underscoring, reflecting, symbolizing, ensuring, showcasing, fostering, contributing to, emphasizing.
 
 **Before:** The temple uses blue and gold, reflecting the community's deep connection to the land and symbolizing its enduring heritage.
-**After:** The temple uses blue and gold. The architect said the colors reference local wildflowers and the coast.
+**After:** The temple uses blue and gold.
 
-Fix: if the "-ing" tail carries a real fact, turn it into its own plain sentence. If it is just decoration, delete it.
+Fix: if the "-ing" tail carries a real fact the draft supports, turn it into its own plain sentence. If it is just decoration, delete it. Do not replace the tail with a new explanation or a quote from someone.
 
 ---
 
@@ -214,7 +219,7 @@ Residue from the assistant being an assistant. Always delete from published text
 
 **Knowledge-cutoff disclaimers:** "As of my last update," "While specific details are limited," "based on available information," "I don't have access to."
 Before: While specific details about the founding are scarce, it appears the company began sometime in the 1990s.
-After: The company was founded in 1994, per its registration filings.
+After: The company's founding date is not given in the available sources. (Or cut the sentence. Never fill the gap with a plausible date or source.)
 
 **Sycophancy:** "You're absolutely right!", "That's an excellent point," "What a fascinating topic." Cut it. State the substance.
 
@@ -235,13 +240,86 @@ Tighten these on sight.
 
 **Excessive hedging stacks:** "It could potentially possibly be argued that this might have some effect." Real writers commit. "This probably affects outcomes," or "I think this affects outcomes, though I am not certain." One hedge, not four. And note: an honest "I am not sure" reads far more human than a stack of soft qualifiers, because models are trained to hedge and trained away from admitting plain uncertainty.
 
-**Generic upbeat conclusions:** "The future looks bright. Exciting times lie ahead on this journey toward excellence." Cut entirely. End on the most concrete thing you have, even if it is small: "They plan to open two more locations next year."
+**Generic upbeat conclusions:** "The future looks bright. Exciting times lie ahead on this journey toward excellence." Cut entirely. End on the most concrete thing the draft contains, even if it is small (a stated plan, a last fact). If it has none, just end earlier.
 
 ---
 
-## 11. Optional: a quick-scan list (a prompt to revise, not a find-and-replace)
+## 11. Reasoning-model tells (the argument's shape)
 
-This is a convenience, not the method. The whole skill exists because swapping words off a list produces flat, evenly paced, voiceless prose that still flags as AI. Use this list only to *locate* suspect passages fast; then do the real structural and voice work from sections 5 through 10. A hit is not automatically wrong. It is a place to look, and context decides.
+Drafts from "thinking" models often carry few of the buzzwords above and still read as machine-made. The giveaway moved from the words to the shape of the argument. This section is an editor's observation, not a published finding: the patterns are easy to see once named, but nobody has measured them the way the lexicon in section 1 was measured. Use them as things to listen for.
+
+**The proof-shaped paragraph.** Every paragraph runs the same four beats: a general premise, a condition tested against it, a counterpoint weighed, a synthesis. One such paragraph is fine. Five in a row is a template.
+
+**Deliberation markers.** Phrases left over from working the problem out: "Upon closer examination," "From a foundational standpoint," "Under this framing," "It follows that," "Taken together," "At first glance... however." They narrate thinking instead of stating the result.
+
+**Forced symmetry.** Each side of a question gets the same number of sentences at the same length, whatever each one needs. People give a point the words it takes, and no more.
+
+**The discarded hypothesis.** "One might initially assume X. However, Y." The first half is a position nobody in the piece holds, raised only to be put down.
+
+**Metronome pacing.** Long runs of mid-length sentences, each grammatically complete, none short, none sprawling.
+
+**Before:**
+> From a foundational standpoint, a four-day week reduces the hours available for work. Upon closer examination, however, the pilot data complicates this picture: output per employee held steady across the six-month trial. On the one hand, this suggests that the lost hours were low-value. On the other hand, it may reflect a novelty effect that fades over time. Taken together, the evidence supports a cautious extension of the pilot rather than a permanent change.
+
+**After:**
+> A four-day week means fewer hours of work. The pilot complicates that: output per employee held steady across the six-month trial. That suggests the lost hours were low-value. It may also be a novelty effect, and those fade. So the evidence supports extending the pilot cautiously, not making the change permanent.
+
+Every claim survives at the strength the draft gave it: fewer hours, steady output over six months, a reading that is only suggested, a second that only may be true, and a recommendation that stays cautious. The order is the draft's. What went is the staging.
+
+Fix, in order:
+
+1. **Delete the deliberation markers.** They never hold content.
+2. **Keep the order of commitment.** What the draft asserts, what it only suggests, and what it concludes stay in that order. Reordering is how a tentative reading turns into a finding.
+3. **Keep every hedge and condition** on the claim it belongs to. "Suggests", "may", "provided that", and "cautious" are content. A rewrite that says "adopt it" where the draft said "adopt it if six pickers are hired" has changed the recommendation.
+4. **Unstage the two hands.** Replace "On the one hand / On the other hand" with plain sentences that say what each fact shows, each as long as it needs. A counterargument the author made stays in, and the piece does not end on it unless the draft did.
+5. **Move the conclusion up only when it is unqualified.** If the draft states its conclusion flatly, it can open the piece, in the draft's own strength. If it carries a condition or a hedge, it stays after the reasons that qualify it.
+6. **Do not pick a side the draft did not pick.** If it ends undecided, say so in one plain sentence ("I can't call this one yet") rather than a balanced essay, and only in the first person if the draft is.
+7. **Cut the discarded hypothesis** unless the reversal is the author's actual story ("I assumed X for two years; I was wrong").
+8. **Then break the pacing** as in the rhythm step.
+
+---
+
+## 12. Slogan closers and comment bait
+
+Posts, essays, and newsletters from a model end on a push: a motivational line or a question aimed at the comment section. They say nothing the piece has not already said, and they arrive on schedule, which is why they read as machine-made.
+
+**Slogan closers:** "Don't be afraid to fail." "Every step brings you closer to mastery." "The best time to start is now." "Your journey starts today."
+**Comment bait:** "What's holding you back?" "What goal are you chasing?" "Agree?" "Thoughts?" "Tag someone who needs this."
+
+**Before:** The first three months were rough, and we lost money every week. Then the Saturday subscription took off. If you're thinking about making a leap of your own, the best time to start is now. What's holding you back?
+**After:** The first three months were rough, and we lost money every week. Then the Saturday subscription took off.
+
+Fix: cut the push and end on the last concrete thing the draft says. Never replace a cut closer with a new claim or a lesson the author did not draw.
+
+**Keep a real call to action, in the draft's words.** A link, a sign-up, a deadline, a price, "Start your free trial today," "Reply to this email": these are content, not slogans. Do not soften them ("whenever you're ready") or trade them for something gentler. A softened call to action is a dropped one.
+
+---
+
+## 13. Over-polish (what not to fix)
+
+This section is a list of things to leave alone. Text with no grammatical slack at all reads as machine-made, and one zero-shot detector (GECScore, COLING 2025) is built on exactly that: it runs a grammar corrector over the text and treats "nothing needed correcting" as evidence of a model. An editor who tidies every loose end pushes a human draft toward that profile.
+
+Leave these when the author wrote them and the register allows:
+
+- Sentence fragments. On purpose.
+- Sentences that open with "And," "But," "So," or "Because."
+- A dropped "that" ("the report she sent" for "the report that she sent").
+- Contractions, and the author's regional spelling and idiom.
+- Their punctuation habits: a comma splice they clearly like, no serial comma, a fondness for parentheses.
+- A slightly long sentence that got away from them and still parses.
+- A word repeated because it is the right word.
+
+Fix these: a genuine error that changes the meaning or would embarrass the author (wrong word, broken agreement in a short sentence, a typo), and anything the author asked you to correct.
+
+**Never add an error.** Planting a typo, a dangling modifier, or a deliberate slip to look human is the one move that makes writing both worse and dishonest, and planted errors do not look like real ones: people's mistakes follow their habits, planted ones are scattered. If a draft has no slack because a model wrote it, the cure is the structural and voice work in sections 5 and 11, not damage.
+
+For a falsely flagged human author this is most of the job. Their own irregularities are the best evidence they wrote it. Restore variance where the draft is uniform, and otherwise take your hands off.
+
+---
+
+## 14. Optional: a quick-scan list (a prompt to revise, not a find-and-replace)
+
+This is a convenience, not the method. The whole skill exists because swapping words off a list produces flat, evenly paced, voiceless prose that still flags as AI. Use this list only to *locate* suspect passages fast; then do the real structural and voice work from sections 5 through 13. A hit is not automatically wrong. It is a place to look, and context decides.
 
 If you specifically want an exhaustive, tiered banned-word workflow (severity levels, context profiles, a flag-only mode), that is a different tool: the `avoid-ai-writing` skill owns it. This list stays deliberately short.
 
@@ -256,7 +334,9 @@ boasts, nestled, renowned, breathtaking, groundbreaking,
 furthermore, moreover, additionally, "it's worth noting", "it is important to note",
 "in today's", "in the realm of", "when it comes to", "not just", "not only",
 "serves as", "stands as", "a testament to", "plays a key role",
-"i hope this helps", "great question", "let me know", "certainly!", "of course!"
+"i hope this helps", "great question", "let me know", "certainly!", "of course!",
+"upon closer examination", "from a foundational standpoint", "taken together", "it follows that",
+"what's holding you back", "the best time to start", "closer to mastery"
 ```
 
-When you find clusters of these in one passage, that passage almost certainly needs the structural and voice work in sections 5 through 10, not just a word swap.
+When you find clusters of these in one passage, that passage almost certainly needs the structural and voice work in sections 5 through 13, not just a word swap.

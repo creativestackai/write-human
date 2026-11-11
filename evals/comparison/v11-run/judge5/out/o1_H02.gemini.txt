@@ -1,0 +1,56 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C", "E"],
+  "fidelity_rank": ["D", "E", "A", "B", "C"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Reads smoothly with natural, industry-appropriate phrasing, but drops the concluding strategic context."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Attributing the appointment estimate specifically to Northwind ('Northwind estimates')",
+        "Specifying that the front desk had less to do 'by hand'"
+      ],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Conversational and plainspoken, though it introduces minor unsupported specifics and omits the closing strategy point."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Attributing the appointment estimate specifically to Northwind ('Northwind estimates')"
+      ],
+      "dropped_facts": [
+        "The verbatim quote from Elena Torres (converted to indirect speech)",
+        "Remindly serves as a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Has an engaging journalistic rhythm, but loses fidelity by paraphrasing the executive quote and dropping the strategy claim."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Masterfully strips PR clichés into clear, professional prose while retaining every factual detail and quote intact."
+    },
+    "E": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Factually faithful, but suffers from an unnaturally staccato cadence in the second paragraph that mimics AI prompt tuning."
+    }
+  }
+}

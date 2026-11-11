@@ -1,0 +1,62 @@
+You are an expert editor evaluating five anonymous rewrites (A, B, C, D, E) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","2nd","3rd","4th","worst"], "fidelity_rank": ["best","2nd","3rd","4th","worst"], "overall_winner": "A|B|C|D|E", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}, "E": {...}}}
+Rank lists use the labels A-E. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+WRITER'S OWN SAMPLE (voice reference supplied with the task):
+Not going to pretend this was a clean story. I trained badly, ate worse, and spent half of week eight arguing with my own calves. But the thing I keep thinking about is the stupid little 6am routine, so that's what I'm writing about.
+
+SOURCE TEXT:
+I am thrilled to share that I recently completed my first marathon in Pune, finishing in 4 hours and 38 minutes. This journey was filled with challenges, perseverance, and growth. During week 10 of my 16-week training plan, I developed a knee injury that forced me to take eight days off, and I seriously doubted whether I would make it to the starting line.
+
+However, with the support of my running group and a physiotherapist, I was able to return stronger than ever. This experience taught me that consistency, patience, and community are the foundations of achieving any big goal. If you are considering taking on a challenge of your own, I encourage you to take the first step today. What goal are you chasing?
+
+=== REWRITE A ===
+I finished my first marathon in Pune. 4 hours 38 minutes.
+
+It wasn't a clean build-up. In week 10 of my 16-week plan my knee gave out, I had to take eight days off, and I seriously doubted I'd make the start line at all.
+
+My running group and a physiotherapist are why I did. I came back stronger than before.
+
+What I took from it is pretty simple. Consistency and patience matter more than I'd have said going in, and you need people around you. Any big goal sits on those.
+
+If you've been circling one of your own, take the first step today. What are you chasing?
+
+=== REWRITE B ===
+I ran my first marathon in Pune. 4 hours 38 minutes. Not fast, and I'm fine with that.
+
+Week 10 of a 16-week plan, my knee gave out and I had to take eight days off. I spent most of them googling whether people ever make the start line after something like that, which is a bad way to spend eight days. I honestly thought I was done.
+
+What got me back was my running group, who kept me showing up even when all I could do was watch, and a physiotherapist who had me doing the same dull knee exercises until I wanted to scream. Nothing clever. I did the boring work, the knee came round, and I was on the line.
+
+If you've got something you keep putting off, start before you feel ready. I wasn't ready. I'd just stopped waiting.
+
+=== REWRITE C ===
+I finished my first marathon in Pune. 4:38. Not fast, but I'll take it.
+
+Week 10 of a 16-week plan is when my knee gave out. Eight days off. I spent most of them googling whether I'd still make the start line, and I honestly didn't think I would.
+
+My running group kept dragging me to the Sunday meetups even though all I could do was watch, and a physio worked out what was actually wrong. When I started running again I kept it slow and boring, and that's the only reason I got to race day.
+
+What I took from it is that showing up most weeks beats a perfect plan. Also that I'm bad at asking for help and should fix that.
+
+=== REWRITE D ===
+I ran my first marathon in Pune recently and finished in 4 hours 38 minutes. It wasn't a smooth build-up. In week 10 of a 16-week plan my knee gave out, and I had to stop running for eight days. For a while I honestly didn't think I'd make it to the start line.
+
+My running group and a physiotherapist got me back out there, and I ended up in better shape than before the injury. What I took from it is pretty plain: keep showing up, be patient with the slow stretches, and let other people help. Nothing I did that month was clever.
+
+If you've been putting off something big, start this week, even if it's small.
+
+=== REWRITE E ===
+I recently finished my first marathon, in Pune, in 4 hours and 38 minutes. It wasn't a smooth run up to it. In week 10 of my 16-week plan I hurt my knee and had to take eight days off, and I seriously wondered whether I'd even make the starting line.
+
+My running group and a physiotherapist are the reason I did. I came back stronger than before. What I took from it is that consistency, patience and the people around you do most of the work on any big goal.
+
+If you've got a challenge of your own in mind, start today. What goal are you chasing?

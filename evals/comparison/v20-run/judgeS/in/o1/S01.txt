@@ -1,0 +1,47 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+WRITER'S OWN SAMPLE (voice reference supplied with the task):
+Right. Confession. I have never once enjoyed a networking event and I've been to maybe two hundred of them. You stand there holding a warm drink, nodding at a man explaining blockchain. I go because I'm told to. That's it, that's the strategy.
+
+SOURCE TEXT:
+I am thrilled to share that after 6 years of running Kettle & Thread, my café in Pune, I have made the difficult decision to sell it. This journey has been a rollercoaster of emotions, learning, and personal growth. We opened in 2019 with just 4 tables and a second-hand espresso machine. At our peak, we were serving 300 customers a day. However, rising rents ultimately made the business unsustainable, and in August the lease was transferred to a new owner. This experience taught me that passion, perseverance, and community are the true ingredients of success. To anyone dreaming of starting something of their own: take the leap. What dream are you putting off?
+
+=== REWRITE A ===
+After six years, I've sold Kettle & Thread, my café in Pune. It was not an easy call.
+
+We opened in 2019 with 4 tables and a second-hand espresso machine. At our peak we were serving 300 customers a day. Then the rent kept climbing until the numbers stopped working, and in August the lease went to a new owner.
+
+I learned a lot, and some of it I'm still sorting out. The short version is that passion, perseverance and the people around you matter more than anything else I can name.
+
+If you're thinking about starting something of your own, do it. What are you putting off?
+
+=== REWRITE B ===
+Right. News. After six years, I've sold Kettle & Thread, my café in Pune. In August the lease went to a new owner.
+
+We opened in 2019 with four tables and a second-hand espresso machine. At the peak we were serving 300 people a day, which still sounds made up when I say it. Then the rent kept climbing, and at some point the numbers just stopped working. I'd love to tell you there was a clever way out. There wasn't.
+
+I'm not going to wrap this up with a lesson about passion and community. I'm still sad, and I'm also oddly relieved, and I haven't worked out how those two sit together. If you've got something you keep putting off, though, I'd say go and start it. Just read the lease first.
+
+=== REWRITE C ===
+Right. I've sold Kettle & Thread, my café in Pune, after six years. It wasn't an easy call and it was a hell of a ride.
+
+We opened in 2019 with four tables and a second-hand espresso machine. At our peak we were serving 300 customers a day. Then the rents kept climbing until the business couldn't carry them, and in August the lease went to a new owner.
+
+What I took from it: passion, perseverance and community are what matter. If you're thinking of starting something of your own, that's the part I'd hold onto.
+
+=== REWRITE D ===
+I sold Kettle & Thread. Six years running my café in Pune, and in August the lease went to a new owner.
+
+We opened in 2019 with four tables and a second-hand espresso machine that groaned every time you asked it for anything. At our peak we were doing 300 customers a day, which still feels like a number I made up. Then the rent kept climbing until the maths stopped working. I tried. It didn't.
+
+I'm not going to pretend I've drawn some neat lesson from it. Mostly I'm tired, and a bit sad, and weirdly fine at the same time. If you're sitting on a thing you've always wanted to start, start it. Just read the lease properly first. What's yours?

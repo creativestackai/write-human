@@ -1,0 +1,41 @@
+```json
+{
+  "human_quality_rank": ["C", "A", "B"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Weakens 'plays a crucial role in maintaining overall system stability' to 'helps keep the whole system stable'"
+      ],
+      "register_ok": true,
+      "note": "Crisp and faithful technical prose that strips the puffery while retaining all source claims."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Attributes system stability to 'Both behaviours' rather than specifically to the 429 backoff mechanism"
+      ],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Weakens 'plays a crucial role in maintaining overall system stability' to 'keep the system stable'"
+      ],
+      "register_ok": true,
+      "note": "Sounds casual and human, but introduces pronoun ambiguity, missing punctuation, and an unsupported causal generalization."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The claim that the backoff mechanism plays a crucial role in maintaining overall system stability"
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Captures the author's direct cadence best of all three, but drops the source's stability claim entirely."
+    }
+  }
+}
+```

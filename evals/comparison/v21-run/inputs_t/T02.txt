@@ -1,0 +1,11 @@
+CONTEXT (background only, not part of the text to rewrite):
+The text to rewrite is the middle paragraph of the financial review in a charity's annual report. The same author wrote the paragraphs on either side of it, shown here.
+
+PARAGRAPH BEFORE: The Trust entered the year with reserves of £1.2 million, equivalent to five months of operating costs. The trustees consider this level prudent and do not propose to alter the reserves policy.
+
+PARAGRAPH AFTER: The trustees will review the position at the September meeting, when the audited figures for the first half are available.
+
+---
+
+TEXT TO REWRITE:
+In today's challenging funding landscape, it is important to note that our grant income experienced a notable decline, falling from £860,000 to £710,000. This was primarily driven by the conclusion of a three-year grant from the Halden Foundation, which was not renewed. On a more positive note, we are thrilled to report that individual donations surged by 22%, showcasing the incredible generosity of our supporters! Nevertheless, this growth was not sufficient to fully offset the shortfall, and a deficit of £64,000 was recorded for the year.

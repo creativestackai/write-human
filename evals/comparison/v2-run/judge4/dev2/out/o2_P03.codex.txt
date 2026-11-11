@@ -1,0 +1,44 @@
+{
+  "human_quality_rank": ["C", "A", "D", "B"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, natural API documentation that preserves the source's content and recommendation strength."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rate limiting serves to ensure fair usage and maintain optimal performance for all users."
+      ],
+      "register_ok": true,
+      "note": "Readable and concise, but 'stop at 32 seconds' is less precise than capping the delay."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The recommendation to implement exponential backoff is explicitly strong."
+      ],
+      "register_ok": true,
+      "note": "The most fluent and balanced version, with a small reduction in recommendation strength."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The limit guarantees that one busy client cannot crowd out everyone else.",
+        "Caching responses makes clients hit the rate limit less often."
+      ],
+      "dropped_facts": [
+        "Rate limiting serves to maintain optimal performance for all users."
+      ],
+      "register_ok": true,
+      "note": "Direct and personable, but it adds operational assurances that the source does not establish."
+    }
+  }
+}

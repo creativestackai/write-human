@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["E", "D", "A", "B", "C"],
+  "fidelity_rank": ["A", "B", "C", "D", "E"],
+  "overall_winner": "E",
+  "texts": {
+    "A": {
+      "p_ai": 2,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Unchanged from the source text, retaining an authentic spoken voice with a minor comma splice."
+    },
+    "B": {
+      "p_ai": 2,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Unchanged from the source text, retaining an authentic spoken voice with a minor comma splice."
+    },
+    "C": {
+      "p_ai": 2,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Unchanged from the source text, retaining an authentic spoken voice with a minor comma splice."
+    },
+    "D": {
+      "p_ai": 2,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves the authentic original voice while cleanly fixing the final comma splice."
+    },
+    "E": {
+      "p_ai": 4,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Lively and natural rewrite that enhances comedic timing and narrative flow without altering facts."
+    }
+  }
+}

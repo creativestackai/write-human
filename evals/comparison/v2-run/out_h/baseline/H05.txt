@@ -1,0 +1,5 @@
+Probably yes, with one catch.
+
+QA finished their pass yesterday and found two bugs. One is a small alignment glitch on mobile Safari. It's cosmetic, so I'd ship with it. The other one matters: the annual plan rounds INR prices wrong, so someone in India sees 41,988 where it should say 41,990. I don't want a wrong price live on the page, so that has to be fixed first.
+
+The fix is written. It needs review and a merge by Thursday afternoon, then QA re-checks it. If both happen, Friday is fine. If either slips, I'd push to Monday morning, which still beats the webinar.

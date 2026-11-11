@@ -1,0 +1,47 @@
+{
+  "human_quality_rank": ["C", "B", "A", "D"],
+  "fidelity_rank": ["B", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The currency field can be null for accounts created before 2021",
+        "The export silently defaults null currency values to USD",
+        "The invoice export reads the currency field from the customer record"
+      ],
+      "register_ok": true,
+      "note": "Concise and pragmatic in tone, but omits the technical explanation of how and why the bug occurs."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear bottom-line-up-front engineering response that preserves every source fact without inventing any details."
+    },
+    "C": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "Offering to write the ticket today",
+        "The claim that the table migration needs its own review"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Captures a very natural, collaborative developer voice while preserving core facts, but invents an offer to file the ticket today."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "The rationale that nobody from other teams would look at a schema change in an invoice export PR",
+        "Promising to open the backfill ticket today",
+        "Offering to block the PR until the migration lands if the reviewer prefers",
+        "The assertion that other services need a say first"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Distinctly human and conversational, but introduces substantial unsupported rationale, team politics, and conditional offers."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["C", "B", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Hiring constraint of 'within forty minutes of the office'",
+        "Specific isolation claim that 'people go days without talking to anyone'",
+        "Timeframe that company culture 'took years to build'",
+        "Claim that 'Plenty of offices run on distrust, and plenty of remote teams run beautifully'",
+        "Specific communication habits: 'writing things down, answering people promptly, and picking up the phone when a thread is getting tense'"
+      ],
+      "dropped_facts": [
+        "Opening context that remote work is a transformative force reshaping organizations in an evolving digital landscape",
+        "Outcome of unlocking the full potential of distributed teams and thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Reads with a distinct and engaging human voice, but introduces first-person opinion and several invented specifics."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Opening context that remote work is a transformative force reshaping organizations in an evolving digital landscape",
+        "Outcome of unlocking the full potential of distributed teams and thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Strikes the best balance between natural, plain-spoken human phrasing and strict factual fidelity to the source."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Opening context regarding the 'rapidly evolving digital landscape'",
+        "Outcome of unlocking the full potential of distributed teams and thriving in the future of work (condensed to 'can do well')"
+      ],
+      "register_ok": true,
+      "note": "Highest fidelity to the original text, but retains a rigid structure and corporate phrasing that still feels AI-generated."
+    },
+    "D": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Meta-argument that most debates go wrong by only focusing on one half",
+        "Specific benefits of working when sharpest and regaining a commute",
+        "Specific geographic quantity of hiring someone 'eleven time zones away'",
+        "Specific anecdotes of messages sitting for a day and going a week talking only to people on screens",
+        "Specific cultural anecdote about hallway chats revealing true feelings on a project",
+        "Specific tooling comparison asserting a shared doc will outwork a dozen apps"
+      ],
+      "dropped_facts": [
+        "Opening context that remote work is a transformative force reshaping organizations in an evolving digital landscape",
+        "Outcome of unlocking the full potential of distributed teams and thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Vivid, compelling essayistic writing, but heavily compromises fidelity by inventing numerous concrete scenarios and details."
+    }
+  }
+}

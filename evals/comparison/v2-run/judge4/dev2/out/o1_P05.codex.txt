@@ -1,0 +1,73 @@
+{
+  "human_quality_rank": ["D", "B", "A", "C"],
+  "fidelity_rank": ["A", "C", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer is excited to share the news.",
+        "The journey involved personal growth and invaluable lessons.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural, and restrained, with the strongest fidelity despite its shortened ending."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The writer sat in the shop after closing while questioning the decision.",
+        "The writer almost did not offer the subscription.",
+        "The numbers stopped bleeding for the first time, implying losses ceased rather than merely revenue stabilizing.",
+        "Customers wanted the same loaf every week without having to think about it.",
+        "The writer had been too busy selling customers everything else to notice their preferences.",
+        "The writer would have started earlier."
+      ],
+      "dropped_facts": [
+        "The writer is excited to share the news.",
+        "The journey involved personal growth and invaluable lessons.",
+        "The explicit outcome that revenue stabilized.",
+        "The stated lesson that resilience, adaptability, and listening to customers are the keys to success.",
+        "The advice that the best time to start is now, replaced with uncertainty about timing."
+      ],
+      "register_ok": true,
+      "note": "A convincing personal voice, but much of its specificity and reflection is invented."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Customers had been telling the writer what they wanted before the writer caught on."
+      ],
+      "dropped_facts": [
+        "The writer is excited to share the news.",
+        "The journey involved personal growth and invaluable lessons.",
+        "Resilience and adaptability as keys to success.",
+        "The advice that the best time to start is now, softened to not waiting too long.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Readable but somewhat generic, with an unsupported explanation of the customer-listening lesson."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "The writer stood in the shop while questioning the decision.",
+        "The weekly numbers stopped going the wrong way, implying an end to losses rather than merely stabilized revenue.",
+        "Customers liked knowing their bread was sorted.",
+        "The writer would have slept better during the first three months if the subscription had been introduced sooner."
+      ],
+      "dropped_facts": [
+        "The writer is excited to share the news.",
+        "The journey involved personal growth and invaluable lessons.",
+        "The explicit outcome that revenue stabilized.",
+        "The stated lesson that resilience, adaptability, and listening to customers are the keys to success.",
+        "The advice that the best time to start is now, replaced with uncertainty about timing.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The most natural match for the sample’s conversational voice, but its added details weaken fidelity."
+    }
+  }
+}

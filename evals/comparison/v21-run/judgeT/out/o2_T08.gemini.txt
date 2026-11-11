@@ -1,0 +1,33 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Trims marketing hype effectively but has slightly choppy rhythm and uses the awkward phrasing 'a dark mode'."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Reads like a concise, professional release note written naturally by a human product lead."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Weakens the urgency of the migration recommendation from 'as soon as possible' to 'before then'."
+      ],
+      "register_ok": true,
+      "note": "Smooth and readable, though it alters the urgency of the migration deadline."
+    }
+  }
+}

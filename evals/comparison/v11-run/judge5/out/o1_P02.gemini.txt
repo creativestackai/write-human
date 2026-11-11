@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["D", "B", "E", "C", "A"],
+  "fidelity_rank": ["B", "C", "A", "E", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": ["worldwide reach of the 2,300 teams", "transforming how you get paid / taking control of finances"],
+      "register_ok": true,
+      "note": "Accurate and concise, but reads like a flat, formulaic AI summarization."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads naturally like polished human copywriting while preserving every factual claim from the source."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": ["proven track record qualifier on the 40% reduction metric"],
+      "register_ok": true,
+      "note": "Accurate to the source, but the abrupt sentence transitions feel slightly disjointed."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "spending evenings on invoices",
+        "agencies outgrowing spreadsheets",
+        "specific errors like typos and wrong totals",
+        "seeing what is paid without asking anyone",
+        "protecting clients' billing details specifically"
+      ],
+      "dropped_facts": ["worldwide scope of the teams"],
+      "register_ok": true,
+      "note": "Possesses a distinctive, engaging human voice, but invents multiple concrete scenarios and details unsupported by the source."
+    },
+    "E": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "step-by-step workflow of creating, sending, and watching for payment",
+        "retyping numbers into spreadsheets",
+        "attributing the 40% time savings specifically across automation and real-time reporting",
+        "not having to wait for month-end"
+      ],
+      "dropped_facts": ["solo freelancer distinction"],
+      "register_ok": true,
+      "note": "Conversational and relatable, but hallucinates specific workflow steps and causal explanations."
+    }
+  }
+}

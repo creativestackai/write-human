@@ -1,0 +1,61 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Syntax is the easy part and can be looked up in ten seconds.",
+        "Learning to decompose problems takes longer than learning syntax.",
+        "The narrator personally understands the appeal of memorizing commands.",
+        "Flashcards and cheat sheets feel like progress.",
+        "Memorizing commands leads to recognizing a for loop without knowing when to use it and getting stuck when a problem differs from a tutorial.",
+        "Bugs account for most learning, and the gap between assumed and actual program behavior constitutes most of what there is to learn.",
+        "The automation example involves a chore the reader is tired of doing by hand.",
+        "Successful developers struggle constantly and do not treat struggle as a verdict on themselves."
+      ],
+      "dropped_facts": [
+        "Analyzing data is one of the programming applications.",
+        "Learning to code is rewarding as well as challenging.",
+        "Learning requires patience and practice.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "Lively and concrete, but its sweeping claims and added examples substantially expand the source."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The endpoint of progress is mastery, softened here to being good at coding."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural advice that preserves nearly all the source without manufacturing a personal voice."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "The narrator initially expected remembering syntax to be the hardest part of coding.",
+        "The narrator found decomposing problems to be the hardest part.",
+        "Syntax can be looked up in ten seconds, whereas thinking cannot be looked up.",
+        "The narrator wasted substantial early time memorizing commands, and almost none of that memorization stuck.",
+        "The narrator retained concepts about loops and function inputs, after which commands came naturally.",
+        "The data example is limited to a spreadsheet's worth of data.",
+        "The narrator admires particular developers who still get stuck all the time and do not take it personally.",
+        "A bug mostly means the programmer's mental model is wrong.",
+        "The late-night reference introduces an unsupported 11pm setting.",
+        "A third failed attempt teaches more than a first clean run."
+      ],
+      "dropped_facts": [
+        "Many beginners make the mistake of memorizing commands; the rewrite substitutes one narrator's experience.",
+        "The learning journey is rewarding as well as challenging.",
+        "Learning requires patience and practice.",
+        "The developers described are the most successful, rather than simply those the narrator admires.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "Readable and conversational, but the invented memoir and repeated punch lines make the voice feel staged."
+    }
+  }
+}

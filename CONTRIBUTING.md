@@ -42,6 +42,20 @@ the eval before opening the PR and report the score. The goal is to catch
 near-misses like "make this more formal" or "translate this" without losing the
 real humanize triggers.
 
+## Running the checker tests
+
+`scripts/check.py` has unit tests in `tests/`. Standard library only:
+
+```bash
+python3 -m unittest discover -s tests
+```
+
+If you change a regex or a threshold, add a test with a real sentence that shows why.
+
+## Testing a change to the instructions
+
+Instructions that sound right have made this skill worse before: one merged draft kept every fact and read more machine-made than no skill at all. `evals/comparison/REPORT.md` describes the blind comparison used to catch that (same generator model, judges from other model families, a holdout set written before the change is run). If you change what `SKILL.md` tells the model to do, say in the PR how you tested it, and prefer one change at a time.
+
 ## Style
 
 This is a humanizer skill. Its own prose should pass its own test. Keep the docs

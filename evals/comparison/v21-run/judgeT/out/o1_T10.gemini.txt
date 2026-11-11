@@ -1,0 +1,31 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 4,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Identical to the source text with a highly authentic, natural conversational human voice and perfect fidelity."
+    },
+    "B": {
+      "p_ai": 4,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Identical to the source text with a highly authentic, natural conversational human voice and perfect fidelity."
+    },
+    "C": {
+      "p_ai": 4,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Identical to the source text with a highly authentic, natural conversational human voice and perfect fidelity."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "claim of pivotal role in European supply chains",
+        "market leadership and expert praise claims"
+      ],
+      "register_ok": true,
+      "note": "Crisp, polished, and professional rewrite that strips PR puffery while maintaining full factual accuracy."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "country location (Netherlands)",
+        "claim of pivotal role in European supply chains",
+        "market leadership and expert praise claims"
+      ],
+      "register_ok": true,
+      "note": "Features natural timeline synthesis and a distinct voice, but uses slightly clumsy, overly casual phrasing and drops the country."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "country location (Netherlands)",
+        "claim of pivotal role in European supply chains",
+        "market leadership and expert praise claims"
+      ],
+      "register_ok": true,
+      "note": "Flawed by awkward phrasing regarding the port location and imprecise verb selections."
+    }
+  }
+}

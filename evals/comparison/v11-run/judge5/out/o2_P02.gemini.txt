@@ -1,0 +1,80 @@
+{
+  "human_quality_rank": ["A", "B", "D", "C", "E"],
+  "fidelity_rank": ["C", "D", "E", "A", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Retyping numbers into a spreadsheet afterward",
+        "Reporting that updates as money comes in without waiting for month-end"
+      ],
+      "dropped_facts": [
+        "Explicit claim of eliminating manual errors (partially implied via spreadsheet retyping)",
+        "Take control of finances",
+        "Unlock new levels of productivity",
+        "Best-in-class security (softened to 'Your data is kept secure, too')"
+      ],
+      "register_ok": true,
+      "note": "Flows with natural human cadence, warmth, and clarity, though it introduces specific spreadsheet and month-end scenarios."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Spending evenings on invoicing",
+        "Agencies outgrowing spreadsheets",
+        "Fewer typos and wrong totals going out under your name",
+        "Checking reports without asking anyone",
+        "Clients' billing details sitting behind security",
+        "Editorial assertion that the 40% reduction is the only number you need to read"
+      ],
+      "dropped_facts": [
+        "Worldwide scope of teams",
+        "Take control of finances",
+        "Streamline workflow",
+        "Unlock new levels of productivity"
+      ],
+      "register_ok": true,
+      "note": "Exhibits a distinct and punchy human voice, but invents several narrative scenarios and details unsupported by the source."
+    },
+    "C": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "All-in-one platform",
+        "Empowers teams to take control of finances",
+        "Streamline workflow",
+        "Unlock new levels of productivity",
+        "Game-changer status"
+      ],
+      "register_ok": true,
+      "note": "Maintains high fidelity and conciseness, but choppy phrasing and abrupt transitions sound distinctly mechanical."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "All-in-one platform",
+        "Take control of finances",
+        "Unlock new levels of productivity",
+        "Game-changer status"
+      ],
+      "register_ok": true,
+      "note": "Clean, competent rewrite with strong fidelity, though its clause-by-clause substitution structure still bears the hallmarks of an AI polish."
+    },
+    "E": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Worldwide scope of teams",
+        "Call-to-action question about transforming how you get paid",
+        "All-in-one platform",
+        "Take control of finances",
+        "Streamline workflow",
+        "Unlock new levels of productivity"
+      ],
+      "register_ok": true,
+      "note": "Reads like a generic, flat AI paraphrase that strips away voice while dropping the worldwide context."
+    }
+  }
+}

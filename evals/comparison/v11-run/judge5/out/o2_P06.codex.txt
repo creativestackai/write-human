@@ -1,0 +1,63 @@
+{
+  "human_quality_rank": ["E", "C", "B", "A", "D"],
+  "fidelity_rank": ["E", "D", "B", "C", "A"],
+  "overall_winner": "E",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021, whereas the source says it can be null.",
+        "Says Marcus already left the backfill out, rather than presenting that as his recommendation.",
+        "Claims nobody from the other service teams will review this PR.",
+        "Commits to opening the backfill ticket today.",
+        "Adds that the other services need a say before proceeding."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Distinctive and conversational, but the added defensiveness and commitments change Marcus's position."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Explicitly equates the 212 affected staging accounts with roughly 4% of European accounts; the source does not establish that equivalence."
+      ],
+      "dropped_facts": [
+        "The invoice export job reads currency from the customer record.",
+        "Currency can be null for accounts created before 2021.",
+        "Null currency silently defaults to USD.",
+        "The resulting error is incorrect export totals."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, but compresses away the bug mechanism and conflates the scope figures."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021, whereas the source says it can be null.",
+        "Adds that the change needs its own review.",
+        "Offers to write the ticket today if Priya agrees."
+      ],
+      "dropped_facts": [
+        "The customers table is shared across several services; the rewrite retains sharing but omits the quantity."
+      ],
+      "register_ok": true,
+      "note": "Sounds like a natural engineering reply, although it adds a review requirement and a timed offer."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The invoice export job reads currency from the customer record."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, but the overloaded 'For scale' sentence awkwardly bundles mechanism and impact."
+    },
+    "E": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A clear, natural PR reply that preserves the substantive facts and recommendation."
+    }
+  }
+}

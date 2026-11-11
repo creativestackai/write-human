@@ -1,0 +1,61 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["B", "A", "D", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The invitation to contact Customer Care with further questions or concerns.",
+        "Thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "Clear and credible, although it removes the offer of further assistance."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "Thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "Natural, professional customer service writing that preserves the substantive explanation and support invitation."
+    },
+    "C": {
+      "p_ai": 22,
+      "unsupported_specifics": [
+        "The original payment method was a card.",
+        "Daniel personally processed the refund.",
+        "The package has arrived, albeit late.",
+        "The issue has been passed to the warehouse team for examination.",
+        "Daniel promises to resolve any problem reported after the refund arrives."
+      ],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to prevent the problem from happening again.",
+        "The unrestricted invitation to raise further questions or concerns, replaced by an invitation concerning problems after the refund arrives.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Conversational and readable, but it invents operational details and narrows the support invitation."
+    },
+    "D": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "Daniel personally processed the refund.",
+        "Daniel promises to resolve a missing refund or any other reported problem."
+      ],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to prevent the problem from happening again.",
+        "The unrestricted invitation to raise further questions or concerns, replaced by an invitation focused on a missing refund or something looking wrong.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Mostly natural and direct, though 'it lost time from there' is vague and awkward."
+    }
+  }
+}

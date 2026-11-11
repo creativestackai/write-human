@@ -1,0 +1,43 @@
+{
+  "human_quality_rank": ["C", "B", "D", "A"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Accurate and preserves all source details, but retains a stiff, mechanical sentence structure."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Rate limiting ensures fair usage and maintains optimal performance for all users"
+      ],
+      "register_ok": true,
+      "note": "Punchy and direct developer tone, but drops the explanation of why rate limiting is implemented."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clean, idiomatic technical writing that preserves all facts while reading completely naturally."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Warning against retrying in a tight loop",
+        "Claim that caching causes the client to hit the limit less often",
+        "Framing of fair usage as preventing one busy client from crowding out others"
+      ],
+      "dropped_facts": [
+        "Explicit mention of maintaining optimal performance for all users"
+      ],
+      "register_ok": true,
+      "note": "Lively and conversational, but invents gratuitous advice and specifics not grounded in the source."
+    }
+  }
+}

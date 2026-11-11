@@ -1,0 +1,59 @@
+{
+  "human_quality_rank": [
+    "B",
+    "A",
+    "D",
+    "C"
+  ],
+  "fidelity_rank": [
+    "A",
+    "D",
+    "B",
+    "C"
+  ],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Disciplined, clear formal prose that preserves all source facts without inventing details or sounding artificial."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "objective sleep data is the obvious next step"
+      ],
+      "dropped_facts": [
+        "underscoring the pivotal role of sleep in academic success"
+      ],
+      "register_ok": true,
+      "note": "Carries an authentic researcher voice, but invents a specific future research direction and omits sleep's pivotal role."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "The other group got nothing",
+        "specifying screen-time reduction as putting screens away at night",
+        "holding self-reported findings more loosely",
+        "asserting one study cannot settle it and needs replication with longer follow-up"
+      ],
+      "dropped_facts": [
+        "underscoring the pivotal role of sleep in academic success"
+      ],
+      "register_ok": false,
+      "note": "Adopts an inappropriately casual tone while inventing multiple assumptions and methodological caveats absent from the source."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "underscoring the pivotal role of sleep in academic success",
+        "paving the way for future research in this critical area"
+      ],
+      "register_ok": true,
+      "note": "Clean active-voice rewrite, but follows a mechanical formula and drops the concluding implications."
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["A", "D", "C", "B"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Adds looking up a word and checking a date as specific examples of phone use."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Natural and clear, with a plausible personal voice and minor illustrative additions."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "States that a ban does help concentration, whereas the source presents that benefit as an initial appearance."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Direct and readable, but its categorical claim about concentration overstates the source."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear and faithful, though its transitions retain a slightly formulaic essay rhythm."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Specifies that the phone is sitting in a teenager's pocket.",
+        "Restricts teacher permission to tasks that need a phone, rather than allowing permission for specific tasks generally."
+      ],
+      "dropped_facts": [
+        "Does not explicitly retain the claim that removing phones eliminates temptation.",
+        "Omits the qualification that teenagers struggle to resist phones on their own.",
+        "Does not explicitly identify total freedom as the other rejected extreme."
+      ],
+      "register_ok": true,
+      "note": "Conversational and compact, but compression loses qualifications and narrows the proposed exception."
+    }
+  }
+}

@@ -1,0 +1,45 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+CONTEXT (background, not part of the text):
+Thread context. Dana (head of product) asked in the team channel: 'Can we ship the new pricing page on Friday? Marketing wants it live before the Monday webinar.' Sam (the engineer) is replying. Dana already knows what the pricing page is and why it matters.
+
+SOURCE TEXT:
+Thanks for checking in, Dana! I wanted to provide a thorough update on the current status of the pricing page. QA completed their testing pass yesterday and identified two bugs. The first is a minor alignment issue on mobile Safari, which is cosmetic and can ship as is. The second, however, is a more serious problem: the INR prices are being rounded incorrectly on the annual plan, so a customer in India would see 41,988 instead of 41,990. Because pricing accuracy is critical, I do not believe we should ship with this issue. I have a fix ready, and it should be reviewed and merged by Thursday afternoon. Given this, my recommendation would be to ship on Friday as planned, provided the fix is merged and QA re-verifies it on Thursday. If anything slips, we could move to Monday morning before the webinar. I hope this clarifies things, and please let me know if you have any further questions!
+
+=== REWRITE A ===
+Friday works if the fix merges and QA re-verifies it on Thursday. I have the fix ready and expect review and merge by Thursday afternoon.
+
+QA found two bugs yesterday. One is a small alignment problem on mobile Safari, which is cosmetic, so it can ship as is. The other is the one I won't ship with: INR prices on the annual plan are rounded wrong, so someone in India would see 41,988 instead of 41,990.
+
+If anything slips, we go Monday morning, still ahead of the webinar.
+
+=== REWRITE B ===
+Short answer: yes, Friday still works, with one condition.
+
+QA finished their pass yesterday and found two bugs. One is a misaligned element on mobile Safari. It's cosmetic, so I'd ship with it. The other is the problem. INR prices on the annual plan are rounding wrong, so someone in India sees 41,988 where it should say 41,990. I'm not willing to put a wrong price on a pricing page, even by two rupees.
+
+The fix is written. It needs review and a merge, which I expect by Thursday afternoon. QA then has to re-check it on Thursday. If both happen, we ship Friday as planned. If either slips, we go Monday morning, which still lands before the webinar. I'll tell you Thursday evening which way it's going.
+
+=== REWRITE C ===
+Friday still works, as long as the INR fix is merged and QA re-verifies it on Thursday. The fix is ready and should be reviewed and merged by Thursday afternoon.
+
+QA finished their pass yesterday and found two bugs. One is a cosmetic alignment issue on mobile Safari, which can ship as is. The other is that INR prices on the annual plan are rounding wrong, so a customer in India would see 41,988 instead of 41,990. I don't think we should ship a pricing page with that, so it gets fixed first.
+
+If anything slips, we can go Monday morning, still before the webinar.
+
+=== REWRITE D ===
+Probably yes, with one catch.
+
+QA finished their pass yesterday and found two bugs. One is a small alignment glitch on mobile Safari. It's cosmetic, so I'd ship with it. The other one matters: the annual plan rounds INR prices wrong, so someone in India sees 41,988 where it should say 41,990. I don't want a wrong price live on the page, so that has to be fixed first.
+
+The fix is written. It needs review and a merge by Thursday afternoon, then QA re-checks it. If both happen, Friday is fine. If either slips, I'd push to Monday morning, which still beats the webinar.

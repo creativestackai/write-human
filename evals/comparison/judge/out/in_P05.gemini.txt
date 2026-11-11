@@ -1,0 +1,52 @@
+{
+  "human_quality_rank": ["C", "A", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Customers were telling the narrator what they wanted before he caught on"
+      ],
+      "dropped_facts": [
+        "Resilience and adaptability as keys to success",
+        "The closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "A natural, grounded rewrite that successfully strips the corporate tone while maintaining high fidelity to the source."
+    },
+    "B": {
+      "p_ai": 70,
+      "unsupported_specifics": [
+        "Sitting in the shop after closing",
+        "Almost not bothering with the subscription",
+        "Customers wanting the same loaf every week without having to think about it",
+        "Being too busy trying to sell everything else to notice",
+        "Claiming he would have started earlier"
+      ],
+      "dropped_facts": [
+        "Resilience and adaptability as keys to success",
+        "The explicit lesson that listening to customers is key to success",
+        "The assertion that the best time to start is now"
+      ],
+      "register_ok": true,
+      "note": "Reads like an AI performing emotional storytelling, inventing dramatic backstory and leaning into overwrought LinkedIn tropes."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Standing in the shop wondering what on earth he had done",
+        "Customers like knowing their bread is sorted",
+        "Sleeping better in the first three months if the subscription had been tried sooner",
+        "Claiming he cannot tell the reader when to take a leap"
+      ],
+      "dropped_facts": [
+        "Resilience, adaptability, and listening to customers as keys to success",
+        "The assertion that the best time to start is now",
+        "The closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Captures the writer's dry, informal persona and spreadsheet background brilliantly, but invents several narrative details and drops core lessons."
+    }
+  }
+}

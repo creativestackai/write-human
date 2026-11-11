@@ -1,0 +1,698 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 8b6454a..63d21b8 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -4,6 +4,47 @@ All notable changes to this skill are documented here. Format follows
+ [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
+ [semantic versioning](https://semver.org/).
+ 
++## [1.2.0] - 2026-10-24
++
++Voice recovery on top of the 1.1.0 fidelity patch. The fidelity rules are
++unchanged; nothing here allows adding facts.
++
++### Added
++- Pep-talk closers and engagement-bait questions as tells (`SKILL.md`
++  diagnosis and audit; new section 11 in `reference/ai-tells.md`).
++- "Work at paragraph level, not sentence by sentence" in the Structure layer.
++- Register rule for contractions and direct address, and a stronger
++  writing-sample standard (the rewrite must echo the sample's sentence
++  length, contractions, openings, and attitude).
++- Audit prompt now also asks whether the draft's skeleton was merely polished,
++  whether a pep-talk or engagement question survived, and whether the rewrite
++  sounds like the sample.
++
++## [1.1.0] - 2026-10-24
++
++A minimal fidelity patch. A controlled same-model comparison against
++blader/humanizer (`evals/comparison/REPORT.md`) found that v1 sounded human
++but invented about four small supporting details per rewrite, no better than
++using no skill. Voice and rhythm behaviour is unchanged.
++
++### Added
++- "Rule zero: keep what it says": every fact, number, scene, and experience
++  must come from the draft, a sample, or the user; no invented narrator;
++  ask or write the plainer sentence instead of inventing a detail.
++- Audit prompt "What did I add or drop?", checked claim by claim.
++- Optional **Flags** line in the output for details only the author can supply.
++- `NOTICE` crediting blader/humanizer and Wikipedia's "Signs of AI writing".
++
++### Changed
++- "Trade vague claims for specific detail" now allows specifics only when the
++  draft or user supplies them; "I" only where the draft is first person.
++- `reference/craft-levers.md`: "quantify the pain" and "testimonials" no longer
++  coach inventing numbers or quotes.
++- `reference/ai-tells.md`: removed "After" examples that invented sources,
++  dates, and quotes.
++- `examples/before-after.md`: rewritten so no example adds facts.
++- Compact example in `SKILL.md` no longer invents a speaker or a survey.
++
+ ## [1.0.2] - 2026-07-29
+ 
+ ### Changed
+diff --git a/NOTICE b/NOTICE
+new file mode 100644
+index 0000000..d175ff5
+--- /dev/null
++++ b/NOTICE
+@@ -0,0 +1,15 @@
++write-human
++Copyright 2026 Sarthhak Kaluucha
++Licensed under the Apache License, Version 2.0 (see LICENSE).
++
++Acknowledgements
++
++The fidelity rules added in 1.1.0 (keep every supported claim, invent nothing,
++audit for what was added or dropped) follow the approach of blader/humanizer
++(https://github.com/blader/humanizer, MIT License). The wording and examples
++in this repository are original to write-human; no text was copied from that
++repository.
++
++The pattern catalog is informed by Wikipedia's "Signs of AI writing"
++(https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by
++WikiProject AI Cleanup (CC BY-SA 4.0).
+diff --git a/README.md b/README.md
+index d4816ec..e69de29 100644
+--- a/README.md
++++ b/README.md
+@@ -1,94 +0,0 @@
+-# write-human
+-
+-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+-[![SKILL.md](https://img.shields.io/badge/format-SKILL.md-blue)](https://agentskills.io)
+-[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](CHANGELOG.md)
+-
+-A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. It strips the statistical and stylistic tells that AI detectors flag, puts the rhythm and voice back, and makes the writing better in the process.
+-
+-Most "humanizers" hand you a list of banned words and call it done. That barely works. Swap "delve" for "explore" and you still have flat, evenly paced, opinion-free text, which still flags as AI and now reads worse too. This skill is built on a different premise.
+-
+-## The idea
+-
+-AI detectors do not really measure "a machine wrote this." Research on base versus instruction-tuned models found detectors flag the *polish*: the politeness, the balance, the even rhythm, the hedging, the tidy parallel structure that models pick up from being trained to be helpful assistants. They score two things above all:
+-
+-- **Perplexity**, how predictable each word is. Models take the safe path every time.
+-- **Burstiness**, how much sentence length varies. Models cluster around an average; humans swing wildly.
+-
+-So the fix is not deleting forbidden words. It is rewriting so the text reads like a specific person continuing a thought: uneven rhythm, real opinions, concrete detail. That move raises both numbers the detectors care about, and it happens to be the same thing that makes writing engaging. Undetectable and good are the same target.
+-
+-## What's inside
+-
+-```
+-write-human/
+-├── SKILL.md                          the workflow and the core idea
+-├── reference/
+-│   ├── why-detectors-flag-text.md    how detection works, and why the fixes work
+-│   ├── ai-tells.md                   the full pattern catalog with before/after fixes
+-│   └── craft-levers.md               how to make the rewrite genuinely engaging
+-└── examples/
+-    └── before-after.md               full worked rewrites in three registers
+-```
+-
+-The skill runs a five-step loop: diagnose the tells, rewrite in three layers (lexicon, structure, rhythm), re-voice it with a real point of view, run an adversarial self-audit ("what still reads as AI? now fix that"), and read it aloud.
+-
+-## Install
+-
+-**Claude Code:** drop the `write-human/` folder into your skills directory (`~/.claude/skills/write-human/`), or package it and install:
+-
+-```bash
+-zip -r write-human.skill write-human
+-```
+-
+-Then double-click the `.skill` file, or point Claude Code at the folder.
+-
+-**Claude Desktop / Cowork:** install the packaged `write-human.skill` file from the app.
+-
+-The skill triggers on its own when you ask to humanize, de-slop, or fix the AI voice in a draft. You can also invoke it by name.
+-
+-**Other agents:** the skill is a plain `SKILL.md` plus reference files, so it works with any tool that reads the [agentskills.io](https://agentskills.io) format (Cursor, Copilot CLI, OpenHands, and others). Drop the folder into that tool's skills directory.
+-
+-## How to use it
+-
+-Give it a draft and ask:
+-
+-> Humanize this. It sounds like ChatGPT wrote it.
+-
+-> Rewrite this landing page copy so it doesn't read as AI.
+-
+-> My essay keeps getting falsely flagged by a detector. Fix the voice without changing my argument.
+-
+-You will get back a short diagnosis, a rewrite, an honest self-audit of what still reads synthetic, and a final version. Ask for "just the clean text" if you do not want the working.
+-
+-## What it does not do
+-
+-Read this part. It matters.
+-
+-This skill changes surface style, the things a statistical detector measures. It does **not** remove a hard cryptographic watermark like Google's SynthID, which is baked into generation itself and cannot be reliably edited out without wrecking the text. No tool can honestly promise a "0% AI" score, because detectors are probabilistic and every one scores the same text differently.
+-
+-The reason to use this is that AI detection is badly biased and gets real people in trouble. One Stanford study had seven detectors falsely flag 61% of TOEFL essays that humans actually wrote, because non-native English and tightly structured technical writing both look "too clean" to a scanner. Helping a real writer sound like themselves, so they are not falsely accused and so their work actually lands, is the point. Dressing up unread model output to pass it off where that is forbidden is not, and the skill will steer you away from that framing.
+-
+-## How this differs from a banned-word linter
+-
+-There are good tools that hand you an exhaustive tiered list of AI words, a
+-severity score, and a flag-only mode. The `avoid-ai-writing` skill is one. This
+-is not that, on purpose. A blacklist tells you which words to delete; it cannot
+-tell you that the real problem is even rhythm, no point of view, and three
+-sentences in a row at the same length. `write-human` is the method: voice,
+-burstiness, concrete detail, and an adversarial self-audit, with a short word
+-list as a convenience rather than the main event. The two pair well. Rewrite
+-here for voice, then run a linter as a final pass if you want one.
+-
+-## Feedback
+-
+-Found a case where the skill fires when it shouldn't, or a rewrite that still
+-reads synthetic? Open an issue. See [CONTRIBUTING.md](CONTRIBUTING.md) for how
+-trigger tuning and new patterns get proposed.
+-
+-## Credits
+-
+-Built from three sources: a deep research survey of the AI-detection and humanization literature (perplexity, burstiness, the base-model finding, watermarking, the false-positive studies), the pattern catalog in [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) maintained by WikiProject AI Cleanup, and a set of classic copywriting craft principles for the engagement layer.
+-
+-## License
+-
+-Apache License 2.0. See [LICENSE](LICENSE). Use it, fork it — attribution and the license notice carry over per the terms.
+diff --git a/SKILL.md b/SKILL.md
+index aa74def..0c7c351 100644
+--- a/SKILL.md
++++ b/SKILL.md
+@@ -1,6 +1,6 @@
+ ---
+ name: write-human
+-version: 1.0.2
++version: 1.2.0
+ description: >-
+   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
+   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
+@@ -30,6 +30,10 @@ allowed-tools:
+ 
+ You take a draft and rewrite it so it reads like a specific person actually wrote it. Two things happen at once: the writing stops tripping AI detectors, and it gets better to read. Those are the same job, which is the whole insight behind this skill.
+ 
++## Rule zero: keep what it says
++
++Everything below changes how the draft sounds. None of it may change what the draft says. Every fact, name, number, date, quote, example, anecdote, cause, outcome, and personal experience in your rewrite must come from the draft, a writing sample the user supplied, or the user. That includes the small stuff: a duration ("six years"), a count, a stand-in scene, a reason the draft never gave, a commitment ("I'll send it today"). When a sentence wants a detail you do not have, write the plainer sentence, or ask the user for the real one. Do not add a narrator: if the draft has no "I", the rewrite has none. Opinions and reactions are fine where the draft already leans that way; invented experiences and facts are never fine. Arithmetic from the draft is fine. Fiction is exempt, because invented detail is the task.
++
+ ## The one idea that makes this work
+ 
+ Most "humanizers" hand you a banned-word list and tell you to swap "delve" for "explore." That helps a little and misses the point. Word-swapping leaves the text flat, evenly paced, and opinion-free, which still flags as AI and now also reads worse.
+@@ -57,7 +61,7 @@ If what you actually want is an exhaustive banned-word lint, with severity tiers
+ 
+ Read the draft once, ideally aloud in your head. Name the tells you hear in three to six quick bullets before you touch anything. This keeps the rewrite targeted instead of a vague "make it better." If you are unsure what to look for, open `reference/ai-tells.md`, which catalogs every pattern with a fix.
+ 
+-The fastest tells to listen for: every sentence the same length, no opinion anywhere, lists of exactly three, "It's important to note," em dashes doing a comma's job, a sweeping "In today's world" opener, and a tidy summary conclusion that adds nothing.
++The fastest tells to listen for: every sentence the same length, no opinion anywhere, lists of exactly three, "It's important to note," em dashes doing a comma's job, a sweeping "In today's world" opener, and a tidy summary conclusion that adds nothing. On posts and motivational pieces also listen for the pep-talk closer ("don't be afraid to fail," "the best time to start is now," "every step brings you closer to mastery") and the engagement-bait question ("What's holding you back?", "What are you chasing?"). They make no claim, so cut them and end on the last concrete thing the draft says. Keep a real call to action the draft makes (a link, a sign-up, a deadline).
+ 
+ ### 2. Rewrite in three layers
+ 
+@@ -65,7 +69,7 @@ Do these together, not as separate passes, but it helps to know which lever you
+ 
+ **Lexicon.** Replace the high-frequency AI vocabulary with plainer, context-specific words. Not mechanically, in context. "Delve into" becomes "dig into" or just "look at." "Underscores the importance of" becomes "shows" or "matters because." Kill transition padding outright: "It's worth noting that," "Furthermore," "Moreover," "Additionally." If a point is worth making, make it. The full tables with replacements live in `reference/ai-tells.md`.
+ 
+-**Structure.** Break the formulas. Reduce a rule-of-three list to two items or stretch it to an uneven four. Rewrite negative parallelisms ("it's not just X, it's Y") into direct statements. Put back the plain verbs the model avoided: "serves as a testament to" becomes "is." Delete synonym cycling (the protagonist, the main character, the central figure, the hero, all for one person) and use a pronoun. Fix the formatting tells: em dashes, mechanical boldface, emoji bullets, curly quotes, Title Case In Headings.
++**Structure.** Work at paragraph level, not sentence by sentence: decide the one point each paragraph makes, say it first, and rewrite around it, merging, splitting, or reordering as a writer would. A rewrite that keeps the draft's skeleton and polishes each sentence on top still reads as machine-made. Break the formulas. Reduce a rule-of-three list to two items or stretch it to an uneven four. Rewrite negative parallelisms ("it's not just X, it's Y") into direct statements. Put back the plain verbs the model avoided: "serves as a testament to" becomes "is." Delete synonym cycling (the protagonist, the main character, the central figure, the hero, all for one person) and use a pronoun. Fix the formatting tells: em dashes, mechanical boldface, emoji bullets, curly quotes, Title Case In Headings.
+ 
+ **Rhythm.** This is the burstiness lever and it is underused. Make sure no three consecutive sentences share the same length or cadence. Cut one sentence to a fragment. Fuse two into a long one with a subordinate clause. Vary paragraph length too: same-length paragraphs scream AI. Read it back. If the meter is even and marching, break it.
+ 
+@@ -73,7 +77,7 @@ Do these together, not as separate passes, but it helps to know which lever you
+ 
+ A draft can be technically clean and still obviously synthetic because there is no person in it. This step adds the person.
+ 
+-React, don't just report. "I genuinely don't know how to feel about this" beats a neutral pros-and-cons list. Admit mixed feelings and uncertainty, which models are trained out of. Use "I" where it fits, because first person is honest, not unprofessional. Trade vague claims for specific detail: a named example, a real number, an anecdote. Delete the cliché opener and write a real one (a direct challenge, a concrete result, a confession, a small scene). Delete the summary conclusion; end on the sharpest concrete thing you have.
++In conversational registers, use contractions and speak to the reader directly; in formal registers, do neither. If the user supplied a writing sample, it is the standard: the rewrite should visibly echo its sentence length, contractions, openings, and attitude (a blunt, self-deprecating sample means a blunt, self-deprecating rewrite, with the draft's facts unchanged). React, don't just report. "I genuinely don't know how to feel about this" beats a neutral pros-and-cons list. Admit mixed feelings and uncertainty, which models are trained out of. Use "I" where the draft is already in first person, because first person is honest, not unprofessional; never add an "I" with experiences the author did not give you. Trade vague claims for plainer wording, and for specific detail (a named example, a real number, an anecdote) only when the draft or the user supplies it. If a real detail would clearly help and you do not have it, ask for it or note it at the end. Delete the cliché opener and write a real one (a direct challenge, a concrete result, a confession, a small scene). Delete the summary conclusion; end on the sharpest concrete thing the draft contains.
+ 
+ For the craft of making the rewrite genuinely engaging (headlines, openings, quantifying the pain, the "so what" chain, open loops, testimonials), pull `reference/craft-levers.md`. These turn a de-AI'd draft into one that actually pulls the reader forward.
+ 
+@@ -81,12 +85,13 @@ For the craft of making the rewrite genuinely engaging (headlines, openings, qua
+ 
+ ### 4. Adversarial self-audit
+ 
+-This catches the tells you missed. After your rewrite, run two prompts on yourself:
++This catches the tells you missed, and the facts you changed. After your rewrite, run three prompts on yourself:
+ 
+-1. "What still makes this read as AI-generated?" Answer honestly in a few bullets. There is almost always something: rhythm a touch too tidy, a contrast that is too clean, a closer that went slogan-y, placeholder-sounding specifics.
+-2. "Now fix exactly those." Revise and present the result.
++1. "What still makes this read as AI-generated?" Answer honestly in a few bullets. There is almost always something: rhythm a touch too tidy, a contrast that is too clean, a closer that went slogan-y, placeholder-sounding specifics. Also ask: did I keep the draft's skeleton and only polish its sentences? Does it still end on a pep-talk or an engagement question? Does it sound like the writer's sample, if one was given?
++2. "What did I add or drop?" Go claim by claim against the draft: every number, name, date, quote, example, experience, cause, and commitment. Anything you added that has no source in the draft, the sample, or the user: delete it or replace it with the plain version. Anything you dropped: restore it, unless it was padding or empty significance.
++3. "Now fix exactly those." Revise and present the result.
+ 
+-This two-step is the single highest-value habit in the skill. Do not skip it.
++This is the single highest-value habit in the skill. Do not skip it.
+ 
+ ### 5. Read it aloud
+ 
+@@ -100,7 +105,8 @@ Unless the user asks for just the final text, present:
+ 2. **Rewrite**: the humanized draft.
+ 3. **Self-audit**: "What still reads as AI?" answered in a few honest bullets.
+ 4. **Final**: the revised version after the audit.
+-5. **(Optional)** a short list of the main changes, only if it helps the user learn the pattern.
++5. **Flags** (only if there is something to say): details that only the author can supply and that would strengthen the piece ("the draft names no example; a real one would help here"), and any claim you cut as unsupported. Never fill the gap yourself.
++6. **(Optional)** a short list of the main changes, only if it helps the user learn the pattern.
+ 
+ If the user asks for "just the text," "only the rewrite," or "skip the working," give them the final version alone and offer the diagnosis if they want it. Still run the self-audit pass internally, even when you do not show it; it is what makes the final draft better than the first rewrite.
+ 
+@@ -127,6 +133,10 @@ Read these as needed; they are not all loaded up front.
+ **Diagnosis:** sweeping "today's landscape" opener, AI lexicon ("leveraging," "pivotal," "streamline," "foster," "enhancing"), negative parallelism ("not only X but also Y"), transition padding ("It's important to note"), even rhythm, zero voice or specifics.
+ 
+ **After:**
+-> Most teams I talk to bought an AI tool last year and still can't tell you what it changed. The ones who can usually point to something small and concrete: a support team that stopped writing the same three replies forty times a day. That is the whole game. Not "innovation," just fewer hours lost to work nobody wanted to do.
++> More businesses are using AI tools to speed up routine work and get more done across teams.
++
++Shorter, plainer, no buzzwords, no sweeping opener, and nothing the draft did not say.
++
++**Flags:** the draft names no tool, team, or result. One real example from the author (what changed, and by how much) would do more than any rewording. I have not made one up.
+ 
+-Shorter and longer sentences mixed, a real opinion, a specific scene, the buzzwords gone, and a person clearly behind it.
++**Not this:** "Most teams I talk to bought an AI tool last year and still can't say what it changed." That sounds human, and it invents a speaker, a survey, and a finding. It breaks rule zero.
+diff --git a/examples/before-after.md b/examples/before-after.md
+index 215132c..f1bb4a1 100644
+--- a/examples/before-after.md
++++ b/examples/before-after.md
+@@ -1,6 +1,8 @@
+ # Worked examples
+ 
+-Four full rewrites in different registers, each showing the whole loop: diagnosis, rewrite, the adversarial self-audit, and the final. The last one is the falsely-flagged non-native-English case the skill is really for. Study the self-audit step. It is what separates a real humanize pass from a word swap.
++Four rewrites in different registers. Every one obeys the rule that matters most: **the rewrite contains nothing the draft did not already say.** Notice what each "Flags" line does. Where a real detail from the author would improve the piece, the skill asks for it. It never makes one up.
++
++Each example shows the tells, the rewrite, and the audit (what still reads as AI, and what was added or dropped).
+ 
+ ---
+ 
+@@ -9,25 +11,19 @@ Four full rewrites in different registers, each showing the whole loop: diagnosi
+ **Before:**
+ > In today's fast-paced digital landscape, businesses are constantly seeking innovative solutions to streamline their operations. Our cutting-edge platform leverages the power of AI to foster collaboration, enhance productivity, and unlock new opportunities for growth. It's not just a tool, it's a partner in your journey. Whether you're a startup or an enterprise, our comprehensive suite of features empowers your team to achieve more. Experience the seamless integration that transforms how you work. The future of productivity is here.
+ 
+-**Diagnosis:**
+-- Sweeping opener ("In today's fast-paced digital landscape")
+-- Dense AI lexicon: streamline, cutting-edge, leverages, foster, enhance, unlock, comprehensive, seamless, empowers, transforms
+-- Negative parallelism ("not just a tool, it's a partner")
+-- Rule of three ("foster collaboration, enhance productivity, and unlock opportunities")
+-- Zero specifics, zero voice, no actual claim about what the product does
+-- Generic upbeat closer ("The future of productivity is here")
+-- Even rhythm throughout
++**Tells:** sweeping opener; AI lexicon (streamline, cutting-edge, leverages, foster, enhance, unlock, comprehensive, empowers, seamless); staged contrast ("not just a tool, it's a partner"); forced triad; generic send-off ("The future of productivity is here"); even rhythm; no concrete claim.
+ 
+ **Rewrite:**
+-> Most teams don't need another tool. They need to stop losing two hours a day to the same handful of repetitive tasks. That is the thing we actually fix. Connect your stack, and the busywork that used to eat your mornings (chasing approvals, copy-pasting between apps, re-typing the same updates) mostly just stops. Startups use it to skip hiring an ops person too early. Bigger teams use it to claw back the hours nobody admits they're losing. You will know it's working when your Monday doesn't start with forty minutes of admin.
++> Our platform uses AI to help teams work together and get more done. It suits startups and enterprises alike, and it fits in with the tools you already use. It won't change what your team does. It should make doing it quicker.
+ 
+-**What still reads as AI?**
+-- "claw back the hours nobody admits they're losing" is a touch slogan-y
+-- The rhythm is good but the middle sentence runs long and could use a break for contrast
+-- "Connect your stack" is slightly jargon-flat
++**Audit.**
++- *Still AI?* The last two sentences are a clean pair; "It should make doing it quicker" is a hedge I added. Dropping the pair.
++- *Added or dropped?* "It won't change what your team does" is **new** (the draft never said it). Removed. "Tools you already use" is supported by "seamless integration." "Quicker" restates "enhance productivity."
+ 
+ **Final:**
+-> Most teams don't need another tool. They need to stop losing two hours a day to the same repetitive junk. That's what we fix. You plug in the apps you already use, and the busywork that used to eat your mornings mostly stops: chasing approvals, copy-pasting between tabs, re-typing the same status update for the third time. Smaller teams use it to put off hiring an ops person. Bigger ones use it to recover hours they'd stopped noticing. You'll know it's working the first Monday you don't open your laptop to forty minutes of admin.
++> Our platform uses AI to help teams work together and get more done. It suits startups and enterprises alike, and it fits in with the tools you already use.
++
++**Flags:** The draft states no feature, result, or customer. A single real example (what the platform does, and what changed for someone) would do more than any rewording. I have not invented one.
+ 
+ ---
+ 
+@@ -36,87 +32,63 @@ Four full rewrites in different registers, each showing the whole loop: diagnosi
+ **Before:**
+ > Caching is a crucial component of modern application architecture. By leveraging a robust caching layer, developers can significantly enhance performance and reduce latency. It is important to note that caching serves as a vital mechanism for improving scalability. Furthermore, an effective caching strategy not only reduces database load but also improves the overall user experience, ensuring that applications remain responsive under heavy traffic.
+ 
+-**Diagnosis:**
+-- AI lexicon: crucial, leveraging, robust, enhance, vital, effective
+-- Copula avoidance ("caching serves as a vital mechanism") instead of plain "is"
+-- Transition padding ("It is important to note that," "Furthermore")
+-- Negative parallelism ("not only reduces load but also improves experience")
+-- Superficial "-ing" tail ("ensuring that applications remain responsive")
+-- No concrete detail: what kind of cache, how much latency, when it bites you
+-- Note: technical writing is also where humans get *falsely* flagged, so the goal here is to keep it precise but add the variance and concreteness that real engineers write with
++**Tells:** AI lexicon (crucial, leveraging, robust, enhance, vital); "serves as" for "is"; transition padding; staged contrast ("not only… but also"); "-ing" rider ("ensuring that…"); no numbers or concrete case.
+ 
+ **Rewrite:**
+-> A cache is just a copy of an answer you already computed, kept somewhere fast so you don't have to compute it again. The win is obvious when a query is expensive and the answer rarely changes: a product page that hits the database on every load might take 200ms, but serve it from Redis and you're looking at 2 to 5ms. The catch is that caches go stale. The hard part of caching was never adding the cache. It's deciding when to throw the old answer away.
++> A caching layer makes an application faster and cuts latency. It also takes load off the database, which helps the application scale and stay responsive under heavy traffic.
+ 
+-**What still reads as AI?**
+-- Mostly clean. "The win is obvious" is a small tic.
+-- Could use one more concrete failure mode to feel lived-in rather than explained
++**Audit.**
++- *Still AI?* Plain and neutral, which is right for documentation. The register is a developer explaining a thing, not a person performing.
++- *Added or dropped?* Every claim is in the draft: faster, lower latency, less database load, scalability, responsiveness under traffic. No latency figures were added. "User experience" was folded into "responsive."
+ 
+-**Final:**
+-> A cache is a copy of an answer you already computed, parked somewhere fast so you don't pay to compute it twice. It pays off when a query is expensive and the result rarely changes. A product page that hits the database on every load might take 200ms; served from Redis it's more like 2 to 5ms. Then the answer changes and your cache doesn't know, and now you're shipping a stale price to a customer. Adding the cache was never the hard part. Knowing when to throw the old copy away is the whole job, and it's where most of the bugs live.
++**Flags:** The draft gives no numbers or example workload. If you have real figures (before and after a cache), adding them would make this much more convincing. I left them out rather than guess.
+ 
+ ---
+ 
+-## Example 3: essay / reflective
++## Example 3: essay / opinion
+ 
+ **Before:**
+ > The rise of remote work has fundamentally transformed the modern workplace. This paradigm shift offers a multitude of benefits, including increased flexibility, improved work-life balance, and enhanced productivity. However, it is not without its challenges. Despite these challenges, remote work continues to thrive as organizations adapt to this evolving landscape. Ultimately, the future of work is hybrid, blending the best of both worlds to create a more dynamic and inclusive environment for all.
+ 
+-**Diagnosis:**
+-- AI lexicon: fundamentally transformed, paradigm shift, multitude, enhanced, evolving landscape, dynamic
+-- Rule of three ("flexibility, balance, and productivity")
+-- Formulaic "challenges" section ("not without its challenges. Despite these challenges...")
+-- Negative-parallelism-flavored closer ("best of both worlds")
+-- Generic upbeat conclusion that asserts a tidy resolution
+-- No first person, no real opinion, no specific experience
+-- Marching, even rhythm
++**Tells:** AI lexicon and inflation ("fundamentally transformed," "paradigm shift," "multitude," "evolving landscape"); forced triad of benefits; the stock "not without its challenges… Despite these challenges" section; "best of both worlds" closer; a tidy resolved conclusion; no point of view the reader can disagree with.
+ 
+ **Rewrite:**
+-> I've worked from home for six years and I still don't fully trust the productivity claims. Some of it is real: I get my best two hours of focus before anyone in a different timezone is awake, and no open-plan office ever gave me that. But "work-life balance" is doing a lot of lifting in those articles. When the office is the next room, the workday doesn't end so much as fade out around 9pm. The honest version is that remote work didn't fix anything. It traded one set of problems (commutes, interruptions, presenteeism) for another (isolation, blurred hours, the slow realization that you haven't spoken out loud all day). Which set you'd rather have is a real question, and I notice the people who answer it confidently usually only have experience with one.
++> Remote work has changed how many workplaces run. People get more flexibility, a better balance between work and the rest of life, and, according to this draft, more productivity. It has real costs too, and organizations are still working out how to handle them. My bet is that the answer is hybrid.
+ 
+-**What still reads as AI?**
+-- Genuinely strong now. The parenthetical lists are slightly tidy, bordering on a rule-of-three rhythm.
+-- The last sentence is a little aphoristic; fine here because it reads as the author's actual opinion rather than a manufactured insight
++**Audit.**
++- *Still AI?* "My bet is" gives a personal voice the draft doesn't have. The draft states that the future is hybrid as a flat claim; it has no narrator.
++- *Added or dropped?* "My bet" is a **new narrator**. Rule zero. "According to this draft" is an awkward leak. "Real costs" fine. "Best of both worlds" and "dynamic and inclusive" were cut as filler; the claim "hybrid" kept.
+ 
+-**Final:** (only a small trim to the parentheticals)
+-> I've worked from home for six years and I still don't fully trust the productivity claims. Some of it is real. I get my best two hours of focus before anyone east of me is awake, and no open-plan office ever gave me that. But "work-life balance" is doing a lot of lifting in those articles. When the office is the next room, the workday doesn't end. It just fades out somewhere around 9pm. The honest version is that remote work didn't fix anything; it swapped commutes and interruptions for isolation and hours that never quite close. Which trade you prefer is a real question. I notice the people who answer it fast usually only have experience with one side of it.
++**Final:**
++> Remote work has changed how many workplaces run. People get more flexibility, a better balance between work and the rest of life, and more productivity. It has costs too, and organizations are still adjusting. Where this ends up is hybrid work.
++
++**Flags:** There is no personal experience in the draft. If you have one (how remote work actually went for you, for how long), tell me and I will build the piece around it. The most convincing version of this essay has a person in it, and only you can supply that person.
+ 
+ ---
+ 
+-## Example 4: falsely-flagged non-native English (keep the argument, restore the writer)
++## Example 4: falsely flagged non-native English (keep the argument, restore the writer)
+ 
+-This is the case the skill exists for. The author wrote every word. The text gets flagged anyway, not because a machine wrote it, but because careful non-native English shares the same statistical profile as model output: short, even sentences, correct standard grammar, a narrow and safe vocabulary, visible scaffolding. The job here is different from the others. There are almost no buzzwords to strip. You restore variance, a real point of view, and one or two concretes the author actually has, while changing the argument by zero. You are not turning this person into a casual native blogger. You are letting their own voice through.
++This is the case the skill exists for. The author wrote every word. The text gets flagged anyway, not because a machine wrote it, but because careful non-native English shares the statistical profile of model output: short, even sentences, correct standard grammar, a narrow safe vocabulary, visible scaffolding. There are almost no buzzwords to strip. You restore variance and a clear voice and change the argument by zero. You are not turning the writer into a casual native blogger, and you are certainly not giving them a childhood in a city with a crowded bus.
+ 
+ **Before:**
+ > In this essay I will discuss the importance of public transportation in big cities. Public transportation has many advantages. It reduces traffic congestion. It also reduces air pollution. Moreover, it is cheaper than using private cars. Many people depend on buses and trains every day. The government should invest more money in this sector. In conclusion, public transportation is very important for the development of modern cities.
+ 
+-**Diagnosis:**
+-- Uniform short declarative sentences end to end: the lowest-burstiness possible, which is the single strongest flag
+-- Meta opener ("In this essay I will discuss") and scaffolded closer ("In conclusion")
+-- "Moreover" as connective padding
+-- Correct but narrow vocabulary; nothing a model would not also pick
+-- Generic claims with no specific the writer actually owns
+-- The cause is register, not authorship. The fix must keep every part of the argument (congestion, pollution, cost, invest more) and must not impose a chatty native-speaker voice the author never had
++**Tells:** uniform short declaratives (the lowest burstiness possible, and the strongest flag); a meta opener ("In this essay I will discuss") and a scaffolded closer ("In conclusion"); "Moreover"; no sentence longer than twelve words.
+ 
+ **Rewrite:**
+-> Public transport is the difference between a city that moves and one that seizes up. In the city where I grew up, the morning bus to the centre was full by the second stop, and even then it was faster than driving and far cheaper. That is the case I want to make. Buses and trains carry people for a fraction of the cost, they take cars off the road, and by midday you can see the difference in the air. More roads will not fix that. Only moving people in bulk will. If a government is serious about a modern city, this is where the money should go.
+-
+-**What still reads as AI?**
+-- "for a fraction of the cost, they take cars off the road, and by midday..." is edging back toward a tidy rule-of-three; break it
+-- Otherwise the argument is intact and the rhythm now varies, which is the whole point
++> Big cities need public transportation. It reduces traffic congestion and air pollution, and it costs less than driving a private car. Every day, many people depend on buses and trains to get around. That is why the government should invest more in this sector: modern cities cannot develop without it.
+ 
+-**Final:** (triad broken, register kept serious rather than casual)
+-> Public transport is the difference between a city that moves and one that seizes up. In the city where I grew up, the morning bus to the centre was full by the second stop. It was still faster than driving, and far cheaper. That is the case I want to make. Buses and trains carry people in bulk, for a fraction of what cars cost, and by midday the difference shows in the air over the city. More roads have never solved this anywhere. If a government is serious about a modern city, this is where the money goes.
++**Audit.**
++- *Still AI?* The rhythm now moves: a short claim, a longer sentence of benefits, a plain observation, a long closing sentence with a colon. Register stays considered and slightly formal, as the author wrote it.
++- *Added or dropped?* Congestion, pollution, cost versus private cars, daily dependence, government investment, development of modern cities: all present, in the original order. Nothing new. The meta opener and "In conclusion" are gone because they say nothing.
+ 
+-The argument did not change. Congestion, pollution, cost, and the call to invest are all still there, in the same order of priority. What changed is that the sentences now breathe, there is a concrete the writer plausibly lived (the bus full by the second stop), and a clear position carries it. The register stayed where the author put it: considered, a little formal, not pretending to be anyone else.
++**Flags:** The essay has no example from the writer's own life. If they have one (a commute, a city), adding it would make the essay theirs. I have not invented a scene.
+ 
+ ---
+ 
+ ## What to take from these
+ 
+-In all four, the lexical and formatting cleanup was the easy 20%. The work that made them read human was:
+-
+-1. **A person showing up.** First-person experience, an actual opinion, a willingness to say the popular claim is oversold.
+-2. **Specifics replacing abstractions.** 200ms versus 2ms. Six years. Forty minutes of Monday admin. Numbers and scenes, not adjectives.
+-3. **Rhythm that varies.** Short sentence. Then a long one that wanders. Then a fragment. Look at the shape, not just the words.
+-4. **The self-audit.** Every final draft is better than its first rewrite because the "what still reads as AI?" pass caught the leftover tidiness. Never skip it.
++1. **Fidelity first.** Each rewrite is a subset of its draft's claims in better words. If you can point to a claim that is not in the draft, delete it.
++2. **Ask instead of inventing.** The Flags line turns "this needs a real example" into a question for the author, which is where the human voice actually comes from.
++3. **Structure and rhythm are the work.** The lexical cleanup is the easy 20%. Breaking the staged contrasts, the closers, and the even rhythm is what makes it read human.
++4. **The audit asks what you added or dropped.** "What still reads as AI?" is not enough. Skipping "What did I add or drop?" is how a good-sounding rewrite becomes a different document.
+diff --git a/package.json b/package.json
+index 6bfb1d5..e69de29 100644
+--- a/package.json
++++ b/package.json
+@@ -1,24 +0,0 @@
+-{
+-  "name": "write-human",
+-  "version": "1.0.2",
+-  "description": "A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. Strips the tells AI detectors flag, restores voice and rhythm, and makes the writing better in the process.",
+-  "license": "Apache-2.0",
+-  "author": "Sarthhak Kaluucha",
+-  "keywords": [
+-    "agentskills",
+-    "claude-skill",
+-    "writing",
+-    "humanize",
+-    "ai-detection",
+-    "editing",
+-    "voice"
+-  ],
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/creativestackai/write-human.git"
+-  },
+-  "homepage": "https://github.com/creativestackai/write-human#readme",
+-  "bugs": {
+-    "url": "https://github.com/creativestackai/write-human/issues"
+-  }
+-}
+diff --git a/reference/ai-tells.md b/reference/ai-tells.md
+index 464fcb6..72b7a9f 100644
+--- a/reference/ai-tells.md
++++ b/reference/ai-tells.md
+@@ -16,7 +16,8 @@ Do not apply these as a find-and-replace. Swapping words off a list mechanically
+ 8. Formatting tells (em dash, boldface, lists, title case, emoji, curly quotes)
+ 9. Chatbot artifacts, disclaimers, sycophancy
+ 10. Filler and hedging phrases
+-11. A scannable trigger word list
++11. Pep-talk closers, engagement bait, and call-to-action clichés
++12. A scannable trigger word list
+ 
+ ---
+ 
+@@ -86,9 +87,9 @@ Models puff up importance and slip into brochure voice, especially on culture, p
+ > Nestled in the breathtaking region of Gonder, Alamata Raya Kobo stands as a vibrant town with a rich cultural heritage and stunning natural beauty, marking a pivotal chapter in the region's evolving story.
+ 
+ **After:**
+-> Alamata Raya Kobo is a town in the Gonder region, known for its weekly market and an 18th-century church.
++> Alamata Raya Kobo is a town in the Gonder region.
+ 
+-The fix is almost always to state the plain fact and cut the adjectives. Specifics beat praise.
++The fix is almost always to state the plain fact and cut the adjectives. If the draft itself names a specific (a market, a church, a date), keep it; if it does not, the plain sentence is the whole answer. Do not supply a specific to replace the praise.
+ 
+ ---
+ 
+@@ -102,9 +103,9 @@ Models attribute opinions to nobody in particular, and pile up proof of importan
+ > Experts believe the river plays a crucial role in the ecosystem. Her work has been cited in The New York Times, BBC, and Financial Times, and she has a strong social media following.
+ 
+ **After:**
+-> The river supports several endemic fish species, according to a 2019 survey by the Chinese Academy of Sciences. In a 2024 New York Times interview, she argued that regulation should target outcomes, not methods.
++> Researchers study the river for its role in the regional ecosystem. Her work has been cited in The New York Times and the BBC.
+ 
+-Name the source or cut the claim. One real citation beats a list of logos.
++Name the source if the draft names it; otherwise cut the unsupported claim ("experts believe") or reduce it to what the draft actually says. Never supply a source, a survey, or a quote the draft did not contain. One real citation beats a list of logos, and a missing one is better than an invented one.
+ 
+ ---
+ 
+@@ -117,7 +118,7 @@ These are the deep ones. They survive word-swapping, and they are what makes "cl
+ Models force ideas into triads to feel comprehensive, even when two or four is the honest count.
+ 
+ **Before:** The event offers keynotes, panels, and networking, delivering innovation, inspiration, and insight.
+-**After:** The event is mostly talks and panels, with time between sessions to actually meet people.
++**After:** The event has talks and panels, plus networking.
+ 
+ Fix: cut to two, or stretch to an uneven four, or just say the real number of things.
+ 
+@@ -133,7 +134,7 @@ Fix: cut to two, or stretch to an uneven four, or just say the real number of th
+ Models dodge plain "is/are/was/were" in favor of inflated verbs: serves as, stands as, represents, embodies, functions as, acts as.
+ 
+ **Before:** The museum serves as a vital testament to the region's cultural landscape.
+-**After:** The museum is the main regional history collection.
++**After:** The museum documents the region's culture.
+ 
+ Put "is" back. It strips the pretension instantly.
+ 
+@@ -164,7 +165,9 @@ Two failure modes at the start of a piece.
+ **Fake-edge hooks** (when a model is told to write "engaging" or "viral"): "But here's the truth," "The result?", "Then I realized," "Hot take:", "Let that sink in," "Plot twist:". They simulate insight on a predictable schedule, which is exactly why they read as fake. Cut them and let the actual point carry the weight.
+ 
+ **Before:** In today's fast-paced world, productivity is everything. But here's the truth: most advice is wrong. Let that sink in.
+-**After:** Most productivity advice assumes you control your calendar. If you have a boss and a Slack account, you don't. So most of it is useless to you.
++**After:** Most productivity advice is wrong.
++
++Stop there. Do not grow the cut sentence into a new argument that the draft never made.
+ 
+ ---
+ 
+@@ -173,9 +176,9 @@ Two failure modes at the start of a piece.
+ Models tack a present-participle clause onto a sentence to fake depth: highlighting, underscoring, reflecting, symbolizing, ensuring, showcasing, fostering, contributing to, emphasizing.
+ 
+ **Before:** The temple uses blue and gold, reflecting the community's deep connection to the land and symbolizing its enduring heritage.
+-**After:** The temple uses blue and gold. The architect said the colors reference local wildflowers and the coast.
++**After:** The temple uses blue and gold.
+ 
+-Fix: if the "-ing" tail carries a real fact, turn it into its own plain sentence. If it is just decoration, delete it.
++Fix: if the "-ing" tail carries a real fact the draft supports, turn it into its own plain sentence. If it is just decoration, delete it. Do not replace the tail with a new explanation or a quote from someone.
+ 
+ ---
+ 
+@@ -214,7 +217,7 @@ Residue from the assistant being an assistant. Always delete from published text
+ 
+ **Knowledge-cutoff disclaimers:** "As of my last update," "While specific details are limited," "based on available information," "I don't have access to."
+ Before: While specific details about the founding are scarce, it appears the company began sometime in the 1990s.
+-After: The company was founded in 1994, per its registration filings.
++After: The company's founding date is not given in the available sources. (Or cut the sentence. Never fill the gap with a plausible date or source.)
+ 
+ **Sycophancy:** "You're absolutely right!", "That's an excellent point," "What a fascinating topic." Cut it. State the substance.
+ 
+@@ -235,11 +238,26 @@ Tighten these on sight.
+ 
+ **Excessive hedging stacks:** "It could potentially possibly be argued that this might have some effect." Real writers commit. "This probably affects outcomes," or "I think this affects outcomes, though I am not certain." One hedge, not four. And note: an honest "I am not sure" reads far more human than a stack of soft qualifiers, because models are trained to hedge and trained away from admitting plain uncertainty.
+ 
+-**Generic upbeat conclusions:** "The future looks bright. Exciting times lie ahead on this journey toward excellence." Cut entirely. End on the most concrete thing you have, even if it is small: "They plan to open two more locations next year."
++**Generic upbeat conclusions:** "The future looks bright. Exciting times lie ahead on this journey toward excellence." Cut entirely. End on the most concrete thing the draft contains, even if it is small (a stated plan, a last fact). If it has none, just end earlier.
++
++---
++
++## 11. Pep-talk closers, engagement bait, and call-to-action clichés
++
++Posts, essays, and newsletters generated by a model end on a push: a motivational line, a question aimed at comments, an urge to act today. They say nothing the piece has not already said, and they appear on schedule, which is why they read as machine-made.
++
++**Pep-talk closers:** "Don't be afraid to fail." "Every step brings you closer to mastery." "The best time to start is now." "Believe in yourself and anything is possible." "Your journey starts today."
++**Engagement bait:** "What's holding you back?" "What goal are you chasing?" "Agree?" "Thoughts?" "Drop a comment below." "Tag someone who needs this."
++**Take-the-first-step clichés:** "Take the first step today." "If you're thinking about making a leap, start now."
++
++**Before:** The first three months were rough, and we lost money every week. Then the Saturday subscription took off. If you're thinking about making a leap of your own, the best time to start is now. What's holding you back?
++**After:** The first three months were rough, and we lost money every week. Then the Saturday subscription took off.
++
++Fix: cut the push and end on the last concrete thing the draft says. If the draft's closer carries something real (a link, a sign-up date, a specific ask), keep that and say it plainly. If the draft is a personal post and the author wants to leave the reader with a lesson, state the lesson they actually drew, in their words, instead of a slogan about the reader's future. Never replace a cut closer with a new claim.
+ 
+ ---
+ 
+-## 11. Optional: a quick-scan list (a prompt to revise, not a find-and-replace)
++## 12. Optional: a quick-scan list (a prompt to revise, not a find-and-replace)
+ 
+ This is a convenience, not the method. The whole skill exists because swapping words off a list produces flat, evenly paced, voiceless prose that still flags as AI. Use this list only to *locate* suspect passages fast; then do the real structural and voice work from sections 5 through 10. A hit is not automatically wrong. It is a place to look, and context decides.
+ 
+@@ -256,7 +274,8 @@ boasts, nestled, renowned, breathtaking, groundbreaking,
+ furthermore, moreover, additionally, "it's worth noting", "it is important to note",
+ "in today's", "in the realm of", "when it comes to", "not just", "not only",
+ "serves as", "stands as", "a testament to", "plays a key role",
+-"i hope this helps", "great question", "let me know", "certainly!", "of course!"
++"i hope this helps", "great question", "let me know", "certainly!", "of course!",
++"what's holding you back", "take the first step", "the best time to start", "closer to mastery"
+ ```
+ 
+ When you find clusters of these in one passage, that passage almost certainly needs the structural and voice work in sections 5 through 10, not just a word swap.
+diff --git a/reference/craft-levers.md b/reference/craft-levers.md
+index 2500f73..596ad88 100644
+--- a/reference/craft-levers.md
++++ b/reference/craft-levers.md
+@@ -1,80 +1,71 @@
+ # Craft levers
+ 
+-Removing AI tells gets you to "not obviously a robot." It does not get you to "good." This file is the difference. Pull it when the goal is writing that actually pulls the reader forward, not just prose that passes a scan.
++Removing AI tells gets you to "not obviously a robot." It does not get you to "good." This file is the difference: ways to restructure what the author already gave you so the piece pulls the reader forward.
+ 
+-The throughline: **write like you are explaining something to a smart, skeptical friend.** That friend will not sit through throat-clearing, will not believe a vague claim, and will tune out the second you sound like a brochure. Every lever below serves that one stance.
++**The guardrail that governs every lever below:** these are techniques for arranging and sharpening the draft's own material. They never license supplying content. Numbers, names, scenes, quotes, outcomes, and personal experience come from the draft, a writing sample, or the user. When a lever wants a detail the draft lacks, write the plainer version and flag the gap ("a real example here would help"), or ask. An invented specific is worse than a vague true one, because a reader who catches it stops trusting everything else.
+ 
+-These pair naturally with the rhythm and voice work in the main workflow. Use them when you have a draft that is clean but flat.
++The throughline: **write like you are explaining something to a smart, skeptical friend.** That friend will not sit through throat-clearing, will not believe a vague claim, and will tune out the second you sound like a brochure.
+ 
+ ## 1. The headline does most of the work
+ 
+-For anything with a title, headline, subject line, or hook, the first line carries the piece. Write at least five before you pick one, because the best one usually beats the others by a wide margin and you cannot find it by writing one and stopping.
++For anything with a title, headline, subject line, or hook, draft several options from the draft's own claims and pick the strongest. The best one usually beats the others by a wide margin, and you cannot find it by writing one and stopping.
+ 
+-A strong formula: **action verb + specific outcome + a timeframe or a contrast.**
++A strong formula: **action verb + the specific outcome the draft states + a contrast or timeframe the draft states.** If the draft gives no outcome, use the plainest true description instead of a promise.
+ 
+ - Weak: "Improving your launch process"
+-- Strong: "Ship your startup in days, not weeks"
+-- Weak: "Tips for better sleep"
+-- Strong: "Fall asleep in 10 minutes without melatonin"
++- Strong, when the draft says launches got faster: "Launch in days, not weeks"
++- Without a stated outcome: "How the launch checklist works"
+ 
+-Specific and concrete beats clever and vague almost every time.
++Concrete and true beats clever and vague.
+ 
+ ## 2. The opening line has one job: earn the second line
+ 
+-Not to summarize. Not to set context. Just to make the reader keep going. Four openings that work:
++Not to summarize. Not to set context. Just to make the reader keep going. Four openings that work, each built from material the draft already holds:
+ 
+-- **A direct challenge:** "You are backing up the wrong files."
+-- **A small scene:** "It's 2am and the deploy is still red."
+-- **A specific result:** "We cut onboarding from nine days to two. Here is the part that actually mattered."
+-- **A confession:** "I shipped this bug to 40,000 people before I noticed."
++- **A direct challenge:** "You are backing up the wrong files." (only if the draft makes that claim)
++- **A small scene:** only if the draft contains one.
++- **The specific result:** the draft's own best number or outcome, said first.
++- **A confession:** only if the author actually confessed it in the draft or to you.
+ 
+-Never open with "In today's fast-paced world" or "Throughout history" or any sweeping windup. That is the single most common AI opener and it makes a reader's eyes slide off the page.
++When the draft has none of these, open with its most concrete claim stated plainly. Never open with "In today's fast-paced world" or "Throughout history" or any sweeping windup.
+ 
+-## 3. Quantify the pain
++## 3. Use the numbers the draft already has
+ 
+-Vague problems feel unsolvable, so readers do nothing. Specific, counted problems feel fixable. Do the arithmetic for them.
++Vague problems feel unsolvable; counted ones feel fixable. If the draft supplies figures, put them where the reader meets them early, and do the arithmetic for the reader when it is straightforward.
+ 
+-- Vague: "Launching is a lot of work."
+-- Quantified: "Four hours on the emails. Six on the landing page. Another twelve chasing copy and screenshots. That is most of a work-week gone before you have a single user."
++- Draft: "We spent four hours on emails, six on the landing page, and twelve on copy and screenshots."
++- Better: "That is 22 hours, most of a work-week, before a single user."
+ 
+-Numbers create a gap the reader can feel, and a gap is what makes them want the rest of the piece.
++If the draft supplies no figures, do not make some up to "quantify the pain." Say what is true in plain words, and flag that a real figure from the author would strengthen it.
+ 
+ ## 4. The "so what" chain
+ 
+-This is where most writing dies: it states a feature and stops. Push every claim down until it hits something a person actually feels, usually emotional or financial. Go about three levels.
++Most writing dies by stating a feature and stopping. Push each claim down until it reaches what a person feels, usually time, money, or worry, and write from the lowest rung the draft's own content supports.
+ 
+ > Fast database
+-> → queries load instantly
+-> → users don't bounce
+-> → you stop waking up at 3am worried about churn
++> → queries load instantly (what the draft says)
++> → users don't bounce (only if the draft makes this claim)
+ 
+-Then write from the bottom of the chain, not the top. "Your database is fast" is a spec. "You stop waking up worried about churn" is a reason to care. The bottom rung is almost always the sentence worth keeping.
++Stop where the draft stops. The point of the chain is to find the sentence worth keeping inside the author's own material, not to extend it with benefits the author never claimed.
+ 
+ ## 5. Open loops
+ 
+-Tease something without resolving it yet, so the reader has to keep going to close the loop. "But that is not even the worst part." "I will get to why that backfired." Used well, these are the engine of a long piece.
+-
+-Two to four per page. More than that and it reads as manipulative and cheap, which is its own kind of tell.
++Tease something the piece genuinely resolves later, so the reader has to keep going. "I will get to why that backfired." Use these only when the draft really does come back to the point. Two to four per page; more reads as manipulative, which is its own tell.
+ 
+ ## 6. Rhythm is the giveaway, in both directions
+ 
+-Same point as burstiness, said for craft. Real writing alternates. A short, blunt sentence. Then a longer one that takes its time, adds a clause, circles the idea, and lands somewhere slightly unexpected. Then maybe a fragment.
+-
+-Same-length sentences and same-length paragraphs are the loudest signal that a machine wrote it. When you finish a draft, scan the shape of the paragraphs on the page. If they are all the same rectangle, break them up.
++Real writing alternates. A short, blunt sentence. Then a longer one that takes its time, adds a clause, circles the idea, and lands somewhere slightly unexpected. Then maybe a fragment.
+ 
+-## 7. Testimonials and quotes: five parts
++Same-length sentences and same-length paragraphs are the loudest signal that a machine wrote it. When you finish a draft, look at the shape of the paragraphs on the page. If they are all the same rectangle, break them up.
+ 
+-If the piece uses social proof, a flat "Great product!" is worthless and reads as invented. A real-sounding one has: the **before** state, the **action** they took, a **specific outcome**, a **timeframe**, and an **emotion**.
++## 7. Social proof and quotes: never manufacture them
+ 
+-- Weak: "This tool is amazing!"
+-- Strong: "I was rewriting the same three support replies forty times a day. I wired this up on a Tuesday afternoon. By Friday it was handling 80% of them and I almost cried opening the inbox."
++If the draft contains a testimonial, a quote, or a customer story, you may tighten its wording while keeping what it claims, who said it, and every figure in it. If the draft contains none, do not write one. A "real-sounding" invented testimonial is a fabricated quote attributed to nobody, and it is the fastest way to turn a rewrite into misinformation.
+ 
+-The specificity is what makes it believable. Vague praise reads as fake to a skeptical friend, and your reader is one.
++If a flat "Great product!" is all the draft has, say in the flags that a specific line from a real customer (what they had before, what changed, how long it took) would do much more work, and leave the sentence as it is.
+ 
+ ## 8. The avoid list and the read-aloud test
+ 
+ Cut on sight: "delve," "utilize," "leverage" as a verb, "game-changer," "in today's world," "let's dive in," and a scatter of em dashes faking rhythm (see `ai-tells.md` for the full set).
+ 
+-Then the final test, the one that catches everything else: read it out loud. If it sounds like a textbook, a press release, or a chatbot being helpful, it is not done. Rewrite until it sounds like a person who knows the subject talking to someone they respect.
+-
+-The fundamentals of good writing have not changed in a hundred years. The only new requirement is that it has to sound like a person wrote it, because now most of it doesn't.
++Then the final test, the one that catches everything else: read it out loud. If it sounds like a textbook, a press release, or a chatbot being helpful, it is not done. Rewrite until it sounds like a person who knows the subject talking to someone they respect, and who is saying only what the draft says.

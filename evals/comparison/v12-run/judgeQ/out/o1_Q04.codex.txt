@@ -1,0 +1,60 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["D", "A", "B", "C"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The migration was recent.",
+        "The two engineers led the migration; their leadership role is no longer explicit.",
+        "The cost reduction made the infrastructure more sustainable."
+      ],
+      "register_ok": true,
+      "note": "Direct, natural writing preserves the main results and developer benefits."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Build times can make or break developer productivity.",
+        "The results were transformative.",
+        "The cost reduction made the infrastructure more sustainable.",
+        "The migration improved velocity.",
+        "The migration enabled developers to ship with confidence."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, but it removes the source's broader claims about the benefits."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "A 24-minute build is long enough to wander off and lose your place.",
+        "A nine-minute build is not long enough to wander off and lose your place.",
+        "The shorter builds produce observable differences in how people work every day."
+      ],
+      "dropped_facts": [
+        "The migration was recent.",
+        "The two engineers led the migration; their leadership role is no longer explicit.",
+        "The general claim that build times can make or break developer productivity.",
+        "The cost reduction made the infrastructure more sustainable.",
+        "The explicit claim that the migration improved velocity.",
+        "The migration enabled developers to ship with confidence."
+      ],
+      "register_ok": true,
+      "note": "The conversational voice is plausible, but the attention-span assertions feel forced and lack support."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The migration was recent.",
+        "Build times can make or break developer productivity.",
+        "The cost reduction made the infrastructure more sustainable."
+      ],
+      "register_ok": true,
+      "note": "Plain, credible writing retains the leadership detail, numerical results, and developer benefits."
+    }
+  }
+}

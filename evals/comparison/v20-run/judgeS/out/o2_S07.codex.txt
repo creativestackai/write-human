@@ -1,0 +1,52 @@
+{
+  "human_quality_rank": ["D", "A", "C", "B"],
+  "fidelity_rank": ["A", "D", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Clear, credible academic prose that preserves the source's findings and conclusions."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "“We surveyed” asserts that the authors collected the survey data, whereas the source only says they used survey data.",
+        "Specifies first-year students as the intended recipients of institutional support.",
+        "Adds a methodological conclusion that this survey cannot establish causation."
+      ],
+      "dropped_facts": [
+        "The adjusted association's statistical significance is no longer explicit.",
+        "The conclusion that sleep plays a pivotal role in academic success is omitted."
+      ],
+      "register_ok": true,
+      "note": "Conversational and readable, but the crowded final sentence introduces substantive additions."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Specifies students short on sleep as the intended recipients of institutional support."
+      ],
+      "dropped_facts": [
+        "The adjusted association's statistical significance is no longer explicit.",
+        "The source's emphasis on sleep's pivotal role and the need for intervention is weakened to tentative importance and optional support."
+      ],
+      "register_ok": true,
+      "note": "Natural plain-language writing, though its conclusion softens and narrows the source."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "“We surveyed” asserts that the authors collected the survey data, whereas the source only says they used survey data."
+      ],
+      "dropped_facts": [
+        "The adjusted association's statistical significance is no longer explicit.",
+        "Sleep's pivotal role is weakened to the claim that it appears to matter."
+      ],
+      "register_ok": true,
+      "note": "The strongest balance of directness and academic register, with small losses of precision."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+ "o1": {
+  "H01": {
+   "A": "v2",
+   "B": "wh",
+   "C": "baseline",
+   "D": "hz"
+  },
+  "H02": {
+   "A": "v2",
+   "B": "wh",
+   "C": "hz",
+   "D": "baseline"
+  },
+  "H03": {
+   "A": "hz",
+   "B": "wh",
+   "C": "v2",
+   "D": "baseline"
+  },
+  "H04": {
+   "A": "v2",
+   "B": "wh",
+   "C": "hz",
+   "D": "baseline"
+  },
+  "H05": {
+   "A": "v2",
+   "B": "baseline",
+   "C": "hz",
+   "D": "wh"
+  },
+  "H06": {
+   "A": "baseline",
+   "B": "wh",
+   "C": "hz",
+   "D": "v2"
+  }
+ },
+ "o2": {
+  "H01": {
+   "A": "baseline",
+   "B": "hz",
+   "C": "v2",
+   "D": "wh"
+  },
+  "H02": {
+   "A": "hz",
+   "B": "baseline",
+   "C": "v2",
+   "D": "wh"
+  },
+  "H03": {
+   "A": "v2",
+   "B": "baseline",
+   "C": "hz",
+   "D": "wh"
+  },
+  "H04": {
+   "A": "hz",
+   "B": "baseline",
+   "C": "v2",
+   "D": "wh"
+  },
+  "H05": {
+   "A": "hz",
+   "B": "wh",
+   "C": "v2",
+   "D": "baseline"
+  },
+  "H06": {
+   "A": "hz",
+   "B": "v2",
+   "C": "baseline",
+   "D": "wh"
+  }
+ }
+}

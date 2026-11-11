@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["A", "C", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The conclusion no longer explicitly identifies patience as a lesson the narrator learned through this experience."
+      ],
+      "strength_changes": [
+        "Benefits extending 'far beyond' tradition become simply 'more than tradition,' reducing the emphasis and omitting the claim of numerous benefits.",
+        "Patience becomes a 'working tool' rather than an 'essential tool,' weakening its necessity."
+      ],
+      "register_ok": true,
+      "note": "The restrained phrasing and short sting-count sentences fit the surrounding essay, though the passive construction feels impersonal."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The conclusion no longer explicitly identifies patience as a lesson the narrator learned through this experience."
+      ],
+      "strength_changes": [
+        "Benefits extending 'far beyond' tradition become benefits 'beyond tradition,' reducing the emphasis and omitting the claim of numerous benefits.",
+        "'Make you calmer' asserts an emotional effect more directly than fostering a calmer approach.",
+        "Patience becomes a 'tool' rather than an 'essential tool,' weakening its necessity."
+      ],
+      "register_ok": true,
+      "note": "Readable but more generic and explanatory than the surrounding author's concrete, understated voice."
+    },
+    "C": {
+      "p_ai": 28,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Benefits extending 'far beyond' tradition become simply 'more than tradition,' reducing the emphasis and omitting the claim of numerous benefits.",
+        "'Calms you down' asserts an emotional effect more directly than fostering a calmer approach.",
+        "Patience becomes a 'working tool' rather than an 'essential tool,' weakening its necessity."
+      ],
+      "register_ok": true,
+      "note": "Active phrasing and the personal conclusion suit the essay, but 'What I took from it is that' makes the ending cumbersome."
+    }
+  }
+}

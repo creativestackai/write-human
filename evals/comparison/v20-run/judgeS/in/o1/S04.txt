@@ -1,0 +1,52 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Webhook Retries
+
+It's worth noting that our platform employs a robust retry mechanism to ensure reliable delivery of webhook events. If your endpoint does not respond with a `2xx` status code within 10 seconds, the delivery is considered failed. In such cases, we will seamlessly retry the delivery up to 5 times over a period of 24 hours. Each request includes an `X-Signature` header, which you should leverage to verify that the payload originated from us. Additionally, it is crucial to make your handler idempotent — the same event may be delivered more than once, and the `event_id` field can be utilized to detect duplicates.
+
+=== REWRITE A ===
+Webhook Retries
+
+If your endpoint doesn't return a `2xx` status code within 10 seconds, we treat the delivery as failed and retry it, up to 5 times over 24 hours.
+
+Every request carries an `X-Signature` header. Use it to verify that the payload came from us.
+
+Make your handler idempotent. The same event may be delivered more than once, so check the `event_id` field to detect duplicates.
+
+=== REWRITE B ===
+Webhook Retries
+
+If your endpoint doesn't return a `2xx` status code within 10 seconds, we treat the delivery as failed and retry it, up to 5 times over 24 hours.
+
+Every request carries an `X-Signature` header. Use it to check that the payload came from us.
+
+Make your handler idempotent, because the same event can arrive more than once. Compare the `event_id` field against events you've already processed to catch duplicates.
+
+=== REWRITE C ===
+Webhook Retries
+
+If your endpoint doesn't return a `2xx` status within 10 seconds, we treat the delivery as failed and retry it, up to 5 times over 24 hours.
+
+Every request carries an `X-Signature` header. Use it to check that the payload came from us.
+
+Make your handler idempotent. The same event can arrive more than once, so check the `event_id` field to spot duplicates.
+
+=== REWRITE D ===
+Webhook Retries
+
+If your endpoint doesn't respond with a `2xx` status code within 10 seconds, we treat the delivery as failed and retry it, up to 5 times over 24 hours.
+
+Each request includes an `X-Signature` header. Use it to verify that the payload came from us.
+
+Make your handler idempotent. The same event may be delivered more than once, so check the `event_id` field to detect duplicates.

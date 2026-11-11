@@ -1,0 +1,58 @@
+{
+  "human_quality_rank": ["D", "A", "C", "B"],
+  "fidelity_rank": ["A", "B", "C", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "passionate, detail-oriented team player who thrives in fast-paced environments",
+        "confident that background makes them an ideal fit"
+      ],
+      "register_ok": true,
+      "note": "Strikes a natural, unpretentious tone while faithfully preserving the core achievements and message without inventing details."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "ability to translate complex data into actionable insights",
+        "track record of driving impactful business decisions",
+        "passionate, detail-oriented team player who thrives in fast-paced environments",
+        "confident that background makes them an ideal fit"
+      ],
+      "register_ok": true,
+      "note": "Clear and fluff-free, but its curt phrasing drops the candidate's substantive message about translating data into action."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "the inventory dashboard is the project the writer is proudest of"
+      ],
+      "dropped_facts": [
+        "ability to translate complex data into actionable insights",
+        "track record of driving impactful business decisions",
+        "passionate, detail-oriented team player who thrives in fast-paced environments",
+        "confident that background makes them an ideal fit"
+      ],
+      "register_ok": true,
+      "note": "Sounds conversational and relaxed, but fabricates an unsupported claim that the dashboard was their proudest project."
+    },
+    "D": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "stockouts dropped after the dashboard went live",
+        "the result was noticed by people outside the analytics team",
+        "it is the kind of work the writer wants more of"
+      ],
+      "dropped_facts": [
+        "ability to translate complex data into actionable insights",
+        "confident that background makes them an ideal fit (weakened to checking whether background fits)",
+        "passionate, detail-oriented team player who thrives in fast-paced environments"
+      ],
+      "register_ok": true,
+      "note": "Achieves the most distinctive human voice, but invents several unsupported narrative details about stakeholder reactions and personal preferences."
+    }
+  }
+}

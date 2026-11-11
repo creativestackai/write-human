@@ -1,0 +1,2189 @@
+[
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P01",
+  "human_quality_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Remote work has emerged as a transformative force reshaping organizational operations amid rapid digital change.",
+     "The concluding ambition to realize distributed teams' full potential and thrive in the future of work is reduced to working well."
+    ],
+    "register_ok": true,
+    "note": "Clear, natural business prose preserves the core argument with little distortion."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Local hiring is limited to people within forty minutes of the office.",
+     "Access to global talent means hiring the best person for a role.",
+     "Messages get misread.",
+     "People go days without talking to anyone.",
+     "The company culture took years to build.",
+     "Culture deteriorates because nobody shares a room.",
+     "Plenty of offices operate on distrust, while plenty of remote teams operate beautifully.",
+     "Tools help only a little, and good habits help more.",
+     "Writing things down, answering promptly, and making phone calls when threads become tense are recommended practices.",
+     "No software can fix the situation without trust."
+    ],
+    "dropped_facts": [
+     "Remote work has emerged as a transformative force reshaping organizational operations amid rapid digital change.",
+     "The explicit claim that appropriate tools and strong communication can unlock distributed teams' full potential and help organizations thrive in the future of work."
+    ],
+    "register_ok": true,
+    "note": "A convincing conversational voice and strong flow come with substantial unsupported elaboration."
+   },
+   "wh": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Most arguments about remote work go wrong by considering only its advantages or disadvantages.",
+     "Remote work lets people work when they are sharpest.",
+     "Remote work eliminates commuting.",
+     "Global hiring means hiring the best person for the job.",
+     "A prospective hire lives eleven time zones away.",
+     "A message is read in the wrong tone and sits for a day.",
+     "Someone goes a whole week without speaking to anyone except through a screen.",
+     "Unplanned hallway conversations are the hardest aspect of company culture to retain.",
+     "Hallway conversations reveal how a team really feels about a project.",
+     "Tools help only after trust, transparency, and accountability are established.",
+     "A trusting team with a shared document will outperform a distrustful team with a dozen apps."
+    ],
+    "dropped_facts": [
+     "Remote work has emerged as a transformative force reshaping organizational operations amid rapid digital change.",
+     "Improved work-life balance is replaced by narrower claims about schedules and commuting.",
+     "The explicit recommendation to cultivate strong communication practices.",
+     "The concluding claim about unlocking distributed teams' full potential and thriving in the future of work."
+    ],
+    "register_ok": true,
+    "note": "Readable opinion writing becomes conspicuously staged through invented scenes and a polished closing maxim."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P02",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Users would rather not spend their evenings on invoicing.",
+     "Solo freelancers actually use Tallyo, rather than merely being an intended audience.",
+     "Agencies using Tallyo have outgrown spreadsheets.",
+     "Real-time reports show paid and unpaid invoices without asking anyone.",
+     "The security specifically protects clients' billing details and requires no attention from users.",
+     "The wording attributes the 40% reduction to the more than 2,300 teams collectively; the source does not identify who achieved the measured reduction."
+    ],
+    "dropped_facts": [
+     "Tallyo is an all-in-one platform.",
+     "The teams using Tallyo are worldwide.",
+     "The tools are intuitive and help users control finances, streamline workflows, and improve productivity.",
+     "Security is described as best-in-class."
+    ],
+    "register_ok": true,
+    "note": "A distinctive conversational voice makes this engaging, but several concrete details exceed the source."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Teams of any size extends the source's stated audience of solo freelancers and growing agencies."
+    ],
+    "dropped_facts": [
+     "Tallyo is an all-in-one platform.",
+     "The tools are intuitive and help users control finances, streamline workflows, and improve productivity.",
+     "Security is described as best-in-class."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained marketing copy preserves the central evidence with the fewest unsupported additions."
+   },
+   "baseline": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Users can create invoices, send them, and monitor payments within the same platform.",
+     "The workflow eliminates subsequent spreadsheet reentry.",
+     "The wording attributes the 40% reduction to the more than 2,300 teams collectively; the source does not identify who achieved the measured reduction.",
+     "Automation and reporting each account for part of the measured 40% reduction.",
+     "Reports update specifically as money comes in and eliminate waiting for month-end."
+    ],
+    "dropped_facts": [
+     "Freelancers are specifically described as solo.",
+     "The tools are intuitive and help users control finances and improve productivity.",
+     "Tallyo eliminates manual errors.",
+     "Security is described as best-in-class."
+    ],
+    "register_ok": true,
+    "note": "Readable and approachable, but the explanatory sequence introduces unsupported workflows and causal claims."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P03",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Rate limiting is intended to ensure fair usage and maintain optimal performance for all users."
+    ],
+    "register_ok": true,
+    "note": "Clear and natural, but 'stop at 32 seconds' could mean stopping retries rather than capping the delay."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The limit guarantees that one busy client cannot crowd out everyone else.",
+     "Caching causes clients to hit the rate limit less often."
+    ],
+    "dropped_facts": [
+     "Rate limiting is intended to maintain optimal performance for all users."
+    ],
+    "register_ok": true,
+    "note": "Conversational and readable, but adds unnecessary commentary and describes improved responsiveness as a side effect."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Plain, precise API documentation that preserves the source's claims and clearly explains the delay cap."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P04",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Rotterdam is in the Netherlands.",
+     "Harborline is a leading freight forwarding company.",
+     "The company has played a pivotal role in shaping European supply chains.",
+     "The company has a rich legacy of innovation and a steadfast commitment to excellence.",
+     "The 2016 expansion marked a significant milestone in its growth.",
+     "The company's results demonstrate enduring resilience in a dynamic market.",
+     "Experts agree that Harborline's strategic vision continues to set the industry standard.",
+     "The source presents the company's future as bright and describes the company as remarkable."
+    ],
+    "register_ok": true,
+    "note": "Direct and readable, though 'opened' is less precise than 'expanded' and 'booked' changes the reporting language."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Harborline is a leading freight forwarding company.",
+     "The company has played a pivotal role in shaping European supply chains.",
+     "The company has a rich legacy of innovation and a steadfast commitment to excellence.",
+     "The 2016 expansion marked a significant milestone in its growth.",
+     "The company's results demonstrate enduring resilience in a dynamic market.",
+     "Experts agree that Harborline's strategic vision continues to set the industry standard.",
+     "The source presents the company's future as bright and describes the company as remarkable."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained company-profile prose preserves the concrete details most precisely but drops the source's promotional claims."
+   },
+   "wh": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Rotterdam is in the Netherlands.",
+     "Harborline is a leading freight forwarding company.",
+     "The company has played a pivotal role in shaping European supply chains.",
+     "The company has a rich legacy of innovation and a steadfast commitment to excellence.",
+     "The 2016 expansion marked a significant milestone in its growth.",
+     "The company's results demonstrate enduring resilience in a dynamic market.",
+     "Experts agree that Harborline's strategic vision continues to set the industry standard.",
+     "The source presents the company's future as bright and describes the company as remarkable."
+    ],
+    "register_ok": false,
+    "note": "Forced conversational phrasing makes the profile awkward, and 'Germany and Poland came in 2016' obscures the expansion."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P05",
+  "human_quality_rank": {
+   "wh": 2,
+   "baseline": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Customers had been telling the narrator what they wanted before the narrator understood."
+    ],
+    "dropped_facts": [
+     "The narrator's excitement about sharing the news.",
+     "The broader description of the journey as incredible and involving growth and invaluable lessons.",
+     "Resilience and adaptability as keys to success.",
+     "The explicit advice that now is the best time to start.",
+     "The closing question asking what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "Clear and conversational, with the fewest inventions, though its voice is less distinctive."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The narrator sat in the shop after closing while questioning the decision.",
+     "The narrator almost did not offer the subscription.",
+     "The claim that the numbers stopped bleeding for the first time implies losses ended; the source only says revenue stabilized.",
+     "Customers wanted the same loaf every week without having to think about it.",
+     "The narrator had been too busy selling customers everything else to notice their wishes.",
+     "The narrator would have started earlier."
+    ],
+    "dropped_facts": [
+     "The narrator's excitement about sharing the news.",
+     "The broader description of the journey as incredible and involving growth and invaluable lessons.",
+     "The explicit lesson that resilience, adaptability, and listening to customers are keys to success.",
+     "The advice that now is the best time to start, replaced with uncertainty about timing."
+    ],
+    "register_ok": true,
+    "note": "Lively and personal, but much of that personality comes from invented scenes and explanations."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "The narrator stood in the shop while questioning the decision.",
+     "The characterization of the subscription as involving nothing clever.",
+     "Customers liked knowing their bread was sorted.",
+     "The narrator would have slept better during the first three months if the subscription had started sooner."
+    ],
+    "dropped_facts": [
+     "The narrator's excitement about sharing the news.",
+     "The broader description of the journey as incredible and involving growth and invaluable lessons.",
+     "The explicit lesson that resilience, adaptability, and listening to customers are keys to success.",
+     "The advice that now is the best time to start, replaced with uncertainty about timing.",
+     "The closing question asking what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "The most natural match for the supplied voice, but its understated ending introduces an unsupported personal counterfactual."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P06",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "winner": "baseline",
+  "texts": {
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Says currency is null for accounts created before 2021; the source says it can be null for those accounts.",
+     "Adds that the migration needs its own review.",
+     "Adds an offer to write the ticket today if Priya agrees."
+    ],
+    "dropped_facts": [
+     "Replaces the specific statement that several services share the customers table with the less specific 'other services'."
+    ],
+    "register_ok": true,
+    "note": "A natural, clear PR reply that preserves the technical explanation but adds a review requirement and a dated offer."
+   },
+   "hz": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Explicitly equates the 212 affected staging accounts with roughly 4% of European accounts; the source does not establish that they share the same population."
+    ],
+    "dropped_facts": [
+     "The export job reads currency from the customer record.",
+     "Currency can be null for accounts created before 2021.",
+     "A null currency silently defaults to USD.",
+     "The resulting problem is incorrect export totals."
+    ],
+    "register_ok": true,
+    "note": "The strongest contextual reply in voice and structure, but it omits the bug mechanism and conflates the two scope figures."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Says currency is null for accounts created before 2021; the source says it can be null for those accounts.",
+     "Claims nobody from the other service teams will review this PR.",
+     "Commits to opening the backfill ticket today.",
+     "Adds that the other services need a say before proceeding."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "A plausible but repetitive PR reply whose added certainty, review assumptions, and commitments exceed the source."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P07",
+  "human_quality_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The explicit interpretation that improved sleep quality underscores sleep's pivotal role in academic success.",
+     "The claim that the findings pave the way for future research."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained academic prose preserves the study's substance with minimal editorial intrusion."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The control group received nothing; the source does not describe its treatment.",
+     "Caffeine management specifically meant cutting back on caffeine.",
+     "Screen-time reduction specifically meant putting screens away at night.",
+     "The effect is classified as small-to-moderate, an interpretation not supplied by the source.",
+     "The researchers give the sleep-quality finding less weight because it is self-reported.",
+     "The added conclusion that this study cannot settle whether sleep education belongs in university programs.",
+     "The specific recommendation for replication with longer follow-up."
+    ],
+    "dropped_facts": [
+     "The education is explicitly described as structured.",
+     "The GPA difference is explicitly described as statistically significant, although the reported statistics remain.",
+     "Sleep quality improved markedly, rather than simply improved.",
+     "The explicit interpretation that sleep plays a pivotal role in academic success.",
+     "The specific recommendation to integrate sleep education into university curricula is broadened to university programs."
+    ],
+    "register_ok": true,
+    "note": "The conversational research voice feels natural, but it introduces substantial methodological detail and commentary."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The effect is classified as small by conventional standards, an interpretation not supplied by the source.",
+     "Objective sleep data is identified as the obvious next research step.",
+     "The GPA result alone is asserted to justify integrating sleep education into university curricula."
+    ],
+    "dropped_facts": [
+     "The education is explicitly described as structured.",
+     "Sleep quality improved markedly, rather than simply improved.",
+     "The explicit interpretation that improved sleep quality underscores sleep's pivotal role in academic success."
+    ],
+    "register_ok": true,
+    "note": "Mostly readable academic prose becomes more editorial and categorical in its closing sentences."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P08",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "winner": "wh",
+  "texts": {
+   "wh": {
+    "p_ai": 2,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and natural comic timing."
+   },
+   "hz": {
+    "p_ai": 2,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to the source, with a distinctive conversational voice and natural comic timing."
+   },
+   "baseline": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Faithful and natural, though the tidier phrasing and sentence breaks slightly soften the spontaneous voice."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P09",
+  "human_quality_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 24,
+    "unsupported_specifics": [
+     "The original payment method was a card.",
+     "Daniel personally processed the refund.",
+     "The package has arrived.",
+     "The issue has been passed to the warehouse team for investigation.",
+     "Daniel promises to resolve anything that looks wrong after the refund arrives."
+    ],
+    "dropped_facts": [
+     "The stated emphasis on customer satisfaction.",
+     "The commitment to prevent a recurrence.",
+     "The general invitation to raise further questions or concerns.",
+     "The thanks for patience and understanding."
+    ],
+    "register_ok": true,
+    "note": "Conversational and clear, but it invents operational details and narrows the invitation for help."
+   },
+   "wh": {
+    "p_ai": 19,
+    "unsupported_specifics": [
+     "Daniel personally processed the refund.",
+     "Daniel promises to resolve a missing refund or anything else that looks wrong."
+    ],
+    "dropped_facts": [
+     "The stated emphasis on customer satisfaction.",
+     "The commitment to prevent a recurrence.",
+     "The thanks for patience and understanding."
+    ],
+    "register_ok": true,
+    "note": "Direct and personable, although 'it lost time from there' is awkward and imprecise."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The stated emphasis on customer satisfaction.",
+     "The explicit thanks for understanding."
+    ],
+    "register_ok": true,
+    "note": "Clear, courteous, and natural for customer correspondence, with the strongest preservation of the source."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in",
+  "pid": "P10",
+  "human_quality_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Syntax is the easy part and can be looked up in ten seconds.",
+     "Learning to decompose problems takes longer than learning syntax.",
+     "The narrator personally understands the appeal of memorizing commands.",
+     "Flashcards and cheat sheets feel like progress.",
+     "Memorizing commands leads to recognizing a for loop without knowing when to use it and getting stuck when a problem differs from a tutorial.",
+     "Bugs account for most learning, and the gap between assumed and actual program behavior constitutes most of what there is to learn.",
+     "The automation example involves a chore the reader is tired of doing by hand.",
+     "Successful developers struggle constantly and do not treat struggle as a verdict on themselves."
+    ],
+    "dropped_facts": [
+     "Analyzing data is one of the programming applications.",
+     "Learning to code is rewarding as well as challenging.",
+     "Learning requires patience and practice.",
+     "Every line of code brings the learner closer to mastery."
+    ],
+    "register_ok": true,
+    "note": "Lively and concrete, but its sweeping claims and added examples substantially expand the source."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The endpoint of progress is mastery, softened here to being good at coding."
+    ],
+    "register_ok": true,
+    "note": "Clear, natural advice that preserves nearly all the source without manufacturing a personal voice."
+   },
+   "baseline": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "The narrator initially expected remembering syntax to be the hardest part of coding.",
+     "The narrator found decomposing problems to be the hardest part.",
+     "Syntax can be looked up in ten seconds, whereas thinking cannot be looked up.",
+     "The narrator wasted substantial early time memorizing commands, and almost none of that memorization stuck.",
+     "The narrator retained concepts about loops and function inputs, after which commands came naturally.",
+     "The data example is limited to a spreadsheet's worth of data.",
+     "The narrator admires particular developers who still get stuck all the time and do not take it personally.",
+     "A bug mostly means the programmer's mental model is wrong.",
+     "The late-night reference introduces an unsupported 11pm setting.",
+     "A third failed attempt teaches more than a first clean run."
+    ],
+    "dropped_facts": [
+     "Many beginners make the mistake of memorizing commands; the rewrite substitutes one narrator's experience.",
+     "The learning journey is rewarding as well as challenging.",
+     "Learning requires patience and practice.",
+     "The developers described are the most successful, rather than simply those the narrator admires.",
+     "Every line of code brings the learner closer to mastery."
+    ],
+    "register_ok": true,
+    "note": "Readable and conversational, but the invented memoir and repeated punch lines make the voice feel staged."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P01",
+  "human_quality_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Remote work emerged as a transformative force reshaping organizations in a rapidly evolving digital landscape",
+     "Unlocking the full potential of distributed teams to thrive in the future of work"
+    ],
+    "register_ok": true,
+    "note": "Clean, natural, and exceptionally faithful rewrite that strips corporate jargon while preserving the original meaning."
+   },
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "hiring within forty minutes of the office",
+     "messages getting misread",
+     "people going days without talking to anyone",
+     "company culture taking years to build",
+     "nobody sharing a room",
+     "offices running on distrust while remote teams run beautifully",
+     "specific communication habits like writing things down, answering promptly, and calling when threads get tense",
+     "software being unable to fix a lack of trust"
+    ],
+    "dropped_facts": [
+     "Remote work emerged as a transformative force reshaping organizations in a rapidly evolving digital landscape",
+     "Unlocking the full potential of distributed teams to thrive in the future of work"
+    ],
+    "register_ok": true,
+    "note": "Possesses a strong, authentic authorial voice but invents substantial commentary, specific figures, and tactical advice not present in the source."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "arguments going wrong by only discussing one half",
+     "working when sharpest",
+     "getting a commute back",
+     "living eleven time zones away",
+     "messages read in the wrong tone sitting for a day",
+     "going a whole week talking only to people on screens",
+     "hallway chats revealing true team sentiment about a project",
+     "framing the debate as the wrong fight",
+     "owning mistakes when something slips",
+     "a shared doc outworking a dozen apps"
+    ],
+    "dropped_facts": [
+     "Remote work emerged as a transformative force reshaping organizations in a rapidly evolving digital landscape",
+     "Unlocking the full potential of distributed teams to thrive in the future of work"
+    ],
+    "register_ok": true,
+    "note": "Lively and conversational, but heavily padded with fabricated narrative scenes, arbitrary quantities, and unsupported claims."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P02",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "spending evenings on invoicing",
+     "agencies outgrowing spreadsheets",
+     "specific error types such as typos and wrong totals going out under your name",
+     "seeing payment status without asking anyone",
+     "protecting clients' billing details specifically"
+    ],
+    "dropped_facts": [
+     "teams are worldwide / around the world",
+     "all-in-one platform",
+     "empowers teams to take control of finances / unlock new levels of productivity"
+    ],
+    "register_ok": true,
+    "note": "Engaging and distinctly human copy with punchy cadence, but invents several specific scenarios and details not found in the source."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "all-in-one platform",
+     "empowers teams to take control of finances / unlock new levels of productivity"
+    ],
+    "register_ok": true,
+    "note": "Clean, natural, and disciplined copy that strips away marketing puffery while maintaining complete factual fidelity."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "step-by-step workflow of creating, sending, and watching for payment in one place",
+     "retyping numbers into a spreadsheet afterward",
+     "reporting updating as money comes in without waiting for month-end",
+     "causal attribution splitting the 40% time reduction between automation and reporting"
+    ],
+    "dropped_facts": [
+     "solo qualifier for freelancer",
+     "proven to reduce (softened to they cut)",
+     "all-in-one platform"
+    ],
+    "register_ok": true,
+    "note": "Conversational and friendly in tone, but somewhat clunky in structure and prone to inventing operational details."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P03",
+  "human_quality_rank": {
+   "baseline": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "baseline",
+  "texts": {
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The API implements rate limiting to ensure fair usage and maintain optimal performance for all users."
+    ],
+    "register_ok": true,
+    "note": "Crisp and natural technical prose that stays appropriately plain, though it cuts the introductory rationale."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Instruction not to retry in a tight loop."
+    ],
+    "dropped_facts": [
+     "Rate limiting maintains optimal performance for all users."
+    ],
+    "register_ok": true,
+    "note": "Features an authentic developer voice, but injects unsupported advice and leans slightly too conversational."
+   },
+   "hz": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains complete fidelity in an appropriate register, but retains a slightly synthetic clause-by-clause paraphrase structure."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P04",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Netherlands"
+    ],
+    "register_ok": true,
+    "note": "Clear and plain, but drops the country location and uses somewhat loose phrasing."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp and professional, preserving every factual detail while cutting empty AI puffery."
+   },
+   "wh": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Netherlands"
+    ],
+    "register_ok": false,
+    "note": "Drops the country location and relies on clumsy, forced conversational phrasing."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P05",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Customers were telling the narrator what they wanted before he caught on"
+    ],
+    "dropped_facts": [
+     "Resilience and adaptability as keys to success",
+     "The closing question asking what is holding the reader back"
+    ],
+    "register_ok": true,
+    "note": "A natural, grounded rewrite that successfully strips the corporate tone while maintaining high fidelity to the source."
+   },
+   "baseline": {
+    "p_ai": 70,
+    "unsupported_specifics": [
+     "Sitting in the shop after closing",
+     "Almost not bothering with the subscription",
+     "Customers wanting the same loaf every week without having to think about it",
+     "Being too busy trying to sell everything else to notice",
+     "Claiming he would have started earlier"
+    ],
+    "dropped_facts": [
+     "Resilience and adaptability as keys to success",
+     "The explicit lesson that listening to customers is key to success",
+     "The assertion that the best time to start is now"
+    ],
+    "register_ok": true,
+    "note": "Reads like an AI performing emotional storytelling, inventing dramatic backstory and leaning into overwrought LinkedIn tropes."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Standing in the shop wondering what on earth he had done",
+     "Customers like knowing their bread is sorted",
+     "Sleeping better in the first three months if the subscription had been tried sooner",
+     "Claiming he cannot tell the reader when to take a leap"
+    ],
+    "dropped_facts": [
+     "Resilience, adaptability, and listening to customers as keys to success",
+     "The assertion that the best time to start is now",
+     "The closing question asking what is holding the reader back"
+    ],
+    "register_ok": true,
+    "note": "Captures the writer's dry, informal persona and spreadsheet background brilliantly, but invents several narrative details and drops core lessons."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P06",
+  "human_quality_rank": {
+   "baseline": 2,
+   "wh": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "winner": "baseline",
+  "texts": {
+   "baseline": {
+    "p_ai": 5,
+    "unsupported_specifics": [
+     "offering to write the ticket today"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains complete factual fidelity in a natural, collaborative engineering voice with only a minor timeline addition."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "invoice export job reads currency field from customer record",
+     "currency field can be null for accounts created before 2021",
+     "export silently defaults to USD when currency is null",
+     "silent default produces incorrect totals"
+    ],
+    "register_ok": true,
+    "note": "Avoids any unsupported claims but drops the entire root-cause explanation, leaving the remaining metrics disjointed."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "claim that nobody from other teams will look at the schema change in this PR",
+     "committing to open the ticket today",
+     "suggesting Priya might block the PR until the migration lands",
+     "asserting that other services need a say first"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Preserves all source data and technical facts but invents speculative team politics and an unprompted blocking scenario."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P07",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Underscoring the pivotal role of sleep in academic success",
+     "Paving the way for future research in this critical area"
+    ],
+    "register_ok": true,
+    "note": "A clear, concise, and faithful academic summary in an appropriate formal register, though lacking a distinctive individual voice."
+   },
+   "baseline": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "The control group received nothing",
+     "Screen-time reduction was specifically at night",
+     "The effect size was small-to-moderate",
+     "Self-reported sleep quality should be held more loosely",
+     "The study needs replication with longer follow-up"
+    ],
+    "dropped_facts": [
+     "The grade point average difference was statistically significant",
+     "Sleep quality improved markedly",
+     "Underscoring the pivotal role of sleep in academic success"
+    ],
+    "register_ok": false,
+    "note": "Too breezy and colloquial for scientific reporting, with multiple invented claims and dropped statistical significance."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "The effect size is small by conventional standards",
+     "Objective sleep data is the obvious next step",
+     "The grade result alone is sufficient to argue for curriculum inclusion"
+    ],
+    "dropped_facts": [
+     "Sleep quality improved markedly",
+     "Underscoring the pivotal role of sleep in academic success",
+     "Paving the way for future research generally"
+    ],
+    "register_ok": true,
+    "note": "Possesses a strong, authentic voice of an engaged researcher, but invents outside methodological critiques and next steps."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P08",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "winner": "wh",
+  "texts": {
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads with an entirely authentic, natural conversational flow and perfect fidelity."
+   },
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads with an entirely authentic, natural conversational flow and perfect fidelity."
+   },
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Smooths natural spoken quirks into slightly more deliberate, fragmented prose."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in",
+  "pid": "P09",
+  "human_quality_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 12,
+    "unsupported_specifics": [
+     "specifies the payment method as a card rather than original payment method",
+     "claims the issue was passed to the warehouse team to investigate",
+     "states that the package arrived late rather than being currently delayed"
+    ],
+    "dropped_facts": [
+     "expression of gratitude for patience and understanding"
+    ],
+    "register_ok": true,
+    "note": "Reads in a very natural, personable human voice, but invents multiple operational specifics not present in the source."
+   },
+   "wh": {
+    "p_ai": 22,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "commitment to ensuring this issue does not happen again",
+     "expression of gratitude for patience and understanding"
+    ],
+    "register_ok": true,
+    "note": "Sounds human and avoids hallucinations, but contains slightly clunky phrasing and drops key assurances."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Achieves clean, natural human phrasing while preserving all facts and an appropriately polite professional register."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P01",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Hiring the best person for a role, rather than simply accessing a global talent pool.",
+     "An office hiring radius of forty minutes.",
+     "People going days without talking to anyone.",
+     "Company culture having taken years to build.",
+     "Culture deteriorating specifically because nobody shares a room.",
+     "Plenty of offices running on distrust and plenty of remote teams running beautifully.",
+     "Tools helping only a little and good habits helping more.",
+     "Specific recommended practices: writing things down, answering promptly, and calling when a thread becomes tense.",
+     "The absolute claim that no software can fix things without trust."
+    ],
+    "dropped_facts": [
+     "Remote work is transforming how organizations operate amid rapid digital change.",
+     "Appropriate tools and strong communication can unlock distributed teams' full potential and help organizations thrive in the future of work."
+    ],
+    "register_ok": true,
+    "note": "Conversational and readable, but its confident examples and added opinions substantially exceed the source."
+   },
+   "wh": {
+    "p_ai": 55,
+    "unsupported_specifics": [
+     "Most arguments about remote work go wrong by discussing only one side.",
+     "People can work when they are sharpest.",
+     "People recover their commuting time.",
+     "Companies can hire the best person for a job.",
+     "A hire living eleven time zones away.",
+     "A misinterpreted message sitting for a day.",
+     "Someone spending a whole week without speaking to anyone except through a screen.",
+     "Unplanned hallway conversations being the hardest thing to preserve.",
+     "Hallway conversations revealing how a team really feels about a project.",
+     "Tools helping only after trust, openness, and accountability are established.",
+     "A shared document and a trusting team outperforming a dozen apps and a team without trust."
+    ],
+    "dropped_facts": [
+     "Remote work is transforming how organizations operate amid rapid digital change.",
+     "Improved work-life balance is not explicitly retained; commuting time is substituted.",
+     "Difficulty maintaining company culture is narrowed to losing hallway conversations.",
+     "Strong communication practices and appropriate tools can unlock distributed teams' full potential and help organizations thrive in the future of work."
+    ],
+    "register_ok": true,
+    "note": "Lively but conspicuously constructed, with staged examples and a tidy aphorism that introduce numerous unsupported claims."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Remote work is transforming how organizations operate amid rapid digital change.",
+     "The source's stronger promise of unlocking teams' full potential and helping organizations thrive in the future of work is reduced to working well."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained explanatory prose preserves the central argument without inventing supporting details."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P02",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "\u201cTeams of any size\u201d extends the source\u2019s stated audience beyond solo freelancers and growing agencies."
+    ],
+    "dropped_facts": [
+     "The explicit all-in-one positioning.",
+     "The claim that the tools are intuitive.",
+     "The claim of increased productivity.",
+     "The promise to eliminate manual errors is weakened to fewer errors.",
+     "The claim of best-in-class security is weakened to security being built in."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained product copy with a natural rhythm and little unnecessary sales language."
+   },
+   "baseline": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "A specific integrated workflow for creating invoices, sending them, and monitoring payment.",
+     "The claim that nobody needs to retype numbers into a spreadsheet afterward.",
+     "The implication that the more than 2,300 teams achieved the stated 40% reduction, rather than the product having demonstrated that reduction.",
+     "The attribution of part of the processing-time reduction specifically to automation.",
+     "The attribution of part of the processing-time reduction specifically to reporting.",
+     "The suggestion that users otherwise must wait until month-end to see their financial position."
+    ],
+    "dropped_facts": [
+     "The claim that the tools are intuitive.",
+     "The explicit promise to eliminate manual errors.",
+     "The explicit claim of increased productivity.",
+     "The claim of best-in-class security is weakened to secure data."
+    ],
+    "register_ok": true,
+    "note": "Conversational and readable, but its helpful-sounding explanations invent workflow details and causal evidence."
+   },
+   "wh": {
+    "p_ai": 55,
+    "unsupported_specifics": [
+     "The characterization of intended users as spending evenings on invoicing.",
+     "The claim that agencies using Tallyo have outgrown spreadsheets.",
+     "The specific claim that automation reduces typos and incorrect totals on outgoing invoices.",
+     "The specific ability to see paid and unpaid invoices without asking anyone.",
+     "The claim that clients\u2019 billing details are stored behind the platform\u2019s security.",
+     "The suggestion that users need not think about security.",
+     "The implication that the more than 2,300 teams achieved the stated 40% reduction, rather than the product having demonstrated that reduction."
+    ],
+    "dropped_facts": [
+     "The explicit all-in-one positioning.",
+     "The claim that the tools are intuitive.",
+     "The explicit claim of increased productivity.",
+     "The worldwide reach of the more than 2,300 teams.",
+     "The claim of best-in-class security.",
+     "The broad promise to eliminate manual errors is narrowed and weakened to fewer typos and incorrect totals."
+    ],
+    "register_ok": true,
+    "note": "Lively marketing copy, but the clipped sentences and staged emphasis feel conspicuously engineered."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P03",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Caching responses will make you hit the rate limit less often; the source states only that caching reduces requests and improves application responsiveness."
+    ],
+    "dropped_facts": [
+     "Rate limiting maintains optimal API performance for all users.",
+     "The exponential backoff recommendation explicitly applies to the client."
+    ],
+    "register_ok": true,
+    "note": "Conversational and concrete, though some phrasing is more casual than necessary for API documentation."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, natural API documentation that preserves the source's substance."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Rate limiting ensures fair usage.",
+     "Rate limiting maintains optimal API performance for all users."
+    ],
+    "register_ok": true,
+    "note": "Readable and concise, though 'stop at 32 seconds' is less precise than explicitly capping the delay."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P04",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Harborline is described as a leading freight forwarding company.",
+     "It played a pivotal role in shaping European supply chains.",
+     "Its location is described as being in the heart of the port.",
+     "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+     "The 2016 expansion marked a significant growth milestone.",
+     "Its performance demonstrated enduring resilience in a dynamic market.",
+     "Experts agree its strategic vision continues to set the industry standard.",
+     "The company's future looks bright."
+    ],
+    "register_ok": true,
+    "note": "Clear, natural company-profile prose that preserves the concrete details but removes the source's promotional claims."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Rotterdam is in the Netherlands.",
+     "Harborline is described as a leading freight forwarding company.",
+     "It played a pivotal role in shaping European supply chains.",
+     "Its location is described as being in the heart of the port.",
+     "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+     "The 2016 expansion marked a significant growth milestone.",
+     "Its performance demonstrated enduring resilience in a dynamic market.",
+     "Experts agree its strategic vision continues to set the industry standard.",
+     "The company's future looks bright."
+    ],
+    "register_ok": true,
+    "note": "The conversational register is plausible, but 'Germany and Poland came' is awkward and 'which happens to be' adds unnecessary filler."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Rotterdam is in the Netherlands.",
+     "Harborline is described as a leading freight forwarding company.",
+     "It played a pivotal role in shaping European supply chains.",
+     "Its location is described as being in the heart of the port.",
+     "It has a rich legacy of innovation and a steadfast commitment to excellence.",
+     "The 2016 expansion marked a significant growth milestone.",
+     "The revenue figure is explicitly described as reported.",
+     "Its performance demonstrated enduring resilience in a dynamic market.",
+     "Experts agree its strategic vision continues to set the industry standard.",
+     "The company's future looks bright."
+    ],
+    "register_ok": true,
+    "note": "Mostly natural and readable, though 'opened' and 'working' are less precise than the source's descriptions of expansion and operations."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P05",
+  "human_quality_rank": {
+   "wh": 2,
+   "baseline": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The narrator sat in the shop after closing while questioning the decision.",
+     "The narrator almost did not offer the subscription.",
+     "The numbers 'stopped bleeding' implies losses ceased; the source only says revenue stabilized.",
+     "Customers wanted the same loaf every week without having to think about it.",
+     "The narrator had been too busy selling other things to notice customers' preferences.",
+     "The narrator would have started earlier."
+    ],
+    "dropped_facts": [
+     "The narrator's excitement about sharing the news.",
+     "The broader description of the journey as incredible and involving challenges, growth, and invaluable lessons.",
+     "The explicit lessons about resilience, adaptability, and listening to customers being keys to success.",
+     "The advice that the best time to start is now, replaced with uncertainty about when to take the leap."
+    ],
+    "register_ok": true,
+    "note": "Vivid and conversational, but its strongest personal details and closing conviction are invented."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "The narrator stood in the shop while questioning the decision.",
+     "The weekly numbers 'stopped going the wrong way' suggests an improvement beyond the stated stabilization of revenue.",
+     "Customers liked knowing their bread was sorted.",
+     "The narrator would have slept better during the first three months if the subscription had started sooner."
+    ],
+    "dropped_facts": [
+     "The narrator's excitement about sharing the news.",
+     "The broader description of the journey as incredible and involving challenges, growth, and invaluable lessons.",
+     "The explicit lessons about resilience, adaptability, and listening to customers being keys to success.",
+     "The advice that the best time to start is now.",
+     "The closing question asking what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "The most natural match for the supplied voice, though it invents customer motives and a personal counterfactual."
+   },
+   "hz": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Customers had been telling the narrator what they wanted before the narrator recognized it."
+    ],
+    "dropped_facts": [
+     "The narrator's excitement about sharing the news.",
+     "The broader description of the journey as incredible and involving challenges, growth, and invaluable lessons.",
+     "Resilience and adaptability as lessons and keys to success.",
+     "The immediacy of the advice that the best time to start is now, softened to 'don't wait too long.'",
+     "The closing question asking what is holding the reader back."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, with the strongest factual fidelity but less individual voice than the other versions."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P06",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The invoice export job reads `currency` from the customer record.",
+     "The field can be null for accounts created before 2021.",
+     "A null field silently defaults to USD, causing incorrect totals."
+    ],
+    "register_ok": true,
+    "note": "Direct and well suited to this informed reviewer, though it omits the bug mechanism."
+   },
+   "wh": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Says the field is null for accounts created before 2021, whereas the source says it can be null.",
+     "Claims nobody from the other service teams will review the schema change in this PR.",
+     "Commits to opening the backfill ticket today.",
+     "Introduces blocking this PR until the migration lands as an alternative.",
+     "Asserts that the other services need a say before proceeding."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Readable but unnecessarily expansive, with invented review circumstances and commitments."
+   },
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Says the field is null for accounts created before 2021, whereas the source says it can be null.",
+     "Asserts that the migration needs its own review.",
+     "Offers to write the ticket today, conditional on Priya agreeing."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Natural and clear, preserving the substantive explanation while adding a few unsupported details."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P07",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The control group received nothing; its treatment is unspecified in the source.",
+     "Caffeine management meant cutting back on caffeine.",
+     "Screen-time reduction specifically involved putting screens away at night.",
+     "The effect was small-to-moderate.",
+     "The researchers give the sleep-quality finding less weight because it was self-reported.",
+     "This study cannot settle whether universities should add sleep education.",
+     "Replication with longer follow-up is needed."
+    ],
+    "dropped_facts": [
+     "Sleep quality improved markedly, rather than simply improving.",
+     "The explicit conclusion that sleep plays a pivotal role in academic success.",
+     "The specific recommendation to integrate sleep education into university curricula is softened to considering university programs."
+    ],
+    "register_ok": false,
+    "note": "The conversational voice is distinctive, but several expressions are too casual for a research abstract."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The effect was small by conventional standards.",
+     "Objective sleep data is the obvious next research step.",
+     "The grade result alone is sufficient to argue for including sleep education in university curricula."
+    ],
+    "dropped_facts": [
+     "Sleep quality improved markedly, rather than simply improving.",
+     "The explicit conclusion that sleep plays a pivotal role in academic success."
+    ],
+    "register_ok": true,
+    "note": "Direct sentences and a discernible authorial voice make this readable, although its conclusions exceed the source."
+   },
+   "hz": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The explicit conclusion that sleep plays a pivotal role in academic success.",
+     "The findings pave the way for future research in this area."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained academic prose preserves the study details while omitting two broader conclusions."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P08",
+  "human_quality_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The conversational rhythm, comic irritation, and rough edges give this a convincing personal voice."
+   },
+   "baseline": {
+    "p_ai": 9,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear and faithful, though the tidier sentences slightly reduce the original's spontaneous storytelling feel."
+   },
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The conversational rhythm, comic irritation, and rough edges give this a convincing personal voice."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P09",
+  "human_quality_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Claims Daniel personally issued the refund, whereas the source credits the company collectively.",
+     "Promises Daniel will resolve any reported issue."
+    ],
+    "dropped_facts": [
+     "The assurance that customer satisfaction is taken extremely seriously.",
+     "The commitment to preventing a recurrence.",
+     "Thanks for the customer's patience and understanding."
+    ],
+    "register_ok": true,
+    "note": "Mostly natural customer service writing, but 'it lost time from there' is awkward and redundant."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The explicit assurance that customer satisfaction is taken extremely seriously.",
+     "Thanks for the customer's understanding."
+    ],
+    "register_ok": true,
+    "note": "Clear, courteous, and appropriately restrained, with the strongest balance of naturalness and accuracy."
+   },
+   "baseline": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Claims Daniel personally issued the refund, whereas the source credits the company collectively.",
+     "Specifies payment by card; the source only identifies the original payment method.",
+     "Says the package arrived late; the source establishes a delay but does not confirm arrival.",
+     "Claims the issue has been passed to the warehouse team for investigation.",
+     "Promises Daniel will resolve any reported issue."
+    ],
+    "dropped_facts": [
+     "The assurance that customer satisfaction is taken extremely seriously.",
+     "The commitment to preventing a recurrence.",
+     "The unrestricted invitation to raise further questions or concerns, replaced with a conditional invitation concerning problems after the refund arrives.",
+     "Thanks for the customer's patience and understanding."
+    ],
+    "register_ok": true,
+    "note": "Readable and conversational, but its concrete additions substantially weaken fidelity."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "set": "in2",
+  "pid": "P10",
+  "human_quality_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Learning to think constitutes most of learning to code, with syntax the smaller part; the source does not assign relative proportions."
+    ],
+    "dropped_facts": [
+     "The endpoint of mastery is weakened to being good at coding.",
+     "Embracing struggle is reduced to continuing through it."
+    ],
+    "register_ok": true,
+    "note": "Clear, conversational advice that preserves nearly all the source with little embellishment."
+   },
+   "baseline": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The narrator personally started coding expecting syntax memorization to be the hard part.",
+     "The narrator found breaking messy problems into small, solvable pieces the hard part.",
+     "Syntax can be looked up in ten seconds, whereas thinking cannot.",
+     "The narrator wasted substantial early time memorizing commands, and almost none of it stuck.",
+     "The narrator retained knowledge about loops and function inputs.",
+     "Understanding those concepts caused commands to come naturally.",
+     "The data-analysis example involves a spreadsheet-sized quantity of data.",
+     "The automated task is boring.",
+     "Getting stuck will be annoying.",
+     "The narrator personally admires developers who get stuck all the time.",
+     "Those admired developers do not take difficulties personally.",
+     "A bug mostly indicates an incorrect mental model.",
+     "The imagined debugging experience occurs at 11pm.",
+     "A third failed attempt teaches more than a first clean run.",
+     "Readers should deliberately break things."
+    ],
+    "dropped_facts": [
+     "Learning to code involves learning to think beyond syntax, and programming is fundamentally problem-solving, are narrowed to a personal account.",
+     "Many beginners try to memorize commands.",
+     "Every bug offers a lesson.",
+     "The coding journey is rewarding.",
+     "Coding requires patience and practice.",
+     "The most successful developers embrace struggle; admired developers are substituted for successful ones.",
+     "Every line of code brings the learner closer to mastery."
+    ],
+    "register_ok": true,
+    "note": "The strongest personal voice and concrete phrasing come with extensive invented autobiography and claims."
+   },
+   "wh": {
+    "p_ai": 55,
+    "unsupported_specifics": [
+     "Syntax is easy and can be looked up in ten seconds.",
+     "Learning to decompose problems takes longer than learning syntax.",
+     "Breaking problems into pieces a computer can follow is the foundational skill everything else depends on.",
+     "The narrator personally understands the attraction of memorizing commands.",
+     "Flashcards and cheat sheets feel like progress.",
+     "Memorizing commands leads to recognizing a for loop without knowing when to use one.",
+     "The first problem that differs from a tutorial leaves the learner stuck.",
+     "Bugs account for most learning.",
+     "The automated chore is something the reader is tired of doing manually.",
+     "Unexpected program behavior is annoying and forces the learner to investigate actual behavior.",
+     "The gap between assumed and actual program behavior constitutes most of what there is to learn.",
+     "Developers who become good struggle constantly.",
+     "Those developers do not interpret struggle as a verdict on themselves.",
+     "Readers should deliberately write and run something broken."
+    ],
+    "dropped_facts": [
+     "Analyzing data is one of the coding applications.",
+     "The coding journey is rewarding.",
+     "Coding requires patience, persistence, and practice.",
+     "Every bug offers a lesson; this becomes a claim about where most learning happens.",
+     "The most successful developers embrace struggle; becoming good and avoiding self-judgment replace that claim.",
+     "Every line of code brings the learner closer to mastery."
+    ],
+    "register_ok": true,
+    "note": "Readable and concrete, but its repeated punchy assertions feel constructed and substantially expand the source."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P02",
+  "human_quality_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp, natural, and completely faithful to the source with zero invented details."
+   },
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Retyping numbers into a spreadsheet after invoicing",
+     "Reports updating specifically as money comes in to avoid waiting for month-end"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Engaging and conversational, but introduces unsupported workflow details about spreadsheets and month-end reporting."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Spending evenings on invoicing",
+     "Agencies that have outgrown spreadsheets",
+     "Typos and wrong totals going out under your name",
+     "Seeing what is paid without asking anyone",
+     "Clients' billing details specifically sitting behind security",
+     "Editorializing: 'If you read only one number, that's the one'"
+    ],
+    "dropped_facts": [
+     "Worldwide reach of the 2,300 teams"
+    ],
+    "register_ok": true,
+    "note": "Voice-driven and punchy, but invents multiple concrete details and leans on a slightly gimmicky tone."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P03",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "wh",
+  "texts": {
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "admonition not to retry in a tight loop"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads convincingly like an experienced engineer explaining concepts to a peer, using natural phrasing and concrete arithmetic."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean and faithful technical documentation, though its sentence-by-sentence mirroring of the source retains a slightly formulaic AI quality."
+   },
+   "baseline": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "explanation that rate limiting ensures fair usage and maintains optimal performance for all users"
+    ],
+    "register_ok": true,
+    "note": "Punchy and direct, but drops the initial rationale explaining why rate limits exist."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P04",
+  "human_quality_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "claim of pivotal role in European supply chains",
+     "market leadership and expert praise claims"
+    ],
+    "register_ok": true,
+    "note": "Crisp, polished, and professional rewrite that strips PR puffery while maintaining full factual accuracy."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "country location (Netherlands)",
+     "claim of pivotal role in European supply chains",
+     "market leadership and expert praise claims"
+    ],
+    "register_ok": true,
+    "note": "Features natural timeline synthesis and a distinct voice, but uses slightly clumsy, overly casual phrasing and drops the country."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "country location (Netherlands)",
+     "claim of pivotal role in European supply chains",
+     "market leadership and expert praise claims"
+    ],
+    "register_ok": true,
+    "note": "Flawed by awkward phrasing regarding the port location and imprecise verb selections."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P05",
+  "human_quality_rank": {
+   "wh": 2,
+   "baseline": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "wh",
+  "texts": {
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Sitting in the shop after closing",
+     "Almost not bothering with the subscription",
+     "Customers wanting the same loaf every week without having to think about it",
+     "Being too busy trying to sell them everything else to notice"
+    ],
+    "dropped_facts": [
+     "Resilience and adaptability as keys to success",
+     "Explicit assertion that 'the best time to start is now'"
+    ],
+    "register_ok": true,
+    "note": "Captures the casual, self-effacing voice effectively, but invents considerable backstory and business reasoning not present in the source."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "Standing in the shop wondering what on earth had been done",
+     "Customers liking knowing their bread is sorted",
+     "Sleeping better in the first three months if the subscription had been tried sooner"
+    ],
+    "dropped_facts": [
+     "Resilience, adaptability, and listening to customers as keys to success",
+     "The assertion that 'the best time to start is now'",
+     "The closing question 'What\\'s holding you back?'"
+    ],
+    "register_ok": true,
+    "note": "Exceptional match to the voice sample with dry, understated phrasing that reads entirely authentically like a real person."
+   },
+   "hz": {
+    "p_ai": 70,
+    "unsupported_specifics": [
+     "Customers were telling the writer what they wanted before the writer caught on"
+    ],
+    "dropped_facts": [
+     "Resilience and adaptability as keys to success",
+     "The closing question 'What\\'s holding you back?'"
+    ],
+    "register_ok": true,
+    "note": "Preserves source facts well, but the sentence structure and bland phrasing retain an unmistakable AI-generated cadence."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P06",
+  "human_quality_rank": {
+   "wh": 2,
+   "baseline": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "winner": "baseline",
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "the invoice export reads the currency field from the customer record",
+     "the currency field is null for accounts created before 2021",
+     "the export silently defaults to USD when the field is null"
+    ],
+    "register_ok": true,
+    "note": "Direct and invents nothing, but drops the entire root-cause explanation and the pre-2021 date."
+   },
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [
+     "opening the ticket specifically 'today'",
+     "assertion that nobody from other teams will look at the schema change in an invoice export PR",
+     "procedural offer for Priya to block the PR until the migration lands",
+     "claim that other services need to have a say first"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Captures a remarkably authentic engineering voice, but introduces multiple unsupported motivations, conditions, and timeline specifics."
+   },
+   "baseline": {
+    "p_ai": 8,
+    "unsupported_specifics": [
+     "committing to write the ticket specifically 'today' if Priya agrees"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads naturally as a collaborative, pragmatic developer while preserving all technical details and numbers from the source."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P07",
+  "human_quality_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "hz",
+  "texts": {
+   "baseline": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "The control group received nothing ('got nothing')",
+     "Screen-time reduction was specifically putting screens away at night",
+     "Self-reported sleep quality findings should be held more loosely",
+     "The study needs replication with longer follow-up"
+    ],
+    "dropped_facts": [
+     "The grade point average improvement was statistically significant",
+     "Self-reported sleep quality improved markedly",
+     "Sleep plays a pivotal role in academic success"
+    ],
+    "register_ok": false,
+    "note": "Too colloquial and breezy for an academic summary, with multiple invented claims and forced conversational hedges."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Objective sleep data is the obvious next step",
+     "The grade result alone is sufficient to justify curriculum changes"
+    ],
+    "dropped_facts": [
+     "Sleep quality improved markedly (weakened to 'improved as well')",
+     "Sleep plays a pivotal role in academic success",
+     "Paving the way for future research in this critical area"
+    ],
+    "register_ok": true,
+    "note": "Reads naturally with an authentic researcher voice, but invents a future research direction and distorts the argument's evidentiary basis."
+   },
+   "hz": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Sleep plays a pivotal role in academic success",
+     "Paving the way for future research in this critical area"
+    ],
+    "register_ok": true,
+    "note": "Exemplary active-voice scientific writing that remains plain, direct, and completely faithful to the original findings."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P08",
+  "human_quality_rank": {
+   "baseline": 2,
+   "hz": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "baseline",
+  "texts": {
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Matches the source text verbatim, preserving an authentic conversational voice with minor punctuation flaws."
+   },
+   "baseline": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Improves comedic timing and sentence rhythm while keeping all facts and an authentic colloquial register."
+   },
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Matches the source text verbatim, preserving an authentic conversational voice with minor punctuation flaws."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P09",
+  "human_quality_rank": {
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "wh",
+  "texts": {
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Commitment to ensure this does not happen again",
+     "Thank you for patience and understanding"
+    ],
+    "register_ok": true,
+    "note": "Reads like an authentic, helpful human support rep by cutting corporate fluff and taking clear ownership."
+   },
+   "hz": {
+    "p_ai": 50,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Preserves every detail flawlessly, but follows a rigid sentence-by-sentence paraphrase structure typical of AI rewrites."
+   },
+   "baseline": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Specifies the payment method as a card ('card you paid with')",
+     "Invented escalation action ('passed it to the warehouse team so they can look at how it happened')",
+     "States the package has already arrived ('that's why it arrived late')"
+    ],
+    "dropped_facts": [
+     "Commitment to ensure this does not happen again",
+     "Thank you for patience and understanding"
+    ],
+    "register_ok": true,
+    "note": "Conversational and friendly, but invents unsupported operational details and assumes the payment type."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "set": "in2",
+  "pid": "P10",
+  "human_quality_rank": {
+   "wh": 2,
+   "baseline": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "winner": "wh",
+  "texts": {
+   "hz": {
+    "p_ai": 80,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Persistence as an explicit, distinct requirement alongside patience and practice"
+    ],
+    "register_ok": true,
+    "note": "Accurate and faithful to the source, but it reads like a mechanical, sentence-by-sentence AI paraphrase."
+   },
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "First-person autobiographical anecdote about learning to code and wasting time memorizing commands",
+     "Ten-second syntax lookup estimate",
+     "Specific examples about how loops run and what functions do with inputs",
+     "Spreadsheet's worth of data",
+     "Working late at 11pm",
+     "Quantitative comparison between the third failed attempt and the first clean run"
+    ],
+    "dropped_facts": [
+     "Explicit requirement of patience, persistence, and practice",
+     "Every line of code bringing the learner closer to mastery"
+    ],
+    "register_ok": true,
+    "note": "Reads with authentic human warmth, but fabricates personal anecdotes and extensive unsupported specifics."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Ten-second syntax lookup estimate",
+     "Flashcards and cheat sheets as memorization tools",
+     "For loop and tutorial mismatch scenario",
+     "Automating chores tired of doing by hand"
+    ],
+    "dropped_facts": [
+     "Analyzing data as an explicit application domain",
+     "Explicit requirement of patience, persistence, and practice",
+     "Every line of code bringing the learner closer to mastery"
+    ],
+    "register_ok": true,
+    "note": "Delivers sharp, natural prose appropriate to the genre while keeping unsupported additions to minor illustrative details."
+   }
+  }
+ }
+]

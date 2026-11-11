@@ -1,0 +1,62 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["B", "A", "D", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The assurance that customer satisfaction is taken extremely seriously.",
+        "The thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Clear and direct, though slightly abrupt for a customer service apology."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "Says preventive work is underway, whereas the source states a commitment to preventing recurrence."
+      ],
+      "dropped_facts": [
+        "The assurance that customer satisfaction is taken extremely seriously.",
+        "The thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "Natural, courteous, and well balanced, with the strongest overall customer service voice."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Identifies the original payment method as a card.",
+        "Attributes processing the refund personally to Daniel.",
+        "States that the package arrived late, implying delivery has occurred.",
+        "Says the issue has been passed to the warehouse team for investigation.",
+        "Promises Daniel will resolve anything that looks wrong after the refund arrives."
+      ],
+      "dropped_facts": [
+        "The assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to preventing the problem from happening again.",
+        "The unrestricted invitation to raise further questions or concerns.",
+        "The thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Conversational but somewhat scripted, with several invented details and a narrower closing invitation."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Attributes processing the refund personally to Daniel.",
+        "Promises Daniel will resolve a missing refund or anything else that looks wrong."
+      ],
+      "dropped_facts": [
+        "The assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to preventing the problem from happening again.",
+        "The unrestricted invitation to raise further questions or concerns.",
+        "The thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Mostly natural and approachable, but 'it lost time from there' is awkward and imprecise."
+    }
+  }
+}

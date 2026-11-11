@@ -1,0 +1,78 @@
+{
+  "human_quality_rank": ["D", "A", "E", "B", "C"],
+  "fidelity_rank": ["B", "C", "E", "D", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "Personal reactions and conversations ('most people I talk to', 'I'm both', 'That part I buy')",
+        "Adjusting a reading list to each kid",
+        "Marking forty quizzes overnight",
+        "Teacher up past midnight with a red pen",
+        "Schools not asking where student data lives",
+        "Kids with fast home internet and their own laptop benefiting first",
+        "A class handing its thinking to software and not noticing",
+        "Definitive assertion that AI will not replace teachers ('It won't')",
+        "Teachers gaining a few extra hours a week to sit next to stuck students"
+      ],
+      "dropped_facts": [
+        "Fostering a learning environment that is more engaging, inclusive, and effective than ever before",
+        "Empowering educators and students alike to unlock their full potential",
+        "Profound implications of AI revolutionizing education"
+      ],
+      "register_ok": true,
+      "note": "Reads with vivid, engaging personality, but strays far from the source into an op-ed with numerous invented specifics."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Profound implications (moderated to 'changing how schools teach')",
+        "'Than ever before' comparative superlative"
+      ],
+      "register_ok": true,
+      "note": "Crisp, natural human prose that preserves every core claim without inventing details."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Profound implications (moderated to 'changing how schools approach education')"
+      ],
+      "register_ok": true,
+      "note": "Faithful and clear, though slightly mechanical in sentence structure and lacking a distinct voice."
+    },
+    "D": {
+      "p_ai": 5,
+      "unsupported_specifics": [
+        "Adjusting lessons to each student's pace and meeting them where they are",
+        "Saving teachers time as a primary benefit",
+        "Schools not knowing who can see student data",
+        "Disparity based on good devices and fast home internet",
+        "Chatbots doing the thinking and students quietly stopping learning how to do it themselves",
+        "Teacher noticing a quiet kid or a lucky guess, and software being unable to do that",
+        "Taking the marking pile off teachers' desks",
+        "Staying skeptical of the sales pitch"
+      ],
+      "dropped_facts": [
+        "Fostering a learning environment that is more engaging, inclusive, and effective than ever before",
+        "Empowering educators and students alike to unlock their full potential",
+        "Profound implications of the transformation"
+      ],
+      "register_ok": true,
+      "note": "Exceptionally warm and observant human voice, but heavily fabricates classroom details and drops the conclusion."
+    },
+    "E": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Unlocking full potential (narrowed to getting more out of their time)",
+        "Profound implications",
+        "'Than ever before' comparative superlative"
+      ],
+      "register_ok": true,
+      "note": "Conversational and idiomatic with high fidelity, though it slightly narrows unlocking potential to time savings."
+    }
+  }
+}

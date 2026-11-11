@@ -1,0 +1,38 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Commitment to ensure this does not happen again",
+        "Thank you for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Reads like an authentic, helpful human support rep by cutting corporate fluff and taking clear ownership."
+    },
+    "B": {
+      "p_ai": 50,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves every detail flawlessly, but follows a rigid sentence-by-sentence paraphrase structure typical of AI rewrites."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Specifies the payment method as a card ('card you paid with')",
+        "Invented escalation action ('passed it to the warehouse team so they can look at how it happened')",
+        "States the package has already arrived ('that's why it arrived late')"
+      ],
+      "dropped_facts": [
+        "Commitment to ensure this does not happen again",
+        "Thank you for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Conversational and friendly, but invents unsupported operational details and assumes the payment type."
+    }
+  }
+}

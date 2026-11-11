@@ -1,0 +1,1990 @@
+[
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T01",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v11": 2,
+   "v20": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Describes the plasterboard as rotted; the source specifies deterioration from water damage without identifying rot."
+    ],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Calling the wall 'wrecked' suggests more extensive destruction than 'significant water damage' necessarily establishes."
+    ],
+    "register_ok": true,
+    "note": "The conversational rhythm fits the surrounding post, but the renovation maxim still sounds inserted."
+   },
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Does not explicitly identify water as the cause of the damage.",
+     "Omits the reminder that thorough preparation is fundamental to a successful renovation."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "The understated, colloquial account fits the surrounding author best, though it loses two source points."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Describes the plasterboard as rotted; the source specifies deterioration from water damage without identifying rot."
+    ],
+    "dropped_facts": [
+     "Does not explicitly preserve that the complication was unforeseen."
+    ],
+    "strength_changes": [
+     "'Proper preparation matters' weakens the claim that thorough preparation is the cornerstone of any successful renovation."
+    ],
+    "register_ok": true,
+    "note": "Clear and conversational, with a less intrusive lesson than A and more source content than B."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T01",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Captures the dry, punchy voice of the surrounding blog post while preserving all source details."
+   },
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that the damage was specifically caused by water ('significant water damage')",
+     "the takeaway that thorough preparation is the cornerstone of any successful renovation"
+    ],
+    "strength_changes": [
+     "'the wall at the back of the shower was in a bad way' is weaker than 'sustained significant water damage'"
+    ],
+    "register_ok": true,
+    "note": "Fits the casual blog register well, but drops the cause of damage and the preparation takeaway."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "'proper preparation matters' weakens the source claim that thorough preparation is the 'cornerstone of any successful renovation'"
+    ],
+    "register_ok": true,
+    "note": "Reads naturally and retains all key facts, though the phrasing is slightly more conventional than A."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T02",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The general characterization of the funding landscape as challenging."
+    ],
+    "strength_changes": [
+     "The description of supporters' generosity is less emphatic than the source's 'incredible generosity'."
+    ],
+    "register_ok": true,
+    "note": "Clear, restrained financial reporting that fits the surrounding paragraphs and preserves the substantive details."
+   },
+   "v20": {
+    "p_ai": 17,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The general characterization of the funding landscape as challenging.",
+     "The explicit characterization of the donation increase as evidence of supporters' generosity."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "'Most of that' awkwardly leaves unclear whether it refers to grant income or its decline."
+   },
+   "v11": {
+    "p_ai": 13,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The general characterization of the funding landscape as challenging.",
+     "The explicit characterization of the donation increase as evidence of supporters' generosity."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Natural and suitably restrained, though the separate thank-you slightly interrupts the financial account."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T02",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "General assertion of a 'challenging funding landscape'"
+    ],
+    "strength_changes": [
+     "'rose' tones down the source's hyperbolic 'surged'"
+    ],
+    "register_ok": true,
+    "note": "Seamlessly fits the sober, formal tone of the surrounding trustee report with balanced and natural phrasing."
+   },
+   "v20": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "General assertion of a 'challenging funding landscape'"
+    ],
+    "strength_changes": [
+     "'rose' tones down the source's hyperbolic 'surged'"
+    ],
+    "register_ok": true,
+    "note": "The phrasing is slightly clumsy and relies on ambiguous pronoun references that weaken the formal register."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "General assertion of a 'challenging funding landscape'"
+    ],
+    "strength_changes": [
+     "'rose' tones down the source's hyperbolic 'surged'"
+    ],
+    "register_ok": true,
+    "note": "Accurate and clear, though the short sentences create a slightly disjointed cadence."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 2,
+   "v20": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The stated purpose of ensuring seamless interaction with the upstream API.",
+     "The claim that honoring Retry-After and backing off plays a crucial role in overall system stability."
+    ],
+    "strength_changes": [
+     "Removes the source's evaluative descriptions of the mechanism as sophisticated, pausing as graceful, and backoff as robust."
+    ],
+    "register_ok": true,
+    "note": "Clear, concrete technical prose that fits the surrounding paragraphs particularly well."
+   },
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Explicitly attributes system stability to both pausing on an empty bucket and backing off after a 429; the source explicitly attributes that role only to the latter."
+    ],
+    "dropped_facts": [
+     "The stated purpose of ensuring seamless interaction with the upstream API."
+    ],
+    "strength_changes": [
+     "Removes the source's evaluative descriptions of the mechanism as sophisticated, pausing as graceful, and backoff as robust.",
+     "Changes playing a crucial role in maintaining stability to the more categorical claim that both behaviours keep the system stable."
+    ],
+    "register_ok": true,
+    "note": "Natural and compact, although its final sentence broadens the source's causal claim."
+   },
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The stated purpose of ensuring seamless interaction with the upstream API."
+    ],
+    "strength_changes": [
+     "Removes the source's evaluative descriptions of the mechanism as sophisticated, pausing as graceful, and backoff as robust.",
+     "Weakens backoff's crucial role in maintaining stability to helping keep the system stable."
+    ],
+    "register_ok": true,
+    "note": "Faithful and readable, but the abstract closing clause is less crisp than the surrounding author's prose."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T03",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 2,
+   "v20": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The claim that backing off maintains overall system stability."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Reads naturally like an engineer's design doc and matches the surrounding context perfectly."
+   },
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Attributes system stability to both behaviors rather than specifically to backing off on 429."
+    ],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Softens 'plays a crucial role in maintaining overall system stability' to 'keep the system stable'."
+    ],
+    "register_ok": true,
+    "note": "Has a slightly awkward closing sentence and a loose pronoun, but reads generally human."
+   },
+   "v21": {
+    "p_ai": 75,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Softens 'plays a crucial role in maintaining overall system stability' to 'helps keep the whole system stable'."
+    ],
+    "register_ok": true,
+    "note": "Retains the telltale boilerplate phrasing of an AI rewrite in its concluding sentence."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T04",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 24,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "\u201cCalms you down\u201d asserts an emotional effect more directly than \u201cfosters a calmer approach.\u201d",
+     "\u201cA working tool\u201d weakens the source\u2019s claim that patience is essential.",
+     "\u201cMore than tradition\u201d reduces the emphasis of \u201ca multitude of benefits\u201d extending \u201cfar beyond\u201d tradition."
+    ],
+    "register_ok": true,
+    "note": "Clear and reasonably close to the surrounding voice, though the explanatory opening sounds more instructional."
+   },
+   "v20": {
+    "p_ai": 32,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The conclusion no longer explicitly identifies patience as something the narrator personally learned from this experience."
+    ],
+    "strength_changes": [
+     "\u201cMake you calmer\u201d asserts an emotional effect more directly than \u201cfosters a calmer approach.\u201d",
+     "\u201cA tool\u201d weakens the source\u2019s claim that patience is essential.",
+     "\u201cReal benefits beyond tradition\u201d reduces the source\u2019s emphasis on the benefits\u2019 abundance and extent."
+    ],
+    "register_ok": true,
+    "note": "Readable but slightly generic, with passive phrasing and an impersonal conclusion that fit the surrounding essay less well."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The conclusion no longer explicitly identifies patience as something the narrator personally learned from this experience."
+    ],
+    "strength_changes": [
+     "\u201cA working tool\u201d weakens the source\u2019s claim that patience is essential.",
+     "\u201cMore than tradition\u201d reduces the emphasis of \u201ca multitude of benefits\u201d extending \u201cfar beyond\u201d tradition."
+    ],
+    "register_ok": true,
+    "note": "The understated rhythm and emphasis on observable movement fit the surrounding personal essay best."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T04",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Removed the qualifier 'only' from 'only twice'",
+     "Weakened 'an essential tool' to 'a working tool' and softened 'not merely a virtue, but an essential tool' to 'as much as a virtue'"
+    ],
+    "register_ok": true,
+    "note": "Seamlessly matches the narrator's natural voice and cadence while avoiding passive phrasing and formulaic transitions."
+   },
+   "v20": {
+    "p_ai": 75,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Dropped the attribution that the insight was learned through the author's personal journey ('this journey has taught me')"
+    ],
+    "strength_changes": [
+     "Removed the qualifier 'only' from 'only twice'",
+     "Weakened 'essential tool' to simply 'a tool'"
+    ],
+    "register_ok": true,
+    "note": "Awkward passive phrasing, an ambiguous pronoun reference, and a formulaic transition make it feel artificial."
+   },
+   "v11": {
+    "p_ai": 60,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Dropped the attribution that the insight was learned through the author's personal journey ('this journey has taught me')"
+    ],
+    "strength_changes": [
+     "Weakened 'an essential tool' to 'a working tool' and softened the contrast with virtue to 'as much as it is a virtue'"
+    ],
+    "register_ok": true,
+    "note": "Unnatural passive voice and the clich\u00e9d filler phrase 'it turns out' detract from an otherwise competent rewrite."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T05",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Clean, direct business prose that preserves all nuances and hedges without unnecessary filler."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Stated more strongly: removed the qualifier 'probably' from 'is probably worth adopting', phrasing the recommendation as direct imperatives ('Raise...', 'Adopt...')."
+    ],
+    "register_ok": true,
+    "note": "Engaging executive style that leads with the recommendation, but redundantly repeats the core action in both the first and last sentences."
+   },
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Weakened: 'increases revenue per customer' became 'should bring in more revenue per customer'.",
+     "Stated more strongly: 'suggests that the increase would still raise revenue overall' became 'so revenue would still go up overall' (dropped 'suggests')."
+    ],
+    "register_ok": true,
+    "note": "Clear but staccato phrasing that hedges basic arithmetic while overstating the revenue projection."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T06",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Changes the possibility that reviews may become slower without improving into the categorical statement that they do.",
+     "Turns a tentative recommendation to probably require two reviewers only for payment and authentication changes into an unqualified directive.",
+     "States that one reviewer is enough elsewhere without the source's tentative framing."
+    ],
+    "register_ok": true,
+    "note": "Direct and natural, but its decisive ending sacrifices the source's caution."
+   },
+   "v21": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Clear and faithful, although the placement of 'probably only' makes the final sentence slightly awkward."
+   },
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Omits the initial apparent appeal of requiring two reviewers on every pull request as an obvious way to catch more bugs.",
+     "Omits the explicit reassessment that this apparent benefit becomes less clear on closer examination."
+    ],
+    "strength_changes": [
+     "Changes the possibility that reviews may become slower without improving into the categorical statement that they do."
+    ],
+    "register_ok": true,
+    "note": "Concise and readable, but the compressed argument loses the source's opening perspective and some caution."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T06",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "States that reviews 'get slower' as a certainty rather than a possibility ('may become slower')",
+     "Turns a hedged suggestion ('suggest that two reviewers should probably be required') into a direct imperative command ('Require two reviewers only...')"
+    ],
+    "register_ok": true,
+    "note": "Clear and direct, but choppy phrasing and an abrupt shift to an imperative ending weaken its nuance."
+   },
+   "v21": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Smooth and natural phrasing that preserves the logical progression, tone, and qualifiers of the source."
+   },
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Dropped the opening premise that requiring two reviewers on all PRs initially appears to be an obvious bug-catching measure but is less clear on closer examination"
+    ],
+    "strength_changes": [
+     "Strengthened 'may notice' to 'can catch'",
+     "Strengthened 'may become slower' to 'get slower'"
+    ],
+    "register_ok": true,
+    "note": "Leading with the conclusion drops the opening context and leaves the final sentence logically disconnected."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T07",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The explicit assessment that the survey suggests a Sunday market would be viable."
+    ],
+    "strength_changes": [
+     "The tentative recommendation that deferral 'would seem sensible' becomes the firmer 'should be asked to defer'.",
+     "The survey's suggestion of viability becomes the less specific claim that it 'partly backs' the move."
+    ],
+    "register_ok": true,
+    "note": "Clear and purposeful, but the opening recommendation is firmer than the source."
+   },
+   "v21": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Natural, measured civic prose that preserves the evidence and its qualifications."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "The tentative recommendation that deferral 'would seem sensible' becomes the categorical 'The sensible move is'."
+    ],
+    "register_ok": true,
+    "note": "Generally clear, but the clipped viability sentence and elliptical 'six who can't' make it less polished."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T07",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Dropped the explicit claim that a Sunday market would be viable (subsumed into 'partly backs it')"
+    ],
+    "strength_changes": [
+     "'The council should be asked' is more prescriptive than the source's hedged 'it would seem sensible to ask'",
+     "Framing the survey as 'partly backs it' alters the source's balanced presentation of the conflict"
+    ],
+    "register_ok": true,
+    "note": "Leading with the recommendation leaves the closing sentence feeling stranded, and reframing the survey alters the source's nuance."
+   },
+   "v21": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Smoothly replaces the formulaic filler with natural, well-paced briefing prose while retaining perfect fidelity."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Omitted the explicit subject from 'That looks viable' (dropping mention that the Sunday market specifically would be viable)"
+    ],
+    "strength_changes": [
+     "'The sensible move is' is slightly more assertive than the hedged 'it would seem sensible to'"
+    ],
+    "register_ok": true,
+    "note": "Clear and direct, though somewhat staccato and slightly clipped in its phrasing."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T08",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 2,
+   "v11": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Omits the stated purpose of the new features: improving users\u2019 workflow.",
+     "Omits the description of dark mode as sleek."
+    ],
+    "strength_changes": [
+     "Changes the migration request from 'as soon as possible' to 'before then,' weakening its urgency.",
+     "Removes the promotional assessment that the release is a 'true game-changer.'"
+    ],
+    "register_ok": true,
+    "note": "Clear, natural release copy, but the migration wording relaxes the original request."
+   },
+   "v20": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Omits the stated purpose of the new features: improving users\u2019 workflow.",
+     "Omits the description of dark mode as sleek."
+    ],
+    "strength_changes": [
+     "Removes the promotional assessment that the release is a 'true game-changer.'"
+    ],
+    "register_ok": true,
+    "note": "Direct, readable release copy that preserves the operational details and migration urgency."
+   },
+   "v21": {
+    "p_ai": 23,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Omits the stated purpose of the new features: improving users\u2019 workflow.",
+     "Omits the description of dark mode as sleek."
+    ],
+    "strength_changes": [
+     "Removes the promotional assessment that the release is a 'true game-changer.'"
+    ],
+    "register_ok": true,
+    "note": "Mostly natural, but 'a dark mode' and the isolated deadline fragment make the rhythm less smooth."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T08",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 2,
+   "v11": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Questions (in 'Questions or thoughts?')"
+    ],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Weakens the migration recommendation from 'as soon as possible' to 'before then'"
+    ],
+    "register_ok": true,
+    "note": "Direct and clean product update tone, with minor alterations to the call to action and migration urgency."
+   },
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Reads like a concise, natural release note written by a human engineer, preserving all facts perfectly."
+   },
+   "v21": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Choppy sentence structure and unidiomatic phrasing like 'a dark mode' make it read less smoothly."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T09",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Learning requires dedication, patience, and the right mindset.",
+     "Accepting errors, setting realistic goals, and immersing yourself can help you reach your full potential."
+    ],
+    "strength_changes": [
+     "Talent matters less than persistence softens the source's claim that success rests on persistence rather than talent."
+    ],
+    "register_ok": true,
+    "note": "Compact and conversational, though some useful substance disappears in the compression."
+   },
+   "v21": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Learning requires the right mindset.",
+     "Accepting errors, setting realistic goals, and immersing yourself can help you reach your full potential."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "The paragraphing and straightforward progression make this the most natural and readable version."
+   },
+   "v20": {
+    "p_ai": 40,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Accepting errors, setting realistic goals, and immersing yourself can help you reach your full potential."
+    ],
+    "strength_changes": [
+     "Pouring time into grammar weakens the source's explicit claim that many learners focus exclusively on grammar.",
+     "Avoiding practice with native speakers states a more definite behavior than being held back from practicing."
+    ],
+    "register_ok": true,
+    "note": "It preserves the most substance, but putting the conclusion before the introduction makes the progression awkward."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T09",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "requires dedication, patience, and the right mindset",
+     "you can unlock your full potential"
+    ],
+    "strength_changes": [
+     "'Talent matters less than persistence' softens the source's categorical claim that the key to success lies 'not in talent, but in persistence'"
+    ],
+    "register_ok": true,
+    "note": "Crisp and concise, but cuts several key requirements and weakens the concluding claim."
+   },
+   "v21": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "the right mindset",
+     "you can unlock your full potential"
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Flows with natural conversational cadence and effective pacing while preserving the core message."
+   },
+   "v20": {
+    "p_ai": 50,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "you can unlock your full potential"
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Preserves the most detail, but rearranging the conclusion into the opening sentence produces an unnatural, disjointed structure."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "T10",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source; the conversational rhythm, concrete details, and dry humour convey a distinctive, natural voice."
+   },
+   "v21": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source; the conversational rhythm, concrete details, and dry humour convey a distinctive, natural voice."
+   },
+   "v11": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source; the conversational rhythm, concrete details, and dry humour convey a distinctive, natural voice."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "T10",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 4,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source text with a highly authentic, natural conversational human voice and perfect fidelity."
+   },
+   "v21": {
+    "p_ai": 4,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source text with a highly authentic, natural conversational human voice and perfect fidelity."
+   },
+   "v11": {
+    "p_ai": 4,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source text with a highly authentic, natural conversational human voice and perfect fidelity."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T01",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Does not explicitly preserve that the complication was unforeseen."
+    ],
+    "strength_changes": [
+     "Saying preparation 'matters' weakens the claim that thorough preparation is the cornerstone of any successful renovation.",
+     "'Rotted' describes the deterioration more strongly and specifically than the source."
+    ],
+    "register_ok": true,
+    "note": "Clear and conversational, but smoother and less distinctive than the surrounding author's voice."
+   },
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Does not identify water as the cause of the wall damage.",
+     "Omits the lesson that thorough preparation is the cornerstone of a successful renovation."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "The clipped complaint fits the surrounding voice best, although 'had gone' is vague."
+   },
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "'Wrecked by water' is stronger than 'significant water damage.'",
+     "'Rotted' describes the deterioration more strongly and specifically than the source."
+    ],
+    "register_ok": true,
+    "note": "The terse setbacks and rueful aside fit the context while retaining the source's substantive content."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T01",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 2,
+   "v11": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Flows naturally and fits the wry blog context seamlessly while preserving all source information."
+   },
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "that the wall damage was caused specifically by water",
+     "the reminder that thorough preparation is the cornerstone of any successful renovation"
+    ],
+    "strength_changes": [
+     "'in a bad way' is vaguer and weaker than 'sustained significant water damage'"
+    ],
+    "register_ok": true,
+    "note": "Uses authentic colloquial phrasing that matches the author's voice well, but omits key source facts."
+   },
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "'wrecked by water' is slightly stronger than 'sustained significant water damage'"
+    ],
+    "register_ok": true,
+    "note": "Retains all facts and matches the tone, though repeating 'turned out' within a few sentences feels slightly awkward."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T02",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The description of the funding landscape as challenging.",
+     "The explicit characterization of supporters as generous."
+    ],
+    "strength_changes": [
+     "The enthusiastic celebration of donations and supporters is softened to a restrained expression of thanks."
+    ],
+    "register_ok": true,
+    "note": "Clear and natural, though the direct thanks is slightly more conversational than the surrounding paragraphs."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "If 'Most of that' refers to grant income rather than its decline, it implies that the Halden Foundation provided most grant income, which the source does not establish."
+    ],
+    "dropped_facts": [
+     "The description of the funding landscape as challenging.",
+     "The explicit characterization of supporters as generous."
+    ],
+    "strength_changes": [
+     "The enthusiastic celebration of donations and supporters is softened to a restrained expression of gratitude."
+    ],
+    "register_ok": true,
+    "note": "Mostly natural, but 'Most of that came from' creates an avoidable ambiguity about the grant's contribution."
+   },
+   "v21": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The description of the funding landscape as challenging."
+    ],
+    "strength_changes": [
+     "The enthusiastic celebration and description of 'incredible generosity' are moderated to 'a welcome sign' of generosity."
+    ],
+    "register_ok": true,
+    "note": "Precise, restrained prose that fits the surrounding financial review and preserves the source's substantive details."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T02",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Clear and succinct, though 'and we thank our supporters for that' feels slightly abrupt and conversational for a formal financial review."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "The phrasing 'Most of that came from' introduces pronoun ambiguity regarding whether it refers to total income or the decline."
+   },
+   "v21": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Seamlessly adopts the measured, formal institutional register of the surrounding report while retaining all facts precisely."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T03",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The source characterizes the rate-limiting mechanism as sophisticated and says it ensures seamless interaction with the upstream API."
+    ],
+    "strength_changes": [
+     "The backoff behavior's 'crucial role' in system stability becomes the weaker 'helps keep the whole system stable.'"
+    ],
+    "register_ok": true,
+    "note": "Clear and consistent with the surrounding documentation, though the closing clause is slightly generic."
+   },
+   "v20": {
+    "p_ai": 18,
+    "unsupported_specifics": [
+     "The closing sentence attributes system stability to both empty-bucket pausing and 429 backoff; the source explicitly attaches that claim only to the latter."
+    ],
+    "dropped_facts": [
+     "The source characterizes the rate-limiting mechanism as sophisticated and says it ensures seamless interaction with the upstream API."
+    ],
+    "strength_changes": [
+     "'Keep the system stable' states a more categorical outcome than 'plays a crucial role in maintaining overall system stability.'"
+    ],
+    "register_ok": true,
+    "note": "Mostly natural technical prose, but the ambiguous 'It' and sweeping closing sentence reduce precision."
+   },
+   "v11": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The source characterizes the rate-limiting mechanism as sophisticated and says it ensures seamless interaction with the upstream API.",
+     "Honoring Retry-After and backing off plays a crucial role in maintaining overall system stability."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "The concrete, economical phrasing best matches the surrounding paragraphs, but omits the stability claim."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T03",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Weakens 'plays a crucial role in maintaining overall system stability' to 'helps keep the whole system stable'"
+    ],
+    "register_ok": true,
+    "note": "Crisp and faithful technical prose that strips the puffery while retaining all source claims."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Attributes system stability to 'Both behaviours' rather than specifically to the 429 backoff mechanism"
+    ],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Weakens 'plays a crucial role in maintaining overall system stability' to 'keep the system stable'"
+    ],
+    "register_ok": true,
+    "note": "Sounds casual and human, but introduces pronoun ambiguity, missing punctuation, and an unsupported causal generalization."
+   },
+   "v11": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The claim that the backoff mechanism plays a crucial role in maintaining overall system stability"
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Captures the author's direct cadence best of all three, but drops the source's stability claim entirely."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T04",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The conclusion no longer explicitly identifies patience as a lesson the narrator learned through this experience."
+    ],
+    "strength_changes": [
+     "Benefits extending 'far beyond' tradition become simply 'more than tradition,' reducing the emphasis and omitting the claim of numerous benefits.",
+     "Patience becomes a 'working tool' rather than an 'essential tool,' weakening its necessity."
+    ],
+    "register_ok": true,
+    "note": "The restrained phrasing and short sting-count sentences fit the surrounding essay, though the passive construction feels impersonal."
+   },
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The conclusion no longer explicitly identifies patience as a lesson the narrator learned through this experience."
+    ],
+    "strength_changes": [
+     "Benefits extending 'far beyond' tradition become benefits 'beyond tradition,' reducing the emphasis and omitting the claim of numerous benefits.",
+     "'Make you calmer' asserts an emotional effect more directly than fostering a calmer approach.",
+     "Patience becomes a 'tool' rather than an 'essential tool,' weakening its necessity."
+    ],
+    "register_ok": true,
+    "note": "Readable but more generic and explanatory than the surrounding author's concrete, understated voice."
+   },
+   "v21": {
+    "p_ai": 28,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Benefits extending 'far beyond' tradition become simply 'more than tradition,' reducing the emphasis and omitting the claim of numerous benefits.",
+     "'Calms you down' asserts an emotional effect more directly than fostering a calmer approach.",
+     "Patience becomes a 'working tool' rather than an 'essential tool,' weakening its necessity."
+    ],
+    "register_ok": true,
+    "note": "Active phrasing and the personal conclusion suit the essay, but 'What I took from it is that' makes the ending cumbersome."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T04",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The explicit attribution that the author's personal journey taught them the final lesson"
+    ],
+    "strength_changes": [
+     "'offers a multitude of benefits' is softened to 'is about more than tradition'",
+     "'not merely a virtue, but an essential tool' is weakened to 'a working tool... as much as it is a virtue'"
+    ],
+    "register_ok": true,
+    "note": "Fluent and clear, but the passive construction 'frames get handled' feels detached from the surrounding personal memoir."
+   },
+   "v20": {
+    "p_ai": 65,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The qualifier 'only' from 'only twice'",
+     "The explicit attribution that the author's personal journey taught them the final lesson"
+    ],
+    "strength_changes": [
+     "'a multitude of benefits' is weakened to 'real benefits'",
+     "'only twice' is weakened to 'twice' by omitting the qualifier",
+     "'essential tool' is weakened to simply 'a tool'"
+    ],
+    "register_ok": true,
+    "note": "Reads stiffly and mechanically due to generic phrasing, passive framing, and an ambiguous pronoun reference."
+   },
+   "v21": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The qualifier 'only' from 'only twice'"
+    ],
+    "strength_changes": [
+     "'offers a multitude of benefits' is softened to 'is about more than tradition'",
+     "'only twice' is weakened to 'twice' by removing the qualifier 'only'",
+     "'not merely a virtue, but an essential tool' is softened to 'a working tool... as much as a virtue'"
+    ],
+    "register_ok": true,
+    "note": "Matches the surrounding memoir voice exceptionally well with natural active phrasing, punchy syntax, and strong narrative continuity."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T05",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Weakens the direct claim that the increase raises revenue per customer to 'should bring in more.'",
+     "Strengthens the tentative inference about overall revenue ('this suggests') to a definite prediction ('revenue would still go up overall')."
+    ],
+    "register_ok": true,
+    "note": "Clear and natural, though the short transitions make the argument slightly choppy."
+   },
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Replaces 'probably worth adopting' with unqualified instructions to raise the price and adopt it for new customers."
+    ],
+    "register_ok": true,
+    "note": "Reads like a direct business recommendation, but its confidence exceeds the source."
+   },
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Smooth, plain business prose that preserves the evidence, qualifications, and recommendation."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T05",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Weakened the definitional claim that raising the price 'increases revenue per customer' to 'should bring in more revenue per customer'",
+     "Strengthened 'this suggests that the increase would still raise revenue overall' to the definitive statement that 'revenue would still go up overall'"
+    ],
+    "register_ok": true,
+    "note": "Cuts the corporate filler, but introduces an awkward hedge on per-customer revenue and turns a tentative finding into a certainty."
+   },
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Dropped the explicit hedge that the price increase is 'probably' worth adopting"
+    ],
+    "strength_changes": [
+     "Converted a hedged analytical finding into firm imperative recommendations ('Raise the Pro plan...', 'Adopt the new price...')"
+    ],
+    "register_ok": true,
+    "note": "Adopts an authentic, conversational executive briefing style, but creates repetitive bookend sentences and drops the source's hedge."
+   },
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Expertly prunes robotic transitions while maintaining pristine fidelity to all numbers, hedges, and logical links."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T06",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Omits the initial impression that requiring two reviewers on every pull request seems an obvious way to catch more bugs, followed by doubt on closer examination."
+    ],
+    "strength_changes": [
+     "Changes the possibility that reviews may become slower without becoming better into the categorical statement that reviews get slower without getting better."
+    ],
+    "register_ok": true,
+    "note": "The recommendation-first structure reads naturally and efficiently, but one categorical claim loses the source's caution."
+   },
+   "v21": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Clear and faithful, though the closing phrase 'requiring two reviewers probably only' is slightly awkward."
+   },
+   "v11": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Changes the possibility that reviews may become slower without becoming better into the categorical statement that reviews get slower without getting better.",
+     "Turns the tentative recommendation that two reviewers should probably be required only for payment and authentication changes into an unqualified directive, with an equally categorical statement that one reviewer is enough elsewhere."
+    ],
+    "register_ok": true,
+    "note": "Readable but choppy, with an abrupt directive that sacrifices the source's measured reasoning."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T06",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The opening premise that requiring two reviewers across all pull requests initially seems like an obvious bug-catching measure, but becomes less clear upon closer examination"
+    ],
+    "strength_changes": [
+     "Strengthened 'reviews may become slower' to 'reviews get slower'",
+     "Changed 'may notice' to 'can catch'"
+    ],
+    "register_ok": true,
+    "note": "Inverting the structure cuts formulaic framing but drops the opening premise and leaves the final deduction stranded without its conclusion."
+   },
+   "v21": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Faithfully preserves all claims, logic, and hedges while replacing stiff transition markers, though the closing sentence is slightly awkward."
+   },
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Turned a hedged recommendation ('suggest that two reviewers should probably be required') into an imperative mandate ('Require two reviewers only')",
+     "Strengthened 'reviews may become slower' to 'reviews get slower'"
+    ],
+    "register_ok": true,
+    "note": "Presents the most natural and confident human voice, but overreaches by converting a tentative analytical suggestion into a strict policy command."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T07",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "\u201cThe sensible move is\u201d makes the recommendation more categorical than \u201cit would seem sensible.\u201d"
+    ],
+    "register_ok": true,
+    "note": "Clear and natural overall, but the short sentences make the reasoning feel choppy."
+   },
+   "v21": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "The reasoning flows naturally while preserving the source's detail and caution."
+   },
+   "v20": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The explicit inference that the survey suggests a Sunday market would be viable is replaced by the less specific statement that it partly supports the move."
+    ],
+    "strength_changes": [
+     "\u201cThe council should be asked\u201d makes the recommendation firmer than \u201cit would seem sensible to ask the council.\u201d"
+    ],
+    "register_ok": true,
+    "note": "The recommendation-first structure reads naturally, but compresses one inference and strengthens the recommendation."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T07",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "'The sensible move is' states definitively what the source hedged as 'it would seem sensible'",
+     "'That looks viable' is slightly more affirmative than 'suggests that a Sunday market would be viable'"
+    ],
+    "register_ok": true,
+    "note": "Clear and direct rewrite, though the staccato sentences feel slightly clipped."
+   },
+   "v21": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Reads completely naturally with balanced sentence flow while preserving every nuance and hedge."
+   },
+   "v20": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Explicit finding that the survey results suggest a Sunday market would be viable (condensed to 'partly backs it')"
+    ],
+    "strength_changes": [
+     "'The council should be asked' is more assertive than the hedged 'it would seem sensible to ask'"
+    ],
+    "register_ok": true,
+    "note": "Front-loading the recommendation disrupts the logical progression and leaves the ending stranded."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T08",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 2,
+   "v11": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The features are described as designed to improve users' workflow."
+    ],
+    "strength_changes": [
+     "Removes the enthusiastic 'thrilled' and 'game-changer' assessments.",
+     "Omits the descriptions of the features as 'powerful' and dark mode as 'sleek'.",
+     "Replaces 'dramatically faster' with 'faster', while retaining the supporting numbers."
+    ],
+    "register_ok": true,
+    "note": "Clear and approachable, but 'One deadline to note.' feels artificially clipped."
+   },
+   "v20": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The features are described as designed to improve users' workflow."
+    ],
+    "strength_changes": [
+     "Removes the enthusiastic 'thrilled' and 'game-changer' assessments.",
+     "Omits the descriptions of the features as 'powerful' and dark mode as 'sleek'.",
+     "Replaces 'dramatically faster' with 'faster', while retaining the supporting numbers."
+    ],
+    "register_ok": true,
+    "note": "A natural, concise release announcement that preserves the concrete details and migration urgency."
+   },
+   "v11": {
+    "p_ai": 14,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The features are described as designed to improve users' workflow."
+    ],
+    "strength_changes": [
+     "Removes the enthusiastic 'thrilled' and 'game-changer' assessments.",
+     "Omits the descriptions of the features as 'powerful' and dark mode as 'sleek'.",
+     "Replaces 'dramatically faster' with 'faster', while retaining the supporting numbers.",
+     "Changes the migration request from 'as soon as possible' to before September 30, weakening its urgency."
+    ],
+    "register_ok": true,
+    "note": "Reads smoothly and naturally, but changes the timing emphasis of the migration request."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T08",
+  "winner": "v20",
+  "human_quality_rank": {
+   "v20": 2,
+   "v11": 1,
+   "v21": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v21": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Trims marketing hype effectively but has slightly choppy rhythm and uses the awkward phrasing 'a dark mode'."
+   },
+   "v20": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Reads like a concise, professional release note written naturally by a human product lead."
+   },
+   "v11": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [
+     "Weakens the urgency of the migration recommendation from 'as soon as possible' to 'before then'."
+    ],
+    "register_ok": true,
+    "note": "Smooth and readable, though it alters the urgency of the migration deadline."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T09",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v11": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The explicit claim that the recommended practices can help you unlock your full potential."
+    ],
+    "strength_changes": [
+     "Focusing exclusively on grammar becomes pouring time into grammar, weakening the exclusivity claim.",
+     "Fear holding people back from practice becomes people avoiding practice, making the behavioral claim more categorical."
+    ],
+    "register_ok": true,
+    "note": "Direct and readable, but opening with the conclusion makes the return to a general introduction feel awkward."
+   },
+   "v21": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Learning requires the right mindset.",
+     "The explicit claim that the recommended practices can help you unlock your full potential."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "The natural progression and restrained conversational language make this the clearest and most convincing rewrite."
+   },
+   "v11": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Learning requires dedication, patience, and the right mindset.",
+     "The explicit claim that the recommended practices can help you unlock your full potential."
+    ],
+    "strength_changes": [
+     "Persistence rather than talent being the key to success becomes persistence mattering more than talent, allowing talent a role the source's contrast excludes.",
+     "Fear often holding people back becomes fear keeping people from practicing, removing the frequency qualifier and making the effect more categorical."
+    ],
+    "register_ok": true,
+    "note": "Plain and compact, though its compressed advice loses some of the source's substance and nuance."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T09",
+  "winner": "v21",
+  "human_quality_rank": {
+   "v21": 2,
+   "v20": 1,
+   "v11": 0
+  },
+  "fidelity_rank": {
+   "v20": 2,
+   "v21": 1,
+   "v11": 0
+  },
+  "texts": {
+   "v20": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "That the recommended actions allow you to unlock your full potential."
+    ],
+    "strength_changes": [
+     "'pour their time into grammar' is slightly weaker than 'focusing exclusively on grammar'."
+    ],
+    "register_ok": true,
+    "note": "Features natural phrasing, but feels structurally disjointed by placing the conclusion in the opening before rebooting with the introductory premise."
+   },
+   "v21": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "That language learning requires 'the right mindset' (retains only dedication and patience).",
+     "That the recommended actions allow you to unlock your full potential."
+    ],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Has the most convincing human voice, rhythm, and rhetorical flow, reading like authentic advice."
+   },
+   "v11": {
+    "p_ai": 55,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "That adult language learning requires dedication, patience, and the right mindset.",
+     "That the recommended actions allow you to unlock your full potential."
+    ],
+    "strength_changes": [
+     "'Talent matters less than persistence' weakens the source's absolute claim that success lies not in talent, but in persistence."
+    ],
+    "register_ok": true,
+    "note": "Mirrors the source almost sentence-by-sentence with superficial synonym swaps and drops the core requirement triad."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "T10",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source and other rewrites, with convincing conversational rhythm, specific details, and dry humour; ranking is arbitrary."
+   },
+   "v21": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source and other rewrites, with convincing conversational rhythm, specific details, and dry humour; ranking is arbitrary."
+   },
+   "v20": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Identical to the source and other rewrites, with convincing conversational rhythm, specific details, and dry humour; ranking is arbitrary."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "T10",
+  "winner": "v11",
+  "human_quality_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "fidelity_rank": {
+   "v11": 2,
+   "v21": 1,
+   "v20": 0
+  },
+  "texts": {
+   "v11": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Character-identical to the source text, retaining complete fidelity and a natural, distinctly human voice."
+   },
+   "v21": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Character-identical to the source text, retaining complete fidelity and a natural, distinctly human voice."
+   },
+   "v20": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "strength_changes": [],
+    "register_ok": true,
+    "note": "Character-identical to the source text, retaining complete fidelity and a natural, distinctly human voice."
+   }
+  }
+ }
+]

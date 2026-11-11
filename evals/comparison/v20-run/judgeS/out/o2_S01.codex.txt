@@ -1,0 +1,67 @@
+{
+  "human_quality_rank": ["A", "D", "B", "C"],
+  "fidelity_rank": ["D", "B", "C", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The espresso machine groaned whenever it was used.",
+        "The peak customer count still feels invented to the writer.",
+        "The writer has drawn no neat lesson, contradicting the source's explicit lesson.",
+        "The writer feels mostly tired, a bit sad, and weirdly fine.",
+        "The advice to read the lease properly introduces a caution absent from the source."
+      ],
+      "dropped_facts": [
+        "The writer is thrilled to share the news.",
+        "Selling was a difficult decision.",
+        "The experience involved emotional ups and downs, learning, and personal growth.",
+        "The experience taught the writer that passion, perseverance, and community are the true ingredients of success."
+      ],
+      "register_ok": true,
+      "note": "The strongest conversational voice, but much of its personality comes from invented details and a changed emotional account."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer is thrilled to share the news.",
+        "The journey involved learning and personal growth.",
+        "The explicit encouragement to take the leap and start something.",
+        "The closing question asking what dream the reader is putting off."
+      ],
+      "register_ok": true,
+      "note": "Natural and restrained, though its shortened ending loses the source's direct encouragement and question."
+    },
+    "C": {
+      "p_ai": 50,
+      "unsupported_specifics": [
+        "The peak customer count sounds made up to the writer.",
+        "There was no clever way out of the business's difficulties.",
+        "The writer remains sad, feels oddly relieved, and has not reconciled those feelings.",
+        "The advice to read the lease first introduces a caution absent from the source."
+      ],
+      "dropped_facts": [
+        "The writer is thrilled to share the news.",
+        "Selling was a difficult decision.",
+        "The experience involved emotional ups and downs, learning, and personal growth.",
+        "The experience taught the writer that passion, perseverance, and community are the true ingredients of success.",
+        "The closing question asking what dream the reader is putting off."
+      ],
+      "register_ok": true,
+      "note": "The conspicuous fragments and rejection of a tidy lesson feel performed, while the emotional story is substantially rewritten."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The writer is still sorting out some of what they learned."
+      ],
+      "dropped_facts": [
+        "The writer is thrilled to share the news.",
+        "The journey involved emotional ups and downs and personal growth."
+      ],
+      "register_ok": true,
+      "note": "Clear and believable, with the best balance of natural phrasing and preservation of the source."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["B", "A", "D", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Invitation to reach out with further questions or concerns"
+      ],
+      "register_ok": true,
+      "note": "Clean and accountable, but the staccato structure feels slightly mechanical and it drops the closing offer to assist."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads like a thoughtful, empathetic support agent while keeping every factual claim intact."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Specifying the payment method as a card rather than original payment method",
+        "Passing the issue to the warehouse team to investigate how it happened"
+      ],
+      "dropped_facts": [
+        "Commitment to ensuring that this does not happen again",
+        "Thank you for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Highly natural and conversational in voice, but invents an internal team referral and omits key source facts."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The package 'lost time from there'",
+        "Framing follow-up conditionally around whether the refund arrives on time"
+      ],
+      "dropped_facts": [
+        "Commitment to ensuring that this does not happen again",
+        "Thank you for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Sounds authentically human, but contains slightly clumsy phrasing and drops the reassurance against recurrence."
+    }
+  }
+}

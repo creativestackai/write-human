@@ -1,0 +1,5 @@
+Friday works if the fix merges and QA re-verifies it on Thursday. I have the fix ready and expect review and merge by Thursday afternoon.
+
+QA found two bugs yesterday. One is a small alignment problem on mobile Safari, which is cosmetic, so it can ship as is. The other is the one I won't ship with: INR prices on the annual plan are rounded wrong, so someone in India would see 41,988 instead of 41,990.
+
+If anything slips, we go Monday morning, still ahead of the webinar.

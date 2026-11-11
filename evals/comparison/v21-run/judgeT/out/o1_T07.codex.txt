@@ -1,0 +1,38 @@
+{
+  "human_quality_rank": ["B", "A", "C"],
+  "fidelity_rank": ["B", "C", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assessment that the survey suggests a Sunday market would be viable."
+      ],
+      "strength_changes": [
+        "The tentative recommendation that deferral 'would seem sensible' becomes the firmer 'should be asked to defer'.",
+        "The survey's suggestion of viability becomes the less specific claim that it 'partly backs' the move."
+      ],
+      "register_ok": true,
+      "note": "Clear and purposeful, but the opening recommendation is firmer than the source."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Natural, measured civic prose that preserves the evidence and its qualifications."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "The tentative recommendation that deferral 'would seem sensible' becomes the categorical 'The sensible move is'."
+      ],
+      "register_ok": true,
+      "note": "Generally clear, but the clipped viability sentence and elliptical 'six who can't' make it less polished."
+    }
+  }
+}

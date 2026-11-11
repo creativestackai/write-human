@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["B", "D", "C", "A"],
+  "fidelity_rank": ["B", "A", "D", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Clear and direct, though slightly clipped and formulaic in rhythm."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Warm, natural, and genre-appropriate with complete fidelity to the source."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "specifying payment method as a card",
+        "passing the issue to the warehouse team to look at how it happened"
+      ],
+      "dropped_facts": [
+        "commitment to ensuring this does not happen again",
+        "thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Reads authentically human and conversational, but invents an internal investigation and assumes payment was by card."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "the package lost time from there",
+        "specific conditional scenario if the refund has not arrived by then"
+      ],
+      "dropped_facts": [
+        "commitment to ensuring this does not happen again",
+        "thanking the customer for their patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Strong personal voice and natural cadence, but omits the commitment to prevent future recurrence."
+    }
+  }
+}

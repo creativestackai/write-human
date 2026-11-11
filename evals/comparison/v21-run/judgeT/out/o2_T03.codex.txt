@@ -1,0 +1,44 @@
+{
+  "human_quality_rank": ["C", "A", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The source characterizes the rate-limiting mechanism as sophisticated and says it ensures seamless interaction with the upstream API."
+      ],
+      "strength_changes": [
+        "The backoff behavior's 'crucial role' in system stability becomes the weaker 'helps keep the whole system stable.'"
+      ],
+      "register_ok": true,
+      "note": "Clear and consistent with the surrounding documentation, though the closing clause is slightly generic."
+    },
+    "B": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "The closing sentence attributes system stability to both empty-bucket pausing and 429 backoff; the source explicitly attaches that claim only to the latter."
+      ],
+      "dropped_facts": [
+        "The source characterizes the rate-limiting mechanism as sophisticated and says it ensures seamless interaction with the upstream API."
+      ],
+      "strength_changes": [
+        "'Keep the system stable' states a more categorical outcome than 'plays a crucial role in maintaining overall system stability.'"
+      ],
+      "register_ok": true,
+      "note": "Mostly natural technical prose, but the ambiguous 'It' and sweeping closing sentence reduce precision."
+    },
+    "C": {
+      "p_ai": 8,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The source characterizes the rate-limiting mechanism as sophisticated and says it ensures seamless interaction with the upstream API.",
+        "Honoring Retry-After and backing off plays a crucial role in maintaining overall system stability."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "The concrete, economical phrasing best matches the surrounding paragraphs, but omits the stability claim."
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["A", "C", "D", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "all-in-one platform",
+        "empowers modern teams to take control of their finances",
+        "streamline your workflow and unlock new levels of productivity"
+      ],
+      "register_ok": true,
+      "note": "Clean and concise, but reads more like an executive summary than engaging human copy."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "spending evenings on invoicing",
+        "agencies outgrowing spreadsheets",
+        "fewer typos and wrong totals going out under your name",
+        "checking payment status without asking anyone",
+        "client billing details specifically sitting behind security"
+      ],
+      "dropped_facts": [
+        "worldwide reach of the 2,300 teams",
+        "all-in-one platform",
+        "empowers modern teams to take control of their finances"
+      ],
+      "register_ok": true,
+      "note": "Brilliantly voiced and unmistakably human, but invents several specific claims and scenarios not found in the source."
+    },
+    "C": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "teams of any size (the source specifies solo freelancers and growing agencies)"
+      ],
+      "dropped_facts": [
+        "all-in-one platform",
+        "empowers modern teams to take control of their finances"
+      ],
+      "register_ok": true,
+      "note": "Strikes an excellent balance of natural human tone, genre appropriateness, and faithful adherence to the source."
+    },
+    "D": {
+      "p_ai": 22,
+      "unsupported_specifics": [
+        "specific three-step invoice workflow (create, send, watch for payment)",
+        "retyping numbers into a spreadsheet afterward",
+        "attributing the 40% time savings specifically to automation and real-time reporting",
+        "waiting for month-end"
+      ],
+      "dropped_facts": [
+        "solo freelancer qualifier (generalized to freelancers)",
+        "all-in-one platform claim",
+        "empowers modern teams to take control of their finances"
+      ],
+      "register_ok": true,
+      "note": "Conversational and approachable, but introduces an invented workflow, spreadsheet comparisons, and unsupported causal explanations."
+    }
+  }
+}

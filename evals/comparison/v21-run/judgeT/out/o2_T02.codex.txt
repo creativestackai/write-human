@@ -1,0 +1,47 @@
+{
+  "human_quality_rank": ["C", "A", "B"],
+  "fidelity_rank": ["C", "A", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The description of the funding landscape as challenging.",
+        "The explicit characterization of supporters as generous."
+      ],
+      "strength_changes": [
+        "The enthusiastic celebration of donations and supporters is softened to a restrained expression of thanks."
+      ],
+      "register_ok": true,
+      "note": "Clear and natural, though the direct thanks is slightly more conversational than the surrounding paragraphs."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "If 'Most of that' refers to grant income rather than its decline, it implies that the Halden Foundation provided most grant income, which the source does not establish."
+      ],
+      "dropped_facts": [
+        "The description of the funding landscape as challenging.",
+        "The explicit characterization of supporters as generous."
+      ],
+      "strength_changes": [
+        "The enthusiastic celebration of donations and supporters is softened to a restrained expression of gratitude."
+      ],
+      "register_ok": true,
+      "note": "Mostly natural, but 'Most of that came from' creates an avoidable ambiguity about the grant's contribution."
+    },
+    "C": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The description of the funding landscape as challenging."
+      ],
+      "strength_changes": [
+        "The enthusiastic celebration and description of 'incredible generosity' are moderated to 'a welcome sign' of generosity."
+      ],
+      "register_ok": true,
+      "note": "Precise, restrained prose that fits the surrounding financial review and preserves the source's substantive details."
+    }
+  }
+}

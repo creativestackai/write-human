@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["C", "B", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Claim that query performance was fine at quiet times"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "The prose feels staccato and invents an unsourced claim about system performance during quiet periods."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Seamlessly captures the wry, conversational voice of the surrounding incident report while remaining strictly faithful."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A clear and completely faithful rewrite, though the sentence on migration review leans slightly generic."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Claim that nobody noticed until traffic picked up that afternoon",
+        "Personal reaction stating that the author is still annoyed about the review"
+      ],
+      "dropped_facts": [
+        "Specification that the missing index was specifically a database index"
+      ],
+      "register_ok": true,
+      "note": "Flows conversationally but invents personal grievances and timeline details not present in the source."
+    }
+  }
+}

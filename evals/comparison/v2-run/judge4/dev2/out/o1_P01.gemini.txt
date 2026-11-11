@@ -1,0 +1,62 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["A", "D", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 12,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping how organizations operate in a rapidly evolving digital landscape",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Natural, rhythmic prose that reads like an experienced human editor while faithfully preserving the original meaning."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Claim that most arguments about remote work fail by only addressing one side",
+        "Specific benefits of working when sharpest and reclaiming a commute",
+        "Hiring someone living eleven time zones away",
+        "Anecdote about a misread message sitting unanswered for a day",
+        "Anecdote about going an entire week only talking to people on screens",
+        "Hallway chats as the unplanned mechanism for gauging project sentiment",
+        "Assertion that a shared doc will outwork a dozen apps"
+      ],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping how organizations operate",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": false,
+      "note": "Highly engaging and voice-driven, but shifts into an informal first-person essay filled with invented scenarios."
+    },
+    "C": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "Hiring range quantified as within forty minutes of the office",
+        "Anecdote that messages get misread and people go days without talking to anyone",
+        "Claim that company culture took years to build",
+        "Assertion that offices run on distrust while remote teams run beautifully",
+        "Prescriptive habits: writing things down, answering promptly, and calling when threads get tense",
+        "Assertion that no software can fix a lack of trust"
+      ],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping how organizations operate",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": false,
+      "note": "Fluent and conversational, but introduces unprompted first-person editorializing and fabricated prescriptive advice."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping how organizations operate in a rapidly evolving digital landscape",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Accurate and strictly faithful to the source, but somewhat generic and formulaic in structure."
+    }
+  }
+}

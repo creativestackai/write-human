@@ -1,0 +1,56 @@
+{
+  "human_quality_rank": ["B", "D", "A", "C"],
+  "fidelity_rank": ["D", "C", "B", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Identifies the original payment method as a card.",
+        "Says the package arrived late, although the source does not confirm delivery.",
+        "Says the issue has been passed to the warehouse team for investigation.",
+        "Promises personally to resolve anything that looks wrong after the refund arrives."
+      ],
+      "dropped_facts": [
+        "The explicit statement that customer satisfaction is taken extremely seriously.",
+        "The commitment to prevent recurrence.",
+        "The thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Conversational and clear, but several reassuring details exceed the source."
+    },
+    "B": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "Promises personally to resolve a missing refund or anything else that looks wrong."
+      ],
+      "dropped_facts": [
+        "The explicit statement that customer satisfaction is taken extremely seriously.",
+        "The commitment to prevent recurrence.",
+        "The thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Direct and personable, though 'it lost time from there' is slightly awkward."
+    },
+    "C": {
+      "p_ai": 23,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit statement that customer satisfaction is taken extremely seriously.",
+        "The thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Clear and appropriately formal, but the clipped ending feels less attentive."
+    },
+    "D": {
+      "p_ai": 19,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit statement that customer satisfaction is taken extremely seriously.",
+        "The thanks for the customer's understanding, although thanks for patience remains."
+      ],
+      "register_ok": true,
+      "note": "Natural, courteous customer service writing with the strongest balance of clarity and fidelity."
+    }
+  }
+}

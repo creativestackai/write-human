@@ -1,0 +1,55 @@
+{
+  "human_quality_rank": ["A", "C", "E", "D", "B"],
+  "fidelity_rank": ["E", "D", "C", "A", "B"],
+  "overall_winner": "E",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Claim that nobody from the other teams would look at the schema change in an invoice export PR",
+        "Commitment to open the backfill ticket 'today'",
+        "Statement offering to block the PR and asserting that other services need a say first"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads with an authentic, experienced developer voice, but invents several team dynamics and procedural specifics not present in the source."
+    },
+    "B": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Invoice export job reads the currency field from the customer record",
+        "Currency field can be null for accounts created before 2021",
+        "Export silently defaults to USD when null, producing incorrect totals"
+      ],
+      "register_ok": true,
+      "note": "Strips out the entire technical explanation of the bug, leaving the affected account figures unexplained."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Commitment to write the ticket 'today'",
+        "Claim that the migration needs its own review"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Captures a very natural, conversational PR review tone while introducing only minor timing and process additions."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Invoice export job specifically reads currency from the customer record"
+      ],
+      "register_ok": true,
+      "note": "Retains key data points well, but using 'For scale:' to introduce the bug mechanics makes the structure feel slightly mechanical."
+    },
+    "E": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A concise, natural engineering response that eliminates AI boilerplate while preserving every source fact without inventing details."
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "human_quality_rank": ["D", "E", "B", "A", "C"],
+  "fidelity_rank": ["A", "E", "B", "D", "C"],
+  "overall_winner": "E",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer is thrilled to share the achievement."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, though the lesson and closing remain fairly generic."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Nothing the writer did 'that month' was clever, introducing both a timeframe and an assessment absent from the source.",
+        "The closing assumes the reader has been putting off something big."
+      ],
+      "dropped_facts": [
+        "The writer is thrilled to share the achievement.",
+        "The lesson explicitly applies to achieving any big goal.",
+        "The encouragement is to start today; this becomes 'this week.'",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "The relaxed phrasing works well, but the added self-deprecation feels inserted to establish a voice."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The marathon time was 'not fast.'",
+        "The writer's attitude toward the time is 'I'll take it.'",
+        "The writer spent most of the eight days googling whether they could still reach the starting line.",
+        "The running group repeatedly brought the writer to Sunday meetups.",
+        "The writer could only watch at those meetups.",
+        "The physiotherapist determined what was actually wrong.",
+        "The writer kept running slow and boring after returning.",
+        "That approach was the only reason the writer reached race day.",
+        "Showing up most weeks beats a perfect plan.",
+        "The writer is bad at asking for help and believes they should fix that."
+      ],
+      "dropped_facts": [
+        "The marathon was completed recently.",
+        "The writer is thrilled to share the achievement.",
+        "The writer returned stronger than ever.",
+        "Patience is an explicit part of the lesson.",
+        "Consistency, patience, and community are foundations for achieving any big goal.",
+        "The encouragement to take the first step today.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "The voice is distinctive, but the repeated fragments and tidy confessions feel conspicuously constructed."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The marathon time was 'not fast,' and the writer is fine with that.",
+        "The writer spent most of the eight days googling whether people could reach the starting line after such an injury.",
+        "The writer considers that googling a bad way to spend eight days.",
+        "The running group kept the writer attending when they could only watch.",
+        "The physiotherapist prescribed repeated knee exercises.",
+        "Those exercises frustrated the writer until they wanted to scream.",
+        "The writer characterizes their rehabilitation as 'nothing clever' and 'boring work.'",
+        "The knee improved through that described rehabilitation.",
+        "The closing assumes the reader has been putting something off.",
+        "The writer was not ready and reached the starting line by stopping waiting."
+      ],
+      "dropped_facts": [
+        "The marathon was completed recently.",
+        "The writer is thrilled to share the achievement.",
+        "The writer returned stronger than ever.",
+        "The explicit lesson that consistency, patience, and community underpin achieving any big goal.",
+        "The encouragement to take the first step today.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "The irritation and conversational rhythm closely match the voice reference, although the ending feels polished into a slogan."
+    },
+    "E": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Before the experience, the writer would have assigned less importance to consistency and patience."
+      ],
+      "dropped_facts": [
+        "The marathon was completed recently.",
+        "The writer is thrilled to share the achievement."
+      ],
+      "register_ok": true,
+      "note": "Natural pacing and restrained informality fit the voice reference while preserving nearly all substantive content."
+    }
+  }
+}

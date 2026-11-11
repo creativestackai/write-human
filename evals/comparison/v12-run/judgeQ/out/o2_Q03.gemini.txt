@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["C", "B", "D", "A"],
+  "fidelity_rank": ["B", "A", "D", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 65,
+      "unsupported_specifics": [
+        "Free trial starts on launch day rather than today"
+      ],
+      "dropped_facts": [
+        "Call to action to start the free trial today"
+      ],
+      "register_ok": true,
+      "note": "Accurate to most details, but the clipped, staccato phrasing reads like an automated de-fluffing."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "A natural, warm, and professional announcement that retains every source fact without corporate AI fluff."
+    },
+    "C": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "Specific scenario about working out what 3pm means for someone in another country",
+        "Specific breakdown of beta feedback identifying what was broken, confusing, and actually used",
+        "Claim that the product is better because of the beta users"
+      ],
+      "dropped_facts": [
+        "Call to action to start the free trial today"
+      ],
+      "register_ok": true,
+      "note": "Features the most vibrant and authentic human voice, but hallucinates several details and omits the call to action."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Starting the free trial whenever you're ready rather than today"
+      ],
+      "dropped_facts": [
+        "Call to action to start the free trial today"
+      ],
+      "register_ok": true,
+      "note": "Conversational in tone, but alters the call-to-action timeline and includes slightly redundant phrasing."
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "human_quality_rank": ["A", "B", "D", "E", "C"],
+  "fidelity_rank": ["B", "C", "E", "D", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Specifies the payment method as a 'card' rather than 'original payment method'",
+        "Claims the issue was forwarded to the warehouse team to investigate how it happened"
+      ],
+      "dropped_facts": [
+        "Gratitude for patience and understanding",
+        "Explicit commitment to ensure the issue does not happen again (substituted with the warehouse referral)"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic, helpful human voice, but invents an internal escalation procedure and specific payment details while dropping the closing thanks."
+    },
+    "B": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Strikes an excellent balance of human warmth and professional customer care while retaining every source fact without any hallucinations."
+    },
+    "C": {
+      "p_ai": 32,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Gratitude for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Accurate and concise, but the choppy sentences and lack of a thank-you make the tone feel slightly curt."
+    },
+    "D": {
+      "p_ai": 14,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Commitment to ensure the issue does not happen again",
+        "Gratitude for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Very conversational and natural in tone, but drops both the prevention commitment and the expression of gratitude."
+    },
+    "E": {
+      "p_ai": 24,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Invitation to reach out if the customer has further questions or concerns"
+      ],
+      "register_ok": true,
+      "note": "Clear and polite, but opens abruptly with the refund statement and omits the standard offer to assist with further questions."
+    }
+  }
+}

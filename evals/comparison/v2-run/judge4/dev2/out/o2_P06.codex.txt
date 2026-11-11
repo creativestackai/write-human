@@ -1,0 +1,54 @@
+{
+  "human_quality_rank": ["A", "C", "D", "B"],
+  "fidelity_rank": ["B", "A", "C", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Explicitly equates the 212 affected staging accounts with roughly 4% of European accounts; the source does not establish that denominator for the staging count."
+      ],
+      "dropped_facts": [
+        "The export job reads currency from the customer record.",
+        "Currency can be null for accounts created before 2021.",
+        "A null currency silently defaults to USD.",
+        "The default produces incorrect totals."
+      ],
+      "register_ok": true,
+      "note": "Direct and well suited to a knowledgeable reviewer, but it omits the bug's mechanism."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The export job explicitly reads currency from the customer record."
+      ],
+      "register_ok": true,
+      "note": "Clear and faithful, though the sentence introduced by 'For scale' awkwardly bundles several explanations."
+    },
+    "C": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021, rather than that it can be null.",
+        "Says the migration needs its own review.",
+        "Offers to write the ticket today if Priya agrees."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Conversational and clear, but it strengthens a factual claim and adds a review requirement and personal offer."
+    },
+    "D": {
+      "p_ai": 22,
+      "unsupported_specifics": [
+        "Says currency is null for accounts created before 2021, rather than that it can be null.",
+        "Claims nobody from the other service teams will review the invoice export PR.",
+        "Commits to opening the backfill ticket today.",
+        "Introduces blocking the PR until the migration lands as an option for Priya.",
+        "Says the other services need a say first."
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Has a distinct, plausible voice, but becomes unnecessarily defensive and adds substantial unsupported detail."
+    }
+  }
+}

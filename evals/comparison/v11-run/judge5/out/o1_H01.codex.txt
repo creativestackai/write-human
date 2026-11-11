@@ -1,0 +1,82 @@
+{
+  "human_quality_rank": ["A", "E", "B", "D", "C"],
+  "fidelity_rank": ["B", "C", "E", "D", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 22,
+      "unsupported_specifics": [
+        "The narrator has conversations with people who are undecided about AI and personally feels both excited and worried.",
+        "AI adjusts reading lists for individual children.",
+        "AI marks forty quizzes overnight.",
+        "Teachers would otherwise stay up past midnight marking with a red pen.",
+        "Schools do not always ask where student data is stored.",
+        "Children with fast home internet and their own laptops benefit first, widening an existing gap.",
+        "Classes can surrender their thinking to software without noticing.",
+        "AI will not replace teachers.",
+        "AI gives teachers a few extra hours each week.",
+        "Teachers use that extra time to sit beside struggling students.",
+        "The narrator knows of no tool that provides that kind of individual support."
+      ],
+      "dropped_facts": [
+        "AI tools empower students to reach their full potential.",
+        "Schools can achieve more engaging, inclusive, and effective learning by adopting innovation while recognizing its limitations."
+      ],
+      "register_ok": false,
+      "note": "A convincing personal voice turns the general argument into an anecdotal opinion piece with extensive invented support."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The source explicitly describes the possible learning environment as better than ever before."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained prose preserves the argument closely without manufacturing personality."
+    },
+    "C": {
+      "p_ai": 46,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The claim that AI tools empower teachers and students is weakened to a statement about what the tools are meant to accomplish.",
+        "The source's comparison with all previous learning environments is softened to improvement over before."
+      ],
+      "register_ok": true,
+      "note": "Faithful overall, but vague wording and the awkward final sentence make it feel less naturally edited."
+    },
+    "D": {
+      "p_ai": 32,
+      "unsupported_specifics": [
+        "AI is entering classrooms quickly and appears mostly in two forms.",
+        "Personalized learning specifically adjusts lessons to each student's pace.",
+        "Both personalized learning and automated grading save teachers time.",
+        "Some students perform better when material is adapted to them.",
+        "Some schools do not know who can access student data.",
+        "Children with good devices and fast home internet will benefit more than other children.",
+        "Many students who let chatbots think for them will stop learning to think independently.",
+        "Teachers notice withdrawn children and recognize lucky guesses.",
+        "Software cannot notice withdrawn children or recognize lucky guesses.",
+        "Automated marking frees teachers to provide individual attention.",
+        "Schools that remain skeptical of sales pitches will probably benefit most."
+      ],
+      "dropped_facts": [
+        "AI tools help both educators and students reach their full potential.",
+        "Mindful adoption can produce more engaging, inclusive, and effective learning environments than ever before."
+      ],
+      "register_ok": false,
+      "note": "Conversational and concrete, but categorical claims and a sales-pitch aside shift it into an unsupported opinion column."
+    },
+    "E": {
+      "p_ai": 29,
+      "unsupported_specifics": [
+        "Personalized learning and automated grading specifically help both teachers and students get more out of their time."
+      ],
+      "dropped_facts": [
+        "The broader claim that AI tools help teachers and students reach their full potential is narrowed to time use.",
+        "The source explicitly describes the possible learning environment as better than ever before."
+      ],
+      "register_ok": true,
+      "note": "Natural rhythm and plain language work well, though the time benefit introduces an unsupported narrowing."
+    }
+  }
+}

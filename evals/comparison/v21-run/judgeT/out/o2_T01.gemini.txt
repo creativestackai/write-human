@@ -1,0 +1,38 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Flows naturally and fits the wry blog context seamlessly while preserving all source information."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that the wall damage was caused specifically by water",
+        "the reminder that thorough preparation is the cornerstone of any successful renovation"
+      ],
+      "strength_changes": [
+        "'in a bad way' is vaguer and weaker than 'sustained significant water damage'"
+      ],
+      "register_ok": true,
+      "note": "Uses authentic colloquial phrasing that matches the author's voice well, but omits key source facts."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "'wrecked by water' is slightly stronger than 'sustained significant water damage'"
+      ],
+      "register_ok": true,
+      "note": "Retains all facts and matches the tone, though repeating 'turned out' within a few sentences feels slightly awkward."
+    }
+  }
+}

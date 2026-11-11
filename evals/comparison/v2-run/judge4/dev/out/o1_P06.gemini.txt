@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["D", "A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "offering to write the ticket today",
+        "stating that the migration needs its own review"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads like an authentic, collaborative developer on a pull request while retaining all key technical facts."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "claiming nobody from other teams will look at an invoice export PR",
+        "promising to open the ticket today",
+        "suggesting Priya might want to block the PR until the migration lands",
+        "claiming other services need a say first"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Sounds like a real person, but invents contentious team dynamics and procedural conflict absent from the source."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "invoice export reads currency from the customer record",
+        "currency can be null for accounts created before 2021",
+        "export silently defaults to USD when currency is null"
+      ],
+      "register_ok": true,
+      "note": "Free of hallucinations, but drops the entire root-cause explanation including the pre-2021 date and USD default."
+    },
+    "D": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "that the invoice export reads currency from the customer record"
+      ],
+      "register_ok": true,
+      "note": "Preserves the data without inventing facts, but the awkward 'On scale:' heading and disjointed flow read like AI output."
+    }
+  }
+}

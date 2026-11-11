@@ -1,0 +1,81 @@
+{
+  "human_quality_rank": ["B", "D", "E", "A", "C"],
+  "fidelity_rank": ["B", "D", "C", "E", "A"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Netherlands",
+        "leading industry status",
+        "pivotal role in European supply chains",
+        "legacy of innovation and commitment to excellence",
+        "growth milestone",
+        "resilience in dynamic market",
+        "expert praise and bright future"
+      ],
+      "register_ok": true,
+      "note": "Contains distinctly human conversational cadence and arithmetic derivation, but the phrasing is somewhat stilted and abrupt."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "leading industry status",
+        "pivotal role in European supply chains",
+        "legacy of innovation and commitment to excellence",
+        "growth milestone",
+        "resilience in dynamic market",
+        "expert praise and bright future"
+      ],
+      "register_ok": true,
+      "note": "A polished, natural, and formal corporate summary that strips marketing fluff while maintaining elegant syntax."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "headquartered inside one of the world's busiest ports (implies the headquarters is physically inside a port rather than in the port city of Rotterdam)"
+      ],
+      "dropped_facts": [
+        "leading industry status",
+        "pivotal role in European supply chains",
+        "legacy of innovation and commitment to excellence",
+        "growth milestone",
+        "resilience in dynamic market",
+        "expert praise and bright future"
+      ],
+      "register_ok": true,
+      "note": "Awkward prepositional phrasing and inconsistent past tense choices detract from writing quality."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "leading industry status",
+        "pivotal role in European supply chains",
+        "legacy of innovation and commitment to excellence",
+        "growth milestone",
+        "resilience in dynamic market",
+        "expert praise and bright future"
+      ],
+      "register_ok": true,
+      "note": "Clear and competent summary, marred slightly by repetitive stacked prepositions in the opening sentence."
+    },
+    "E": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Netherlands",
+        "leading industry status",
+        "pivotal role in European supply chains",
+        "legacy of innovation and commitment to excellence",
+        "growth milestone",
+        "resilience in dynamic market",
+        "expert praise and bright future"
+      ],
+      "register_ok": true,
+      "note": "Reads naturally with colloquial business phrasing, though omitting the country name reduces precision."
+    }
+  }
+}

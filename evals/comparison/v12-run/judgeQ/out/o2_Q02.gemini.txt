@@ -1,0 +1,61 @@
+{
+  "human_quality_rank": ["A", "D", "C", "B"],
+  "fidelity_rank": ["D", "B", "C", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Motivation level on Monday vs. Thursday",
+        "Ten pushups or one page of an unfinished book",
+        "Running shoes by the door and phone charging in another room",
+        "Advice on what to do when missing a day vs. quitting",
+        "Instruction to do it tomorrow instead of starting now"
+      ],
+      "dropped_facts": [
+        "The world is full of distractions",
+        "Consistency is the true key to success",
+        "Small daily actions transform your life",
+        "Every step brings you closer to your goals",
+        "The best time to start is now"
+      ],
+      "register_ok": true,
+      "note": "Reads with an authentic, highly distinct human voice, but invents numerous concrete examples and changes key claims."
+    },
+    "B": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The world is full of distractions",
+        "Small habits transform your life",
+        "Every step brings you closer to your goals",
+        "The best time to start is now"
+      ],
+      "register_ok": true,
+      "note": "Accurately conveys the core concepts without inventing specifics, but omits the entire concluding encouragement and reads somewhat generic."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Giving yourself slack specifically when you miss a day"
+      ],
+      "dropped_facts": [
+        "The world is full of distractions",
+        "Consistency is the true key to success",
+        "Transforming your life",
+        "Every step brings you closer to your goals"
+      ],
+      "register_ok": true,
+      "note": "Has natural colloquial phrasing, but introduces a specific scenario not found in the source while dropping several points."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The world is full of distractions"
+      ],
+      "register_ok": true,
+      "note": "Combines a natural, well-cadenced human rhythm with nearly complete fidelity to the original text's substance and conclusion."
+    }
+  }
+}

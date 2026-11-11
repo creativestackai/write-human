@@ -1,0 +1,43 @@
+{
+  "human_quality_rank": ["A", "C", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Removed the qualifier 'only' from 'only twice'",
+        "Weakened 'an essential tool' to 'a working tool' and softened 'not merely a virtue, but an essential tool' to 'as much as a virtue'"
+      ],
+      "register_ok": true,
+      "note": "Seamlessly matches the narrator's natural voice and cadence while avoiding passive phrasing and formulaic transitions."
+    },
+    "B": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Dropped the attribution that the insight was learned through the author's personal journey ('this journey has taught me')"
+      ],
+      "strength_changes": [
+        "Removed the qualifier 'only' from 'only twice'",
+        "Weakened 'essential tool' to simply 'a tool'"
+      ],
+      "register_ok": true,
+      "note": "Awkward passive phrasing, an ambiguous pronoun reference, and a formulaic transition make it feel artificial."
+    },
+    "C": {
+      "p_ai": 60,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Dropped the attribution that the insight was learned through the author's personal journey ('this journey has taught me')"
+      ],
+      "strength_changes": [
+        "Weakened 'an essential tool' to 'a working tool' and softened the contrast with virtue to 'as much as it is a virtue'"
+      ],
+      "register_ok": true,
+      "note": "Unnatural passive voice and the clichéd filler phrase 'it turns out' detract from an otherwise competent rewrite."
+    }
+  }
+}

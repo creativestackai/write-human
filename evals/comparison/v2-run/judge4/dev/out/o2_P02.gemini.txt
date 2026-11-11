@@ -1,0 +1,56 @@
+{
+  "human_quality_rank": ["D", "B", "A", "C"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "all-in-one platform claim"
+      ],
+      "register_ok": true,
+      "note": "Reads like clean, professional human-edited copy that strips marketing fluff without fabricating details."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "three-step workflow of creating, sending, and watching for payment in one place",
+        "retyping numbers into a spreadsheet afterward",
+        "reporting updating specifically as money comes in rather than waiting for month-end"
+      ],
+      "dropped_facts": [
+        "that the 40% reduction was proven/tested rather than experienced directly by all users"
+      ],
+      "register_ok": true,
+      "note": "Engaging and conversational, but invents concrete workflow steps and spreadsheet comparisons."
+    },
+    "C": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "all-in-one platform claim",
+        "that the 40% reduction is proven rather than guaranteed"
+      ],
+      "register_ok": true,
+      "note": "High factual accuracy, but the compressed and formulaic phrasing reads like an AI distillation."
+    },
+    "D": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "spending evenings on invoicing",
+        "agencies outgrowing spreadsheets",
+        "fewer typos and wrong totals going out under your name",
+        "checking what is paid without asking anyone",
+        "client billing details specifically sitting behind security",
+        "meta-commentary claim to read only one number"
+      ],
+      "dropped_facts": [
+        "worldwide scope of the 2,300 teams",
+        "all-in-one platform claim"
+      ],
+      "register_ok": true,
+      "note": "Features a sharp, distinctive human copywriter voice, but invents extensive details and scenarios."
+    }
+  }
+}

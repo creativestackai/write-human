@@ -1,0 +1,46 @@
+{
+  "human_quality_rank": ["C", "A", "B"],
+  "fidelity_rank": ["C", "A", "B"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 24,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "“Calms you down” asserts an emotional effect more directly than “fosters a calmer approach.”",
+        "“A working tool” weakens the source’s claim that patience is essential.",
+        "“More than tradition” reduces the emphasis of “a multitude of benefits” extending “far beyond” tradition."
+      ],
+      "register_ok": true,
+      "note": "Clear and reasonably close to the surrounding voice, though the explanatory opening sounds more instructional."
+    },
+    "B": {
+      "p_ai": 32,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The conclusion no longer explicitly identifies patience as something the narrator personally learned from this experience."
+      ],
+      "strength_changes": [
+        "“Make you calmer” asserts an emotional effect more directly than “fosters a calmer approach.”",
+        "“A tool” weakens the source’s claim that patience is essential.",
+        "“Real benefits beyond tradition” reduces the source’s emphasis on the benefits’ abundance and extent."
+      ],
+      "register_ok": true,
+      "note": "Readable but slightly generic, with passive phrasing and an impersonal conclusion that fit the surrounding essay less well."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The conclusion no longer explicitly identifies patience as something the narrator personally learned from this experience."
+      ],
+      "strength_changes": [
+        "“A working tool” weakens the source’s claim that patience is essential.",
+        "“More than tradition” reduces the emphasis of “a multitude of benefits” extending “far beyond” tradition."
+      ],
+      "register_ok": true,
+      "note": "The understated rhythm and emphasis on observable movement fit the surrounding personal essay best."
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "In a world full of distractions",
+        "You can transform your life one day at a time"
+      ],
+      "register_ok": true,
+      "note": "Reads with a clean, natural human cadence while remaining exceptionally faithful to the source material."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Starting with something small enough that you can't really skip it",
+        "Giving yourself slack when you miss a day"
+      ],
+      "dropped_facts": [
+        "In a world full of distractions",
+        "Every step you take brings you closer to your goals",
+        "You can transform your life one day at a time"
+      ],
+      "register_ok": true,
+      "note": "Conversational and relatable, but invents tactical details and drops the goal-progress claim."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "In a world full of distractions",
+        "Every step you take brings you closer to your goals",
+        "The best time to start is now",
+        "You can transform your life one day at a time"
+      ],
+      "register_ok": true,
+      "note": "Accurately rephrases retained claims without hallucinations, but feels slightly generic and omits the closing call to action."
+    },
+    "D": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Having plenty of motivation on Monday and none by Thursday",
+        "Concrete habit examples: ten pushups, one page of a book",
+        "Concrete environment cues: running shoes by the door, phone charging in another room",
+        "Starting smaller than feels worthwhile",
+        "Missing a day barely matters compared to quitting",
+        "Telling the reader to do it tomorrow rather than starting now"
+      ],
+      "dropped_facts": [
+        "In a world full of distractions",
+        "Every step you take brings you closer to your goals",
+        "You can transform your life one day at a time",
+        "The best time to start is now"
+      ],
+      "register_ok": true,
+      "note": "Possesses a vivid, unmistakable authorial voice but severely compromises fidelity through fabricated scenarios and contradictory advice."
+    }
+  }
+}

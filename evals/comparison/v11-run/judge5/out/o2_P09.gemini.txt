@@ -1,0 +1,59 @@
+{
+  "human_quality_rank": ["D", "B", "A", "E", "C"],
+  "fidelity_rank": ["D", "A", "C", "B", "E"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Offer to reach out with further questions or concerns"
+      ],
+      "register_ok": true,
+      "note": "Clean, direct, and professional, though omitting the invitation to follow up feels slightly abrupt."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Claim that the package 'lost time from there'",
+        "Specific follow-up conditions about the refund not arriving by then or anything looking off"
+      ],
+      "dropped_facts": [
+        "Commitment to ensure the issue does not happen again",
+        "Thank you for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Sounds very natural and human, but drops key assurances and invents specific follow-up conditions."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Thank you for patience and understanding"
+      ],
+      "register_ok": true,
+      "note": "Maintains fidelity well, but several phrasings feel unusually stiff and wooden for customer care."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves every detail from the source while sounding like a warm, competent, and genuine human support agent."
+    },
+    "E": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Specifies the payment method as a 'card'",
+        "States the package 'arrived late'",
+        "Claims the issue was passed to the warehouse team to investigate"
+      ],
+      "dropped_facts": [
+        "Thank you for patience and understanding",
+        "General invitation to reach out with questions or concerns"
+      ],
+      "register_ok": true,
+      "note": "Reads casually human but invents internal escalation details, delivery outcomes, and a specific payment type."
+    }
+  }
+}

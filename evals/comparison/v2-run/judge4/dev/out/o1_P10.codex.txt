@@ -1,0 +1,75 @@
+{
+  "human_quality_rank": ["A", "C", "D", "B"],
+  "fidelity_rank": ["D", "B", "C", "A"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The narrator initially expected remembering syntax to be the hard part and personally struggled with breaking problems into smaller pieces.",
+        "Syntax can be looked up in ten seconds.",
+        "The narrator wasted substantial early time memorizing commands, retained almost none of them, and learned through understanding loops and function inputs.",
+        "Commands came naturally once the narrator understood the concepts.",
+        "The narrator admires developers who still get stuck constantly and do not take it personally.",
+        "A bug mostly indicates an incorrect mental model.",
+        "The late-night reference to 11pm introduces an unsupported situational detail.",
+        "A third failed attempt teaches more than a first clean run."
+      ],
+      "dropped_facts": [
+        "Many beginners make the mistake of memorizing commands; the rewrite substitutes one narrator's experience.",
+        "Every bug offers a lesson; the rewrite limits its explanation to what bugs mostly indicate.",
+        "Learning requires patience and practice, alongside persistence.",
+        "The journey is rewarding.",
+        "The most successful developers embrace struggle; the rewrite describes developers the narrator admires instead.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "A convincing conversational voice and concrete explanations come at the cost of extensive invented experience."
+    },
+    "B": {
+      "p_ai": 57,
+      "unsupported_specifics": [
+        "Syntax is easy.",
+        "Beginners who try to memorize commands stall out."
+      ],
+      "dropped_facts": [
+        "Persistence is explicitly identified as a requirement."
+      ],
+      "register_ok": true,
+      "note": "Readable and mostly faithful, but its familiar motivational phrasing feels comparatively generic."
+    },
+    "C": {
+      "p_ai": 36,
+      "unsupported_specifics": [
+        "Syntax is easy and can be looked up in ten seconds.",
+        "Breaking problems into computer-followable pieces is the skill everything else rests on.",
+        "The narrator personally understands the attraction of memorizing commands.",
+        "Flashcards and cheat sheets feel like progress.",
+        "Memorizing commands leaves learners recognizing a for loop without knowing when to use one and stuck when a problem differs from a tutorial.",
+        "Most learning happens through bugs.",
+        "The automation example assumes a chore the reader is tired of performing manually.",
+        "Unexpected program behavior forces learners to examine their assumptions, and that discrepancy constitutes most of what there is to learn.",
+        "Developers who become good struggle constantly and do not interpret that struggle as a judgment of themselves."
+      ],
+      "dropped_facts": [
+        "Analyzing data is one of the example applications.",
+        "The journey is rewarding.",
+        "Learning requires patience, persistence, and practice.",
+        "The source specifically associates embracing struggle with the most successful developers.",
+        "Every line of code brings the learner closer to mastery."
+      ],
+      "register_ok": true,
+      "note": "Engaging and specific, but it expands the argument with unsupported teaching claims and psychological explanations."
+    },
+    "D": {
+      "p_ai": 43,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Successful developers embrace struggle; continuing through it preserves persistence but omits that affirmative attitude.",
+        "The endpoint of mastery is softened to being good at coding."
+      ],
+      "register_ok": true,
+      "note": "Plain, coherent prose preserves nearly all the source's meaning with the fewest unsupported additions."
+    }
+  }
+}

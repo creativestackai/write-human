@@ -1,0 +1,37 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "“The sensible move is” makes the recommendation more categorical than “it would seem sensible.”"
+      ],
+      "register_ok": true,
+      "note": "Clear and natural overall, but the short sentences make the reasoning feel choppy."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "The reasoning flows naturally while preserving the source's detail and caution."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit inference that the survey suggests a Sunday market would be viable is replaced by the less specific statement that it partly supports the move."
+      ],
+      "strength_changes": [
+        "“The council should be asked” makes the recommendation firmer than “it would seem sensible to ask the council.”"
+      ],
+      "register_ok": true,
+      "note": "The recommendation-first structure reads naturally, but compresses one inference and strengthens the recommendation."
+    }
+  }
+}

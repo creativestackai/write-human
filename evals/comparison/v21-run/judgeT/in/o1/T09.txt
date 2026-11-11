@@ -1,0 +1,29 @@
+You are an expert editor evaluating three anonymous rewrites (A, B, C) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing? If CONTEXT gives the paragraphs around the text, also ask whether the rewrite sounds like the same author as those paragraphs.
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped. Separately list strength_changes: claims the rewrite states more strongly or more weakly than the source does (a hedge, condition, or qualifier removed or added).
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","worst"], "fidelity_rank": ["best","second","worst"], "overall_winner": "A|B|C", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "strength_changes": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}}}
+Rank lists use the labels A, B, C. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Learning a new language as an adult is a rewarding yet challenging journey that requires dedication, patience, and the right mindset. It is important to remember that fluency is not achieved overnight, but rather through consistent daily practice. Many learners fall into the trap of focusing exclusively on grammar, neglecting the crucial role that speaking and listening play in real communication. Moreover, the fear of making mistakes often holds people back from practicing with native speakers. By embracing errors as a natural part of the process, setting realistic goals, and immersing yourself in the language whenever possible, you can unlock your full potential. In conclusion, the key to success lies not in talent, but in persistence.
+
+=== REWRITE A ===
+Learning a language as an adult is hard, though rewarding, and it doesn't happen overnight. Fluency comes from practicing a little every day. Many learners focus only on grammar and neglect speaking and listening, which is what real conversation runs on. The fear of making mistakes also keeps people from practicing with native speakers. Treat errors as part of the process, set goals you can actually reach, and get into the language whenever you can. Talent matters less than persistence.
+
+=== REWRITE B ===
+Learning a language as an adult is rewarding and hard, and it takes dedication and patience. Nobody gets fluent overnight. It comes from practicing a little every day.
+
+A common trap is spending all your time on grammar and neglecting speaking and listening, which is what real conversation runs on. The fear of making mistakes also holds a lot of people back from practicing with native speakers. Treat errors as a normal part of the process, set goals you can actually reach, and get into the language whenever you can.
+
+What gets you there is persistence, not talent.
+
+=== REWRITE C ===
+Fluency doesn't come overnight. It comes from practicing a little every day, and what decides the outcome is persistence, not talent.
+
+Learning a language as an adult is rewarding and hard, and it takes dedication, patience, and the right mindset. Many learners pour their time into grammar and neglect speaking and listening, which is what real communication runs on. Plenty also avoid practicing with native speakers because they're afraid of making mistakes. Treat the mistakes as part of the process. Set goals you can actually reach, and get into the language whenever you can.

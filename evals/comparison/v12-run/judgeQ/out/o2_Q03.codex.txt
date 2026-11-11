@@ -1,0 +1,57 @@
+{
+  "human_quality_rank": ["A", "B", "D", "C"],
+  "fidelity_rank": ["B", "A", "D", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "Changes the stated trial start time from today to launch day; the source does not establish that these are the same day."
+      ],
+      "dropped_facts": [
+        "The invitation to start the free trial today.",
+        "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained product copy with a natural rhythm, but it changes the trial timing."
+    },
+    "B": {
+      "p_ai": 24,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+      ],
+      "register_ok": true,
+      "note": "Readable and faithful to the concrete details, although 'Thank you, genuinely' sounds self-conscious."
+    },
+    "C": {
+      "p_ai": 33,
+      "unsupported_specifics": [
+        "Claims automatic time zone detection eliminates the need to work out what a meeting time means for someone in another country.",
+        "Says beta users identified broken functionality.",
+        "Says beta users identified confusing aspects of the product.",
+        "Says beta users reported which features they actually used.",
+        "Claims plenty of those specific findings were incorporated into the release.",
+        "Explicitly claims beta feedback made the product better, whereas the source says it helped shape the release."
+      ],
+      "dropped_facts": [
+        "The invitation to start the free trial today.",
+        "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+      ],
+      "register_ok": true,
+      "note": "Conversational and distinctive, but the added explanations feel labored and introduce unsupported claims."
+    },
+    "D": {
+      "p_ai": 29,
+      "unsupported_specifics": [
+        "Claims the beta users used the release before anyone else did, which excludes earlier use by developers or other testers without source support."
+      ],
+      "dropped_facts": [
+        "The explicit invitation to start the free trial today is replaced with an invitation to start whenever ready.",
+        "The claims that the update will revolutionize time management and seamlessly integrate features to unlock users' full productivity potential."
+      ],
+      "register_ok": true,
+      "note": "Mostly plain and approachable, but the redundant gratitude and absolute beta-access claim weaken it."
+    }
+  }
+}

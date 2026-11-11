@@ -1,0 +1,5 @@
+AI is already in classrooms, and most people I talk to can't decide whether to be excited or worried. I'm both. A tool that adjusts a reading list to each kid, or marks forty quizzes overnight, is a real gift to a teacher who would otherwise be up past midnight with a red pen. That part I buy.
+
+The trouble is what comes along with it. Student data has to live somewhere, and schools don't always ask where. The kids with fast home internet and their own laptop tend to benefit first, which widens a gap that was already wide. And there's a quieter risk: a class that hands its thinking to the software and stops noticing it did.
+
+So the useful question isn't whether AI replaces teachers. It won't. The question is whether it gives them time back. A teacher with a few extra hours a week can sit down next to the student who's stuck, and I don't know of any tool that does that part.

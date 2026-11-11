@@ -1,0 +1,53 @@
+{
+  "human_quality_rank": ["B", "A", "D", "C"],
+  "fidelity_rank": ["D", "A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Ensuring a more sustainable infrastructure",
+        "Opening general claim that build times make or break developer productivity"
+      ],
+      "register_ok": true,
+      "note": "Natural, direct, and stripped of AI clichés while faithfully preserving nearly all source facts."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Claim that a 24-minute build causes engineers to wander off and lose their place while a 9-minute build does not",
+        "Claim that this difference visibly affects daily work habits"
+      ],
+      "dropped_facts": [
+        "Improved velocity",
+        "Empowered developers to ship with confidence",
+        "Ensuring a more sustainable infrastructure",
+        "Opening general claim that build times make or break developer productivity"
+      ],
+      "register_ok": true,
+      "note": "Possesses the most distinct human voice, but fabricates personal reflections and drops key outcome claims."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Improved velocity",
+        "Empowered developers to ship with confidence",
+        "Ensuring a more sustainable infrastructure",
+        "Opening general claim that build times make or break developer productivity"
+      ],
+      "register_ok": true,
+      "note": "Clean and factual, but feels clipped and leaves out the source's concluding impacts."
+    },
+    "D": {
+      "p_ai": 55,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Ensuring a more sustainable infrastructure"
+      ],
+      "register_ok": true,
+      "note": "Maintains high fidelity, but the formulaic opening hook sounds distinctly like generic AI writing."
+    }
+  }
+}

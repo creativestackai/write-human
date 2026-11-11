@@ -1,0 +1,51 @@
+{
+  "human_quality_rank": ["A", "B", "D", "C"],
+  "fidelity_rank": ["D", "A", "B", "C"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "“We surveyed” asserts that the authors collected the survey data; the source only says they used survey data."
+      ],
+      "dropped_facts": [
+        "The association remained statistically significant after adjustment; “held” does not explicitly preserve significance."
+      ],
+      "register_ok": true,
+      "note": "Clear, natural academic prose with two small losses of methodological precision."
+    },
+    "B": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Specifies students short on sleep as the intended recipients of institutional support, whereas the source leaves the intervention targets unspecified."
+      ],
+      "dropped_facts": [
+        "The association remained statistically significant after adjustment; “held up” does not explicitly preserve significance.",
+        "The stated need for institutional interventions is weakened to an optional suggestion."
+      ],
+      "register_ok": true,
+      "note": "Readable and conversational, though its closing recommendation is less precise than the source."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "“We surveyed” asserts that the authors collected the survey data; the source only says they used survey data.",
+        "Recommends acting on sleep directly and targeting support at first-year students, neither of which the source explicitly proposes.",
+        "Adds a methodological claim that this survey cannot establish that short sleep causes lower grades."
+      ],
+      "dropped_facts": [
+        "The association remained statistically significant after adjustment; “held” does not explicitly preserve significance.",
+        "The explicit conclusion that sleep plays a pivotal role in academic success."
+      ],
+      "register_ok": true,
+      "note": "Mostly natural prose, but the crowded final sentence introduces interpretation beyond the source."
+    },
+    "D": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Restrained, clear academic writing that preserves the source’s substantive claims and statistical precision."
+    }
+  }
+}

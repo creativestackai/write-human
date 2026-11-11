@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["C", "D", "A", "B"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Characterizes the attendance issue specifically as a 'steady problem'"
+      ],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of the group's patient engagement strategy"
+      ],
+      "register_ok": true,
+      "note": "Clean and direct rewrite, though it omits the patient engagement strategy and slightly characterizes the no-show issue as steady."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Attributes the 340-appointment calculation specifically to an internal Northwind estimate",
+        "Adds that the front-desk staff has less to do 'by hand'"
+      ],
+      "dropped_facts": [
+        "Remindly serves as a cornerstone of the group's patient engagement strategy"
+      ],
+      "register_ok": true,
+      "note": "Reads somewhat clumsily with repetitive phrasing around text reminders and slight informal padding."
+    },
+    "C": {
+      "p_ai": 18,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads naturally with excellent flow and genre awareness while preserving every factual element of the original."
+    },
+    "D": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Attributes the 340-appointment calculation specifically to an internal Northwind estimate"
+      ],
+      "dropped_facts": [
+        "Elena Torres's verbatim quotation",
+        "Remindly serves as a cornerstone of the group's patient engagement strategy"
+      ],
+      "register_ok": true,
+      "note": "Has a punchy, distinctly human cadence but loses the direct quote and fragments the narrative."
+    }
+  }
+}

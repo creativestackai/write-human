@@ -1,0 +1,76 @@
+{
+  "human_quality_rank": ["B", "C", "A", "D"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Saying consistency, patience, and other people 'do most of the work' makes a stronger claim than calling them foundations."
+      ],
+      "dropped_facts": [
+        "The writer's explicit excitement about sharing the accomplishment."
+      ],
+      "register_ok": true,
+      "note": "Clear and restrained, with the strongest fidelity, though less distinctive than the supplied voice."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The writer considers the finishing time slow and is comfortable with it.",
+        "The writer spent most of the eight days googling whether people could reach the starting line after an injury.",
+        "The running group kept the writer attending when they could only watch.",
+        "The physiotherapist prescribed repetitive knee exercises that frustrated the writer.",
+        "Doing the 'boring work' caused the knee to recover.",
+        "The writer was not ready and reached the starting line by deciding to stop waiting."
+      ],
+      "dropped_facts": [
+        "The marathon was completed recently.",
+        "The writer's explicit excitement about sharing the accomplishment.",
+        "The writer returned stronger than ever.",
+        "The explicit lesson that consistency, patience, and community underpin any big goal.",
+        "The encouragement to take the first step today.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "Vivid and close to the sample's candid voice, but its strongest details are invented."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The assertion that nothing the writer did 'that month' was clever introduces an unsupported timeframe and assessment."
+      ],
+      "dropped_facts": [
+        "The writer's explicit excitement about sharing the accomplishment.",
+        "The explicit generalization that the lessons apply to any big goal.",
+        "The encouragement to start today is changed to starting this week.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "Natural and readable, although the added remark about cleverness feels inserted to manufacture personality."
+    },
+    "D": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "The writer considers the finishing time slow but acceptable.",
+        "The writer spent most of the eight days googling whether they would reach the starting line.",
+        "The running group dragged the writer to Sunday meetups where they could only watch.",
+        "The physiotherapist determined what was actually wrong.",
+        "The writer resumed running slowly and followed a 'boring' approach.",
+        "That approach was the only reason the writer reached race day.",
+        "Showing up most weeks beats having a perfect plan.",
+        "The writer is bad at asking for help and needs to change that."
+      ],
+      "dropped_facts": [
+        "The marathon was completed recently.",
+        "The writer's explicit excitement about sharing the accomplishment.",
+        "The writer returned stronger than ever.",
+        "The explicit lesson that consistency, patience, and community underpin any big goal.",
+        "The encouragement to take the first step today.",
+        "The closing question asking what goal the reader is chasing."
+      ],
+      "register_ok": true,
+      "note": "The clipped rhythm feels overworked, and invented anecdotes replace much of the source's meaning."
+    }
+  }
+}

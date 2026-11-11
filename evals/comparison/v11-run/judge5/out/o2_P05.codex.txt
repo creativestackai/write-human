@@ -1,0 +1,85 @@
+{
+  "human_quality_rank": ["B", "E", "D", "A", "C"],
+  "fidelity_rank": ["A", "D", "C", "E", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The description of the journey as incredible and involving growth."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, with strong fidelity, though the closing motivational pitch feels generic."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "The writer sat in the shop after closing while questioning the decision.",
+        "The writer almost did not offer the subscription.",
+        "The numbers stopped bleeding, implying losses ended rather than merely revenue stabilizing.",
+        "Customers wanted the same loaf every week without thinking about it.",
+        "The writer had been too busy selling customers everything else to notice their wishes.",
+        "The writer cannot advise when someone else should make the leap.",
+        "The writer would have started earlier."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The description of the journey as incredible and involving growth.",
+        "The explicit lesson that resilience, adaptability, and listening to customers are the keys to success.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The most vividly personal and fluent version, but much of that personality comes from unsupported additions."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Customers had been telling the writer what they wanted before the writer caught on.",
+        "Listening to customers was the main lesson, rather than one of three stated keys to success."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The description of the journey as incredible and involving growth.",
+        "Resilience and adaptability as keys to success.",
+        "The specific advice that the best time to start is now, softened to not waiting too long.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Readable but compressed and somewhat formulaic, with an invented explanation for the customer lesson."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The description of the journey as incredible and involving growth.",
+        "The advice to readers considering a leap that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Plain, believable writing with a natural ending, although it omits the source's final advice and question."
+    },
+    "E": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The writer stood in the shop while questioning the decision.",
+        "There was nothing clever about the subscription.",
+        "Customers liked knowing their bread was sorted.",
+        "The writer cannot advise when someone else should make the leap.",
+        "Trying the subscription sooner would have helped the writer sleep better during the first three months."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The description of the journey as incredible and involving growth.",
+        "The explicit lesson that resilience, adaptability, and listening to customers are the keys to success.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The clipped, dry voice suits the sample, but invented customer motives and personal hindsight reduce fidelity."
+    }
+  }
+}

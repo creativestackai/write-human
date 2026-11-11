@@ -1,0 +1,3 @@
+Learning to code mostly means learning to think, and syntax is the smaller part of that. Programming is problem-solving, and each bug teaches you something about how your program really behaves. Plenty of beginners try to memorize commands. Understanding the concepts gets you further.
+
+Whether you're building a website, analyzing data, or automating tasks, it's hard going, and it pays off. It takes patience and a lot of practice. The developers who do best still struggle, but they keep going when they do. So don't be afraid to fail. Every line you write gets you a little closer to being good at it.

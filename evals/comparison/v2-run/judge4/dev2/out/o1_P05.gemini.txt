@@ -1,0 +1,57 @@
+{
+  "human_quality_rank": ["B", "D", "A", "C"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Advice and call to action encouraging readers considering a leap to start now and asking what is holding them back"
+      ],
+      "register_ok": true,
+      "note": "Achieves a natural, unpretentious human tone while maintaining near-perfect fidelity without inventing any details."
+    },
+    "B": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "Sitting in the shop after closing wondering if a huge mistake was made",
+        "Almost not bothering with the sourdough subscription",
+        "Customers wanting the same loaf every week without having to think about it",
+        "Being too busy trying to sell customers everything else to notice"
+      ],
+      "dropped_facts": [
+        "Explicit lessons of resilience and adaptability as keys to success"
+      ],
+      "register_ok": true,
+      "note": "Captures the writer's voice with vivid personality but invents multiple unsupported narrative anecdotes and motivations."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Customers were telling the writer what they wanted before the writer caught on"
+      ],
+      "dropped_facts": [
+        "Lessons of resilience and adaptability as keys to success",
+        "Closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Reads smoothly but drops two core takeaways and introduces an unsupported explanation for the customer insight."
+    },
+    "D": {
+      "p_ai": 12,
+      "unsupported_specifics": [
+        "Standing in the shop wondering what on earth had been done",
+        "Explanation that people like knowing their bread is sorted",
+        "Sleeping better in the first three months if the subscription had been tried sooner"
+      ],
+      "dropped_facts": [
+        "All three explicit lessons: resilience, adaptability, and listening to customers as keys to success",
+        "The advice that the best time to start is now",
+        "Closing question asking what is holding the reader back"
+      ],
+      "register_ok": true,
+      "note": "Has a strong colloquial rhythm but fabricates personal experiences and completely omits the original lessons learned."
+    }
+  }
+}

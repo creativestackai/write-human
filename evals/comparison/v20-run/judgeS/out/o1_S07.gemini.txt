@@ -1,0 +1,40 @@
+{
+  "human_quality_rank": ["A", "B", "C", "D"],
+  "fidelity_rank": ["D", "A", "B", "C"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Reads like clear, natural academic prose that communicates the findings plainly without inflated jargon."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Specifying that institutional interventions mean universities targeting support at sleep-deprived students"
+      ],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Engaging and conversational, though it slightly relaxes the scholarly register and narrows the recommended interventions."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Example of targeting support specifically at first-year students",
+        "Methodological disclaimer that the survey cannot prove sleep loss causes lower grades"
+      ],
+      "dropped_facts": [],
+      "register_ok": false,
+      "note": "Captures a distinct human voice but inserts personal editorializing and causal disclaimers absent from the source."
+    },
+    "D": {
+      "p_ai": 70,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves every detail with high fidelity but feels like a stiff, formulaic synonym-swapping exercise."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Users would rather not spend their evenings on invoicing.",
+        "Solo freelancers actually use Tallyo, rather than merely being an intended audience.",
+        "Agencies using Tallyo have outgrown spreadsheets.",
+        "Real-time reports show paid and unpaid invoices without asking anyone.",
+        "The security specifically protects clients' billing details and requires no attention from users.",
+        "The wording attributes the 40% reduction to the more than 2,300 teams collectively; the source does not identify who achieved the measured reduction."
+      ],
+      "dropped_facts": [
+        "Tallyo is an all-in-one platform.",
+        "The teams using Tallyo are worldwide.",
+        "The tools are intuitive and help users control finances, streamline workflows, and improve productivity.",
+        "Security is described as best-in-class."
+      ],
+      "register_ok": true,
+      "note": "A distinctive conversational voice makes this engaging, but several concrete details exceed the source."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Teams of any size extends the source's stated audience of solo freelancers and growing agencies."
+      ],
+      "dropped_facts": [
+        "Tallyo is an all-in-one platform.",
+        "The tools are intuitive and help users control finances, streamline workflows, and improve productivity.",
+        "Security is described as best-in-class."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained marketing copy preserves the central evidence with the fewest unsupported additions."
+    },
+    "C": {
+      "p_ai": 40,
+      "unsupported_specifics": [
+        "Users can create invoices, send them, and monitor payments within the same platform.",
+        "The workflow eliminates subsequent spreadsheet reentry.",
+        "The wording attributes the 40% reduction to the more than 2,300 teams collectively; the source does not identify who achieved the measured reduction.",
+        "Automation and reporting each account for part of the measured 40% reduction.",
+        "Reports update specifically as money comes in and eliminate waiting for month-end."
+      ],
+      "dropped_facts": [
+        "Freelancers are specifically described as solo.",
+        "The tools are intuitive and help users control finances and improve productivity.",
+        "Tallyo eliminates manual errors.",
+        "Security is described as best-in-class."
+      ],
+      "register_ok": true,
+      "note": "Readable and approachable, but the explanatory sequence introduces unsupported workflows and causal claims."
+    }
+  }
+}

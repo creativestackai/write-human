@@ -1,0 +1,42 @@
+{
+  "human_quality_rank": ["A", "C", "D", "B"],
+  "fidelity_rank": ["A", "C", "D", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Excellently written technical documentation that trims AI throat-clearing while preserving every fact and instruction."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "warning against retrying in a tight loop",
+        "claim that caching causes you to hit the limit less often"
+      ],
+      "dropped_facts": [
+        "explicit rationale of maintaining optimal performance for all users"
+      ],
+      "register_ok": false,
+      "note": "Veers into an overly casual blog style and invents an unprompted warning against tight loops."
+    },
+    "C": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains complete fidelity, though the phrasing in the backoff instructions is slightly clunky."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "the stated rationale for rate limiting (ensuring fair usage and maintaining optimal performance for all users)"
+      ],
+      "register_ok": true,
+      "note": "Reads smoothly and directly, but omits the source's opening rationale for why rate limiting exists."
+    }
+  }
+}

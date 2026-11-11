@@ -1,0 +1,70 @@
+{
+  "human_quality_rank": ["B", "C", "D", "A"],
+  "fidelity_rank": ["C", "A", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Customers had been telling the writer what they wanted before the writer caught on."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The journey involved growth and invaluable lessons.",
+        "Resilience and adaptability were lessons identified as keys to success.",
+        "The explicit advice that the best time to start is now is softened to not waiting too long.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Clear and conversational, but the ending feels generic and invents prior customer feedback."
+    },
+    "B": {
+      "p_ai": 18,
+      "unsupported_specifics": [
+        "The writer stood in the shop while questioning the decision.",
+        "Customers liked the subscription because it meant their bread was sorted.",
+        "The writer would have slept better during the first three months if the subscription had started sooner."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The journey involved growth and invaluable lessons.",
+        "Resilience, adaptability, and listening to customers were identified as keys to success.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "The strongest conversational voice, with natural rhythm and understated humor, but several invented details."
+    },
+    "C": {
+      "p_ai": 24,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The explicit description of the journey as involving growth.",
+        "The advice that the best time to start is now.",
+        "The closing question asking what is holding the reader back."
+      ],
+      "register_ok": true,
+      "note": "Plain, natural writing that preserves the central facts and all three lessons without inventing details."
+    },
+    "D": {
+      "p_ai": 28,
+      "unsupported_specifics": [
+        "The writer sat in the shop after closing while questioning the decision.",
+        "The writer almost did not offer the subscription.",
+        "The numbers stopped bleeding, implying losses ended rather than merely revenue stabilizing.",
+        "Customers wanted the same loaf every week without having to think about it.",
+        "The writer had been too busy selling customers everything else to notice their preferences.",
+        "The writer would have started earlier."
+      ],
+      "dropped_facts": [
+        "The writer's excitement about sharing the news.",
+        "The journey involved growth and invaluable lessons.",
+        "Resilience, adaptability, and listening to customers were explicitly identified as keys to success.",
+        "The advice that the best time to start is now."
+      ],
+      "register_ok": true,
+      "note": "Readable and personal, but its vividness depends heavily on invented scenes, motives, and hindsight."
+    }
+  }
+}

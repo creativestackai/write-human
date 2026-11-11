@@ -1,0 +1,54 @@
+{
+  "human_quality_rank": ["D", "B", "A", "C", "E"],
+  "fidelity_rank": ["D", "B", "C", "A", "E"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "headquartered in the Netherlands (only Rotterdam is named)",
+        "company's leading market status and role in European supply chains"
+      ],
+      "register_ok": false,
+      "note": "Reads like an informal spoken summary with overly casual phrasing ('started it', 'working in') and an omitted country name."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "company's leading market status and role in European supply chains"
+      ],
+      "register_ok": true,
+      "note": "Clear, professional, and well-paced, though the opening sentence has slightly repetitive prepositions ('in... in...')."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "company's leading market status and role in European supply chains"
+      ],
+      "register_ok": true,
+      "note": "Maintains professional tone but suffers from awkward prepositioning ('inside') and unnatural tense shifts ('was operating', 'had reported')."
+    },
+    "D": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "company's leading market status and role in European supply chains"
+      ],
+      "register_ok": true,
+      "note": "Crisp, authoritative corporate profile with elegant apposition, clean sentence flow, and high factual fidelity."
+    },
+    "E": {
+      "p_ai": 65,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "headquartered in the Netherlands (only Rotterdam is named)",
+        "company's leading market status and role in European supply chains"
+      ],
+      "register_ok": false,
+      "note": "Reads like an AI straining to sound human with forced conversational filler ('which happens to be') and clumsy phrasing ('came in 2016')."
+    }
+  }
+}

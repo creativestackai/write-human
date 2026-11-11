@@ -1,0 +1,1 @@
+The cause was a missing database index. Last week's migration quietly dropped the one on the orders table, so every checkout query ended up scanning the whole table. As traffic built through the afternoon, queries went from about 40 milliseconds to over 9 seconds. Which tells you something about how we review migrations. It took us 55 minutes to find it.

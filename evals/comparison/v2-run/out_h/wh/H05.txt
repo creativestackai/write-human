@@ -1,0 +1,5 @@
+Short answer: yes, Friday still works, with one condition.
+
+QA finished their pass yesterday and found two bugs. One is a misaligned element on mobile Safari. It's cosmetic, so I'd ship with it. The other is the problem. INR prices on the annual plan are rounding wrong, so someone in India sees 41,988 where it should say 41,990. I'm not willing to put a wrong price on a pricing page, even by two rupees.
+
+The fix is written. It needs review and a merge, which I expect by Thursday afternoon. QA then has to re-check it on Thursday. If both happen, we ship Friday as planned. If either slips, we go Monday morning, which still lands before the webinar. I'll tell you Thursday evening which way it's going.

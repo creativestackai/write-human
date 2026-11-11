@@ -1,0 +1,34 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["C", "A", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The API implements rate limiting to ensure fair usage and maintain optimal performance for all users."
+      ],
+      "register_ok": true,
+      "note": "Crisp and natural technical prose that stays appropriately plain, though it cuts the introductory rationale."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Instruction not to retry in a tight loop."
+      ],
+      "dropped_facts": [
+        "Rate limiting maintains optimal performance for all users."
+      ],
+      "register_ok": true,
+      "note": "Features an authentic developer voice, but injects unsupported advice and leans slightly too conversational."
+    },
+    "C": {
+      "p_ai": 45,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Maintains complete fidelity in an appropriate register, but retains a slightly synthetic clause-by-clause paraphrase structure."
+    }
+  }
+}

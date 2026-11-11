@@ -1,0 +1,5 @@
+I'm applying for the Senior Data Analyst role at Meridian Retail.
+
+For the past five years I've been a data analyst at Brightmart, working mostly in SQL and Python. The project I'd point to first is an inventory dashboard I built there. Stockouts dropped 12% after it went live, which is the kind of result people outside the analytics team notice, and it's the kind of work I want more of.
+
+I'd like to talk about what Meridian needs from this role and whether my background fits.

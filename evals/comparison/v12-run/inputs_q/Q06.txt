@@ -1,0 +1,7 @@
+CONTEXT (background only, not part of the text to rewrite):
+Thread context. Anita (operations lead) asked in the finance channel: 'Did the Kestrel invoice get approved? We need to pay them by Friday or they pause our account.' Rohan (finance) is replying. Anita already knows who Kestrel is and why the Friday date matters.
+
+---
+
+TEXT TO REWRITE:
+Hi Anita, thank you for reaching out! I wanted to provide a comprehensive update on the status of the Kestrel invoice. The invoice was reviewed and approved yesterday by Meera from the accounts team. However, during the review, we noticed that one line item, an onboarding fee of 18,400, appears to have been charged in error, as it was already covered under the original contract. Because of this, I do not believe we should pay the full amount. The remaining balance of 2,31,600 is undisputed. My recommendation would be to pay the undisputed 2,31,600 on Friday so that the account is not paused, and to raise the onboarding fee with Kestrel separately. I expect that we will hear back from them next week. I hope this helps, and please let me know if you have any further questions!

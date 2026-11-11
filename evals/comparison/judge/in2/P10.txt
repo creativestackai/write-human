@@ -1,0 +1,40 @@
+You are an expert editor evaluating three anonymous rewrites (A, B, C) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","middle","worst"], "fidelity_rank": ["best","middle","worst"], "overall_winner": "A|B|C", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}}}
+Rank lists use the labels A, B, C. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Learning to code is not just about syntax; it's about learning to think. At its core, programming is the language of problem-solving, and every bug is a lesson in disguise. Many beginners make the mistake of trying to memorize commands, but the real key lies in understanding concepts.
+
+Whether you're building a website, analyzing data, or automating tasks, the journey is both challenging and rewarding. It requires patience, persistence, and practice. The most successful developers aren't those who never struggle — they're those who embrace the struggle. So don't be afraid to fail. Every line of code you write brings you one step closer to mastery.
+
+=== REWRITE A ===
+Learning to code mostly means learning to think, and syntax is the smaller part of that. Programming is problem-solving, and each bug teaches you something about how your program really behaves. Plenty of beginners try to memorize commands. Understanding the concepts gets you further.
+
+Whether you're building a website, analyzing data, or automating tasks, it's hard going, and it pays off. It takes patience and a lot of practice. The developers who do best still struggle, but they keep going when they do. So don't be afraid to fail. Every line you write gets you a little closer to being good at it.
+
+=== REWRITE B ===
+When I started coding, I thought the hard part would be remembering syntax. It wasn't. The hard part was learning to break a messy problem into pieces small enough to actually solve. Syntax you can look up in ten seconds. Thinking you can't.
+
+I wasted a lot of early time trying to memorize commands, and almost none of it stuck. What stuck was the stuff I understood: why a loop runs the way it does, what a function is really doing with its inputs. Once that clicked, the commands came along on their own.
+
+It doesn't matter much whether you're building a site, poking around in a spreadsheet's worth of data, or scripting some boring chore. You'll get stuck, and it'll be annoying. The developers I admire still get stuck all the time. They just don't take it personally, and they keep going. A bug is mostly the computer telling you your mental model is off, which is useful, even if it doesn't feel that way at 11pm.
+
+So break things. You'll learn more from the third failed attempt than from the first clean run.
+
+=== REWRITE C ===
+Syntax is the easy part. You can look it up in ten seconds. What takes longer is learning to break a messy problem into pieces small enough that a computer can follow them, and that is the skill everything else sits on.
+
+A lot of beginners go the other way and try to memorize commands. I understand the pull. Flashcards and cheat sheets feel like progress. But you end up knowing what a for loop looks like without knowing when you'd want one, and the first time a problem doesn't match the tutorial, you're stuck.
+
+Bugs are where most of the learning happens. Whether you're building a website or automating some chore you're tired of doing by hand, you'll hit a point where the code does something you didn't expect. It's annoying. It also forces you to work out what the program is really doing instead of what you assumed it was doing, and that gap is most of what there is to learn.
+
+The developers who get good aren't the ones who rarely struggle. They struggle constantly, they just don't treat it as a verdict on themselves. So write the broken thing. Run it. See what happens.
+

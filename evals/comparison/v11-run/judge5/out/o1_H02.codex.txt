@@ -1,0 +1,66 @@
+{
+  "human_quality_rank": ["E", "D", "C", "A", "B"],
+  "fidelity_rank": ["D", "E", "A", "B", "C"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Describes the no-show problem as 'steady'; the source does not establish its consistency over time."
+      ],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Integration with existing scheduling systems is described as seamless.",
+        "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Clear and readable, though the opening is slightly awkward and adds an unnecessary characterization."
+    },
+    "B": {
+      "p_ai": 35,
+      "unsupported_specifics": [
+        "Attributes the estimate of 340 additional appointments to Northwind; the source does not identify who calculated it.",
+        "Specifies that front-desk staff have less manual work; the source states only that staff time was freed."
+      ],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Conversational and understandable, but some phrasing feels deliberately simplified and less precise."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "States that 18% of booked patients were not showing up; the source gives a no-show rate without establishing a percentage of individual patients.",
+        "Attributes the estimate of 340 additional appointments to Northwind; the source does not identify who calculated it."
+      ],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "Natural pacing and a credible voice are weakened by a less precise opening statistic."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Integration with existing scheduling systems is described as seamless."
+      ],
+      "register_ok": true,
+      "note": "A clear, restrained case study that preserves the source's substance most completely."
+    },
+    "E": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remindly is described as cutting-edge.",
+        "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+      ],
+      "register_ok": true,
+      "note": "The most natural and economical version, although its ending loses the platform's strategic importance."
+    }
+  }
+}

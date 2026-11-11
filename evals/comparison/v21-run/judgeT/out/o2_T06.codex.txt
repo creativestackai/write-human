@@ -1,0 +1,38 @@
+{
+  "human_quality_rank": ["A", "B", "C"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Omits the initial impression that requiring two reviewers on every pull request seems an obvious way to catch more bugs, followed by doubt on closer examination."
+      ],
+      "strength_changes": [
+        "Changes the possibility that reviews may become slower without becoming better into the categorical statement that reviews get slower without getting better."
+      ],
+      "register_ok": true,
+      "note": "The recommendation-first structure reads naturally and efficiently, but one categorical claim loses the source's caution."
+    },
+    "B": {
+      "p_ai": 30,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Clear and faithful, though the closing phrase 'requiring two reviewers probably only' is slightly awkward."
+    },
+    "C": {
+      "p_ai": 35,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "strength_changes": [
+        "Changes the possibility that reviews may become slower without becoming better into the categorical statement that reviews get slower without getting better.",
+        "Turns the tentative recommendation that two reviewers should probably be required only for payment and authentication changes into an unqualified directive, with an equally categorical statement that one reviewer is enough elsewhere."
+      ],
+      "register_ok": true,
+      "note": "Readable but choppy, with an abrupt directive that sacrifices the source's measured reasoning."
+    }
+  }
+}

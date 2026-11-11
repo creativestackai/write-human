@@ -1,0 +1,49 @@
+{
+  "human_quality_rank": ["B", "C", "A"],
+  "fidelity_rank": ["B", "A", "C"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Claims Daniel personally issued the refund, whereas the source credits the company collectively.",
+        "Promises Daniel will resolve any reported issue."
+      ],
+      "dropped_facts": [
+        "The assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to preventing a recurrence.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Mostly natural customer service writing, but 'it lost time from there' is awkward and redundant."
+    },
+    "B": {
+      "p_ai": 20,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The explicit assurance that customer satisfaction is taken extremely seriously.",
+        "Thanks for the customer's understanding."
+      ],
+      "register_ok": true,
+      "note": "Clear, courteous, and appropriately restrained, with the strongest balance of naturalness and accuracy."
+    },
+    "C": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "Claims Daniel personally issued the refund, whereas the source credits the company collectively.",
+        "Specifies payment by card; the source only identifies the original payment method.",
+        "Says the package arrived late; the source establishes a delay but does not confirm arrival.",
+        "Claims the issue has been passed to the warehouse team for investigation.",
+        "Promises Daniel will resolve any reported issue."
+      ],
+      "dropped_facts": [
+        "The assurance that customer satisfaction is taken extremely seriously.",
+        "The commitment to preventing a recurrence.",
+        "The unrestricted invitation to raise further questions or concerns, replaced with a conditional invitation concerning problems after the refund arrives.",
+        "Thanks for the customer's patience and understanding."
+      ],
+      "register_ok": true,
+      "note": "Readable and conversational, but its concrete additions substantially weaken fidelity."
+    }
+  }
+}

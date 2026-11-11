@@ -1,0 +1,68 @@
+You are an expert editor evaluating four anonymous rewrites (A, B, C, D) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","second","third","worst"], "fidelity_rank": ["best","second","third","worst"], "overall_winner": "A|B|C|D", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}}}
+Rank lists use the labels A, B, C, D. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Subject: Introducing Orbit Calendar 2.0
+
+We are thrilled to announce the launch of Orbit Calendar 2.0, a game-changing update that will revolutionize the way you manage your time. Packed with powerful new features, this release seamlessly integrates smart scheduling, shared team views, and automatic time zone detection to unlock your full productivity potential.
+
+Orbit Calendar 2.0 will be available on March 12 for $8 per month, with a 14-day free trial. We want to extend our heartfelt thanks to the 1,200 beta users whose invaluable feedback helped shape this release. Ready to take control of your calendar? Start your free trial today!
+
+The Orbit Team
+
+=== REWRITE A ===
+Subject: Introducing Orbit Calendar 2.0
+
+Orbit Calendar 2.0 launches on March 12. This update adds smart scheduling, shared team views, and automatic time zone detection.
+
+It costs $8 a month, and you can try it free for 14 days first. Thank you to the 1,200 beta users whose feedback shaped this release.
+
+You can start your free trial on launch day.
+
+The Orbit Team
+
+=== REWRITE B ===
+Subject: Orbit Calendar 2.0 is out March 12
+
+Orbit Calendar 2.0 arrives on March 12. The new version adds smart scheduling, shared team views and automatic time zone detection.
+
+It costs $8 a month, and there's a 14-day free trial if you'd like to try it first.
+
+1,200 beta users tested 2.0 before launch, and their feedback shaped the release. Thank you, genuinely.
+
+You can start your free trial today.
+
+The Orbit Team
+
+=== REWRITE C ===
+Subject: Orbit Calendar 2.0 is out March 12
+
+Orbit Calendar 2.0 launches on March 12. The update adds smart scheduling and shared team views, and it now detects time zones on its own, so nobody has to work out what 3pm means for the person in another country.
+
+It's $8 a month, with a 14-day free trial if you'd like to try it first.
+
+Our 1,200 beta users told us what was broken, what was confusing and what they actually used, and plenty of that ended up in this release. Thank you. It's a better product because of you.
+
+The Orbit Team
+
+=== REWRITE D ===
+Subject: Introducing Orbit Calendar 2.0
+
+Orbit Calendar 2.0 comes out on March 12. It adds smart scheduling, shared team views and automatic time zone detection.
+
+It's $8 a month, and there's a 14-day free trial if you'd like to try it before paying anything.
+
+1,200 beta users used this release before anyone else did, and their feedback shaped it. Thank you. We're grateful.
+
+Start the free trial whenever you're ready.
+
+The Orbit Team

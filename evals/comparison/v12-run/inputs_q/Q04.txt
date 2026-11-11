@@ -1,0 +1,4 @@
+TEXT TO REWRITE:
+In today's fast-paced engineering landscape, build times can make or break developer productivity. At our company, we recently embarked on a journey to migrate our CI pipeline from Jenkins to GitHub Actions, and the results were truly transformative. The migration took six weeks and was led by two engineers.
+
+By leveraging GitHub Actions' native caching and parallelization capabilities, we reduced average build time from 24 minutes to 9 minutes. Furthermore, we cut our monthly CI costs by 35%, ensuring a more sustainable infrastructure. Ultimately, this migration not only improved our velocity but also empowered our developers to ship with confidence.

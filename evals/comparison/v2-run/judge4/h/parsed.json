@@ -1,0 +1,1383 @@
+[
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "H01",
+  "winner": "hz",
+  "human_quality_rank": {
+   "wh": 3,
+   "baseline": 2,
+   "hz": 1,
+   "v2": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 35,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The characterization of the transformation as revolutionary, with profound implications.",
+     "The claim that AI tools help educators and students unlock their full potential.",
+     "The claim that the resulting learning environment can surpass all previous levels of engagement, inclusion, and effectiveness."
+    ],
+    "register_ok": true,
+    "note": "Mostly clear and faithful, but vague phrasing and an awkward final sentence weaken the writing."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "The narrator talks to people about classroom AI, and most are undecided between excitement and worry.",
+     "The narrator personally feels both excited and worried.",
+     "AI adjusts reading lists to individual children.",
+     "AI marks forty quizzes overnight.",
+     "Teachers would otherwise stay up past midnight marking with a red pen.",
+     "Schools do not always ask where student data is stored.",
+     "Children with fast home internet and their own laptops tend to benefit first.",
+     "AI consequently widens an existing educational gap.",
+     "Classes can hand their thinking to software without noticing.",
+     "AI will not replace teachers, stated as a prediction.",
+     "AI gives teachers a few extra hours each week.",
+     "Teachers use that extra time to sit beside struggling students.",
+     "The narrator knows of no tool that provides that kind of attention."
+    ],
+    "dropped_facts": [
+     "The characterization of AI's implications as profound.",
+     "The claim that AI tools help both educators and students unlock their full potential.",
+     "The recommendation that schools embrace innovation while remaining mindful of its limitations.",
+     "The claim that this approach can make learning more engaging, inclusive, and effective than ever before."
+    ],
+    "register_ok": false,
+    "note": "A convincing conversational voice comes at the cost of invented testimony and a substantial shift into personal opinion."
+   },
+   "baseline": {
+    "p_ai": 40,
+    "unsupported_specifics": [
+     "Classroom AI adoption is happening fast.",
+     "Classroom AI consists mostly of personalized lesson software and grading tools.",
+     "Both categories save teachers time.",
+     "Some students achieve better results with personalized material.",
+     "Some schools do not know who can access student data.",
+     "Children with good devices and fast home internet will benefit more than children without them.",
+     "Many students who delegate thinking to chatbots will stop learning to think for themselves.",
+     "Teachers notice when children become quiet or give correct answers by guessing.",
+     "Software cannot make those observations.",
+     "Automated marking frees teachers to provide that kind of attention.",
+     "Schools skeptical of sales pitches will probably benefit most."
+    ],
+    "dropped_facts": [
+     "The characterization of AI's implications as profound.",
+     "The claim that AI tools help educators and students unlock their full potential.",
+     "The explicit goal of a learning environment more engaging, inclusive, and effective than ever before."
+    ],
+    "register_ok": false,
+    "note": "Readable and concrete, but personal commentary and categorical additions replace much of the source's restrained argument."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The characterization of the transformation as revolutionary, with profound implications.",
+     "The claim that AI tools help educators and students unlock their full potential.",
+     "The claim that the resulting learning environment can surpass all previous levels of engagement, inclusion, and effectiveness."
+    ],
+    "register_ok": true,
+    "note": "The strongest balance of natural, concise writing and preservation of the source's argument."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "H02",
+  "winner": "v2",
+  "human_quality_rank": {
+   "wh": 3,
+   "v2": 2,
+   "baseline": 1,
+   "hz": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge and its integration as seamless."
+    ],
+    "register_ok": true,
+    "note": "Clear, natural case-study prose that preserves nearly all substantive content."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Attributes the estimate of 340 additional appointments to Northwind; the source does not identify who made the estimate.",
+     "Describes 18% of booked patients as absent, whereas the source gives a no-show rate without specifying a patient-based denominator."
+    ],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge and its integration as seamless.",
+     "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+    ],
+    "register_ok": true,
+    "note": "The most conversational and rhythmically varied version, but it introduces attribution and measurement details."
+   },
+   "hz": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Calls the no-show problem steady; the source does not establish its persistence or consistency."
+    ],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge and its integration as seamless.",
+     "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+    ],
+    "register_ok": true,
+    "note": "Readable and mostly faithful, though the opening adds an unnecessary characterization."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Attributes the estimate of 340 additional appointments to Northwind; the source does not identify who made the estimate.",
+     "Specifies that the front desk has fewer manual tasks; the source says only that staff time was freed."
+    ],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge and its integration as seamless.",
+     "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+    ],
+    "register_ok": true,
+    "note": "Plain and approachable, with a slightly loose organizational pronoun and added operational detail."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "H03",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Direct, clear technical documentation with no unnecessary conversational flourishes."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Accurate and readable, but the conversational phrasing adds length without improving the instructions."
+   },
+   "v2": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Plain, precise documentation that closely preserves the source's sequence and meaning."
+   },
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Readable and personable, though \u201cadd --dry-run\u201d makes the relationship between the flags slightly less clear."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "H03",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "wh": 2,
+   "v2": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp, direct technical documentation that strips all corporate filler while maintaining natural developer phrasing."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Distinctly human and conversational in tone, though slightly chatty for standard CLI reference docs."
+   },
+   "v2": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear and faithful to the source, but the phrasing feels somewhat formulaic."
+   },
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Engaging and informal, but the rhetorical question and dropped backtick formatting make it slightly unpolished."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "H04",
+  "winner": "v2",
+  "human_quality_rank": {
+   "wh": 3,
+   "hz": 2,
+   "v2": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Saying consistency, patience, and other people 'do most of the work' makes a stronger claim than calling them foundations."
+    ],
+    "dropped_facts": [
+     "The writer's explicit excitement about sharing the accomplishment."
+    ],
+    "register_ok": true,
+    "note": "Clear and restrained, with the strongest fidelity, though less distinctive than the supplied voice."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "The writer considers the finishing time slow and is comfortable with it.",
+     "The writer spent most of the eight days googling whether people could reach the starting line after an injury.",
+     "The running group kept the writer attending when they could only watch.",
+     "The physiotherapist prescribed repetitive knee exercises that frustrated the writer.",
+     "Doing the 'boring work' caused the knee to recover.",
+     "The writer was not ready and reached the starting line by deciding to stop waiting."
+    ],
+    "dropped_facts": [
+     "The marathon was completed recently.",
+     "The writer's explicit excitement about sharing the accomplishment.",
+     "The writer returned stronger than ever.",
+     "The explicit lesson that consistency, patience, and community underpin any big goal.",
+     "The encouragement to take the first step today.",
+     "The closing question asking what goal the reader is chasing."
+    ],
+    "register_ok": true,
+    "note": "Vivid and close to the sample's candid voice, but its strongest details are invented."
+   },
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "The assertion that nothing the writer did 'that month' was clever introduces an unsupported timeframe and assessment."
+    ],
+    "dropped_facts": [
+     "The writer's explicit excitement about sharing the accomplishment.",
+     "The explicit generalization that the lessons apply to any big goal.",
+     "The encouragement to start today is changed to starting this week.",
+     "The closing question asking what goal the reader is chasing."
+    ],
+    "register_ok": true,
+    "note": "Natural and readable, although the added remark about cleverness feels inserted to manufacture personality."
+   },
+   "baseline": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The writer considers the finishing time slow but acceptable.",
+     "The writer spent most of the eight days googling whether they would reach the starting line.",
+     "The running group dragged the writer to Sunday meetups where they could only watch.",
+     "The physiotherapist determined what was actually wrong.",
+     "The writer resumed running slowly and followed a 'boring' approach.",
+     "That approach was the only reason the writer reached race day.",
+     "Showing up most weeks beats having a perfect plan.",
+     "The writer is bad at asking for help and needs to change that."
+    ],
+    "dropped_facts": [
+     "The marathon was completed recently.",
+     "The writer's explicit excitement about sharing the accomplishment.",
+     "The writer returned stronger than ever.",
+     "The explicit lesson that consistency, patience, and community underpin any big goal.",
+     "The encouragement to take the first step today.",
+     "The closing question asking what goal the reader is chasing."
+    ],
+    "register_ok": true,
+    "note": "The clipped rhythm feels overworked, and invented anecdotes replace much of the source's meaning."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "H04",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "wh": 2,
+   "baseline": 1,
+   "v2": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 75,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Preserves all source facts with perfect fidelity, but reads like a formulaic AI paraphrase that retains corporate social media tropes."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Qualifying the finish time as 'not fast, and I'm fine with that'",
+     "Spending eight days googling whether runners can make the start line after an injury",
+     "Running group keeping the author showing up just to watch",
+     "Physiotherapist assigning dull knee exercises until the author wanted to scream"
+    ],
+    "dropped_facts": [
+     "Recently completed the marathon",
+     "Returned stronger than ever",
+     "The explicitly named foundations of consistency, patience, and community",
+     "Closing question asking readers what goal they are chasing"
+    ],
+    "register_ok": true,
+    "note": "Strongly captures the voice sample's candid tone, but invents substantial narrative backstory and omits several source facts."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Closing question asking readers what goal they are chasing"
+    ],
+    "register_ok": true,
+    "note": "Captures the author's voice in natural, clear prose while maintaining high fidelity to the source without fabricating details."
+   },
+   "baseline": {
+    "p_ai": 45,
+    "unsupported_specifics": [
+     "Qualifying the finish time as 'not fast, but I'll take it'",
+     "Spending eight days googling whether they would make the start line",
+     "Running group dragging the author to Sunday meetups just to watch",
+     "Physiotherapist diagnosing what was actually wrong",
+     "Running slow and boring as the only reason for reaching race day",
+     "Claim that showing up most weeks beats a perfect plan",
+     "Personal admission of being bad at asking for help"
+    ],
+    "dropped_facts": [
+     "Recently completed the marathon",
+     "Returned stronger than ever",
+     "The explicitly named foundations of consistency, patience, and community",
+     "Call to action encouraging the reader to take the first step today",
+     "Closing question asking readers what goal they are chasing"
+    ],
+    "register_ok": true,
+    "note": "Adopts an informal persona but suffers from disjointed pacing, omits the entire call to action, and fabricates numerous specifics."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "H05",
+  "winner": "v2",
+  "human_quality_rank": {
+   "baseline": 3,
+   "hz": 2,
+   "v2": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "A clear, natural team reply that preserves the source's details and conditions."
+   },
+   "baseline": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "QA must re-verify the fix specifically on Thursday."
+    ],
+    "register_ok": true,
+    "note": "The conversational rhythm feels natural, but the Thursday deadline for QA is no longer explicit."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Monday morning becomes a definite fallback rather than a possible alternative."
+    ],
+    "dropped_facts": [
+     "QA completed its testing pass yesterday.",
+     "The explicit rationale that pricing accuracy is critical."
+    ],
+    "register_ok": true,
+    "note": "Concise and credible, though it omits some context and makes the fallback more definite."
+   },
+   "wh": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "Sam promises to provide an update on Thursday evening.",
+     "Monday morning becomes a definite fallback rather than a possible alternative."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "The reply is clear but more staged and emphatic, and it invents a follow-up commitment."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "H05",
+  "winner": "hz",
+  "human_quality_rank": {
+   "baseline": 3,
+   "hz": 2,
+   "v2": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 30,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Retains all facts accurately, but suffers from slightly stiff phrasing and repetitive wording in the opening."
+   },
+   "baseline": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "QA re-verification specifically must happen on Thursday"
+    ],
+    "register_ok": true,
+    "note": "Reads effortlessly like an experienced engineer on Slack, though it omits the Thursday timing constraint for QA."
+   },
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp, natural Slack response that preserves every schedule constraint and bug detail with zero fluff."
+   },
+   "wh": {
+    "p_ai": 75,
+    "unsupported_specifics": [
+     "Promise that Sam will update Dana on Thursday evening about which way it's going"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Relies on telltale AI framing ('Short answer: yes') and invents an unprompted Thursday evening update."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o1",
+  "pid": "H06",
+  "winner": "wh",
+  "human_quality_rank": {
+   "wh": 3,
+   "baseline": 2,
+   "hz": 1,
+   "v2": 0
+  },
+  "fidelity_rank": {
+   "baseline": 3,
+   "hz": 2,
+   "v2": 1,
+   "wh": 0
+  },
+  "texts": {
+   "baseline": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Specific details, casual fragments, and ambivalence give this clear, conversational account a convincing personal voice."
+   },
+   "wh": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Tiny phrasing adjustments slightly smooth the conversational account while preserving every source fact and its distinctive voice."
+   },
+   "hz": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Specific details, casual fragments, and ambivalence give this clear, conversational account a convincing personal voice."
+   },
+   "v2": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Specific details, casual fragments, and ambivalence give this clear, conversational account a convincing personal voice."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o1",
+  "pid": "H06",
+  "winner": "baseline",
+  "human_quality_rank": {
+   "baseline": 3,
+   "hz": 2,
+   "v2": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "baseline": 3,
+   "hz": 2,
+   "v2": 1,
+   "wh": 0
+  },
+  "texts": {
+   "baseline": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains an authentic, distinctively colloquial personal voice with natural conversational ellipsis."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Remains natural and lively despite minor grammatical smoothing of the informal phrasing."
+   },
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains an authentic, distinctively colloquial personal voice with natural conversational ellipsis."
+   },
+   "v2": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Maintains an authentic, distinctively colloquial personal voice with natural conversational ellipsis."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "H01",
+  "winner": "hz",
+  "human_quality_rank": {
+   "baseline": 3,
+   "wh": 2,
+   "hz": 1,
+   "v2": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "AI is entering classrooms quickly and appears mostly in two forms.",
+     "Personalization specifically adjusts lessons to each student's pace.",
+     "Both tools save teachers time, and some students achieve better results with personalized material.",
+     "Some schools do not know who can access student data.",
+     "Students with good devices and fast home internet benefit more than students without them.",
+     "Many students who let chatbots think for them will stop learning to think independently.",
+     "Teachers notice withdrawn students and lucky guesses, whereas software cannot.",
+     "Automated marking frees teachers to give students more attention.",
+     "Schools skeptical of sales pitches will probably benefit most."
+    ],
+    "dropped_facts": [
+     "AI's educational implications are profound.",
+     "AI tools empower both educators and students to reach their full potential.",
+     "Schools can create learning environments that are more engaging, inclusive, and effective than ever before."
+    ],
+    "register_ok": true,
+    "note": "Concrete and conversational, but its persuasive detail repeatedly exceeds the source."
+   },
+   "hz": {
+    "p_ai": 45,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The source explicitly characterizes the implications as profound.",
+     "The source's claims about unlocking full potential and improving learning beyond any previous level are softened."
+    ],
+    "register_ok": true,
+    "note": "Clear, natural explanatory prose with the strongest preservation of the source's substantive claims."
+   },
+   "v2": {
+    "p_ai": 55,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The source explicitly characterizes the implications as profound.",
+     "The claim that tools empower educators and students to unlock their full potential becomes a statement of intended purpose.",
+     "The general risk of over-reliance is narrowed to schools' reliance.",
+     "The claim of improvement beyond any previous level is softened to improvement over before."
+    ],
+    "register_ok": true,
+    "note": "Mostly faithful and appropriately plain, but several phrases are vague or awkward."
+   },
+   "wh": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "The writer has discussed classroom AI with people, most of whom are undecided between excitement and worry.",
+     "The writer personally feels both excitement and worry.",
+     "AI adjusts reading lists for individual children.",
+     "AI marks forty quizzes overnight.",
+     "Teachers would otherwise stay up past midnight marking with a red pen.",
+     "Schools do not always ask where student data is stored.",
+     "Children with fast home internet and their own laptops benefit first, widening an already substantial gap.",
+     "A class can surrender its thinking to software without noticing.",
+     "AI will not replace teachers.",
+     "AI gives teachers a few extra hours each week to sit with struggling students.",
+     "The writer knows of no tool that provides that kind of individual support."
+    ],
+    "dropped_facts": [
+     "AI's educational implications are profound.",
+     "AI tools empower students as well as educators to unlock their full potential.",
+     "Schools should embrace innovation while remaining mindful of its limitations.",
+     "Schools can create learning environments that are more engaging, inclusive, and effective than ever before."
+    ],
+    "register_ok": true,
+    "note": "A readable personal opinion piece, but invented experience and concrete claims substantially alter the source."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "H01",
+  "winner": "hz",
+  "human_quality_rank": {
+   "wh": 3,
+   "baseline": 2,
+   "hz": 1,
+   "v2": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "claim that software saves teachers real time and students do better when material meets them where they are",
+     "claim that not every school knows who can see student data",
+     "specific equity causes: kids with good devices and fast home internet",
+     "mention of chatbots and students quietly stopping learning how to think for themselves",
+     "anecdote about a teacher noticing when a kid has gone quiet or made a lucky guess",
+     "detail about taking the marking pile off teachers' desks",
+     "admonition to stay skeptical of the sales pitch"
+    ],
+    "dropped_facts": [
+     "tools empower educators and students alike to unlock their full potential",
+     "fostering a learning environment that is more engaging, inclusive, and effective than ever before"
+    ],
+    "register_ok": false,
+    "note": "Shifts into an informal first-person commentary and invents multiple unsupported classroom scenarios."
+   },
+   "hz": {
+    "p_ai": 28,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Faithfully preserves all source claims in clear, natural prose without adding any unsupported specifics."
+   },
+   "v2": {
+    "p_ai": 48,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Accurately conveys all source content but suffers from slightly hedged and awkward phrasing."
+   },
+   "wh": {
+    "p_ai": 8,
+    "unsupported_specifics": [
+     "conversations with unnamed people who cannot decide between excitement and worry",
+     "personal stance and reactions ('I'm both', 'That part I buy', 'I don't know of any tool that does that part')",
+     "specific example of adjusting a reading list to each kid",
+     "invented metric and task: marking forty quizzes overnight",
+     "anecdote about a teacher staying up past midnight with a red pen",
+     "claim that schools do not always ask where student data lives",
+     "specific equity causes: kids with fast home internet and their own laptops benefiting first",
+     "claim that this widens an already wide gap",
+     "scenario of a class handing thinking to software and not noticing",
+     "reframing the core issue around giving teachers time back",
+     "scenario of a teacher using extra hours to sit down next to a stuck student"
+    ],
+    "dropped_facts": [
+     "fostering a learning environment that is more engaging, inclusive, and effective than ever before",
+     "empowering educators and students alike to unlock their full potential",
+     "embracing innovation while remaining mindful of its limitations"
+    ],
+    "register_ok": false,
+    "note": "Adopts an engaging personal column voice but invents extensive anecdotes, numbers, and scenarios while dropping the source's conclusion."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "H02",
+  "winner": "v2",
+  "human_quality_rank": {
+   "wh": 3,
+   "v2": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "Describes the no-show problem as 'steady,' adding a characterization of its persistence."
+    ],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge.",
+     "Its integration with scheduling systems is described as seamless.",
+     "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+    ],
+    "register_ok": true,
+    "note": "Clear and conversational, though the opening is slightly awkward and the ending loses strategic context."
+   },
+   "baseline": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Attributes the estimate of 340 additional appointments to Northwind, although the source does not identify who calculated it.",
+     "Specifies reduced manual work at the front desk, whereas the source states only that staff time was freed."
+    ],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge.",
+     "Its integration with scheduling systems is described as seamless.",
+     "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+    ],
+    "register_ok": true,
+    "note": "Readable and informal, but some explanatory wording introduces details beyond the source."
+   },
+   "v2": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge.",
+     "Its integration with scheduling systems is described as seamless."
+    ],
+    "register_ok": true,
+    "note": "Natural, economical case-study prose that preserves the substantive claims and strategic context."
+   },
+   "wh": {
+    "p_ai": 10,
+    "unsupported_specifics": [
+     "States that 18% of booked patients failed to attend, converting an appointment no-show rate into a percentage of patients.",
+     "Attributes the estimate of 340 additional appointments to Northwind, although the source does not identify who calculated it."
+    ],
+    "dropped_facts": [
+     "Remindly is described as cutting-edge.",
+     "Its integration with scheduling systems is described as seamless.",
+     "Remindly remains a cornerstone of Northwind's patient engagement strategy."
+    ],
+    "register_ok": true,
+    "note": "The most distinctive and fluid voice, but its opening changes the statistical claim."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "H02",
+  "winner": "v2",
+  "human_quality_rank": {
+   "v2": 3,
+   "wh": 2,
+   "hz": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Characterizes the attendance issue specifically as a 'steady problem'"
+    ],
+    "dropped_facts": [
+     "Remindly serves as a cornerstone of the group's patient engagement strategy"
+    ],
+    "register_ok": true,
+    "note": "Clean and direct rewrite, though it omits the patient engagement strategy and slightly characterizes the no-show issue as steady."
+   },
+   "baseline": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Attributes the 340-appointment calculation specifically to an internal Northwind estimate",
+     "Adds that the front-desk staff has less to do 'by hand'"
+    ],
+    "dropped_facts": [
+     "Remindly serves as a cornerstone of the group's patient engagement strategy"
+    ],
+    "register_ok": true,
+    "note": "Reads somewhat clumsily with repetitive phrasing around text reminders and slight informal padding."
+   },
+   "v2": {
+    "p_ai": 18,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Reads naturally with excellent flow and genre awareness while preserving every factual element of the original."
+   },
+   "wh": {
+    "p_ai": 15,
+    "unsupported_specifics": [
+     "Attributes the 340-appointment calculation specifically to an internal Northwind estimate"
+    ],
+    "dropped_facts": [
+     "Elena Torres's verbatim quotation",
+     "Remindly serves as a cornerstone of the group's patient engagement strategy"
+    ],
+    "register_ok": true,
+    "note": "Has a punchy, distinctly human cadence but loses the direct quote and fragments the narrative."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "H03",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, restrained technical prose, though the flag instructions are slightly less direct than C's."
+   },
+   "baseline": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Readable and faithful, with a conversational question that feels slightly affected in installation documentation."
+   },
+   "hz": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Direct, precise installation documentation with natural phrasing and no unnecessary personality."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Faithful overall, but the extended conversational phrasing makes simple instructions unnecessarily wordy."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "H03",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "baseline": 2,
+   "v2": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "v2": {
+    "p_ai": 25,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clean and appropriately plain technical writing, though the second paragraph is slightly stiff."
+   },
+   "baseline": {
+    "p_ai": 10,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Captures an authentic, approachable developer voice, though slightly more casual than standard reference docs."
+   },
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Exemplary technical documentation that is concise, clear, and perfectly suited to the genre."
+   },
+   "wh": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "A bit overly colloquial and wordy for technical docs, with slightly strained phrasing."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "H04",
+  "winner": "v2",
+  "human_quality_rank": {
+   "baseline": 3,
+   "wh": 2,
+   "hz": 1,
+   "v2": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 20,
+    "unsupported_specifics": [
+     "The claim that nothing the writer did 'that month' was clever introduces a timeframe and self-assessment absent from the source."
+    ],
+    "dropped_facts": [
+     "The writer's explicit excitement about sharing the achievement.",
+     "The invitation to start today is changed to this week.",
+     "The closing question asking what goal the reader is chasing."
+    ],
+    "register_ok": true,
+    "note": "Clear and conversational, with one forced aside and a small departure from the source."
+   },
+   "baseline": {
+    "p_ai": 12,
+    "unsupported_specifics": [
+     "The assessment that the finishing time was not fast and the attitude 'I'll take it.'",
+     "Spending most of the eight days googling whether the writer could still reach the start line.",
+     "The running group dragging the writer to Sunday meetups where the writer could only watch.",
+     "The physiotherapist determining what was actually wrong.",
+     "Keeping running slow and boring after returning.",
+     "The claim that this approach was the only reason the writer reached race day.",
+     "The lesson that showing up most weeks beats a perfect plan.",
+     "The writer being bad at asking for help and needing to change that."
+    ],
+    "dropped_facts": [
+     "The marathon was completed recently.",
+     "The writer's explicit excitement about sharing the achievement.",
+     "Returning stronger than ever.",
+     "The lesson that consistency, patience, and community underpin achieving any big goal.",
+     "The encouragement to take the first step today.",
+     "The closing question asking what goal the reader is chasing."
+    ],
+    "register_ok": true,
+    "note": "The most convincing personal voice, but much of its character comes from invented experiences."
+   },
+   "v2": {
+    "p_ai": 32,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The writer's explicit excitement about sharing the achievement."
+    ],
+    "register_ok": true,
+    "note": "Natural and clear enough, preserving the substantive account with the fewest liberties."
+   },
+   "wh": {
+    "p_ai": 16,
+    "unsupported_specifics": [
+     "The assessment that the finishing time was not fast and the writer being fine with it.",
+     "Spending most of the eight days googling whether people reach the start line after a similar injury.",
+     "The running group keeping the writer attending when the writer could only watch.",
+     "The physiotherapist prescribing repetitive knee exercises that made the writer want to scream.",
+     "The particular recovery sequence in which doing that work brought the knee around.",
+     "The writer being unready and reaching the start through having stopped waiting.",
+     "The advice to start before feeling ready."
+    ],
+    "dropped_facts": [
+     "The marathon was completed recently.",
+     "The writer's explicit excitement about sharing the achievement.",
+     "Returning stronger than ever.",
+     "The explicit lesson that consistency, patience, and community underpin achieving any big goal.",
+     "The encouragement to take the first step today.",
+     "The closing question asking what goal the reader is chasing."
+    ],
+    "register_ok": true,
+    "note": "Vivid and close to the sample's voice, although the polished ending and invented recovery details weaken it."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "H04",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "wh": 2,
+   "baseline": 1,
+   "v2": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "wh": 1,
+   "baseline": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "The closing question asking the reader what goal they are chasing"
+    ],
+    "register_ok": true,
+    "note": "Reads with understated, authentic human clarity and voice while maintaining near-perfect fidelity without inventing anecdotes."
+   },
+   "baseline": {
+    "p_ai": 35,
+    "unsupported_specifics": [
+     "Describing the 4:38 finish time as 'not fast'",
+     "Spending the eight days off googling whether they would make the start line",
+     "Running group dragging the author to Sunday meetups just to watch",
+     "Physiotherapist figuring out what was actually wrong",
+     "Keeping training slow and boring upon return as the sole reason for reaching race day",
+     "Personal admission of being bad at asking for help"
+    ],
+    "dropped_facts": [
+     "Returning stronger than ever after the injury",
+     "Consistency and patience identified as foundations for achieving big goals",
+     "Encouraging the reader to take the first step today",
+     "The closing question asking what goal the reader is chasing"
+    ],
+    "register_ok": true,
+    "note": "Adopts an engaging conversational tone, but invents several narrative anecdotes and omits the ending call to action."
+   },
+   "v2": {
+    "p_ai": 80,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Preserves every single source fact with perfect fidelity, but reads like a mechanical sentence-by-sentence AI polish of a LinkedIn post."
+   },
+   "wh": {
+    "p_ai": 25,
+    "unsupported_specifics": [
+     "Characterizing the finish time as 'not fast'",
+     "Spending eight days googling whether people make the start line after an injury",
+     "Running group keeping the author showing up just to watch",
+     "Physiotherapist assigning dull knee exercises until the author wanted to scream",
+     "Reflection that they were not ready and had just stopped waiting"
+    ],
+    "dropped_facts": [
+     "Returning stronger than ever after recovery",
+     "Explicitly naming consistency, patience, and community as foundations of big goals",
+     "The closing question asking what goal the reader is chasing"
+    ],
+    "register_ok": true,
+    "note": "Vivid and punchy prose that captures the sample voice well, but heavily embellishes the story with invented personal experiences."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "H05",
+  "winner": "v2",
+  "human_quality_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "v2": 3,
+   "hz": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 12,
+    "unsupported_specifics": [
+     "Makes Monday morning a definite fallback ('we go'), whereas the source presents it as an option."
+    ],
+    "dropped_facts": [
+     "QA completed its testing pass yesterday; the rewrite says only that QA found bugs yesterday."
+    ],
+    "register_ok": true,
+    "note": "Direct and natural for a team reply, but slightly more categorical than the source."
+   },
+   "wh": {
+    "p_ai": 28,
+    "unsupported_specifics": [
+     "Adds a commitment to provide an update Thursday evening.",
+     "Makes Monday morning a definite fallback if either prerequisite slips, whereas the source presents it as an option."
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Conversational and clear, though the opening formula and extra emphasis feel somewhat rehearsed."
+   },
+   "v2": {
+    "p_ai": 15,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, natural, and faithful, with the decision and its conditions immediately apparent."
+   },
+   "baseline": {
+    "p_ai": 22,
+    "unsupported_specifics": [
+     "Changes the expected Thursday-afternoon review and merge into a requirement to complete them by that time."
+    ],
+    "dropped_facts": [
+     "QA must re-verify the fix specifically on Thursday.",
+     "Review and merge are expected by Thursday afternoon."
+    ],
+    "register_ok": true,
+    "note": "Plausible conversational writing, but its opening is vague and its QA timing loses precision."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "H05",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "wh": 2,
+   "v2": 1,
+   "baseline": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 12,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Crisp, natural engineer voice with a strong bottom-line-up-front structure and complete fidelity to the source."
+   },
+   "wh": {
+    "p_ai": 30,
+    "unsupported_specifics": [
+     "A commitment to follow up Thursday evening to say which way it is going"
+    ],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Very conversational and human in tone, but invents an unprompted promise to give a Thursday evening update."
+   },
+   "v2": {
+    "p_ai": 20,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Clear, professional, and strictly faithful, though slightly less punchy than A."
+   },
+   "baseline": {
+    "p_ai": 28,
+    "unsupported_specifics": [],
+    "dropped_facts": [
+     "That QA re-verification must specifically happen on Thursday"
+    ],
+    "register_ok": true,
+    "note": "Natural phrasing, but delays explaining what the catch is and drops the Thursday timing for QA re-checking."
+   }
+  }
+ },
+ {
+  "judge": "codex",
+  "o": "o2",
+  "pid": "H06",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to B and C, with a convincing casual voice, concrete observations, and natural ambivalence."
+   },
+   "v2": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to A and C, with a convincing casual voice, concrete observations, and natural ambivalence."
+   },
+   "baseline": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Identical to A and B, with a convincing casual voice, concrete observations, and natural ambivalence."
+   },
+   "wh": {
+    "p_ai": 8,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Two minor wording changes preserve every fact and the natural casual voice, with negligible effect on quality."
+   }
+  }
+ },
+ {
+  "judge": "gemini",
+  "o": "o2",
+  "pid": "H06",
+  "winner": "hz",
+  "human_quality_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "fidelity_rank": {
+   "hz": 3,
+   "v2": 2,
+   "baseline": 1,
+   "wh": 0
+  },
+  "texts": {
+   "hz": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Captures an authentic, vivid conversational voice with perfect fidelity."
+   },
+   "v2": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Captures an authentic, vivid conversational voice with perfect fidelity."
+   },
+   "baseline": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Captures an authentic, vivid conversational voice with perfect fidelity."
+   },
+   "wh": {
+    "p_ai": 5,
+    "unsupported_specifics": [],
+    "dropped_facts": [],
+    "register_ok": true,
+    "note": "Slight phrasing edits keep the natural human voice while maintaining complete fidelity."
+   }
+  }
+ }
+]

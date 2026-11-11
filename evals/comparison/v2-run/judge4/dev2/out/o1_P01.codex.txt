@@ -1,0 +1,79 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["D", "A", "C", "B"],
+  "overall_winner": "D",
+  "texts": {
+    "A": {
+      "p_ai": 30,
+      "unsupported_specifics": [
+        "The claim that nobody shares a room assumes an entirely remote arrangement."
+      ],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping organizational operations amid rapid digital change.",
+        "The concluding claim about realizing distributed teams' full potential and thriving in the future of work is reduced to doing good work."
+      ],
+      "register_ok": true,
+      "note": "Direct and readable, though the opening awkwardly gives people both employee benefits and hiring opportunities."
+    },
+    "B": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Most arguments about remote work go wrong by discussing only benefits or only drawbacks.",
+        "Remote work lets people work when they are sharpest.",
+        "Remote work eliminates commuting.",
+        "Global hiring means hiring the best person for the job.",
+        "The illustrative candidate lives eleven time zones away.",
+        "A message is misinterpreted and sits unanswered for a day.",
+        "Someone spends a whole week without speaking to anyone outside a screen.",
+        "Unplanned hallway conversations are the hardest aspect of company culture to preserve.",
+        "Hallway conversations reveal how the team really feels about a project.",
+        "Tools help only after trust, transparency, and accountability are established.",
+        "A trusting team with a shared document will outperform a distrustful team using a dozen apps."
+      ],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping organizational operations amid rapid digital change.",
+        "Improved work-life balance is replaced with the narrower claim about recovering commuting time.",
+        "Strong communication practices are not explicitly retained as a means of enabling distributed teams.",
+        "The explicit claim about realizing distributed teams' full potential and thriving in the future of work is omitted."
+      ],
+      "register_ok": true,
+      "note": "Lively opinion writing, but its staged examples and polished closing comparison feel manufactured."
+    },
+    "C": {
+      "p_ai": 50,
+      "unsupported_specifics": [
+        "Global hiring means hiring the best person for a role.",
+        "Office hiring is limited to candidates within forty minutes.",
+        "Communication barriers specifically involve messages being misread.",
+        "People go days without talking to anyone.",
+        "The company spent years building its culture.",
+        "Nobody shares a room, assuming an entirely remote arrangement.",
+        "Plenty of offices operate on distrust.",
+        "Plenty of remote teams operate beautifully.",
+        "Tools help only a little, and good habits help more.",
+        "Writing things down, answering promptly, and calling when a thread becomes tense are specifically recommended practices.",
+        "No software can fix the situation without trust."
+      ],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping organizational operations amid rapid digital change.",
+        "Improved work-life balance is replaced by fitting life around work, which does not clearly preserve the benefit.",
+        "Access to a global talent pool is reduced to hiring beyond a local commuting radius.",
+        "The explicit claim about realizing distributed teams' full potential and thriving in the future of work is omitted."
+      ],
+      "register_ok": true,
+      "note": "Readable but crowded with familiar conversational flourishes and unsupported certainties."
+    },
+    "D": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "The comparison with hiring from one city assumes a geographic restriction absent from the source."
+      ],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping organizational operations amid rapid digital change.",
+        "The concluding claim about realizing distributed teams' full potential and thriving in the future of work is reduced to working well."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained prose preserves the central argument with minimal embellishment."
+    }
+  }
+}

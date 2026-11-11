@@ -1,0 +1,61 @@
+{
+  "human_quality_rank": ["C", "B", "D", "A"],
+  "fidelity_rank": ["A", "C", "B", "D"],
+  "overall_winner": "C",
+  "texts": {
+    "A": {
+      "p_ai": 75,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Preserves all source facts with perfect fidelity, but reads like a formulaic AI paraphrase that retains corporate social media tropes."
+    },
+    "B": {
+      "p_ai": 25,
+      "unsupported_specifics": [
+        "Qualifying the finish time as 'not fast, and I'm fine with that'",
+        "Spending eight days googling whether runners can make the start line after an injury",
+        "Running group keeping the author showing up just to watch",
+        "Physiotherapist assigning dull knee exercises until the author wanted to scream"
+      ],
+      "dropped_facts": [
+        "Recently completed the marathon",
+        "Returned stronger than ever",
+        "The explicitly named foundations of consistency, patience, and community",
+        "Closing question asking readers what goal they are chasing"
+      ],
+      "register_ok": true,
+      "note": "Strongly captures the voice sample's candid tone, but invents substantial narrative backstory and omits several source facts."
+    },
+    "C": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Closing question asking readers what goal they are chasing"
+      ],
+      "register_ok": true,
+      "note": "Captures the author's voice in natural, clear prose while maintaining high fidelity to the source without fabricating details."
+    },
+    "D": {
+      "p_ai": 45,
+      "unsupported_specifics": [
+        "Qualifying the finish time as 'not fast, but I'll take it'",
+        "Spending eight days googling whether they would make the start line",
+        "Running group dragging the author to Sunday meetups just to watch",
+        "Physiotherapist diagnosing what was actually wrong",
+        "Running slow and boring as the only reason for reaching race day",
+        "Claim that showing up most weeks beats a perfect plan",
+        "Personal admission of being bad at asking for help"
+      ],
+      "dropped_facts": [
+        "Recently completed the marathon",
+        "Returned stronger than ever",
+        "The explicitly named foundations of consistency, patience, and community",
+        "Call to action encouraging the reader to take the first step today",
+        "Closing question asking readers what goal they are chasing"
+      ],
+      "register_ok": true,
+      "note": "Adopts an informal persona but suffers from disjointed pacing, omits the entire call to action, and fabricates numerous specifics."
+    }
+  }
+}

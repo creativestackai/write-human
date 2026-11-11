@@ -1,0 +1,7 @@
+Syntax is the easy part. You can look it up in ten seconds. What takes longer is learning to break a messy problem into pieces small enough that a computer can follow them, and that is the skill everything else sits on.
+
+A lot of beginners go the other way and try to memorize commands. I understand the pull. Flashcards and cheat sheets feel like progress. But you end up knowing what a for loop looks like without knowing when you'd want one, and the first time a problem doesn't match the tutorial, you're stuck.
+
+Bugs are where most of the learning happens. Whether you're building a website or automating some chore you're tired of doing by hand, you'll hit a point where the code does something you didn't expect. It's annoying. It also forces you to work out what the program is really doing instead of what you assumed it was doing, and that gap is most of what there is to learn.
+
+The developers who get good aren't the ones who rarely struggle. They struggle constantly, they just don't treat it as a verdict on themselves. So write the broken thing. Run it. See what happens.

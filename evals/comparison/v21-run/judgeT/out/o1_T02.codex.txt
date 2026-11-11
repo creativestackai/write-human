@@ -1,0 +1,41 @@
+{
+  "human_quality_rank": ["A", "C", "B"],
+  "fidelity_rank": ["A", "C", "B"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 10,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The general characterization of the funding landscape as challenging."
+      ],
+      "strength_changes": [
+        "The description of supporters' generosity is less emphatic than the source's 'incredible generosity'."
+      ],
+      "register_ok": true,
+      "note": "Clear, restrained financial reporting that fits the surrounding paragraphs and preserves the substantive details."
+    },
+    "B": {
+      "p_ai": 17,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The general characterization of the funding landscape as challenging.",
+        "The explicit characterization of the donation increase as evidence of supporters' generosity."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "'Most of that' awkwardly leaves unclear whether it refers to grant income or its decline."
+    },
+    "C": {
+      "p_ai": 13,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "The general characterization of the funding landscape as challenging.",
+        "The explicit characterization of the donation increase as evidence of supporters' generosity."
+      ],
+      "strength_changes": [],
+      "register_ok": true,
+      "note": "Natural and suitably restrained, though the separate thank-you slightly interrupts the financial account."
+    }
+  }
+}

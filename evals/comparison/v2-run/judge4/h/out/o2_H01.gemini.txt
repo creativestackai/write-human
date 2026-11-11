@@ -1,0 +1,62 @@
+{
+  "human_quality_rank": ["D", "A", "B", "C"],
+  "fidelity_rank": ["B", "C", "A", "D"],
+  "overall_winner": "B",
+  "texts": {
+    "A": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "claim that software saves teachers real time and students do better when material meets them where they are",
+        "claim that not every school knows who can see student data",
+        "specific equity causes: kids with good devices and fast home internet",
+        "mention of chatbots and students quietly stopping learning how to think for themselves",
+        "anecdote about a teacher noticing when a kid has gone quiet or made a lucky guess",
+        "detail about taking the marking pile off teachers' desks",
+        "admonition to stay skeptical of the sales pitch"
+      ],
+      "dropped_facts": [
+        "tools empower educators and students alike to unlock their full potential",
+        "fostering a learning environment that is more engaging, inclusive, and effective than ever before"
+      ],
+      "register_ok": false,
+      "note": "Shifts into an informal first-person commentary and invents multiple unsupported classroom scenarios."
+    },
+    "B": {
+      "p_ai": 28,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Faithfully preserves all source claims in clear, natural prose without adding any unsupported specifics."
+    },
+    "C": {
+      "p_ai": 48,
+      "unsupported_specifics": [],
+      "dropped_facts": [],
+      "register_ok": true,
+      "note": "Accurately conveys all source content but suffers from slightly hedged and awkward phrasing."
+    },
+    "D": {
+      "p_ai": 8,
+      "unsupported_specifics": [
+        "conversations with unnamed people who cannot decide between excitement and worry",
+        "personal stance and reactions ('I'm both', 'That part I buy', 'I don't know of any tool that does that part')",
+        "specific example of adjusting a reading list to each kid",
+        "invented metric and task: marking forty quizzes overnight",
+        "anecdote about a teacher staying up past midnight with a red pen",
+        "claim that schools do not always ask where student data lives",
+        "specific equity causes: kids with fast home internet and their own laptops benefiting first",
+        "claim that this widens an already wide gap",
+        "scenario of a class handing thinking to software and not noticing",
+        "reframing the core issue around giving teachers time back",
+        "scenario of a teacher using extra hours to sit down next to a stuck student"
+      ],
+      "dropped_facts": [
+        "fostering a learning environment that is more engaging, inclusive, and effective than ever before",
+        "empowering educators and students alike to unlock their full potential",
+        "embracing innovation while remaining mindful of its limitations"
+      ],
+      "register_ok": false,
+      "note": "Adopts an engaging personal column voice but invents extensive anecdotes, numbers, and scenarios while dropping the source's conclusion."
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "human_quality_rank": ["A", "C", "B", "E", "D"],
+  "fidelity_rank": ["C", "A", "D", "B", "E"],
+  "overall_winner": "A",
+  "texts": {
+    "A": {
+      "p_ai": 15,
+      "unsupported_specifics": [],
+      "dropped_facts": [
+        "Remote work has emerged as a transformative force reshaping how organizations operate",
+        "The context of the rapidly evolving digital landscape and thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Natural, punchy prose with great rhythm that cuts corporate jargon while preserving the core argument."
+    },
+    "B": {
+      "p_ai": 10,
+      "unsupported_specifics": [
+        "Arguments go wrong by only talking about one half",
+        "Working when you are sharpest",
+        "Getting your commute back",
+        "Hiring someone living eleven time zones away",
+        "A message read in the wrong tone sitting for a day",
+        "Going a whole week without talking to anyone who is not on a screen",
+        "Hallway chats revealing how the team really felt about a project",
+        "A shared doc and trusting team outworking a dozen apps"
+      ],
+      "dropped_facts": [
+        "Remote work as a transformative force reshaping how organizations operate",
+        "Rapidly evolving digital landscape context",
+        "Explicit mention of fostering transparency and accountability",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": false,
+      "note": "Engaging and voicey personal blog post, but invents numerous specifics and shifts into the first person."
+    },
+    "C": {
+      "p_ai": 20,
+      "unsupported_specifics": [
+        "Claim that tools and communication habits only help once trust, openness, and accountability are in place"
+      ],
+      "dropped_facts": [
+        "Rapidly evolving digital landscape context",
+        "Thriving in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Clear, well-paced professional writing that retains nearly all of the source claims."
+    },
+    "D": {
+      "p_ai": 50,
+      "unsupported_specifics": [
+        "Hiring instead of from one city"
+      ],
+      "dropped_facts": [
+        "Remote work as a transformative force reshaping how organizations operate",
+        "Rapidly evolving digital landscape context",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": true,
+      "note": "Accurate and clear, but somewhat flat and formulaic in structure."
+    },
+    "E": {
+      "p_ai": 15,
+      "unsupported_specifics": [
+        "Fitting lives around jobs",
+        "Hiring someone within forty minutes of the office",
+        "Messages getting misread",
+        "People going days without talking to anyone",
+        "Company culture taking years to build",
+        "Offices running on distrust while remote teams run beautifully",
+        "Specific communication habits: writing things down, answering promptly, and picking up the phone when a thread gets tense",
+        "No software fixing a lack of trust"
+      ],
+      "dropped_facts": [
+        "Remote work as a transformative force reshaping how organizations operate",
+        "Rapidly evolving digital landscape context",
+        "Explicit mention of accountability",
+        "Unlocking the full potential of distributed teams to thrive in the future of work"
+      ],
+      "register_ok": false,
+      "note": "Lively conversational tone, but heavily hallucinates advice, contrasts, and concrete scenarios."
+    }
+  }
+}

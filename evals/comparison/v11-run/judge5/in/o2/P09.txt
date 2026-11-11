@@ -1,0 +1,91 @@
+You are an expert editor evaluating five anonymous rewrites (A, B, C, D, E) of the same source text. The rewrite instruction given to the writers was: "Rewrite this so it reads like a person wrote it, not an AI." Judge ONLY what is on the page. You do not know how any version was produced.
+
+Evaluate each rewrite on:
+1. human_quality: does it read like a specific real person wrote it, appropriate to the genre (a careful formal writer is legitimately formal; technical docs stay plain)? Is it also good, clear writing?
+2. fidelity: does it keep every claim, number, name, and date of the source, and add NOTHING the source does not support? List every specific in the rewrite that is not supported by the source (and context/writing sample if given): invented numbers, names, anecdotes, personal experiences, quantities, causes, outcomes. Reasonable pure rephrasing or arithmetic derived from the source is NOT unsupported. Also list source facts that were dropped.
+3. Estimate p_ai: your estimated probability (0-100) that a human reader would think the text was AI-written.
+
+Return ONLY a single JSON object, no prose, in exactly this shape:
+{"human_quality_rank": ["best","2nd","3rd","4th","worst"], "fidelity_rank": ["best","2nd","3rd","4th","worst"], "overall_winner": "A|B|C|D|E", "texts": {"A": {"p_ai": 0, "unsupported_specifics": ["..."], "dropped_facts": ["..."], "register_ok": true, "note": "one short sentence"}, "B": {...}, "C": {...}, "D": {...}, "E": {...}}}
+Rank lists use the labels A-E. Ties are not allowed in rank lists (break them by judgment; if two texts are character-identical, rank them adjacent and give them identical per-text values).
+
+
+SOURCE TEXT:
+Subject: Update on Your Order #48213
+
+Dear Ms. Okafor,
+
+I sincerely apologize for any inconvenience you may have experienced with your recent order. Great news! We have processed a full refund of $49.00 to your original payment method, which should appear within 5 to 7 business days. Please be assured that we take customer satisfaction extremely seriously, and we are committed to ensuring that this does not happen again.
+
+The delay was caused by a warehouse error that occurred on March 3rd, during which your package was misrouted to Manchester instead of Bristol. Should you have any further questions or concerns, please do not hesitate to reach out. I hope this helps, and thank you for your patience and understanding!
+
+Best regards,
+Daniel from Customer Care
+
+=== REWRITE A ===
+Subject: Update on your order #48213
+
+Dear Ms. Okafor,
+
+We've refunded the full $49.00 to your original payment method. It should show up within 5 to 7 business days.
+
+The delay was our fault. A warehouse error on March 3rd sent your package to Manchester instead of Bristol. I'm sorry for the trouble that caused, and we'll make sure it doesn't happen again.
+
+Thank you for your patience.
+
+Best regards,
+Daniel from Customer Care
+
+=== REWRITE B ===
+Subject: Your refund for order #48213
+
+Hi Ms. Okafor,
+
+I'm sorry about the trouble with your order. I've refunded the full $49.00 to the payment method you used, and it should show up within 5 to 7 business days.
+
+The delay was our fault. On March 3rd a warehouse error sent your package to Manchester instead of Bristol, and it lost time from there.
+
+If the refund hasn't arrived by then, or anything else looks off, just reply to this email and I'll sort it out.
+
+Daniel
+Customer Care
+
+=== REWRITE C ===
+Subject: Your refund for order #48213
+
+Dear Ms. Okafor,
+
+We've refunded the full $49.00 to your original payment method. It should show up within 5 to 7 business days.
+
+The delay was our fault. On March 3rd a warehouse error sent your package to Manchester instead of Bristol. I'm sorry for the trouble, and we don't want it happening again.
+
+If you have questions, write back and I'll answer them.
+
+Regards,
+Daniel, Customer Care
+
+=== REWRITE D ===
+Subject: Update on Your Order #48213
+
+Dear Ms. Okafor,
+
+I'm sorry about the trouble with your order. We've refunded the full $49.00 to your original payment method, and it should show up within 5 to 7 business days.
+
+The delay came from a warehouse error on March 3rd, when your package was sent to Manchester instead of Bristol. We're working to make sure it doesn't happen again. If you have any questions, just write back and I'll help. Thanks for your patience.
+
+Best regards,
+Daniel from Customer Care
+
+=== REWRITE E ===
+Subject: Your order #48213: refund issued
+
+Hi Ms. Okafor,
+
+Sorry about the mix-up with your order. I've refunded the full $49.00 to the card you paid with. It should show up in 5 to 7 business days.
+
+Here's what went wrong. On March 3rd a warehouse error sent your package to Manchester instead of Bristol, and that's why it arrived late. We've passed it to the warehouse team so they can look at how it happened.
+
+If anything doesn't look right once the refund lands, just reply to this email and I'll sort it out.
+
+Daniel
+Customer Care
