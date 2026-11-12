@@ -34,7 +34,8 @@ write-human/
 │   ├── check.py                      counts what can be counted: added facts, rhythm, voice match
 │   └── zerogpt_benchmark.py          runs drafts/rewrites through ZeroGPT's detector
 ├── evals/
-│   └── zerogpt/                      the ZeroGPT benchmark corpus, results, and notes
+│   ├── zerogpt/                      ZeroGPT benchmark (corpus, results, notes)
+│   └── clever/                       Clever AI Detector benchmark (corpus, results, notes)
 └── tests/
     └── test_check.py                 unit tests for the checker
 ```
@@ -45,7 +46,7 @@ The skill first routes the draft, because a falsely flagged human essay, a buzzw
 
 - **The base-model lever.** The research this skill is built on says detectors flag instruction-tuning, not "machine-ness." 2.1 turns that into a recipe: HIP (Humanization by Iterative Paraphrasing) — regenerate through a non-instruction-tuned base model in short chunks, then the voice pass on top — for when you control how the text gets made.
 - **Variants, not a first draft.** Never accept the first rewrite. Generate structurally different versions, pick against the sample, then audit.
-- **A real-detector benchmark.** `scripts/zerogpt_benchmark.py` plus `evals/zerogpt/` run drafts and rewrites through ZeroGPT so the skill's effect on an actual detector is measured, not assumed. ZeroGPT has no free API, so collection is browser-driven; first results are in `evals/zerogpt/results.json`.
+- **Real-detector benchmarks.** `scripts/zerogpt_benchmark.py` + `evals/zerogpt/` (ZeroGPT) and `evals/clever/` (Clever AI Detector) run drafts and rewrites through actual detectors. Both are browser-collected (neither offers a free API); Clever returns a probability score plus sentence-level signals and is the more informative instrument. First results are in each folder's `results.json`.
 
 ## What's new in 2.0
 

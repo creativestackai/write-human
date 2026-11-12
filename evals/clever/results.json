@@ -1,0 +1,24 @@
+{
+  "detector": "Clever AI Detector",
+  "url": "https://cleverhumanizer.ai/ai-detector",
+  "collected_via": "browser (free web UI, async job API)",
+  "collected_at": "2026-11-12",
+  "caveat": "Probability, not verdict. 80-word minimum per check (shorter text is silently not scored). Scores are per-request and may vary run to run.",
+  "pairs": [
+    {
+      "id": "P01",
+      "draft": {"words": 112, "ai_score": 99, "human_pct": 1, "verdict": "ai", "signals": ["Generic phrasing", "Lack of personal voice", "Lack of specific details", "Overly polished language", "Template-like introduction"]},
+      "rewrite": {"words": 88, "ai_score": 95, "human_pct": 5, "verdict": "ai", "signals": ["Lack of personal voice", "Repetitive keyword usage", "Predictable sentence endings", "Repetitive sentence patterns", "Unusual punctuation consistency"]}
+    },
+    {
+      "id": "P04",
+      "draft": {"words": 121, "ai_score": 95, "human_pct": 5, "verdict": "ai", "signals": ["Lack of personal voice", "Repetitive keyword usage", "Similar sentence rhythms", "Uniform sentence length", "Predictable sentence endings"]},
+      "rewrite": {"words": 39, "ai_score": null, "human_pct": null, "verdict": null, "signals": [], "note": "below Clever's 80-word minimum; not scored"}
+    },
+    {
+      "id": "P05",
+      "draft": {"words": 117, "ai_score": 95, "human_pct": 5, "verdict": "ai", "signals": ["Unusual punctuation consistency", "Predictable sentence endings", "Repetitive sentence patterns"]},
+      "rewrite": {"words": 77, "ai_score": null, "human_pct": null, "verdict": null, "signals": [], "note": "below Clever's 80-word minimum; not scored"}
+    }
+  ]
+}
