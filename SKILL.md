@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 2.1.1
+version: 2.2.0
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
@@ -120,7 +120,7 @@ React, don't just report. "I genuinely don't know how to feel about this" beats 
 
 **Do not sand it flat.** Flawless, perfectly regular grammar is itself a signal: people writing at speed leave fragments, start sentences with "And," drop a "that," and punctuate by habit. The lesson is not to plant mistakes. Planted errors read as planted, and they make the writing worse. The lesson is to stop correcting what was never wrong. Keep the author's fragments, contractions, dialect, and punctuation habits. Fix a real error that would embarrass them and leave the rest. In a falsely flagged human draft, every quirk you tidy away removes evidence that a person wrote it. Never insert an error.
 
-For the craft of making the rewrite genuinely engaging (headlines, openings, the "so what" chain, open loops), pull `reference/craft-levers.md`. Every lever there rearranges what the author gave you; none supplies new content.
+For the craft of making the rewrite genuinely engaging (headlines, openings, the "so what" chain, open loops), pull `reference/craft-levers.md`. Every lever there rearranges what the author gave you; none supplies new content. For a specific writer's voice — an insider columnist's register, say — pull `reference/voices.md` and write the rewrite through that profile.
 
 **Calibrate to the register.** The target is "a person wrote this," not "a casual person wrote this." An engineer documenting an API, a lawyer drafting a brief, a researcher writing an abstract: each has a real voice that is legitimately formal and reserved. For those, the human signal comes from a clear point of view, concrete detail, and varied rhythm, not from forcing in an "I" or a chatty aside. In conversational registers, use contractions and speak to the reader directly; in formal registers, do neither. Match the voice of a competent human writing in that genre, then make sure that voice is actually present. Do not strip justified formality in the name of sounding human; that just trades one kind of off-ness for another.
 
@@ -187,6 +187,7 @@ Read these as needed; they are not all loaded up front. Step 0 tells you which o
 - `reference/ai-tells.md`: the complete pattern catalog. Lexicon tables with frequency data and replacements, transition padding, structural tells, formatting tells, chatbot artifacts, reasoning-model tells, closers, and over-polish, each with a before and after. This is your working reference during a rewrite.
 - `reference/why-detectors-flag-text.md`: how detection actually works (perplexity, burstiness, Fano factor, type-token ratio, nominal loading), the base-model insight, the 2025-26 detectors, the false-positive crisis, and the watermarking caveat. Read it when you want the why or need to explain detection to a user.
 - `reference/craft-levers.md`: the craft of engaging prose. Headlines, openings, the "so what" chain, rhythm, open loops. Pull this when the goal is not just "not-AI" but "actually good."
+- `reference/voices.md`: reusable voice profiles (an insider-columnist register). Pull this when the goal is a specific writer's voice, not just "not-AI."
 - `examples/before-after.md`: full worked rewrites across marketing, technical, essay, and reasoning-model registers, plus a falsely-flagged non-native-English passage (the skill's central use case), each showing diagnosis and the self-audit pass.
 - `scripts/check.py`: the optional mechanical check. Standard-library Python, no install.
 

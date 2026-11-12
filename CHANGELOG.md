@@ -4,6 +4,14 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [2.2.0] - 2026-11-12
+
+### Added
+- `reference/voices.md`: reusable voice profiles with an insider-columnist
+  register (first-person, anecdotal, historically grounded, dry understatement),
+  wired into the re-voice step so the skill can match a specific writer's voice,
+  not just strip AI tells.
+
 ## [2.1.1] - 2026-11-12
 
 ### Changed

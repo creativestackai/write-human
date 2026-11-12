@@ -2,7 +2,7 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![SKILL.md](https://img.shields.io/badge/format-SKILL.md-blue)](https://agentskills.io)
-[![Version](https://img.shields.io/badge/version-2.1.1-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](CHANGELOG.md)
 
 A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. It strips the statistical and stylistic tells that AI detectors flag, puts the rhythm and voice back, and makes the writing better in the process.
 
@@ -27,7 +27,8 @@ write-human/
 ├── reference/
 │   ├── why-detectors-flag-text.md    how detection works, including the 2025-26 detectors
 │   ├── ai-tells.md                   the full pattern catalog with before/after fixes
-│   └── craft-levers.md               how to make the rewrite genuinely engaging
+│   ├── craft-levers.md               how to make the rewrite genuinely engaging
+│   └── voices.md                     reusable voice profiles
 ├── examples/
 │   └── before-after.md               five worked rewrites, each with its audit
 ├── scripts/
