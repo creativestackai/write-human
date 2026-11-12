@@ -2,7 +2,7 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![SKILL.md](https://img.shields.io/badge/format-SKILL.md-blue)](https://agentskills.io)
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](CHANGELOG.md)
 
 A Claude skill that rewrites a draft so it reads like a person wrote it, not a model. It strips the statistical and stylistic tells that AI detectors flag, puts the rhythm and voice back, and makes the writing better in the process.
 
@@ -37,6 +37,11 @@ write-human/
 ```
 
 The skill first routes the draft, because a falsely flagged human essay, a buzzword-heavy assistant draft, and a proof-shaped reasoning-model draft need different handling. Then it diagnoses the tells, rewrites in three layers (lexicon, structure, rhythm), re-voices it to match the author, runs an adversarial self-audit ("what still reads as AI?", "what did I add or drop?", "did any claim get stronger or weaker?"), and reads it aloud.
+
+## What's new in 2.1
+
+- **The base-model lever.** The research this skill is built on says detectors flag instruction-tuning, not "machine-ness." 2.1 turns that into a recipe: HIP (Humanization by Iterative Paraphrasing) — regenerate through a non-instruction-tuned base model in short chunks, then the voice pass on top — for when you control how the text gets made.
+- **Variants, not a first draft.** Never accept the first rewrite. Generate structurally different versions, pick against the sample, then audit.
 
 ## What's new in 2.0
 

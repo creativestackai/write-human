@@ -4,6 +4,32 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [2.1.0] - 2026-11-12
+
+Operationalizes the one evidence-backed lever the skill had named but not
+turned into a recipe: the base-model finding (detectors track
+instruction-tuning, not "machine-ness").
+
+### Added
+- "The deepest lever, when it is available" in `SKILL.md`: the HIP recipe
+  (Humanization by Iterative Paraphrasing) — regenerate through a
+  non-instruction-tuned base model in short chunks, two or three passes, then
+  the voice pass on top. Marked as the strongest available move, with the
+  standing caveat that no detector score is guaranteed.
+- `reference/why-detectors-flag-text.md` section 5 now gives the HIP recipe,
+  and section 10 puts base-model paraphrasing first when regeneration is
+  possible.
+- Step 2's "Try more than one" is now "Variants, not a first draft": never
+  accept the first rewrite, generate structurally different variants before
+  deciding, framed as the editing form of the same base-model move.
+
+### Changed
+- The four refusals in "Honesty and limits" (plant errors, attack a
+  watermark, disguise pasted-in generated text, obscure facts) are unchanged,
+  deliberately re-kept against the parts of the 2025-26 detection literature
+  that recommend exactly those moves (engineered error injection, semantic
+  desynchronization, factual obfuscation).
+
 ## [2.0.0] - 2026-11-12
 
 Built on the 1.1.0 fidelity patch, with the parts of the 2025-26 detection

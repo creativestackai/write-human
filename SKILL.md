@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 2.0.0
+version: 2.1.0
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
@@ -52,6 +52,14 @@ So the move is not "remove forbidden words." The move is: **rewrite so the text 
 
 Hold that idea the whole way through. Every technique below is in service of it.
 
+## The deepest lever, when it is available
+
+Everything above is an edit, and an edit can only go so far. There is one move that goes further, worth knowing when you control how the text gets made. The research behind this skill's central idea found that detectors flag the *instruction-tuned* habits — politeness, balance, tidy structure — and read the raw output of *base* models (pre-trained, never trained to be a helpful assistant) as human. So the strongest way to de-slop a draft is not to rewrite it, but to regenerate it through a base model.
+
+The recipe is called Humanization by Iterative Paraphrasing (HIP): feed the draft through a non-instruction-tuned model — a base Llama or Qwen — as a plain paraphraser, in short chunks, two or three passes. Each pass strips more of the assistant polish, because a base model has none to begin with. The output is loose and unvoiced, so it still needs the voice pass from step 3, and it still must clear rule zero: the paraphrase keeps the draft's facts and you verify that. But it starts from the right place. No detector score is guaranteed — detectors are probabilistic — yet this is the one lever the literature actually supports for moving a score by a lot rather than a little.
+
+When you cannot regenerate — which is most of the time — the closest in-reach version is this skill's own loop: structurally different variants (step 2), an audit (step 4), and another pass, instead of accepting a first rewrite. Same principle, applied by an editor instead of a paraphraser.
+
 ## When to use this
 
 Editing or polishing any draft that "sounds like AI." De-slopping AI-assisted content before it ships. Rewriting prose that reads corporate, robotic, or hollow. Helping a non-native English writer who keeps getting falsely flagged. Use it as the last pass on articles, essays, emails, landing pages, social posts, and reports.
@@ -98,7 +106,7 @@ Closers: cut the slogan and the comment-bait question, and end on the last concr
 
 **Rhythm.** This is the burstiness lever and it is underused. Make sure no three consecutive sentences share the same length or cadence. Cut one sentence to a fragment. Fuse two into a long one with a subordinate clause. Vary paragraph length too: same-length paragraphs scream AI. Read it back. If the meter is even and marching, break it.
 
-**Try more than one.** For the opening paragraph, and for any paragraph the audit in step 4 still flags, write two or three versions that differ in structure (a different first sentence, a different order, a different number of sentences), not in word choice. Keep the one that sounds most like the sample or the register. Show only the winner.
+**Variants, not a first draft.** Never accept the first rewrite. A first pass almost always keeps the instruction-tuned polish underneath — the same shape with cleaner words — because a model's first instinct is to smooth, not to rebuild. So write two or three versions of the opening paragraph, and of any paragraph the audit in step 4 still flags, that differ in *structure* (a different first sentence, a different order, a different number of sentences), not just in word choice. Pick the one that sounds most like the sample or the register, then run the audit on that one. Show only the winner. This is the editing form of the base-model move from "The deepest lever": keep regenerating until the polish is actually gone, instead of polishing the polish.
 
 ### 3. Re-voice (the part most editors skip)
 

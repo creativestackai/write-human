@@ -49,6 +49,8 @@ Researchers showed that AI detectors classify the raw output of *base* models (p
 
 That reframes the entire task. You are not scrubbing away "machine-ness." You are removing the assistant's training: the reflex to be even-handed, to cover all angles, to hedge every claim, to organize everything into clean parallel lists, to never have an opinion. A base model rambling with a clear voice reads as human. So write like that. Take the position the author holds. Be uneven. Say "I think" where the author does. (Rule zero in `SKILL.md` still governs: the opinions and the facts are the author's, never yours.)
 
+The strongest form of this fix is not an edit at all. Because a base model has none of the assistant habits, its raw output reads as human to classifiers — so passing a draft through one strips the polish an edit can only trim. The technique is Humanization by Iterative Paraphrasing (HIP): paraphrase through a non-instruction-tuned model (a base Llama or Qwen) in short chunks, two or three passes. The output is loose and unvoiced, so it still needs the voice pass from `SKILL.md` step 3, and it still must keep the draft's facts (rule zero). Full recipe in `SKILL.md`, "The deepest lever, when it is available."
+
 ## 6. What the commercial detectors actually do
 
 Useful context so you can set expectations honestly.
@@ -104,7 +106,7 @@ Surface humanization does not reliably remove a hard watermark. Aggressive enoug
 
 ## 10. What this means for how you rewrite
 
-Everything above collapses into a short priority list:
+Everything above collapses into a short priority list. One move outranks even the list, when it is available: if you can generate rather than edit, start from a base-model paraphrase (HIP, section 5) and then apply the priorities below on top. Otherwise:
 
 1. **Put back the variance.** Uneven sentence and paragraph length attacks burstiness, the most measurable flag. Highest leverage.
 2. **Put back a point of view.** The author's opinions, the draft's own specifics, and a real voice raise perplexity and erase the instruction-tuned smoothness. The deepest fix.
