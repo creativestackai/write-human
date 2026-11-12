@@ -28,27 +28,28 @@ corpus compress below that, which is itself a finding (see below).
 
 | pair | draft | rewrite | read |
 | --- | --- | --- | --- |
-| P01 | 99 | 95 (human 5%) | marginal drop |
-| P04 | 95 | not scored (39 words) | under minimum |
-| P05 | 95 | not scored (77 words) | under minimum |
+| P01 | 99 | 95 (88 words, human 5%) | 4-point drop |
+| P05 | 95 | 85 (84 words, human 15%) | 10-point drop |
+| P04 | 95 | not scored (39 words) | puffery-heavy draft; faithful rewrite is ~55 words, under the floor |
 
 ## What it tells us
 
 1. **Clever is more honest than ZeroGPT.** ZeroGPT stamped everything 100%
    except one too-short text. Clever differentiates (99/95/95) and shows its
    work sentence by sentence.
-2. **The rewrite fixed the right signals and created new ones.** P01's rewrite
-   dropped "Generic phrasing", "Overly polished language", "Lack of specific
-   details", and "Template-like introduction" — the exact things `write-human`
-   targets — but gained "Repetitive sentence patterns", "Predictable sentence
-   endings", and "Unusual punctuation consistency", because it compressed into
-   short, even sentences.
-3. **Over-compression is a real detector cost.** Two of three rewrites fell
-   under Clever's 80-word floor. The skill's own audit warning ("has it shrunk
-   into a summary?") maps directly to a detector gate here: a faithful rewrite
-   should stay above 80 words and vary sentence length, not just shrink.
-4. **Both detectors agree on the bottom line.** Style rewrites alone do not
-   reliably move detector scores; the deep, evidence-backed lever remains
+2. **Length and voice move the score.** The fuller P05 rewrite (84 words, first
+   person) dropped 95→85 and human 5%→15%; the impersonal P01 only moved 99→95.
+   A real voice plus enough length is what Clever rewards.
+3. **Rhythm is the remaining tell.** Even the fuller rewrites keep "Repetitive
+   sentence patterns", "Predictable sentence endings", and "Similar sentence
+   rhythms". Over-compression fixed "generic phrasing"/"overly polished
+   language" but created new rhythm tells — sentence-length variance is the
+   lever, now with detector evidence (codified in `SKILL.md` 2.1.1).
+4. **Puffery-heavy drafts are untestable at short honest length.** P04's draft
+   is mostly filler, so its faithful rewrite is ~55 words — under Clever's
+   floor. Short honest rewrites of thin drafts can't be scored by Clever.
+5. **Both detectors agree on the bottom line.** Style rewrites move scores a
+   little, not reliably to "human"; the deep, evidence-backed lever remains
    regenerating through a base model (HIP, see `SKILL.md`), not editing polish.
 
 Caveats: one detector; scores vary run to run; short/formal/non-native text is

@@ -13,12 +13,12 @@
     {
       "id": "P04",
       "draft": {"words": 121, "ai_score": 95, "human_pct": 5, "verdict": "ai", "signals": ["Lack of personal voice", "Repetitive keyword usage", "Similar sentence rhythms", "Uniform sentence length", "Predictable sentence endings"]},
-      "rewrite": {"words": 39, "ai_score": null, "human_pct": null, "verdict": null, "signals": [], "note": "below Clever's 80-word minimum; not scored"}
+      "rewrite": {"words": 39, "ai_score": null, "human_pct": null, "verdict": null, "signals": [], "note": "puffery-heavy draft; faithful rewrite is ~55 words, below Clever's 80-word minimum; not scored"}
     },
     {
       "id": "P05",
       "draft": {"words": 117, "ai_score": 95, "human_pct": 5, "verdict": "ai", "signals": ["Unusual punctuation consistency", "Predictable sentence endings", "Repetitive sentence patterns"]},
-      "rewrite": {"words": 77, "ai_score": null, "human_pct": null, "verdict": null, "signals": [], "note": "below Clever's 80-word minimum; not scored"}
+      "rewrite": {"words": 84, "ai_score": 85, "human_pct": 15, "verdict": "ai", "signals": ["Predictable sentence endings", "Repetitive keyword usage", "Repetitive sentence patterns", "Unusual punctuation consistency", "Similar sentence rhythms"]}
     }
   ]
 }
