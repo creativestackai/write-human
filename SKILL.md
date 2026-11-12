@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 2.1.0
+version: 2.1.1
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
@@ -128,7 +128,7 @@ For the craft of making the rewrite genuinely engaging (headlines, openings, the
 
 This catches the tells you missed, and the facts you changed. After your rewrite, run three prompts on yourself:
 
-1. "What still makes this read as AI-generated?" Answer honestly in a few bullets. There is almost always something: rhythm a touch too tidy, a contrast that is too clean, a closer that went slogan-y, placeholder-sounding specifics. Also ask: did I keep the draft's skeleton and only polish its sentences? Does it sound like the sample, or the page around it, if there is one (same contractions, same fragments, same bluntness)? Has it shrunk into a summary? Cutting padding shortens a draft and that is fine; a run of clipped, same-weight sentences at well under three quarters of the original length is a different machine voice, not a human one.
+1. "What still makes this read as AI-generated?" Answer honestly in a few bullets. There is almost always something: rhythm a touch too tidy, a contrast that is too clean, a closer that went slogan-y, placeholder-sounding specifics. Also ask: did I keep the draft's skeleton and only polish its sentences? Does it sound like the sample, or the page around it, if there is one (same contractions, same fragments, same bluntness)? Has it shrunk into a summary? Cutting padding shortens a draft and that is fine; a run of clipped, same-weight sentences at well under three quarters of the original length is a different machine voice, not a human one. Keep the rewrite above roughly 80 words and vary the sentence lengths: over-compressing does not remove the AI signal, it swaps one tell for another — "generic phrasing" and "overly polished language" come back on the next detector as "repetitive sentence patterns" and "predictable sentence endings."
 2. "What did I add or drop?" Go claim by claim against the draft: every number, name, date, quote, example, experience, cause, and commitment. Anything you added that has no source in the draft or from the user (a detail lifted from the writing sample counts as added): delete it or replace it with the plain version. Anything you dropped: restore it, unless it was padding or empty significance. Then ask: did any claim get stronger or weaker? A lost "may", "suggests", "about", or "provided that" is a changed claim; put it back.
 3. "Now fix exactly those." Revise and present the result.
 

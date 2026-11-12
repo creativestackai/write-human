@@ -4,6 +4,15 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [2.1.1] - 2026-11-12
+
+### Changed
+- Audit question 1 now codifies a length floor grounded in real-detector
+  evidence: keep the rewrite above roughly 80 words and vary sentence length;
+  over-compressing swaps "generic phrasing" / "overly polished language" for
+  "repetitive sentence patterns" / "predictable sentence endings" on the next
+  detector. Found running the Clever AI Detector benchmark (`evals/clever/`).
+
 ## [2.1.0] - 2026-11-12
 
 Operationalizes the one evidence-backed lever the skill had named but not
