@@ -56,6 +56,10 @@ without being academic; conversational without being chatty.
   "landscape").
 - Vague attribution ("experts believe", "many say"). Name names or cut the claim.
 - Balanced on-the-one-hand/on-the-other framing. Take a position.
+- Parallel and antithetical structures ("not X, but Y"; matched sentence pairs
+  like "the parks are new, the metro is new"). Break the symmetry.
+- Repeating the topic keyword. Use a pronoun or a fresh noun instead of
+  hammering the same word.
 - Slogans, pep-talk closers, and comment-bait questions aimed at no one in
   particular.
 - Even rhythm and template paragraph shapes.
