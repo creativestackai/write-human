@@ -30,6 +30,15 @@ warning. This is evidence *for* the skill's honesty section, not a win: no
 style rewrite reliably moves a detector this brittle, and short texts are
 over-flagged in both directions. The drafts and rewrites are in `corpus.json`.
 
+## Cross-check against the voice recipe (2026-11-12)
+
+Five first-person "confessional voice" variants that Clever scored 1-15% AI
+(98-99% human) all returned a flat **100%** on ZeroGPT, as did the AI control.
+ZeroGPT's free detector now stamps essentially everything as AI and cannot
+distinguish human-voiced prose from machine text. It is overzealous to the
+point of uselessness as a benchmark — do not optimize against it. Clever's
+probability + sentence-signal output is the meaningful instrument.
+
 ## Why a browser, not a script
 
 ZeroGPT has no free API. A direct POST to its detect endpoint returns
