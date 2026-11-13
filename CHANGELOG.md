@@ -4,6 +4,14 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [2.3.0] - 2026-11-12
+
+### Changed
+- Re-voice is now the emphasized path: the step leads with the confessional-arc
+  recipe (contrarian stance, a turn, dry self-aware close, wild rhythm, broken
+  symmetry) and points to `reference/voices.md` as the default for humanize
+  requests. Voice is taught as the strongest lever, ahead of compression.
+
 ## [2.2.0] - 2026-11-12
 
 ### Added

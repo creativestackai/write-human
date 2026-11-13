@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 2.2.0
+version: 2.3.0
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
@@ -108,9 +108,9 @@ Closers: cut the slogan and the comment-bait question, and end on the last concr
 
 **Variants, not a first draft.** Never accept the first rewrite. A first pass almost always keeps the instruction-tuned polish underneath — the same shape with cleaner words — because a model's first instinct is to smooth, not to rebuild. So write two or three versions of the opening paragraph, and of any paragraph the audit in step 4 still flags, that differ in *structure* (a different first sentence, a different order, a different number of sentences), not just in word choice. Pick the one that sounds most like the sample or the register, then run the audit on that one. Show only the winner. This is the editing form of the base-model move from "The deepest lever": keep regenerating until the polish is actually gone, instead of polishing the polish.
 
-### 3. Re-voice (the part most editors skip)
+### 3. Re-voice (the step that does the most work)
 
-A draft can be technically clean and still obviously synthetic because there is no person in it. This step puts the author back.
+A draft can be technically clean and still obviously synthetic because there is no person in it. This step puts the author back — and when the goal is to sound human, it does more than word swaps or compression. The pattern that reads most human is a confessional arc: open with a contrarian or self-deprecating stance, tell a story with a turn (what you believed, what changed your mind, what you did), and close on a dry, self-aware note. Use concrete but unglamorous specifics, swing the rhythm wildly between very short and very long sentences, and break any parallel or antithetical symmetry. The full recipe is `reference/voices.md`; treat it as the default for humanize requests, not an afterthought.
 
 React, don't just report. "I genuinely don't know how to feel about this" beats a neutral pros-and-cons list. Admit mixed feelings and uncertainty, which models are trained out of. Use "I" where the draft is already in first person, because first person is honest, not unprofessional; never add an "I" with experiences the author did not give you. Trade vague claims for plainer wording, and for specific detail (a named example, a real number, an anecdote) only when the draft or the user supplies it. If a real detail would clearly help and you do not have it, ask for it or note it at the end. Delete the cliché opener and write a real one (a direct challenge, a concrete result, a confession, a small scene). Delete the summary conclusion; end on the sharpest concrete thing the draft contains.
 
