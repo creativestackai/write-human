@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 2.3.0
+version: 2.4.0
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
@@ -110,7 +110,7 @@ Closers: cut the slogan and the comment-bait question, and end on the last concr
 
 ### 3. Re-voice (the step that does the most work)
 
-A draft can be technically clean and still obviously synthetic because there is no person in it. This step puts the author back — and when the goal is to sound human, it does more than word swaps or compression. The pattern that reads most human is a confessional arc: open with a contrarian or self-deprecating stance, tell a story with a turn (what you believed, what changed your mind, what you did), and close on a dry, self-aware note. Use concrete but unglamorous specifics, swing the rhythm wildly between very short and very long sentences, and break any parallel or antithetical symmetry. The full recipe is `reference/voices.md`; treat it as the default for humanize requests, not an afterthought.
+A draft can be technically clean and still obviously synthetic because there is no person in it. This step puts the author back — and when the goal is to sound human, it does more than word swaps or compression. The pattern that reads most human is a confessional arc: open with a contrarian or self-deprecating stance, tell a story with a turn (what you believed, what changed your mind, what you did), and close on a dry, self-aware note. Use concrete but unglamorous specifics, swing the rhythm wildly between very short and very long sentences, and break any parallel or antithetical symmetry. The full recipe is `reference/voices.md`. Voices are selectable: the catalog holds five — the **insider columnist** (default), **MJ** (the contrarian essayist), **SD** (the erudite essayist), **AA** (the marketing analyst), and **combined** (the best of all four). When the user names one, apply it; when they don't, ask, or default to the insider columnist.
 
 React, don't just report. "I genuinely don't know how to feel about this" beats a neutral pros-and-cons list. Admit mixed feelings and uncertainty, which models are trained out of. Use "I" where the draft is already in first person, because first person is honest, not unprofessional; never add an "I" with experiences the author did not give you. Trade vague claims for plainer wording, and for specific detail (a named example, a real number, an anecdote) only when the draft or the user supplies it. If a real detail would clearly help and you do not have it, ask for it or note it at the end. Delete the cliché opener and write a real one (a direct challenge, a concrete result, a confession, a small scene). Delete the summary conclusion; end on the sharpest concrete thing the draft contains.
 
@@ -187,7 +187,7 @@ Read these as needed; they are not all loaded up front. Step 0 tells you which o
 - `reference/ai-tells.md`: the complete pattern catalog. Lexicon tables with frequency data and replacements, transition padding, structural tells, formatting tells, chatbot artifacts, reasoning-model tells, closers, and over-polish, each with a before and after. This is your working reference during a rewrite.
 - `reference/why-detectors-flag-text.md`: how detection actually works (perplexity, burstiness, Fano factor, type-token ratio, nominal loading), the base-model insight, the 2025-26 detectors, the false-positive crisis, and the watermarking caveat. Read it when you want the why or need to explain detection to a user.
 - `reference/craft-levers.md`: the craft of engaging prose. Headlines, openings, the "so what" chain, rhythm, open loops. Pull this when the goal is not just "not-AI" but "actually good."
-- `reference/voices.md`: reusable voice profiles (an insider-columnist register). Pull this when the goal is a specific writer's voice, not just "not-AI."
+- `reference/voices.md`: the voice catalog — five selectable voices (insider columnist, MJ, SD, AA, combined). Pull this to pick a voice for the rewrite.
 - `examples/before-after.md`: full worked rewrites across marketing, technical, essay, and reasoning-model registers, plus a falsely-flagged non-native-English passage (the skill's central use case), each showing diagnosis and the self-audit pass.
 - `scripts/check.py`: the optional mechanical check. Standard-library Python, no install.
 

@@ -4,6 +4,14 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [2.4.0] - 2026-11-13
+
+### Added
+- `reference/voices.md` is now a catalog of five selectable voices: the insider
+  columnist (default), MJ (contrarian essayist), SD (erudite essayist), AA
+  (marketing analyst), and combined (the best of all four). The re-voice step
+  applies the named voice when the user asks for one.
+
 ## [2.3.0] - 2026-11-12
 
 ### Changed
