@@ -1,6 +1,6 @@
 ---
 name: write-human
-version: 2.4.0
+version: 2.5.0
 description: >-
   Rewrite an existing draft so it reads like a person wrote it, not a model: natural rhythm,
   real voice, concrete detail, and none of the tells AI detectors flag. Use whenever writing
@@ -56,7 +56,7 @@ Hold that idea the whole way through. Every technique below is in service of it.
 
 Everything above is an edit, and an edit can only go so far. There is one move that goes further, worth knowing when you control how the text gets made. The research behind this skill's central idea found that detectors flag the *instruction-tuned* habits — politeness, balance, tidy structure — and read the raw output of *base* models (pre-trained, never trained to be a helpful assistant) as human. So the strongest way to de-slop a draft is not to rewrite it, but to regenerate it through a base model.
 
-The recipe is called Humanization by Iterative Paraphrasing (HIP): feed the draft through a non-instruction-tuned model — a base Llama or Qwen — as a plain paraphraser, in short chunks, two or three passes. Each pass strips more of the assistant polish, because a base model has none to begin with. The output is loose and unvoiced, so it still needs the voice pass from step 3, and it still must clear rule zero: the paraphrase keeps the draft's facts and you verify that. But it starts from the right place. No detector score is guaranteed — detectors are probabilistic — yet this is the one lever the literature actually supports for moving a score by a lot rather than a little.
+The recipe is called Humanization by Iterative Paraphrasing (HIP): feed the draft through a non-instruction-tuned model — a base Llama or Qwen — as a plain paraphraser, in short chunks, two or three passes. Each pass strips more of the assistant polish, because a base model has none to begin with. The output is loose and unvoiced, so it still needs the voice pass from step 3, and it still must clear rule zero: the paraphrase keeps the draft's facts and you verify that. But it starts from the right place. No detector score is guaranteed — detectors are probabilistic — yet this is the one lever the literature actually supports for moving a score by a lot rather than a little. This skill now ships the concrete tooling: `scripts/hip.py` runs the pass against a locally-served base model, and `reference/hip.md` has the one-time setup (which model, how to import it into Ollama, how to run it).
 
 When you cannot regenerate — which is most of the time — the closest in-reach version is this skill's own loop: structurally different variants (step 2), an audit (step 4), and another pass, instead of accepting a first rewrite. Same principle, applied by an editor instead of a paraphraser.
 
@@ -190,6 +190,8 @@ Read these as needed; they are not all loaded up front. Step 0 tells you which o
 - `reference/voices.md`: the voice catalog — five selectable voices (insider columnist, MJ, SD, AA, combined). Pull this to pick a voice for the rewrite.
 - `examples/before-after.md`: full worked rewrites across marketing, technical, essay, and reasoning-model registers, plus a falsely-flagged non-native-English passage (the skill's central use case), each showing diagnosis and the self-audit pass.
 - `scripts/check.py`: the optional mechanical check. Standard-library Python, no install.
+- `scripts/hip.py`: the base-model regeneration pass (HIP). Runs a draft through a locally-served, non-instruction-tuned model to strip instruction-tuning fingerprints. Standard-library Python; needs the model from `reference/hip.md`.
+- `reference/hip.md`: setting up the HIP pass — which base model, how to import it into Ollama, how to run it, and its faithfulness tradeoffs.
 
 ## A compact example
 

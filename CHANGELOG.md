@@ -4,6 +4,17 @@ All notable changes to this skill are documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the skill uses
 [semantic versioning](https://semver.org/).
 
+## [2.5.0] - 2026-11-25
+
+### Added
+- `scripts/hip.py` and `reference/hip.md`: the base-model regeneration pass
+  (Humanization by Iterative Paraphrasing). Runs a draft through a
+  locally-served non-instruction-tuned model (Qwen3-8B-Base) to shed
+  instruction-tuning fingerprints.
+- `evals/hip/`: honest test of that pass against Clever. Result: base-model
+  output scored 97% AI, so it does not beat that detector — the pass is shipped
+  for what it may do on other detectors, not sold as a detector-beater.
+
 ## [2.4.0] - 2026-11-13
 
 ### Added

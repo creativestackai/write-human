@@ -1,0 +1,27 @@
+{
+  "detector": "Clever AI Detector",
+  "url": "https://cleverhumanizer.ai/ai-detector",
+  "collected_at": "2026-11-25",
+  "collected_via": "browser (free web UI, async job API)",
+  "method": "Qwen3-8B-Base (Q4_K_M) served by Ollama; scripts/hip.py, 2 passes, ~200-word chunks, temperature 0.9, top_p 0.95. Input: the same AI draft used in evals/voices/.",
+  "caveat": "Probability, not verdict. Single run. One base model, one prompt, one detector, one sample.",
+  "results": {
+    "input_ai_draft": {"ai_score": 99, "verdict": "ai"},
+    "hip_base_model_2pass": {
+      "ai_score": 97,
+      "human_pct": 3,
+      "verdict": "ai",
+      "words": 234,
+      "signals": [
+        "AI-like patterns are highly consistent at both sentence and full-text levels.",
+        "Artificially balanced arguments",
+        "Predictable sentence endings",
+        "Repetitive sentence patterns",
+        "Lack of specific details",
+        "Excessive transition words"
+      ]
+    },
+    "human_control": {"ai_score": 3, "verdict": "human"}
+  },
+  "finding": "The base-model HIP pass did not beat Clever. Qwen3-8B-Base output scored 97% AI, statistically identical to every instruction-tuned rewrite (97-99%). The 'base models read as human' finding (arXiv 2605.19516) was measured against GPTZero and Pangram, not Clever, and did not reproduce here. Clever flags LLM output broadly — both instruction-tuned and base-model. Genuinely human prose (3%) is the only thing that passed."
+}
