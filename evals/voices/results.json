@@ -1,0 +1,25 @@
+{
+  "detector": "Clever AI Detector",
+  "url": "https://cleverhumanizer.ai/ai-detector",
+  "collected_at": "2026-11-25",
+  "collected_via": "browser (free web UI, async job API)",
+  "caveat": "Probability, not verdict. Scores are single runs and vary run to run. 80-word minimum per check.",
+  "controls": {
+    "human_journalist_excerpt": {"ai_score": 3, "human_pct": 97, "verdict": "human", "words": 115},
+    "human_casual_attempt": {"ai_score": 93, "human_pct": 7, "verdict": "ai", "words": 84}
+  },
+  "voice_demo": {
+    "original_ai_draft": {"ai_score": 99, "human_pct": 1, "verdict": "ai", "words": 120},
+    "insider_columnist": {"ai_score": 98, "human_pct": 2, "verdict": "ai", "words": 135},
+    "MJ": {"ai_score": 99, "human_pct": 1, "verdict": "ai", "words": 150},
+    "SD": {"ai_score": 99, "human_pct": 1, "verdict": "ai", "words": 178},
+    "AA": {"ai_score": 99, "human_pct": 1, "verdict": "ai", "words": 160},
+    "combined": {"ai_score": 99, "human_pct": 1, "verdict": "ai", "words": 149}
+  },
+  "improved_rounds": {
+    "combined_v2_specifics": {"ai_score": 97, "human_pct": 3, "verdict": "ai", "words": 157},
+    "insider_columnist_v2_specifics": {"ai_score": 99, "human_pct": 1, "verdict": "ai", "words": 142},
+    "narrative_first_person": {"ai_score": 99, "human_pct": 1, "verdict": "ai", "words": 127}
+  },
+  "finding": "The five voices are stylistically distinct, but none of the LLM-generated rewrites beat the detector: every rewrite scored 97-99% AI, statistically the same as the raw draft (99%). The one genuinely human-written control scored 3%. Clever is reading the generator's fingerprints, not surface style, so style editing has a ceiling. The base-model/HIP route (regenerate through a non-instruction-tuned model) remains the deeper lever, as documented in evals/clever/ and SKILL.md."
+}
